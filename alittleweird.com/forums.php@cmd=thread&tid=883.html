@@ -1,0 +1,498 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Building Muscle with Your Mind O_O</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Building Muscle with Your Mind O_O</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Building Muscle with Your Mind O_O</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">savemydonkey</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=1026&amp;ref=1256280257" width="125" height="118" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_16014" style="width: 100%; overflow: auto; min-height: 125px;">Hey friends :)<br />
+Here&#039;s a BBC Health article to read that I think will interest some of you guys.<br />
+It is called &quot;Phyiscal Training in your dreams&quot;<br />
+<br />
+ <a href="http://news.bbc.co.uk/2/hi/health/1668247.stm" target="_blank">http://news.bbc.co.uk/2/hi/health/1668247.stm</a><br />
+<br />
+In spite of the title, there&#039;s nothing really about dreaming or physically training in one&#039;s dreams, however there is a relation between the topic and the title.<br />
+<br />
+For those who don&#039;t want to read a boring BBC article (although I suggest you read it anyway to gain your own interpretation of its message, rather than just accepting mine) it says we can physically train our muscles just by visualizing we are physically training our muscles.  Doing so uses our brain to fire up motor neurons and causes actual results (In a 10 person study, a 12.5% increase was shown in muscle mass, just by imagining flexing one&#039;s arm as hard as they could over the course of a few weeks).  There were some stipulations that this type of training would not replace flexibility training and aerobic exercise, but I definitely wouldn&#039;t refute getting a little buffer solely because of my brain and neurology ;)<br />
+<br />
+So, any thoughts? Opinions? <br />
+<br />
+(I apologize if there is already a thread about this, I can honestly say I didn&#039;t check)<br />
+<br />
+<br />
+</div>
+		<textarea style="display: none;" id="desctxt_16014">Hey friends :)
+Here&#039;s a BBC Health article to read that I think will interest some of you guys.
+It is called &quot;Phyiscal Training in your dreams&quot;
+
+http://news.bbc.co.uk/2/hi/health/1668247.stm
+
+In spite of the title, there&#039;s nothing really about dreaming or physically training in one&#039;s dreams, however there is a relation between the topic and the title.
+
+For those who don&#039;t want to read a boring BBC article (although I suggest you read it anyway to gain your own interpretation of its message, rather than just accepting mine) it says we can physically train our muscles just by visualizing we are physically training our muscles.  Doing so uses our brain to fire up motor neurons and causes actual results (In a 10 person study, a 12.5% increase was shown in muscle mass, just by imagining flexing one&#039;s arm as hard as they could over the course of a few weeks).  There were some stipulations that this type of training would not replace flexibility training and aerobic exercise, but I definitely wouldn&#039;t refute getting a little buffer solely because of my brain and neurology ;)
+
+So, any thoughts? Opinions? 
+
+(I apologize if there is already a thread about this, I can honestly say I didn&#039;t check)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Sussch</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=622&amp;ref=1252769070" width="100" height="92" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_16017" style="width: 100%; overflow: auto; min-height: 125px;">Welcome to the forum!<br />
+<br />
+Yup, I have heard of it.<br />
+I have only tried it twice though and just two times is too few to even tell if it has worked for me or not.<br />
+<br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by savemydonkey:</em><br />
+There were some stipulations that this type of training would not replace flexibility training and aerobic exercise, but ...</div>I agree.<br />
+<br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by savemydonkey:</em><br />
+(I apologize if there is already a thread about this, I can honestly say I didn&#039;t check)</div>(It&#039;s difficult to check as long as there is no search feature)<br />
+</div>
+		<textarea style="display: none;" id="desctxt_16017">Welcome to the forum!
+
+Yup, I have heard of it.
+I have only tried it twice though and just two times is too few to even tell if it has worked for me or not.
+
+[quote][i]posted by savemydonkey:[/i]
+There were some stipulations that this type of training would not replace flexibility training and aerobic exercise, but ...
+[/quote]
+I agree.
+
+[quote][i]posted by savemydonkey:[/i]
+(I apologize if there is already a thread about this, I can honestly say I didn&#039;t check)[/quote]
+(It&#039;s difficult to check as long as there is no search feature)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Kube</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=952&amp;ref=1249239276" width="102" height="77" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_16018" style="width: 100%; overflow: auto; min-height: 125px;">Interesting... I agree with the flexibility part too; even if you can work your muscles with your brain, there&#039;s probably no way to stretch them... But hey at least I don&#039;t need to worry about going to the gym anymore ;D</div>
+		<textarea style="display: none;" id="desctxt_16018">Interesting... I agree with the flexibility part too; even if you can work your muscles with your brain, there&#039;s probably no way to stretch them... But hey at least I don&#039;t need to worry about going to the gym anymore ;D</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">f3licks</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=848&amp;ref=1227833859" width="125" height="78" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_16023" style="width: 100%; overflow: auto; min-height: 125px;">That&#039;s pretty interesting.<br />
+<br />
+I wonder how many times you have to mentally &#039;work out&#039;?</div>
+		<textarea style="display: none;" id="desctxt_16023">That&#039;s pretty interesting.
+
+I wonder how many times you have to mentally &#039;work out&#039;?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">arzhul</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_16030" style="width: 100%; overflow: auto; min-height: 125px;">Remember the chi ghost thing you all screamed fake at?<br />
+Well seems it DID do something right? (Not saying you harnessed a ghost ;))<br />
+Anyway why do only one? DO BOTH!<br />
+Sit down, meditate abit, get into a relaxed state then create a double, or three others you, manipulate them just like psi and get them down in the position to do pushups.<br />
+Then do so yourself and use them to do the exercise just as you do<br />
+and count it x4 or x2 depending on how many.. Then at the end bring them back all to you.<br />
+<br />
+Does mental training and completes it with physical training..<br />
+Whatever works I guess :P</div>
+		<textarea style="display: none;" id="desctxt_16030">Remember the chi ghost thing you all screamed fake at?
+Well seems it DID do something right? (Not saying you harnessed a ghost ;))
+Anyway why do only one? DO BOTH!
+Sit down, meditate abit, get into a relaxed state then create a double, or three others you, manipulate them just like psi and get them down in the position to do pushups.
+Then do so yourself and use them to do the exercise just as you do
+and count it x4 or x2 depending on how many.. Then at the end bring them back all to you.
+
+Does mental training and completes it with physical training..
+Whatever works I guess :P</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Kube</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=952&amp;ref=1249239276" width="102" height="77" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_16033" style="width: 100%; overflow: auto; min-height: 125px;">@arzhul: Do you have a link to the chi ghost thingy? I searched on YouTube and found a video, but I&#039;d also like to know what everybody said was fake about it? I&#039;m interested :3</div>
+		<textarea style="display: none;" id="desctxt_16033">@arzhul: Do you have a link to the chi ghost thingy? I searched on YouTube and found a video, but I&#039;d also like to know what everybody said was fake about it? I&#039;m interested :3</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">arzhul</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_16036" style="width: 100%; overflow: auto; min-height: 125px;"> <a href="http://www.youtube.com/watch?v=bjBFw95GCCs" target="_blank">http://www.youtube.com/watch?v=bjBFw95GCCs</a><br />
+<br />
+You don&#039;t have to listen to his chi ghosts stuff.<br />
+He could be saying it made you like naruto or that doing the meditation<br />
+would attract ghosts that would nomnom into you causing you to be flexing more..<br />
+The thing is I see you guys  saying that its fake yet you believe thats its possible to influence muscles by chi.<br />
+The meditation is a good one even though his explanation/description of it isnt.<br />
+I really doubt youre harnessing paradimensional beings :P<br />
+But yeah the visualisations do use psi and I achieved results with it, no matter how much fluff the meditation is coated with.<br />
+<br />
+(Yes the guy tries to sell videos, don&#039;t buy them)<br />
+Just dont take his every word for granted :P</div>
+		<textarea style="display: none;" id="desctxt_16036">http://www.youtube.com/watch?v=bjBFw95GCCs
+
+You don&#039;t have to listen to his chi ghosts stuff.
+He could be saying it made you like naruto or that doing the meditation
+would attract ghosts that would nomnom into you causing you to be flexing more..
+The thing is I see you guys  saying that its fake yet you believe thats its possible to influence muscles by chi.
+The meditation is a good one even though his explanation/description of it isnt.
+I really doubt youre harnessing paradimensional beings :P
+But yeah the visualisations do use psi and I achieved results with it, no matter how much fluff the meditation is coated with.
+
+(Yes the guy tries to sell videos, don&#039;t buy them)
+Just dont take his every word for granted :P</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Shaffertyler</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_16037" style="width: 100%; overflow: auto; min-height: 125px;">This is allmost too good to be true. Can you imagine if every body in america thought about working out every day? We would all be ahnulds, asta la vista obeisity</div>
+		<textarea style="display: none;" id="desctxt_16037">This is allmost too good to be true. Can you imagine if every body in america thought about working out every day? We would all be ahnulds, asta la vista obeisity</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Kube</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=952&amp;ref=1249239276" width="102" height="77" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_16039" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by arzhul:</em><br />
+ <a href="http://www.youtube.com/watch?v=bjBFw95GCCs" target="_blank">http://www.youtube.com/watch?v=bjBFw95GCCs</a><br />
+<br />
+You don&#039;t have to listen to his chi ghosts stuff.<br />
+He could be saying it made you like naruto or that doing the meditation<br />
+would attract ghosts that would nomnom into you causing you to be flexing more..<br />
+The thing is I see you guys  saying that its fake yet you believe thats its possible to influence muscles by chi.<br />
+The meditation is a good one even though his explanation/description of it isnt.<br />
+I really doubt youre harnessing paradimensional beings :P<br />
+But yeah the visualisations do use psi and I achieved results with it, no matter how much fluff the meditation is coated with.<br />
+<br />
+(Yes the guy tries to sell videos, don&#039;t buy them)<br />
+Just dont take his every word for granted :P</div>Ah yeah, I watched that vid... I&#039;ll just keep doubting it, though. And yeah, there&#039;s the fact he&#039;s trying to sell videos, that&#039;s never a good sign...</div>
+		<textarea style="display: none;" id="desctxt_16039">[quote][i]posted by arzhul:[/i]
+http://www.youtube.com/watch?v=bjBFw95GCCs
+
+You don&#039;t have to listen to his chi ghosts stuff.
+He could be saying it made you like naruto or that doing the meditation
+would attract ghosts that would nomnom into you causing you to be flexing more..
+The thing is I see you guys  saying that its fake yet you believe thats its possible to influence muscles by chi.
+The meditation is a good one even though his explanation/description of it isnt.
+I really doubt youre harnessing paradimensional beings :P
+But yeah the visualisations do use psi and I achieved results with it, no matter how much fluff the meditation is coated with.
+
+(Yes the guy tries to sell videos, don&#039;t buy them)
+Just dont take his every word for granted :P[/quote]
+
+Ah yeah, I watched that vid... I&#039;ll just keep doubting it, though. And yeah, there&#039;s the fact he&#039;s trying to sell videos, that&#039;s never a good sign...</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">savemydonkey</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=1026&amp;ref=1256280257" width="125" height="118" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_16042" style="width: 100%; overflow: auto; min-height: 125px;">@f3licks - Hey there buddy, about your question:<br />
+&quot;I wonder how many times you have to mentally &#039;work out&#039;?&quot;<br />
+(EDIT: This is really a question for everyone)<br />
+<br />
+Theoretically wouldn&#039;t it be safe to assume that although you don&#039;t actually have to go to the gym or physically strength train, you would still have to consistently mentally train and receive the neurological stimulus, just like when one really works out?<br />
+<br />
+However! -it should be noted that within the mind, there are no real limitations to the intensity in which you can work out, right? So do you think that maybe would it also safe to assume that if you can trick/control your brain/neurology into thinking you are really straining yourself to a high extent, then perhaps you could gain muscle pretty fast?<br />
+<br />
+(Forgive me for responding to your question with more questions)<br />
+This is a question for everybody really, isn&#039;t it?<br />
+What do you guys think?<br />
+<br />
+</div>
+		<textarea style="display: none;" id="desctxt_16042">@f3licks - Hey there buddy, about your question:
+&quot;I wonder how many times you have to mentally &#039;work out&#039;?&quot;
+(EDIT: This is really a question for everyone)
+
+Theoretically wouldn&#039;t it be safe to assume that although you don&#039;t actually have to go to the gym or physically strength train, you would still have to consistently mentally train and receive the neurological stimulus, just like when one really works out?
+
+However! -it should be noted that within the mind, there are no real limitations to the intensity in which you can work out, right? So do you think that maybe would it also safe to assume that if you can trick/control your brain/neurology into thinking you are really straining yourself to a high extent, then perhaps you could gain muscle pretty fast?
+
+(Forgive me for responding to your question with more questions)
+This is a question for everybody really, isn&#039;t it?
+What do you guys think?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">savemydonkey</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=1026&amp;ref=1256280257" width="125" height="118" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_16044" style="width: 100%; overflow: auto; min-height: 125px;">About the video link arzhul posted:<br />
+ <a href="http://www.youtube.com/watch?v=bjBFw95GCCs" target="_blank">http://www.youtube.com/watch?v=bjBFw95GCCs</a><br />
+I don&#039;t want to be adversarial to the concept or topic of the video, especially not to the power of meditation and the mind, however the example the practicioner uses in the video in particular is very questionable, and I will tell you why. <br />
+<br />
+As you know, the human body is adaptive and can be very flexible. Really, any time that somebody stretches out a muscle, after breathing and letting it relax some, one can stretch out just a little further (progressively) because, in a very simple sense, you stretched out the muscle (which is why one feels strain when they stretch out). Meditation and chi ghosts are not required, and in fact when I was in high school, it was a &quot;phenomena&quot; that one of my track coaches introduced our team to, which we were able to do without such meditation or chi ghosts on a regular basis. <br />
+<br />
+The practicioner in the video seems to be profiteering, perhaps unknowingly, on very fundamental capabilities of the human body.  Also, it should be noted that although there are no comments criticizing his video, he also moderates the comments allowed to be viewed - strong concepts allow criticism, while he does not seem to.<br />
+<br />
+I apologize for posting two long posts in a row, and I definitely apologize if I appear to be trying &quot;burst anyone&#039;s bubble&quot;, I just want to present you with the facts so you can make educated observations and assumptions.<br />
+:)<br />
+<br />
+@Kube <br />
+&quot;And yeah, there&#039;s the fact he&#039;s trying to sell videos, that&#039;s never a good sign...&quot;<br />
+Another very good point buddy ;)<br />
+</div>
+		<textarea style="display: none;" id="desctxt_16044">About the video link arzhul posted:
+http://www.youtube.com/watch?v=bjBFw95GCCs
+I don&#039;t want to be adversarial to the concept or topic of the video, especially not to the power of meditation and the mind, however the example the practicioner uses in the video in particular is very questionable, and I will tell you why. 
+
+As you know, the human body is adaptive and can be very flexible. Really, any time that somebody stretches out a muscle, after breathing and letting it relax some, one can stretch out just a little further (progressively) because, in a very simple sense, you stretched out the muscle (which is why one feels strain when they stretch out). Meditation and chi ghosts are not required, and in fact when I was in high school, it was a &quot;phenomena&quot; that one of my track coaches introduced our team to, which we were able to do without such meditation or chi ghosts on a regular basis. 
+
+The practicioner in the video seems to be profiteering, perhaps unknowingly, on very fundamental capabilities of the human body.  Also, it should be noted that although there are no comments criticizing his video, he also moderates the comments allowed to be viewed - strong concepts allow criticism, while he does not seem to.
+
+I apologize for posting two long posts in a row, and I definitely apologize if I appear to be trying &quot;burst anyone&#039;s bubble&quot;, I just want to present you with the facts so you can make educated observations and assumptions.
+:)
+
+@Kube 
+&quot;And yeah, there&#039;s the fact he&#039;s trying to sell videos, that&#039;s never a good sign...&quot;
+Another very good point buddy ;)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Insectoid</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=1010&amp;ref=1251218696" width="50" height="50" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_16050" style="width: 100%; overflow: auto; min-height: 125px;">I guess I&#039;ll try doing this every day (whenever I have enough time to amply concentrate) and see what happens then.</div>
+		<textarea style="display: none;" id="desctxt_16050">I guess I&#039;ll try doing this every day (whenever I have enough time to amply concentrate) and see what happens then.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">X-Master</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=433&amp;ref=1238933408" width="115" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_16072" style="width: 100%; overflow: auto; min-height: 125px;">I came across something like this quite a while ago. It most likely would be good for building up muscle mass quickly without all the attendant problems that come along with going to the gym. Even though I imagine that you can train for other things as well.</div>
+		<textarea style="display: none;" id="desctxt_16072">I came across something like this quite a while ago. It most likely would be good for building up muscle mass quickly without all the attendant problems that come along with going to the gym. Even though I imagine that you can train for other things as well.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_16107" style="width: 100%; overflow: auto; min-height: 125px;">I&#039;ve seen that concept work itself out. Not just with building muscles, but losing weight, being happier as a whole,etc.<br />
+<br />
+It&#039;s all a state of mind.<br />
+<br />
+Though, it&#039;s still no excuse for real training, which forces our muscles to succumb to, and the repair it&#039;s weaknesses.<br />
+<br />
+Though, these two techniques can be combined for faster, fuller muscle training.</div>
+		<textarea style="display: none;" id="desctxt_16107">I&#039;ve seen that concept work itself out. Not just with building muscles, but losing weight, being happier as a whole,etc.
+
+It&#039;s all a state of mind.
+
+Though, it&#039;s still no excuse for real training, which forces our muscles to succumb to, and the repair it&#039;s weaknesses.
+
+Though, these two techniques can be combined for faster, fuller muscle training.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=883" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 30 queries. 0.374 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

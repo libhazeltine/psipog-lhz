@@ -1,0 +1,408 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Strange Dreams...</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Strange Dreams...</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Strange Dreams...</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Anonymous Dark</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=354&amp;ref=1203377944" width="100" height="86" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13158" style="width: 100%; overflow: auto; min-height: 125px;">So, I don&#039;t usually make threads here, but I had a few pretty odd dreams this past night. I&#039;m not sure what they&#039;re supposed to mean, if anything, but they were pretty weird, and I don&#039;t have dreams/nightmares like this often...<br />
+<br />
+So, here&#039;s how it went down in my dream...<br />
+<br />
+I&#039;m in the parking lot of this strip mall in my town, when I&#039;m ambushed by these people with guns. Some are wearing black gas masks, others ski masks. They come up over and over again in these dreams...they knock me down, somehow, and their &quot;leader&quot; comes up to me. I ask him what&#039;s going on, and he says that because I failed to turn something/someone over to him, he&#039;s taking me. I kind of black out here...<br />
+<br />
+The next part is pretty fuzzy. I wake up in a white room with some other person I don&#039;t know. There&#039;s a computer and chair in there, plus a button...basically, the setup is that there&#039;s a database on the computer of people, some famous, some I don&#039;t even know. You select a person, and they appear in the chair...and you have to keep hitting the person with a blunt object until you &quot;enjoy it&quot;. I&#039;m initially reluctant, and don&#039;t do it, but they say that if I don&#039;t do it, they&#039;ll kill me...so, I&#039;m not entirely sure what happens next, but I end up hitting someone a few times with a metal object of some kind, and I don&#039;t remember anything else.<br />
+<br />
+The next part of the dream is pretty weird. I&#039;m outside of the &quot;beating room&quot;, in my house. I know that I escaped from the people who caught me, and know that they&#039;re after me. For some reason, I go on the internet and start deleting all information about me and where I live, what I look like, etc. At this point, I have a weird sort of epiphany where I realize that the people after me are called &quot;The Conduit&quot; and are abducting other people besides me, as well. I also got the feeling that they had some sort of supernatural/futuristic/alien powers of some kind, though I can&#039;t explain how I knew any of this. The Conduit, apparently, was pretty well established all over the USA, and especially the internet, keeping tabs on a lot of different web sites and message boards, and doing recruiting there, as well. <br />
+<br />
+Anyway, flash-forward again...the next thing I remember is being in a car at night with someone else. This other person is driving. We are both on the run from The Conduit. We&#039;re driving on a fairly busy road in my town, that just happens to be right next to the strip mall where I was first ambushed. We notice that there is another car following us, and are worried it is The Conduit, so we attempt to lose them by making a really abrupt (and somewhat illegal) turn onto the Highway. The car follows us, and I can see two men wearing gas masks are in the car. <br />
+<br />
+So, me and the person in the car are flipping the fuck out. For some reason, the guy I&#039;m with pulls into the parking lot where I was first abducted, by the strip mall. The other car follows. I suggest we just kill the guys following us, but the person driving the car says that won&#039;t work, and I have another weird epiphany where I realize that The Conduit, or at least the more important members of it, are not entirely human...so, we pull over by the strip mall and get out of the car with our hands raised. <br />
+<br />
+Now, in the strip mall, there is a bank with clear glass windows. Inside, I see scientists and businessmen all at desks, some eating and talking. I know they won&#039;t help, though, as they are also with The Conduit. Anyway, two guys in suits step out, looking pretty frazzled and holding these pretty big, futuristic guns. The guy who was in the car with me says, &quot;That won&#039;t be necessary, we&#039;ll go willingly.&quot;, and the men in suits say, &quot;Sorry, the boss doesn&#039;t want to risk live specimens today.&quot;<br />
+<br />
+The men shoot at us with the guns, and little darts fly out. I feel a tiny ping of pain as it pierces my skin and injects something into me, and then I fall unconscious and wake up...the end.<br />
+<br />
+Sorry if that&#039;s hard to understand...it was pretty much a stream-of-consciousness thing, and the dream is so strangely disjointed and blurry that it doesn&#039;t even make much sense to me...however, it was much more vivid at the time than most dreams I have, and the recurring theme of &quot;The Conduit&quot; is weird, considering I woke up and feel asleep at several points during the night, and they were there in every dream. Thoughts on this? Dreams are supposed to be metaphors for problems you&#039;re having in real life, but I don&#039;t know what the hell this is supposed to represent... o.O</div>
+		<textarea style="display: none;" id="desctxt_13158">So, I don&#039;t usually make threads here, but I had a few pretty odd dreams this past night. I&#039;m not sure what they&#039;re supposed to mean, if anything, but they were pretty weird, and I don&#039;t have dreams/nightmares like this often...
+
+So, here&#039;s how it went down in my dream...
+
+I&#039;m in the parking lot of this strip mall in my town, when I&#039;m ambushed by these people with guns. Some are wearing black gas masks, others ski masks. They come up over and over again in these dreams...they knock me down, somehow, and their &quot;leader&quot; comes up to me. I ask him what&#039;s going on, and he says that because I failed to turn something/someone over to him, he&#039;s taking me. I kind of black out here...
+
+The next part is pretty fuzzy. I wake up in a white room with some other person I don&#039;t know. There&#039;s a computer and chair in there, plus a button...basically, the setup is that there&#039;s a database on the computer of people, some famous, some I don&#039;t even know. You select a person, and they appear in the chair...and you have to keep hitting the person with a blunt object until you &quot;enjoy it&quot;. I&#039;m initially reluctant, and don&#039;t do it, but they say that if I don&#039;t do it, they&#039;ll kill me...so, I&#039;m not entirely sure what happens next, but I end up hitting someone a few times with a metal object of some kind, and I don&#039;t remember anything else.
+
+The next part of the dream is pretty weird. I&#039;m outside of the &quot;beating room&quot;, in my house. I know that I escaped from the people who caught me, and know that they&#039;re after me. For some reason, I go on the internet and start deleting all information about me and where I live, what I look like, etc. At this point, I have a weird sort of epiphany where I realize that the people after me are called &quot;The Conduit&quot; and are abducting other people besides me, as well. I also got the feeling that they had some sort of supernatural/futuristic/alien powers of some kind, though I can&#039;t explain how I knew any of this. The Conduit, apparently, was pretty well established all over the USA, and especially the internet, keeping tabs on a lot of different web sites and message boards, and doing recruiting there, as well. 
+
+Anyway, flash-forward again...the next thing I remember is being in a car at night with someone else. This other person is driving. We are both on the run from The Conduit. We&#039;re driving on a fairly busy road in my town, that just happens to be right next to the strip mall where I was first ambushed. We notice that there is another car following us, and are worried it is The Conduit, so we attempt to lose them by making a really abrupt (and somewhat illegal) turn onto the Highway. The car follows us, and I can see two men wearing gas masks are in the car. 
+
+So, me and the person in the car are flipping the fuck out. For some reason, the guy I&#039;m with pulls into the parking lot where I was first abducted, by the strip mall. The other car follows. I suggest we just kill the guys following us, but the person driving the car says that won&#039;t work, and I have another weird epiphany where I realize that The Conduit, or at least the more important members of it, are not entirely human...so, we pull over by the strip mall and get out of the car with our hands raised. 
+
+Now, in the strip mall, there is a bank with clear glass windows. Inside, I see scientists and businessmen all at desks, some eating and talking. I know they won&#039;t help, though, as they are also with The Conduit. Anyway, two guys in suits step out, looking pretty frazzled and holding these pretty big, futuristic guns. The guy who was in the car with me says, &quot;That won&#039;t be necessary, we&#039;ll go willingly.&quot;, and the men in suits say, &quot;Sorry, the boss doesn&#039;t want to risk live specimens today.&quot;
+
+The men shoot at us with the guns, and little darts fly out. I feel a tiny ping of pain as it pierces my skin and injects something into me, and then I fall unconscious and wake up...the end.
+
+Sorry if that&#039;s hard to understand...it was pretty much a stream-of-consciousness thing, and the dream is so strangely disjointed and blurry that it doesn&#039;t even make much sense to me...however, it was much more vivid at the time than most dreams I have, and the recurring theme of &quot;The Conduit&quot; is weird, considering I woke up and feel asleep at several points during the night, and they were there in every dream. Thoughts on this? Dreams are supposed to be metaphors for problems you&#039;re having in real life, but I don&#039;t know what the hell this is supposed to represent... o.O</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Anonymous Dark, 3 years, 9 months ago<br />Posted 3 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Raathuus</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=764&amp;ref=1259211929" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13162" style="width: 100%; overflow: auto; min-height: 125px;">I should make a movie out of this...</div>
+		<textarea style="display: none;" id="desctxt_13162">I should make a movie out of this...</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Anonymous Dark</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=354&amp;ref=1203377944" width="100" height="86" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13163" style="width: 100%; overflow: auto; min-height: 125px;">I know, right?</div>
+		<textarea style="display: none;" id="desctxt_13163">I know, right?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">EyeBall</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=277&amp;ref=1223270537" width="125" height="120" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13164" style="width: 100%; overflow: auto; min-height: 125px;">I seriously don&#039;t know what&#039;s up with dreams. Most of the time they&#039;re randomly enjoyable but other times they kinda say something. Recently, i had a dream with a haphazard plot (that included zombies =D) and then i got to a computer in which i was logged onto Gmail. I saw a friend&#039;s status message as &quot;bewildered&quot; but didn&#039;t pay much attention to it. Later when i woke up, I logged onto gmail and saw that same friend but with a status of &quot;confused.&quot; Then i thought, &quot;Heyy, i knew that.&quot;<br />
+<br />
+Other times i&#039;ve had dreams like one that included a 2 way street with a glowing red-eyed tiki in the middle and an oncoming elephant with a tornado trailing behind and i just calmly walked to the shack that was behind me. I don&#039;t know, but i don&#039;t think that dream had any meaning..</div>
+		<textarea style="display: none;" id="desctxt_13164">I seriously don&#039;t know what&#039;s up with dreams. Most of the time they&#039;re randomly enjoyable but other times they kinda say something. Recently, i had a dream with a haphazard plot (that included zombies =D) and then i got to a computer in which i was logged onto Gmail. I saw a friend&#039;s status message as &quot;bewildered&quot; but didn&#039;t pay much attention to it. Later when i woke up, I logged onto gmail and saw that same friend but with a status of &quot;confused.&quot; Then i thought, &quot;Heyy, i knew that.&quot;
+
+Other times i&#039;ve had dreams like one that included a 2 way street with a glowing red-eyed tiki in the middle and an oncoming elephant with a tornado trailing behind and i just calmly walked to the shack that was behind me. I don&#039;t know, but i don&#039;t think that dream had any meaning..</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">ShadowmanX</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13167" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Raathuus:</em><br />
+I should make a movie out of this...</div>I would watch that movie ^^.<br />
+<br />
+Okay Anonymous, a few things. YOu might watch too much films, you might play too many computergames or you just have a damn creative phantasy. Or the least possible thing, The Conduit actually exists and you came into contact with them while you were dreaming and you actually subconsciously created a second body for yourself with which you were walking around while you thought you were dreaming. And when they shot you this body destroyed itself and that way you woke up. (That would be some awesome &quot;Dreamwalking&quot;)<br />
+<br />
+.....that would also fit perfectly for the movie</div>
+		<textarea style="display: none;" id="desctxt_13167">[quote][i]posted by Raathuus:[/i]
+I should make a movie out of this...[/quote]
+
+I would watch that movie ^^.
+
+Okay Anonymous, a few things. YOu might watch too much films, you might play too many computergames or you just have a damn creative phantasy. Or the least possible thing, The Conduit actually exists and you came into contact with them while you were dreaming and you actually subconsciously created a second body for yourself with which you were walking around while you thought you were dreaming. And when they shot you this body destroyed itself and that way you woke up. (That would be some awesome &quot;Dreamwalking&quot;)
+
+.....that would also fit perfectly for the movie</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by ShadowmanX, 3 years, 9 months ago<br />Posted 3 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">ShadowmanX</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13168" style="width: 100%; overflow: auto; min-height: 125px;">Just now found this:<br />
+<br />
+ <a href="http://en.wikipedia.org/wiki/The_Conduit" target="_blank">http://en.wikipedia.org/wiki/The_Conduit</a></div>
+		<textarea style="display: none;" id="desctxt_13168">Just now found this:
+
+http://en.wikipedia.org/wiki/The_Conduit</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by ShadowmanX, 3 years, 9 months ago<br />Posted 3 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Anonymous Dark</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=354&amp;ref=1203377944" width="100" height="86" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13169" style="width: 100%; overflow: auto; min-height: 125px;">I don&#039;t watch many movies, I don&#039;t play many games, and I don&#039;t think it was supernatural. It was a dream...just a very weird one. And since this is &quot;A Little Weird&quot;, I thought I&#039;d post it. Meh. It sounds very stupid now.</div>
+		<textarea style="display: none;" id="desctxt_13169">I don&#039;t watch many movies, I don&#039;t play many games, and I don&#039;t think it was supernatural. It was a dream...just a very weird one. And since this is &quot;A Little Weird&quot;, I thought I&#039;d post it. Meh. It sounds very stupid now.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Sussch</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=622&amp;ref=1252769070" width="100" height="92" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13170" style="width: 100%; overflow: auto; min-height: 125px;">It was a few months ago that I saw an ordinary dream that ended in a really weird way.<br />
+<br />
+It was the weekend and I thought that I have been sleeping for long enough - should wake up now..<br />
+<br />
+Then it felt as if I was coming back into my body after having an OBE. However, it was somehow harder to get into the body than it usually had been. I then discovered that entering through the body&#039;s mouth was a lot easier. Well, I got in.<br />
+<br />
+It was an ordinary morning and I was enjoying the skill of totally feeling my surroundings with my eyes closed. I looked through all of the posters and pictures that were hanging on the walls.<br />
+<br />
+Then, suddenly it felt as if I was dragged out of my body (through the mouth again). Quite soon I entered another body (it felt like I had teleported behind the wall and was going through it). And again I entered through the mouth. Slowly the previous memories of being inside the other body began to fade and after waking up I thought &quot;What the heck just happened?&quot; and sat on the bed for maybe 10 minutes just thinking about it.<br />
+<br />
+Though the feelings seemed very real, I still think that it was just a weird dream.<br />
+I have only had maybe half an OBE before - and that felt even more real.<br />
+The skill of being able to feel my surroundings is just something I have dreamed of.</div>
+		<textarea style="display: none;" id="desctxt_13170">It was a few months ago that I saw an ordinary dream that ended in a really weird way.
+
+It was the weekend and I thought that I have been sleeping for long enough - should wake up now..
+
+Then it felt as if I was coming back into my body after having an OBE. However, it was somehow harder to get into the body than it usually had been. I then discovered that entering through the body&#039;s mouth was a lot easier. Well, I got in.
+
+It was an ordinary morning and I was enjoying the skill of totally feeling my surroundings with my eyes closed. I looked through all of the posters and pictures that were hanging on the walls.
+
+Then, suddenly it felt as if I was dragged out of my body (through the mouth again). Quite soon I entered another body (it felt like I had teleported behind the wall and was going through it). And again I entered through the mouth. Slowly the previous memories of being inside the other body began to fade and after waking up I thought &quot;What the heck just happened?&quot; and sat on the bed for maybe 10 minutes just thinking about it.
+
+Though the feelings seemed very real, I still think that it was just a weird dream.
+I have only had maybe half an OBE before - and that felt even more real.
+The skill of being able to feel my surroundings is just something I have dreamed of.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">bainzyboy14</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13404" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Anonymous Dark:</em><br />
+So, I don&#039;t usually make threads here, but I had a few pretty odd dreams this past night. I&#039;m not sure what they&#039;re supposed to mean, if anything, but they were pretty weird, and I don&#039;t have dreams/nightmares like this often...<br />
+<br />
+So, here&#039;s how it went down in my dream...<br />
+<br />
+I&#039;m in the parking lot of this strip mall in my town, when I&#039;m ambushed by these people with guns. Some are wearing black gas masks, others ski masks. They come up over and over again in these dreams...they knock me down, somehow, and their &quot;leader&quot; comes up to me. I ask him what&#039;s going on, and he says that because I failed to turn something/someone over to him, he&#039;s taking me. I kind of black out here...<br />
+<br />
+The next part is pretty fuzzy. I wake up in a white room with some other person I don&#039;t know. There&#039;s a computer and chair in there, plus a button...basically, the setup is that there&#039;s a database on the computer of people, some famous, some I don&#039;t even know. You select a person, and they appear in the chair...and you have to keep hitting the person with a blunt object until you &quot;enjoy it&quot;. I&#039;m initially reluctant, and don&#039;t do it, but they say that if I don&#039;t do it, they&#039;ll kill me...so, I&#039;m not entirely sure what happens next, but I end up hitting someone a few times with a metal object of some kind, and I don&#039;t remember anything else.<br />
+<br />
+The next part of the dream is pretty weird. I&#039;m outside of the &quot;beating room&quot;, in my house. I know that I escaped from the people who caught me, and know that they&#039;re after me. For some reason, I go on the internet and start deleting all information about me and where I live, what I look like, etc. At this point, I have a weird sort of epiphany where I realize that the people after me are called &quot;The Conduit&quot; and are abducting other people besides me, as well. I also got the feeling that they had some sort of supernatural/futuristic/alien powers of some kind, though I can&#039;t explain how I knew any of this. The Conduit, apparently, was pretty well established all over the USA, and especially the internet, keeping tabs on a lot of different web sites and message boards, and doing recruiting there, as well. <br />
+<br />
+Anyway, flash-forward again...the next thing I remember is being in a car at night with someone else. This other person is driving. We are both on the run from The Conduit. We&#039;re driving on a fairly busy road in my town, that just happens to be right next to the strip mall where I was first ambushed. We notice that there is another car following us, and are worried it is The Conduit, so we attempt to lose them by making a really abrupt (and somewhat illegal) turn onto the Highway. The car follows us, and I can see two men wearing gas masks are in the car. <br />
+<br />
+So, me and the person in the car are flipping the fuck out. For some reason, the guy I&#039;m with pulls into the parking lot where I was first abducted, by the strip mall. The other car follows. I suggest we just kill the guys following us, but the person driving the car says that won&#039;t work, and I have another weird epiphany where I realize that The Conduit, or at least the more important members of it, are not entirely human...so, we pull over by the strip mall and get out of the car with our hands raised. <br />
+<br />
+Now, in the strip mall, there is a bank with clear glass windows. Inside, I see scientists and businessmen all at desks, some eating and talking. I know they won&#039;t help, though, as they are also with The Conduit. Anyway, two guys in suits step out, looking pretty frazzled and holding these pretty big, futuristic guns. The guy who was in the car with me says, &quot;That won&#039;t be necessary, we&#039;ll go willingly.&quot;, and the men in suits say, &quot;Sorry, the boss doesn&#039;t want to risk live specimens today.&quot;<br />
+<br />
+The men shoot at us with the guns, and little darts fly out. I feel a tiny ping of pain as it pierces my skin and injects something into me, and then I fall unconscious and wake up...the end.<br />
+<br />
+Sorry if that&#039;s hard to understand...it was pretty much a stream-of-consciousness thing, and the dream is so strangely disjointed and blurry that it doesn&#039;t even make much sense to me...however, it was much more vivid at the time than most dreams I have, and the recurring theme of &quot;The Conduit&quot; is weird, considering I woke up and feel asleep at several points during the night, and they were there in every dream. Thoughts on this? Dreams are supposed to be metaphors for problems you&#039;re having in real life, but I don&#039;t know what the hell this is supposed to represent... o.O</div></div>
+		<textarea style="display: none;" id="desctxt_13404">[quote][i]posted by Anonymous Dark:[/i]
+So, I don&#039;t usually make threads here, but I had a few pretty odd dreams this past night. I&#039;m not sure what they&#039;re supposed to mean, if anything, but they were pretty weird, and I don&#039;t have dreams/nightmares like this often...
+
+So, here&#039;s how it went down in my dream...
+
+I&#039;m in the parking lot of this strip mall in my town, when I&#039;m ambushed by these people with guns. Some are wearing black gas masks, others ski masks. They come up over and over again in these dreams...they knock me down, somehow, and their &quot;leader&quot; comes up to me. I ask him what&#039;s going on, and he says that because I failed to turn something/someone over to him, he&#039;s taking me. I kind of black out here...
+
+The next part is pretty fuzzy. I wake up in a white room with some other person I don&#039;t know. There&#039;s a computer and chair in there, plus a button...basically, the setup is that there&#039;s a database on the computer of people, some famous, some I don&#039;t even know. You select a person, and they appear in the chair...and you have to keep hitting the person with a blunt object until you &quot;enjoy it&quot;. I&#039;m initially reluctant, and don&#039;t do it, but they say that if I don&#039;t do it, they&#039;ll kill me...so, I&#039;m not entirely sure what happens next, but I end up hitting someone a few times with a metal object of some kind, and I don&#039;t remember anything else.
+
+The next part of the dream is pretty weird. I&#039;m outside of the &quot;beating room&quot;, in my house. I know that I escaped from the people who caught me, and know that they&#039;re after me. For some reason, I go on the internet and start deleting all information about me and where I live, what I look like, etc. At this point, I have a weird sort of epiphany where I realize that the people after me are called &quot;The Conduit&quot; and are abducting other people besides me, as well. I also got the feeling that they had some sort of supernatural/futuristic/alien powers of some kind, though I can&#039;t explain how I knew any of this. The Conduit, apparently, was pretty well established all over the USA, and especially the internet, keeping tabs on a lot of different web sites and message boards, and doing recruiting there, as well. 
+
+Anyway, flash-forward again...the next thing I remember is being in a car at night with someone else. This other person is driving. We are both on the run from The Conduit. We&#039;re driving on a fairly busy road in my town, that just happens to be right next to the strip mall where I was first ambushed. We notice that there is another car following us, and are worried it is The Conduit, so we attempt to lose them by making a really abrupt (and somewhat illegal) turn onto the Highway. The car follows us, and I can see two men wearing gas masks are in the car. 
+
+So, me and the person in the car are flipping the fuck out. For some reason, the guy I&#039;m with pulls into the parking lot where I was first abducted, by the strip mall. The other car follows. I suggest we just kill the guys following us, but the person driving the car says that won&#039;t work, and I have another weird epiphany where I realize that The Conduit, or at least the more important members of it, are not entirely human...so, we pull over by the strip mall and get out of the car with our hands raised. 
+
+Now, in the strip mall, there is a bank with clear glass windows. Inside, I see scientists and businessmen all at desks, some eating and talking. I know they won&#039;t help, though, as they are also with The Conduit. Anyway, two guys in suits step out, looking pretty frazzled and holding these pretty big, futuristic guns. The guy who was in the car with me says, &quot;That won&#039;t be necessary, we&#039;ll go willingly.&quot;, and the men in suits say, &quot;Sorry, the boss doesn&#039;t want to risk live specimens today.&quot;
+
+The men shoot at us with the guns, and little darts fly out. I feel a tiny ping of pain as it pierces my skin and injects something into me, and then I fall unconscious and wake up...the end.
+
+Sorry if that&#039;s hard to understand...it was pretty much a stream-of-consciousness thing, and the dream is so strangely disjointed and blurry that it doesn&#039;t even make much sense to me...however, it was much more vivid at the time than most dreams I have, and the recurring theme of &quot;The Conduit&quot; is weird, considering I woke up and feel asleep at several points during the night, and they were there in every dream. Thoughts on this? Dreams are supposed to be metaphors for problems you&#039;re having in real life, but I don&#039;t know what the hell this is supposed to represent... o.O[/quote]</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">bainzyboy14</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13405" style="width: 100%; overflow: auto; min-height: 125px;">hi the answer may be very simple you may not have enough excitement in your life so ur subconscious is trying to get more excitement in the form of dreams its either that or you have an over active imagination<br />
+<br />
+</div>
+		<textarea style="display: none;" id="desctxt_13405">hi the answer may be very simple you may not have enough excitement in your life so ur subconscious is trying to get more excitement in the form of dreams its either that or you have an over active imagination</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 8 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=686" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 26 queries. 0.326 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

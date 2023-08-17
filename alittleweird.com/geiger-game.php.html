@@ -1,0 +1,406 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Geiger Game</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA">
+<script type="text/javascript" src="geiger-game/calendar.js">
+/***********************************************
+* Jason's Date Input Calendar- By Jason Moon http://calendar.moonscript.com/dateinput.cfm
+* Script featured on and available at http://www.dynamicdrive.com
+* Keep this notice intact for use.
+***********************************************/
+</script>
+<p class="pagetitle">Geiger Game</p>
+<script type="text/javascript">
+//<![CDATA[
+
+function GetAjaxObject()
+{
+	var xmlHttp;
+	try {
+		xmlHttp = new XMLHttpRequest();
+	} catch (e) {
+		try {
+			xmlHttp = new ActiveXObject("Msxml2.XMLHTTP");
+		} catch (e) {
+			try {
+				xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+			} catch (e) {
+				return null;
+			}
+		}
+	}
+	
+	return xmlHttp;
+}
+
+function AjaxRequest(url, func_when_done)
+{
+	var ajax = GetAjaxObject();
+	if (ajax == null)
+		return false;
+	ajax.onreadystatechange = function() {
+		if (ajax.readyState == 4)
+			func_when_done(ajax.responseText);
+		};
+	ajax.open("GET", url, true);
+	ajax.send(null);
+	return true;
+}
+
+var nextFrame = 0;
+var frameData = [];
+var maxFrames = 60;
+
+function dig2(n)
+{
+	if (n < 10)
+		return '0' + n;
+	return n;
+}
+
+function ProcessData(orig_dat)
+{
+	var dat = orig_dat.split('_');
+	if (dat[0] != '1' || dat.length != 5)
+	{
+		alert('Invalid data stream.  Fatal error with the game... sorry :-(.  Try refreshing the page in a few minutes.');
+		return;
+	}
+
+	var newframe = [dat[1], dat[2], dat[3], dat[4]];
+	var ts = new Date(dat[1] * 1000);
+	var dt = (new Date()).getTime() - ts.getTime();
+	if (dt > 60000)
+		dt = '<' + 'br /><' + 'br /><' + 'strong>Data is expired:<' + '/strong><' + 'br />The geiger counter is probably turned off.';
+	else
+		dt = ' (' + Math.floor(dt / 1000) + ' second lag)';
+	document.getElementById('dat_when').innerHTML = dig2(ts.getHours()) + ':' + dig2(ts.getMinutes()) + ':' + dig2(ts.getSeconds()) + dt;
+	document.getElementById('dat_cpm').innerHTML = dat[2];
+	document.getElementById('dat_avg').innerHTML = dat[3];
+	document.getElementById('dat_max').innerHTML = dat[4];
+
+	if (nextFrame > 0 && newframe[0] == frameData[nextFrame - 1][0])
+	{	
+		setTimeout('ClickFrame();', 10000);
+		return;
+	}
+
+	if (nextFrame < maxFrames - 1)
+	{
+		frameData[nextFrame] = newframe;
+		document.getElementById('d_' + nextFrame).style.height = ((newframe[1] * 5) > 300 ? 300 : (newframe[1] * 5)) + 'px';
+		nextFrame++;
+	}
+	else
+	{
+		frameData[maxFrames - 1] = newframe;
+		for (var i = 0; i < maxFrames - 1; i++)
+		{
+			frameData[i] = frameData[i + 1];
+			document.getElementById('d_' + i).style.height = ((frameData[i][1] * 5) > 300 ? 300 : (frameData[i][1] * 5)) + 'px';
+		}
+	}
+
+	setTimeout('ClickFrame();', 10000);
+}
+
+function ClickFrame()
+{
+	if (!AjaxRequest("geiger-game/ajax.php", ProcessData))
+		alert('This page uses JavaScript and AJAX technologies, which you don\'t seem to have enabled.  Please update your browser to Firefox in order to view this page correctly - http://getfirefox.com - thanks!');
+}
+
+function RollOver(x)
+{
+	var msg = 'No data yet for this column';
+	if (x < frameData.length)
+	{
+		var ts = new Date(frameData[x][0] * 1000);
+		msg = 'Timestamp: ' + dig2(ts.getHours()) + ':' + dig2(ts.getMinutes()) + ':' + dig2(ts.getSeconds()) + '<' + 'br />' +
+			'Clicks per Minte (CPM): ' + frameData[x][1] + '<' + 'br />' +
+			'Average CPM (over past 10 minutes): ' + frameData[x][2] + '<' + 'br />' +
+			'Highest CPM (over past 10 minutes): ' + frameData[x][3];
+	}
+	document.getElementById('rollover').innerHTML = msg;
+	document.getElementById('rollover').style.display = '';
+}
+
+function dw(txt)
+{
+	document.write(txt);
+}
+
+function geiger_img()
+{
+	window.open("geiger-game/counter.html", "geiger_counter_img",
+		"location=0,toolbar=0,menubar=0,width=680,height=455,scrollbars=0,resizable=0,status=0,directories=0");
+}
+
+function do_graph_now()
+{
+	var y = document.getElementById('date_Year_ID');
+	var m = document.getElementById('date_Month_ID');
+	var d = document.getElementById('date_Day_ID');
+	y.value = (new Date()).getFullYear();
+	date_Object.checkYear(y);
+	date_Object.fixYear(y);
+	m.value = (new Date()).getMonth();
+	date_Object.changeMonth(m);
+	d.value = (new Date()).getDate();
+	date_Object.changeDay(d);
+	document.frm.time.value = dig2((new Date()).getHours()) + ':' + dig2((new Date()).getMinutes());
+}
+
+function do_graph()
+{
+	var inp_date = document.frm.date.value.split('-');
+	var inp_time = document.frm.time.value.split(':')
+	var d = new Date();
+	d.setFullYear(inp_date[0]);
+	d.setMonth(inp_date[1] - 1);
+	d.setDate(inp_date[2]);
+	d.setHours(inp_time[0]);
+	d.setMinutes(inp_time[1]);
+	d.setSeconds(0);
+	d.setMilliseconds(0);
+	window.open("geiger-game.php?graph=1&sm=" + document.frm.smooth.value + "&ts=" + Math.floor(d.getTime() / 1000), "geiger_counter_graph",
+		"location=1,toolbar=0,menubar=0,width=680,height=390,scrollbars=0,resizable=1,status=0,directories=0");
+}
+
+var mouse_x = 0;
+var mouse_y = 0;
+
+document.onmousemove = function(e)
+{
+	if (document.all)
+	{
+		mouse_x = event.clientX + document.body.scrollLeft;
+		mouse_y = event.clientY + document.body.scrollTop;
+	}
+	else
+	{
+		mouse_x = e.pageX;
+		mouse_y = e.pageY;
+	}
+	
+	var d = document.getElementById('rollover');
+	d.style.left = mouse_x + 'px';
+	d.style.top = (mouse_y + 20) + 'px';
+};
+
+dw('<' + 'div id="rollover" style="position: absolute; padding: 10px; display: none; z-index: 5; border: 1px solid #33f; background-color: #ccf;"><' + '/div>');
+dw('<' + 'div style="text-align: center;"><' + 'table cellspacing="0" cellpadding="0" border="0" style="border: 1px solid #777; height: 300px; background-color: #eee; margin: 20px auto;">');
+dw('<' + 'tr>');
+for (var x = 0; x < maxFrames; x++)
+{
+	dw('<' + 'td style="margin: 0; padding: 0; font-size: 0pt; vertical-align: bottom;" onmouseover="javascript: RollOver(' + x + ');" onmouseout="javascript: document.getElementById(\'rollover\').style.display=\'none\';">');
+	dw('<' + 'div style="width: 10px; height: 1px; background-color: #00a;" id="d_' + x + '"><' + '/div>');
+	dw('<' + '/td>');
+}
+dw('<' + '/tr>');
+dw('<' + '/table>');
+dw('<' + 'table cellspacing="5" cellpadding="5" border="0" style="margin: 30px auto; text-align: left;">');
+dw('<' + 'tr><' + 'td colspan="2" style="border-bottom: 1px solid #777; font-weight: bold;">Latest Data:<' + '/td><' + '/tr>');
+dw('<' + 'tr><' + 'td>When:<' + '/td><' + 'td id="dat_when">Loading...<' + '/td><' + '/tr>');
+dw('<' + 'tr><' + 'td>Clicks per Minute (CPM):<' + '/td><' + 'td id="dat_cpm">...<' + '/td><' + '/tr>');
+dw('<' + 'tr><' + 'td>Average CPM (over past 10 minutes):<' + '/td><' + 'td id="dat_avg">...<' + '/td><' + '/tr>');
+dw('<' + 'tr><' + 'td>Highest CPM (over past 10 minutes):<' + '/td><' + 'td id="dat_max">...<' + '/td><' + '/tr>');
+dw('<' + '/table><' + '/div>');
+
+//setTimeout('ClickFrame();', 1000);
+
+//]]>
+</script>
+<p style="text-align: center;">
+Weekly practice every Sunday, at 7pm <a href="est.php.html" target="_blank">EST</a>.  Next practice is in:<br />
+<span id="practime">???</span>
+</p>
+<script type="text/javascript">
+//<![CDATA[
+
+var p_sec_left = -3600;
+
+function refresh_practime()
+{
+	p_sec_left--;
+
+	if (p_sec_left < 0)
+	{
+		if (p_sec_left < -60 * 60)
+		{
+			AjaxRequest('geiger-game.php?practime=1', function(txt) {
+					p_sec_left = parseInt(txt);
+					setTimeout('refresh_practime();', 1000);
+				});
+			return;
+		}
+		else
+			document.getElementById('practime').innerHTML = '...It\'s time to practice!';		
+	}
+	else
+	{
+		var days = Math.floor(p_sec_left / (24 * 60 * 60));
+		var hrs = Math.floor((p_sec_left - days * (24 * 60 * 60)) / (60 * 60));
+		var mins = Math.floor((p_sec_left - days * (24 * 60 * 60) - hrs * (60 * 60)) / 60);
+		var secs = p_sec_left - days * (24 * 60 * 60) - hrs * (60 * 60) - mins * 60;
+	
+		document.getElementById('practime').innerHTML =
+			days + ' day' + (days != 1 ? 's' : '') + ', ' +
+			hrs + ' hour' + (hrs != 1 ? 's' : '') + ', ' +
+			mins + ' min' + (mins != 1 ? 's' : '') + ', ' +
+			secs + ' sec' + (secs != 1 ? 's' : '');
+	}
+
+	setTimeout('refresh_practime();', 1000);	
+}
+
+//refresh_practime(); // disabled since it doesn't work
+
+//]]>
+</script>
+<h2>How This Works</h2>
+<p>
+I have a <a href="http://en.wikipedia.org/wiki/Geiger_counter" target="_blank">geiger counter</a> set up in my room, streaming information to this
+server.  One theory (that I personally think has a lot of merit) says that we can affect geiger counters using our mind.  Try different techniques
+to see if you can increase the Clicks per Minute (CPM) of my geiger counter.  On it's own, it should hover between 7-12 CPM, sometimes floating a
+little higher or lower.  If you can get it above 20 CPM, then that's ok.  Above 30 CPM and you're doing something.  Above 40, and you are rocking!
+</p>
+<p>
+To see a picture of my geiger counter, <a href="http://alittleweird.com/geiger_counter.html" target="_blank" onclick="javascript: geiger_img(); return false;">click
+here</a>.
+</p>
+<p>
+For more information on experiments done with my geiger counter, see:
+</p>
+<ul>
+<li><a href="../psipog.net/blog/2006/06/geiger-counter.html">Geiger Counter</a></li>
+<li><a href="../psipog.net/blog/2006/06/reproducible-results.html">Reproducible Results</a></li>
+<li><a href="../psipog.net/blog/2006/07/more-geiger-results.html">More Geiger Results</a></li>
+</ul>
+<p>
+- Sean Connelly, Webmaster
+</p>
+<h2>Accurate Graphs</h2>
+<p>
+Because the information is streaming from the server, it is possible for the graphs to be <em>slightly</em> inaccurate.  However, all data
+is logged.  You can generate a graph using the logged data using the feature below.  Input the end time, in <strong>your local time zone</strong>,
+and it will generate a graph of the previous 10 minutes up until that point.  If you notice the graph is incorrect, it's possible that your
+clock and/or time zone on <em>your</em> computer is incorrect.  So be sure to check that!
+</p>
+<div style="text-align: center;">
+<form name="frm" action="geiger-game.php.html" method="get" onsubmit="javascript: do_graph(); return false;">
+<input type="hidden" name="graph" value="1" />
+<table cellspacing="5" cellpadding="5" border="0" style="margin: 20px auto;">
+<tr>
+	<td>Date:</td>
+	<td><script type="text/javascript">
+	//<![CDATA[
+	DateInput('date', true, 'YYYY-MM-DD');
+	//setTimeout('do_graph_now();', 1000);
+	//]]></script></td>
+</tr>
+<tr>
+	<td>Time:</td>
+	<td><input type="text" name="time" size="10" /></td>
+</tr>
+<tr>
+	<td>Smooth Graph?</td>
+	<td><select name="smooth"><option value="1">Yes</option><option value="0">No</option></select></td>
+</tr>
+<tr>
+	<td colspan="2" style="text-align: center;">
+		<input type="button" value="Set Date/Time to Now" onclick="javascript: do_graph_now();" />
+		<input type="button" value="Generate Graph" onclick="javascript: do_graph();" />
+	</td>
+</tr>
+</table>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 8 queries. 0.184 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

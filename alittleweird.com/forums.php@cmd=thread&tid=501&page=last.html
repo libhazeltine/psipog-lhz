@@ -1,0 +1,495 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Is it just me?</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Is it just me?</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Is it just me?</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Jusseppe</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=247&amp;ref=1212293499" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10561" style="width: 100%; overflow: auto; min-height: 125px;">Ok, I just have to get this out of my system, and I mean all of this in the most respectful way:<br />
+<br />
+Is it just me or does anyone else get the feeling some people in the forums exaggerate quite a bit when they talk about their own psionic abilites?<br />
+I sometimes get the feeling some people use the forum to &quot;role play&quot; or to look for attention rather than to talk about this issues in a more serious way.<br />
+<br />
+Now, don&#039;t get me wrong, I think it&#039;s very important to keep an open mind, specially with things like psionics, and it&#039;s good to have fun, you can&#039;t take everything people say seriously. But I think things like this is what makes most people laugh at the idea of psionics.<br />
+<br />
+I also get the feeling that sometimes, some people talk about a subject like they know about it first hand, like they know all about it when in reality there&#039;s really no way of knowing much about that subject. I think it&#039;s good to share experiences, and it&#039;s good to share theories, but talking in this way might seem arrogant, ignorant and close minded.<br />
+<br />
+I thank people who keep this site real, like Sean and the SheepKing (among many others) and hope people don&#039;t take this post the wrong way.</div>
+		<textarea style="display: none;" id="desctxt_10561">Ok, I just have to get this out of my system, and I mean all of this in the most respectful way:
+
+Is it just me or does anyone else get the feeling some people in the forums exaggerate quite a bit when they talk about their own psionic abilites?
+I sometimes get the feeling some people use the forum to &quot;role play&quot; or to look for attention rather than to talk about this issues in a more serious way.
+
+Now, don&#039;t get me wrong, I think it&#039;s very important to keep an open mind, specially with things like psionics, and it&#039;s good to have fun, you can&#039;t take everything people say seriously. But I think things like this is what makes most people laugh at the idea of psionics.
+
+I also get the feeling that sometimes, some people talk about a subject like they know about it first hand, like they know all about it when in reality there&#039;s really no way of knowing much about that subject. I think it&#039;s good to share experiences, and it&#039;s good to share theories, but talking in this way might seem arrogant, ignorant and close minded.
+
+I thank people who keep this site real, like Sean and the SheepKing (among many others) and hope people don&#039;t take this post the wrong way.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">clay</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=701&amp;ref=1233551632" width="70" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10562" style="width: 100%; overflow: auto; min-height: 125px;">yeah, i get that feeling from some. and it kinda makes me feel like a douche when i cant do nearly as much, lol. but thats okay, kinda puts a goal in mind, set the bar high for me. <br />
+But you are right, it does distract from important issues and sometimes doesnt let them come up. so keep it real friends</div>
+		<textarea style="display: none;" id="desctxt_10562">yeah, i get that feeling from some. and it kinda makes me feel like a douche when i cant do nearly as much, lol. but thats okay, kinda puts a goal in mind, set the bar high for me. 
+But you are right, it does distract from important issues and sometimes doesnt let them come up. so keep it real friends</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10567" style="width: 100%; overflow: auto; min-height: 125px;">I really haven&#039;t heard people claim things too out of the ordinary... but I would agree that people need to try to keep the authenticity of this site. For the sake of continuing study, if nothing else.<br />
+<br />
+Although, really, there&#039;s nothing I can see that can be done here... simply because some people really have the abilities they say they do, and to say otherwise in itself would jeopardize the authenticity of ALW. Look, a lot of this stuff seems far fetched, but to just dismiss it breaks the whole set of Ideals ALW was founded on.<br />
+<br />
+So Jusseppe, since you&#039;re the one who&#039;s bringing this up, why don&#039;t you purpose a plan of action? </div>
+		<textarea style="display: none;" id="desctxt_10567">I really haven&#039;t heard people claim things too out of the ordinary... but I would agree that people need to try to keep the authenticity of this site. For the sake of continuing study, if nothing else.
+
+Although, really, there&#039;s nothing I can see that can be done here... simply because some people really have the abilities they say they do, and to say otherwise in itself would jeopardize the authenticity of ALW. Look, a lot of this stuff seems far fetched, but to just dismiss it breaks the whole set of Ideals ALW was founded on.
+
+So Jusseppe, since you&#039;re the one who&#039;s bringing this up, why don&#039;t you purpose a plan of action?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Amaroq</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=606&amp;ref=1214436810" width="95" height="95" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10568" style="width: 100%; overflow: auto; min-height: 125px;">One thing you HAVE to have when dealing with psionics is a healthy level of skepticism. There are going to be tons of people who either a: pretend to have abilities they don&#039;t; b: think they have abilities that they don&#039;t; or c: just want to trick us.</div>
+		<textarea style="display: none;" id="desctxt_10568">One thing you HAVE to have when dealing with psionics is a healthy level of skepticism. There are going to be tons of people who either a: pretend to have abilities they don&#039;t; b: think they have abilities that they don&#039;t; or c: just want to trick us.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Jusseppe</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=247&amp;ref=1212293499" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10571" style="width: 100%; overflow: auto; min-height: 125px;">Thnx for the replies guys.<br />
+<br />
+&quot;So Jusseppe, since you&#039;re the one who&#039;s bringing this up, why don&#039;t you purpose a plan of action?&quot;<br />
+Like to punish them or something? =p As you said there&#039;s really not much that can be done about it, I just wanted to know what other people thought about it.<br />
+<br />
+I think most of the times you have to give people the benefit of the doubt, but as Amaroq said, its good to keep a healthy level of skepticism.<br />
+People could actually be doing what they claim to do, but if you heard an athlete claim he can make a 4 meters (13 feet) high jump without anything to back it up besides his own word what would you think about that? It might be possible for the human body to do that kind of jump, but it&#039;s also very unlikely someone can do it.<br />
+<br />
+And as I said I&#039;m not looking for a way to stop this, the solution for me is just to keep an open mind and to ignore posts that I believe are BS. I&#039;m just interested in what people think about this.</div>
+		<textarea style="display: none;" id="desctxt_10571">Thnx for the replies guys.
+
+&quot;So Jusseppe, since you&#039;re the one who&#039;s bringing this up, why don&#039;t you purpose a plan of action?&quot;
+Like to punish them or something? =p As you said there&#039;s really not much that can be done about it, I just wanted to know what other people thought about it.
+
+I think most of the times you have to give people the benefit of the doubt, but as Amaroq said, its good to keep a healthy level of skepticism.
+People could actually be doing what they claim to do, but if you heard an athlete claim he can make a 4 meters (13 feet) high jump without anything to back it up besides his own word what would you think about that? It might be possible for the human body to do that kind of jump, but it&#039;s also very unlikely someone can do it.
+
+And as I said I&#039;m not looking for a way to stop this, the solution for me is just to keep an open mind and to ignore posts that I believe are BS. I&#039;m just interested in what people think about this.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Riven</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=656&amp;ref=1217444530" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10574" style="width: 100%; overflow: auto; min-height: 125px;">Yeah, I agree with you. Some thing def do seem unreal, but hey, it just might be possible. that&#039;s why im trying all of this out for myself, to see whats really true.<br />
+<br />
+skepticism rules! =P as long as its not overdone...<br />
+<br />
+nice avie, by the way =P</div>
+		<textarea style="display: none;" id="desctxt_10574">Yeah, I agree with you. Some thing def do seem unreal, but hey, it just might be possible. that&#039;s why im trying all of this out for myself, to see whats really true.
+
+skepticism rules! =P as long as its not overdone...
+
+nice avie, by the way =P</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Riven, 4 years, 4 months ago<br />Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10578" style="width: 100%; overflow: auto; min-height: 125px;">Punishment accomplishes nothing... I&#039;m talking more along the lines of a solution.<br />
+<br />
+also Jusseppe, the last example you made, Science could be used to determine the force in which is required to lift a body that size and whether his leg muscles could pull it off, and truth be told, without any other assistance, that is an impossible jump ^_-.<br />
+<br />
+I&#039;m no skeptic, by a long shot. I&#039;ll admit that I tend to be even a little bit gullible. But I always look for explanations to things. I always have believed that someone is innocent until proven guilty, and that means I am open to believe everything here, I only question explanations, never what someone saw. The only time I ever question someones word is if they flat out say an impossible statement (such as I weigh 150 lbs and I can just 4 meters in the air).<br />
+<br />
+Anyway... I&#039;m done ranting ^_- someone else take the floor...</div>
+		<textarea style="display: none;" id="desctxt_10578">Punishment accomplishes nothing... I&#039;m talking more along the lines of a solution.
+
+also Jusseppe, the last example you made, Science could be used to determine the force in which is required to lift a body that size and whether his leg muscles could pull it off, and truth be told, without any other assistance, that is an impossible jump ^_-.
+
+I&#039;m no skeptic, by a long shot. I&#039;ll admit that I tend to be even a little bit gullible. But I always look for explanations to things. I always have believed that someone is innocent until proven guilty, and that means I am open to believe everything here, I only question explanations, never what someone saw. The only time I ever question someones word is if they flat out say an impossible statement (such as I weigh 150 lbs and I can just 4 meters in the air).
+
+Anyway... I&#039;m done ranting ^_- someone else take the floor...</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Jusseppe</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=247&amp;ref=1212293499" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10583" style="width: 100%; overflow: auto; min-height: 125px;">&quot;Science could be used to determine the force in which is required to lift a body that size and whether his leg muscles could pull it off&quot; Or he could just jump and see if he reaches the mark =p.<br />
+I was being sarcastic with the punshment thing ;). Unless you want to start using virtual spanking or something like that =0.<br />
+<br />
+What I meant with the jump analogy is: Most people will say it&#039;s an impossible jump (and I agree) but if someone told an ancient greek a human can make a 8 meters long jump (which is possible) they would also say its impossible (probably, don&#039;t really know how long the ancient greeks could jump =/). That 4 meters jump might be &quot;possible&quot; for the human body to acomplish.<br />
+If someone says they can move cars with telekinesis I would say he&#039;s lying and that&#039;s impossible. Someone said to me when discussing visible psiballs &quot;Don&#039;t put limits to the human potential&quot; (or something along those lines).<br />
+Where I want to get is: a LOT of things lie withn the realm of what is possible, but how many of those things are actually realistic?<br />
+(I also used an exaggerated height because if I said 3 meters people might actually start arguing if that&#039;s possible or not).<br />
+<br />
+You can say everything is possible, and in theory everything might be. But how much of it is actually prossible in practice?</div>
+		<textarea style="display: none;" id="desctxt_10583">&quot;Science could be used to determine the force in which is required to lift a body that size and whether his leg muscles could pull it off&quot; Or he could just jump and see if he reaches the mark =p.
+I was being sarcastic with the punshment thing ;). Unless you want to start using virtual spanking or something like that =0.
+
+What I meant with the jump analogy is: Most people will say it&#039;s an impossible jump (and I agree) but if someone told an ancient greek a human can make a 8 meters long jump (which is possible) they would also say its impossible (probably, don&#039;t really know how long the ancient greeks could jump =/). That 4 meters jump might be &quot;possible&quot; for the human body to acomplish.
+If someone says they can move cars with telekinesis I would say he&#039;s lying and that&#039;s impossible. Someone said to me when discussing visible psiballs &quot;Don&#039;t put limits to the human potential&quot; (or something along those lines).
+Where I want to get is: a LOT of things lie withn the realm of what is possible, but how many of those things are actually realistic?
+(I also used an exaggerated height because if I said 3 meters people might actually start arguing if that&#039;s possible or not).
+
+You can say everything is possible, and in theory everything might be. But how much of it is actually prossible in practice?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Jusseppe, 4 years, 4 months ago<br />Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">SheepKing</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=211&amp;ref=1222648137" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10591" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Jusseppe:</em>&quot;<br />
+You can say everything is possible, and in theory everything might be. But how much of it is actually possible in practice?&quot;</div>Amen, Brother. Amen.<br />
+<br />
+Practicality is an important concept that many people forget about when they get involved with &quot;psionics&quot;. They dream about theory more than they dream about success.<br />
+<br />
+<br />
+</div>
+		<textarea style="display: none;" id="desctxt_10591">[quote][i]posted by Jusseppe:[/i]&quot;
+You can say everything is possible, and in theory everything might be. But how much of it is actually possible in practice?&quot;[/quote]
+
+Amen, Brother. Amen.
+
+Practicality is an important concept that many people forget about when they get involved with &quot;psionics&quot;. They dream about theory more than they dream about success.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10598" style="width: 100%; overflow: auto; min-height: 125px;">Interesting point...<br />
+<br />
+As people who know me well will tell you though, I don&#039;t deal with Reality, I observe it...<br />
+<br />
+You do, however; make it seem that people are claiming that thy can lift cars with their minds... Really, I haven&#039;t seen anyone claim anything whatsoever that is too drastic (besides of course the drastic over use of the word Psi in order to describe things).<br />
+<br />
+I don&#039;t think anyone here would lie intentionally about their abilities, nor have I seen it happen... The real question I have though is what can we do to rectify the problem purposed? There is no real reason to discuss the problem unless there is a solution planned or being planned, no?<br />
+<br />
+Maybe a general guide to follow? Something... otherwise this thread is just a waste of space.</div>
+		<textarea style="display: none;" id="desctxt_10598">Interesting point...
+
+As people who know me well will tell you though, I don&#039;t deal with Reality, I observe it...
+
+You do, however; make it seem that people are claiming that thy can lift cars with their minds... Really, I haven&#039;t seen anyone claim anything whatsoever that is too drastic (besides of course the drastic over use of the word Psi in order to describe things).
+
+I don&#039;t think anyone here would lie intentionally about their abilities, nor have I seen it happen... The real question I have though is what can we do to rectify the problem purposed? There is no real reason to discuss the problem unless there is a solution planned or being planned, no?
+
+Maybe a general guide to follow? Something... otherwise this thread is just a waste of space.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Jusseppe</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=247&amp;ref=1212293499" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10605" style="width: 100%; overflow: auto; min-height: 125px;">Well as I have said many times now, I don&#039;t really intend to come up with  a solution, I just wanted to say what was on my mind and get to know what people thought about it. <br />
+And as you said, these claims I find so unrealistic might actually be true, so why try to supress them?<br />
+<br />
+I have seen claims that are too drastic for my own understanding of reality, maybie you have seen more drastic stuff than I have and find them more ordinary =). I really wouldn&#039;t like to quote the actual posts since I think that could be offensive for the poster, that&#039;s why I came up with the car lifting thing (besides it helped me with the analogy I was making).<br />
+<br />
+=)</div>
+		<textarea style="display: none;" id="desctxt_10605">Well as I have said many times now, I don&#039;t really intend to come up with  a solution, I just wanted to say what was on my mind and get to know what people thought about it. 
+And as you said, these claims I find so unrealistic might actually be true, so why try to supress them?
+
+I have seen claims that are too drastic for my own understanding of reality, maybie you have seen more drastic stuff than I have and find them more ordinary =). I really wouldn&#039;t like to quote the actual posts since I think that could be offensive for the poster, that&#039;s why I came up with the car lifting thing (besides it helped me with the analogy I was making).
+
+=)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Jusseppe, 4 years, 4 months ago<br />Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10606" style="width: 100%; overflow: auto; min-height: 125px;">Ah... <br />
+<br />
+NO worries then ^_-</div>
+		<textarea style="display: none;" id="desctxt_10606">Ah... 
+
+NO worries then ^_-</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Faceless</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=570&amp;ref=1214279440" width="83" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10626" style="width: 100%; overflow: auto; min-height: 125px;">I do the same as some of you with the whole ignoring of post that sound like BS. Also when something weird happens to you and you want to post about it, maybe people could try to disprove what happened and tell what they did to disprove it and therefore if they do find it was really something unexplainable then they could post it. I recall one of my prior posts of a container of lettuce flying out of my hands sounds unreal but A: there where three witnesses besides me who saw the same thing, B: (i didnt put this in that post) i tried to do the same thing again and again with no where near the effect. so maybe this idea, if used could weed out some of those not-so-paranormal, and not-so-truthful experiences.</div>
+		<textarea style="display: none;" id="desctxt_10626">I do the same as some of you with the whole ignoring of post that sound like BS. Also when something weird happens to you and you want to post about it, maybe people could try to disprove what happened and tell what they did to disprove it and therefore if they do find it was really something unexplainable then they could post it. I recall one of my prior posts of a container of lettuce flying out of my hands sounds unreal but A: there where three witnesses besides me who saw the same thing, B: (i didnt put this in that post) i tried to do the same thing again and again with no where near the effect. so maybe this idea, if used could weed out some of those not-so-paranormal, and not-so-truthful experiences.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Jusseppe</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=247&amp;ref=1212293499" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10649" style="width: 100%; overflow: auto; min-height: 125px;">Oh I don&#039;t doubt your story one bit. However, if you said the bowl flew out of your hands as a result of a &quot;telekinetic hiccup&quot; I would probably be like &quot;Oh c&#039;mon man...&quot;.</div>
+		<textarea style="display: none;" id="desctxt_10649">Oh I don&#039;t doubt your story one bit. However, if you said the bowl flew out of your hands as a result of a &quot;telekinetic hiccup&quot; I would probably be like &quot;Oh c&#039;mon man...&quot;.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10662" style="width: 100%; overflow: auto; min-height: 125px;">THE JOKE IS GETTING OLD &gt;.&lt;</div>
+		<textarea style="display: none;" id="desctxt_10662">THE JOKE IS GETTING OLD &gt;.&lt;</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Sean</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=2&amp;ref=1214247941" width="117" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10674" style="width: 100%; overflow: auto; min-height: 125px;">The problem you mention in your original post is something that really gets on my nerves.<br />
+<br />
+I believe the issue exists because - even though psionics is real - a lot of the stuff we use to measure psionics is pseudo-science.  I don&#039;t mean that in the derogatory sense, I mean it in the literal sense.<br />
+<br />
+Psionics is very hard to study scientifically, according to the scientific method.  How can we measure if you&#039;re correctly making a construct or not?  How can we measure if your dream was really predicting the future?  How can we measure the validity of the emotions you feel from your neighbor?<br />
+<br />
+These things are very hard to measure scientifically.  Even with knowledge that these things are real, that still doesn&#039;t solve the problem of measurement.<br />
+<br />
+So... as a result... some people see this problem of measurement, and try their best to do what they can.  Other people don&#039;t see this problem, and just think psionics is &quot;whatever you want it to be&quot;.  Want to create a shield that opens a non-existant energy portal in your left ear?  Sure!  Go ahead!  No one can deny you anyways.<br />
+<br />
+The solution is to find ways of scientifically measuring psionics.  The geiger counter is a great start, but there&#039;s so much more to go.  Only objective measurement can distinguish between the loonies and the legends.  If we stay in the realm of pseudo-science, then we&#039;ll never be able to distinguish between those rooted in reality, and those in fantasy land.<br />
+<br />
+~Sean<br />
+<br />
+</div>
+		<textarea style="display: none;" id="desctxt_10674">The problem you mention in your original post is something that really gets on my nerves.
+
+I believe the issue exists because - even though psionics is real - a lot of the stuff we use to measure psionics is pseudo-science.  I don&#039;t mean that in the derogatory sense, I mean it in the literal sense.
+
+Psionics is very hard to study scientifically, according to the scientific method.  How can we measure if you&#039;re correctly making a construct or not?  How can we measure if your dream was really predicting the future?  How can we measure the validity of the emotions you feel from your neighbor?
+
+These things are very hard to measure scientifically.  Even with knowledge that these things are real, that still doesn&#039;t solve the problem of measurement.
+
+So... as a result... some people see this problem of measurement, and try their best to do what they can.  Other people don&#039;t see this problem, and just think psionics is &quot;whatever you want it to be&quot;.  Want to create a shield that opens a non-existant energy portal in your left ear?  Sure!  Go ahead!  No one can deny you anyways.
+
+The solution is to find ways of scientifically measuring psionics.  The geiger counter is a great start, but there&#039;s so much more to go.  Only objective measurement can distinguish between the loonies and the legends.  If we stay in the realm of pseudo-science, then we&#039;ll never be able to distinguish between those rooted in reality, and those in fantasy land.
+
+~Sean</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Jusseppe</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=247&amp;ref=1212293499" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10762" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Akio:</em><br />
+THE JOKE IS GETTING OLD &gt;.&lt;</div>I have NO idea what you&#039;re talking about.</div>
+		<textarea style="display: none;" id="desctxt_10762">[quote][i]posted by Akio:[/i]
+THE JOKE IS GETTING OLD &gt;.&lt;[/quote]
+
+I have NO idea what you&#039;re talking about.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=501" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 33 queries. 0.280 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

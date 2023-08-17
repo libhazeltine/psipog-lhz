@@ -1,0 +1,306 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Problem with OBE</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Problem with OBE</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Problem with OBE</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Silly Bear</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=600&amp;ref=1222300696" width="111" height="110" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9321" style="width: 100%; overflow: auto; min-height: 125px;">Hello, (BEWARE: Short introduction ahead! You may skip to the <strong><span style="color: #ff0000;">*</span></strong>)<br />
+<br />
+I&#039;ve always been interested in the paranormal. May it be ghosts, alien encounters, psychic abilities or magic pancakes. I&#039;ve been into psychic abilities for around 5 years now, while having little to no success in most areas I still find it fun to mess around with.<br />
+<br />
+<strong><span style="color: #ff0000;">*</span></strong>One among many things I enjoy doing is trying to get an out of body experience. It&#039;s really convienient to do at nights when you can&#039;t fall asleep. :)<br />
+<br />
+It feels as I&#039;m close to having one too. I get to the point were it&#039;s like my whole body has fallen asleep except for my concious mind. I can feel a weird sensation in the body as I imagine something like a dark hole sucking me in (don&#039;t ask me why, I recall reading about that technique somewhere, and it&#039;s proven to be effective on me). It&#039;s here were I face a problem. After a while I can feel my heartbeat slowing down, and it feels like it&#039;s close to stop beating at all. This throws me off-focus and sometimes causes a small panic to me, resulting in me failing. It&#039;s quite annoying as I feel kinda like I&#039;ve reached the last step before successfully having an OBE.<br />
+<br />
+Is it just a normal thing not to worry about? Or have I just found a new stupid way of holding my breath? Anyhow, it&#039;s a great obstacle for me.</div>
+		<textarea style="display: none;" id="desctxt_9321">Hello, (BEWARE: Short introduction ahead! You may skip to the [red][b]*[/b][/red])
+
+I&#039;ve always been interested in the paranormal. May it be ghosts, alien encounters, psychic abilities or magic pancakes. I&#039;ve been into psychic abilities for around 5 years now, while having little to no success in most areas I still find it fun to mess around with.
+
+[red][b]*[/b][/red]One among many things I enjoy doing is trying to get an out of body experience. It&#039;s really convienient to do at nights when you can&#039;t fall asleep. :)
+
+It feels as I&#039;m close to having one too. I get to the point were it&#039;s like my whole body has fallen asleep except for my concious mind. I can feel a weird sensation in the body as I imagine something like a dark hole sucking me in (don&#039;t ask me why, I recall reading about that technique somewhere, and it&#039;s proven to be effective on me). It&#039;s here were I face a problem. After a while I can feel my heartbeat slowing down, and it feels like it&#039;s close to stop beating at all. This throws me off-focus and sometimes causes a small panic to me, resulting in me failing. It&#039;s quite annoying as I feel kinda like I&#039;ve reached the last step before successfully having an OBE.
+
+Is it just a normal thing not to worry about? Or have I just found a new stupid way of holding my breath? Anyhow, it&#039;s a great obstacle for me.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">daslickest</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=565&amp;ref=1214163153" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9322" style="width: 100%; overflow: auto; min-height: 125px;">Interested in alien counters? Your brave I&#039;m scared of aliens they can stay to themselves lol. I&#039;m working on obeing to! I don&#039;t know what to say for your predicament though.</div>
+		<textarea style="display: none;" id="desctxt_9322">Interested in alien counters? Your brave I&#039;m scared of aliens they can stay to themselves lol. I&#039;m working on obeing to! I don&#039;t know what to say for your predicament though.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Waldo</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=471&amp;ref=1208009607" width="84" height="108" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9330" style="width: 100%; overflow: auto; min-height: 125px;">I heard about something similar to this elsewhere... Someone was worried because they thought that they stopped breathing during OBE attempts. But I think that the conclusion was reached that it probably wasn&#039;t the case, and it was just an effect of becoming disconnected from their body. I don&#039;t have any particular suggestions to things you could try to test it out, except maybe having something to record your heart rate over the time you&#039;re trying to have an OBE, and see whether it is affected at all.<br />
+<br />
+However, I&#039;m not really one to dispense information on OBEs, having never had one myself. Your best bet is probably Sean. =)</div>
+		<textarea style="display: none;" id="desctxt_9330">I heard about something similar to this elsewhere... Someone was worried because they thought that they stopped breathing during OBE attempts. But I think that the conclusion was reached that it probably wasn&#039;t the case, and it was just an effect of becoming disconnected from their body. I don&#039;t have any particular suggestions to things you could try to test it out, except maybe having something to record your heart rate over the time you&#039;re trying to have an OBE, and see whether it is affected at all.
+
+However, I&#039;m not really one to dispense information on OBEs, having never had one myself. Your best bet is probably Sean. =)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Nin10doFan</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=426&amp;ref=1233878811" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9395" style="width: 100%; overflow: auto; min-height: 125px;">Sweet, I just had another OBE today!  It was awesome.</div>
+		<textarea style="display: none;" id="desctxt_9395">Sweet, I just had another OBE today!  It was awesome.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">ryan</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=610&amp;ref=1214463002" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9453" style="width: 100%; overflow: auto; min-height: 125px;">On a side note, I fear aliens.<br />
+<br />
+The heartbeat is probably the most common rhythm to humans in the whole world.  We experience it all our lives, when it acts out of the normal (we get excited, our heart beats faster, etc) we can feel it.  The only reason most people don&#039;t feel it on a daily basis is because we are used to it.  <br />
+<br />
+It is said that people choose music/songs with beats per minute/second that match their favorite heartbeat.<br />
+<br />
+It would be a scary thing to suddenly not feel that familiar heartbeat, if your aura/spirit/psi/whatever was about to leave your body, wouldn&#039;t it?<br />
+I don&#039;t think you should have to worry though, you&#039;re not the only thing living inside your body, there are also millions of cells that wish to stay alive so they work together to keep your body functioning.  I&#039;d be a little weary an OBE that lasted a long time.<br />
+<br />
+People in comma&#039;s can stay alive, right?  If they enter a comma, they usually continue breathing, their heart keeps beating, etc.  However, they lack the ability to defend/care for themselves.  Huge disadvantage to having an OBE.<br />
+<br />
+What if an alien did something to your body while you couldn&#039;t defend yourself!?!?!</div>
+		<textarea style="display: none;" id="desctxt_9453">On a side note, I fear aliens.
+
+The heartbeat is probably the most common rhythm to humans in the whole world.  We experience it all our lives, when it acts out of the normal (we get excited, our heart beats faster, etc) we can feel it.  The only reason most people don&#039;t feel it on a daily basis is because we are used to it.  
+
+It is said that people choose music/songs with beats per minute/second that match their favorite heartbeat.
+
+It would be a scary thing to suddenly not feel that familiar heartbeat, if your aura/spirit/psi/whatever was about to leave your body, wouldn&#039;t it?
+I don&#039;t think you should have to worry though, you&#039;re not the only thing living inside your body, there are also millions of cells that wish to stay alive so they work together to keep your body functioning.  I&#039;d be a little weary an OBE that lasted a long time.
+
+People in comma&#039;s can stay alive, right?  If they enter a comma, they usually continue breathing, their heart keeps beating, etc.  However, they lack the ability to defend/care for themselves.  Huge disadvantage to having an OBE.
+
+What if an alien did something to your body while you couldn&#039;t defend yourself!?!?!</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">daslickest</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=565&amp;ref=1214163153" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9463" style="width: 100%; overflow: auto; min-height: 125px;">I doubt any defense for your self you could manage wouldn&#039;t matter to an alien. That&#039;s pretty interesting about the music/songs with bpm that match their favorite heartbeat. </div>
+		<textarea style="display: none;" id="desctxt_9463">I doubt any defense for your self you could manage wouldn&#039;t matter to an alien. That&#039;s pretty interesting about the music/songs with bpm that match their favorite heartbeat.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">ryan</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=610&amp;ref=1214463002" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9494" style="width: 100%; overflow: auto; min-height: 125px;">Aliens :S</div>
+		<textarea style="display: none;" id="desctxt_9494">Aliens :S</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=424" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 23 queries. 0.330 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

@@ -1,0 +1,615 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Communicating with your Subconscious</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Communicating with your Subconscious</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Communicating with your Subconscious</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Renodin</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=111&amp;ref=1223032143" width="90" height="108" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12027" style="width: 100%; overflow: auto; min-height: 125px;">Hello, everyone. I&#039;m not really... new, to this site. I&#039;ve had an account for a while, I&#039;ve just never gotten around to using it. But I figured, hey, why not? The people here seem nice enough. Sorry if this post is really long, though.<br />
+<br />
+<br />
+I&#039;ve read about psychic abilities for a while, around three or four years. Some of them I have tried, some of them I have not. Some of them actually seem impossible to me. I&#039;ve practiced some of the big things, like creating Psi balls, psychokinesis, telepathy, clairvoyance, etc. I can&#039;t say I&#039;ve had very much progress with those at all, heh heh. While I have no real skill in any of those, I mostly enjoy coming up with theories on how they may be possible and how to test them. <br />
+<br />
+One ability, though, I have had great results in. And, really, I don&#039;t even call it a &quot;psychic ability&quot;. Communicating with my subconscious is what I do best out of all the weird things I&#039;ve practiced, and it&#039;s what I&#039;ve enjoyed the most as well.<br />
+<br />
+When I first began, I did those basic little exercises. Imagining a pool of water, and the ripples being subconscious messages. That type of thing. Sadly, just like my previous experiments with skills such as these, I failed. I couldn&#039;t get anything. I had given up for quite a while.<br />
+<br />
+One day, I decide to try again. But I though that since I was getting no where with these methods, I&#039;d try something of my own creation. This method of mine seemed a bit advanced, but I tried it anyway. I thought up a look for a person. After completing the look for this person, I created a little peaceful tranquil home for him. <br />
+<br />
+Afterward, I got used to how this place looked, along with the man inside it. I got it memorized so that anytime I wanted to, I could imagine it, just like that. Before long, I decided it was time to work out my method. I tried to use this humanoid figure as a link to my subconscious. I would ask it questions and attempt to get responses. <br />
+<br />
+At first, this was a bit difficult. I couldn&#039;t keep focused to long, and I was mostly limited to asking yes or no questions, getting nods or head shakes. But, what kept me going was that most of the answers I got seemed to be true. I was a bit discouraged, thinking it was only my imagination, but I decided I had nothing to lose and everything to gain. I kept practicing.<br />
+<br />
+After a few months, I could focus for a long time. Around thirty minutes! That was great for me. But I was still limited to simple yes or no questions. But then, I thought of something. This humanoid image was able to nod and give head shakes, because it had a head to nod. However, it never talked. I did some thinking, and created a voice for it.<br />
+<br />
+To this day, I&#039;m not sure why or how, but the voice ended up being a female&#039;s. So, I changed the humanoid&#039;s body to that of a female to match it.<br />
+<br />
+I was extremely happy! I had successfully created a link to my subconscious in a way that I could easily relate to as a human! I was able to ask it more complex questions and get vocal answers from this little image in my head! However, it required a bit more focus, which I needed more practice on. And, sometimes my focus would lack, and I would just get back to movements. Ah well.<br />
+<br />
+Eventually, I could keep up this person all the time, anytime I desired. It was a little bit of practice every night before going to sleep well worth it! I was a bit doubtful at first, thinking the entire thing was just my imagination. But when damn near everything I ask it is true, I start to believe I&#039;ve succeeded in completing the link.<br />
+<br />
+Now, about only a month ago, I started getting more involved with my subconscious. I asked it to give me advice throughout the day, without needing to focus and ask a question. This worked quite well. Every now and then, I might just hear that little voice I invented tell me something, usually something of good nature. It seems to really like me to help people out all the time, but whenever I do those random acts of kindness it suggests I do, good things always end up happening. <br />
+<br />
+Finally, about two weeks ago, I went on a trip and fell behind in school. I needed help to get caught up. Bad. So, I decided to ask my subconscious for help. Oddly enough, it really couldn&#039;t help me too much when it came to catching up on my schoolwork. Well, I decided on something else that would help me, and help me study a bit more about my subconscious. I went through the first process and created a second link to my subconscious. I made a new person, a new voice, and it didn&#039;t take even a day for me to be used to this person. I was already trained on that. I tried a new thing to experiment. I gave this new person a different personality. I made them intelligent, pretty booksmart-like, and a bit rude. This second link I used to help get a lot of schoolwork done. I got about five days of schoolwork caught up in about a day and a half. <br />
+<br />
+I&#039;ve had a great success with my subconscious, and, I&#039;m thinking, with it&#039;s help, I can move on to other psychic abilities and try to research them better. All it took was a few minutes before going to sleep every night to practice this, so why wouldn&#039;t it be the same with other skills?<br />
+========================================================<br />
+So, the point of this is to discuss communicating with your subconscious. How you do it, if you do it, if it works for you, benefits from it, etc. etc. <br />
+<br />
+Before anyone calls me crazy or anything, these links I&#039;ve created aren&#039;t any way insane. They don&#039;t try to manipulate me or tell me to &quot;burn things&quot; or to hurt anyone in any way, shape, or form.<br />
+<br />
+Sorry if this is really long!<br />
+<br />
+</div>
+		<textarea style="display: none;" id="desctxt_12027">Hello, everyone. I&#039;m not really... new, to this site. I&#039;ve had an account for a while, I&#039;ve just never gotten around to using it. But I figured, hey, why not? The people here seem nice enough. Sorry if this post is really long, though.
+
+
+I&#039;ve read about psychic abilities for a while, around three or four years. Some of them I have tried, some of them I have not. Some of them actually seem impossible to me. I&#039;ve practiced some of the big things, like creating Psi balls, psychokinesis, telepathy, clairvoyance, etc. I can&#039;t say I&#039;ve had very much progress with those at all, heh heh. While I have no real skill in any of those, I mostly enjoy coming up with theories on how they may be possible and how to test them. 
+
+One ability, though, I have had great results in. And, really, I don&#039;t even call it a &quot;psychic ability&quot;. Communicating with my subconscious is what I do best out of all the weird things I&#039;ve practiced, and it&#039;s what I&#039;ve enjoyed the most as well.
+
+When I first began, I did those basic little exercises. Imagining a pool of water, and the ripples being subconscious messages. That type of thing. Sadly, just like my previous experiments with skills such as these, I failed. I couldn&#039;t get anything. I had given up for quite a while.
+
+One day, I decide to try again. But I though that since I was getting no where with these methods, I&#039;d try something of my own creation. This method of mine seemed a bit advanced, but I tried it anyway. I thought up a look for a person. After completing the look for this person, I created a little peaceful tranquil home for him. 
+
+Afterward, I got used to how this place looked, along with the man inside it. I got it memorized so that anytime I wanted to, I could imagine it, just like that. Before long, I decided it was time to work out my method. I tried to use this humanoid figure as a link to my subconscious. I would ask it questions and attempt to get responses. 
+
+At first, this was a bit difficult. I couldn&#039;t keep focused to long, and I was mostly limited to asking yes or no questions, getting nods or head shakes. But, what kept me going was that most of the answers I got seemed to be true. I was a bit discouraged, thinking it was only my imagination, but I decided I had nothing to lose and everything to gain. I kept practicing.
+
+After a few months, I could focus for a long time. Around thirty minutes! That was great for me. But I was still limited to simple yes or no questions. But then, I thought of something. This humanoid image was able to nod and give head shakes, because it had a head to nod. However, it never talked. I did some thinking, and created a voice for it.
+
+To this day, I&#039;m not sure why or how, but the voice ended up being a female&#039;s. So, I changed the humanoid&#039;s body to that of a female to match it.
+
+I was extremely happy! I had successfully created a link to my subconscious in a way that I could easily relate to as a human! I was able to ask it more complex questions and get vocal answers from this little image in my head! However, it required a bit more focus, which I needed more practice on. And, sometimes my focus would lack, and I would just get back to movements. Ah well.
+
+Eventually, I could keep up this person all the time, anytime I desired. It was a little bit of practice every night before going to sleep well worth it! I was a bit doubtful at first, thinking the entire thing was just my imagination. But when damn near everything I ask it is true, I start to believe I&#039;ve succeeded in completing the link.
+
+Now, about only a month ago, I started getting more involved with my subconscious. I asked it to give me advice throughout the day, without needing to focus and ask a question. This worked quite well. Every now and then, I might just hear that little voice I invented tell me something, usually something of good nature. It seems to really like me to help people out all the time, but whenever I do those random acts of kindness it suggests I do, good things always end up happening. 
+
+Finally, about two weeks ago, I went on a trip and fell behind in school. I needed help to get caught up. Bad. So, I decided to ask my subconscious for help. Oddly enough, it really couldn&#039;t help me too much when it came to catching up on my schoolwork. Well, I decided on something else that would help me, and help me study a bit more about my subconscious. I went through the first process and created a second link to my subconscious. I made a new person, a new voice, and it didn&#039;t take even a day for me to be used to this person. I was already trained on that. I tried a new thing to experiment. I gave this new person a different personality. I made them intelligent, pretty booksmart-like, and a bit rude. This second link I used to help get a lot of schoolwork done. I got about five days of schoolwork caught up in about a day and a half. 
+
+I&#039;ve had a great success with my subconscious, and, I&#039;m thinking, with it&#039;s help, I can move on to other psychic abilities and try to research them better. All it took was a few minutes before going to sleep every night to practice this, so why wouldn&#039;t it be the same with other skills?
+========================================================
+So, the point of this is to discuss communicating with your subconscious. How you do it, if you do it, if it works for you, benefits from it, etc. etc. 
+
+Before anyone calls me crazy or anything, these links I&#039;ve created aren&#039;t any way insane. They don&#039;t try to manipulate me or tell me to &quot;burn things&quot; or to hurt anyone in any way, shape, or form.
+
+Sorry if this is really long!</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Psikillion</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=593&amp;ref=1213954510" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12028" style="width: 100%; overflow: auto; min-height: 125px;">Long, but interesting...<br />
+<br />
+You go into great detail about communicating with your subconscious, and some of these techniques might even be useful for me to expand on. All of my communication with my subconscious tends to be disjointed image/thoughts that I somehow pull together to get an answer.<br />
+<br />
+I think I will try this!</div>
+		<textarea style="display: none;" id="desctxt_12028">Long, but interesting...
+
+You go into great detail about communicating with your subconscious, and some of these techniques might even be useful for me to expand on. All of my communication with my subconscious tends to be disjointed image/thoughts that I somehow pull together to get an answer.
+
+I think I will try this!</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Corpse</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=553&amp;ref=1239824741" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12029" style="width: 100%; overflow: auto; min-height: 125px;">Thank you so much for sharing this! It&#039;s a very creative way of developing &quot;psychic skills&quot;. I think I might try this some time.</div>
+		<textarea style="display: none;" id="desctxt_12029">Thank you so much for sharing this! It&#039;s a very creative way of developing &quot;psychic skills&quot;. I think I might try this some time.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Raathuus</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=764&amp;ref=1259211929" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12041" style="width: 100%; overflow: auto; min-height: 125px;">I&#039;ve been talking to my subconscious for about two months now.  To me, it just feels like some ominous thing that talks like I do in my head, but in a somewhat deeper voice and more sure of what their saying.  I never quite gave a sort of a name to it, but just refer to it as &quot;subconscious.&quot;  Normally, It just tells me stuff I forgot (Subconscious: Brush your teeth.  Me: What?  Oh yeah.  Thanks.), or sometimes it tells me stuff that will happen (Subconscious: Somebody will post something on the ALW forums that you will want to reply to by the time you get home.)  So it&#039;s pretty helpful to me.<br />
+</div>
+		<textarea style="display: none;" id="desctxt_12041">I&#039;ve been talking to my subconscious for about two months now.  To me, it just feels like some ominous thing that talks like I do in my head, but in a somewhat deeper voice and more sure of what their saying.  I never quite gave a sort of a name to it, but just refer to it as &quot;subconscious.&quot;  Normally, It just tells me stuff I forgot (Subconscious: Brush your teeth.  Me: What?  Oh yeah.  Thanks.), or sometimes it tells me stuff that will happen (Subconscious: Somebody will post something on the ALW forums that you will want to reply to by the time you get home.)  So it&#039;s pretty helpful to me.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">aeroplane</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12046" style="width: 100%; overflow: auto; min-height: 125px;">Hey, thanks for sharing.<br />
+But in what ways did this &quot;new&quot; aspect of your subconscious help you? Did he/she/it just say motivational things to you while you were studying... or?<br />
+<br />
+and you said whenever you do nice things, your subconscious makes good things happen to you. can you elaborate on this further? what kind of good things? and how can you be sure that it&#039;s cause and effect? <br />
+thanks again!</div>
+		<textarea style="display: none;" id="desctxt_12046">Hey, thanks for sharing.
+But in what ways did this &quot;new&quot; aspect of your subconscious help you? Did he/she/it just say motivational things to you while you were studying... or?
+
+and you said whenever you do nice things, your subconscious makes good things happen to you. can you elaborate on this further? what kind of good things? and how can you be sure that it&#039;s cause and effect? 
+thanks again!</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Renodin</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=111&amp;ref=1223032143" width="90" height="108" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12047" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by aeroplane:</em><br />
+Hey, thanks for sharing.<br />
+But in what ways did this &quot;new&quot; aspect of your subconscious help you? Did he/she/it just say motivational things to you while you were studying... or?<br />
+<br />
+and you said whenever you do nice things, your subconscious makes good things happen to you. can you elaborate on this further? what kind of good things? and how can you be sure that it&#039;s cause and effect? <br />
+thanks again!</div>When helping me with all of my late schoolwork, it did a few things. It helped me rework my schedule so that I would have more time to get it done. It also helped me out a lot in math work, as if it were a form of tutor. It would help me with some problems that I just couldn&#039;t do, by guiding me through the process(I&#039;m terrible at mathematics of all kinds!). It also acted as a little bit of common sense, such as, put away all distractions, etc. And, very oddly, it said... kinda the opposite of motivational things. It more over was a bit mean to me, throwing in some insults when I&#039;d start to get lazy. But, that was how I created that link.<br />
+<br />
+Whenever I&#039;d take the suggestions of my subconscious, I&#039;m not sure if it was exactly my subconscious doing things, or if it were coincidence, or karma, though I don&#039;t believe in that. But different things might happen. A few times, I have found money on the ground. Things... how should I say... are just a lot easier that certain day. I&#039;ll get through that day without nearly as much trouble or stress of anything.<br />
+<br />
+<br />
+</div>
+		<textarea style="display: none;" id="desctxt_12047">[quote][i]posted by aeroplane:[/i]
+Hey, thanks for sharing.
+But in what ways did this &quot;new&quot; aspect of your subconscious help you? Did he/she/it just say motivational things to you while you were studying... or?
+
+and you said whenever you do nice things, your subconscious makes good things happen to you. can you elaborate on this further? what kind of good things? and how can you be sure that it&#039;s cause and effect? 
+thanks again![/quote]
+
+When helping me with all of my late schoolwork, it did a few things. It helped me rework my schedule so that I would have more time to get it done. It also helped me out a lot in math work, as if it were a form of tutor. It would help me with some problems that I just couldn&#039;t do, by guiding me through the process(I&#039;m terrible at mathematics of all kinds!). It also acted as a little bit of common sense, such as, put away all distractions, etc. And, very oddly, it said... kinda the opposite of motivational things. It more over was a bit mean to me, throwing in some insults when I&#039;d start to get lazy. But, that was how I created that link.
+
+Whenever I&#039;d take the suggestions of my subconscious, I&#039;m not sure if it was exactly my subconscious doing things, or if it were coincidence, or karma, though I don&#039;t believe in that. But different things might happen. A few times, I have found money on the ground. Things... how should I say... are just a lot easier that certain day. I&#039;ll get through that day without nearly as much trouble or stress of anything.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Eldibs</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=77&amp;ref=1223740672" width="19" height="36" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12049" style="width: 100%; overflow: auto; min-height: 125px;">Your idea for communicating with your subconscious is very creative, and sounds like it could work pretty well. Of course, as with all such things, it varies from person to person, but that&#039;s neither here nor there. It&#039;s at least worth a shot for those who are just starting out.<br />
+<br />
+Psiballs aren&#039;t really advanced or a big thing. It does take a little time to learn them, but compared to say, psychokinesis (taking an entire year to learn the psi-wheel is not unheard of), it&#039;s cake.<br />
+<br />
+As for me, I just treat my subconscious like what it is: a part of my mind that I can&#039;t control, and part of who I am. Sometimes it chimes in, sometimes it stays silent, and sometimes I ignore it accidentally.<br />
+<br />
+Every story I&#039;ve read about people communicating with their subconscious, it seems like it likes them to do kind things for people. Even someone as spiteful as myself (I pretended to like a girl at work to upset her guy friends) hears &quot;No, put that change in the charity jar, they need it more than you.&quot; from time to time. Maybe it&#039;s part of human nature to want to be kind?</div>
+		<textarea style="display: none;" id="desctxt_12049">Your idea for communicating with your subconscious is very creative, and sounds like it could work pretty well. Of course, as with all such things, it varies from person to person, but that&#039;s neither here nor there. It&#039;s at least worth a shot for those who are just starting out.
+
+Psiballs aren&#039;t really advanced or a big thing. It does take a little time to learn them, but compared to say, psychokinesis (taking an entire year to learn the psi-wheel is not unheard of), it&#039;s cake.
+
+As for me, I just treat my subconscious like what it is: a part of my mind that I can&#039;t control, and part of who I am. Sometimes it chimes in, sometimes it stays silent, and sometimes I ignore it accidentally.
+
+Every story I&#039;ve read about people communicating with their subconscious, it seems like it likes them to do kind things for people. Even someone as spiteful as myself (I pretended to like a girl at work to upset her guy friends) hears &quot;No, put that change in the charity jar, they need it more than you.&quot; from time to time. Maybe it&#039;s part of human nature to want to be kind?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">ShadowmanX</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12051" style="width: 100%; overflow: auto; min-height: 125px;">Very interesting, i immediatly thought of 4 Alter Egos who I could visualize as my subcon ^^( if you wonder how I can think of 4 Alter Egos, I&#039;m playing Dungeons &amp; Dragons, adn no I don&#039;t identify mysel too much with my characters, but they just fit perfectly for the job).<br />
+<br />
+But what hit me like a hammer was this:<br />
+<br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Renodin:</em><br />
+I&#039;ve had a great success with my subconscious, and, I&#039;m thinking, with it&#039;s help, I can move on to other psychic abilities and try to research them better. All it took was <strong>a few minutes before going to sleep every night to practice</strong> this, so why wouldn&#039;t it be the same with other skills?</div>Why didn&#039;t I think of this. During sleep we &quot;save&quot; everything that we did during the day and the last thing we did - or learned - has the greatest effect on this &quot;saving&quot;.<br />
+Has anyone tried to practice and exactly after that going to bed?</div>
+		<textarea style="display: none;" id="desctxt_12051">Very interesting, i immediatly thought of 4 Alter Egos who I could visualize as my subcon ^^( if you wonder how I can think of 4 Alter Egos, I&#039;m playing Dungeons &amp; Dragons, adn no I don&#039;t identify mysel too much with my characters, but they just fit perfectly for the job).
+
+But what hit me like a hammer was this:
+
+[quote][i]posted by Renodin:[/i]
+I&#039;ve had a great success with my subconscious, and, I&#039;m thinking, with it&#039;s help, I can move on to other psychic abilities and try to research them better. All it took was [b]a few minutes before going to sleep every night to practice[/b] this, so why wouldn&#039;t it be the same with other skills?
+[/quote]
+
+Why didn&#039;t I think of this. During sleep we &quot;save&quot; everything that we did during the day and the last thing we did - or learned - has the greatest effect on this &quot;saving&quot;.
+Has anyone tried to practice and exactly after that going to bed?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Corpse</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=553&amp;ref=1239824741" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12052" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by ShadowmanX:</em><br />
+Very interesting, i immediatly thought of 4 Alter Egos who I could visualize as my subcon ^^( if you wonder how I can think of 4 Alter Egos, I&#039;m playing Dungeons &amp; Dragons, adn no I don&#039;t identify mysel too much with my characters, but they just fit perfectly for the job).<br />
+<br />
+But what hit me like a hammer was this:<br />
+<br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Renodin:</em><br />
+I&#039;ve had a great success with my subconscious, and, I&#039;m thinking, with it&#039;s help, I can move on to other psychic abilities and try to research them better. All it took was <strong>a few minutes before going to sleep every night to practice</strong> this, so why wouldn&#039;t it be the same with other skills?</div>Why didn&#039;t I think of this. During sleep we &quot;save&quot; everything that we did during the day and the last thing we did - or learned - has the greatest effect on this &quot;saving&quot;.<br />
+Has anyone tried to practice and exactly after that going to bed?</div>Wow, I think you just might be on to something. I always practice 2-4 hours after waking up so I can&#039;t say I have tried this. Although one time while I was in bed I was day dreaming about flaring psi balls and ended up having a dream about making them and sending them.</div>
+		<textarea style="display: none;" id="desctxt_12052">[quote][i]posted by ShadowmanX:[/i]
+Very interesting, i immediatly thought of 4 Alter Egos who I could visualize as my subcon ^^( if you wonder how I can think of 4 Alter Egos, I&#039;m playing Dungeons &amp; Dragons, adn no I don&#039;t identify mysel too much with my characters, but they just fit perfectly for the job).
+
+But what hit me like a hammer was this:
+
+[quote][i]posted by Renodin:[/i]
+I&#039;ve had a great success with my subconscious, and, I&#039;m thinking, with it&#039;s help, I can move on to other psychic abilities and try to research them better. All it took was [b]a few minutes before going to sleep every night to practice[/b] this, so why wouldn&#039;t it be the same with other skills?
+[/quote]
+
+Why didn&#039;t I think of this. During sleep we &quot;save&quot; everything that we did during the day and the last thing we did - or learned - has the greatest effect on this &quot;saving&quot;.
+Has anyone tried to practice and exactly after that going to bed?[/quote]
+
+Wow, I think you just might be on to something. I always practice 2-4 hours after waking up so I can&#039;t say I have tried this. Although one time while I was in bed I was day dreaming about flaring psi balls and ended up having a dream about making them and sending them.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">jarmohak</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12053" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by ShadowmanX:</em><br />
+Why didn&#039;t I think of this. During sleep we &quot;save&quot; everything that we did during the day and the last thing we did - or learned - has the greatest effect on this &quot;saving&quot;.<br />
+Has anyone tried to practice and exactly after that going to bed?</div>Done that for years (hm, about 4 now), and it works like a charm. Nowdays I&#039;m practicing little bit different things, but still I do those right before going to sleep OR 2-3 hours before bedtime. Best way is what &quot;feels&quot; best for you, try both of those I mentioned, and choose the one suits you best. 2-3 hours needs something that I call &quot;total forgetting about it&quot;, meaning: What ever you&#039;re trying to learn, practice it and then forget it totally (isn&#039;t most easy thing to do in the beginning, but gets a lot easier after awhile).<br />
+<br />
+I had nice chats with subc. before, but then I somehow &quot;forgot&quot; how to do it, but maybe he/she is still acting there background.. Maybe I&#039;ll try technique mentioned above, thanks for sharing it. One thing that might help all those with &quot;disorientation&quot; problems (was it with PSI, or anything else), try meditation if never tried it before. If one wants to focus on to a one basic thing (like practicing), I also suggest trying it in a state of trance (not that Armin Van Buurens&#039; radio show :P ).<br />
+<br />
+</div>
+		<textarea style="display: none;" id="desctxt_12053">[quote][i]posted by ShadowmanX:[/i]
+Why didn&#039;t I think of this. During sleep we &quot;save&quot; everything that we did during the day and the last thing we did - or learned - has the greatest effect on this &quot;saving&quot;.
+Has anyone tried to practice and exactly after that going to bed?[/quote]
+Done that for years (hm, about 4 now), and it works like a charm. Nowdays I&#039;m practicing little bit different things, but still I do those right before going to sleep OR 2-3 hours before bedtime. Best way is what &quot;feels&quot; best for you, try both of those I mentioned, and choose the one suits you best. 2-3 hours needs something that I call &quot;total forgetting about it&quot;, meaning: What ever you&#039;re trying to learn, practice it and then forget it totally (isn&#039;t most easy thing to do in the beginning, but gets a lot easier after awhile).
+
+I had nice chats with subc. before, but then I somehow &quot;forgot&quot; how to do it, but maybe he/she is still acting there background.. Maybe I&#039;ll try technique mentioned above, thanks for sharing it. One thing that might help all those with &quot;disorientation&quot; problems (was it with PSI, or anything else), try meditation if never tried it before. If one wants to focus on to a one basic thing (like practicing), I also suggest trying it in a state of trance (not that Armin Van Buurens&#039; radio show :P ).</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Psikillion</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=593&amp;ref=1213954510" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12073" style="width: 100%; overflow: auto; min-height: 125px;">I just thought of something I never realized before, the subconscious could possibly be used when you are on your own and need to survive. Here is what I think the subconscious contributes to this situation.<br />
+<br />
+1. Company - If you imagine the subconscious as a person it would be able to keep you from becoming lonely. However, I would like to note that the subconscious cannot replace real human interactions (as far as I know of).<br />
+<br />
+2. Extra pair of eyes - Your subconscious is capable of picking up things that you missed before, ex. a fallen tree that can be used as shelter.<br />
+<br />
+3. Extra brain power - Your subconscious can help you think out your situations as long as you are calm, hence why all survival books tell you to stay calm.<br />
+<br />
+4. Regulating your body - Your subconscious notifies you which areas of the body are damaged, so that way you can fix them. Also it regulates your bodily temperature while you are experiencing different extremes.<br />
+<br />
+5. Programmed commands - Your subconscious is already running all of your bodily functions, why not add some psionic ones? Some things that come to mind are using TK to hunt, telepathy to broadcast an SOS type of signal, or sense any hostile animals/people around. The key is to be inventive, which in a survival scenario you need to put 100% of your strength into it (as long as it is efficient).<br />
+<br />
+6. Motivator - Your subconscious is a friend, an ally, and a part of you, so it knows that you are capable of surmounting any obstacle (it may take a while but you could). Since it knows this it is constantly cheering for you, and because of this you would be able to continue on without the need to give up.<br />
+<br />
+<br />
+There is bound to be more, but I have a massive headache.</div>
+		<textarea style="display: none;" id="desctxt_12073">I just thought of something I never realized before, the subconscious could possibly be used when you are on your own and need to survive. Here is what I think the subconscious contributes to this situation.
+
+1. Company - If you imagine the subconscious as a person it would be able to keep you from becoming lonely. However, I would like to note that the subconscious cannot replace real human interactions (as far as I know of).
+
+2. Extra pair of eyes - Your subconscious is capable of picking up things that you missed before, ex. a fallen tree that can be used as shelter.
+
+3. Extra brain power - Your subconscious can help you think out your situations as long as you are calm, hence why all survival books tell you to stay calm.
+
+4. Regulating your body - Your subconscious notifies you which areas of the body are damaged, so that way you can fix them. Also it regulates your bodily temperature while you are experiencing different extremes.
+
+5. Programmed commands - Your subconscious is already running all of your bodily functions, why not add some psionic ones? Some things that come to mind are using TK to hunt, telepathy to broadcast an SOS type of signal, or sense any hostile animals/people around. The key is to be inventive, which in a survival scenario you need to put 100% of your strength into it (as long as it is efficient).
+
+6. Motivator - Your subconscious is a friend, an ally, and a part of you, so it knows that you are capable of surmounting any obstacle (it may take a while but you could). Since it knows this it is constantly cheering for you, and because of this you would be able to continue on without the need to give up.
+
+
+There is bound to be more, but I have a massive headache.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">ShadowmanX</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12074" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Psikillion:</em><br />
+..., or sense any hostile animals/people around...</div>I&#039;d rather say manipulate them telepathically ^^</div>
+		<textarea style="display: none;" id="desctxt_12074">[quote][i]posted by Psikillion:[/i]
+..., or sense any hostile animals/people around...[/quote]
+
+I&#039;d rather say manipulate them telepathically ^^</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Corpse</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=553&amp;ref=1239824741" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12078" style="width: 100%; overflow: auto; min-height: 125px;">Just a quick question for Renodin: What did you do to practice? Just by simple asking simple yes/no questions and waiting to see if the image in your head would shake it&#039;s head or nod it, then eventually move on to tougher questions?</div>
+		<textarea style="display: none;" id="desctxt_12078">Just a quick question for Renodin: What did you do to practice? Just by simple asking simple yes/no questions and waiting to see if the image in your head would shake it&#039;s head or nod it, then eventually move on to tougher questions?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Renodin</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=111&amp;ref=1223032143" width="90" height="108" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12089" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Corpse:</em><br />
+Just a quick question for Renodin: What did you do to practice? Just by simple asking simple yes/no questions and waiting to see if the image in your head would shake it&#039;s head or nod it, then eventually move on to tougher questions?</div>That&#039;s what I did. When I first had the person all figured out by their looks and what not, I asked them questions. I would ask something, like, should I bring this book to school today. It would shake it&#039;s head, or nod. These are the reactions it gave me, probably because we humans have those movements recorded in our minds as meaning &quot;yes&quot; and &quot;no&quot;. <br />
+<br />
+It gave me those specific ones, probably because all I gave the link was a body to work with. I didn&#039;t give that body a voice. Whenever I figured out a voice sound for it, I just mentally told that subconscious link that the voice was it&#039;s voice. It would then use the voice and transfer it into language, as those words are what humans have recorded into their minds. It must not have just created a voice before because... I don&#039;t know for sure why. Probably because it just did not have one and I didn&#039;t include that when making this link.<br />
+<br />
+</div>
+		<textarea style="display: none;" id="desctxt_12089">[quote][i]posted by Corpse:[/i]
+Just a quick question for Renodin: What did you do to practice? Just by simple asking simple yes/no questions and waiting to see if the image in your head would shake it&#039;s head or nod it, then eventually move on to tougher questions?[/quote]
+
+That&#039;s what I did. When I first had the person all figured out by their looks and what not, I asked them questions. I would ask something, like, should I bring this book to school today. It would shake it&#039;s head, or nod. These are the reactions it gave me, probably because we humans have those movements recorded in our minds as meaning &quot;yes&quot; and &quot;no&quot;. 
+
+It gave me those specific ones, probably because all I gave the link was a body to work with. I didn&#039;t give that body a voice. Whenever I figured out a voice sound for it, I just mentally told that subconscious link that the voice was it&#039;s voice. It would then use the voice and transfer it into language, as those words are what humans have recorded into their minds. It must not have just created a voice before because... I don&#039;t know for sure why. Probably because it just did not have one and I didn&#039;t include that when making this link.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Psikillion</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=593&amp;ref=1213954510" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12126" style="width: 100%; overflow: auto; min-height: 125px;">I am not sure whether I am just fantasizing or my subconscious prefers this image, but whenever I try making an image of my subconscious and the place it is in it always ends up with this secluded waterfall with a red headed girl sitting by it. Because of this I am a bit skeptical of whether I am doing this right or whether it is just my conscious mind wandering off...<br />
+<br />
+Also there seems to be something else there, but it is not a human or an animal and for some reason I can not see it yet.</div>
+		<textarea style="display: none;" id="desctxt_12126">I am not sure whether I am just fantasizing or my subconscious prefers this image, but whenever I try making an image of my subconscious and the place it is in it always ends up with this secluded waterfall with a red headed girl sitting by it. Because of this I am a bit skeptical of whether I am doing this right or whether it is just my conscious mind wandering off...
+
+Also there seems to be something else there, but it is not a human or an animal and for some reason I can not see it yet.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Renodin</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=111&amp;ref=1223032143" width="90" height="108" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12131" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Psikillion:</em><br />
+I am not sure whether I am just fantasizing or my subconscious prefers this image, but whenever I try making an image of my subconscious and the place it is in it always ends up with this secluded waterfall with a red headed girl sitting by it. Because of this I am a bit skeptical of whether I am doing this right or whether it is just my conscious mind wandering off...<br />
+<br />
+Also there seems to be something else there, but it is not a human or an animal and for some reason I can not see it yet.</div>I at first thought it just be my imagination as well. I was very doubtful, but I eventually didn&#039;t have a reason to distrust it after tests.<br />
+<br />
+Don&#039;t know about the &quot;something else&quot; thing.<br />
+<br />
+</div>
+		<textarea style="display: none;" id="desctxt_12131">[quote][i]posted by Psikillion:[/i]
+I am not sure whether I am just fantasizing or my subconscious prefers this image, but whenever I try making an image of my subconscious and the place it is in it always ends up with this secluded waterfall with a red headed girl sitting by it. Because of this I am a bit skeptical of whether I am doing this right or whether it is just my conscious mind wandering off...
+
+Also there seems to be something else there, but it is not a human or an animal and for some reason I can not see it yet.[/quote]
+
+I at first thought it just be my imagination as well. I was very doubtful, but I eventually didn&#039;t have a reason to distrust it after tests.
+
+Don&#039;t know about the &quot;something else&quot; thing.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Corpse</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=553&amp;ref=1239824741" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12134" style="width: 100%; overflow: auto; min-height: 125px;">The &quot;something else&quot; thing sounds mysterious. Maybe it means there is a certain part of you that you haven&#039;t discovered yet?</div>
+		<textarea style="display: none;" id="desctxt_12134">The &quot;something else&quot; thing sounds mysterious. Maybe it means there is a certain part of you that you haven&#039;t discovered yet?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">jack</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=759&amp;ref=1220326318" width="125" height="105" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12140" style="width: 100%; overflow: auto; min-height: 125px;">wow, this is a new method on communication with sub-con, and I&#039;m glad I read this. It sounds very interesting, and practical, and something that people can relate to. I&#039;m pretty sure we all heard voices in our mind, but most of the time I can only say those are my voices of thinking, but whenever I have nothing to do for a long time and gets really bored, my mind starts talking to me about what to do, hehe. Instinctively, perhaps my sub-con is even controlling me a little, to do the good things of course. Like when I donated over a dollar ^_^ for pennies for patients, never really expected those stuff from myself, I know its not much but that&#039;s not like me. When I play games I sometimes give away stuff and money, in good amounts, to friends, don&#039;t know why ^_^<br />
+I thought my sub-con was controlling me after wards, but I didn&#039;t really care much b/c I&#039;m not doing anything bad to other people. But the actions I did are done instinctively, without thought, sometimes perhaps some thought but that&#039;s only to change my decisions. Like when I try to lack off it will cuss at me(jking) but it will make me do stuff, i think, not sure though maybe that&#039;s just myself lol.</div>
+		<textarea style="display: none;" id="desctxt_12140">wow, this is a new method on communication with sub-con, and I&#039;m glad I read this. It sounds very interesting, and practical, and something that people can relate to. I&#039;m pretty sure we all heard voices in our mind, but most of the time I can only say those are my voices of thinking, but whenever I have nothing to do for a long time and gets really bored, my mind starts talking to me about what to do, hehe. Instinctively, perhaps my sub-con is even controlling me a little, to do the good things of course. Like when I donated over a dollar ^_^ for pennies for patients, never really expected those stuff from myself, I know its not much but that&#039;s not like me. When I play games I sometimes give away stuff and money, in good amounts, to friends, don&#039;t know why ^_^
+I thought my sub-con was controlling me after wards, but I didn&#039;t really care much b/c I&#039;m not doing anything bad to other people. But the actions I did are done instinctively, without thought, sometimes perhaps some thought but that&#039;s only to change my decisions. Like when I try to lack off it will cuss at me(jking) but it will make me do stuff, i think, not sure though maybe that&#039;s just myself lol.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Psikillion</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=593&amp;ref=1213954510" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12149" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Renodin:</em><br />
+I at first thought it just be my imagination as well. I was very doubtful, but I eventually didn&#039;t have a reason to distrust it after tests.</div>What tests? And how do these tests work?<br />
+</div>
+		<textarea style="display: none;" id="desctxt_12149">[quote][i]posted by Renodin:[/i]
+I at first thought it just be my imagination as well. I was very doubtful, but I eventually didn&#039;t have a reason to distrust it after tests.[/quote]
+
+What tests? And how do these tests work?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Renodin</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=111&amp;ref=1223032143" width="90" height="108" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12163" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Psikillion:</em><br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Renodin:</em><br />
+I at first thought it just be my imagination as well. I was very doubtful, but I eventually didn&#039;t have a reason to distrust it after tests.</div>What tests? And how do these tests work?</div>I think I already mentioned those before, though I may not remember correctly. It was just simple things, really. Things like, where did I leave my wallet? I couldn&#039;t remember where it was. I got the message back of something similar to &quot;On the kitchen counter near the sink.&quot; And there it was. Obviously, I didn&#039;t know that consciously, so I couldn&#039;t just imagine an answer. Though, deep in my mind, I probably still had the memory of where I put it, and my subconscious has all of my memories.<br />
+<br />
+I had quite a few similar to those. I just asked myself things that I could not possibly have the answer to under the present conditions, but other parts of my mind that I seem to not be able to access, like certain memories that I&#039;ve forgotten, have them. They seem to be accessible by my subconscious. <br />
+<br />
+Maybe I didn&#039;t mention that before...<br />
+</div>
+		<textarea style="display: none;" id="desctxt_12163">[quote][i]posted by Psikillion:[/i]
+[quote][i]posted by Renodin:[/i]
+I at first thought it just be my imagination as well. I was very doubtful, but I eventually didn&#039;t have a reason to distrust it after tests.[/quote]
+
+What tests? And how do these tests work?[/quote]
+
+I think I already mentioned those before, though I may not remember correctly. It was just simple things, really. Things like, where did I leave my wallet? I couldn&#039;t remember where it was. I got the message back of something similar to &quot;On the kitchen counter near the sink.&quot; And there it was. Obviously, I didn&#039;t know that consciously, so I couldn&#039;t just imagine an answer. Though, deep in my mind, I probably still had the memory of where I put it, and my subconscious has all of my memories.
+
+I had quite a few similar to those. I just asked myself things that I could not possibly have the answer to under the present conditions, but other parts of my mind that I seem to not be able to access, like certain memories that I&#039;ve forgotten, have them. They seem to be accessible by my subconscious. 
+
+Maybe I didn&#039;t mention that before...</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=611" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 36 queries. 0.402 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

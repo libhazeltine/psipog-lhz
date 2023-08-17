@@ -1,0 +1,338 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Hypnotism</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Hypnotism</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Hypnotism</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">funkydeath</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=256&amp;ref=1205045662" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_8556" style="width: 100%; overflow: auto; min-height: 125px;">I was just wondering if anyone has been hypnotised before or had any sort of Hypnotherapy done.  And what are your views on hypnotism?</div>
+		<textarea style="display: none;" id="desctxt_8556">I was just wondering if anyone has been hypnotised before or had any sort of Hypnotherapy done.  And what are your views on hypnotism?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Aura</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_8558" style="width: 100%; overflow: auto; min-height: 125px;">I personally don&#039;t like hypnotism and cannot be hypnotized. Those who have too strong a will or have no will at all to be hypnotized then they cannot be. Only the willing can. As far as my views, I just hate the thought of someone else controlling what I do. I&#039;m no control freak by any means, I just like to know I&#039;m in control of myself.<br />
+<br />
+-Aura</div>
+		<textarea style="display: none;" id="desctxt_8558">I personally don&#039;t like hypnotism and cannot be hypnotized. Those who have too strong a will or have no will at all to be hypnotized then they cannot be. Only the willing can. As far as my views, I just hate the thought of someone else controlling what I do. I&#039;m no control freak by any means, I just like to know I&#039;m in control of myself.
+
+-Aura</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Dash</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=69&amp;ref=1224210982" width="113" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_8563" style="width: 100%; overflow: auto; min-height: 125px;">actually when hypnotized, your always in control, its like.. deep persuasion.. you only accept things that you.. accept =/<br />
+<br />
+like.. anything you don&#039;t accept will snap you out of hypnosis,<br />
+<br />
+//example <br />
+hypnotist -- &quot;you want to take off your clothes,&quot;<br />
+<br />
+you -- &quot;wait... thats not right, even if i do he shouldn&#039;t have said that&quot;<br />
+//<br />
+<br />
+it&#039;s not like hollywood.. you wont  wake up and say &quot;what happened??&quot;<br />
+<br />
+i think hypnosis is a useful tool.. <br />
+it&#039;s also a neat way to enjoy doing dishes</div>
+		<textarea style="display: none;" id="desctxt_8563">actually when hypnotized, your always in control, its like.. deep persuasion.. you only accept things that you.. accept =/
+
+like.. anything you don&#039;t accept will snap you out of hypnosis,
+
+//example 
+hypnotist -- &quot;you want to take off your clothes,&quot;
+
+you -- &quot;wait... thats not right, even if i do he shouldn&#039;t have said that&quot;
+//
+
+it&#039;s not like hollywood.. you wont  wake up and say &quot;what happened??&quot;
+
+i think hypnosis is a useful tool.. 
+it&#039;s also a neat way to enjoy doing dishes</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Teradonus</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=542&amp;ref=1211962105" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_8567" style="width: 100%; overflow: auto; min-height: 125px;">It&#039;s never worked on me, and I&#039;ve had professionals do it. That may be that I wanted them to fail just so I could show them up, though. I&#039;m like that.<br />
+<br />
+I&#039;ve seen people be hypnotized, however, and I have to say that it looks far too...vulnerable. I don&#039;t think I would enjoy it.</div>
+		<textarea style="display: none;" id="desctxt_8567">It&#039;s never worked on me, and I&#039;ve had professionals do it. That may be that I wanted them to fail just so I could show them up, though. I&#039;m like that.
+
+I&#039;ve seen people be hypnotized, however, and I have to say that it looks far too...vulnerable. I don&#039;t think I would enjoy it.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_8746" style="width: 100%; overflow: auto; min-height: 125px;">If you&#039;ve evermeditated before, it&#039;s acctually just self hypnotism.<br />
+<br />
+Visual hypnotism doesn&#039;t work on a good 60 % of the population, if not more.<br />
+<br />
+audio hypnotism is a very common form nowadays, using certain wavelengths, you can become hypnotised.<br />
+<br />
+even in reading a paper or a book, if you read and &quot;get really into&quot; the story, you are, in effect, being hypnotised.<br />
+<br />
+Dash is absolutely correct in what he&#039;s saying, but there&#039;s just a little more to it than that. <br />
+<br />
+The deeper in hypnosis you are, the more persuation tends to work on you, although you may not waant to do something because of embarassment (sp?), but otherwise would do it, you could be persuaded while in a deep trance to do it, because the concience barrier of embarassment has been passed already. They can&#039;t make you do something that you have never wanted to do, but they can make you act on deep desires suppressed by fear, embarrasment, forgetfulness, or denial.<br />
+<br />
+so if somewhere deep in your mind you want to take off your clothes, all that a hypnotist has to do is hit the right keys and there you have it.<br />
+<br />
+People who don&#039;t want to be hypnotised r don&#039;t have any belief in it&#039;s possibility ussually can&#039;t be hypnotised because there intent contradicts the others intent.<br />
+<br />
+In reality, any form of manipulation, including hypnotism is guided by intent.</div>
+		<textarea style="display: none;" id="desctxt_8746">If you&#039;ve evermeditated before, it&#039;s acctually just self hypnotism.
+
+Visual hypnotism doesn&#039;t work on a good 60 % of the population, if not more.
+
+audio hypnotism is a very common form nowadays, using certain wavelengths, you can become hypnotised.
+
+even in reading a paper or a book, if you read and &quot;get really into&quot; the story, you are, in effect, being hypnotised.
+
+Dash is absolutely correct in what he&#039;s saying, but there&#039;s just a little more to it than that. 
+
+The deeper in hypnosis you are, the more persuation tends to work on you, although you may not waant to do something because of embarassment (sp?), but otherwise would do it, you could be persuaded while in a deep trance to do it, because the concience barrier of embarassment has been passed already. They can&#039;t make you do something that you have never wanted to do, but they can make you act on deep desires suppressed by fear, embarrasment, forgetfulness, or denial.
+
+so if somewhere deep in your mind you want to take off your clothes, all that a hypnotist has to do is hit the right keys and there you have it.
+
+People who don&#039;t want to be hypnotised r don&#039;t have any belief in it&#039;s possibility ussually can&#039;t be hypnotised because there intent contradicts the others intent.
+
+In reality, any form of manipulation, including hypnotism is guided by intent.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Ghost</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=549&amp;ref=1212328851" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_8749" style="width: 100%; overflow: auto; min-height: 125px;">nm</div>
+		<textarea style="display: none;" id="desctxt_8749">nm</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Ghost, 4 years, 6 months ago<br />Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">JakePsi</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9056" style="width: 100%; overflow: auto; min-height: 125px;">With hypnotism it is believed you are in full control still as you have to consciously accept what you are being told to do. Theres nothing really vulnerable about it in my opinion. Most of the hypnotism you would see e.g. stage hypnosis the subject normally does as they are told due to a sort of pressure from the audience and the fact all eyes are upon them, this greatly helps them accept being put &quot;under&quot; and lead to a successful hypnotism. However personally i have never gone to be hypnotized....personally I&#039;ve never seen the need :P</div>
+		<textarea style="display: none;" id="desctxt_9056">With hypnotism it is believed you are in full control still as you have to consciously accept what you are being told to do. Theres nothing really vulnerable about it in my opinion. Most of the hypnotism you would see e.g. stage hypnosis the subject normally does as they are told due to a sort of pressure from the audience and the fact all eyes are upon them, this greatly helps them accept being put &quot;under&quot; and lead to a successful hypnotism. However personally i have never gone to be hypnotized....personally I&#039;ve never seen the need :P</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9071" style="width: 100%; overflow: auto; min-height: 125px;">I&#039;ve hypnotised people before, I just had to make the person think it would work before it would work. basically, it&#039;s all about psychology.</div>
+		<textarea style="display: none;" id="desctxt_9071">I&#039;ve hypnotised people before, I just had to make the person think it would work before it would work. basically, it&#039;s all about psychology.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=391" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 24 queries. 0.280 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

@@ -1,0 +1,380 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Status Quo?</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Status Quo?</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Status Quo?</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Antisankari</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=224&amp;ref=1213032338" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11266" style="width: 100%; overflow: auto; min-height: 125px;">What the hell is going on?<br />
+<br />
+I have been around some years.<br />
+There are guys who have been out way longer than me.<br />
+There are guys who have just arrived.<br />
+<br />
+What is in common with us all?<br />
+We have seen the same things. Learned about the same skills. Heard the same stories, read the same articles.<br />
+<br />
+What is the current situtation of the &quot;psionic field&quot; anyway?<br />
+Where are the breakthroughs? <br />
+Is the amount of people involved increasing or decreasing?<br />
+<br />
+Does anyone know what the status quo is?</div>
+		<textarea style="display: none;" id="desctxt_11266">What the hell is going on?
+
+I have been around some years.
+There are guys who have been out way longer than me.
+There are guys who have just arrived.
+
+What is in common with us all?
+We have seen the same things. Learned about the same skills. Heard the same stories, read the same articles.
+
+What is the current situtation of the &quot;psionic field&quot; anyway?
+Where are the breakthroughs? 
+Is the amount of people involved increasing or decreasing?
+
+Does anyone know what the status quo is?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Antisankari, 4 years, 3 months ago<br />Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Sean</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=2&amp;ref=1214247941" width="117" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11267" style="width: 100%; overflow: auto; min-height: 125px;">I don&#039;t know about the &quot;psionic field&quot;, nor do I know (or care) about whether more or less people are around.<br />
+<br />
+What are you looking for?  Psionics on the evening news?  I would assume you know the obstacles we need to overcome.  Scientific, reproducible, evidence of the paranormal.<br />
+<br />
+No one is stopping you from having a breakthrough.  Help yourself.  Buy some equipment, educate yourself, and get to work.<br />
+<br />
+~Sean</div>
+		<textarea style="display: none;" id="desctxt_11267">I don&#039;t know about the &quot;psionic field&quot;, nor do I know (or care) about whether more or less people are around.
+
+What are you looking for?  Psionics on the evening news?  I would assume you know the obstacles we need to overcome.  Scientific, reproducible, evidence of the paranormal.
+
+No one is stopping you from having a breakthrough.  Help yourself.  Buy some equipment, educate yourself, and get to work.
+
+~Sean</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">DigGil</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11268" style="width: 100%; overflow: auto; min-height: 125px;">1-What&#039;s &quot;Status Quo&quot;?<br />
+<br />
+2-You&#039;ll only know that with log in/out statistics that are probabily confidencial, so Sean will not say to you who and when uses this website. Anyway I&#039;ll check the Privacy Policies.</div>
+		<textarea style="display: none;" id="desctxt_11268">1-What&#039;s &quot;Status Quo&quot;?
+
+2-You&#039;ll only know that with log in/out statistics that are probabily confidencial, so Sean will not say to you who and when uses this website. Anyway I&#039;ll check the Privacy Policies.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Antisankari</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=224&amp;ref=1213032338" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11269" style="width: 100%; overflow: auto; min-height: 125px;">Status Quo: &quot;The existing state of things&quot;.<br />
+<br />
+And I am aware of the &quot;No-proof-is-enough-for-nonbelievers&quot; scheme that has been around for years. <br />
+<br />
+I am still puzzled that so relatively many people are interested on the subject and spend hours learning the skills and discussing them online. <br />
+<br />
+Yet, the scene looks exactly like the one I entered some years ago. Nothing really has changed. If the field has already peaked, then there is really little left to be seen, learned or heard.<br />
+Might be even related to this almost year old blog-entry:<br />
+ <a href="2007/12/26/overcoming-mediocre-results/index.html" target="_blank">http://alittleweird.com/2007/12/26/overcoming-mediocre-results/</a><br />
+<br />
+It really can&#039;t be that stupid that everyone else is sitting around waiting for anybody else to come up with results? <br />
+Can it?</div>
+		<textarea style="display: none;" id="desctxt_11269">Status Quo: &quot;The existing state of things&quot;.
+
+And I am aware of the &quot;No-proof-is-enough-for-nonbelievers&quot; scheme that has been around for years. 
+
+I am still puzzled that so relatively many people are interested on the subject and spend hours learning the skills and discussing them online. 
+
+Yet, the scene looks exactly like the one I entered some years ago. Nothing really has changed. If the field has already peaked, then there is really little left to be seen, learned or heard.
+Might be even related to this almost year old blog-entry:
+http://alittleweird.com/2007/12/26/overcoming-mediocre-results/
+
+It really can&#039;t be that stupid that everyone else is sitting around waiting for anybody else to come up with results? 
+Can it?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Antisankari, 4 years, 3 months ago<br />Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Sean</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=2&amp;ref=1214247941" width="117" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11271" style="width: 100%; overflow: auto; min-height: 125px;">I&#039;m going to go out on a limb here, and try to put my finger on why I think you perceive lack of progress.  I could be wrong, or maybe this will help:<br />
+<br />
+The current lack-of-progress you see is a result of the mindset of the &quot;community&quot;.  There hasn&#039;t been progress because people - in general - don&#039;t want progress.  They want the status quo.<br />
+<br />
+So what is the status quo?  Self-delusional magical thinking.<br />
+<br />
+The &quot;community&quot;, as a whole, has made an unconscious compromise.  That compromise is this: If you believe what we believe, then it&#039;s ok if you don&#039;t believe it for the right reasons.  Just join us anyway - it&#039;s all good.  In fact, we aren&#039;t even sure WE believe it for the right reasons, so who cares.<br />
+<br />
+This mindset is the root of the lack-of-progress that you witness.<br />
+<br />
+So, what are the &quot;right&quot; reasons, and what are the &quot;wrong&quot; reasons?<br />
+<br />
+Right - discover truth about reality.<br />
+<br />
+Wrong - everything else.  (Ok, maybe not <em>everything else</em>, but for the most part.)<br />
+<br />
+As long as most people are content with their self-delusional magical thinking, then you won&#039;t really see progress.<br />
+<br />
+~Sean</div>
+		<textarea style="display: none;" id="desctxt_11271">I&#039;m going to go out on a limb here, and try to put my finger on why I think you perceive lack of progress.  I could be wrong, or maybe this will help:
+
+The current lack-of-progress you see is a result of the mindset of the &quot;community&quot;.  There hasn&#039;t been progress because people - in general - don&#039;t want progress.  They want the status quo.
+
+So what is the status quo?  Self-delusional magical thinking.
+
+The &quot;community&quot;, as a whole, has made an unconscious compromise.  That compromise is this: If you believe what we believe, then it&#039;s ok if you don&#039;t believe it for the right reasons.  Just join us anyway - it&#039;s all good.  In fact, we aren&#039;t even sure WE believe it for the right reasons, so who cares.
+
+This mindset is the root of the lack-of-progress that you witness.
+
+So, what are the &quot;right&quot; reasons, and what are the &quot;wrong&quot; reasons?
+
+Right - discover truth about reality.
+
+Wrong - everything else.  (Ok, maybe not [i]everything else[/i], but for the most part.)
+
+As long as most people are content with their self-delusional magical thinking, then you won&#039;t really see progress.
+
+~Sean</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">DigGil</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11273" style="width: 100%; overflow: auto; min-height: 125px;">I found no Privacy Policy on this website, but whatever, I think the numbers are more or less the same as when I joined psionics.</div>
+		<textarea style="display: none;" id="desctxt_11273">I found no Privacy Policy on this website, but whatever, I think the numbers are more or less the same as when I joined psionics.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">bright</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=442&amp;ref=1219022178" width="112" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11451" style="width: 100%; overflow: auto; min-height: 125px;">I admit that when I first started out it was all for the wrong reasons, sure I wanted to break the illusion of what we perceive reality to be but at the forefront of my mind it was about doing something cool, that however has changed.<br />
+I guess the question is what do people here want? what are we all doing here? why are we actually a part of this site, does anyone actually care?<br />
+To me, the bigger question, the more important question is- are you serious?<br />
+<br />
+I don’t think I am, not actually serious, not actually committing, just floating by on an idea, whether that changes is governed by how much I care. There is a distinct lack of momentum.</div>
+		<textarea style="display: none;" id="desctxt_11451">I admit that when I first started out it was all for the wrong reasons, sure I wanted to break the illusion of what we perceive reality to be but at the forefront of my mind it was about doing something cool, that however has changed.
+I guess the question is what do people here want? what are we all doing here? why are we actually a part of this site, does anyone actually care?
+To me, the bigger question, the more important question is- are you serious?
+
+I don’t think I am, not actually serious, not actually committing, just floating by on an idea, whether that changes is governed by how much I care. There is a distinct lack of momentum.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by bright, 4 years, 3 months ago<br />Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Amaroq</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=606&amp;ref=1214436810" width="95" height="95" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11622" style="width: 100%; overflow: auto; min-height: 125px;">I don&#039;t think &quot;to discover the truth about reality&quot; is the only correct reason. There&#039;s also curiosity and a passion for doing things like this. I&#039;ve spent entire nights just daydreaming, imagining new possibilities, creating new theories, some of which turned out to be pretty true, at least in my practices. To discover the truth about reality is the reason you do it Sean, it&#039;s where your passion for this field comes from. But really, all you need is passion and belief. Hopefully those together will enable any hopefuls to take this seriously and not be &quot;fluffs&quot;, a term I&#039;ve only recently seen on this board while reading a topic. *chuckles*</div>
+		<textarea style="display: none;" id="desctxt_11622">I don&#039;t think &quot;to discover the truth about reality&quot; is the only correct reason. There&#039;s also curiosity and a passion for doing things like this. I&#039;ve spent entire nights just daydreaming, imagining new possibilities, creating new theories, some of which turned out to be pretty true, at least in my practices. To discover the truth about reality is the reason you do it Sean, it&#039;s where your passion for this field comes from. But really, all you need is passion and belief. Hopefully those together will enable any hopefuls to take this seriously and not be &quot;fluffs&quot;, a term I&#039;ve only recently seen on this board while reading a topic. *chuckles*</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 2 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=557" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 24 queries. 0.324 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

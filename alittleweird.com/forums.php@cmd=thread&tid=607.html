@@ -1,0 +1,422 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; PhotoReading</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; PhotoReading</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">PhotoReading</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Hawt Zombie</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=650&amp;ref=1216691714" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12009" style="width: 100%; overflow: auto; min-height: 125px;">Yo dudes and dudets alike. I just got done exploring the internet when I came across something called &quot;Photoreading&quot;. If you don&#039;t know what photoreading is, it&#039;s pretty much *supposedely* just unlocking your subconscious so that you can read 25,000 words per minute. So I wanted to ask you people what you think of it. I am thinking about buying a course, but I wanted to know what you guys though of it first.<br />
+<br />
+ <a href="http://www.photoreading.com/" target="_blank">http://www.photoreading.com/</a><br />
+ <a href="http://en.wikipedia.org/wiki/Photoreading" target="_blank">http://en.wikipedia.org/wiki/Photoreading</a></div>
+		<textarea style="display: none;" id="desctxt_12009">Yo dudes and dudets alike. I just got done exploring the internet when I came across something called &quot;Photoreading&quot;. If you don&#039;t know what photoreading is, it&#039;s pretty much *supposedely* just unlocking your subconscious so that you can read 25,000 words per minute. So I wanted to ask you people what you think of it. I am thinking about buying a course, but I wanted to know what you guys though of it first.
+
+http://www.photoreading.com/
+http://en.wikipedia.org/wiki/Photoreading</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Raathuus</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=764&amp;ref=1259211929" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12011" style="width: 100%; overflow: auto; min-height: 125px;">Hmmm... dunno what to think.  Just looking at the website, my &quot;It&#039;s a Scam and They&#039;re Trying to Steal Your Money&quot; alarm goes off, though that all ways happens when the thoughts of &quot;money&quot; and &quot;internet&quot; happen close to the same time in my head.  I&#039;d do it if had had the cash to spend... but I don&#039;t.  It&#039;s your money, so you can do what you want with it.  It could be an investment, or it could be a waste.</div>
+		<textarea style="display: none;" id="desctxt_12011">Hmmm... dunno what to think.  Just looking at the website, my &quot;It&#039;s a Scam and They&#039;re Trying to Steal Your Money&quot; alarm goes off, though that all ways happens when the thoughts of &quot;money&quot; and &quot;internet&quot; happen close to the same time in my head.  I&#039;d do it if had had the cash to spend... but I don&#039;t.  It&#039;s your money, so you can do what you want with it.  It could be an investment, or it could be a waste.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Vimick</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12013" style="width: 100%; overflow: auto; min-height: 125px;">ok well reading the website i come acrossed this. I highlighted some key phrases<br />
+<br />
+How will PhotoReading improve your life?<br />
+<br />
+Will you make more money? <strong>You might.</strong> We have stacks of stories from people who have received superb performance reviews and significant raises. And almost as many stories from entrepreneurs who sent their businesses to new levels because of the tools you learn with PhotoReading.<br />
+<br />
+Will you have less stress? Yup. PhotoReading takes the stress out of reading. That&#039;s a given.<br />
+<br />
+Will you improve your memory? <strong>Probably.</strong> That&#039;s one of the byproducts of PhotoReading.<br />
+<br />
+If you are a student, will you go from a C to an A? <strong>You might.</strong> We have piles of testimonials that say so. <br />
+<br />
+<br />
+You might. Probably. You might. hmm they dont sound too confident about their product.</div>
+		<textarea style="display: none;" id="desctxt_12013">ok well reading the website i come acrossed this. I highlighted some key phrases
+
+How will PhotoReading improve your life?
+
+Will you make more money? [b]You might.[/b] We have stacks of stories from people who have received superb performance reviews and significant raises. And almost as many stories from entrepreneurs who sent their businesses to new levels because of the tools you learn with PhotoReading.
+
+Will you have less stress? Yup. PhotoReading takes the stress out of reading. That&#039;s a given.
+
+Will you improve your memory? [b]Probably.[/b] That&#039;s one of the byproducts of PhotoReading.
+
+If you are a student, will you go from a C to an A? [b]You might.[/b] We have piles of testimonials that say so. 
+
+
+You might. Probably. You might. hmm they dont sound too confident about their product.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Psikillion</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=593&amp;ref=1213954510" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12014" style="width: 100%; overflow: auto; min-height: 125px;">I remember something similar to this posted on these forums..<br />
+<br />
+A vid of a TV show called trick or treat, where this one guy who was taught similar things and went into some sort of quiz in britain...<br />
+<br />
+It is somewhere on here, but there is no search feature, so looking for it is going to be a pain in the butt...</div>
+		<textarea style="display: none;" id="desctxt_12014">I remember something similar to this posted on these forums..
+
+A vid of a TV show called trick or treat, where this one guy who was taught similar things and went into some sort of quiz in britain...
+
+It is somewhere on here, but there is no search feature, so looking for it is going to be a pain in the butt...</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Corpse</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=553&amp;ref=1239824741" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12015" style="width: 100%; overflow: auto; min-height: 125px;">To me it honestly doesn&#039;t even sound possible. I mean seriously, 25,000 words per minute? I don&#039;t think this is the real deal. Sorry, but if you really want to try it out that badly then go ahead and figure out for sure if it&#039;s a scam or not.</div>
+		<textarea style="display: none;" id="desctxt_12015">To me it honestly doesn&#039;t even sound possible. I mean seriously, 25,000 words per minute? I don&#039;t think this is the real deal. Sorry, but if you really want to try it out that badly then go ahead and figure out for sure if it&#039;s a scam or not.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Eldibs</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=77&amp;ref=1223740672" width="19" height="36" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12020" style="width: 100%; overflow: auto; min-height: 125px;">Sounds similar to what we used to call &quot;skimming&quot; in high school. Except minus the hypnosis and caring about the table of contents, and it usually was about a worthless effort (usually, we were told to skim something if the teacher didn&#039;t feel like making us read). <br />
+<br />
+As far as actual reading is concerned, back in school I was able to easily finish one of the Harry Potter books within a day or so (and remember the contents), so photoreading seems kinda pointless to me, especially since in the day or so it takes for the information to settle in, I could&#039;ve just read the text and not had to worry about hypnosis or re-reading.<br />
+<br />
+Also, how many words are on a page? You&#039;d have to be flipping pages like crazy on smaller books to hit 25,000.</div>
+		<textarea style="display: none;" id="desctxt_12020">Sounds similar to what we used to call &quot;skimming&quot; in high school. Except minus the hypnosis and caring about the table of contents, and it usually was about a worthless effort (usually, we were told to skim something if the teacher didn&#039;t feel like making us read). 
+
+As far as actual reading is concerned, back in school I was able to easily finish one of the Harry Potter books within a day or so (and remember the contents), so photoreading seems kinda pointless to me, especially since in the day or so it takes for the information to settle in, I could&#039;ve just read the text and not had to worry about hypnosis or re-reading.
+
+Also, how many words are on a page? You&#039;d have to be flipping pages like crazy on smaller books to hit 25,000.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Anonymous Dark</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=354&amp;ref=1203377944" width="100" height="86" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12021" style="width: 100%; overflow: auto; min-height: 125px;">I don&#039;t care how advanced your techniques are; if you&#039;re reading something at 25,000 words per minute, you&#039;re not absorbing the information like you would if you read at a normal pace. <br />
+<br />
+I call shenanigans.</div>
+		<textarea style="display: none;" id="desctxt_12021">I don&#039;t care how advanced your techniques are; if you&#039;re reading something at 25,000 words per minute, you&#039;re not absorbing the information like you would if you read at a normal pace. 
+
+I call shenanigans.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Anonymous Dark, 4 years, 1 month ago<br />Posted 4 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Faceless</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=570&amp;ref=1214279440" width="83" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12033" style="width: 100%; overflow: auto; min-height: 125px;">Stepping out of the shadows for some valuable insight. I say it is possible. By photoreading i think they are talking about a photographic memory type thing. I have a photographic memory and everyone else has one to an extent. I dont think 25,000 words per minute is likly but me i can look at a table of information in biology for not even a minute and be able to close my eyes and practically see it. I am not as good with an entire page of information type deal but numbers and table type deals i am good at. But with the website i wouldnt waste mony on that, no offense.  Back to the shadows for me...</div>
+		<textarea style="display: none;" id="desctxt_12033">Stepping out of the shadows for some valuable insight. I say it is possible. By photoreading i think they are talking about a photographic memory type thing. I have a photographic memory and everyone else has one to an extent. I dont think 25,000 words per minute is likly but me i can look at a table of information in biology for not even a minute and be able to close my eyes and practically see it. I am not as good with an entire page of information type deal but numbers and table type deals i am good at. But with the website i wouldnt waste mony on that, no offense.  Back to the shadows for me...</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">somefatguy</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=36&amp;ref=1209135545" width="90" height="89" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12036" style="width: 100%; overflow: auto; min-height: 125px;">I believe I have heard of this. First off, I heard of it from a member on Psipog who said he took courses and can perform it. I believe he called it &quot;speed reading.&quot; He even gave a link to show how others could learn it which I&#039;ll look for later. <br />
+The second place I heard of it was from my freshman English teacher. She mentioned that she learned how to do it because of a paper that was sent out to every English class. The paper had information about a class offering to teach speed reading. I actually wanted to go, but it costed around $200 and my mom didn&#039;t want to pay for it. :) </div>
+		<textarea style="display: none;" id="desctxt_12036">I believe I have heard of this. First off, I heard of it from a member on Psipog who said he took courses and can perform it. I believe he called it &quot;speed reading.&quot; He even gave a link to show how others could learn it which I&#039;ll look for later. 
+The second place I heard of it was from my freshman English teacher. She mentioned that she learned how to do it because of a paper that was sent out to every English class. The paper had information about a class offering to teach speed reading. I actually wanted to go, but it costed around $200 and my mom didn&#039;t want to pay for it. :)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">anisus</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=732&amp;ref=1219047680" width="125" height="123" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12040" style="width: 100%; overflow: auto; min-height: 125px;">It might be a waste of money and maybe time. I don&#039;t know if you&#039;ve ever heard of the EyeQ method, but it&#039;s basically a speed reading course. Sort of like photoreading. I actually did the whole program and didn&#039;t gain anything from it. What they do is give you a reading test every session and then another one at the end of the session showing how you improved. It was a scam because the first reading test involves a story or information you&#039;ve never heard about or read before and the end of session test involves a very popular subject or story like the Wizard Of Oz or something as popular. So of course you end up reading the second story faster because you already know it and the graph shows how you improved when actually you&#039;re just skimming a story you already know. <br />
+Anyway, I went a little long with that, but just wanted to say that you should probably save your money. And if you really do want to learn how to photoread, you could probably find some good books at the library for free. And just one more thing about speed reading, the best way to get fast at reading is to just practice, like anything else. </div>
+		<textarea style="display: none;" id="desctxt_12040">It might be a waste of money and maybe time. I don&#039;t know if you&#039;ve ever heard of the EyeQ method, but it&#039;s basically a speed reading course. Sort of like photoreading. I actually did the whole program and didn&#039;t gain anything from it. What they do is give you a reading test every session and then another one at the end of the session showing how you improved. It was a scam because the first reading test involves a story or information you&#039;ve never heard about or read before and the end of session test involves a very popular subject or story like the Wizard Of Oz or something as popular. So of course you end up reading the second story faster because you already know it and the graph shows how you improved when actually you&#039;re just skimming a story you already know. 
+Anyway, I went a little long with that, but just wanted to say that you should probably save your money. And if you really do want to learn how to photoread, you could probably find some good books at the library for free. And just one more thing about speed reading, the best way to get fast at reading is to just practice, like anything else.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">X-Master</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=433&amp;ref=1238933408" width="115" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12045" style="width: 100%; overflow: auto; min-height: 125px;">I have a little experience in this subject. The only thing is, I have not had the time to get through the whole course. But I am attempting to start that back up and get through it to see if it does what is says it does. As side note though, if you go through the book and just take out the photoreading step you have a fairly good reading system in and of it self, that is if you have problems with comprehension.<br />
+<br />
+As I do not yet know whether this is worth your money, and for all of those that are curious, you can get the personal learning course from here. Just get it from the RapidShare links, and don&#039;t forget the password listed at the end of the description when extracting.<br />
+<br />
+ <a href="http://knowfree.net/2007/07/31/photoreading-whole-mind-system.kf" target="_blank">http://knowfree.net/2007/07/31/photoreading-whole-mind-system.kf</a><br />
+<br />
+</div>
+		<textarea style="display: none;" id="desctxt_12045">I have a little experience in this subject. The only thing is, I have not had the time to get through the whole course. But I am attempting to start that back up and get through it to see if it does what is says it does. As side note though, if you go through the book and just take out the photoreading step you have a fairly good reading system in and of it self, that is if you have problems with comprehension.
+
+As I do not yet know whether this is worth your money, and for all of those that are curious, you can get the personal learning course from here. Just get it from the RapidShare links, and don&#039;t forget the password listed at the end of the description when extracting.
+
+http://knowfree.net/2007/07/31/photoreading-whole-mind-system.kf</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Hawt Zombie</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=650&amp;ref=1216691714" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12178" style="width: 100%; overflow: auto; min-height: 125px;">Yo, X-Master,  thanks for the link :)</div>
+		<textarea style="display: none;" id="desctxt_12178">Yo, X-Master,  thanks for the link :)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Hawt Zombie, 4 years ago<br />Posted 4 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">X-Master</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=433&amp;ref=1238933408" width="115" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12186" style="width: 100%; overflow: auto; min-height: 125px;">Yeah, no problem. I know that stuff can get expensive. So why not give it a go with the whole course first before buying to decide if it really works for you or not. And if it does, then buy it. At least thats how I see these kinds of things, just because you never know what is the real deal what is just crap.</div>
+		<textarea style="display: none;" id="desctxt_12186">Yeah, no problem. I know that stuff can get expensive. So why not give it a go with the whole course first before buying to decide if it really works for you or not. And if it does, then buy it. At least thats how I see these kinds of things, just because you never know what is the real deal what is just crap.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Waldo</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=471&amp;ref=1208009607" width="84" height="108" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12199" style="width: 100%; overflow: auto; min-height: 125px;">I know I&#039;ve not been active for a long time, but I&#039;d just like to say that I was taught this on some sort of gifted and talented summer school when I was about 12... I tried to photoread a French dictionary. And I honestly don&#039;t know whether it worked at all or not. But I do have an impressive French vocabulary, and when I&#039;m learning new words in French it almost feels like I&#039;m remembering them. In short, I haven&#039;t got a clue how much it worked, if at all, but I remember that some people had some results. I think it&#039;s worth trying to draw your own conclusions.<br />
+<br />
+Also, the technique didn&#039;t seem to be that hard. It was just a kind of meditation, followed by staring at the inside spine of the book and clearing your mind, then holding that whilst you turn the pages. The theory is that your subconscious can take a kind of picture of each page. Perhaps I should try it again.</div>
+		<textarea style="display: none;" id="desctxt_12199">I know I&#039;ve not been active for a long time, but I&#039;d just like to say that I was taught this on some sort of gifted and talented summer school when I was about 12... I tried to photoread a French dictionary. And I honestly don&#039;t know whether it worked at all or not. But I do have an impressive French vocabulary, and when I&#039;m learning new words in French it almost feels like I&#039;m remembering them. In short, I haven&#039;t got a clue how much it worked, if at all, but I remember that some people had some results. I think it&#039;s worth trying to draw your own conclusions.
+
+Also, the technique didn&#039;t seem to be that hard. It was just a kind of meditation, followed by staring at the inside spine of the book and clearing your mind, then holding that whilst you turn the pages. The theory is that your subconscious can take a kind of picture of each page. Perhaps I should try it again.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Hawt Zombie</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=650&amp;ref=1216691714" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12207" style="width: 100%; overflow: auto; min-height: 125px;">^ Yeah, after listening to the mp3&#039;s, that&#039;s basically what it is. After that step, you have to recall it (and there is a technique for that), because aparently, after you photoread something, you have no conscience knowledge of it. I have photoread part of the dictionary so far, but I have yet to learn how to recall it.</div>
+		<textarea style="display: none;" id="desctxt_12207">^ Yeah, after listening to the mp3&#039;s, that&#039;s basically what it is. After that step, you have to recall it (and there is a technique for that), because aparently, after you photoread something, you have no conscience knowledge of it. I have photoread part of the dictionary so far, but I have yet to learn how to recall it.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">X-Master</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=433&amp;ref=1238933408" width="115" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12217" style="width: 100%; overflow: auto; min-height: 125px;">There should be an activation step that you will learn about that should bring forward whatever it was that you photoread.<br />
+<br />
+I have been looking into another reading system called Reading Genius 2.0. From the sound of it, it seems like it might be similar to Photoreading. So I am going to give it a try.<br />
+<br />
+ <a href="http://www.readinggenius.com/" target="_blank">http://www.readinggenius.com/</a></div>
+		<textarea style="display: none;" id="desctxt_12217">There should be an activation step that you will learn about that should bring forward whatever it was that you photoread.
+
+I have been looking into another reading system called Reading Genius 2.0. From the sound of it, it seems like it might be similar to Photoreading. So I am going to give it a try.
+
+http://www.readinggenius.com/</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Hawt Zombie</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=650&amp;ref=1216691714" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12222" style="width: 100%; overflow: auto; min-height: 125px;">Yeah, I&#039;ve heard about that, good luck</div>
+		<textarea style="display: none;" id="desctxt_12222">Yeah, I&#039;ve heard about that, good luck</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=607" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 33 queries. 0.343 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

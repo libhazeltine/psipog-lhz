@@ -1,0 +1,534 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; crash your computer</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=3.html">Recycle Bin</a> &raquo; crash your computer</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">crash your computer</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">deathsmessenger</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11516" style="width: 100%; overflow: auto; min-height: 125px;">mwa ha ha, i bring to you the most fun and annoying thing on earth...<br />
+<br />
+<br />
+step one.<br />
+open note pad.<br />
+step two.<br />
+type this &quot;open&quot;<br />
+step three. <br />
+file/save as<br />
+step four.<br />
+save it has open.bat<br />
+step five.<br />
+the file type should be set to &quot;all&quot;<br />
+step six.<br />
+make it savve on the desk top.<br />
+step seven.<br />
+click the icon and your desk top until it opens.<br />
+step eight.<br />
+sit back an waqtch as cmd eats all of your RAM and shuts your computer down<br />
+step nine.<br />
+get back on alw and post your results.<br />
+<br />
+<br />
+<br />
+Warning, this is only for REALLY stuipid people, and those who dont belive me mwa ha ha. <br />
+<br />
+also. this will eat all of your ram until you reboot</div>
+		<textarea style="display: none;" id="desctxt_11516">mwa ha ha, i bring to you the most fun and annoying thing on earth...
+
+
+step one.
+open note pad.
+step two.
+type this &quot;open&quot;
+step three. 
+file/save as
+step four.
+save it has open.bat
+step five.
+the file type should be set to &quot;all&quot;
+step six.
+make it savve on the desk top.
+step seven.
+click the icon and your desk top until it opens.
+step eight.
+sit back an waqtch as cmd eats all of your RAM and shuts your computer down
+step nine.
+get back on alw and post your results.
+
+
+
+Warning, this is only for REALLY stuipid people, and those who dont belive me mwa ha ha. 
+
+also. this will eat all of your ram until you reboot</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Atrum</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=755&amp;ref=1221862716" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11541" style="width: 100%; overflow: auto; min-height: 125px;">But why would we crash our computer? Well...Actually I&#039;ll have to remember that next time I sneak into an enemie house. *shifty eyes*</div>
+		<textarea style="display: none;" id="desctxt_11541">But why would we crash our computer? Well...Actually I&#039;ll have to remember that next time I sneak into an enemie house. *shifty eyes*</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Antisankari</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=224&amp;ref=1213032338" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11555" style="width: 100%; overflow: auto; min-height: 125px;"> <a href="http://www.youtube.com/watch?v=bDKVSt3N1WQ&amp;feature=related" target="_blank">http://www.youtube.com/watch?v=bDKVSt3N1WQ&amp;feature=related</a><br />
+</div>
+		<textarea style="display: none;" id="desctxt_11555">http://www.youtube.com/watch?v=bDKVSt3N1WQ&amp;feature=related</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 2 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">deathsmessenger</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11557" style="width: 100%; overflow: auto; min-height: 125px;">NEW WAY TO CRASH YOUR COMPUTER!!!! MWA HA HA!!!<br />
+do the same as above, but instead of &quot;open&quot; copy and paste this:<br />
+@echo off<br />
+:A<br />
+start<br />
+:B<br />
+start<br />
+:c<br />
+start<br />
+:d<br />
+start<br />
+goto A<br />
+goto B<br />
+goto C<br />
+goto D<br />
+</div>
+		<textarea style="display: none;" id="desctxt_11557">NEW WAY TO CRASH YOUR COMPUTER!!!! MWA HA HA!!!
+do the same as above, but instead of &quot;open&quot; copy and paste this:
+@echo off
+:A
+start
+:B
+start
+:c
+start
+:d
+start
+goto A
+goto B
+goto C
+goto D</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 2 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">jack</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=759&amp;ref=1220326318" width="125" height="105" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11562" style="width: 100%; overflow: auto; min-height: 125px;">okay...I see you are interested in bat programmings...nice<br />
+<br />
+But...please don&#039;t get people pissed off at you doing this, it&#039;s not worth it =p<br />
+<br />
+Yes, thanks for the information given, now I can delete all the files on my dad&#039;s computer...Mwuahahahahahaha...<br />
+*second day* &quot;I ma kill you [n]name=[/n]!&quot; (stab) &quot;AH~!!! I&#039;m bleeding to death!!!&quot; *you see the light and walks towards it*<br />
+*The light turned yellowish...*<br />
+*you feel warm*<br />
+*you feel hot...burning hot*<br />
+*you are boiled in a pot*<br />
+*you scream...*<br />
+*you feel the suffering for eternity*<br />
+Where are you?</div>
+		<textarea style="display: none;" id="desctxt_11562">okay...I see you are interested in bat programmings...nice
+
+But...please don&#039;t get people pissed off at you doing this, it&#039;s not worth it =p
+
+Yes, thanks for the information given, now I can delete all the files on my dad&#039;s computer...Mwuahahahahahaha...
+*second day* &quot;I ma kill you [n]name=[/n]!&quot; (stab) &quot;AH~!!! I&#039;m bleeding to death!!!&quot; *you see the light and walks towards it*
+*The light turned yellowish...*
+*you feel warm*
+*you feel hot...burning hot*
+*you are boiled in a pot*
+*you scream...*
+*you feel the suffering for eternity*
+Where are you?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by jack, 4 years, 2 months ago<br />Posted 4 years, 2 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Atrum</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=755&amp;ref=1221862716" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11576" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by jack:</em><br />
+okay...I see you are interested in bat programmings...nice<br />
+<br />
+But...please don&#039;t get people pissed off at you doing this, it&#039;s not worth it =p<br />
+<br />
+Yes, thanks for the information given, now I can delete all the files on my dad&#039;s computer...Mwuahahahahahaha...<br />
+*second day* &quot;I ma kill you [n]name=[/n]!&quot; (stab) &quot;AH~!!! I&#039;m bleeding to death!!!&quot; *you see the light and walks towards it*<br />
+*The light turned yellowish...*<br />
+*you feel warm*<br />
+*you feel hot...burning hot*<br />
+*you are boiled in a pot*<br />
+*you scream...*<br />
+*you feel the suffering for eternity*<br />
+Where are you?</div>Umm...Thats...*no comment*<br />
+<br />
+</div>
+		<textarea style="display: none;" id="desctxt_11576">[quote][i]posted by jack:[/i]
+okay...I see you are interested in bat programmings...nice
+
+But...please don&#039;t get people pissed off at you doing this, it&#039;s not worth it =p
+
+Yes, thanks for the information given, now I can delete all the files on my dad&#039;s computer...Mwuahahahahahaha...
+*second day* &quot;I ma kill you [n]name=[/n]!&quot; (stab) &quot;AH~!!! I&#039;m bleeding to death!!!&quot; *you see the light and walks towards it*
+*The light turned yellowish...*
+*you feel warm*
+*you feel hot...burning hot*
+*you are boiled in a pot*
+*you scream...*
+*you feel the suffering for eternity*
+Where are you?[/quote]
+
+Umm...Thats...*no comment*</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 2 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">deathsmessenger</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11618" style="width: 100%; overflow: auto; min-height: 125px;">if you wanna delete all the files on your dads computer, do the above but instead copy and paste this:<br />
+del C:\</div>
+		<textarea style="display: none;" id="desctxt_11618">if you wanna delete all the files on your dads computer, do the above but instead copy and paste this:
+del C:\</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 2 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">penguin</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=866&amp;ref=1251489136" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13659" style="width: 100%; overflow: auto; min-height: 125px;">Does this permanently delete all your computer files and stuff, or just untill you reboot? It then fixes itself?</div>
+		<textarea style="display: none;" id="desctxt_13659">Does this permanently delete all your computer files and stuff, or just untill you reboot? It then fixes itself?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Raathuus</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=764&amp;ref=1259211929" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13696" style="width: 100%; overflow: auto; min-height: 125px;">I&#039;d guess permanent... (Try it yourself! :D)</div>
+		<textarea style="display: none;" id="desctxt_13696">I&#039;d guess permanent... (Try it yourself! :D)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">penguin</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=866&amp;ref=1251489136" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13702" style="width: 100%; overflow: auto; min-height: 125px;">No way am I gonna try that! .... Wait till I get back to school..... :)</div>
+		<textarea style="display: none;" id="desctxt_13702">No way am I gonna try that! .... Wait till I get back to school..... :)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">penguin</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=866&amp;ref=1251489136" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_14326" style="width: 100%; overflow: auto; min-height: 125px;">Okay, I&#039;m am going to wait &#039;till someone I hate (And deserves it) gets up from their computer in I.C.T., then I will sneak over to their computer and try this .bat stuff......<br />
+<br />
+Hee, Hee, Hee.......</div>
+		<textarea style="display: none;" id="desctxt_14326">Okay, I&#039;m am going to wait &#039;till someone I hate (And deserves it) gets up from their computer in I.C.T., then I will sneak over to their computer and try this .bat stuff......
+
+Hee, Hee, Hee.......</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by penguin, 3 years, 5 months ago<br />Posted 3 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Kube</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=952&amp;ref=1249239276" width="102" height="77" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_14345" style="width: 100%; overflow: auto; min-height: 125px;">I&#039;ve got a better idea...How to Crash (and temporarily ruin) your computer:<br />
+<br />
+-open cmd.<br />
+-type &quot;format C:&quot;<br />
+-Follow on-screen instructions<br />
+<br />
+there ya go.<br />
+<br />
+:3<br />
+<br />
+You can&#039;t do it WHILE logged in, though... Must use the BIOS.</div>
+		<textarea style="display: none;" id="desctxt_14345">I&#039;ve got a better idea...How to Crash (and temporarily ruin) your computer:
+
+-open cmd.
+-type &quot;format C:&quot;
+-Follow on-screen instructions
+
+there ya go.
+
+:3
+
+You can&#039;t do it WHILE logged in, though... Must use the BIOS.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Kube, 3 years, 5 months ago<br />Posted 3 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">DigGil</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_14354" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by deathsmessenger:</em><br />
+if you wanna delete all the files on your dads computer, do the above but instead copy and paste this:<br />
+del C:\</div><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by penguin:</em><br />
+No way am I gonna try that! .... Wait till I get back to school..... :)</div>A safe way to try this is instead of typing «C:\» you type «C:\Users\&lt;b&gt;[your account name]&lt;/b&gt;\Desktop\&lt;/b&gt;[any file on your desktop]&lt;/b&gt;»<br />
+That should work on Windows Vista. I you use another Windows just right-click on the file and go to it&#039;s properties and copy the &#039;destination&#039; path without repeating the quotation marks. Not very complicate, still I&#039;m not sure if my instructions are completely right because I don&#039;t use an English Windows.</div>
+		<textarea style="display: none;" id="desctxt_14354">[quote][i]posted by deathsmessenger:[/i]
+if you wanna delete all the files on your dads computer, do the above but instead copy and paste this:
+del C:\[/quote]
+
+[quote][i]posted by penguin:[/i]
+No way am I gonna try that! .... Wait till I get back to school..... :)[/quote]
+
+A safe way to try this is instead of typing «C:\» you type «C:\Users\&lt;b&gt;[your account name]&lt;/b&gt;\Desktop\&lt;/b&gt;[any file on your desktop]&lt;/b&gt;»
+That should work on Windows Vista. I you use another Windows just right-click on the file and go to it&#039;s properties and copy the &#039;destination&#039; path without repeating the quotation marks. Not very complicate, still I&#039;m not sure if my instructions are completely right because I don&#039;t use an English Windows.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Raathuus</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=764&amp;ref=1259211929" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_14356" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by DigGil:</em><br />
+...you type «C:\Users\&lt;b&gt;[your account name]&lt;/b&gt;\Desktop\&lt;/b&gt;[any file on your desktop]&lt;/b&gt;»</div>Works as long as you include the file type.  Tested it myself :)</div>
+		<textarea style="display: none;" id="desctxt_14356">[quote][i]posted by DigGil:[/i]
+...you type «C:\Users\&lt;b&gt;[your account name]&lt;/b&gt;\Desktop\&lt;/b&gt;[any file on your desktop]&lt;/b&gt;»
+[/quote]
+
+Works as long as you include the file type.  Tested it myself :)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Kube</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=952&amp;ref=1249239276" width="102" height="77" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_14359" style="width: 100%; overflow: auto; min-height: 125px;">Oh, here&#039;s a good alternative to deathmessenger&#039;s open.bat file.. in it you type this:<br />
+<br />
+start C:\open.bat<br />
+open<br />
+<br />
+Put the open.bat in your C: drive and there ya go... It&#039;ll keep opening new windows until it completely crashes the computer.. Just because the one that only says &quot;open&quot; won&#039;t crash a computer with more than 2Gb of RAM...<br />
+<br />
+The &quot;open&quot; command doesn&#039;t work on XP, though... Not on my brothers&#039; computer at least... It worked on Vista and kept looping the open command so after just a few new windows opened the PC lagged out.</div>
+		<textarea style="display: none;" id="desctxt_14359">Oh, here&#039;s a good alternative to deathmessenger&#039;s open.bat file.. in it you type this:
+
+start C:\open.bat
+open
+
+Put the open.bat in your C: drive and there ya go... It&#039;ll keep opening new windows until it completely crashes the computer.. Just because the one that only says &quot;open&quot; won&#039;t crash a computer with more than 2Gb of RAM...
+
+The &quot;open&quot; command doesn&#039;t work on XP, though... Not on my brothers&#039; computer at least... It worked on Vista and kept looping the open command so after just a few new windows opened the PC lagged out.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Jacob</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=949&amp;ref=1248714472" width="108" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_14932" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by deathsmessenger:</em><br />
+Warning, this is only for REALLY <strong>stuipid</strong> people, and those who <em>dont</em> <strong>belive</strong> me mwa ha ha.</div>Yea...</div>
+		<textarea style="display: none;" id="desctxt_14932">[quote][i]posted by deathsmessenger:[/i]
+Warning, this is only for REALLY [b]stuipid[/b] people, and those who [i]dont[/i] [b]belive[/b] me mwa ha ha.
+[/quote]
+
+Yea...</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Jacob, 3 years, 3 months ago<br />Posted 3 years, 3 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=571" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 32 queries. 0.329 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

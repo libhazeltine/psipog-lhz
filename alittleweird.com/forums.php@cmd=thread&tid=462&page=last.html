@@ -1,0 +1,685 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Some questions I can&#039;t solve...</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Some questions I can&#039;t solve...</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Some questions I can&#039;t solve...</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">RazSh18</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=510&amp;ref=1213120644" width="110" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10102" style="width: 100%; overflow: auto; min-height: 125px;">Hey guys. this following question are somthing I need some opinion on for comparing : <br />
+<br />
+1. when I look at the moon , I see a deep puprple- deep green aura ( confirm? ) <br />
+<br />
+2. when I look at the bright blue ski in the morning I see flashing colored orbs <br />
+   spliting to 3 orbs and clashing each other  ( only me? ) <br />
+<br />
+3. Once a month I feel so heavy ( in my soul ) that I just take my phone and keys and <br />
+   leave the house to sit at a park without talking until it&#039;s over ( only me? ) <br />
+<br />
+4. Every spirit guide ( guardian angel ) of one come from the religion of his origin? <br />
+   ( Jew will have a Jew spirit guide . Christian will have a Christian guide etc.)<br />
+   ( other opinions? ) <br />
+<br />
+5. Muscles are weaker ( in any thing ) from strong emotions ( agree? ) </div>
+		<textarea style="display: none;" id="desctxt_10102">Hey guys. this following question are somthing I need some opinion on for comparing : 
+
+1. when I look at the moon , I see a deep puprple- deep green aura ( confirm? ) 
+
+2. when I look at the bright blue ski in the morning I see flashing colored orbs 
+   spliting to 3 orbs and clashing each other  ( only me? ) 
+
+3. Once a month I feel so heavy ( in my soul ) that I just take my phone and keys and 
+   leave the house to sit at a park without talking until it&#039;s over ( only me? ) 
+
+4. Every spirit guide ( guardian angel ) of one come from the religion of his origin? 
+   ( Jew will have a Jew spirit guide . Christian will have a Christian guide etc.)
+   ( other opinions? ) 
+
+5. Muscles are weaker ( in any thing ) from strong emotions ( agree? )</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Falcon</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=521&amp;ref=1241106812" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10106" style="width: 100%; overflow: auto; min-height: 125px;">1+2. No idea, maybe you&#039;re just hallucinating.<br />
+<br />
+3. I&#039;ve got something like that too, when I&#039;m feeling down, I&#039;d like to go to a small forest next to our house.<br />
+When I&#039;m there, I just sit down and relax, until I&#039;m feeling better.<br />
+I don&#039;t take my phone with me though, I don&#039;t like to be interrupted when I want to be on my own.<br />
+<br />
+4. Don&#039;t know anything about spirit guides, can you tell me more about this? Or give me a site so I can find more information about this subject?<br />
+<br />
+5. What&#039;s your view on &#039;strong emotions&#039;?<br />
+<br />
+F.</div>
+		<textarea style="display: none;" id="desctxt_10106">1+2. No idea, maybe you&#039;re just hallucinating.
+
+3. I&#039;ve got something like that too, when I&#039;m feeling down, I&#039;d like to go to a small forest next to our house.
+When I&#039;m there, I just sit down and relax, until I&#039;m feeling better.
+I don&#039;t take my phone with me though, I don&#039;t like to be interrupted when I want to be on my own.
+
+4. Don&#039;t know anything about spirit guides, can you tell me more about this? Or give me a site so I can find more information about this subject?
+
+5. What&#039;s your view on &#039;strong emotions&#039;?
+
+F.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Falcon, 4 years, 5 months ago<br />Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">RazSh18</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=510&amp;ref=1213120644" width="110" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10109" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Falcon:</em><br />
+1+2. No idea, maybe you&#039;re just hallucinating.<br />
+<br />
+3. I&#039;ve got something like that too, when I&#039;m feeling down, I&#039;d like to go to a small forest next to our house.<br />
+When I&#039;m there, I just sit down and relax, until I&#039;m feeling better.<br />
+I don&#039;t take my phone with me though, I don&#039;t like to be interrupted when I want to be on my own.<br />
+<br />
+4. Don&#039;t know anything about spirit guides, can you tell me more about this? Or give me a site so I can find more information about this subject?<br />
+<br />
+5. What&#039;s your view on &#039;strong emotions&#039;?<br />
+<br />
+F.</div>@Falcon<br />
+<br />
+1+2. I don&#039;t think so because it happened to me alot, and I don&#039;t use drugs, alcohol or anything alse to cause that ( not even medical pills :P )  <br />
+<br />
+3. I take my phone so that my mom won&#039;t freak out. She did called me once when I was alone argggggggg <br />
+<br />
+4. Everyone have a spirit guide who is attached to him in birth, even if your&#039;e not aware of her, she&#039;s aware of you. The spirit guide is a soul of a person who died and had an agreement with the spirit guide ( before your phisical body born )  to help you learn moral lessons you didn&#039;t completed in your last lifetimes , the spirit help you to learn those lessons by yourself. she just &quot;errange&quot; the things that you will meet and in the right time and the right feeling when you&#039;ll be ready to face them. <br />
+The spirit&#039;s perpouse is to make you a better soul\ human .<br />
+<br />
+I , personally didn&#039;t met my spirit guys because I don&#039;t have the will  for it now. <br />
+or in a better explanation, it&#039;s not the right time for that ;) .<br />
+<br />
+5. Strong emotions for me is like when some guy hurt you badly or someone you care that you just don&#039;t think of how it&#039;s gonna end, you just want to make him suffer  ( example- goku turnes saiyan the first time after paris \ freezer killed his best friend krillin ) <br />
+<br />
+anothr strong emotion to me is when you have a big test and you&#039;r so nerveous that you think of things differently than how you usually think . for example - how you will jump and save someone you don&#039;t know out of danger, when actually you would ignore it or just let it go...</div>
+		<textarea style="display: none;" id="desctxt_10109">[quote][i]posted by Falcon:[/i]
+1+2. No idea, maybe you&#039;re just hallucinating.
+
+3. I&#039;ve got something like that too, when I&#039;m feeling down, I&#039;d like to go to a small forest next to our house.
+When I&#039;m there, I just sit down and relax, until I&#039;m feeling better.
+I don&#039;t take my phone with me though, I don&#039;t like to be interrupted when I want to be on my own.
+
+4. Don&#039;t know anything about spirit guides, can you tell me more about this? Or give me a site so I can find more information about this subject?
+
+5. What&#039;s your view on &#039;strong emotions&#039;?
+
+F.[/quote]
+
+
+@Falcon
+
+1+2. I don&#039;t think so because it happened to me alot, and I don&#039;t use drugs, alcohol or anything alse to cause that ( not even medical pills :P )  
+
+3. I take my phone so that my mom won&#039;t freak out. She did called me once when I was alone argggggggg 
+
+4. Everyone have a spirit guide who is attached to him in birth, even if your&#039;e not aware of her, she&#039;s aware of you. The spirit guide is a soul of a person who died and had an agreement with the spirit guide ( before your phisical body born )  to help you learn moral lessons you didn&#039;t completed in your last lifetimes , the spirit help you to learn those lessons by yourself. she just &quot;errange&quot; the things that you will meet and in the right time and the right feeling when you&#039;ll be ready to face them. 
+The spirit&#039;s perpouse is to make you a better soul\ human .
+
+I , personally didn&#039;t met my spirit guys because I don&#039;t have the will  for it now. 
+or in a better explanation, it&#039;s not the right time for that ;) .
+
+5. Strong emotions for me is like when some guy hurt you badly or someone you care that you just don&#039;t think of how it&#039;s gonna end, you just want to make him suffer  ( example- goku turnes saiyan the first time after paris \ freezer killed his best friend krillin ) 
+
+anothr strong emotion to me is when you have a big test and you&#039;r so nerveous that you think of things differently than how you usually think . for example - how you will jump and save someone you don&#039;t know out of danger, when actually you would ignore it or just let it go...</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by RazSh18, 4 years, 5 months ago<br />Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">nonconformist</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=616&amp;ref=1215149170" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10114" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by RazSh18:</em><br />
+Hey guys. this following question are somthing I need some opinion on for comparing : <br />
+<br />
+1. when I look at the moon , I see a deep puprple- deep green aura ( confirm? ) Reply: I don&#039;t know, aura vision isn&#039;t my best skill, I&#039;ll try and check latter.<br />
+<br />
+2. when I look at the bright blue ski in the morning I see flashing colored orbs <br />
+   spliting to 3 orbs and clashing each other  ( only me? ) Reply: Yeah always happens to me. <br />
+<br />
+3. Once a month I feel so heavy ( in my soul ) that I just take my phone and keys and <br />
+   leave the house to sit at a park without talking until it&#039;s over ( only me? ) Reply: YeahI do that alot <br />
+<br />
+4. Every spirit guide ( guardian angel ) of one come from the religion of his origin? <br />
+   ( Jew will have a Jew spirit guide . Christian will have a Christian guide etc.)<br />
+   ( other opinions? ) Reply: Don&#039;t know<br />
+ <br />
+5. Muscles are weaker ( in any thing ) from strong emotions ( agree? )</div>Reply: Possible I don&#039;t know <br />
+<br />
+</div>
+		<textarea style="display: none;" id="desctxt_10114">[quote][i]posted by RazSh18:[/i]
+Hey guys. this following question are somthing I need some opinion on for comparing : 
+
+1. when I look at the moon , I see a deep puprple- deep green aura ( confirm? ) Reply: I don&#039;t know, aura vision isn&#039;t my best skill, I&#039;ll try and check latter.
+
+2. when I look at the bright blue ski in the morning I see flashing colored orbs 
+   spliting to 3 orbs and clashing each other  ( only me? ) Reply: Yeah always happens to me. 
+
+3. Once a month I feel so heavy ( in my soul ) that I just take my phone and keys and 
+   leave the house to sit at a park without talking until it&#039;s over ( only me? ) Reply: YeahI do that alot 
+
+4. Every spirit guide ( guardian angel ) of one come from the religion of his origin? 
+   ( Jew will have a Jew spirit guide . Christian will have a Christian guide etc.)
+   ( other opinions? ) Reply: Don&#039;t know
+ 
+5. Muscles are weaker ( in any thing ) from strong emotions ( agree? )[/quote] Reply: Possible I don&#039;t know</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Jeffrey</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=283&amp;ref=1213976987" width="116" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10118" style="width: 100%; overflow: auto; min-height: 125px;">1. I get the same thing too, don&#039;t worry. If you stare at the Moon long enough you see the aura. It&#039;s kinda cool. I look at it when I walk my dogs at night. :-)</div>
+		<textarea style="display: none;" id="desctxt_10118">1. I get the same thing too, don&#039;t worry. If you stare at the Moon long enough you see the aura. It&#039;s kinda cool. I look at it when I walk my dogs at night. :-)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Falcon</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=521&amp;ref=1241106812" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10122" style="width: 100%; overflow: auto; min-height: 125px;">Ehm, about 4, can you tell me how to &#039;see&#039; or talk to my spirit guide?<br />
+I&#039;d like to do that.<br />
+<br />
+F.</div>
+		<textarea style="display: none;" id="desctxt_10122">Ehm, about 4, can you tell me how to &#039;see&#039; or talk to my spirit guide?
+I&#039;d like to do that.
+
+F.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">RazSh18</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=510&amp;ref=1213120644" width="110" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10124" style="width: 100%; overflow: auto; min-height: 125px;">hmm... I&#039;m reading a book ( in hebrew ) which includes that&#039; but I have a big test to do so I can&#039;t make time for it. sorry :S <br />
+<br />
+If no-one can adress you somewhere than I could read and translate it for you in a few days :) <br />
+<br />
+By the way, if you see &quot;Haunted Homes&quot; on Discovery Channel you&#039;ll see Mia Dolan and how she use her spirit guide Eric to help ghosts move to the ghost world ;)</div>
+		<textarea style="display: none;" id="desctxt_10124">hmm... I&#039;m reading a book ( in hebrew ) which includes that&#039; but I have a big test to do so I can&#039;t make time for it. sorry :S 
+
+If no-one can adress you somewhere than I could read and translate it for you in a few days :) 
+
+By the way, if you see &quot;Haunted Homes&quot; on Discovery Channel you&#039;ll see Mia Dolan and how she use her spirit guide Eric to help ghosts move to the ghost world ;)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">keen31</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=253&amp;ref=1203827935" width="53" height="55" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10151" style="width: 100%; overflow: auto; min-height: 125px;">1. i see a halo around it usually, but im never sure if its just a vision artifact or something else.<br />
+<br />
+2. ALL the time. i can confirm this for sure.<br />
+<br />
+3. i dont think ive felt this, but ive felt heavy plenty of times, next it happens i will try sitting with nature for a while.<br />
+<br />
+4. not necessarily. depends on who you are and what you choose/chose. there can be many spirit guides and guardians available to a person (beyond maybe the &quot;main&quot; one) and they can come from many different backgrounds. as far as comfortability or ancestry goes, you may find bonds there. (i.e. a woman ive taken many courses with on these topics has native american blood and one of her guides is an indian shaman that speaks to her in symbols only, as opposed to thought/verbal/sentence-wise).<br />
+<br />
+5.i can&#039;t confirm this, i never noticed it. if anything ive noticed that with strong emotion comes strength, at least if angry. ive never been in a situation where i used my muscles with any abnormal results while having other strong emotions.<br />
+<br />
+</div>
+		<textarea style="display: none;" id="desctxt_10151">1. i see a halo around it usually, but im never sure if its just a vision artifact or something else.
+
+2. ALL the time. i can confirm this for sure.
+
+3. i dont think ive felt this, but ive felt heavy plenty of times, next it happens i will try sitting with nature for a while.
+
+4. not necessarily. depends on who you are and what you choose/chose. there can be many spirit guides and guardians available to a person (beyond maybe the &quot;main&quot; one) and they can come from many different backgrounds. as far as comfortability or ancestry goes, you may find bonds there. (i.e. a woman ive taken many courses with on these topics has native american blood and one of her guides is an indian shaman that speaks to her in symbols only, as opposed to thought/verbal/sentence-wise).
+
+5.i can&#039;t confirm this, i never noticed it. if anything ive noticed that with strong emotion comes strength, at least if angry. ive never been in a situation where i used my muscles with any abnormal results while having other strong emotions.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">chillpill</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=635&amp;ref=1215645183" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10210" style="width: 100%; overflow: auto; min-height: 125px;">1. I can&#039;t relate.  I know if you stare at a bright, white object for a while and look away you&#039;ll see a purple light imprint, which has something to do with the way our eyes perceive light.<br />
+<br />
+2. I can&#039;t relate to this one either.<br />
+<br />
+3. Sounds similar to depression.  If you don&#039;t have depression, it could be a biopsychological response to stress in your life, such has having lots of responsibility, or lots of added &quot;weight to your shoulders&quot;, etc.  So, it could mean that you are just taking on a lot of new responsibilities or maybe even engaging in unfamiliar or uncofortable activities.<br />
+I would hypothesize that a practicioner of psionics would probably have more intense biopsychological responses to stress and other things in life, however I have no data or research to support that.  <br />
+What was happening in your life when you were having this feeling?<br />
+Around the time that you were having these feelings, did you have to take on any new responsibility or engage in unfamiliar or uncomfortable activities?<br />
+(When I say &quot;around the time&quot;, I mean before or after).<br />
+<br />
+4. When you say spirit guide, do you mean a person who guides you through your spiritual endeavors, a spirit that guides you through your spiritual endeavors, or something else?<br />
+If you are referring to a spirit that guides you through your spiritual endeavors, I would assume that a christian would need a christian spirit guide, a jew would need a jewish spirit guide and a buddhist would need a buddhist spirit guide.  However, if you look at it from the perspective that all religions are the same thing told in different ways, we could all most definately have the same kind of spirit guide.<br />
+<br />
+5.  I have to partially disagree with that statement.<br />
+Our (strong) emotions are harder to control than our muscles in most cases.  For example, it takes a lot more effort to calm yourself down if you&#039;re angry than it does to move an arm or a leg.  However, just because it is easier for us to control our muscles than our emotions doesn&#039;t mean our emotions are stronger, that just means we are weaker to our emotions than our muscles (in most cases).  <br />
+<br />
+It&#039;s like asking &quot;Which is stronger: a spoon or a bowl of cereal?&quot;<br />
+Who cares? Either way, they both help you do your thing.<br />
+<br />
+EDIT: <br />
+I&#039;d just like to add that although it is easier to control your muscles than your emotions, you do have control over your emotions.  People almost never acknowledge the control they have over their own emotions.  You do have control over those things, they only get as strong as you let&#039;m.</div>
+		<textarea style="display: none;" id="desctxt_10210">1. I can&#039;t relate.  I know if you stare at a bright, white object for a while and look away you&#039;ll see a purple light imprint, which has something to do with the way our eyes perceive light.
+
+2. I can&#039;t relate to this one either.
+
+3. Sounds similar to depression.  If you don&#039;t have depression, it could be a biopsychological response to stress in your life, such has having lots of responsibility, or lots of added &quot;weight to your shoulders&quot;, etc.  So, it could mean that you are just taking on a lot of new responsibilities or maybe even engaging in unfamiliar or uncofortable activities.
+I would hypothesize that a practicioner of psionics would probably have more intense biopsychological responses to stress and other things in life, however I have no data or research to support that.  
+What was happening in your life when you were having this feeling?
+Around the time that you were having these feelings, did you have to take on any new responsibility or engage in unfamiliar or uncomfortable activities?
+(When I say &quot;around the time&quot;, I mean before or after).
+
+4. When you say spirit guide, do you mean a person who guides you through your spiritual endeavors, a spirit that guides you through your spiritual endeavors, or something else?
+If you are referring to a spirit that guides you through your spiritual endeavors, I would assume that a christian would need a christian spirit guide, a jew would need a jewish spirit guide and a buddhist would need a buddhist spirit guide.  However, if you look at it from the perspective that all religions are the same thing told in different ways, we could all most definately have the same kind of spirit guide.
+
+5.  I have to partially disagree with that statement.
+Our (strong) emotions are harder to control than our muscles in most cases.  For example, it takes a lot more effort to calm yourself down if you&#039;re angry than it does to move an arm or a leg.  However, just because it is easier for us to control our muscles than our emotions doesn&#039;t mean our emotions are stronger, that just means we are weaker to our emotions than our muscles (in most cases).  
+
+It&#039;s like asking &quot;Which is stronger: a spoon or a bowl of cereal?&quot;
+Who cares? Either way, they both help you do your thing.
+
+EDIT: 
+I&#039;d just like to add that although it is easier to control your muscles than your emotions, you do have control over your emotions.  People almost never acknowledge the control they have over their own emotions.  You do have control over those things, they only get as strong as you let&#039;m.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by chillpill, 4 years, 5 months ago<br />Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Jeffrey</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=283&amp;ref=1213976987" width="116" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10229" style="width: 100%; overflow: auto; min-height: 125px;">Personally I think 1 is normal. It&#039;s probably something to do with the Sun&#039;s light hitting the Moon or whatever.</div>
+		<textarea style="display: none;" id="desctxt_10229">Personally I think 1 is normal. It&#039;s probably something to do with the Sun&#039;s light hitting the Moon or whatever.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">NewAgeAlchemist</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=459&amp;ref=1207160982" width="125" height="20" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10234" style="width: 100%; overflow: auto; min-height: 125px;">The answer to every question is Swamp Gas.. yep, you heard me.<br />
+<br />
+In seriousness though..<br />
+<br />
+1: I agree with Chill, it sounds like any other time you assault your retina&#039;s with heavy contrast/light.<br />
+<br />
+2: Perhaps Keen can expand on this cause I find the description rather lacking to draw a conclusion from.<br />
+<br />
+3: What does a soul feel like? Where is it located? <br />
+<br />
+4: In the event such a thing does exist, likely you project a form and teaching style upon it based on your religion of choice.<br />
+<br />
+5: Depends.  In theory if you get yourself into a mental state where your ignoring pain and mental limitations, you&#039;ll be capable of moving something heavier than normal. Ignoring the pain though you may accomplish your task but also increase the risk of seriously hurting yourself in the process. I don&#039;t know that you can gain voluntary control of it, though i suppose its not out of the question but the [url= <a href="http://en.wikipedia.org/wiki/Ideomotor_effect" target="_blank">http://en.wikipedia.org/wiki/Ideomotor_effect</a>]ideomotor effect[/url] can also work against you. Emotion mostly just clouds your judgment so your not thinking clearing about how best to complete a task, which can hinder you more than help. I think it would be advantageous to get away from the dragonball mindset and much of its metaphysical trappings but its your call.</div>
+		<textarea style="display: none;" id="desctxt_10234">The answer to every question is Swamp Gas.. yep, you heard me.
+
+In seriousness though..
+
+1: I agree with Chill, it sounds like any other time you assault your retina&#039;s with heavy contrast/light.
+
+2: Perhaps Keen can expand on this cause I find the description rather lacking to draw a conclusion from.
+
+3: What does a soul feel like? Where is it located? 
+
+4: In the event such a thing does exist, likely you project a form and teaching style upon it based on your religion of choice.
+
+5: Depends.  In theory if you get yourself into a mental state where your ignoring pain and mental limitations, you&#039;ll be capable of moving something heavier than normal. Ignoring the pain though you may accomplish your task but also increase the risk of seriously hurting yourself in the process. I don&#039;t know that you can gain voluntary control of it, though i suppose its not out of the question but the [url=http://en.wikipedia.org/wiki/Ideomotor_effect]ideomotor effect[/url] can also work against you. Emotion mostly just clouds your judgment so your not thinking clearing about how best to complete a task, which can hinder you more than help. I think it would be advantageous to get away from the dragonball mindset and much of its metaphysical trappings but its your call.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by NewAgeAlchemist, 4 years, 5 months ago<br />Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">keen31</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=253&amp;ref=1203827935" width="53" height="55" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10241" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by NewAgeAlchemist:</em><br />
+2: Perhaps Keen can expand on this cause I find the description rather lacking to draw a conclusion from.</div>WARNING: TEXT WALL<br />
+<br />
+<br />
+here goes. see pic first.<br />
+<a href="http://imageshack.us" target="_blank" title="http://imageshack.us"><img src="http://img151.imageshack.us/img151/7192/flashystuff3qo6.jpg" alt="External Image" /></a><br />
+<a href="http://g.imageshack.us/g.php?h=151&amp;i=flashystuff3qo6.jpg" target="_blank" title="http://g.imageshack.us/g.php?h=151&amp;i=flashystuff3qo6.jpg"><img src="http://img151.imageshack.us/img151/7192/flashystuff3qo6.26e1d2a345.jpg" alt="External Image" /></a><br />
+<br />
+<br />
+ok so i made the picture and was going to attempt to explain it that way. then i decided to try and find a video to help. lo and behold, the video linked below is VERY VERY close to what is being seen. i cant say if raz is seeing the same thing, but in my experience its very close. ill explain afterward.<br />
+<br />
+<br />
+annnnnd video:  <a href="http://www.youtube.com/watch?v=8NBWevyWBPM" target="_blank">http://www.youtube.com/watch?v=8NBWevyWBPM</a><br />
+<br />
+<br />
+ok. so the picture i drew is a picture of the beach. i used to work on the beach and it was quite easy to see this phenomenon there because of the high contrast between the foreground and the sky and the difference in light between the two.<br />
+<br />
+the bottom of the picture is a little dark to represent what your eye does when you look at the sky on a day like that. your iris naturally closes and the sky &quot;blooms&quot; in a way that makes it appear a bit brighter and with a minimal &quot;halo&quot; of brightness around it. this is nothing out of the ordinary, but thats why i put the white spraypaint around the edge of the sky there.<br />
+<br />
+what you see in the sky (aside from no clouds) is these little balls/orbs. some of them are still some are moving. they appear to be light or reflecting large amounts of light, that is why the ones moving have streaks behind them.<br />
+<br />
+if you look at the ugly umbrellas, youll notice because of jpeg compression there is a funky, oily kinda halo around those. that was unintentional, but worked out because when i see these orbs they are rainbow colored. the rainbow color to them is the same as if you get sun in your eye or you split it through some type of transparent material. the orbs have this effect to them... they are like little spots/streaks of light that are multicolored and continuously changing color. the effect around the umbrella is similar to this effect, only it is in clear rainbow, as opposed to just blue on blue.<br />
+<br />
+if you watched the video, when the camera person points the camera up toward that funnel shaped area in the sky, youll get a VERY close representation of what i see. consider the funnel shaped thing AND the sky as a background, and if you see all the little dancing lights and streaks, thats what i see. (edit: the very first time the camera pans up, early in the video, is the best representation of what i see. you can see things moving in multiple directions, varying sizes, streaks and some single/still particles. again, the sky/sun/funnel thing would be viewed as the background and irrelevant to the phenomenon, just the little light particles is what im referring to)<br />
+<br />
+the differences are as follows: when i view them, they do not all(nor most) move in one direction like in the video. in the video it looks like snow flecks blowing with the wind (which it may very well be), but when i see it, it is more like my picture. various sizes and trajectories.<br />
+<br />
+it should be noted here that in my vision these orbs appear to be coming up out of the background, into the foreground of my vision, but are ALL located as an overlay... as if to say, it were all occuring on a screen on a pair of glasses... but on that screen, the orbs move from background to fore. i had a friend that saw it before and she described it quite well by saying it looked like water boiling. different sized orbs bubbling up at different rates and sizes, coming out of nowhere and kinda popping back into nowhere.<br />
+<br />
+sometimes they collide, some times they just shoot across, sometimes the are varied in size (which appears to be due to &quot;distance&quot;). they are always clear-like light, rainbowed in a fashion that rain droplets would be. not a perfect halo or anything, but fluid and different as they move.<br />
+<br />
+i have seen these things easiest in the conditions that i have described (at the beach) because of the super bright light in the sky and due to having an infinite and mostly solid color background on which to (un)focus. ive seen them at night as well, when staring at the ceiling or any sufficiently dark/mostly dark space, though the effect is diminished since its so dark.. the spots look like dark spots on dark space, not rainbowed on light space.<br />
+<br />
+seeing the video and speculating that perhaps those things were just snow particles in the air i, of course, considered that what i saw could have been sand particles or something similar. i do not believe this is the case for many many reasons, not the least of which being i have seen this in many other places as opposed to the beach.<br />
+<br />
+i have a hard time telling whether these are located somewhere in 3d space or if they are an overlay on my eye. meaning: when i move my head or eyes, i cannot tell if i am panning an expanse of these things and looking at different spots, or if the &quot;canvas&quot; on which they appear is simply limited to my eyes, so no matter where i look, its the same thing (as if it were occuring on screen affixed to glasses i was wearing). they are so rapid and hard to actually look AT, that i have been unable to tell.<br />
+<br />
+i have positioned my vision around various things and people to see if the effect changed at all, and to my memory i do not believe it did. i would set my vision around a persons head that stuck above the horizon, to see if maybe it had some relation to energy or auras, hoping to see some abberation in the flow of the orbs because of a person being there, or a bird, or whatever... but, like i said, i do not recall this having an effect.<br />
+<br />
+i have NO idea what this is, what it represents, whether it is physiological or abnormal/paranormal. ive asked people about it, none except my friend have ever said they know what i mean.<br />
+<br />
+in a related phenomenon, whenever there is sun in the sky and i relax my eyes and/or eyelids to (un)focus on the sky, i see a moving halo-ish effect. again, if you reference the effect around the umbrellas in my lovely artwork, youll see what i called an oily/greasy halo effect on them. i see this effect in the sky/around the sun only that it reaches quite far, and it is moving. if you could imagine that effect flowing outward in kinda bloby patterns, thats what i see. this is NOT rainbow colored or appear to be light, it is just lighter and darker &quot;impressions&quot; overlayed onto my vision. this, too, seems to be an overlay, but it is centered around the sun (or wherever the brightest light source coming into my eye is). it is also visible with my eyelids fully closed, and is sometimes easier to see in this way because you can look almost directly at the sun (which causes the effect to be more pronounced) without burning your retinas.<br />
+<br />
+for this, i have no explanation either. it could be a normal phyiological response that perhaps i notice simply because i play with stuff like this and am curious and observant, or perhaps it could be indicative of something else.<br />
+<br />
+ANY thoughts or comments on the topic would be greatly appreciated. hope that wasnt too confusing :D</div>
+		<textarea style="display: none;" id="desctxt_10241">[quote][i]posted by NewAgeAlchemist:[/i]
+2: Perhaps Keen can expand on this cause I find the description rather lacking to draw a conclusion from.[/quote]
+
+WARNING: TEXT WALL
+
+
+here goes. see pic first.
+[URL=http://imageshack.us][IMG]http://img151.imageshack.us/img151/7192/flashystuff3qo6.jpg[/IMG][/URL]
+[URL=http://g.imageshack.us/g.php?h=151&amp;i=flashystuff3qo6.jpg][IMG]http://img151.imageshack.us/img151/7192/flashystuff3qo6.26e1d2a345.jpg[/IMG][/URL]
+
+
+ok so i made the picture and was going to attempt to explain it that way. then i decided to try and find a video to help. lo and behold, the video linked below is VERY VERY close to what is being seen. i cant say if raz is seeing the same thing, but in my experience its very close. ill explain afterward.
+
+
+annnnnd video: http://www.youtube.com/watch?v=8NBWevyWBPM
+
+
+ok. so the picture i drew is a picture of the beach. i used to work on the beach and it was quite easy to see this phenomenon there because of the high contrast between the foreground and the sky and the difference in light between the two.
+
+the bottom of the picture is a little dark to represent what your eye does when you look at the sky on a day like that. your iris naturally closes and the sky &quot;blooms&quot; in a way that makes it appear a bit brighter and with a minimal &quot;halo&quot; of brightness around it. this is nothing out of the ordinary, but thats why i put the white spraypaint around the edge of the sky there.
+
+what you see in the sky (aside from no clouds) is these little balls/orbs. some of them are still some are moving. they appear to be light or reflecting large amounts of light, that is why the ones moving have streaks behind them.
+
+if you look at the ugly umbrellas, youll notice because of jpeg compression there is a funky, oily kinda halo around those. that was unintentional, but worked out because when i see these orbs they are rainbow colored. the rainbow color to them is the same as if you get sun in your eye or you split it through some type of transparent material. the orbs have this effect to them... they are like little spots/streaks of light that are multicolored and continuously changing color. the effect around the umbrella is similar to this effect, only it is in clear rainbow, as opposed to just blue on blue.
+
+if you watched the video, when the camera person points the camera up toward that funnel shaped area in the sky, youll get a VERY close representation of what i see. consider the funnel shaped thing AND the sky as a background, and if you see all the little dancing lights and streaks, thats what i see. (edit: the very first time the camera pans up, early in the video, is the best representation of what i see. you can see things moving in multiple directions, varying sizes, streaks and some single/still particles. again, the sky/sun/funnel thing would be viewed as the background and irrelevant to the phenomenon, just the little light particles is what im referring to)
+
+the differences are as follows: when i view them, they do not all(nor most) move in one direction like in the video. in the video it looks like snow flecks blowing with the wind (which it may very well be), but when i see it, it is more like my picture. various sizes and trajectories.
+
+it should be noted here that in my vision these orbs appear to be coming up out of the background, into the foreground of my vision, but are ALL located as an overlay... as if to say, it were all occuring on a screen on a pair of glasses... but on that screen, the orbs move from background to fore. i had a friend that saw it before and she described it quite well by saying it looked like water boiling. different sized orbs bubbling up at different rates and sizes, coming out of nowhere and kinda popping back into nowhere.
+
+sometimes they collide, some times they just shoot across, sometimes the are varied in size (which appears to be due to &quot;distance&quot;). they are always clear-like light, rainbowed in a fashion that rain droplets would be. not a perfect halo or anything, but fluid and different as they move.
+
+i have seen these things easiest in the conditions that i have described (at the beach) because of the super bright light in the sky and due to having an infinite and mostly solid color background on which to (un)focus. ive seen them at night as well, when staring at the ceiling or any sufficiently dark/mostly dark space, though the effect is diminished since its so dark.. the spots look like dark spots on dark space, not rainbowed on light space.
+
+seeing the video and speculating that perhaps those things were just snow particles in the air i, of course, considered that what i saw could have been sand particles or something similar. i do not believe this is the case for many many reasons, not the least of which being i have seen this in many other places as opposed to the beach.
+
+i have a hard time telling whether these are located somewhere in 3d space or if they are an overlay on my eye. meaning: when i move my head or eyes, i cannot tell if i am panning an expanse of these things and looking at different spots, or if the &quot;canvas&quot; on which they appear is simply limited to my eyes, so no matter where i look, its the same thing (as if it were occuring on screen affixed to glasses i was wearing). they are so rapid and hard to actually look AT, that i have been unable to tell.
+
+i have positioned my vision around various things and people to see if the effect changed at all, and to my memory i do not believe it did. i would set my vision around a persons head that stuck above the horizon, to see if maybe it had some relation to energy or auras, hoping to see some abberation in the flow of the orbs because of a person being there, or a bird, or whatever... but, like i said, i do not recall this having an effect.
+
+i have NO idea what this is, what it represents, whether it is physiological or abnormal/paranormal. ive asked people about it, none except my friend have ever said they know what i mean.
+
+in a related phenomenon, whenever there is sun in the sky and i relax my eyes and/or eyelids to (un)focus on the sky, i see a moving halo-ish effect. again, if you reference the effect around the umbrellas in my lovely artwork, youll see what i called an oily/greasy halo effect on them. i see this effect in the sky/around the sun only that it reaches quite far, and it is moving. if you could imagine that effect flowing outward in kinda bloby patterns, thats what i see. this is NOT rainbow colored or appear to be light, it is just lighter and darker &quot;impressions&quot; overlayed onto my vision. this, too, seems to be an overlay, but it is centered around the sun (or wherever the brightest light source coming into my eye is). it is also visible with my eyelids fully closed, and is sometimes easier to see in this way because you can look almost directly at the sun (which causes the effect to be more pronounced) without burning your retinas.
+
+for this, i have no explanation either. it could be a normal phyiological response that perhaps i notice simply because i play with stuff like this and am curious and observant, or perhaps it could be indicative of something else.
+
+ANY thoughts or comments on the topic would be greatly appreciated. hope that wasnt too confusing :D</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by keen31, 4 years, 5 months ago<br />Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">keen31</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=253&amp;ref=1203827935" width="53" height="55" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10242" style="width: 100%; overflow: auto; min-height: 125px;">quick clarification:<br />
+<br />
+the effect around my umbrellas and that i see around the sun through closed eyes could be likened to what you might imagine gravity waves would look like. not so clearly defined and pretty thick mostly, but that would be a good analog for what i mean. imagine being able to see thick moving gravity bands and thats a good start. i may try and make a picture of the sun effect.<br />
+<br />
+<br />
+also, for those who are interested in experimenting:<br />
+<br />
+one of the best tricks ive learned (and this is how i got my friend to see the original effect) is to try this sight at night, in bed.<br />
+<br />
+make sure the room is pretty dark, not pitch, but dark. and stare at the ceiling a while. relax your eyes and try not to blink as best you can. after a bit your eyes will adjust and you may start to see things. ive seen the spots like i described, but ive routinely also seen large blobs of purple just flood in and out of my vision (again, on an overlay, and transparent, not opaque... though hard to see through when quite bright). these can be fun things to just watch and see what, if anything, they do.<br />
+<br />
+if you can get yourself sufficiently relaxed and perhaps seeing &quot;things&quot; then the trick ive learned to best get a &quot;wow effect&quot; is to do the following.<br />
+<br />
+-put your hands together (palm on palm, like the prayer motion).<br />
+-put them a foot or so in front of your face, so that you can see them without straining but you arent reaching too much.<br />
+-seperate your hands about an inch or so so that there is space between them that you can clearly make out, but so they are still pretty close.<br />
+-sit with this for a bit and get a good eye of the gap, your hands, and the background around the whole of it.<br />
+-now, focus on the space between your hands. the gap. focus there as if there was something inbetween your hands that was keeping them apart (just be sure your focus distance is not in the background, nor on your hands/in front of them).<br />
+-with your focus in the gap, pull your hands slowly apart. chances are pretty good i do not need to explain what youll see, because youll see it for yourself.<br />
+<br />
+once youve completed that and if it was successful, continue doing that with your hands/arms/whatever. eventually it got to the point for me, where i could stare at my arm and i could see that oily/greasy halo effect on them as well. only it didnt propegate in all directions like when i look at the sun, it went upward. it looked very much like i was on fire, or if i was so hot that i created heatwaves... <strong>again another great comparison for the sun effect. if you could see the heatwaves from the sun just in blank space, thats what it looks like.</strong> same with my arm. when looking at it at night in that context it looked as if it were slowly radiating a lot of heat or as if it were smoldering. sometimes i would get very slight hints of a bright blue around my arm (im guessing a very minimal aura?) and as the effect rolled over my arm it would cause the blue to streak and would appear as a tigers stripes.<br />
+<br />
+fun stuff to play with. also fun to do: stare through your hands. stare at them, but try to focus on the space behind them, as if they had depth. thats always trippy.</div>
+		<textarea style="display: none;" id="desctxt_10242">quick clarification:
+
+the effect around my umbrellas and that i see around the sun through closed eyes could be likened to what you might imagine gravity waves would look like. not so clearly defined and pretty thick mostly, but that would be a good analog for what i mean. imagine being able to see thick moving gravity bands and thats a good start. i may try and make a picture of the sun effect.
+
+
+also, for those who are interested in experimenting:
+
+one of the best tricks ive learned (and this is how i got my friend to see the original effect) is to try this sight at night, in bed.
+
+make sure the room is pretty dark, not pitch, but dark. and stare at the ceiling a while. relax your eyes and try not to blink as best you can. after a bit your eyes will adjust and you may start to see things. ive seen the spots like i described, but ive routinely also seen large blobs of purple just flood in and out of my vision (again, on an overlay, and transparent, not opaque... though hard to see through when quite bright). these can be fun things to just watch and see what, if anything, they do.
+
+if you can get yourself sufficiently relaxed and perhaps seeing &quot;things&quot; then the trick ive learned to best get a &quot;wow effect&quot; is to do the following.
+
+-put your hands together (palm on palm, like the prayer motion).
+-put them a foot or so in front of your face, so that you can see them without straining but you arent reaching too much.
+-seperate your hands about an inch or so so that there is space between them that you can clearly make out, but so they are still pretty close.
+-sit with this for a bit and get a good eye of the gap, your hands, and the background around the whole of it.
+-now, focus on the space between your hands. the gap. focus there as if there was something inbetween your hands that was keeping them apart (just be sure your focus distance is not in the background, nor on your hands/in front of them).
+-with your focus in the gap, pull your hands slowly apart. chances are pretty good i do not need to explain what youll see, because youll see it for yourself.
+
+once youve completed that and if it was successful, continue doing that with your hands/arms/whatever. eventually it got to the point for me, where i could stare at my arm and i could see that oily/greasy halo effect on them as well. only it didnt propegate in all directions like when i look at the sun, it went upward. it looked very much like i was on fire, or if i was so hot that i created heatwaves... [b]again another great comparison for the sun effect. if you could see the heatwaves from the sun just in blank space, thats what it looks like.[/b] same with my arm. when looking at it at night in that context it looked as if it were slowly radiating a lot of heat or as if it were smoldering. sometimes i would get very slight hints of a bright blue around my arm (im guessing a very minimal aura?) and as the effect rolled over my arm it would cause the blue to streak and would appear as a tigers stripes.
+
+fun stuff to play with. also fun to do: stare through your hands. stare at them, but try to focus on the space behind them, as if they had depth. thats always trippy.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by keen31, 4 years, 5 months ago<br />Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">3chad</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=555&amp;ref=1221955619" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10271" style="width: 100%; overflow: auto; min-height: 125px;">1 and 2 happen to me all the time when I take off my glasses.</div>
+		<textarea style="display: none;" id="desctxt_10271">1 and 2 happen to me all the time when I take off my glasses.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=462" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 30 queries. 0.323 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

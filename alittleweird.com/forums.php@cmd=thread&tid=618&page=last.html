@@ -1,0 +1,439 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Ubiquitous Consciousness</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Ubiquitous Consciousness</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Ubiquitous Consciousness</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Psikillion</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=593&amp;ref=1213954510" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12127" style="width: 100%; overflow: auto; min-height: 125px;">I was fooling around in my programming class today when I suddenly remembered this one class where I learned about ubiquitous computing. For those who are not computer science majors or not very computer savvy, ubiquitous computing is basically a network of computers that, when a computer needs more processing power, gives said computer more processing power from the other computers on the network.<br />
+<br />
+So what does this have to do with the paranormal?<br />
+<br />
+After remembering about ubiquitous computing I wondered, &quot;The brain is a computer, and in ubiquitous computing computers can give other computers more power through a network, so could it be possible to connect our subconsciousness/consciousness together in order to undergo greater psionic feats like levitating large objects, more accurate remote viewing and precognition, and possibly even teleportation?&quot; Okay maybe I didn&#039;t think all that, but the question I ask to you is the same.<br />
+<br />
+&quot;Could it be possible to have our subconsciousnesses and/or consciousnesses to work together in order to perform greater psionic feats?&quot;<br />
+<br />
+-Psikillion<br />
+<br />
+Edit: Made blog  <a href="http://aenigmadolosa.blogspot.com/" target="_blank">http://aenigmadolosa.blogspot.com/</a></div>
+		<textarea style="display: none;" id="desctxt_12127">I was fooling around in my programming class today when I suddenly remembered this one class where I learned about ubiquitous computing. For those who are not computer science majors or not very computer savvy, ubiquitous computing is basically a network of computers that, when a computer needs more processing power, gives said computer more processing power from the other computers on the network.
+
+So what does this have to do with the paranormal?
+
+After remembering about ubiquitous computing I wondered, &quot;The brain is a computer, and in ubiquitous computing computers can give other computers more power through a network, so could it be possible to connect our subconsciousness/consciousness together in order to undergo greater psionic feats like levitating large objects, more accurate remote viewing and precognition, and possibly even teleportation?&quot; Okay maybe I didn&#039;t think all that, but the question I ask to you is the same.
+
+&quot;Could it be possible to have our subconsciousnesses and/or consciousnesses to work together in order to perform greater psionic feats?&quot;
+
+-Psikillion
+
+Edit: Made blog http://aenigmadolosa.blogspot.com/</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Psikillion, 4 years ago<br />Posted 4 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Raathuus</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=764&amp;ref=1259211929" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12130" style="width: 100%; overflow: auto; min-height: 125px;">That&#039;s actually a good idea!  Putting brains together to achieve higher psionic skills.  I should try this out... too bad I don&#039;t have anyone to practice with...</div>
+		<textarea style="display: none;" id="desctxt_12130">That&#039;s actually a good idea!  Putting brains together to achieve higher psionic skills.  I should try this out... too bad I don&#039;t have anyone to practice with...</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Renodin</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=111&amp;ref=1223032143" width="90" height="108" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12132" style="width: 100%; overflow: auto; min-height: 125px;">I don&#039;t see why that wouldn&#039;t work. Psychokinesis is just energy, right? More people using more energy should only make it easier.<br />
+<br />
+I wouldn&#039;t be able to test that out, though. Nobody I know even believes in anything about psionics one tiny bit, and... I&#039;m probably the worst person at that anyway. Myself helping other people probably wouldn&#039;t be any help at all, heh heh.</div>
+		<textarea style="display: none;" id="desctxt_12132">I don&#039;t see why that wouldn&#039;t work. Psychokinesis is just energy, right? More people using more energy should only make it easier.
+
+I wouldn&#039;t be able to test that out, though. Nobody I know even believes in anything about psionics one tiny bit, and... I&#039;m probably the worst person at that anyway. Myself helping other people probably wouldn&#039;t be any help at all, heh heh.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Corpse</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=553&amp;ref=1239824741" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12133" style="width: 100%; overflow: auto; min-height: 125px;">I say everyone who replies to this thread should try it out with each other since no one seems to know any other psions in real life.</div>
+		<textarea style="display: none;" id="desctxt_12133">I say everyone who replies to this thread should try it out with each other since no one seems to know any other psions in real life.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Corpse, 4 years ago<br />Posted 4 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Raathuus</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=764&amp;ref=1259211929" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12138" style="width: 100%; overflow: auto; min-height: 125px;">Maybe we could try this at the Geiger Game chat...</div>
+		<textarea style="display: none;" id="desctxt_12138">Maybe we could try this at the Geiger Game chat...</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">jack</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=759&amp;ref=1220326318" width="125" height="105" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12142" style="width: 100%; overflow: auto; min-height: 125px;">Hey...we had a couple of geiger counters in my chemistry class lol. I actually just found out that it measures radiation in a combination of 1: penetrating ability, 2: frequency 3:Rems? I&#039;m not sure, eh, I got the notes in my backpack don&#039;t wanna check &gt;&lt;.<br />
+Well, anyways, radiation of an source will knock the electrons of some gas,(its a noble gas, I forgot which one), in the geiger counter, and the geiger counter measures the energy based on that. We are just knocking out electrons &gt;&lt;.<br />
+<br />
+btw, I failed to raise the rem of the geiger counter by &quot;injecting psi energy in it &gt;&lt;&quot; hehe, just a note I wanted to share cuz I didn&#039;t know specifically wat a geiger counter does b4.<br />
+<br />
+anyways, I still believe we can do anything just because we are us, thus all suggestions is capable of reality, just try it, it might work, but when it doesn&#039;t...keep trying and eventually it will :D, believe it.</div>
+		<textarea style="display: none;" id="desctxt_12142">Hey...we had a couple of geiger counters in my chemistry class lol. I actually just found out that it measures radiation in a combination of 1: penetrating ability, 2: frequency 3:Rems? I&#039;m not sure, eh, I got the notes in my backpack don&#039;t wanna check &gt;&lt;.
+Well, anyways, radiation of an source will knock the electrons of some gas,(its a noble gas, I forgot which one), in the geiger counter, and the geiger counter measures the energy based on that. We are just knocking out electrons &gt;&lt;.
+
+btw, I failed to raise the rem of the geiger counter by &quot;injecting psi energy in it &gt;&lt;&quot; hehe, just a note I wanted to share cuz I didn&#039;t know specifically wat a geiger counter does b4.
+
+anyways, I still believe we can do anything just because we are us, thus all suggestions is capable of reality, just try it, it might work, but when it doesn&#039;t...keep trying and eventually it will :D, believe it.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">ShadowmanX</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12144" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by jack:</em><br />
+Hey...we had a couple of geiger counters in my chemistry class lol. I actually just found out that it measures radiation in a combination of 1: penetrating ability, 2: frequency 3:Rems? I&#039;m not sure, eh, I got the notes in my backpack don&#039;t wanna check &gt;&lt;.<br />
+Well, anyways, radiation of an source will knock the electrons of some gas,(its a noble gas, I forgot which one), in the geiger counter, and the geiger counter measures the energy based on that. We are just knocking out electrons &gt;&lt;.</div>In your place I would try to shock my teacher by letting the geiger counter overreact ^^</div>
+		<textarea style="display: none;" id="desctxt_12144">[quote][i]posted by jack:[/i]
+Hey...we had a couple of geiger counters in my chemistry class lol. I actually just found out that it measures radiation in a combination of 1: penetrating ability, 2: frequency 3:Rems? I&#039;m not sure, eh, I got the notes in my backpack don&#039;t wanna check &gt;&lt;.
+Well, anyways, radiation of an source will knock the electrons of some gas,(its a noble gas, I forgot which one), in the geiger counter, and the geiger counter measures the energy based on that. We are just knocking out electrons &gt;&lt;.[/quote]
+
+In your place I would try to shock my teacher by letting the geiger counter overreact ^^</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Corpse</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=553&amp;ref=1239824741" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12145" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by ShadowmanX:</em><br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by jack:</em><br />
+Hey...we had a couple of geiger counters in my chemistry class lol. I actually just found out that it measures radiation in a combination of 1: penetrating ability, 2: frequency 3:Rems? I&#039;m not sure, eh, I got the notes in my backpack don&#039;t wanna check &gt;&lt;.<br />
+Well, anyways, radiation of an source will knock the electrons of some gas,(its a noble gas, I forgot which one), in the geiger counter, and the geiger counter measures the energy based on that. We are just knocking out electrons &gt;&lt;.</div>In your place I would try to shock my teacher by letting the geiger counter overreact ^^</div>lol that would be so much fun!<br />
+I have always wondered how authority figures would react to psionics.</div>
+		<textarea style="display: none;" id="desctxt_12145">[quote][i]posted by ShadowmanX:[/i]
+[quote][i]posted by jack:[/i]
+Hey...we had a couple of geiger counters in my chemistry class lol. I actually just found out that it measures radiation in a combination of 1: penetrating ability, 2: frequency 3:Rems? I&#039;m not sure, eh, I got the notes in my backpack don&#039;t wanna check &gt;&lt;.
+Well, anyways, radiation of an source will knock the electrons of some gas,(its a noble gas, I forgot which one), in the geiger counter, and the geiger counter measures the energy based on that. We are just knocking out electrons &gt;&lt;.[/quote]
+
+In your place I would try to shock my teacher by letting the geiger counter overreact ^^[/quote]
+
+lol that would be so much fun!
+I have always wondered how authority figures would react to psionics.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">DarkTiger</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12169" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;">&quot;Could it be possible to have our subconsciousnesses and/or consciousnesses to work together in order to perform greater psionic feats?&quot;</div>I&#039;ve heard of it being done before and it worked.</div>
+		<textarea style="display: none;" id="desctxt_12169">[quote]&quot;Could it be possible to have our subconsciousnesses and/or consciousnesses to work together in order to perform greater psionic feats?&quot;[/quote]
+
+I&#039;ve heard of it being done before and it worked.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">mrj</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12170" style="width: 100%; overflow: auto; min-height: 125px;">It could be this kind of thing happens when people call upon a higher power. Not sure about it though, kinda making an assumption of a certain things existence that I cant confirm. I dont know if any &quot;big&quot; psionic events were performed in this way either. (the method I mentioned at least)</div>
+		<textarea style="display: none;" id="desctxt_12170">It could be this kind of thing happens when people call upon a higher power. Not sure about it though, kinda making an assumption of a certain things existence that I cant confirm. I dont know if any &quot;big&quot; psionic events were performed in this way either. (the method I mentioned at least)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by mrj, 4 years ago<br />Posted 4 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Psikillion</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=593&amp;ref=1213954510" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12171" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Raathuus:</em><br />
+Maybe we could try this at the Geiger Game chat...</div>I think we should, but the problem is how do we make the appropriate links with the subconscious, how do we visualize it? Do we even visualize it at all? I personally have a few ideas, but I think it would be best to get back to it tomorrow.<br />
+</div>
+		<textarea style="display: none;" id="desctxt_12171">[quote][i]posted by Raathuus:[/i]
+Maybe we could try this at the Geiger Game chat...[/quote]
+
+I think we should, but the problem is how do we make the appropriate links with the subconscious, how do we visualize it? Do we even visualize it at all? I personally have a few ideas, but I think it would be best to get back to it tomorrow.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Dis</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12174" style="width: 100%; overflow: auto; min-height: 125px;">Dr. John Hagelin is waaaay ahead of you xD<br />
+<br />
+In case you haven´t heard of it, here´s a video excerpt of one of his talks that can be watched in full lenght at his website:<br />
+<br />
+ <a href="http://www.metacafe.com/watch/750879/david_lynch_john_hagelin_talk_world_peace_unified_field/" target="_blank">http://www.metacafe.com/watch/750879/david_lynch_john_hagelin_talk_world_peace_unified_field/</a><br />
+<br />
+I think these experiments demonstrate collective consciousness-effects exactly. I recommend watching the full talk however as this clip might be cut confusingly and seem over-esoterical.</div>
+		<textarea style="display: none;" id="desctxt_12174">Dr. John Hagelin is waaaay ahead of you xD
+
+In case you haven´t heard of it, here´s a video excerpt of one of his talks that can be watched in full lenght at his website:
+
+http://www.metacafe.com/watch/750879/david_lynch_john_hagelin_talk_world_peace_unified_field/
+
+I think these experiments demonstrate collective consciousness-effects exactly. I recommend watching the full talk however as this clip might be cut confusingly and seem over-esoterical.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Psikillion</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=593&amp;ref=1213954510" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12179" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Dis:</em><br />
+Dr. John Hagelin is waaaay ahead of you xD<br />
+<br />
+In case you haven´t heard of it, here´s a video excerpt of one of his talks that can be watched in full lenght at his website:<br />
+<br />
+ <a href="http://www.metacafe.com/watch/750879/david_lynch_john_hagelin_talk_world_peace_unified_field/" target="_blank">http://www.metacafe.com/watch/750879/david_lynch_john_hagelin_talk_world_peace_unified_field/</a><br />
+<br />
+I think these experiments demonstrate collective consciousness-effects exactly. I recommend watching the full talk however as this clip might be cut confusingly and seem over-esoterical.</div>Do you know what his main site is?<br />
+<br />
+I&#039;d rather watch the full talk, especially if it includes &quot;HOW&quot; they do it, and &quot;WHY&quot; they have not done it already...<br />
+<br />
+Edit: Is it mum.edu ?</div>
+		<textarea style="display: none;" id="desctxt_12179">[quote][i]posted by Dis:[/i]
+Dr. John Hagelin is waaaay ahead of you xD
+
+In case you haven´t heard of it, here´s a video excerpt of one of his talks that can be watched in full lenght at his website:
+
+http://www.metacafe.com/watch/750879/david_lynch_john_hagelin_talk_world_peace_unified_field/
+
+I think these experiments demonstrate collective consciousness-effects exactly. I recommend watching the full talk however as this clip might be cut confusingly and seem over-esoterical.[/quote]
+
+Do you know what his main site is?
+
+I&#039;d rather watch the full talk, especially if it includes &quot;HOW&quot; they do it, and &quot;WHY&quot; they have not done it already...
+
+Edit: Is it mum.edu ?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Psikillion, 4 years ago<br />Posted 4 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Dis</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12243" style="width: 100%; overflow: auto; min-height: 125px;">Hi there Psikillion,<br />
+<br />
+sorry for being a tad vague on the links. Here´s the full talk, or better yet - intro of what this is about:<br />
+<br />
+ <a href="http://streaming.mou.org/MOU/Dr_Hagelin/Tucsontalk.wmv" target="_blank">http://streaming.mou.org/MOU/Dr_Hagelin/Tucsontalk.wmv</a><br />
+(streaming wmv)<br />
+<br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;">(...) especially if it includes &quot;HOW&quot; they do it, and &quot;WHY&quot; they have not done it already...</div>- includes HOW to do it, group meditation, they are using Transcendental Meditation<br />
+- WHY they haven´t done it already? Well they have, numerous times. Even published papers in Nature and had experiments independently replicated successfully.<br />
+<br />
+I have this site bookmarked as his main page:<br />
+ <a href="http://www.hagelin.org/" target="_blank">http://www.hagelin.org/</a></div>
+		<textarea style="display: none;" id="desctxt_12243">Hi there Psikillion,
+
+sorry for being a tad vague on the links. Here´s the full talk, or better yet - intro of what this is about:
+
+http://streaming.mou.org/MOU/Dr_Hagelin/Tucsontalk.wmv
+(streaming wmv)
+
+[quote](...) especially if it includes &quot;HOW&quot; they do it, and &quot;WHY&quot; they have not done it already...[/quote]
+
+- includes HOW to do it, group meditation, they are using Transcendental Meditation
+- WHY they haven´t done it already? Well they have, numerous times. Even published papers in Nature and had experiments independently replicated successfully.
+
+I have this site bookmarked as his main page:
+http://www.hagelin.org/</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Dis, 4 years ago<br />Posted 4 years ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=618" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 30 queries. 0.286 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

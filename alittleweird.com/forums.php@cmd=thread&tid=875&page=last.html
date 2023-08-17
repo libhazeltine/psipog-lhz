@@ -1,0 +1,373 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; aura vision help</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; aura vision help</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">aura vision help</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">speeddemon92</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_15727" style="width: 100%; overflow: auto; min-height: 125px;">hey i need some help with aura vision. i&#039;m really wanting to leaarn this but i don&#039;t know where to start. i&#039;ve read online books were you focus on something where it is in your periferal (i know thats not the right spelling but i cant remember how to spell it) vision then you start seeing the &quot;aura&quot; of a color. does anyone know if this is right or are the writers of that book just flat out nuts? please help! i want to try to learn this by friday if i can. thanks</div>
+		<textarea style="display: none;" id="desctxt_15727">hey i need some help with aura vision. i&#039;m really wanting to leaarn this but i don&#039;t know where to start. i&#039;ve read online books were you focus on something where it is in your periferal (i know thats not the right spelling but i cant remember how to spell it) vision then you start seeing the &quot;aura&quot; of a color. does anyone know if this is right or are the writers of that book just flat out nuts? please help! i want to try to learn this by friday if i can. thanks</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Riven</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=656&amp;ref=1217444530" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_15728" style="width: 100%; overflow: auto; min-height: 125px;">I&#039;ve heard focusing on nothing and just letting your eyes relax works better. Be careful and make sure you&#039;re actually seeing an aura, not the afterimage.</div>
+		<textarea style="display: none;" id="desctxt_15728">I&#039;ve heard focusing on nothing and just letting your eyes relax works better. Be careful and make sure you&#039;re actually seeing an aura, not the afterimage.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Cerberus</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_15733" style="width: 100%; overflow: auto; min-height: 125px;">Well,i think 3d magic eyes might help.<br />
+Try watch it without the need to look real close to the image 1st,but make it 3d to your eyes by a little further distance from the image,and then a little more further,and further and further and further...<br />
+It stimulates some kind of mechanism in your eyes that is needed to have aura vision.<br />
+And most important,be patient,rushing only make problem lasts forover but patient is the opposite.</div>
+		<textarea style="display: none;" id="desctxt_15733">Well,i think 3d magic eyes might help.
+Try watch it without the need to look real close to the image 1st,but make it 3d to your eyes by a little further distance from the image,and then a little more further,and further and further and further...
+It stimulates some kind of mechanism in your eyes that is needed to have aura vision.
+And most important,be patient,rushing only make problem lasts forover but patient is the opposite.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">speeddemon92</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_15738" style="width: 100%; overflow: auto; min-height: 125px;">i still have probelms tho. ive even tried skywinds method but i don&#039;t see anything due to my vision is not shifting</div>
+		<textarea style="display: none;" id="desctxt_15738">i still have probelms tho. ive even tried skywinds method but i don&#039;t see anything due to my vision is not shifting</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_15745" style="width: 100%; overflow: auto; min-height: 125px;">It works... though I would recommend you first learn what the colors mean, then learn how to see them (I prefer the exercises found here, with slight variation:  <a href="http://www.thiaoouba.com/aura_eye_exercise.htm" target="_blank">http://www.thiaoouba.com/aura_eye_exercise.htm</a> )<br />
+<br />
+The second bit is to relax, adjust and just examine as many people&#039;s auras as you can. The practice should help you get more accustomed to seeing them, till eventually it will come with little to no effort.<br />
+<br />
+You need to be relaxed, and comfortable with what you&#039;re doing, but also observant. Like most energy sensing/working, aura-sight is a subtle skill and requires a keen eye.<br />
+<br />
+Protips:<br />
+ &lt;&gt; If you wear glasses or anything of the sort, I&#039;d recommend removing them while you practice/read auras. Glasses tend to strain the eyes, and corrective lenses (glasses that actually fix your eyes) work by straining your eye to adjust your vision. Either way, it&#039;s strain that you probably don&#039;t want on your eyes if you&#039;re doing this often<br />
+<br />
+ &lt;&gt; Relatively dark rooms, without drastic backgrounds (white is best) makes it easier to see an aura, as well as heat (moister heats are better, okay, maybe that&#039;s a bias since hot dry air gives me nosebleeds). I recommend you practice outside of such environments first, or at least ignore those advantages while you practice. It will only hurt your abilities if you use conditions as a crutch.</div>
+		<textarea style="display: none;" id="desctxt_15745">It works... though I would recommend you first learn what the colors mean, then learn how to see them (I prefer the exercises found here, with slight variation: http://www.thiaoouba.com/aura_eye_exercise.htm )
+
+The second bit is to relax, adjust and just examine as many people&#039;s auras as you can. The practice should help you get more accustomed to seeing them, till eventually it will come with little to no effort.
+
+You need to be relaxed, and comfortable with what you&#039;re doing, but also observant. Like most energy sensing/working, aura-sight is a subtle skill and requires a keen eye.
+
+Protips:
+ &lt;&gt; If you wear glasses or anything of the sort, I&#039;d recommend removing them while you practice/read auras. Glasses tend to strain the eyes, and corrective lenses (glasses that actually fix your eyes) work by straining your eye to adjust your vision. Either way, it&#039;s strain that you probably don&#039;t want on your eyes if you&#039;re doing this often
+
+ &lt;&gt; Relatively dark rooms, without drastic backgrounds (white is best) makes it easier to see an aura, as well as heat (moister heats are better, okay, maybe that&#039;s a bias since hot dry air gives me nosebleeds). I recommend you practice outside of such environments first, or at least ignore those advantages while you practice. It will only hurt your abilities if you use conditions as a crutch.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">speeddemon92</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_15746" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Akio:</em><br />
+It works... though I would recommend you first learn what the colors mean, then learn how to see them (I prefer the exercises found here, with slight variation:  <a href="http://www.thiaoouba.com/aura_eye_exercise.htm" target="_blank">http://www.thiaoouba.com/aura_eye_exercise.htm</a> )<br />
+<br />
+The second bit is to relax, adjust and just examine as many people&#039;s auras as you can. The practice should help you get more accustomed to seeing them, till eventually it will come with little to no effort.<br />
+<br />
+You need to be relaxed, and comfortable with what you&#039;re doing, but also observant. Like most energy sensing/working, aura-sight is a subtle skill and requires a keen eye.<br />
+<br />
+Protips:<br />
+ &lt;&gt; If you wear glasses or anything of the sort, I&#039;d recommend removing them while you practice/read auras. Glasses tend to strain the eyes, and corrective lenses (glasses that actually fix your eyes) work by straining your eye to adjust your vision. Either way, it&#039;s strain that you probably don&#039;t want on your eyes if you&#039;re doing this often<br />
+<br />
+ &lt;&gt; Relatively dark rooms, without drastic backgrounds (white is best) makes it easier to see an aura, as well as heat (moister heats are better, okay, maybe that&#039;s a bias since hot dry air gives me nosebleeds). I recommend you practice outside of such environments first, or at least ignore those advantages while you practice. It will only hurt your abilities if you use conditions as a crutch.</div>wait that&#039;s what you use??? i&#039;ve read that and tried the exercise&#039;s but i only see the after image (opposite colors). so could the after images and aura be close or the same thing? btw akio you seem to be like the expert with this so if you can teach me as much as you can about aura vision (oh and that one construct, the rose i believe).<br />
+<br />
+<br />
+ps no offence to anyone else about aura vision</div>
+		<textarea style="display: none;" id="desctxt_15746">[quote][i]posted by Akio:[/i]
+It works... though I would recommend you first learn what the colors mean, then learn how to see them (I prefer the exercises found here, with slight variation: http://www.thiaoouba.com/aura_eye_exercise.htm )
+
+The second bit is to relax, adjust and just examine as many people&#039;s auras as you can. The practice should help you get more accustomed to seeing them, till eventually it will come with little to no effort.
+
+You need to be relaxed, and comfortable with what you&#039;re doing, but also observant. Like most energy sensing/working, aura-sight is a subtle skill and requires a keen eye.
+
+Protips:
+ &lt;&gt; If you wear glasses or anything of the sort, I&#039;d recommend removing them while you practice/read auras. Glasses tend to strain the eyes, and corrective lenses (glasses that actually fix your eyes) work by straining your eye to adjust your vision. Either way, it&#039;s strain that you probably don&#039;t want on your eyes if you&#039;re doing this often
+
+ &lt;&gt; Relatively dark rooms, without drastic backgrounds (white is best) makes it easier to see an aura, as well as heat (moister heats are better, okay, maybe that&#039;s a bias since hot dry air gives me nosebleeds). I recommend you practice outside of such environments first, or at least ignore those advantages while you practice. It will only hurt your abilities if you use conditions as a crutch.[/quote]
+
+wait that&#039;s what you use??? i&#039;ve read that and tried the exercise&#039;s but i only see the after image (opposite colors). so could the after images and aura be close or the same thing? btw akio you seem to be like the expert with this so if you can teach me as much as you can about aura vision (oh and that one construct, the rose i believe).
+
+
+ps no offence to anyone else about aura vision</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Jarmo</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_15747" style="width: 100%; overflow: auto; min-height: 125px;">For what comes to colors, everyone sees auracolors in different shapes and colors. So, what blue means to one doesn&#039;t usually mean the same to another one. You have to learn by yourself what different colors mean to you. </div>
+		<textarea style="display: none;" id="desctxt_15747">For what comes to colors, everyone sees auracolors in different shapes and colors. So, what blue means to one doesn&#039;t usually mean the same to another one. You have to learn by yourself what different colors mean to you.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Kube</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=952&amp;ref=1249239276" width="102" height="77" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_15751" style="width: 100%; overflow: auto; min-height: 125px;">@Akio: Do you think contacts do the same as glasses? &#039;Cause I can&#039;t see without them :P</div>
+		<textarea style="display: none;" id="desctxt_15751">@Akio: Do you think contacts do the same as glasses? &#039;Cause I can&#039;t see without them :P</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">speeddemon92</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_15804" style="width: 100%; overflow: auto; min-height: 125px;">i would say yes but i may be wrong. also if you use aura vision you shouldn&#039;t need any use for normal vision since your looking at auras not body details.<br />
+<br />
+ps akio or anyone else please correct me if i&#039;m wrong about this.</div>
+		<textarea style="display: none;" id="desctxt_15804">i would say yes but i may be wrong. also if you use aura vision you shouldn&#039;t need any use for normal vision since your looking at auras not body details.
+
+ps akio or anyone else please correct me if i&#039;m wrong about this.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Kube</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=952&amp;ref=1249239276" width="102" height="77" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_15806" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by speeddemon92:</em><br />
+i would say yes but i may be wrong. also if you use aura vision you shouldn&#039;t need any use for normal vision since your looking at auras not body details.<br />
+<br />
+ps akio or anyone else please correct me if i&#039;m wrong about this.</div>Well I still need to orient myself. It&#039;s not the body details I need, it&#039;s the fact that I can&#039;t walk around without killing myself if all I see is a blurry chaos :P Unless aura vision allows for orientation? o_O</div>
+		<textarea style="display: none;" id="desctxt_15806">[quote][i]posted by speeddemon92:[/i]
+i would say yes but i may be wrong. also if you use aura vision you shouldn&#039;t need any use for normal vision since your looking at auras not body details.
+
+ps akio or anyone else please correct me if i&#039;m wrong about this.[/quote]
+
+Well I still need to orient myself. It&#039;s not the body details I need, it&#039;s the fact that I can&#039;t walk around without killing myself if all I see is a blurry chaos :P Unless aura vision allows for orientation? o_O</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_15846" style="width: 100%; overflow: auto; min-height: 125px;">@Kube, yes.. they work the same way. if you really think you&#039;ll need to see... then no one&#039;s stopping you from trying with them in. I just don&#039;t recommend them because of eye strain. =P<br />
+<br />
+All I can say about the orientation, is that it&#039;ll likely improve if you don&#039;t rely on your eyes as much xP, or, rather, if you rely more on all your senses.<br />
+</div>
+		<textarea style="display: none;" id="desctxt_15846">@Kube, yes.. they work the same way. if you really think you&#039;ll need to see... then no one&#039;s stopping you from trying with them in. I just don&#039;t recommend them because of eye strain. =P
+
+All I can say about the orientation, is that it&#039;ll likely improve if you don&#039;t rely on your eyes as much xP, or, rather, if you rely more on all your senses.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Kube</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=952&amp;ref=1249239276" width="102" height="77" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_15847" style="width: 100%; overflow: auto; min-height: 125px;">Alright thanks for the answer Akio... I was thinking it might do the same thing... Every time I try focusing on something with my contacts, the eye strain kicks in. Guess I&#039;ll have to start improving on my perception :P</div>
+		<textarea style="display: none;" id="desctxt_15847">Alright thanks for the answer Akio... I was thinking it might do the same thing... Every time I try focusing on something with my contacts, the eye strain kicks in. Guess I&#039;ll have to start improving on my perception :P</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 1 month ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=875" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 28 queries. 0.291 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

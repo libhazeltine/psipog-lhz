@@ -1,0 +1,442 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Bilocation</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Bilocation</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Bilocation</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">ClearVision</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=168&amp;ref=1203443665" width="125" height="89" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_8304" style="width: 100%; overflow: auto; min-height: 125px;">Apparently, there have been reports of people being in two physical locations at the same time, trancing out before going on their &quot;journey&quot;. <br />
+<br />
+Could this be explained with psionics or is this a type of phenomena that is just simply there. I&#039;ve tried practicing this, but I&#039;ve never really had any results. <br />
+<br />
+Just curious if anyone knows any more about this.</div>
+		<textarea style="display: none;" id="desctxt_8304">Apparently, there have been reports of people being in two physical locations at the same time, trancing out before going on their &quot;journey&quot;. 
+
+Could this be explained with psionics or is this a type of phenomena that is just simply there. I&#039;ve tried practicing this, but I&#039;ve never really had any results. 
+
+Just curious if anyone knows any more about this.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">SheepKing</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=211&amp;ref=1222648137" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_8305" style="width: 100%; overflow: auto; min-height: 125px;">Your body being in two places at once? </div>
+		<textarea style="display: none;" id="desctxt_8305">Your body being in two places at once?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Linked</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=19&amp;ref=1203762048" width="89" height="38" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_8306" style="width: 100%; overflow: auto; min-height: 125px;">could be people are projecting an image of their body to another location.</div>
+		<textarea style="display: none;" id="desctxt_8306">could be people are projecting an image of their body to another location.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_8320" style="width: 100%; overflow: auto; min-height: 125px;">That&#039;s interesting, I&#039;ve heard of the term before, butI&#039;ve never seen it pulled off. I guess the best example of this is an OBE... <br />
+<br />
+Honestly, I feel that everyone is everywhere at once because everyone is connected in some way. Not only People, but everything.</div>
+		<textarea style="display: none;" id="desctxt_8320">That&#039;s interesting, I&#039;ve heard of the term before, butI&#039;ve never seen it pulled off. I guess the best example of this is an OBE... 
+
+Honestly, I feel that everyone is everywhere at once because everyone is connected in some way. Not only People, but everything.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">ClearVision</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=168&amp;ref=1203443665" width="125" height="89" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_8561" style="width: 100%; overflow: auto; min-height: 125px;">Well, strangely there&#039;s been reports of saints and other religiously/spiritually active people appearing in two locations at once. And they were conscient in both locations, that is, they were able to remember experiences from both places which happened at the same time.<br />
+<br />
+It must take an immense amount of energy to do this - I mean, basic projection is already a feat, but being conscient in two places at once seems rather impossible. <br />
+<br />
+Taking this idea a bit further, it would be interesting if it were possible to do this with more than two locations (i.e. six or more duplicates of yourself). <br />
+<br />
+I&#039;m pretty sure this relates to OBE&#039;s. In OBE&#039;s, it already becomes apparent that the mind is not fixed to the body, bilocation can be seen as possible evidence that there is no such thing as a &quot;lifeline&quot; to your body, or at least that the maximum distance the two can be appart is larger than 20000 kilometers.<br />
+<br />
+See  <a href="http://en.wikipedia.org/wiki/Bilocation" target="_blank">http://en.wikipedia.org/wiki/Bilocation</a> for more info.</div>
+		<textarea style="display: none;" id="desctxt_8561">Well, strangely there&#039;s been reports of saints and other religiously/spiritually active people appearing in two locations at once. And they were conscient in both locations, that is, they were able to remember experiences from both places which happened at the same time.
+
+It must take an immense amount of energy to do this - I mean, basic projection is already a feat, but being conscient in two places at once seems rather impossible. 
+
+Taking this idea a bit further, it would be interesting if it were possible to do this with more than two locations (i.e. six or more duplicates of yourself). 
+
+I&#039;m pretty sure this relates to OBE&#039;s. In OBE&#039;s, it already becomes apparent that the mind is not fixed to the body, bilocation can be seen as possible evidence that there is no such thing as a &quot;lifeline&quot; to your body, or at least that the maximum distance the two can be appart is larger than 20000 kilometers.
+
+See http://en.wikipedia.org/wiki/Bilocation for more info.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Teradonus</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=542&amp;ref=1211962105" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_8565" style="width: 100%; overflow: auto; min-height: 125px;">Hmm, that&#039;s extremely odd. The thing that I&#039;m having trouble understanding is that each body is able to do seperate actions, correct? I&#039;d think that that would be impossible, unless you were able to split not only your consciousness but the parts of your brain that move your body, and your nerves, and all that good stuff. If you didn&#039;t, each body would move the same, in separate locations, right? The only way I can imagine that being possible is if you made a construct that looked like your body but wasn&#039;t, like people above mentioned, although that seems like it would take considerable skill and wouldn&#039;t happen much on accident.<br />
+<br />
+Although what do I know, right?</div>
+		<textarea style="display: none;" id="desctxt_8565">Hmm, that&#039;s extremely odd. The thing that I&#039;m having trouble understanding is that each body is able to do seperate actions, correct? I&#039;d think that that would be impossible, unless you were able to split not only your consciousness but the parts of your brain that move your body, and your nerves, and all that good stuff. If you didn&#039;t, each body would move the same, in separate locations, right? The only way I can imagine that being possible is if you made a construct that looked like your body but wasn&#039;t, like people above mentioned, although that seems like it would take considerable skill and wouldn&#039;t happen much on accident.
+
+Although what do I know, right?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">ClearVision</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=168&amp;ref=1203443665" width="125" height="89" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_8576" style="width: 100%; overflow: auto; min-height: 125px;">I believe that this might have something to do with it:  <a href="http://en.wikipedia.org/wiki/Tay_al-Ard" target="_blank">http://en.wikipedia.org/wiki/Tay_al-Ard</a><br />
+<br />
+Maybe it&#039;s possible to bend space-time using a construct to make oneself teleport to several locations at the same time? Apparently, some people who did this describe this as to &quot;bend the earth&quot; or &quot;fold the earth&quot;. <br />
+<br />
+Phasing is just one example of how space-time can be manipulated to be precisely in alignment with the body&#039;s electrons (even though I don&#039;t recommend doing it). So why not other stuff?<br />
+<br />
+Really, this is quite freaky. But there&#039;s just too many occurrences of this to be completely untrue.</div>
+		<textarea style="display: none;" id="desctxt_8576">I believe that this might have something to do with it: http://en.wikipedia.org/wiki/Tay_al-Ard
+
+Maybe it&#039;s possible to bend space-time using a construct to make oneself teleport to several locations at the same time? Apparently, some people who did this describe this as to &quot;bend the earth&quot; or &quot;fold the earth&quot;. 
+
+Phasing is just one example of how space-time can be manipulated to be precisely in alignment with the body&#039;s electrons (even though I don&#039;t recommend doing it). So why not other stuff?
+
+Really, this is quite freaky. But there&#039;s just too many occurrences of this to be completely untrue.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">SheepKing</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=211&amp;ref=1222648137" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_8577" style="width: 100%; overflow: auto; min-height: 125px;">Weird man, I came across Tay Al-Ard recently; Not sure exactly where I read it. It&#039;s an interesting concept. And not only that which is in the myths of other religions. <br />
+<br />
+I recall reading it mostly in sci-fi/future looking (Aren&#039;t they the same to a degree?) books/articles on transportation.<br />
+<br />
+It has been theorized that in order to achieve faster than speed of light travel you can bend space from two seperate points into one and then back again. Ie. fold up the distance between A B C so that A-C overlap for a moment.<br />
+<br />
+Whether or not it&#039;s possible to bend space time with Psi? It sounds like a stretch to me; But I&#039;m open to the idea.</div>
+		<textarea style="display: none;" id="desctxt_8577">Weird man, I came across Tay Al-Ard recently; Not sure exactly where I read it. It&#039;s an interesting concept. And not only that which is in the myths of other religions. 
+
+I recall reading it mostly in sci-fi/future looking (Aren&#039;t they the same to a degree?) books/articles on transportation.
+
+It has been theorized that in order to achieve faster than speed of light travel you can bend space from two seperate points into one and then back again. Ie. fold up the distance between A B C so that A-C overlap for a moment.
+
+Whether or not it&#039;s possible to bend space time with Psi? It sounds like a stretch to me; But I&#039;m open to the idea.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Teradonus</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=542&amp;ref=1211962105" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_8580" style="width: 100%; overflow: auto; min-height: 125px;">Anyone read A Wrinkle in Time, by Madeline L&#039;engle? A favorite book of mine, when I was little. Although it&#039;s fiction, the first half of it is describing a tesseract, which is basically what SheepKing is talking about. Bending time-space. Good explanation of it, I think.<br />
+<br />
+Also, it&#039;s pretty much given in science nowadays that you can do such a thing. Now, whether you could travel through it our not is not known. Stars bend time-space, so to bend it to a complete fold....it would have to be either A) incredibly strong, gravitationally, or B) Some crazy psi, I guess.<br />
+<br />
+Btw, don&#039;t ask for sources on any of my statements. It is quite possible I made them all up, although I don&#039;t think so.</div>
+		<textarea style="display: none;" id="desctxt_8580">Anyone read A Wrinkle in Time, by Madeline L&#039;engle? A favorite book of mine, when I was little. Although it&#039;s fiction, the first half of it is describing a tesseract, which is basically what SheepKing is talking about. Bending time-space. Good explanation of it, I think.
+
+Also, it&#039;s pretty much given in science nowadays that you can do such a thing. Now, whether you could travel through it our not is not known. Stars bend time-space, so to bend it to a complete fold....it would have to be either A) incredibly strong, gravitationally, or B) Some crazy psi, I guess.
+
+Btw, don&#039;t ask for sources on any of my statements. It is quite possible I made them all up, although I don&#039;t think so.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">NeoPsychic</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=71&amp;ref=1205035008" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_8581" style="width: 100%; overflow: auto; min-height: 125px;">I&#039;ve been able to bilocate with an OBE. I could feel both bodies at the same time. As for physical bilocation. I highly, doubt that could happen. I agree with Teradonus, you would need to be one hell of a psion to pull this trick. Any claims of this in real life could have been a simple double.<br />
+<br />
+Sheepking, I have been to some sites where folding is considered a legitimate skill. Folding, aka teleportation, is supposedly a very easy skill. I&#039;ve tried it once, when I thought wingmakers was an actual psions site lol. I&#039;m pretty sure that any teleporation achievable through psi has to take many, many years. Easily more then 5. Otherwise psions would be teleporting themselves all over the place. </div>
+		<textarea style="display: none;" id="desctxt_8581">I&#039;ve been able to bilocate with an OBE. I could feel both bodies at the same time. As for physical bilocation. I highly, doubt that could happen. I agree with Teradonus, you would need to be one hell of a psion to pull this trick. Any claims of this in real life could have been a simple double.
+
+Sheepking, I have been to some sites where folding is considered a legitimate skill. Folding, aka teleportation, is supposedly a very easy skill. I&#039;ve tried it once, when I thought wingmakers was an actual psions site lol. I&#039;m pretty sure that any teleporation achievable through psi has to take many, many years. Easily more then 5. Otherwise psions would be teleporting themselves all over the place.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_8984" style="width: 100%; overflow: auto; min-height: 125px;">Possible in concept, but unclear in method. The only problem is how are you balancing the movelent in the third dimention? ussually we make up motion in the third dimention by passing through time, But teleportation uses a different payment o balance off the movement.<br />
+<br />
+energy is required for every thing, so it can&#039;t be a simple as that. If one were to use huge amounts of energy, they could travel through the third dimention in a very short amount of time, however; the momentum achieved would be enormous, and thet&#039;s hazardous to your health. <br />
+<br />
+( 100,000,000 mph into a brick wall... ouch )</div>
+		<textarea style="display: none;" id="desctxt_8984">Possible in concept, but unclear in method. The only problem is how are you balancing the movelent in the third dimention? ussually we make up motion in the third dimention by passing through time, But teleportation uses a different payment o balance off the movement.
+
+energy is required for every thing, so it can&#039;t be a simple as that. If one were to use huge amounts of energy, they could travel through the third dimention in a very short amount of time, however; the momentum achieved would be enormous, and thet&#039;s hazardous to your health. 
+
+( 100,000,000 mph into a brick wall... ouch )</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Takkun</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9512" style="width: 100%; overflow: auto; min-height: 125px;">Kage Buushin no Jutsu, anyone? =P</div>
+		<textarea style="display: none;" id="desctxt_9512">Kage Buushin no Jutsu, anyone? =P</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9914" style="width: 100%; overflow: auto; min-height: 125px;">Naruto... really...<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+...no</div>
+		<textarea style="display: none;" id="desctxt_9914">Naruto... really...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+...no</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">keen31</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=253&amp;ref=1203827935" width="53" height="55" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9925" style="width: 100%; overflow: auto; min-height: 125px;"> <a href="http://www.drbrucegoldberg.com/Teleportation.htm" target="_blank">http://www.drbrucegoldberg.com/Teleportation.htm</a><br />
+ <a href="http://www.drbrucegoldberg.com/Teleportation2.htm" target="_blank">http://www.drbrucegoldberg.com/Teleportation2.htm</a><br />
+<br />
+i know in some of his books he goes into more detail. ive read astral voyages, good obe type book. ive heard him speak on C2C as well, where he went into much more detail regarding teleporation and bi-location.<br />
+<br />
+he recounted a time he was unable to go on a planned vacation, so instead he bi-located to a tropical resort for a few hours and upon returning, had color to his skin and sand in his shoes.<br />
+<br />
+take it for what you will.</div>
+		<textarea style="display: none;" id="desctxt_9925">http://www.drbrucegoldberg.com/Teleportation.htm
+http://www.drbrucegoldberg.com/Teleportation2.htm
+
+i know in some of his books he goes into more detail. ive read astral voyages, good obe type book. ive heard him speak on C2C as well, where he went into much more detail regarding teleporation and bi-location.
+
+he recounted a time he was unable to go on a planned vacation, so instead he bi-located to a tropical resort for a few hours and upon returning, had color to his skin and sand in his shoes.
+
+take it for what you will.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=375" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 30 queries. 0.281 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

@@ -1,0 +1,392 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; This is Derren Brown, but...</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=2.html">Weird Videos</a> &raquo; This is Derren Brown, but...</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">This is Derren Brown, but...</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Sean</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=2&amp;ref=1214247941" width="117" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_5649" style="width: 100%; overflow: auto; min-height: 125px;"><br />
+<div id="Bvvq725327dafd0dd" class="vvqbox vvqyoutube" style="width:425px;height:335px;"><br />
+<p><a href="http://www.youtube.com/watch?v=3Vz_YTNLn6w" target="_blank" title="YouTube Video">http://www.youtube.com/watch?v=3Vz_YTNLn6w</a></p><br />
+</div><br />
+<script type="text/javascript"><br />
+<!--<br />
+	vvq_youtube("Bvvq725327dafd0dd", "425", "335", "3Vz_YTNLn6w");<br />
+--><br />
+</script><br />
+<br />
+This is Derren Brown, but he&#039;s not the first :-) -  <a href="http://en.wikipedia.org/wiki/Wolf_Messing" target="_blank">http://en.wikipedia.org/wiki/Wolf_Messing</a></div>
+		<textarea style="display: none;" id="desctxt_5649">[media]http://youtube.com/watch?v=3Vz_YTNLn6w[/media]
+
+This is Derren Brown, but he&#039;s not the first :-) - http://en.wikipedia.org/wiki/Wolf_Messing</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 5 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Mad Hatter</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=76&amp;ref=1203377000" width="60" height="60" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_5650" style="width: 100%; overflow: auto; min-height: 125px;">Better delete this too. ^</div>
+		<textarea style="display: none;" id="desctxt_5650">Better delete this too. ^</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 5 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Mari</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_5651" style="width: 100%; overflow: auto; min-height: 125px;">So how was Mr. Brown supposed to be &quot;tricking&quot; these people, some kind of subconscious suggestion? What&#039;s the story?</div>
+		<textarea style="display: none;" id="desctxt_5651">So how was Mr. Brown supposed to be &quot;tricking&quot; these people, some kind of subconscious suggestion? What&#039;s the story?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 5 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Dash</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=69&amp;ref=1224210982" width="113" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_5652" style="width: 100%; overflow: auto; min-height: 125px;">I think its a mixture of body language and Sub.c suggestion.. like.. if you noticed when he handed the paper over he said &quot;take it, take it, its fine&quot; so thats the thought the person had</div>
+		<textarea style="display: none;" id="desctxt_5652">I think its a mixture of body language and Sub.c suggestion.. like.. if you noticed when he handed the paper over he said &quot;take it, take it, its fine&quot; so thats the thought the person had</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 5 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Sothilde</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_5653" style="width: 100%; overflow: auto; min-height: 125px;">Nothing psychic is involved in what derren brown does. He says so himself, everything is subc suggestion and &quot;magic&quot; tricks</div>
+		<textarea style="display: none;" id="desctxt_5653">Nothing psychic is involved in what derren brown does. He says so himself, everything is subc suggestion and &quot;magic&quot; tricks</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 5 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Jenkins</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_5654" style="width: 100%; overflow: auto; min-height: 125px;">&#039;body language and Sub.c suggestion&#039; Not entirely true, Sub.c suggestion is really a catch-all term for anything like this, I will perhaps explain more specifically in a video.</div>
+		<textarea style="display: none;" id="desctxt_5654">&#039;body language and Sub.c suggestion&#039; Not entirely true, Sub.c suggestion is really a catch-all term for anything like this, I will perhaps explain more specifically in a video.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 5 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Lizndax</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_5655" style="width: 100%; overflow: auto; min-height: 125px;"><br />
+<div id="Bvvqc6ba1750473c6" class="vvqbox vvqyoutube" style="width:425px;height:335px;"><br />
+<p><a href="http://www.youtube.com/watch?v=i9NLEbCR57M" target="_blank" title="YouTube Video">http://www.youtube.com/watch?v=i9NLEbCR57M</a></p><br />
+</div><br />
+<script type="text/javascript"><br />
+<!--<br />
+	vvq_youtube("Bvvqc6ba1750473c6", "425", "335", "i9NLEbCR57M");<br />
+--><br />
+</script><br />
+<br />
+Darren Brown is great.  This is one of my favourite of his.</div>
+		<textarea style="display: none;" id="desctxt_5655">[media]http://youtube.com/watch?v=i9NLEbCR57M[/media]
+
+Darren Brown is great.  This is one of my favourite of his.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 5 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Mad Hatter</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=76&amp;ref=1203377000" width="60" height="60" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_5656" style="width: 100%; overflow: auto; min-height: 125px;">I&#039;m pretty sure he&#039;s using a form of subconscious suggestion through touch. He touches her shoulder on different sides depending on &quot;certain&quot; or &quot;uncertain&quot;.</div>
+		<textarea style="display: none;" id="desctxt_5656">I&#039;m pretty sure he&#039;s using a form of subconscious suggestion through touch. He touches her shoulder on different sides depending on &quot;certain&quot; or &quot;uncertain&quot;.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 5 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Lizndax</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_5657" style="width: 100%; overflow: auto; min-height: 125px;">That&#039;s precisely what it is.  It&#039;s akin to anchoring in NLP, although I think Brown has denied that he uses that.</div>
+		<textarea style="display: none;" id="desctxt_5657">That&#039;s precisely what it is.  It&#039;s akin to anchoring in NLP, although I think Brown has denied that he uses that.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 5 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Jenkins</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_5658" style="width: 100%; overflow: auto; min-height: 125px;">Actually it is that - IIRC - he disagrees with most of NLP bcos of it being mostly pop-psychology, however, he does use some aspects of it, i&#039;ll fetch the quote from his book at some time</div>
+		<textarea style="display: none;" id="desctxt_5658">Actually it is that - IIRC - he disagrees with most of NLP bcos of it being mostly pop-psychology, however, he does use some aspects of it, i&#039;ll fetch the quote from his book at some time</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 5 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">DeathMinister</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=56&amp;ref=1208895944" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_5659" style="width: 100%; overflow: auto; min-height: 125px;"><br />
+<div id="Bvvq0a43b3458f6a5" class="vvqbox vvqyoutube" style="width:425px;height:335px;"><br />
+<p><a href="http://www.youtube.com/watch?v=befugtgikMg" target="_blank" title="YouTube Video">http://www.youtube.com/watch?v=befugtgikMg</a></p><br />
+</div><br />
+<script type="text/javascript"><br />
+<!--<br />
+	vvq_youtube("Bvvq0a43b3458f6a5", "425", "335", "befugtgikMg");<br />
+--><br />
+</script><br />
+<br />
+I&#039;ve kindof doubted whether Derren Brown was authentic in what he does when I saw some of his tricks were done with actors.  Ex: Shawn of the Dead</div>
+		<textarea style="display: none;" id="desctxt_5659">[media]http://youtube.com/watch?v=befugtgikMg[/media]
+
+I&#039;ve kindof doubted whether Derren Brown was authentic in what he does when I saw some of his tricks were done with actors.  Ex: Shawn of the Dead</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 5 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">BlackShadow</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_5660" style="width: 100%; overflow: auto; min-height: 125px;">In trains... of thought I believe Derran used both vocal and visual hypnosis, to get the &quot;victim&quot; in an unattentive state of mind. Then gave vocal and body suggestion to get then to accept to paper.</div>
+		<textarea style="display: none;" id="desctxt_5660">In trains... of thought I believe Derran used both vocal and visual hypnosis, to get the &quot;victim&quot; in an unattentive state of mind. Then gave vocal and body suggestion to get then to accept to paper.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 5 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Saintbob</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_5661" style="width: 100%; overflow: auto; min-height: 125px;">Howerver he did it it was pretty neat.</div>
+		<textarea style="display: none;" id="desctxt_5661">Howerver he did it it was pretty neat.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 5 years, 2 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Wolfleo</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_5662" style="width: 100%; overflow: auto; min-height: 125px;">lol yeah but how did he know that girl even had a red car? that kinda got me thinking</div>
+		<textarea style="display: none;" id="desctxt_5662">lol yeah but how did he know that girl even had a red car? that kinda got me thinking</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 5 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">delimew</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=108&amp;ref=1205485279" width="39" height="42" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_5663" style="width: 100%; overflow: auto; min-height: 125px;"><br />
+<div id="Bvvqa88f19cd5b9bf" class="vvqbox vvqyoutube" style="width:425px;height:335px;"><br />
+<p><a href="http://www.youtube.com/watch?v=IOEKdaXIEHc" target="_blank" title="YouTube Video">http://www.youtube.com/watch?v=IOEKdaXIEHc</a></p><br />
+</div><br />
+<script type="text/javascript"><br />
+<!--<br />
+	vvq_youtube("Bvvqa88f19cd5b9bf", "425", "335", "IOEKdaXIEHc");<br />
+--><br />
+</script><br />
+<br />
+he was probably watching her beforehand. course, there have always been accusations that derrens stuff isn&#039;t real, but then you get stuff that seems to involve too many people for it to be faked.</div>
+		<textarea style="display: none;" id="desctxt_5663">[media]http://youtube.com/watch?v=IOEKdaXIEHc[/media]
+
+he was probably watching her beforehand. course, there have always been accusations that derrens stuff isn&#039;t real, but then you get stuff that seems to involve too many people for it to be faked.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 5 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Wolfleo</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_5664" style="width: 100%; overflow: auto; min-height: 125px;">cool vid , thanks</div>
+		<textarea style="display: none;" id="desctxt_5664">cool vid , thanks</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 5 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">zephyr</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=338&amp;ref=1244008069" width="109" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_5665" style="width: 100%; overflow: auto; min-height: 125px;">Jedia mind tricks only work on the weak minded...or something like that ; )</div>
+		<textarea style="display: none;" id="desctxt_5665">Jedia mind tricks only work on the weak minded...or something like that ; )</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 5 years ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=213" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 33 queries. 0.281 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

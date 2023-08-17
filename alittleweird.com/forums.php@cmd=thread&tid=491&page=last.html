@@ -1,0 +1,314 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Questions on psiballs and shielding</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Questions on psiballs and shielding</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Questions on psiballs and shielding</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Riven</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=656&amp;ref=1217444530" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10447" style="width: 100%; overflow: auto; min-height: 125px;">Ok, so here&#039;s the deal...<br />
+<br />
+I need to learn how to shield before school starts, or I&#039;m gonna hurt...(raging hormones aren&#039;t the most fun thing in the world at a big school...)<br />
+<br />
+So, I&#039;ve been trying to build up my energy using psiballs. I can make a pretty decent one, but the problem is when I make it, it always comes out a bit squished... like a 3d oval. Am I just not putting in enough energy or something? Also, the longest I can hold it before getting lightheaded is about 10 minutes.<br />
+<br />
+Anyone have any tips for building energy and holding it? And what kind of shield should I make to block emotions? And lastly, why aren&#039;t the constructs I&#039;m making working? (Guess I need to know that before I can shield..)</div>
+		<textarea style="display: none;" id="desctxt_10447">Ok, so here&#039;s the deal...
+
+I need to learn how to shield before school starts, or I&#039;m gonna hurt...(raging hormones aren&#039;t the most fun thing in the world at a big school...)
+
+So, I&#039;ve been trying to build up my energy using psiballs. I can make a pretty decent one, but the problem is when I make it, it always comes out a bit squished... like a 3d oval. Am I just not putting in enough energy or something? Also, the longest I can hold it before getting lightheaded is about 10 minutes.
+
+Anyone have any tips for building energy and holding it? And what kind of shield should I make to block emotions? And lastly, why aren&#039;t the constructs I&#039;m making working? (Guess I need to know that before I can shield..)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Corpse</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=553&amp;ref=1239824741" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10450" style="width: 100%; overflow: auto; min-height: 125px;">I&#039;m assuming that the reason why your constructs are not working must be due<br />
+to you thinking too many thoughts or something. This is why meditation/trancing is<br />
+important in psionics. The only tips for holding it I would say is just keep meditating<br />
+and trancing, and maybe self hypnosis too. As for building energy, I have read that<br />
+apparently if you work with your own energy you can hold more. Try shelling your<br />
+constructs too, and program it to hold in all the energy, and maybe block out all<br />
+thoughts not related to adding energy to the construct.</div>
+		<textarea style="display: none;" id="desctxt_10450">I&#039;m assuming that the reason why your constructs are not working must be due
+to you thinking too many thoughts or something. This is why meditation/trancing is
+important in psionics. The only tips for holding it I would say is just keep meditating
+and trancing, and maybe self hypnosis too. As for building energy, I have read that
+apparently if you work with your own energy you can hold more. Try shelling your
+constructs too, and program it to hold in all the energy, and maybe block out all
+thoughts not related to adding energy to the construct.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Amaroq</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=606&amp;ref=1214436810" width="95" height="95" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10451" style="width: 100%; overflow: auto; min-height: 125px;">One thing that would help would be to look into &quot;shelling&quot;. AKA, setting your constructs strongly enough so they&#039;ll stay there without you having to maintain them.</div>
+		<textarea style="display: none;" id="desctxt_10451">One thing that would help would be to look into &quot;shelling&quot;. AKA, setting your constructs strongly enough so they&#039;ll stay there without you having to maintain them.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10461" style="width: 100%; overflow: auto; min-height: 125px;">this seems like a bit of a passive answer, but I would recommend that you begin regular breathing meditations and generally try to relax and balance YOURSELF out.<br />
+<br />
+Solve the problem at it&#039;s root. If you are balanced in mind, you will be balanced in body, and in soul. i.e. no more need of shielding...<br />
+<br />
+</div>
+		<textarea style="display: none;" id="desctxt_10461">this seems like a bit of a passive answer, but I would recommend that you begin regular breathing meditations and generally try to relax and balance YOURSELF out.
+
+Solve the problem at it&#039;s root. If you are balanced in mind, you will be balanced in body, and in soul. i.e. no more need of shielding...</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Riven</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=656&amp;ref=1217444530" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10469" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Corpse:</em><br />
+I&#039;m assuming that the reason why your constructs are not working must be due<br />
+to you thinking too many thoughts or something. This is why meditation/trancing is<br />
+important in psionics. The only tips for holding it I would say is just keep meditating<br />
+and trancing, and maybe self hypnosis too. As for building energy, I have read that<br />
+apparently if you work with your own energy you can hold more. Try shelling your<br />
+constructs too, and program it to hold in all the energy, and maybe block out all<br />
+thoughts not related to adding energy to the construct.</div>Thanks, I&#039;ll try that.<br />
+<br />
+</div>
+		<textarea style="display: none;" id="desctxt_10469">[quote][i]posted by Corpse:[/i]
+I&#039;m assuming that the reason why your constructs are not working must be due
+to you thinking too many thoughts or something. This is why meditation/trancing is
+important in psionics. The only tips for holding it I would say is just keep meditating
+and trancing, and maybe self hypnosis too. As for building energy, I have read that
+apparently if you work with your own energy you can hold more. Try shelling your
+constructs too, and program it to hold in all the energy, and maybe block out all
+thoughts not related to adding energy to the construct.[/quote]
+
+Thanks, I&#039;ll try that.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Riven</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=656&amp;ref=1217444530" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10470" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Akio:</em><br />
+this seems like a bit of a passive answer, but I would recommend that you begin regular breathing meditations and generally try to relax and balance YOURSELF out.<br />
+<br />
+Solve the problem at it&#039;s root. If you are balanced in mind, you will be balanced in body, and in soul. i.e. no more need of shielding...</div>Although the problem is helped when I&#039;m calm, it&#039;s still there. I think learning to relax on the fly is awesome, though I think I would still need at least a smaller shield anyway.. but I will try to work on what you suggested.<br />
+<br />
+</div>
+		<textarea style="display: none;" id="desctxt_10470">[quote][i]posted by Akio:[/i]
+this seems like a bit of a passive answer, but I would recommend that you begin regular breathing meditations and generally try to relax and balance YOURSELF out.
+
+Solve the problem at it&#039;s root. If you are balanced in mind, you will be balanced in body, and in soul. i.e. no more need of shielding...[/quote]
+
+Although the problem is helped when I&#039;m calm, it&#039;s still there. I think learning to relax on the fly is awesome, though I think I would still need at least a smaller shield anyway.. but I will try to work on what you suggested.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=491" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 22 queries. 0.279 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

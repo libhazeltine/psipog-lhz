@@ -1,0 +1,596 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Help me make a cold psi ball</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Help me make a cold psi ball</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Help me make a cold psi ball</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Silly Bear</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=600&amp;ref=1222300696" width="111" height="110" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11633" style="width: 100%; overflow: auto; min-height: 125px;">I can feel I&#039;m making them, or atleast I think so. I get this weird feeling that it kind of pushes out pressure towards my hands. (I do the common cupped hands around the ball method). <br />
+<br />
+So let&#039;s say I get that ball appear. I want to assure myself it&#039;s really there by changing the temperature of it to something colder. It&#039;s normal that my hands get warmer when doing psi balls, but that can easily be explained by body-heat rising. I want them cold. I try visualising it like a snowball. Then I try to recreate the feeling of holding a darn cold snowball without any gloves on. You know that painfully cold feeling in your hands going numb and freezing your poor flesh and blood. :P<br />
+<br />
+I can keep doing this for a max of 20-30 mins before I give up. Either I lose that psi ball between my hands feeling, or it just keep getting warmer. <br />
+<br />
+Note: I am relaxed when doing it and most of the time calm and focused when attempting this.<br />
+<br />
+Help me.</div>
+		<textarea style="display: none;" id="desctxt_11633">I can feel I&#039;m making them, or atleast I think so. I get this weird feeling that it kind of pushes out pressure towards my hands. (I do the common cupped hands around the ball method). 
+
+So let&#039;s say I get that ball appear. I want to assure myself it&#039;s really there by changing the temperature of it to something colder. It&#039;s normal that my hands get warmer when doing psi balls, but that can easily be explained by body-heat rising. I want them cold. I try visualising it like a snowball. Then I try to recreate the feeling of holding a darn cold snowball without any gloves on. You know that painfully cold feeling in your hands going numb and freezing your poor flesh and blood. :P
+
+I can keep doing this for a max of 20-30 mins before I give up. Either I lose that psi ball between my hands feeling, or it just keep getting warmer. 
+
+Note: I am relaxed when doing it and most of the time calm and focused when attempting this.
+
+Help me.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 2 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Corpse</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=553&amp;ref=1239824741" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11635" style="width: 100%; overflow: auto; min-height: 125px;">This is exactly why I stopped making psi balls and moved on to other skills. Just keep practicing, it sounds like you are doing it correctly.<br />
+<br />
+<br />
+If it honestly is not working for you, try an alternative, try making a psi ice cube, or maybe you could visualize the molecules moving slower.</div>
+		<textarea style="display: none;" id="desctxt_11635">This is exactly why I stopped making psi balls and moved on to other skills. Just keep practicing, it sounds like you are doing it correctly.
+
+
+If it honestly is not working for you, try an alternative, try making a psi ice cube, or maybe you could visualize the molecules moving slower.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 2 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Silly Bear</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=600&amp;ref=1222300696" width="111" height="110" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11639" style="width: 100%; overflow: auto; min-height: 125px;">Thanks I will try those methods!<br />
+<br />
+Do you have better luck on the other abilities? Maybe I&#039;d ought to try them too sometime.</div>
+		<textarea style="display: none;" id="desctxt_11639">Thanks I will try those methods!
+
+Do you have better luck on the other abilities? Maybe I&#039;d ought to try them too sometime.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 2 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Atrum</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=755&amp;ref=1221862716" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11640" style="width: 100%; overflow: auto; min-height: 125px;">I personally had trouble making hot psiballs. And when I asked my sis to feel, she said I had to trouble changing the temperature. Just try something different with your visualization. Like...A blizzard.</div>
+		<textarea style="display: none;" id="desctxt_11640">I personally had trouble making hot psiballs. And when I asked my sis to feel, she said I had to trouble changing the temperature. Just try something different with your visualization. Like...A blizzard.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 2 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Silly Bear</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=600&amp;ref=1222300696" width="111" height="110" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11706" style="width: 100%; overflow: auto; min-height: 125px;">I&#039;ve been trying some more the last week to now with what you guys said and I think I&#039;ve just discovered a problem. <br />
+<br />
+I feel exactly the same feeling everytime around the psiball, no matter how I visualize it. I didn&#039;t expect to get better at it right away, but I also didn&#039;t expect that my visualizing had no effect at all on the psiballs I make. Which makes me wonder if so, then I&#039;m not making them by visualizing as I first thought(or I&#039;m just fooling myself I am making them)? What other ways do you people make psiballs other than visualizing?<br />
+</div>
+		<textarea style="display: none;" id="desctxt_11706">I&#039;ve been trying some more the last week to now with what you guys said and I think I&#039;ve just discovered a problem. 
+
+I feel exactly the same feeling everytime around the psiball, no matter how I visualize it. I didn&#039;t expect to get better at it right away, but I also didn&#039;t expect that my visualizing had no effect at all on the psiballs I make. Which makes me wonder if so, then I&#039;m not making them by visualizing as I first thought(or I&#039;m just fooling myself I am making them)? What other ways do you people make psiballs other than visualizing?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 2 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Corpse</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=553&amp;ref=1239824741" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11729" style="width: 100%; overflow: auto; min-height: 125px;">I just thought of something,<br />
+heat is energy,<br />
+cold is a lack of energy,<br />
+so instead of drawing lots of energy into a psi ball,<br />
+just simply draw it into a shield construct, and program it to remove heat energy from the inside of it, therefore making it cold.</div>
+		<textarea style="display: none;" id="desctxt_11729">I just thought of something,
+heat is energy,
+cold is a lack of energy,
+so instead of drawing lots of energy into a psi ball,
+just simply draw it into a shield construct, and program it to remove heat energy from the inside of it, therefore making it cold.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 2 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Eldibs</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=77&amp;ref=1223740672" width="19" height="36" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11774" style="width: 100%; overflow: auto; min-height: 125px;">Try willing the psi ball to be cold. Sometimes, I find it helps to say in my mind what I want the psi ball to do, as if I were commanding it to do that. As far as cold psi balls are concerned, I have a favorite visualization: I always use an image of that spell Frozen Orb from Diablo 2 as my image of choice, complete with sound effect (a little sound adds depth to the visualization), because it sticks out in my mind. Find something similarly meaningful for your visualization. Of course, you could also visualize a thermometer sticking out of the psi ball reading a low temperature. Whatever makes the most sense to you will usually be most effective.<br />
+<br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Corpse:</em><br />
+I just thought of something,<br />
+heat is energy,<br />
+cold is a lack of energy,<br />
+so instead of drawing lots of energy into a psi ball,<br />
+just simply draw it into a shield construct, and program it to remove heat energy from the inside of it, therefore making it cold.</div>In that case, wouldn&#039;t it be easier to just program the psi ball to remove heat energy from inside itself? Same thing, just smaller scale.</div>
+		<textarea style="display: none;" id="desctxt_11774">Try willing the psi ball to be cold. Sometimes, I find it helps to say in my mind what I want the psi ball to do, as if I were commanding it to do that. As far as cold psi balls are concerned, I have a favorite visualization: I always use an image of that spell Frozen Orb from Diablo 2 as my image of choice, complete with sound effect (a little sound adds depth to the visualization), because it sticks out in my mind. Find something similarly meaningful for your visualization. Of course, you could also visualize a thermometer sticking out of the psi ball reading a low temperature. Whatever makes the most sense to you will usually be most effective.
+
+[quote][i]posted by Corpse:[/i]
+I just thought of something,
+heat is energy,
+cold is a lack of energy,
+so instead of drawing lots of energy into a psi ball,
+just simply draw it into a shield construct, and program it to remove heat energy from the inside of it, therefore making it cold.[/quote]
+
+In that case, wouldn&#039;t it be easier to just program the psi ball to remove heat energy from inside itself? Same thing, just smaller scale.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 2 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Antisankari</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=224&amp;ref=1213032338" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11775" style="width: 100%; overflow: auto; min-height: 125px;">But wouldn&#039;t the psiball appear hot from the outside then?<br />
+As the energy is apparently &quot;transferred&quot; outwards from the balls center.<br />
+</div>
+		<textarea style="display: none;" id="desctxt_11775">But wouldn&#039;t the psiball appear hot from the outside then?
+As the energy is apparently &quot;transferred&quot; outwards from the balls center.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 2 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Eldibs</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=77&amp;ref=1223740672" width="19" height="36" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11777" style="width: 100%; overflow: auto; min-height: 125px;">Yes, but it&#039;d be cold on the inside. Just stick your hand through the psi ball to check if you were successful.</div>
+		<textarea style="display: none;" id="desctxt_11777">Yes, but it&#039;d be cold on the inside. Just stick your hand through the psi ball to check if you were successful.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 2 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Dash</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=69&amp;ref=1224210982" width="113" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11778" style="width: 100%; overflow: auto; min-height: 125px;">everything is energy.. hot, cold, <br />
+heat is just *excited* energy,<br />
+<br />
+you could make a cold psiball as thick as you want,<br />
+you just need to make it less intense..<br />
+<br />
+just &quot;slow it down&quot; and feel it get colder..<br />
+<br />
+also.. <br />
+my brother used to put an ice cube in his hands and take cold showers.. he said by doing this he memorized the feeling and adapted his body to handling the cold..<br />
+(he was real gung ho)<br />
+<br />
+</div>
+		<textarea style="display: none;" id="desctxt_11778">everything is energy.. hot, cold, 
+heat is just *excited* energy,
+
+you could make a cold psiball as thick as you want,
+you just need to make it less intense..
+
+just &quot;slow it down&quot; and feel it get colder..
+
+also.. 
+my brother used to put an ice cube in his hands and take cold showers.. he said by doing this he memorized the feeling and adapted his body to handling the cold..
+(he was real gung ho)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 2 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Eldibs</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=77&amp;ref=1223740672" width="19" height="36" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11779" style="width: 100%; overflow: auto; min-height: 125px;">No, heat is the presence of molecular motion. Cold is the absence of molecular motion. Physics is your friend. Even if you consider that matter is energy, the heat/cold isn&#039;t the energy itself, it&#039;s the motion/lack of motion through the energy that is the heat/cold. Hope I didn&#039;t lose anybody there.<br />
+<br />
+However, if it helps to make the psi ball cold, then feel free to think about it that way. I believe the phrase is &quot;if the shoe fits, wear it.&quot;</div>
+		<textarea style="display: none;" id="desctxt_11779">No, heat is the presence of molecular motion. Cold is the absence of molecular motion. Physics is your friend. Even if you consider that matter is energy, the heat/cold isn&#039;t the energy itself, it&#039;s the motion/lack of motion through the energy that is the heat/cold. Hope I didn&#039;t lose anybody there.
+
+However, if it helps to make the psi ball cold, then feel free to think about it that way. I believe the phrase is &quot;if the shoe fits, wear it.&quot;</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 2 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Dash</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=69&amp;ref=1224210982" width="113" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11780" style="width: 100%; overflow: auto; min-height: 125px;">if motion comes from force,<br />
+and force comes from energy,<br />
+doesn&#039;t motion come from energy?<br />
+<br />
+<br />
+///<br />
+<br />
+hang on.. you didn&#039;t give corpse trouble when he called it energy..<br />
+<br />
+and i don&#039;t like the idea of jumping through hoops to get a simple effect..<br />
+<br />
+<br />
+so.. could you clarify what your position on cold psiballs is?<br />
+do they need to be complex to be powerful?  you seemed to agree with that before the molecule talk..<br />
+<br />
+<br />
+i mean you agreed with everyone until i posted.. then you decided to play smart..<br />
+<br />
+kinda seems like your picking on me..<br />
+and if thats the case.. i can show you where my shoe fits if you want.. =]</div>
+		<textarea style="display: none;" id="desctxt_11780">if motion comes from force,
+and force comes from energy,
+doesn&#039;t motion come from energy?
+
+
+///
+
+hang on.. you didn&#039;t give corpse trouble when he called it energy..
+
+and i don&#039;t like the idea of jumping through hoops to get a simple effect..
+
+
+so.. could you clarify what your position on cold psiballs is?
+do they need to be complex to be powerful?  you seemed to agree with that before the molecule talk..
+
+
+i mean you agreed with everyone until i posted.. then you decided to play smart..
+
+kinda seems like your picking on me..
+and if thats the case.. i can show you where my shoe fits if you want.. =]</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Dash, 4 years, 2 months ago<br />Posted 4 years, 2 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Eldibs</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=77&amp;ref=1223740672" width="19" height="36" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11783" style="width: 100%; overflow: auto; min-height: 125px;">Uh, I pick on everyone. You can pretty much bet that if you do or say something that sets off my BS detector, I&#039;ll call you on it. Anyone who was at the Psipog forums frequently before they archived them can attest to that. Actually, by my standards, what I said to you was nowhere near mean, nor was it picking on you. And if you can&#039;t handle a little criticism, you really don&#039;t need to be dabbling in psionics.<br />
+<br />
+Corpse didn&#039;t call cold &quot;energy.&quot; He called it &quot;a lack of energy.&quot; Also, I criticized his post too. The part where I pointed out something that might be easier. Or did you just not read that part? But to his credit, his theory at least made some sense.<br />
+<br />
+Yes, motion comes from energy. It&#039;s called kinetic energy, if my memory serves. However, that doesn&#039;t mean that cold is energy. Cold is the ABSENCE of molecular motion, which would mean it&#039;s the ABSENCE of force, which leads to it being an ABSENCE of energy. Take a 9th grade physical science class.<br />
+<br />
+What &quot;my position on cold psi balls is?&quot; You sound as though I&#039;ve claimed they can&#039;t be made. They can, I do it all the time. I prefer to make cold ones rather than warm ones, to remove the whole &quot;your body heat is affecting it&quot; variable. I&#039;m not quite sure what you mean by &#039;powerful,&#039; but they don&#039;t have to be complex. Actually, my opinion is that the simpler you can make it, the easier it will be.<br />
+<br />
+You can &quot;show me where your shoe fits,&quot; eh? What are you, thirteen? If you can&#039;t calmly and adaquately defend your ideas against someone playing &quot;Devil&#039;s Advocate,&quot; what are you going to do when someone who doesn&#039;t believe anything you say comes along? &quot;You argued with my belief in psychic abilities, so I&#039;m gonna kick your ass!&quot; Grow up.</div>
+		<textarea style="display: none;" id="desctxt_11783">Uh, I pick on everyone. You can pretty much bet that if you do or say something that sets off my BS detector, I&#039;ll call you on it. Anyone who was at the Psipog forums frequently before they archived them can attest to that. Actually, by my standards, what I said to you was nowhere near mean, nor was it picking on you. And if you can&#039;t handle a little criticism, you really don&#039;t need to be dabbling in psionics.
+
+Corpse didn&#039;t call cold &quot;energy.&quot; He called it &quot;a lack of energy.&quot; Also, I criticized his post too. The part where I pointed out something that might be easier. Or did you just not read that part? But to his credit, his theory at least made some sense.
+
+Yes, motion comes from energy. It&#039;s called kinetic energy, if my memory serves. However, that doesn&#039;t mean that cold is energy. Cold is the ABSENCE of molecular motion, which would mean it&#039;s the ABSENCE of force, which leads to it being an ABSENCE of energy. Take a 9th grade physical science class.
+
+What &quot;my position on cold psi balls is?&quot; You sound as though I&#039;ve claimed they can&#039;t be made. They can, I do it all the time. I prefer to make cold ones rather than warm ones, to remove the whole &quot;your body heat is affecting it&quot; variable. I&#039;m not quite sure what you mean by &#039;powerful,&#039; but they don&#039;t have to be complex. Actually, my opinion is that the simpler you can make it, the easier it will be.
+
+You can &quot;show me where your shoe fits,&quot; eh? What are you, thirteen? If you can&#039;t calmly and adaquately defend your ideas against someone playing &quot;Devil&#039;s Advocate,&quot; what are you going to do when someone who doesn&#039;t believe anything you say comes along? &quot;You argued with my belief in psychic abilities, so I&#039;m gonna kick your ass!&quot; Grow up.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 2 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Dash</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=69&amp;ref=1224210982" width="113" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11786" style="width: 100%; overflow: auto; min-height: 125px;">to be honest it didn&#039;t look like you were picking on me.. i&#039;m just competitive by nature.. not interesting unless theres a fight..<br />
+so basically you can skip this if you want.. with my apologies<br />
+<br />
+<br />
+if you noticed i said heat was excited energy.. cold being the opposite you could pretty much guess that its absence of energy..<br />
+it was a loose statement to say &quot;everything is energy&quot; (feeling a bit like peter molynuex now.. seriously.. i facepalmed when i read it)<br />
+contradictory statements tend to dribble out of my mouth when story time comes around<br />
+<br />
+<br />
+when i asked your position i wasn&#039;t saying that.. <br />
+by powerful i meant effective,  and i actually agree with you, simpler the better, i mean the only reason i popped on this thread was because of complicated shield talk and hitting around the bush with a stick, <br />
+<br />
+and i just said that last part because i thought it sounded cool... ok.. i might &#039;think&#039; like im 13 sometimes.. school grade and all.. but wouldn&#039;t actually beat on anyone for they&#039;re opinion..</div>
+		<textarea style="display: none;" id="desctxt_11786">to be honest it didn&#039;t look like you were picking on me.. i&#039;m just competitive by nature.. not interesting unless theres a fight..
+so basically you can skip this if you want.. with my apologies
+
+
+if you noticed i said heat was excited energy.. cold being the opposite you could pretty much guess that its absence of energy..
+it was a loose statement to say &quot;everything is energy&quot; (feeling a bit like peter molynuex now.. seriously.. i facepalmed when i read it)
+contradictory statements tend to dribble out of my mouth when story time comes around
+
+
+when i asked your position i wasn&#039;t saying that.. 
+by powerful i meant effective,  and i actually agree with you, simpler the better, i mean the only reason i popped on this thread was because of complicated shield talk and hitting around the bush with a stick, 
+
+and i just said that last part because i thought it sounded cool... ok.. i might &#039;think&#039; like im 13 sometimes.. school grade and all.. but wouldn&#039;t actually beat on anyone for they&#039;re opinion..</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 2 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Eldibs</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=77&amp;ref=1223740672" width="19" height="36" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11787" style="width: 100%; overflow: auto; min-height: 125px;">At least you were a decent enough person to apologize. I can get a little competitive myself sometimes.<br />
+<br />
+You are correct (in my opinion) about the complicated shield talk. There&#039;s not much need to program the construct to move the heat energy outside of itself. Just program it to be cold. No sense in over-complicating it. Now, if it makes sense to the person doing the programming to visualize it doing that, then by all means, go ahead. By the way, I&#039;ve also heard of people taking cold showers, etc... to get the feeling of &#039;cold&#039; down. Though every time I&#039;ve heard of it, it was for cryokinesis, not psi balls. Me, I like my warm showers too much :D<br />
+<br />
+*Googles Peter Molyneux, out of curiosity*<br />
+<br />
+Ah, so that&#039;s what you meant by powerful. I usually define a powerful psi ball as one that&#039;s got lots of energy, but even that is arbitrary.<br />
+<br />
+So, apology accepted, and sorry if I come off a little mean. Like I said, I pick on EVERYONE. Even in real life.</div>
+		<textarea style="display: none;" id="desctxt_11787">At least you were a decent enough person to apologize. I can get a little competitive myself sometimes.
+
+You are correct (in my opinion) about the complicated shield talk. There&#039;s not much need to program the construct to move the heat energy outside of itself. Just program it to be cold. No sense in over-complicating it. Now, if it makes sense to the person doing the programming to visualize it doing that, then by all means, go ahead. By the way, I&#039;ve also heard of people taking cold showers, etc... to get the feeling of &#039;cold&#039; down. Though every time I&#039;ve heard of it, it was for cryokinesis, not psi balls. Me, I like my warm showers too much :D
+
+*Googles Peter Molyneux, out of curiosity*
+
+Ah, so that&#039;s what you meant by powerful. I usually define a powerful psi ball as one that&#039;s got lots of energy, but even that is arbitrary.
+
+So, apology accepted, and sorry if I come off a little mean. Like I said, I pick on EVERYONE. Even in real life.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 2 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">gaston</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11928" style="width: 100%; overflow: auto; min-height: 125px;">pleas help me icant make a psi ball at oll this stinks 8(</div>
+		<textarea style="display: none;" id="desctxt_11928">pleas help me icant make a psi ball at oll this stinks 8(</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Dash</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=69&amp;ref=1224210982" width="113" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11939" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by gaston:</em><br />
+pleas help me icant make a psi ball at oll this stinks 8(</div>tell us how you do it..  we&#039;ll give you some pointers after we see what you already know</div>
+		<textarea style="display: none;" id="desctxt_11939">[quote][i]posted by gaston:[/i]
+pleas help me icant make a psi ball at oll this stinks 8([/quote]
+
+tell us how you do it..  we&#039;ll give you some pointers after we see what you already know</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Dash, 4 years, 1 month ago<br />Posted 4 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Antisankari</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=224&amp;ref=1213032338" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11941" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by gaston:</em><br />
+pleas help me icant make a psi ball at oll this stinks 8(</div>Yes it does.<br />
+1) Read some articles. Namely from www.psipog.net<br />
+2) Do what the articles tell you to.<br />
+3) If you don&#039;t succeed, go back to point 2.<br />
+4) If you succeed, go back to point 1 and think ways to make it even better.<br />
+<br />
+Repeat this indefinately and you will eventually succeed, or die of old age while trying. Sadly there is no other way. <br />
+<br />
+...Think-Do-Analyze-Think-Do-Analyze...<br />
+<br />
+Sigh. How ironic to be one writing these replies these days...</div>
+		<textarea style="display: none;" id="desctxt_11941">[quote][i]posted by gaston:[/i]
+pleas help me icant make a psi ball at oll this stinks 8([/quote]
+
+Yes it does.
+1) Read some articles. Namely from www.psipog.net
+2) Do what the articles tell you to.
+3) If you don&#039;t succeed, go back to point 2.
+4) If you succeed, go back to point 1 and think ways to make it even better.
+
+Repeat this indefinately and you will eventually succeed, or die of old age while trying. Sadly there is no other way. 
+
+...Think-Do-Analyze-Think-Do-Analyze...
+
+Sigh. How ironic to be one writing these replies these days...</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Corpse</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=553&amp;ref=1239824741" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11946" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Antisankari:</em><br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by gaston:</em><br />
+pleas help me icant make a psi ball at oll this stinks 8(</div>Yes it does.<br />
+1) Read some articles. Namely from www.psipog.net<br />
+2) Do what the articles tell you to.<br />
+3) If you don&#039;t succeed, go back to point 2.<br />
+4) If you succeed, go back to point 1 and think ways to make it even better.<br />
+<br />
+Repeat this indefinately and you will eventually succeed, or die of old age while trying. Sadly there is no other way. <br />
+<br />
+...Think-Do-Analyze-Think-Do-Analyze...<br />
+<br />
+Sigh. How ironic to be one writing these replies these days...</div>Hahah, some one just made them selfs look like an old timer! <br />
+:P</div>
+		<textarea style="display: none;" id="desctxt_11946">[quote][i]posted by Antisankari:[/i]
+[quote][i]posted by gaston:[/i]
+pleas help me icant make a psi ball at oll this stinks 8([/quote]
+
+Yes it does.
+1) Read some articles. Namely from www.psipog.net
+2) Do what the articles tell you to.
+3) If you don&#039;t succeed, go back to point 2.
+4) If you succeed, go back to point 1 and think ways to make it even better.
+
+Repeat this indefinately and you will eventually succeed, or die of old age while trying. Sadly there is no other way. 
+
+...Think-Do-Analyze-Think-Do-Analyze...
+
+Sigh. How ironic to be one writing these replies these days...[/quote]
+
+Hahah, some one just made them selfs look like an old timer! 
+:P</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 1 month ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=579" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 35 queries. 0.280 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

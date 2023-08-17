@@ -1,0 +1,492 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird </title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA">
+<p id="loginbanner" style="font-size: 120%;">
+You are not logged in.  Your results will be <a href="lottery-game.php@cmd=stats.html">anonymous</a>. <a href="wp-login.php.html"><strong>Login</strong></a> or <a href="wp-login.php@registration=disabled.html"><strong>Join for Free</strong></a>.
+</p>
+<script type="text/javascript">
+//<![CDATA[
+
+var toggle_cell = [];
+var top_count = 0;
+var bottom_count = 0;
+var total_tick = 0;
+var ticket_str = [];
+for (i = 0; i < 14 * 8; i++)
+	toggle_cell[i] = 0;
+
+function set_cell(x, y, v)
+{
+	toggle_cell[x + y * 8] = v ? 1 : 0;
+	document.getElementById('cell_' + x + '_' + y).style.backgroundColor = v ? '#afafaf' : 'white';
+}
+
+function click_cell(x, y)
+{
+	if (y < 7)
+	{
+		if (top_count >= 5 && toggle_cell[x + y * 8] != 1)
+		{
+			alert('You only need 5 numbers from the top.');
+			return;
+		}
+		else if (toggle_cell[x + y * 8] != 1)
+			top_count++;
+		else if (toggle_cell[x + y * 8] == 1)
+			top_count--;
+		set_cell(1, 7, 0);
+	}
+	else if (y == 7)
+	{
+		var sy = 0;
+		var ey = 7;
+		if (x == 1)
+			top_count = 0;
+		else if (x == 4)
+		{
+			bottom_count = 0;
+			sy = 8;
+			ey = 14;
+		}
+		else if (x == 7)
+		{
+			top_count = bottom_count = 0;
+			ey = 14;
+			setTimeout('set_cell(7, 7, 0);', 500);
+		}
+		for (var py = sy; py < ey; py++)
+			for (var px = 0; px < 8; px++)
+				set_cell(px, py, 0);
+	}
+	else
+	{
+		if (bottom_count > 0)
+		{
+			if (toggle_cell[x + y * 8] != 1)
+			{
+				for (var py = 8; py < 14; py++)
+					for (var px = 0; px < 8; px++)
+						set_cell(px, py, 0);
+				bottom_count = 1;
+			}
+			else
+				bottom_count = 0;
+		}
+		else
+			bottom_count = 1;
+		set_cell(4, 7, 0);
+	}
+	var d = document.getElementById('cell_' + x + '_' + y);
+	if (toggle_cell[x + y * 8] == 1)
+		set_cell(x, y, 0);
+	else
+		set_cell(x, y, 1);
+}
+
+function force2(n)
+{
+	if (n >= 10)
+		return n;
+	return '0' + n;
+}
+
+function purchase_ticket()
+{
+	if (total_tick >= 5)
+	{
+		alert('You may only purchase up to 5 tickets per drawing.');
+		return;
+	}
+	if (top_count != 5 && toggle_cell[57] != 1)
+	{
+		alert('You must either select 5 numbers on the top, or select the Quick Pick option.');
+		return;
+	}
+	if (bottom_count != 1 && toggle_cell[60] != 1)
+	{
+		alert('You must either select 1 number on the bottom, or select the Quick Pick option.');
+		return;
+	}
+
+	var tstr = '';
+	if (top_count == 5)
+	{
+		for (var y = 0; y < 7; y++)
+			for (var x = 0; x < 8; x++)
+				if (toggle_cell[x + y * 8] == 1)
+					if (tstr == '')
+						tstr = '' + force2(x + y * 8 + 1);
+					else
+						tstr += ', ' + force2(x + y * 8 + 1);
+	}
+	else // top quick pick
+	{
+		var qp_top = [];
+		for (var i = 0; i < 5; i++)
+		{
+			var repeat;
+			do {
+				qp_top[i] = Math.floor(Math.random() * 56) + 1;
+				repeat = false;
+				for (var j = 0; j < i && !repeat; j++)
+					if (qp_top[i] == qp_top[j])
+						repeat = true;
+			} while (repeat);
+		}
+		for (var i = 1; i <= 56; i++)
+		{
+			var found = false;
+			for (var j = 0; j < 5 && !found; j++)
+				if (qp_top[j] == i)
+					found = true;
+			if (found)
+				if (tstr == '')
+					tstr = '' + force2(i);
+				else
+					tstr += ', ' + force2(i);
+		}
+	}
+
+	if (bottom_count == 1)
+	{
+		var done = false;
+		for (var y = 8; y < 14 && !done; y++)
+			for (var x = 0; x < 8 && !done; x++)
+				if (toggle_cell[x + y * 8] == 1)
+				{
+					tstr += ' [' + force2(x + y * 8 - 63) + ']';
+					done = true;
+				}
+	}
+	else
+		tstr += ' [' + force2(Math.floor(Math.random() * 46) + 1) + ']';
+
+	tstr = String.fromCharCode('A'.charCodeAt(0) + total_tick) + ': ' + tstr;
+	tstr += ' &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ';
+	if (top_count != 5 || bottom_count != 1)
+		tstr += 'QP';
+	else
+		tstr += '&nbsp; &nbsp; &nbsp; <' + '!-- NM --' + '>';
+	ticket_str[total_tick] = tstr;
+	total_tick++;
+
+	for (var y = 0; y < 14; y++)
+		for (var x = 0; x < 8; x++)
+			if (y != 7)
+				set_cell(x, y, 0);
+	top_count = bottom_count = 0;
+
+	refresh_ticket_display();
+}
+
+function refresh_ticket_display()
+{
+	var today = new Date();
+	var tstr = '$' + total_tick + '.00 - 1 Draw<' + 'br /><' +
+		'span style="font-size: 90%;">' + force2(today.getMonth() + 1)
+		+ '/' + force2(today.getDate()) + '<' + 'br /><' + '/span><' + 'br />';
+	for (var i = 0; i < total_tick; i++)
+		tstr += ticket_str[i] + '<' + 'br />';
+	if (total_tick == 0)
+		tstr += 'No tickets purchased.<' + 'br />';
+	tstr += '<' + 'span style="font-size: 90%;">53990267025123-17<' + '/span>';
+
+	document.getElementById('lt_cost').innerHTML = tstr;
+}
+
+function play_lottery()
+{
+	if (total_tick < 1)
+	{
+		alert('You must purchase at least 1 ticket to play.');
+		return false;
+	}
+
+	var tstr = total_tick + 'x';
+	for (var i = 0; i < total_tick; i++)
+		tstr += ticket_str[i];
+	tstr = tstr.replace(/\&nbsp;/g, '');
+	tstr = tstr.replace(/ /g, '');
+	tstr = tstr.replace(/\[/g, ',');
+	tstr = tstr.replace(/\]/g, ',');
+	tstr = tstr.replace(/\-\-/g, '');
+	tstr = tstr.replace(/\!/g, '');
+	tstr = tstr.replace(/A\:/g, '');
+	tstr = tstr.replace(/B\:/g, '');
+	tstr = tstr.replace(/C\:/g, '');
+	tstr = tstr.replace(/D\:/g, '');
+	tstr = tstr.replace(/E\:/g, '');
+	tstr = tstr.replace(/\</g, '');
+	tstr = tstr.replace(/\>/g, '');
+	tstr = tstr.replace(/NM/g, 'NM,');
+	tstr = tstr.replace(/QP/g, 'QP,');
+	tstr = tstr.replace(/\,/g, 'x');
+	document.frm.picks.value = tstr;
+	return true;
+}
+
+//]]>
+</script>
+<table cellpadding="0" cellspacing="0" border="0" style="padding: 0; border: 2px solid #ff3737; width: 256px; margin: 20px auto 20px auto;">
+<tr>
+<td colspan="8" style="background-color: #ff3737; color: white; text-align: center;">Select 5 Numbers</td>
+</tr>
+<tr><td onclick="javascript: click_cell(0, 0);" id="cell_0_0" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">1</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_ul.gif" width="32" height="41" alt="1" /></td><td onclick="javascript: click_cell(1, 0);" id="cell_1_0" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">2</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_u.gif" width="32" height="41" alt="2" /></td><td onclick="javascript: click_cell(2, 0);" id="cell_2_0" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">3</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_u.gif" width="32" height="41" alt="3" /></td><td onclick="javascript: click_cell(3, 0);" id="cell_3_0" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">4</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_u.gif" width="32" height="41" alt="4" /></td><td onclick="javascript: click_cell(4, 0);" id="cell_4_0" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">5</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_u.gif" width="32" height="41" alt="5" /></td><td onclick="javascript: click_cell(5, 0);" id="cell_5_0" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">6</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_u.gif" width="32" height="41" alt="6" /></td><td onclick="javascript: click_cell(6, 0);" id="cell_6_0" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">7</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_u.gif" width="32" height="41" alt="7" /></td><td onclick="javascript: click_cell(7, 0);" id="cell_7_0" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">8</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_ur.gif" width="32" height="41" alt="8" /></td></tr><tr><td onclick="javascript: click_cell(0, 1);" id="cell_0_1" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">9</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_l.gif" width="32" height="41" alt="9" /></td><td onclick="javascript: click_cell(1, 1);" id="cell_1_1" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">10</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_c.gif" width="32" height="41" alt="10" /></td><td onclick="javascript: click_cell(2, 1);" id="cell_2_1" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">11</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_c.gif" width="32" height="41" alt="11" /></td><td onclick="javascript: click_cell(3, 1);" id="cell_3_1" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">12</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_c.gif" width="32" height="41" alt="12" /></td><td onclick="javascript: click_cell(4, 1);" id="cell_4_1" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">13</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_c.gif" width="32" height="41" alt="13" /></td><td onclick="javascript: click_cell(5, 1);" id="cell_5_1" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">14</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_c.gif" width="32" height="41" alt="14" /></td><td onclick="javascript: click_cell(6, 1);" id="cell_6_1" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">15</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_c.gif" width="32" height="41" alt="15" /></td><td onclick="javascript: click_cell(7, 1);" id="cell_7_1" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">16</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_r.gif" width="32" height="41" alt="16" /></td></tr><tr><td onclick="javascript: click_cell(0, 2);" id="cell_0_2" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">17</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_l.gif" width="32" height="41" alt="17" /></td><td onclick="javascript: click_cell(1, 2);" id="cell_1_2" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">18</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_c.gif" width="32" height="41" alt="18" /></td><td onclick="javascript: click_cell(2, 2);" id="cell_2_2" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">19</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_c.gif" width="32" height="41" alt="19" /></td><td onclick="javascript: click_cell(3, 2);" id="cell_3_2" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">20</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_c.gif" width="32" height="41" alt="20" /></td><td onclick="javascript: click_cell(4, 2);" id="cell_4_2" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">21</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_c.gif" width="32" height="41" alt="21" /></td><td onclick="javascript: click_cell(5, 2);" id="cell_5_2" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">22</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_c.gif" width="32" height="41" alt="22" /></td><td onclick="javascript: click_cell(6, 2);" id="cell_6_2" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">23</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_c.gif" width="32" height="41" alt="23" /></td><td onclick="javascript: click_cell(7, 2);" id="cell_7_2" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">24</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_r.gif" width="32" height="41" alt="24" /></td></tr><tr><td onclick="javascript: click_cell(0, 3);" id="cell_0_3" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">25</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_l.gif" width="32" height="41" alt="25" /></td><td onclick="javascript: click_cell(1, 3);" id="cell_1_3" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">26</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_c.gif" width="32" height="41" alt="26" /></td><td onclick="javascript: click_cell(2, 3);" id="cell_2_3" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">27</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_c.gif" width="32" height="41" alt="27" /></td><td onclick="javascript: click_cell(3, 3);" id="cell_3_3" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">28</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_c.gif" width="32" height="41" alt="28" /></td><td onclick="javascript: click_cell(4, 3);" id="cell_4_3" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">29</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_c.gif" width="32" height="41" alt="29" /></td><td onclick="javascript: click_cell(5, 3);" id="cell_5_3" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">30</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_c.gif" width="32" height="41" alt="30" /></td><td onclick="javascript: click_cell(6, 3);" id="cell_6_3" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">31</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_c.gif" width="32" height="41" alt="31" /></td><td onclick="javascript: click_cell(7, 3);" id="cell_7_3" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">32</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_r.gif" width="32" height="41" alt="32" /></td></tr><tr><td onclick="javascript: click_cell(0, 4);" id="cell_0_4" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">33</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_l.gif" width="32" height="41" alt="33" /></td><td onclick="javascript: click_cell(1, 4);" id="cell_1_4" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">34</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_c.gif" width="32" height="41" alt="34" /></td><td onclick="javascript: click_cell(2, 4);" id="cell_2_4" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">35</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_c.gif" width="32" height="41" alt="35" /></td><td onclick="javascript: click_cell(3, 4);" id="cell_3_4" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">36</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_c.gif" width="32" height="41" alt="36" /></td><td onclick="javascript: click_cell(4, 4);" id="cell_4_4" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">37</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_c.gif" width="32" height="41" alt="37" /></td><td onclick="javascript: click_cell(5, 4);" id="cell_5_4" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">38</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_c.gif" width="32" height="41" alt="38" /></td><td onclick="javascript: click_cell(6, 4);" id="cell_6_4" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">39</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_c.gif" width="32" height="41" alt="39" /></td><td onclick="javascript: click_cell(7, 4);" id="cell_7_4" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">40</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_r.gif" width="32" height="41" alt="40" /></td></tr><tr><td onclick="javascript: click_cell(0, 5);" id="cell_0_5" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">41</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_l.gif" width="32" height="41" alt="41" /></td><td onclick="javascript: click_cell(1, 5);" id="cell_1_5" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">42</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_c.gif" width="32" height="41" alt="42" /></td><td onclick="javascript: click_cell(2, 5);" id="cell_2_5" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">43</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_c.gif" width="32" height="41" alt="43" /></td><td onclick="javascript: click_cell(3, 5);" id="cell_3_5" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">44</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_c.gif" width="32" height="41" alt="44" /></td><td onclick="javascript: click_cell(4, 5);" id="cell_4_5" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">45</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_c.gif" width="32" height="41" alt="45" /></td><td onclick="javascript: click_cell(5, 5);" id="cell_5_5" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">46</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_c.gif" width="32" height="41" alt="46" /></td><td onclick="javascript: click_cell(6, 5);" id="cell_6_5" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">47</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_c.gif" width="32" height="41" alt="47" /></td><td onclick="javascript: click_cell(7, 5);" id="cell_7_5" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">48</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_r.gif" width="32" height="41" alt="48" /></td></tr><tr><td onclick="javascript: click_cell(0, 6);" id="cell_0_6" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">49</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_l.gif" width="32" height="41" alt="49" /></td><td onclick="javascript: click_cell(1, 6);" id="cell_1_6" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">50</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_c.gif" width="32" height="41" alt="50" /></td><td onclick="javascript: click_cell(2, 6);" id="cell_2_6" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">51</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_c.gif" width="32" height="41" alt="51" /></td><td onclick="javascript: click_cell(3, 6);" id="cell_3_6" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">52</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_c.gif" width="32" height="41" alt="52" /></td><td onclick="javascript: click_cell(4, 6);" id="cell_4_6" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">53</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_c.gif" width="32" height="41" alt="53" /></td><td onclick="javascript: click_cell(5, 6);" id="cell_5_6" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">54</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_c.gif" width="32" height="41" alt="54" /></td><td onclick="javascript: click_cell(6, 6);" id="cell_6_6" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">55</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_c.gif" width="32" height="41" alt="55" /></td><td onclick="javascript: click_cell(7, 6);" id="cell_7_6" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">56</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_r.gif" width="32" height="41" alt="56" /></td></tr><tr><td id="cell_0_7" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">QP</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cellb_ul.gif" width="32" height="41" alt="QP" /></td><td onclick="javascript: click_cell(1, 7);" id="cell_1_7" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;"></div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_u.gif" width="32" height="41" alt="" /></td><td id="cell_2_7" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;"></div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cellb_u.gif" width="32" height="41" alt="" /></td><td id="cell_3_7" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">QP</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cellb_u.gif" width="32" height="41" alt="QP" /></td><td onclick="javascript: click_cell(4, 7);" id="cell_4_7" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;"></div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_u.gif" width="32" height="41" alt="" /></td><td id="cell_5_7" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;"></div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cellb_u.gif" width="32" height="41" alt="" /></td><td id="cell_6_7" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">CLR</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cellb_u.gif" width="32" height="41" alt="CLR" /></td><td onclick="javascript: click_cell(7, 7);" id="cell_7_7" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;"></div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_ur.gif" width="32" height="41" alt="" /></td></tr><tr><td onclick="javascript: click_cell(0, 8);" id="cell_0_8" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">1</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_ul.gif" width="32" height="41" alt="1" /></td><td onclick="javascript: click_cell(1, 8);" id="cell_1_8" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">2</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_u.gif" width="32" height="41" alt="2" /></td><td onclick="javascript: click_cell(2, 8);" id="cell_2_8" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">3</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_u.gif" width="32" height="41" alt="3" /></td><td onclick="javascript: click_cell(3, 8);" id="cell_3_8" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">4</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_u.gif" width="32" height="41" alt="4" /></td><td onclick="javascript: click_cell(4, 8);" id="cell_4_8" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">5</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_u.gif" width="32" height="41" alt="5" /></td><td onclick="javascript: click_cell(5, 8);" id="cell_5_8" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">6</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_u.gif" width="32" height="41" alt="6" /></td><td onclick="javascript: click_cell(6, 8);" id="cell_6_8" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">7</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_u.gif" width="32" height="41" alt="7" /></td><td onclick="javascript: click_cell(7, 8);" id="cell_7_8" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">8</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_ur.gif" width="32" height="41" alt="8" /></td></tr><tr><td onclick="javascript: click_cell(0, 9);" id="cell_0_9" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">9</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_l.gif" width="32" height="41" alt="9" /></td><td onclick="javascript: click_cell(1, 9);" id="cell_1_9" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">10</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_c.gif" width="32" height="41" alt="10" /></td><td onclick="javascript: click_cell(2, 9);" id="cell_2_9" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">11</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_c.gif" width="32" height="41" alt="11" /></td><td onclick="javascript: click_cell(3, 9);" id="cell_3_9" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">12</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_c.gif" width="32" height="41" alt="12" /></td><td onclick="javascript: click_cell(4, 9);" id="cell_4_9" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">13</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_c.gif" width="32" height="41" alt="13" /></td><td onclick="javascript: click_cell(5, 9);" id="cell_5_9" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">14</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_c.gif" width="32" height="41" alt="14" /></td><td onclick="javascript: click_cell(6, 9);" id="cell_6_9" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">15</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_c.gif" width="32" height="41" alt="15" /></td><td onclick="javascript: click_cell(7, 9);" id="cell_7_9" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">16</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_r.gif" width="32" height="41" alt="16" /></td></tr><tr><td onclick="javascript: click_cell(0, 10);" id="cell_0_10" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">17</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_l.gif" width="32" height="41" alt="17" /></td><td onclick="javascript: click_cell(1, 10);" id="cell_1_10" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">18</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_c.gif" width="32" height="41" alt="18" /></td><td onclick="javascript: click_cell(2, 10);" id="cell_2_10" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">19</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_c.gif" width="32" height="41" alt="19" /></td><td onclick="javascript: click_cell(3, 10);" id="cell_3_10" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">20</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_c.gif" width="32" height="41" alt="20" /></td><td onclick="javascript: click_cell(4, 10);" id="cell_4_10" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">21</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_c.gif" width="32" height="41" alt="21" /></td><td onclick="javascript: click_cell(5, 10);" id="cell_5_10" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">22</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_c.gif" width="32" height="41" alt="22" /></td><td onclick="javascript: click_cell(6, 10);" id="cell_6_10" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">23</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_c.gif" width="32" height="41" alt="23" /></td><td onclick="javascript: click_cell(7, 10);" id="cell_7_10" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">24</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_r.gif" width="32" height="41" alt="24" /></td></tr><tr><td onclick="javascript: click_cell(0, 11);" id="cell_0_11" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">25</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_l.gif" width="32" height="41" alt="25" /></td><td onclick="javascript: click_cell(1, 11);" id="cell_1_11" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">26</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_c.gif" width="32" height="41" alt="26" /></td><td onclick="javascript: click_cell(2, 11);" id="cell_2_11" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">27</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_c.gif" width="32" height="41" alt="27" /></td><td onclick="javascript: click_cell(3, 11);" id="cell_3_11" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">28</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_c.gif" width="32" height="41" alt="28" /></td><td onclick="javascript: click_cell(4, 11);" id="cell_4_11" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">29</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_c.gif" width="32" height="41" alt="29" /></td><td onclick="javascript: click_cell(5, 11);" id="cell_5_11" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">30</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_c.gif" width="32" height="41" alt="30" /></td><td onclick="javascript: click_cell(6, 11);" id="cell_6_11" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">31</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_c.gif" width="32" height="41" alt="31" /></td><td onclick="javascript: click_cell(7, 11);" id="cell_7_11" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">32</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_r.gif" width="32" height="41" alt="32" /></td></tr><tr><td onclick="javascript: click_cell(0, 12);" id="cell_0_12" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">33</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_l.gif" width="32" height="41" alt="33" /></td><td onclick="javascript: click_cell(1, 12);" id="cell_1_12" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">34</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_c.gif" width="32" height="41" alt="34" /></td><td onclick="javascript: click_cell(2, 12);" id="cell_2_12" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">35</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_c.gif" width="32" height="41" alt="35" /></td><td onclick="javascript: click_cell(3, 12);" id="cell_3_12" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">36</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_c.gif" width="32" height="41" alt="36" /></td><td onclick="javascript: click_cell(4, 12);" id="cell_4_12" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">37</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_c.gif" width="32" height="41" alt="37" /></td><td onclick="javascript: click_cell(5, 12);" id="cell_5_12" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">38</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_c.gif" width="32" height="41" alt="38" /></td><td onclick="javascript: click_cell(6, 12);" id="cell_6_12" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">39</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_c.gif" width="32" height="41" alt="39" /></td><td onclick="javascript: click_cell(7, 12);" id="cell_7_12" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">40</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_r.gif" width="32" height="41" alt="40" /></td></tr><tr><td onclick="javascript: click_cell(0, 13);" id="cell_0_13" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">41</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_l.gif" width="32" height="41" alt="41" /></td><td onclick="javascript: click_cell(1, 13);" id="cell_1_13" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">42</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_c.gif" width="32" height="41" alt="42" /></td><td onclick="javascript: click_cell(2, 13);" id="cell_2_13" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">43</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_c.gif" width="32" height="41" alt="43" /></td><td onclick="javascript: click_cell(3, 13);" id="cell_3_13" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">44</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_c.gif" width="32" height="41" alt="44" /></td><td onclick="javascript: click_cell(4, 13);" id="cell_4_13" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">45</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_c.gif" width="32" height="41" alt="45" /></td><td onclick="javascript: click_cell(5, 13);" id="cell_5_13" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;cursor: pointer;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;">46</div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cell_c.gif" width="32" height="41" alt="46" /></td><td id="cell_6_13" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;"></div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cellb_c.gif" width="32" height="41" alt="" /></td><td id="cell_7_13" style="width: 32px; height: 41px; border: 0; padding: 0; margin: 0; background-color: white;"><div style="position: absolute; z-index: 2; color: #ff3737; text-align: center; font-weight: bold; width: 32px; padding: 0; margin: 0; border: 0; line-height: 41px;"></div><img style="vertical-align: baseline; margin: 0; padding: 0; border: 0;" src="lottery-game/l_cellb_r.gif" width="32" height="41" alt="" /></td></tr><tr>
+<td colspan="8" style="background-color: #ff3737; color: white; text-align: center;">Select 1 Number</td>
+</tr>
+</table>
+
+<p style="text-align: center;">
+<input style="font-size: 150%;" type="button" value="Purchase Fake Ticket" onclick="javascript: purchase_ticket();" /><br />
+(You can purchase up to 5 tickets at once)
+</p>
+
+<table cellspacing="0" cellpadding="0" border="0" style="width: 456px; margin: 0 auto 0 auto;">
+<tr>
+<td colspan="3" style="margin: 0; padding: 0; border: 0;"><img src="lottery-game/l_lts_u.gif" width="456" height="4" alt="" /></td>
+</tr>
+<tr>
+<td style="width: 4px; overflow: hidden; background-image: url(lottery-game/l_lts_l.gif);">&nbsp;</td>
+<td style="width: 448px; background-image: url(lottery-game/l_ltb.png); margin: 0; padding: 120px 0 20px 0; border: 0;"><p style="padding: 0 20px 0 0; text-align: right; font-weight: bold; font-size: 150%;" id="lt_cost"></p>
+<img src="lottery-game/l_lt_barcode.gif" width="448" height="50" alt="" />
+</td>
+<td style="width: 4px; overflow: hidden; background-image: url(lottery-game/l_lts_r.gif);">&nbsp;</td>
+<tr>
+<td colspan="3" style="margin: 0; padding: 0; border: 0;"><img src="lottery-game/l_lts_b.gif" width="456" height="8" alt="" /></td>
+</table>
+
+<form name="frm" method="post" action="lottery-game.php.html" onsubmit="javascript: return play_lottery();">
+<input type="hidden" name="picks" value="" />
+<p style="text-align: center;">
+<input style="font-size: 150%;" type="submit" value="     Play!     " />
+</p>
+</form>
+
+<p style="font-size: 90%; border: 1px solid #afafaf; padding: 20px; color: #6f6f6f; margin: 20px;">Disclaimer: This is just a simple free game I made - not a real lottery.  It's just for fun.  The MegaMillions logo is &copy; Copyright 2008 <a href="http://megamillions.com/">MegaMillions</a>, and the light red lottery symbol is &copy; Copyright 2008 <a href="http://mdlottery.com/">Maryland Lottery</a>.  Winning numbers provided by <a href="http://random.org/">Random.org</a>.</p>
+
+<script type="text/javascript">
+//<![CDATA[
+refresh_ticket_display();
+//]]>
+</script>
+</div> <!-- end alwContent div -->
+	<div id="alwSidebar">
+		<ul>
+
+			<li>
+				<form method="get" id="searchform" action="index.html">
+<div><input type="text" value="" name="s" id="s" style="width: 90%;" />
+<input type="submit" id="searchsubmit" value="Search" />
+</div>
+</form>
+			</li>
+
+			<!-- Author information is disabled per default. Uncomment and fill in your details if you want to use it.
+			<li><h2>Author</h2>
+			<p>A little something about you, the author. Nothing lengthy, just an overview.</p>
+			</li>
+			-->
+
+			<li>
+						</li>
+
+			<li class="pagenav"><h2>Pages</h2><ul><li class="page_item"><a href="index.html" title="Welcome!">Welcome!</a></li>
+<li class="page_item"><a href="blog/index.html" title="Blog">Blog</a></li>
+<li class="page_item"><a href="forums.php.html" title="Forums">Forums</a></li>
+<li class="page_item"><a href="games/index.html" title="Games">Games</a>
+	<ul>
+	<li class="page_item"><a href="games/emergence-game/index.html" title="Emergence Game">Emergence Game</a></li>
+	<li class="page_item"><a href="games/geiger-game/index.html" title="Geiger Game">Geiger Game</a></li>
+	<li class="page_item"><a href="games/lottery-game/index.html" title="Lottery Game">Lottery Game</a></li>
+	</ul>
+</li>
+<li class="page_item"><a href="contact/index.html" title="Contact">Contact</a></li>
+</ul></li>
+			<li class="pagenav"><h2>Experiments</h2>
+				<ul>
+			<li><a href="2007/11/06/lottery-project-part-1/index.html">Lottery Project, Part 1</a></li><li><a href="2007/11/07/lottery-project-part-2/index.html">Lottery Project, Part 2</a></li>				</ul>
+			</li>
+			<li class="categories"><h2>Categories</h2><ul>	<li><a href="category/belief-systems/index.html" title="View all posts filed under Belief Systems">Belief Systems</a> (28)
+</li>
+	<li><a href="category/books/index.html" title="View all posts filed under Books">Books</a> (7)
+</li>
+	<li><a href="category/consciousness/index.html" title="View all posts filed under Consciousness">Consciousness</a> (4)
+</li>
+	<li><a href="category/conspiracy/index.html" title="View all posts filed under Conspiracy">Conspiracy</a> (5)
+</li>
+	<li><a href="category/dream-phenomenon/index.html" title="View all posts filed under Dream Phenomenon">Dream Phenomenon</a> (24)
+</li>
+	<li><a href="category/esp/index.html" title="View all posts filed under ESP">ESP</a> (17)
+</li>
+	<li><a href="category/how-to/index.html" title="View all posts filed under How-To">How-To</a> (11)
+</li>
+	<li><a href="category/lottery/index.html" title="View all posts filed under Lottery">Lottery</a> (32)
+</li>
+	<li><a href="category/note-to-self/index.html" title="View all posts filed under Note to Self">Note to Self</a> (21)
+</li>
+	<li><a href="category/personal-development/index.html" title="View all posts filed under Personal Development">Personal Development</a> (17)
+</li>
+	<li><a href="category/philosophy/index.html" title="View all posts filed under Philosophy">Philosophy</a> (31)
+</li>
+	<li><a href="category/random-stuff/index.html" title="View all posts filed under Random Stuff">Random Stuff</a> (11)
+</li>
+	<li><a href="category/science/index.html" title="View all posts filed under Science">Science</a> (26)
+</li>
+	<li><a href="category/subconscious/index.html" title="View all posts filed under Subconscious">Subconscious</a> (14)
+</li>
+	<li><a href="category/uncategorized/index.html" title="View all posts filed under Uncategorized">Uncategorized</a> (1)
+</li>
+	<li><a href="category/video/index.html" title="View all posts filed under Video">Video</a> (16)
+</li>
+	<li><a href="category/website/index.html" title="View all posts filed under Website">Website</a> (13)
+</li>
+</ul></li>
+			<li><h2>Archives</h2>
+				<ul>
+					<li><a href='2011/11/index.html' title='November 2011'>November 2011</a></li>
+	<li><a href='2010/11/index.html' title='November 2010'>November 2010</a></li>
+	<li><a href='2010/06/index.html' title='June 2010'>June 2010</a></li>
+	<li><a href='2010/02/index.html' title='February 2010'>February 2010</a></li>
+	<li><a href='2009/12/index.html' title='December 2009'>December 2009</a></li>
+	<li><a href='2009/11/index.html' title='November 2009'>November 2009</a></li>
+	<li><a href='2009/10/index.html' title='October 2009'>October 2009</a></li>
+	<li><a href='2009/08/index.html' title='August 2009'>August 2009</a></li>
+	<li><a href='2009/07/index.html' title='July 2009'>July 2009</a></li>
+	<li><a href='2009/05/index.html' title='May 2009'>May 2009</a></li>
+	<li><a href='2009/04/index.html' title='April 2009'>April 2009</a></li>
+	<li><a href='2009/03/index.html' title='March 2009'>March 2009</a></li>
+	<li><a href='2009/02/index.html' title='February 2009'>February 2009</a></li>
+	<li><a href='2009/01/index.html' title='January 2009'>January 2009</a></li>
+	<li><a href='2008/11/index.html' title='November 2008'>November 2008</a></li>
+	<li><a href='2008/10/index.html' title='October 2008'>October 2008</a></li>
+	<li><a href='2008/09/index.html' title='September 2008'>September 2008</a></li>
+	<li><a href='2008/08/index.html' title='August 2008'>August 2008</a></li>
+	<li><a href='2008/07/index.html' title='July 2008'>July 2008</a></li>
+	<li><a href='2008/06/index.html' title='June 2008'>June 2008</a></li>
+	<li><a href='2008/05/index.html' title='May 2008'>May 2008</a></li>
+	<li><a href='2008/04/index.html' title='April 2008'>April 2008</a></li>
+	<li><a href='2008/03/index.html' title='March 2008'>March 2008</a></li>
+	<li><a href='2008/02/index.html' title='February 2008'>February 2008</a></li>
+	<li><a href='2008/01/index.html' title='January 2008'>January 2008</a></li>
+	<li><a href='2007/12/index.html' title='December 2007'>December 2007</a></li>
+	<li><a href='2007/11/index.html' title='November 2007'>November 2007</a></li>
+	<li><a href='2007/10/index.html' title='October 2007'>October 2007</a></li>
+	<li><a href='2007/09/index.html' title='September 2007'>September 2007</a></li>
+	<li><a href='2007/08/index.html' title='August 2007'>August 2007</a></li>
+	<li><a href='2007/07/index.html' title='July 2007'>July 2007</a></li>
+	<li><a href='2007/06/index.html' title='June 2007'>June 2007</a></li>
+	<li><a href='2007/05/index.html' title='May 2007'>May 2007</a></li>
+	<li><a href='2007/04/index.html' title='April 2007'>April 2007</a></li>
+				</ul>
+			</li>
+
+							<li id="linkcat-2" class="linkcat"><h2>Links</h2>
+	<ul>
+<li><a href="http://astateofmind.eu/" title="A State of Mind">A State of Mind</a></li>
+<li><a href="http://dailydeluge.com" title="Dreaming to Infinity">Dreaming to Infinity</a></li>
+<li><a href="http://www.youtube.com/user/MonroeInstitute" title="Monroe Institute on YouTube">Monroe Institute on YouTube</a></li>
+<li><a href="http://shiftedperspectives.net/" title="Shifted Perspectives">Shifted Perspectives</a></li>
+<li><a href="http://www.youtube.com/user/ucberkeley" title="UC Berkeley on YouTube">UC Berkeley on YouTube</a></li>
+
+	</ul>
+</li>
+
+				<li><h2>Meta</h2>
+				<ul>
+										<li><a href="wp-login.php.html">Login</a></li>
+					<li><a href="http://validator.w3.org/check/referer" title="This page validates as XHTML 1.0 Transitional">Valid XHTML</a></li>
+									</ul>
+				</li>
+			
+		</ul>
+	<!-- leave end /div for footer -->
+
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 18 queries. 0.467 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

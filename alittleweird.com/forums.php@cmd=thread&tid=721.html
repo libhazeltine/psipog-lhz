@@ -1,0 +1,458 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; need some telepathy help :S (i have looked at psipog.net X D)</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; need some telepathy help :S (i have looked at psipog.net X D)</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">need some telepathy help :S (i have looked at psipog.net X D)</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">eggman100</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13506" style="width: 100%; overflow: auto; min-height: 125px;">hi guys, i need some  telepathy help, i have read most of the guides on psipog, but i cant get it to work ,  might it be because i havent had enough practise, or it takes different amounts of time for different people , i dont really know,    but i do know that i tried my best at the moment, also is telepathy a hard skill to learn?<br />
+<br />
+<br />
+Also<br />
+ive been looking at the gieger game,   and i was thinking, ( without changing the subject)  can you emit radiation !?_?!     but yes, i am grateful for this site being put up, it has helped me quite  a bit thank you <br />
+Sean, And all the other members of &#039;psipog.net&#039;<br />
+and the members of this site (&#039;alittlewierd.com&#039;)</div>
+		<textarea style="display: none;" id="desctxt_13506">hi guys, i need some  telepathy help, i have read most of the guides on psipog, but i cant get it to work ,  might it be because i havent had enough practise, or it takes different amounts of time for different people , i dont really know,    but i do know that i tried my best at the moment, also is telepathy a hard skill to learn?
+
+
+Also
+ive been looking at the gieger game,   and i was thinking, ( without changing the subject)  can you emit radiation !?_?!     but yes, i am grateful for this site being put up, it has helped me quite  a bit thank you 
+Sean, And all the other members of &#039;psipog.net&#039;
+and the members of this site (&#039;alittlewierd.com&#039;)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Subliminal</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=879&amp;ref=1231742413" width="96" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13507" style="width: 100%; overflow: auto; min-height: 125px;">Are you Canadian or...<br />
+<br />
+I know it&#039;s random. I just noticed you used &quot;practise&quot; so yeah. <br />
+By the way, this is a pointless post, because...I can&#039;t do telepathy. Sorry. &lt;_&lt;<br />
+<br />
+EDIT:<br />
+Related Question:<br />
+<br />
+How long have you been practicing?</div>
+		<textarea style="display: none;" id="desctxt_13507">Are you Canadian or...
+
+I know it&#039;s random. I just noticed you used &quot;practise&quot; so yeah. 
+By the way, this is a pointless post, because...I can&#039;t do telepathy. Sorry. &lt;_&lt;
+
+EDIT:
+Related Question:
+
+How long have you been practicing?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Subliminal, 3 years, 7 months ago<br />Posted 3 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Raathuus</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=764&amp;ref=1259211929" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13509" style="width: 100%; overflow: auto; min-height: 125px;">Could be British.  I know they spell their things like &quot;practise&quot; along with &quot;centre&quot; and one of the more famous, &quot;colour&quot;.<br />
+<br />
+An obvious question to for me to ask is if you&#039;ve actually tried telepathy on other people, and if so, how many and for how long.  Maybe we should get Nvivas in here.  He and I do telepathy quite well.</div>
+		<textarea style="display: none;" id="desctxt_13509">Could be British.  I know they spell their things like &quot;practise&quot; along with &quot;centre&quot; and one of the more famous, &quot;colour&quot;.
+
+An obvious question to for me to ask is if you&#039;ve actually tried telepathy on other people, and if so, how many and for how long.  Maybe we should get Nvivas in here.  He and I do telepathy quite well.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Subliminal</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=879&amp;ref=1231742413" width="96" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13513" style="width: 100%; overflow: auto; min-height: 125px;">That&#039;s why I said &quot;or&quot; =P</div>
+		<textarea style="display: none;" id="desctxt_13513">That&#039;s why I said &quot;or&quot; =P</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">nvivas16</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=894&amp;ref=1233620780" width="125" height="69" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13514" style="width: 100%; overflow: auto; min-height: 125px;">Hello! I&#039;m NV <br />
+<br />
+Hm...interesting. Well, tell us how you practice, what do you do? What do you visualize? <br />
+<br />
+Also, how long have you been doing it? <br />
+<br />
+Also, if telepathy is a hard skill. It comes different to different people. Some can find it like a walk in the park, others can take months to get simple things down. It just depends. </div>
+		<textarea style="display: none;" id="desctxt_13514">Hello! I&#039;m NV 
+
+Hm...interesting. Well, tell us how you practice, what do you do? What do you visualize? 
+
+Also, how long have you been doing it? 
+
+Also, if telepathy is a hard skill. It comes different to different people. Some can find it like a walk in the park, others can take months to get simple things down. It just depends.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Trick</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=744&amp;ref=1221873234" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13528" style="width: 100%; overflow: auto; min-height: 125px;">Telepathy was by far, the hardest psionic skill for me to learn. I&#039;ve got some advice that will hopefully speed up your progress.<br />
+<br />
+1)Meditation, daily thing, if your not already.<br />
+2)You should probably practice with other people, also. Like shapes and colors and things. One session a day is fine.<br />
+3)The most important one. (This is pretty much the same as one of Seans blog posts) but you need to be aware of YOUR thoughts. Get into the habit of always being aware of what your thinking, all the time, until you always are. It should be something your always doing, second nature. Like breathing. Once your to that point, go over to some people, in the conversation youll notice thoughts will pop up, but youll realize their not yours. <br />
+<br />
+Basically, just always be aware of your thoughts, and eventually youll notice thoughts that arent yours (other peoples)<br />
+<br />
+Use that in telepathy games, too. When receiving, dont try to ELIMINATE your thoughts, just try to be aware of your thoughts (like always) and when one pops up that doesnt seem to be yours (youll learn to tell wich ones are yours) then its thiers. <br />
+<br />
+Hope this helps.</div>
+		<textarea style="display: none;" id="desctxt_13528">Telepathy was by far, the hardest psionic skill for me to learn. I&#039;ve got some advice that will hopefully speed up your progress.
+
+1)Meditation, daily thing, if your not already.
+2)You should probably practice with other people, also. Like shapes and colors and things. One session a day is fine.
+3)The most important one. (This is pretty much the same as one of Seans blog posts) but you need to be aware of YOUR thoughts. Get into the habit of always being aware of what your thinking, all the time, until you always are. It should be something your always doing, second nature. Like breathing. Once your to that point, go over to some people, in the conversation youll notice thoughts will pop up, but youll realize their not yours. 
+
+Basically, just always be aware of your thoughts, and eventually youll notice thoughts that arent yours (other peoples)
+
+Use that in telepathy games, too. When receiving, dont try to ELIMINATE your thoughts, just try to be aware of your thoughts (like always) and when one pops up that doesnt seem to be yours (youll learn to tell wich ones are yours) then its thiers. 
+
+Hope this helps.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Trick, 3 years, 7 months ago<br />Posted 3 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Morcyont</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=867&amp;ref=1262407330" width="125" height="73" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13529" style="width: 100%; overflow: auto; min-height: 125px;">Um, keep practicing. Its not going to work in one day, And it won&#039;t in a month or two. Just keep going and don&#039;t give up.</div>
+		<textarea style="display: none;" id="desctxt_13529">Um, keep practicing. Its not going to work in one day, And it won&#039;t in a month or two. Just keep going and don&#039;t give up.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">eggman100</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13530" style="width: 100%; overflow: auto; min-height: 125px;">@subliminal<br />
+Yes i am english, i jsut dont type the full english language aka, i do this &#039;stuff&#039; :) <br />
+(lol aka ftw wtf lols X D) and stuff like that<br />
+<br />
+<br />
+2nd Question.<br />
+um, its hard to say, i have tried for.... probably 2-4 months, i know it seems like a short time, but i did practise it alot :)</div>
+		<textarea style="display: none;" id="desctxt_13530">@subliminal
+Yes i am english, i jsut dont type the full english language aka, i do this &#039;stuff&#039; :) 
+(lol aka ftw wtf lols X D) and stuff like that
+
+
+2nd Question.
+um, its hard to say, i have tried for.... probably 2-4 months, i know it seems like a short time, but i did practise it alot :)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">eggman100</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13531" style="width: 100%; overflow: auto; min-height: 125px;">@raathuus<br />
+Thank You, Yes i am British :) The Brits :)<br />
+<br />
+1st Question. It is hard to say, i have tried on other people, but the &#039;obvious&#039; thing for me to say is, do you need to have 2 people &#039;sending &amp; recieving&#039; so mainly saying, can someone connect to someone else without them trying to recieve the link, if you do then it Might have solved my problem :)<br />
+<br />
+Also... Thank You for replying :) </div>
+		<textarea style="display: none;" id="desctxt_13531">@raathuus
+Thank You, Yes i am British :) The Brits :)
+
+1st Question. It is hard to say, i have tried on other people, but the &#039;obvious&#039; thing for me to say is, do you need to have 2 people &#039;sending &amp; recieving&#039; so mainly saying, can someone connect to someone else without them trying to recieve the link, if you do then it Might have solved my problem :)
+
+Also... Thank You for replying :)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">eggman100</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13532" style="width: 100%; overflow: auto; min-height: 125px;">@subliminal (again X D)<br />
+Pointless post =P   and yes We Do &#039;=P&#039; on the internet :) lols :)</div>
+		<textarea style="display: none;" id="desctxt_13532">@subliminal (again X D)
+Pointless post =P   and yes We Do &#039;=P&#039; on the internet :) lols :)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">eggman100</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13533" style="width: 100%; overflow: auto; min-height: 125px;">@nvivas16<br />
+Thank You for replying to my comment,<br />
+1st&#039;ly I sit/stand (depending on the situationX D)<br />
+i &#039;Visualise&#039; me and my friend/target in an Empty Black Space<br />
+then i visualise that we just stand and then i have a blue &#039;25% translucent&#039; tube<br />
+coming out of me near the top of my body, i dont look down in the visualisation,<br />
+then it connects at the target/friends head (&#039;_&#039;) then i visualise that i am pulling the imformation out of him, not forcefully, it flows, but... the the reason i made this post was because, how do i know that what the imformation i am pulling from him is actually real, or if it is just me making it up, it gets really confusing at that poits<br />
+<br />
+<br />
+i hope i didnt confuse you :)<br />
+<br />
+And...   I have been doing telepathy to 2-4 months i think bout that, but i have given up, also because i dont &#039;Actually&#039; Know if psionics and the other skills are &#039;acutally/intentionally&#039; real... but that isnt my point :)<br />
+<br />
+Again. Thank You for your post and your willingness to help me :)</div>
+		<textarea style="display: none;" id="desctxt_13533">@nvivas16
+Thank You for replying to my comment,
+1st&#039;ly I sit/stand (depending on the situationX D)
+i &#039;Visualise&#039; me and my friend/target in an Empty Black Space
+then i visualise that we just stand and then i have a blue &#039;25% translucent&#039; tube
+coming out of me near the top of my body, i dont look down in the visualisation,
+then it connects at the target/friends head (&#039;_&#039;) then i visualise that i am pulling the imformation out of him, not forcefully, it flows, but... the the reason i made this post was because, how do i know that what the imformation i am pulling from him is actually real, or if it is just me making it up, it gets really confusing at that poits
+
+
+i hope i didnt confuse you :)
+
+And...   I have been doing telepathy to 2-4 months i think bout that, but i have given up, also because i dont &#039;Actually&#039; Know if psionics and the other skills are &#039;acutally/intentionally&#039; real... but that isnt my point :)
+
+Again. Thank You for your post and your willingness to help me :)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">eggman100</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13534" style="width: 100%; overflow: auto; min-height: 125px;">@Trick<br />
+1st&#039;ly thank you for your post, <br />
+Thank You for your tips, i will try them the next time i try &#039;Telepathy&#039;<br />
+um dont laugh at this if you go there... please...<br />
+<a href="http://www.youtube/user/joshua99999999" target="_blank">www.youtube/user/joshua99999999</a><br />
+thats me,<br />
+please. dont-laugh<br />
+<br />
+BTW Again, Thank You for your comment it will help me in the future/next time :)<br />
+<br />
+Edit: who went to my youtube videos?</div>
+		<textarea style="display: none;" id="desctxt_13534">@Trick
+1st&#039;ly thank you for your post, 
+Thank You for your tips, i will try them the next time i try &#039;Telepathy&#039;
+um dont laugh at this if you go there... please...
+www.youtube/user/joshua99999999
+thats me,
+please. dont-laugh
+
+BTW Again, Thank You for your comment it will help me in the future/next time :)
+
+Edit: who went to my youtube videos?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by eggman100, 3 years, 7 months ago<br />Posted 3 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">eggman100</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13536" style="width: 100%; overflow: auto; min-height: 125px;">@morcyont<br />
+Thank You for replying to my comment, i notice Again, that it can take a very long time for some people, As i think this is my last comment to all the comments/replys here<br />
+<br />
+<br />
+THANK YOU ALL THE PEOPLE WHO HAVE READ MY POST, AND MOST OF ALL TO THE PEOPLE WHO HAVE REPLIED X D<br />
+<br />
+Also... If you do go to my youtube page, &#039;Subscribe&#039; if you have an account :)</div>
+		<textarea style="display: none;" id="desctxt_13536">@morcyont
+Thank You for replying to my comment, i notice Again, that it can take a very long time for some people, As i think this is my last comment to all the comments/replys here
+
+
+THANK YOU ALL THE PEOPLE WHO HAVE READ MY POST, AND MOST OF ALL TO THE PEOPLE WHO HAVE REPLIED X D
+
+Also... If you do go to my youtube page, &#039;Subscribe&#039; if you have an account :)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 7 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=721" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 29 queries. 0.325 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

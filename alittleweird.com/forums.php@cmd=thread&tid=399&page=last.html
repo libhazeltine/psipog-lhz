@@ -1,0 +1,302 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Interesting experience</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Interesting experience</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Interesting experience</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Vimick</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_8835" style="width: 100%; overflow: auto; min-height: 125px;">So last night I tried a binaural beat that was designed specifically to help induce an OBE. i&#039;ve tried other binaural beats with some interesting results so i though why not?<br />
+<br />
+<br />
+the whole beat was 30 minutes long<br />
+<br />
+it started off quite similar to my normal technique when i have always tried (and failed) to induce an obe. my body slowly went to sleep and became numb then the beats frequency dropped and some weird things began to happen.<br />
+<br />
+I had random muscle twitching and i became a little light headed. the frequency then began to pick up again and it felt like my whole body was rotating counter clockwise and after awhile it felt like i was sliding to the left it became so intense that i became a little nauseous (i get motion sick easily) <br />
+<br />
+the frequency changed again and the motion stopped. then my body felt like it became tense (couldnt really tell because i was completely numb at this point) but then for some reason my eyes began to creep open and what i saw kind of startled me.I was certain that i started completely flat on my back looking up at the bed above me ( i have a bunkbed) but instead of seeing the bed i saw a small bright square and i had no idea what it was then it slowly began to move down and become larger then i releaized it was my window (i realized that i was lying with my head slightly angled so with my eyes straight forward i was staring atmy window) but this distracted me and i lost concentration and lost any effect from the end of the beat (there was about 7 minutes left)<br />
+<br />
+itwas quite interesting.<br />
+<br />
+any feedback?</div>
+		<textarea style="display: none;" id="desctxt_8835">So last night I tried a binaural beat that was designed specifically to help induce an OBE. i&#039;ve tried other binaural beats with some interesting results so i though why not?
+
+
+the whole beat was 30 minutes long
+
+it started off quite similar to my normal technique when i have always tried (and failed) to induce an obe. my body slowly went to sleep and became numb then the beats frequency dropped and some weird things began to happen.
+
+I had random muscle twitching and i became a little light headed. the frequency then began to pick up again and it felt like my whole body was rotating counter clockwise and after awhile it felt like i was sliding to the left it became so intense that i became a little nauseous (i get motion sick easily) 
+
+the frequency changed again and the motion stopped. then my body felt like it became tense (couldnt really tell because i was completely numb at this point) but then for some reason my eyes began to creep open and what i saw kind of startled me.I was certain that i started completely flat on my back looking up at the bed above me ( i have a bunkbed) but instead of seeing the bed i saw a small bright square and i had no idea what it was then it slowly began to move down and become larger then i releaized it was my window (i realized that i was lying with my head slightly angled so with my eyes straight forward i was staring atmy window) but this distracted me and i lost concentration and lost any effect from the end of the beat (there was about 7 minutes left)
+
+itwas quite interesting.
+
+any feedback?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">SheepKing</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=211&amp;ref=1222648137" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_8856" style="width: 100%; overflow: auto; min-height: 125px;">Yeah; Those sound programs will do that to you. I used hemi-sync a few times over the course of a week on you start to get really weird feelings and you become &#039;disoriented&#039; even while laying still.<br />
+<br />
+Could have been the beginnings of an OBE or something of that nature.</div>
+		<textarea style="display: none;" id="desctxt_8856">Yeah; Those sound programs will do that to you. I used hemi-sync a few times over the course of a week on you start to get really weird feelings and you become &#039;disoriented&#039; even while laying still.
+
+Could have been the beginnings of an OBE or something of that nature.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by SheepKing, 4 years, 6 months ago<br />Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_8928" style="width: 100%; overflow: auto; min-height: 125px;">wow... I really need to get into this. What exactly is a binaural beat and how do they effect brainwaves?</div>
+		<textarea style="display: none;" id="desctxt_8928">wow... I really need to get into this. What exactly is a binaural beat and how do they effect brainwaves?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Akio, 4 years, 6 months ago<br />Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">bd333</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_8931" style="width: 100%; overflow: auto; min-height: 125px;">I think it is just a combination of tones and pulses at a certain frequency that effects the way your mind works.<br />
+<br />
+Heres a more exact response:  <a href="http://en.wikipedia.org/wiki/Binaural_beats" target="_blank">http://en.wikipedia.org/wiki/Binaural_beats</a><br />
+<br />
+--BD</div>
+		<textarea style="display: none;" id="desctxt_8931">I think it is just a combination of tones and pulses at a certain frequency that effects the way your mind works.
+
+Heres a more exact response: http://en.wikipedia.org/wiki/Binaural_beats
+
+--BD</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by bd333, 4 years, 6 months ago<br />Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Vimick</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_8933" style="width: 100%; overflow: auto; min-height: 125px;">check out i-doser.com they have a program and many many beats to try. they call them &quot;doses&quot; of course only a few doses are free and the rest cost a few dollars each. but you canalways find a bunch online *cough* &gt;.&gt;</div>
+		<textarea style="display: none;" id="desctxt_8933">check out i-doser.com they have a program and many many beats to try. they call them &quot;doses&quot; of course only a few doses are free and the rest cost a few dollars each. but you canalways find a bunch online *cough* &gt;.&gt;</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_8934" style="width: 100%; overflow: auto; min-height: 125px;">Thanks... Now I understand.</div>
+		<textarea style="display: none;" id="desctxt_8934">Thanks... Now I understand.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">M. Dragon Fang</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=482&amp;ref=1208622720" width="80" height="98" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_8955" style="width: 100%; overflow: auto; min-height: 125px;">hmm… this are the effects of an OBE I think. try to do the same a few more times, and you&#039;ll get used to the scary part so you won&#039;t lose concentration</div>
+		<textarea style="display: none;" id="desctxt_8955">hmm… this are the effects of an OBE I think. try to do the same a few more times, and you&#039;ll get used to the scary part so you won&#039;t lose concentration</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=399" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 23 queries. 0.282 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

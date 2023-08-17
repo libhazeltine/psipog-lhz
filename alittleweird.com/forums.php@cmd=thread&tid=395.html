@@ -1,0 +1,382 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; post-human society</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; post-human society</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">post-human society</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">INTENSE</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=547&amp;ref=1213758491" width="100" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_8720" style="width: 100%; overflow: auto; min-height: 125px;">what are your thoughts about a society after humans go extinct? like dinosaurs-&gt;humans-&gt;??  i&#039;m leaning toward artificial intelligence, but that sounds to much like &quot;The Matrix&quot;<br />
+<br />
+thoughts?<br />
+<br />
+p.s. i found an interesting memory method, but didn&#039;t want to post a second thread about it.  This morning i had the post human society idea, so to remember it i pictured a small room in my head, and wrote two sticky notes, placing them on a bulletin board. one said to post about the post-human society, and the other about the room. i couldn&#039;t remember what i planned on posting about so i went back into my mental room and there it was. just interested me i guess</div>
+		<textarea style="display: none;" id="desctxt_8720">what are your thoughts about a society after humans go extinct? like dinosaurs-&gt;humans-&gt;??  i&#039;m leaning toward artificial intelligence, but that sounds to much like &quot;The Matrix&quot;
+
+thoughts?
+
+p.s. i found an interesting memory method, but didn&#039;t want to post a second thread about it.  This morning i had the post human society idea, so to remember it i pictured a small room in my head, and wrote two sticky notes, placing them on a bulletin board. one said to post about the post-human society, and the other about the room. i couldn&#039;t remember what i planned on posting about so i went back into my mental room and there it was. just interested me i guess</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Anonymous Dark</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=354&amp;ref=1203377944" width="100" height="86" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_8722" style="width: 100%; overflow: auto; min-height: 125px;">I doubt anything as intelligent as humans will evolve on earth again. Some things may come close, but I think we&#039;ll still be the champions of this planet until it is swallowed up when the sun goes nova.</div>
+		<textarea style="display: none;" id="desctxt_8722">I doubt anything as intelligent as humans will evolve on earth again. Some things may come close, but I think we&#039;ll still be the champions of this planet until it is swallowed up when the sun goes nova.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Jusseppe</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=247&amp;ref=1212293499" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_8724" style="width: 100%; overflow: auto; min-height: 125px;">Cockroaches! They&#039;ll become even smarter than we are now, but they&#039;ll never be quite as good looking ;)</div>
+		<textarea style="display: none;" id="desctxt_8724">Cockroaches! They&#039;ll become even smarter than we are now, but they&#039;ll never be quite as good looking ;)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Jusseppe, 4 years, 6 months ago<br />Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Jeffrey</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=283&amp;ref=1213976987" width="116" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_8726" style="width: 100%; overflow: auto; min-height: 125px;">Hey!<br />
+<br />
+I&#039;ve seen a hot lookin&#039; cockroach once.<br />
+<br />
+...<br />
+<br />
+Let&#039;s just say, I&#039;m never going back to that sewer again.</div>
+		<textarea style="display: none;" id="desctxt_8726">Hey!
+
+I&#039;ve seen a hot lookin&#039; cockroach once.
+
+...
+
+Let&#039;s just say, I&#039;m never going back to that sewer again.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">INTENSE</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=547&amp;ref=1213758491" width="100" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_8728" style="width: 100%; overflow: auto; min-height: 125px;">what about aliens or, again, AI?</div>
+		<textarea style="display: none;" id="desctxt_8728">what about aliens or, again, AI?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">SheepKing</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=211&amp;ref=1222648137" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_8731" style="width: 100%; overflow: auto; min-height: 125px;">Weird dude. I was reading about this earlier today:<br />
+<br />
+ <a href="http://en.wikipedia.org/wiki/Technological_singularity" target="_blank">http://en.wikipedia.org/wiki/Technological_singularity</a><br />
+<br />
+You might get a kick out of reading this:<br />
+<br />
+ <a href="http://www.spectrum.ieee.org/singularity" target="_blank">http://www.spectrum.ieee.org/singularity</a><br />
+<br />
+You will find lots of articles contained within this article:<br />
+<br />
+ <a href="http://www.spectrum.ieee.org/jun08/6311/2" target="_blank">http://www.spectrum.ieee.org/jun08/6311/2</a><br />
+<br />
+^ I&#039;ll admit that&#039;s it a long read and the links are in the names of the Authors. They are very interesting though.</div>
+		<textarea style="display: none;" id="desctxt_8731">Weird dude. I was reading about this earlier today:
+
+http://en.wikipedia.org/wiki/Technological_singularity
+
+You might get a kick out of reading this:
+
+http://www.spectrum.ieee.org/singularity
+
+You will find lots of articles contained within this article:
+
+http://www.spectrum.ieee.org/jun08/6311/2
+
+^ I&#039;ll admit that&#039;s it a long read and the links are in the names of the Authors. They are very interesting though.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by SheepKing, 4 years, 6 months ago<br />Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_8917" style="width: 100%; overflow: auto; min-height: 125px;">I think that anything could happen, but I have a distinct feeling that the next ominating race will be something greater than humans, greater than mammals infact. I have a feeling that it will be a race of half mammal half reptillian creatures with individual minds but hive instinct. These creatures will eventually find the remains of the human society and may treat humanity as a God Race. They will then find the works of Star Trek, and J.R.R Tolkien and believe them as true to life events, learning this will cause a religeous fire that will detroy this new dominating species in half the time of the human race. Which will then spawn a race of pure creatures of mind, beyond all reality, they will be able to freely move through time and will be seen by humans as Faeries and Demons who have only the thought of fun.<br />
+<br />
+This all being said, What is Beyond this race?</div>
+		<textarea style="display: none;" id="desctxt_8917">I think that anything could happen, but I have a distinct feeling that the next ominating race will be something greater than humans, greater than mammals infact. I have a feeling that it will be a race of half mammal half reptillian creatures with individual minds but hive instinct. These creatures will eventually find the remains of the human society and may treat humanity as a God Race. They will then find the works of Star Trek, and J.R.R Tolkien and believe them as true to life events, learning this will cause a religeous fire that will detroy this new dominating species in half the time of the human race. Which will then spawn a race of pure creatures of mind, beyond all reality, they will be able to freely move through time and will be seen by humans as Faeries and Demons who have only the thought of fun.
+
+This all being said, What is Beyond this race?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">redefine</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=428&amp;ref=1219933762" width="0" height="0" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_8956" style="width: 100%; overflow: auto; min-height: 125px;">i&#039;m skeptical of the singularity.<br />
+<br />
+if such a thing existed, then wouldnt we have already designed machines more intelligent then ourselves. we have designed better problem solvers, but they have a limit. i dont think that something can design something truly better then itself (in our case, a dynamic problem solving machine which reacts and can creatively process unidentified information)</div>
+		<textarea style="display: none;" id="desctxt_8956">i&#039;m skeptical of the singularity.
+
+if such a thing existed, then wouldnt we have already designed machines more intelligent then ourselves. we have designed better problem solvers, but they have a limit. i dont think that something can design something truly better then itself (in our case, a dynamic problem solving machine which reacts and can creatively process unidentified information)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Ghost</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=549&amp;ref=1212328851" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_8957" style="width: 100%; overflow: auto; min-height: 125px;">In my opinon i doubt we will die out as humans have two importatnt qualities, independant intelligence and selfishness, we might (through war) decrease our population, but we will survive.<br />
+<br />
+even is we destroy the earth, we getting to the stage where will be colonising Mars.<br />
+didnt NASA recently start building the ship thats going to mars?</div>
+		<textarea style="display: none;" id="desctxt_8957">In my opinon i doubt we will die out as humans have two importatnt qualities, independant intelligence and selfishness, we might (through war) decrease our population, but we will survive.
+
+even is we destroy the earth, we getting to the stage where will be colonising Mars.
+didnt NASA recently start building the ship thats going to mars?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_8992" style="width: 100%; overflow: auto; min-height: 125px;">That&#039;s a good point... I think that we will see a dwindling in kind people in the years to come. I have a feeling we&#039;re sailing away on a red dawn.</div>
+		<textarea style="display: none;" id="desctxt_8992">That&#039;s a good point... I think that we will see a dwindling in kind people in the years to come. I have a feeling we&#039;re sailing away on a red dawn.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">SheepKing</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=211&amp;ref=1222648137" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9004" style="width: 100%; overflow: auto; min-height: 125px;">redefine, I do not think the logic you are using is very applicable to anything.<br />
+<br />
+Just because we haven&#039;t done something yet doesn&#039;t mean it will never happen. Take note of any invention.<br />
+<br />
+As to whether something can create something  better than itself; That is up to question. The proponents of such a thing would point to evolution. </div>
+		<textarea style="display: none;" id="desctxt_9004">redefine, I do not think the logic you are using is very applicable to anything.
+
+Just because we haven&#039;t done something yet doesn&#039;t mean it will never happen. Take note of any invention.
+
+As to whether something can create something  better than itself; That is up to question. The proponents of such a thing would point to evolution.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Antisankari</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=224&amp;ref=1213032338" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9007" style="width: 100%; overflow: auto; min-height: 125px;">Our current problem is our pathetic amount of knowledge of the human brain.<br />
+Once that nut is cracked, it will be easy to implement.<br />
+<br />
+Every possible algorithm that can ever be created can be described and created with our current tools available.<br />
+<br />
+Edit: Oh, Hallowed be the Hot Dog!<br />
+Almost committed blashphemy.</div>
+		<textarea style="display: none;" id="desctxt_9007">Our current problem is our pathetic amount of knowledge of the human brain.
+Once that nut is cracked, it will be easy to implement.
+
+Every possible algorithm that can ever be created can be described and created with our current tools available.
+
+Edit: Oh, Hallowed be the Hot Dog!
+Almost committed blashphemy.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Antisankari, 4 years, 6 months ago<br />Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=395" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 28 queries. 0.373 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

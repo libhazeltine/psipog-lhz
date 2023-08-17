@@ -1,0 +1,360 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Illusion of reality</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=2.html">Weird Videos</a> &raquo; Illusion of reality</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Illusion of reality</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Mr. Tallyman</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=910&amp;ref=1239146679" width="80" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_14236" style="width: 100%; overflow: auto; min-height: 125px;">Science is getting closer to religion..<br />
+<br />
+ <a href="http://video.google.ca/videoplay?docid=-1406370011028154810&amp;ei=fzsoSoTgAZW4qAPswdiUCQ&amp;q=illusion+of+reality&amp;hl=en" target="_blank">http://video.google.ca/videoplay?docid=-1406370011028154810&amp;ei=fzsoSoTgAZW4qAPswdiUCQ&amp;q=illusion+of+reality&amp;hl=en</a></div>
+		<textarea style="display: none;" id="desctxt_14236">Science is getting closer to religion..
+
+http://video.google.ca/videoplay?docid=-1406370011028154810&amp;ei=fzsoSoTgAZW4qAPswdiUCQ&amp;q=illusion+of+reality&amp;hl=en</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">AngelsFall</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=966&amp;ref=1243825081" width="83" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_14238" style="width: 100%; overflow: auto; min-height: 125px;">What do you mean by that?</div>
+		<textarea style="display: none;" id="desctxt_14238">What do you mean by that?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Mr. Tallyman</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=910&amp;ref=1239146679" width="80" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_14239" style="width: 100%; overflow: auto; min-height: 125px;">Well, I think we&#039;re getting closer to a unified field where science is artistic, and art is scientific.. Quantum physics is opening up a whole bunch of theorys about the foundation of reality, which seems to touch me spiritually. Lines like &quot;the same atoms that make up your body, are the same atoms that make up rocks and air.&quot;<br />
+<br />
+as soon as we have that unified field theory, I think psi, and the supernatural, will be understood..</div>
+		<textarea style="display: none;" id="desctxt_14239">Well, I think we&#039;re getting closer to a unified field where science is artistic, and art is scientific.. Quantum physics is opening up a whole bunch of theorys about the foundation of reality, which seems to touch me spiritually. Lines like &quot;the same atoms that make up your body, are the same atoms that make up rocks and air.&quot;
+
+as soon as we have that unified field theory, I think psi, and the supernatural, will be understood..</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">AngelsFall</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=966&amp;ref=1243825081" width="83" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_14241" style="width: 100%; overflow: auto; min-height: 125px;">Oh I agree there =P<br />
+I doubt it will happen immediately, but I believe it is only a matter of time before psi and science become psience xD<br />
+<br />
+My secret wish is that psionics gets proven to the point that it stops being such a &quot;wierd&quot; subject to discuss, and that one can experiment with it without being ostracized.<br />
+<br />
+<br />
+And as for the video, it was alright. I did manage to watch the entire thing because it was quite interesting, but I already knew everything that was explained and found it a bit overdramatic at some parts, especially the discussion of antimatter and vacuum energy/quantum fluctuations... too much of a drama and not enough of a journey through quantum mechanics =p<br />
+<br />
+The other day I was thinking about willpower as a possible fifth fundamental force; I thought about it because I&#039;ve been playing around with some kind of total unity/universe-and-everything-in-it-is-god kind of thought paradigm for about a year or two now; Can willpower as some kind of wacked out fundamental force explain and give depth to things science doesn&#039;t touch right now?<br />
+<br />
+What do you think? xP</div>
+		<textarea style="display: none;" id="desctxt_14241">Oh I agree there =P
+I doubt it will happen immediately, but I believe it is only a matter of time before psi and science become psience xD
+
+My secret wish is that psionics gets proven to the point that it stops being such a &quot;wierd&quot; subject to discuss, and that one can experiment with it without being ostracized.
+
+
+And as for the video, it was alright. I did manage to watch the entire thing because it was quite interesting, but I already knew everything that was explained and found it a bit overdramatic at some parts, especially the discussion of antimatter and vacuum energy/quantum fluctuations... too much of a drama and not enough of a journey through quantum mechanics =p
+
+The other day I was thinking about willpower as a possible fifth fundamental force; I thought about it because I&#039;ve been playing around with some kind of total unity/universe-and-everything-in-it-is-god kind of thought paradigm for about a year or two now; Can willpower as some kind of wacked out fundamental force explain and give depth to things science doesn&#039;t touch right now?
+
+What do you think? xP</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Mr. Tallyman</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=910&amp;ref=1239146679" width="80" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_14245" style="width: 100%; overflow: auto; min-height: 125px;">Hmmm, I think that your probably younger, smarter, and better looking than me..<br />
+<br />
+But, I&#039;ll still throw something out there to address this so-called &#039;willpower&#039; you speak of..<br />
+<br />
+We have been a reflection of our environment since the beginning of our growth as a single cell.. the body we are born into is a predisposition, and this seems to be an unforgiving law of nature.. (when I think nature, I think balance.. anyways.)<br />
+<br />
+The body we operate, is like our computer.. our predispositioned hardware. From it, we recieve a predispositioned capacity from which we draw predispositioned reactions to predispositioned situations.. (I think) we&#039;re living a predispositioned pattern!<br />
+<br />
+Think of it like this, the word brain comes from the word membrane.. and what does a membrane do? It relays information from the outside, to the inside, and your brain is like a big sponge, soakin in all of your predispositioned environment.. <br />
+<br />
+[media] <a href="http://video.google.ca/videoplay?docid=-8950549020166531913&amp;ei=4-4pSvHdKZ3UqAOc0Z2ICQ&amp;q=dr+bruce+lipton&amp;hl=en" target="_blank">http://video.google.ca/videoplay?docid=-8950549020166531913&amp;ei=4-4pSvHdKZ3UqAOc0Z2ICQ&amp;q=dr+bruce+lipton&amp;hl=en</a>[/media]<br />
+<br />
+I think intuition and determinism do exist, and that through healthy lifestyle and views, it is possible to flow perfectly with life.. (but only if you are predisposed with intuition, and determinism, and such and such ;)<br />
+<br />
+Sometimes my views get me into trouble, but this is just part of my predisposition.<br />
+<br />
+(If life was random chaos, then everything would be random chaos, and I dont really think thats at all fair to say about the universe.. cause she&#039;s not dicey!)<br />
+<br />
+Now.. I think your talking about willpower in the sense of willing, say, a psiwheel to move, or an OBE to occur.. but whos to say that if you hadnt heard about it in the first place, that it would have occurred at all.. you are a product of your environment..<br />
+(you heard about it from a friend who lived in the same community as you because his dad was a fisherman too.. and so on and so on..) And whos to say that if you could go back and do it all again, if you would have been in the same state of mind, makin the same choices.. etc, etc.<br />
+<br />
+I believe Memetics is a subtle form of universal evolution, and we are the product of an aging/evolving environment. This is my response to you because when science has it figured out, the universe will suddenly become bored with itself and shrink up into a golfball sized mass of infinite potential again. <br />
+<br />
+And yes, I do realize that by posting this message, I risk the chance of this happening right now..</div>
+		<textarea style="display: none;" id="desctxt_14245">Hmmm, I think that your probably younger, smarter, and better looking than me..
+
+But, I&#039;ll still throw something out there to address this so-called &#039;willpower&#039; you speak of..
+
+We have been a reflection of our environment since the beginning of our growth as a single cell.. the body we are born into is a predisposition, and this seems to be an unforgiving law of nature.. (when I think nature, I think balance.. anyways.)
+
+The body we operate, is like our computer.. our predispositioned hardware. From it, we recieve a predispositioned capacity from which we draw predispositioned reactions to predispositioned situations.. (I think) we&#039;re living a predispositioned pattern!
+
+Think of it like this, the word brain comes from the word membrane.. and what does a membrane do? It relays information from the outside, to the inside, and your brain is like a big sponge, soakin in all of your predispositioned environment.. 
+
+[media]http://video.google.ca/videoplay?docid=-8950549020166531913&amp;ei=4-4pSvHdKZ3UqAOc0Z2ICQ&amp;q=dr+bruce+lipton&amp;hl=en[/media]
+
+I think intuition and determinism do exist, and that through healthy lifestyle and views, it is possible to flow perfectly with life.. (but only if you are predisposed with intuition, and determinism, and such and such ;)
+
+Sometimes my views get me into trouble, but this is just part of my predisposition.
+
+(If life was random chaos, then everything would be random chaos, and I dont really think thats at all fair to say about the universe.. cause she&#039;s not dicey!)
+
+Now.. I think your talking about willpower in the sense of willing, say, a psiwheel to move, or an OBE to occur.. but whos to say that if you hadnt heard about it in the first place, that it would have occurred at all.. you are a product of your environment..
+(you heard about it from a friend who lived in the same community as you because his dad was a fisherman too.. and so on and so on..) And whos to say that if you could go back and do it all again, if you would have been in the same state of mind, makin the same choices.. etc, etc.
+
+I believe Memetics is a subtle form of universal evolution, and we are the product of an aging/evolving environment. This is my response to you because when science has it figured out, the universe will suddenly become bored with itself and shrink up into a golfball sized mass of infinite potential again. 
+
+And yes, I do realize that by posting this message, I risk the chance of this happening right now..</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Mr. Tallyman, 3 years, 5 months ago<br />Posted 3 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">AngelsFall</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=966&amp;ref=1243825081" width="83" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_14246" style="width: 100%; overflow: auto; min-height: 125px;">Lmao! Nice, nice =p<br />
+<br />
+I know what you mean. I&#039;ll watch the video later, I&#039;m too tired to concentrate right now =p</div>
+		<textarea style="display: none;" id="desctxt_14246">Lmao! Nice, nice =p
+
+I know what you mean. I&#039;ll watch the video later, I&#039;m too tired to concentrate right now =p</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Mr. Tallyman</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=910&amp;ref=1239146679" width="80" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_14261" style="width: 100%; overflow: auto; min-height: 125px;">That is a lecture from the good Dr, Mr. Bruce Lipton..<br />
+<br />
+Lots of other stuff was referanced as well..<br />
+<br />
+Memetics with Suzan Blackmore<br />
+ <a href="http://www.youtube.com/watch?v=fQ_9-Qx5Hz4&amp;feature=player_embedded" target="_blank">http://www.youtube.com/watch?v=fQ_9-Qx5Hz4&amp;feature=player_embedded</a><br />
+<br />
+Itzhack Bentov, from atom to cosmos<br />
+<br />
+Nassim Haramein, unified field.. etc</div>
+		<textarea style="display: none;" id="desctxt_14261">That is a lecture from the good Dr, Mr. Bruce Lipton..
+
+Lots of other stuff was referanced as well..
+
+Memetics with Suzan Blackmore
+http://www.youtube.com/watch?v=fQ_9-Qx5Hz4&amp;feature=player_embedded
+
+Itzhack Bentov, from atom to cosmos
+
+Nassim Haramein, unified field.. etc</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 5 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=780" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 23 queries. 0.332 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

@@ -1,0 +1,332 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; PsionicsOnline Updated</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=3.html">Recycle Bin</a> &raquo; PsionicsOnline Updated</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">PsionicsOnline Updated</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">metalforever</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11000" style="width: 100%; overflow: auto; min-height: 125px;">We updated some stuff around the website.  Be sure to check it out.<br />
+<br />
+<a href="http://www.psionicsonline.net" target="_blank">www.psionicsonline.net</a></div>
+		<textarea style="display: none;" id="desctxt_11000">We updated some stuff around the website.  Be sure to check it out.
+
+www.psionicsonline.net</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by metalforever, 4 years, 4 months ago<br />Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Sean</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=2&amp;ref=1214247941" width="117" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11006" style="width: 100%; overflow: auto; min-height: 125px;">Very nice!  Sweet look.  I&#039;ll have to poke around :-).<br />
+<br />
+~Sean</div>
+		<textarea style="display: none;" id="desctxt_11006">Very nice!  Sweet look.  I&#039;ll have to poke around :-).
+
+~Sean</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Corpse</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=553&amp;ref=1239824741" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11010" style="width: 100%; overflow: auto; min-height: 125px;">Yipee!<br />
+I like how you can actually blog stuff now in there.</div>
+		<textarea style="display: none;" id="desctxt_11010">Yipee!
+I like how you can actually blog stuff now in there.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Float</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=625&amp;ref=1240779348" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11018" style="width: 100%; overflow: auto; min-height: 125px;">I love it Stony :P A little different then I thought you were doing last time we talked but it&#039;s sick bro. w00t!</div>
+		<textarea style="display: none;" id="desctxt_11018">I love it Stony :P A little different then I thought you were doing last time we talked but it&#039;s sick bro. w00t!</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Sean</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=2&amp;ref=1214247941" width="117" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11024" style="width: 100%; overflow: auto; min-height: 125px;">PsiOnline != PsionicsOnline<br />
+<br />
+PsiOnline = psionline.org, stony1205<br />
+PsionicsOnline = psionicsonline.net, metalforever<br />
+<br />
+;-P<br />
+<br />
+~Sean</div>
+		<textarea style="display: none;" id="desctxt_11024">PsiOnline != PsionicsOnline
+
+PsiOnline = psionline.org, stony1205
+PsionicsOnline = psionicsonline.net, metalforever
+
+;-P
+
+~Sean</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">metalforever</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11038" style="width: 100%; overflow: auto; min-height: 125px;">Sean is correct.  (btw, thank you)<br />
+<br />
+<br />
+Psionline is stonys site ( <a href="http://www.psionline.org" target="_blank">http://www.psionline.org</a>)<br />
+PsionicsOnline is the place we are talking about, my site ( <a href="http://www.psionicsonline.net" target="_blank">http://www.psionicsonline.net</a> , .com)<br />
+<br />
+I actually added &quot;network&quot; to the logo so people would stop calling both sites &quot;PO&quot;.<br />
+<br />
+This is abit of a different look for us.  I did something different with it because i wanted to convey the idea of &quot;education&quot; more than I wanted to convey &quot;social hangout&quot;.  We are more of a group that works together constructively, almost like a family (though we love new people). <br />
+<br />
+ This layout should be staying for a longer period of time than usual.  There were some admin issues i was wrestling with, which is why the site itself had to be updated.  There are still some bugs here and there, but its a vast improvement, and everything there should be there to stay or improved upon from now on, which is why i got rid of what version it was in the logo.<br />
+<br />
+We are mainly focusing on what we should be focusing on right now, which is encouraging education, group discussion, upcoming classes, and more articles and resources.  We also have a new links section that is definitely a &quot;work in progress&quot;. Itll be more organized in a little while with short descriptions and neater categories.<br />
+<br />
+Anyway, thanks sean for allowing me to advertise here, i really do appreciate it.<br />
+<br />
+Edit: Damnit float, you are affiliated with us. *sighs*</div>
+		<textarea style="display: none;" id="desctxt_11038">Sean is correct.  (btw, thank you)
+
+
+Psionline is stonys site (http://www.psionline.org)
+PsionicsOnline is the place we are talking about, my site (http://www.psionicsonline.net , .com)
+
+I actually added &quot;network&quot; to the logo so people would stop calling both sites &quot;PO&quot;.
+
+This is abit of a different look for us.  I did something different with it because i wanted to convey the idea of &quot;education&quot; more than I wanted to convey &quot;social hangout&quot;.  We are more of a group that works together constructively, almost like a family (though we love new people). 
+
+ This layout should be staying for a longer period of time than usual.  There were some admin issues i was wrestling with, which is why the site itself had to be updated.  There are still some bugs here and there, but its a vast improvement, and everything there should be there to stay or improved upon from now on, which is why i got rid of what version it was in the logo.
+
+We are mainly focusing on what we should be focusing on right now, which is encouraging education, group discussion, upcoming classes, and more articles and resources.  We also have a new links section that is definitely a &quot;work in progress&quot;. Itll be more organized in a little while with short descriptions and neater categories.
+
+Anyway, thanks sean for allowing me to advertise here, i really do appreciate it.
+
+Edit: Damnit float, you are affiliated with us. *sighs*</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by metalforever, 4 years, 4 months ago<br />Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Float</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=625&amp;ref=1240779348" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11063" style="width: 100%; overflow: auto; min-height: 125px;">Oh right... That would explain why it was different than stonys design... See, I&#039;m sorry, I didn&#039;t even read that it was from you Metal :P If I did I didn&#039;t acknowledge it. Hahaha, You must forgive me, I&#039;ve been working too hard for my own good :). I saw &quot;Psi&quot; and &quot;Online&quot; and instantly my mind went all... yeah... *blinks* <br />
+<br />
+Also, Sean, thanks for the heads up, I mean... It&#039;s not like I was there when stony started PO or anything, I mean, *cough* thanks bro :P I feel so tweleve again. <br />
+<br />
+But I still love you all... I just have my moments from time to time... to time... to time.<br />
+<br />
+Sorry again Metal... </div>
+		<textarea style="display: none;" id="desctxt_11063">Oh right... That would explain why it was different than stonys design... See, I&#039;m sorry, I didn&#039;t even read that it was from you Metal :P If I did I didn&#039;t acknowledge it. Hahaha, You must forgive me, I&#039;ve been working too hard for my own good :). I saw &quot;Psi&quot; and &quot;Online&quot; and instantly my mind went all... yeah... *blinks* 
+
+Also, Sean, thanks for the heads up, I mean... It&#039;s not like I was there when stony started PO or anything, I mean, *cough* thanks bro :P I feel so tweleve again. 
+
+But I still love you all... I just have my moments from time to time... to time... to time.
+
+Sorry again Metal...</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=535" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 23 queries. 0.326 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

@@ -1,0 +1,358 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Question to those with experience in scanning/links/telepathy/empathy:</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Question to those with experience in scanning/links/telepathy/empathy:</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Question to those with experience in scanning/links/telepathy/empathy:</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">AngelsFall</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=966&amp;ref=1243825081" width="83" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_14208" style="width: 100%; overflow: auto; min-height: 125px;">I seem to be much better at &quot;connecting&quot; with someone to read them than I am at &quot;disconnecting&quot; from them afterward.<br />
+My method of telepathy and all that good stuff basically ends up with me uncomfortably close, mentally, to my target, and I seem to have trouble disengaging myself from them afterward. It&#039;s like I open myself up and approach them from an angle where I can glean the most information, and then I kinda get &quot;sucked in.&quot;<br />
+<br />
+One of my friends especially asks me to read her a lot and for some reason I &quot;click&quot; with her very easily and find it hard to get my mental/aural integrity back to shape later.<br />
+<br />
+Anyone have any techniques or advice they&#039;d like to share about keeping your distance when getting so close to someone?<br />
+<br />
+<br />
+Actual visualizations would be nice too, I&#039;m bad at severing the weak links that tend to form on their own.<br />
+Edit: what I mean is- if you use visualizations to sever links or distance yourself or whatever, please share what you actually envision. I&#039;ve had limited success with the &quot;light shining out of the mist&quot; visual, where each person&#039;s psi sig is a beacon of light shining in a dark purple mist, for instance.</div>
+		<textarea style="display: none;" id="desctxt_14208">I seem to be much better at &quot;connecting&quot; with someone to read them than I am at &quot;disconnecting&quot; from them afterward.
+My method of telepathy and all that good stuff basically ends up with me uncomfortably close, mentally, to my target, and I seem to have trouble disengaging myself from them afterward. It&#039;s like I open myself up and approach them from an angle where I can glean the most information, and then I kinda get &quot;sucked in.&quot;
+
+One of my friends especially asks me to read her a lot and for some reason I &quot;click&quot; with her very easily and find it hard to get my mental/aural integrity back to shape later.
+
+Anyone have any techniques or advice they&#039;d like to share about keeping your distance when getting so close to someone?
+
+
+Actual visualizations would be nice too, I&#039;m bad at severing the weak links that tend to form on their own.
+Edit: what I mean is- if you use visualizations to sever links or distance yourself or whatever, please share what you actually envision. I&#039;ve had limited success with the &quot;light shining out of the mist&quot; visual, where each person&#039;s psi sig is a beacon of light shining in a dark purple mist, for instance.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by AngelsFall, 3 years, 5 months ago<br />Posted 3 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Mr. Tallyman</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=910&amp;ref=1239146679" width="80" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_14209" style="width: 100%; overflow: auto; min-height: 125px;">I know, I know..<br />
+<br />
+What I do is simply &#039;Game over&#039;.. or &#039;that was fun, but I&#039;ve had enough&#039;<br />
+<br />
+It is a cold thing to do to someone who finds security in your unconditional understanding, but it is for your well being, and that is whats important.<br />
+<br />
+To make it easier, I remind myself that the best lessons are often painful..<br />
+<br />
+<br />
+As for keeping your distance.. yeah, I have a tough time with this one as well..<br />
+<br />
+Its hard once you become intertwined with pretty much anyone.. and thats all I have to say about that!<br />
+<br />
+Take care!<br />
+<br />
+(ps. Anyone with tips on how to keep your distance without being a snob, will recieve one peanut butter sandwhich, made by me..)</div>
+		<textarea style="display: none;" id="desctxt_14209">I know, I know..
+
+What I do is simply &#039;Game over&#039;.. or &#039;that was fun, but I&#039;ve had enough&#039;
+
+It is a cold thing to do to someone who finds security in your unconditional understanding, but it is for your well being, and that is whats important.
+
+To make it easier, I remind myself that the best lessons are often painful..
+
+
+As for keeping your distance.. yeah, I have a tough time with this one as well..
+
+Its hard once you become intertwined with pretty much anyone.. and thats all I have to say about that!
+
+Take care!
+
+(ps. Anyone with tips on how to keep your distance without being a snob, will recieve one peanut butter sandwhich, made by me..)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">sh</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_14212" style="width: 100%; overflow: auto; min-height: 125px;">I&#039;ve used the imagining the links to you as chains and then disconnecting them by chopping or snapping them with a will. I usually use a envisioning of a black grey shield surrounding me as I do it. And keep the shield after for at least an hour, because it prevents them from finding me mentally again.</div>
+		<textarea style="display: none;" id="desctxt_14212">I&#039;ve used the imagining the links to you as chains and then disconnecting them by chopping or snapping them with a will. I usually use a envisioning of a black grey shield surrounding me as I do it. And keep the shield after for at least an hour, because it prevents them from finding me mentally again.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">deusxmachina</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=490&amp;ref=1209145387" width="100" height="85" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_14232" style="width: 100%; overflow: auto; min-height: 125px;">I think being able to keep your distance is very much dependent on how strong your willpower/state of mind is to begin with. If you are emotionally unsettled at the time for whatever reason, or you are rusty on your shield upkeep, or your blood sugar is low, etc., it is going to be more difficult to pull away. <br />
+<br />
+Thoughts have momentum. If you are attempting any sort of energy task, such as establishing a link from a distance, and you don&#039;t feel any sort of resistance, you are probably just thinking about it, and not actually doing anything.<br />
+<br />
+With that in mind, it should at least take as much effort, if not more, to undo a link than it did to form in the first place. Unless they are shielding or something, in which case it&#039;s a struggle to get in, and you will be forcefully kicked out.<br />
+<br />
+But if you or your target are both emotionally receptive, that link is going to be harder and more complicated to break, especially because you two seem like friends. People naturally form links without even realizing it. Chopping the link, while sometimes effective, might actually cause harm to one or both of you. <br />
+<br />
+I think slow and steady is the message here, like pretty much everything psi. What you probably should do is really fine tune your shields, so that you get just the information that you need in the first place, without the emotional baggage. Then, work on slowly &quot;pinching&quot; the undesirable links. Or leaving the link in tact, but filtering/blocking the majority of information passing through it.<br />
+<br />
+Some people like to be isolated however, and may want to just shut everything out completely when they aren&#039;t using it. It&#039;s all a personal choice, and you really have to take the time to relax and get in a state where you can get information from your subconscious, and give it information to make the right shields etc.<br />
+<br />
+Good luck! </div>
+		<textarea style="display: none;" id="desctxt_14232">I think being able to keep your distance is very much dependent on how strong your willpower/state of mind is to begin with. If you are emotionally unsettled at the time for whatever reason, or you are rusty on your shield upkeep, or your blood sugar is low, etc., it is going to be more difficult to pull away. 
+
+Thoughts have momentum. If you are attempting any sort of energy task, such as establishing a link from a distance, and you don&#039;t feel any sort of resistance, you are probably just thinking about it, and not actually doing anything.
+
+With that in mind, it should at least take as much effort, if not more, to undo a link than it did to form in the first place. Unless they are shielding or something, in which case it&#039;s a struggle to get in, and you will be forcefully kicked out.
+
+But if you or your target are both emotionally receptive, that link is going to be harder and more complicated to break, especially because you two seem like friends. People naturally form links without even realizing it. Chopping the link, while sometimes effective, might actually cause harm to one or both of you. 
+
+I think slow and steady is the message here, like pretty much everything psi. What you probably should do is really fine tune your shields, so that you get just the information that you need in the first place, without the emotional baggage. Then, work on slowly &quot;pinching&quot; the undesirable links. Or leaving the link in tact, but filtering/blocking the majority of information passing through it.
+
+Some people like to be isolated however, and may want to just shut everything out completely when they aren&#039;t using it. It&#039;s all a personal choice, and you really have to take the time to relax and get in a state where you can get information from your subconscious, and give it information to make the right shields etc.
+
+Good luck!</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">AngelsFall</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=966&amp;ref=1243825081" width="83" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_14249" style="width: 100%; overflow: auto; min-height: 125px;">Thanks to everyone for the responses. I think I could do well if I just got more skilled at construct destruction =P</div>
+		<textarea style="display: none;" id="desctxt_14249">Thanks to everyone for the responses. I think I could do well if I just got more skilled at construct destruction =P</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Linked</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=19&amp;ref=1203762048" width="89" height="38" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_14284" style="width: 100%; overflow: auto; min-height: 125px;">I feel that once a connection like that is formed, it&#039;s not something you would need to undo. Connecting with other people brings you that much closer to the collective unconscious or what ever you wish to name the being.<br />
+If you don&#039;t agree with me, we I respect your right to that.<br />
+<br />
+To clarify, my view on links is that you form links with people as you become close to them. I have never personally had a link I have to wholly &quot;build&quot; myself, but the kind that form from strong friendships. These kinds of links I see only as a good thing, and if you take the time to search your aura or where ever the links may be, I&#039;m sure you&#039;ll find quite a few linking you to your dearest friends.<br />
+<br />
+But, never the less, for advice on severing a link, in my experience, it&#039;s as simple as just sending it away. No complex visions, no complicated techniques. Just will it away.<br />
+<br />
+Please forgive if I&#039;ve stepped over any lines, or seem to be arguing other peoples believes, I am simply stating what I believe as of the time of this post...</div>
+		<textarea style="display: none;" id="desctxt_14284">I feel that once a connection like that is formed, it&#039;s not something you would need to undo. Connecting with other people brings you that much closer to the collective unconscious or what ever you wish to name the being.
+If you don&#039;t agree with me, we I respect your right to that.
+
+To clarify, my view on links is that you form links with people as you become close to them. I have never personally had a link I have to wholly &quot;build&quot; myself, but the kind that form from strong friendships. These kinds of links I see only as a good thing, and if you take the time to search your aura or where ever the links may be, I&#039;m sure you&#039;ll find quite a few linking you to your dearest friends.
+
+But, never the less, for advice on severing a link, in my experience, it&#039;s as simple as just sending it away. No complex visions, no complicated techniques. Just will it away.
+
+Please forgive if I&#039;ve stepped over any lines, or seem to be arguing other peoples believes, I am simply stating what I believe as of the time of this post...</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">sh</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_14299" style="width: 100%; overflow: auto; min-height: 125px;">that will work even better than my idea.. yay, I got a better way. So how often does it work for you?</div>
+		<textarea style="display: none;" id="desctxt_14299">that will work even better than my idea.. yay, I got a better way. So how often does it work for you?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Linked</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=19&amp;ref=1203762048" width="89" height="38" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_14305" style="width: 100%; overflow: auto; min-height: 125px;">It works pretty well I guess. The only link I&#039;ve ever had to cut was to a friend/EX who got a new boyfriend. :/</div>
+		<textarea style="display: none;" id="desctxt_14305">It works pretty well I guess. The only link I&#039;ve ever had to cut was to a friend/EX who got a new boyfriend. :/</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 5 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=778" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 24 queries. 0.334 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

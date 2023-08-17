@@ -1,0 +1,365 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; bending a spoon</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; bending a spoon</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">bending a spoon</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">zos</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=438&amp;ref=1210381401" width="125" height="96" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7413" style="width: 100%; overflow: auto; min-height: 125px;">i&#039;ve never been good at PK, i tried that exercise from forkyou.com, but still nothing, i was just wondering, did anybody here ever bend a spoon or fork? if so how much did it take? i know i sound like a newbie(i&#039;m not), but i would really appreciate it if somebody answers my question!</div>
+		<textarea style="display: none;" id="desctxt_7413">i&#039;ve never been good at PK, i tried that exercise from forkyou.com, but still nothing, i was just wondering, did anybody here ever bend a spoon or fork? if so how much did it take? i know i sound like a newbie(i&#039;m not), but i would really appreciate it if somebody answers my question!</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Zectra</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=96&amp;ref=1203358450" width="94" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_7415" style="width: 100%; overflow: auto; min-height: 125px;">This is my very first fork and I bent it a long time ago-- I keep it as a trophy in my bedroom to remind me of where I came from.<br />
+<br />
+<a href="http://img245.imageshack.us/my.php?image=myfirstforkpy6.png" target="_blank" title="http://img245.imageshack.us/my.php?image=myfirstforkpy6.png"><img src="http://img245.imageshack.us/img245/9906/myfirstforkpy6.th.png" alt="External Image" /></a> (Click to enlarge)<br />
+<br />
+It took me a few hours to get it to the point at which I could bend it.. and psionic-experience wise, I had been practicing energy manipulation for at least a couple years before I had even attempted bending a fork, but this was mainly because I had only been interested in purely energy at the time.<br />
+<br />
+For some people, it takes a while to work up to the level at which you can actually use PK, but you can do it; every person is unique.  Just be patient with yourself and don&#039;t give into the doubt too much; that only limits yourself more.<br />
+</div>
+		<textarea style="display: none;" id="desctxt_7415">This is my very first fork and I bent it a long time ago-- I keep it as a trophy in my bedroom to remind me of where I came from.
+
+[URL=http://img245.imageshack.us/my.php?image=myfirstforkpy6.png][IMG]http://img245.imageshack.us/img245/9906/myfirstforkpy6.th.png[/IMG][/URL] (Click to enlarge)
+
+It took me a few hours to get it to the point at which I could bend it.. and psionic-experience wise, I had been practicing energy manipulation for at least a couple years before I had even attempted bending a fork, but this was mainly because I had only been interested in purely energy at the time.
+
+For some people, it takes a while to work up to the level at which you can actually use PK, but you can do it; every person is unique.  Just be patient with yourself and don&#039;t give into the doubt too much; that only limits yourself more.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">zos</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=438&amp;ref=1210381401" width="125" height="96" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7417" style="width: 100%; overflow: auto; min-height: 125px;">thanks for your reply, so for how much should i practice everyday,30 minutes? 60 minutes?</div>
+		<textarea style="display: none;" id="desctxt_7417">thanks for your reply, so for how much should i practice everyday,30 minutes? 60 minutes?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Zectra</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=96&amp;ref=1203358450" width="94" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_7418" style="width: 100%; overflow: auto; min-height: 125px;">What ever you feel is truly enough for yourself.<br />
+<br />
+I suppose to give you a little scope of my own schedule..PK sessions,when I first started, lasted around an hour to two hours, though I couldn&#039;t practice everyday.<br />
+My first psionic session ever was energy manip. and it lasted around three hours, then lessened(after a month or so) to two hours, then one hour a day and less for a while due to school.<br />
+Currently, I train as I sleep until I fall asleep and have taichi, chigong, and kungfu classes four times a week.<br />
+<br />
+Do what ever is comfortable to you and try to find a good balance; Too little won&#039;t give you any result and too much can damage your development-- which is why it&#039;s best for you to find your own path than to compare or conform yourself to others.</div>
+		<textarea style="display: none;" id="desctxt_7418">What ever you feel is truly enough for yourself.
+
+I suppose to give you a little scope of my own schedule..PK sessions,when I first started, lasted around an hour to two hours, though I couldn&#039;t practice everyday.
+My first psionic session ever was energy manip. and it lasted around three hours, then lessened(after a month or so) to two hours, then one hour a day and less for a while due to school.
+Currently, I train as I sleep until I fall asleep and have taichi, chigong, and kungfu classes four times a week.
+
+Do what ever is comfortable to you and try to find a good balance; Too little won&#039;t give you any result and too much can damage your development-- which is why it&#039;s best for you to find your own path than to compare or conform yourself to others.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">zos</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=438&amp;ref=1210381401" width="125" height="96" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7419" style="width: 100%; overflow: auto; min-height: 125px;">alright, thanks i&#039;ll try to do that.</div>
+		<textarea style="display: none;" id="desctxt_7419">alright, thanks i&#039;ll try to do that.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">mrj</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_7436" style="width: 100%; overflow: auto; min-height: 125px;">When you say &quot;bending a spoon&quot;, do you mean it gets soft and you use your hands? Or does it get soft and you sort of &quot;push it over&quot;?</div>
+		<textarea style="display: none;" id="desctxt_7436">When you say &quot;bending a spoon&quot;, do you mean it gets soft and you use your hands? Or does it get soft and you sort of &quot;push it over&quot;?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">zos</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=438&amp;ref=1210381401" width="125" height="96" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7439" style="width: 100%; overflow: auto; min-height: 125px;">both!</div>
+		<textarea style="display: none;" id="desctxt_7439">both!</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">bd333</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_7559" style="width: 100%; overflow: auto; min-height: 125px;">This was my first time bending a spoon:<br />
+<br />
+<img src="http://www.greasemonkeys.x10hosting.com/IMG_21.jpg" alt="External Image" /><br />
+<br />
+and another spoon<br />
+<img src="http://www.greasemonkeys.x10hosting.com/spoonsm.jpg" alt="External Image" /><br />
+<br />
+I&#039;ve only been practicing psionics for a couple months, I guess its what you put as your priorities. I learned for fork-you and it worked, I suppose just keep trying.<br />
+<br />
+**Edit: Thanks, Zectra!</div>
+		<textarea style="display: none;" id="desctxt_7559">This was my first time bending a spoon:
+
+[img]http://www.greasemonkeys.x10hosting.com/IMG_21.jpg[/img]
+
+and another spoon
+[img]http://www.greasemonkeys.x10hosting.com/spoonsm.jpg[/img]
+
+I&#039;ve only been practicing psionics for a couple months, I guess its what you put as your priorities. I learned for fork-you and it worked, I suppose just keep trying.
+
+**Edit: Thanks, Zectra!</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by bd333, 4 years, 8 months ago<br />Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Linked</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=19&amp;ref=1203762048" width="89" height="38" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7567" style="width: 100%; overflow: auto; min-height: 125px;">Zectra, when you bend them do you do it with your hands at all or purely with your mind?</div>
+		<textarea style="display: none;" id="desctxt_7567">Zectra, when you bend them do you do it with your hands at all or purely with your mind?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Zectra</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=96&amp;ref=1203358450" width="94" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_7583" style="width: 100%; overflow: auto; min-height: 125px;">Linked:<br />
+In the picture I showed you, I simply ran my thumb lightly over the top and it formed/bent around my finger. Then after looking at it for a moment... I decided to go for a cooler design and used two fingers from my other hand to &quot;pinch&quot; them into that bend.<br />
+After that, the bend-ability(for lack of a better word) faded away and I couldn&#039;t bend it anymore with out using my whole hands.<br />
+<br />
+The force of the pressure I used would probably be equal to.. brushing pencil-eraser shavings off a piece of paper; very light.<br />
+<br />
+It is possible to bend spoons without using direct force once it&#039;s in that state, but I&#039;m not going to go into that. (I&#039;m in the middle of working)<br />
+<br />
+and.. honestly,  my interest wavered away from TK a bit, so I don&#039;t practice spoon bending very often anymore.<br />
+<br />
+<br />
+BD333:<br />
+Cool spoon.</div>
+		<textarea style="display: none;" id="desctxt_7583">Linked:
+In the picture I showed you, I simply ran my thumb lightly over the top and it formed/bent around my finger. Then after looking at it for a moment... I decided to go for a cooler design and used two fingers from my other hand to &quot;pinch&quot; them into that bend.
+After that, the bend-ability(for lack of a better word) faded away and I couldn&#039;t bend it anymore with out using my whole hands.
+
+The force of the pressure I used would probably be equal to.. brushing pencil-eraser shavings off a piece of paper; very light.
+
+It is possible to bend spoons without using direct force once it&#039;s in that state, but I&#039;m not going to go into that. (I&#039;m in the middle of working)
+
+and.. honestly,  my interest wavered away from TK a bit, so I don&#039;t practice spoon bending very often anymore.
+
+
+BD333:
+Cool spoon.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Zectra, 4 years, 8 months ago<br />Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">DigGil</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7855" style="width: 100%; overflow: auto; min-height: 125px;">I read Jack Houck&#039;s theory about PK on his Website (<a href="http://www.jackhouk.com" target="_blank">www.jackhouk.com</a>). He belives that you are able to do PK if there is a high emotional peak while bending spoons.<br />
+Try research about him a bit.</div>
+		<textarea style="display: none;" id="desctxt_7855">I read Jack Houck&#039;s theory about PK on his Website (www.jackhouk.com). He belives that you are able to do PK if there is a high emotional peak while bending spoons.
+Try research about him a bit.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=300" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 27 queries. 0.297 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

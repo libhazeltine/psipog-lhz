@@ -1,0 +1,372 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Synesthesia</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Synesthesia</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Synesthesia</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Kube</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=952&amp;ref=1249239276" width="102" height="77" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_15708" style="width: 100%; overflow: auto; min-height: 125px;">Alright, guys, let&#039;s talk synesthesia.<br />
+<br />
+For those who don&#039;t know, here&#039;s a quick description:<br />
+<br />
+Synesthesia allows a person to perceive sensory signals differently. Usually, they perceive them visually, meaning they can see sounds, odors, etc. Some would also smell them, etc. Since synesthetes - those with synesthesia - have such a perception of reality, they can sometimes visualize abstract concepts like time with a different perspective. One good example I read about seeing time as a three-dimensional thing, with different points being different times, etc. They could also see a certain time as &quot;closer&quot; than another that might be &quot;further&quot; as if it were a spatial thing. They also tend to give (and see, from what I understand) colors to different letters, shapes and numbers. (All that&#039;s what I could understand; I didn&#039;t read much about it, just a quick paragraph here and there)<br />
+<br />
+So I was wondering if any of you ever heard of this? It&#039;s new to me, anyway, but from what I&#039;ve seen, it&#039;s been researched quite a bit. Let&#039;s see what we can dig up, yeah?<br />
+<br />
+And what if we can induce it? This is ALW after all. I think it&#039;s pretty much a native talent some people have, but you never know... :P<br />
+<br />
+This guy named Cretien van Campen, from the Netherlands, says you can become aware of synethesia in his text <em>The Hidden Sense: Becoming aware of Synethesia</em><br />
+<br />
+Here, let me quote him:<br />
+<br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>Cretien van Campen, The Hidden Sense: Becoming aware of Synethesia</em><br />
+<br />
+Can you become aware of synesthesia? Yes indeed, though it may take a long time and a lot of concentration. You have to learn without examples, because synesthesia is personal, and there is no educational program available to help you. You will have to find it all by yourself. You cannot imitate another synesthete or follow his or her suggestions, either.</div>For the full text: home.comcast.net/~sean.day/vanCampen2009.pdf<br />
+<br />
+EDIT: When I was little, I remember one day asking my mom &quot;What&#039;s the color for B?&quot; When she asked me why, I showed her a drawing I had made of all the different letters each with a different color. It&#039;s not something I had thought about for long; I just wrote them down in the color I felt was right. Red for A, Z remained black, etc. B ended up as brown, probably just a coincidence, but maybe it had something to do with synesthesia.<br />
+<br />
+EDIT 2: I just read the numbers are estimated at 4% of the human population.</div>
+		<textarea style="display: none;" id="desctxt_15708">Alright, guys, let&#039;s talk synesthesia.
+
+For those who don&#039;t know, here&#039;s a quick description:
+
+Synesthesia allows a person to perceive sensory signals differently. Usually, they perceive them visually, meaning they can see sounds, odors, etc. Some would also smell them, etc. Since synesthetes - those with synesthesia - have such a perception of reality, they can sometimes visualize abstract concepts like time with a different perspective. One good example I read about seeing time as a three-dimensional thing, with different points being different times, etc. They could also see a certain time as &quot;closer&quot; than another that might be &quot;further&quot; as if it were a spatial thing. They also tend to give (and see, from what I understand) colors to different letters, shapes and numbers. (All that&#039;s what I could understand; I didn&#039;t read much about it, just a quick paragraph here and there)
+
+So I was wondering if any of you ever heard of this? It&#039;s new to me, anyway, but from what I&#039;ve seen, it&#039;s been researched quite a bit. Let&#039;s see what we can dig up, yeah?
+
+And what if we can induce it? This is ALW after all. I think it&#039;s pretty much a native talent some people have, but you never know... :P
+
+This guy named Cretien van Campen, from the Netherlands, says you can become aware of synethesia in his text [i]The Hidden Sense: Becoming aware of Synethesia[/i]
+
+Here, let me quote him:
+
+[quote][i]Cretien van Campen, The Hidden Sense: Becoming aware of Synethesia[/i]
+
+Can you become aware of synesthesia? Yes indeed, though it may take a long time and a lot of concentration. You have to learn without examples, because synesthesia is personal, and there is no educational program available to help you. You will have to find it all by yourself. You cannot imitate another synesthete or follow his or her suggestions, either.[/quote]
+
+For the full text: home.comcast.net/~sean.day/vanCampen2009.pdf
+
+EDIT: When I was little, I remember one day asking my mom &quot;What&#039;s the color for B?&quot; When she asked me why, I showed her a drawing I had made of all the different letters each with a different color. It&#039;s not something I had thought about for long; I just wrote them down in the color I felt was right. Red for A, Z remained black, etc. B ended up as brown, probably just a coincidence, but maybe it had something to do with synesthesia.
+
+EDIT 2: I just read the numbers are estimated at 4% of the human population.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Kube, 3 years, 1 month ago<br />Posted 3 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Sussch</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=622&amp;ref=1252769070" width="100" height="92" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_15709" style="width: 100%; overflow: auto; min-height: 125px;">I used to associate some sounds with tastes. For example, there&#039;s a sound that can be produced on a synth that I didn&#039;t like to hear, because it reminded me of mayonnaise.<br />
+Even just recently I discovered myself thinking: &quot;this bar of chocolate tastes kinda green&quot;. Well, the chocolate bar was in green wrappings and the green flavor was probably peanuts with sugar or something.<br />
+<br />
+Since synesthesia is personal, I tend to think that it is just some short-circuits in our brains.<br />
+If so, then why induce it?<br />
+<br />
+I might be wrong though..</div>
+		<textarea style="display: none;" id="desctxt_15709">I used to associate some sounds with tastes. For example, there&#039;s a sound that can be produced on a synth that I didn&#039;t like to hear, because it reminded me of mayonnaise.
+Even just recently I discovered myself thinking: &quot;this bar of chocolate tastes kinda green&quot;. Well, the chocolate bar was in green wrappings and the green flavor was probably peanuts with sugar or something.
+
+Since synesthesia is personal, I tend to think that it is just some short-circuits in our brains.
+If so, then why induce it?
+
+I might be wrong though..</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Riven</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=656&amp;ref=1217444530" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_15712" style="width: 100%; overflow: auto; min-height: 125px;">I&#039;ve heard of it, but I thought it was a more permanent thing, like chocolate bars ALWAYS tasting green or something. I can&#039;t look it up now, but I will later...<br />
+<br />
+And I&#039;ve been wondering if what I feel is that, but I&#039;m not sure it is, because I don&#039;t have to see the person to feel their emotions. IDK.</div>
+		<textarea style="display: none;" id="desctxt_15712">I&#039;ve heard of it, but I thought it was a more permanent thing, like chocolate bars ALWAYS tasting green or something. I can&#039;t look it up now, but I will later...
+
+And I&#039;ve been wondering if what I feel is that, but I&#039;m not sure it is, because I don&#039;t have to see the person to feel their emotions. IDK.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Jacob</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=949&amp;ref=1248714472" width="108" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_15713" style="width: 100%; overflow: auto; min-height: 125px;">I&#039;ve heard of it, though in my understanding it was more of a dis-order then an ability.<br />
+And I prefer to taste my food instead of hearing it :).</div>
+		<textarea style="display: none;" id="desctxt_15713">I&#039;ve heard of it, though in my understanding it was more of a dis-order then an ability.
+And I prefer to taste my food instead of hearing it :).</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Jacob, 3 years, 1 month ago<br />Posted 3 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Kube</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=952&amp;ref=1249239276" width="102" height="77" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_15716" style="width: 100%; overflow: auto; min-height: 125px;">@Sussch: Inducing it would be nice because of how awesome it would be to see sounds and hear colors. (IMO anyway :P) The intensity is different for everybody, though.<br />
+<br />
+@Riven: Wouldn&#039;t that be empathy?<br />
+<br />
+@Jacob: Until a few decades ago, it was considered a disorder. But when you think about it, every child has had synesthesia to some degree.<br />
+<br />
+I&#039;m starting a.. dictionary? For myself... A dictionary of sounds if you will.. Trying to classify how I visualize different sounds and all, because the sound ==&gt; color type seems to be the most instinctive to me.</div>
+		<textarea style="display: none;" id="desctxt_15716">@Sussch: Inducing it would be nice because of how awesome it would be to see sounds and hear colors. (IMO anyway :P) The intensity is different for everybody, though.
+
+@Riven: Wouldn&#039;t that be empathy?
+
+@Jacob: Until a few decades ago, it was considered a disorder. But when you think about it, every child has had synesthesia to some degree.
+
+I&#039;m starting a.. dictionary? For myself... A dictionary of sounds if you will.. Trying to classify how I visualize different sounds and all, because the sound ==&gt; color type seems to be the most instinctive to me.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Kube, 3 years, 1 month ago<br />Posted 3 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Jarmo</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_15717" style="width: 100%; overflow: auto; min-height: 125px;">Of what comes to tasting foods, almost no one does it &quot;right&quot;, they just eat up and do it VERY quickly. So, if you call that tasting, then way to go, but I just call it &quot;filling up stomach&quot;. No wonder why McDonalds&#039; etc. are getting whole lot of money out of people willing to eat and who may even call that as a &quot;food&quot;.. Oh well, time for some sleep.</div>
+		<textarea style="display: none;" id="desctxt_15717">Of what comes to tasting foods, almost no one does it &quot;right&quot;, they just eat up and do it VERY quickly. So, if you call that tasting, then way to go, but I just call it &quot;filling up stomach&quot;. No wonder why McDonalds&#039; etc. are getting whole lot of money out of people willing to eat and who may even call that as a &quot;food&quot;.. Oh well, time for some sleep.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Kube</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=952&amp;ref=1249239276" width="102" height="77" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_15718" style="width: 100%; overflow: auto; min-height: 125px;">But their fries do taste good :3 Also, to add to what you said, Jarmo, most people mix up taste and smell; most of the time, we&#039;re not even tasting the food, but actually smelling it.</div>
+		<textarea style="display: none;" id="desctxt_15718">But their fries do taste good :3 Also, to add to what you said, Jarmo, most people mix up taste and smell; most of the time, we&#039;re not even tasting the food, but actually smelling it.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">f3licks</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=848&amp;ref=1227833859" width="125" height="78" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_15720" style="width: 100%; overflow: auto; min-height: 125px;">@Kube:<br />
+<br />
+I wouldn&#039;t know; I can&#039;t smell much.<br />
+<br />
+Most food tastes pretty similar to me.</div>
+		<textarea style="display: none;" id="desctxt_15720">@Kube:
+
+I wouldn&#039;t know; I can&#039;t smell much.
+
+Most food tastes pretty similar to me.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Jarmo</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_15723" style="width: 100%; overflow: auto; min-height: 125px;">Well Kube my darling, if you really have been eating for example healthy vegetarian food for couple of months at least, they taste like shit :) So, we&#039;re just used to that taste and thatwise we ignore of what it really tastes like. So, what comes to fries they&#039;re filled with fat and abilities and food nutrition is almost 0.. So :)</div>
+		<textarea style="display: none;" id="desctxt_15723">Well Kube my darling, if you really have been eating for example healthy vegetarian food for couple of months at least, they taste like shit :) So, we&#039;re just used to that taste and thatwise we ignore of what it really tastes like. So, what comes to fries they&#039;re filled with fat and abilities and food nutrition is almost 0.. So :)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Kube</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=952&amp;ref=1249239276" width="102" height="77" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_15729" style="width: 100%; overflow: auto; min-height: 125px;">It&#039;s the salt I like :P (read: liked, because after having worked there for a year, it really does taste like shit XD) But fat&#039;s not a problem... Having a fast metabolism rocks: you don&#039;t gain weight and you can lose it quickly =D<br />
+<br />
+But really now, most foods don&#039;t have much of a taste; that&#039;s why we use spices, salt, etc. But the spices add to the aroma, not the taste. So we&#039;re smelling the food more than tasting it.</div>
+		<textarea style="display: none;" id="desctxt_15729">It&#039;s the salt I like :P (read: liked, because after having worked there for a year, it really does taste like shit XD) But fat&#039;s not a problem... Having a fast metabolism rocks: you don&#039;t gain weight and you can lose it quickly =D
+
+But really now, most foods don&#039;t have much of a taste; that&#039;s why we use spices, salt, etc. But the spices add to the aroma, not the taste. So we&#039;re smelling the food more than tasting it.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 1 month ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=874" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 26 queries. 0.282 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

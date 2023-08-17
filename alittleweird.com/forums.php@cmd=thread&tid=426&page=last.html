@@ -1,0 +1,452 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Anyone else have this experience?</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Anyone else have this experience?</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Anyone else have this experience?</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Faceless</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=570&amp;ref=1214279440" width="83" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9384" style="width: 100%; overflow: auto; min-height: 125px;">okay, today at about noon, central standard time, i got a really weird feeling. it was like a fealing of pain and calamity. There was water and screaming and stuff. Weird...<br />
+The Great Faceless Puppeteer.</div>
+		<textarea style="display: none;" id="desctxt_9384">okay, today at about noon, central standard time, i got a really weird feeling. it was like a fealing of pain and calamity. There was water and screaming and stuff. Weird...
+The Great Faceless Puppeteer.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">NewAgeAlchemist</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=459&amp;ref=1207160982" width="125" height="20" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9386" style="width: 100%; overflow: auto; min-height: 125px;">sounds like your spider sense was tingling.<br />
+<br />
+Can&#039;t say I&#039;ve had something similar happen though.</div>
+		<textarea style="display: none;" id="desctxt_9386">sounds like your spider sense was tingling.
+
+Can&#039;t say I&#039;ve had something similar happen though.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">DeathMinister</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=56&amp;ref=1208895944" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9387" style="width: 100%; overflow: auto; min-height: 125px;">...an intense form of fear maybe?</div>
+		<textarea style="display: none;" id="desctxt_9387">...an intense form of fear maybe?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">RazSh18</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=510&amp;ref=1213120644" width="110" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9392" style="width: 100%; overflow: auto; min-height: 125px;">can you explain more please? </div>
+		<textarea style="display: none;" id="desctxt_9392">can you explain more please?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Faceless</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=570&amp;ref=1214279440" width="83" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9399" style="width: 100%; overflow: auto; min-height: 125px;">i dont know there isnt much more to explain. Also i love water and am not afraid of it. (i want to be a biological oceanographer in a few years, a fear of water may not help that.) I did get bitten by a spider a while ago...hmmmm.<br />
+The Great Faceless Puppeteer.</div>
+		<textarea style="display: none;" id="desctxt_9399">i dont know there isnt much more to explain. Also i love water and am not afraid of it. (i want to be a biological oceanographer in a few years, a fear of water may not help that.) I did get bitten by a spider a while ago...hmmmm.
+The Great Faceless Puppeteer.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9415" style="width: 100%; overflow: auto; min-height: 125px;">Possibly a random psi vamp or the like? Not sure... A little more background info maybe? Explain where when why and how!!!</div>
+		<textarea style="display: none;" id="desctxt_9415">Possibly a random psi vamp or the like? Not sure... A little more background info maybe? Explain where when why and how!!!</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">ryan</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=610&amp;ref=1214463002" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9447" style="width: 100%; overflow: auto; min-height: 125px;">I was sleeping in around that time, so I wouldn&#039;t know.<br />
+What would it mean if others had felt it though?<br />
+<br />
+Water is usually a symbol of life, isn&#039;t it?  <br />
+Interpreting that psycholanalytically (The Yung method), there being water could simply be an association to life, screams are usually a sign of fear or danger, right? <br />
+<br />
+Maybe you&#039;re afraid of life.<br />
+<br />
+In your signature you are a &quot;faceless puppeteer&quot; possibly showing that you would prefer to control things from behind the curtain, however you would probably still want people to acknowledge you as the controller, because you&#039;re not the &quot;hidden puppeteer&quot;.  In other words, you might want people to know that you are the one puppeteering/controlling.<br />
+<br />
+In addition, you&#039;re not the &quot;faceless puppet&quot;, possibly meaning you&#039;re not the one that wants to be controlled, seen or seen being controlled.  After reading this, you might think that I&#039;m trying to control your image and retaliate.<br />
+No faceless person wants to be given a face, right?<br />
+<br />
+The desire to not be seen, or to want to be &quot;faceless&quot;, could be associated with fearing life. <br />
+A faceless person can&#039;t be blamed for something he or she did wrong because he or she can&#039;t be identified and after all, life is full of mistakes just waiting for us to make them.  Being faceless would be most desirable for someone who fears life and its mistakes, possibly.<br />
+<br />
+<br />
+But oh hell, for all I know that could be a Yu-Gi-Oh! monster.<br />
+<br />
+Interpreting stuff isn&#039;t always accurate, especially since I&#039;m interpreting your crap and I&#039;m not you.  However, a person who did have such qualities might:<br />
+- Target anything you could in this post to disqualify what I said (eg: grammar, word usage, etc).<br />
+- Claim that your nickname choice and the descriptive words you used to describe your feeling were only superficial and have no underlying meaning, completely undermining the influence of the unconscious on our preferences.<br />
+- Cite 1 thing I said to disqualify the rest.<br />
+<br />
+Alright, I gotta stop haha.</div>
+		<textarea style="display: none;" id="desctxt_9447">I was sleeping in around that time, so I wouldn&#039;t know.
+What would it mean if others had felt it though?
+
+Water is usually a symbol of life, isn&#039;t it?  
+Interpreting that psycholanalytically (The Yung method), there being water could simply be an association to life, screams are usually a sign of fear or danger, right? 
+
+Maybe you&#039;re afraid of life.
+
+In your signature you are a &quot;faceless puppeteer&quot; possibly showing that you would prefer to control things from behind the curtain, however you would probably still want people to acknowledge you as the controller, because you&#039;re not the &quot;hidden puppeteer&quot;.  In other words, you might want people to know that you are the one puppeteering/controlling.
+
+In addition, you&#039;re not the &quot;faceless puppet&quot;, possibly meaning you&#039;re not the one that wants to be controlled, seen or seen being controlled.  After reading this, you might think that I&#039;m trying to control your image and retaliate.
+No faceless person wants to be given a face, right?
+
+The desire to not be seen, or to want to be &quot;faceless&quot;, could be associated with fearing life. 
+A faceless person can&#039;t be blamed for something he or she did wrong because he or she can&#039;t be identified and after all, life is full of mistakes just waiting for us to make them.  Being faceless would be most desirable for someone who fears life and its mistakes, possibly.
+
+
+But oh hell, for all I know that could be a Yu-Gi-Oh! monster.
+
+Interpreting stuff isn&#039;t always accurate, especially since I&#039;m interpreting your crap and I&#039;m not you.  However, a person who did have such qualities might:
+- Target anything you could in this post to disqualify what I said (eg: grammar, word usage, etc).
+- Claim that your nickname choice and the descriptive words you used to describe your feeling were only superficial and have no underlying meaning, completely undermining the influence of the unconscious on our preferences.
+- Cite 1 thing I said to disqualify the rest.
+
+Alright, I gotta stop haha.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by ryan, 4 years, 6 months ago<br />Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Faceless</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=570&amp;ref=1214279440" width="83" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9470" style="width: 100%; overflow: auto; min-height: 125px;">The Great Faceless Puppeteer stands in the shadows manipulating others to do his bidding. ya its great. but your suggestions are feasible i suppose. oh and if others felt it that may mean big natural disaster soon. I at first thought tsunamii or something, but maybe it was just a post cognitive fealing from something. I&#039;ll search some and get back to you.</div>
+		<textarea style="display: none;" id="desctxt_9470">The Great Faceless Puppeteer stands in the shadows manipulating others to do his bidding. ya its great. but your suggestions are feasible i suppose. oh and if others felt it that may mean big natural disaster soon. I at first thought tsunamii or something, but maybe it was just a post cognitive fealing from something. I&#039;ll search some and get back to you.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">SheepKing</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=211&amp;ref=1222648137" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9482" style="width: 100%; overflow: auto; min-height: 125px;">Faceless; Read the news lately? Perhaps your subconcious was reacting to many news clips that may have come across. Lots of water related events lately that have caused a lot of pain and trouble in many peoples lives. Flooding in the U.S. and China, and who else knows where.<br />
+<br />
+I am not validating your feeling by saying that&#039;s what you experienced, but there&#039;s a chance that you may have experienced a psychic, or psychological backlash to those. It is up to you to determine your state of mind during the event in question and truthfully analyze what factors contributed to what you felt. What do you think?<br />
+<br />
+Ryan: Oooh oooh, do my attributes next! :-P</div>
+		<textarea style="display: none;" id="desctxt_9482">Faceless; Read the news lately? Perhaps your subconcious was reacting to many news clips that may have come across. Lots of water related events lately that have caused a lot of pain and trouble in many peoples lives. Flooding in the U.S. and China, and who else knows where.
+
+I am not validating your feeling by saying that&#039;s what you experienced, but there&#039;s a chance that you may have experienced a psychic, or psychological backlash to those. It is up to you to determine your state of mind during the event in question and truthfully analyze what factors contributed to what you felt. What do you think?
+
+Ryan: Oooh oooh, do my attributes next! :-P</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Faceless</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=570&amp;ref=1214279440" width="83" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9487" style="width: 100%; overflow: auto; min-height: 125px;">i dont read the newspaper or watch the news much but i have been known for some postcognitive experiences.</div>
+		<textarea style="display: none;" id="desctxt_9487">i dont read the newspaper or watch the news much but i have been known for some postcognitive experiences.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">ryan</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=610&amp;ref=1214463002" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9488" style="width: 100%; overflow: auto; min-height: 125px;">Here it goes.<br />
+<br />
+SheepKing:<br />
+Sheep are potentially badass.<br />
+Kings are fairly powerful.<br />
+You are a powerful badass. Enjoy!</div>
+		<textarea style="display: none;" id="desctxt_9488">Here it goes.
+
+SheepKing:
+Sheep are potentially badass.
+Kings are fairly powerful.
+You are a powerful badass. Enjoy!</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Eyeofnight</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=588&amp;ref=1214542721" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9491" style="width: 100%; overflow: auto; min-height: 125px;">Faceless, I cannot say I have experienced anything like that recently, but I do agree that it could be a post cognitive experience or it could be something else, The possibility exists for both.<br />
+<br />
+Ryan, your observations are truly masterful. Surely you must be a psychologist.<br />
+<br />
+Sorry for being random on this part, but Sheepking, the picture you have is amazing.</div>
+		<textarea style="display: none;" id="desctxt_9491">Faceless, I cannot say I have experienced anything like that recently, but I do agree that it could be a post cognitive experience or it could be something else, The possibility exists for both.
+
+Ryan, your observations are truly masterful. Surely you must be a psychologist.
+
+Sorry for being random on this part, but Sheepking, the picture you have is amazing.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">SheepKing</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=211&amp;ref=1222648137" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9496" style="width: 100%; overflow: auto; min-height: 125px;">Two compliments for the thread. <br />
+<br />
+&#039;tis a good day.<br />
+<br />
+Eyeofnight: Do you have mutual respect for the dystopian wastelands of the potential tomorrow?</div>
+		<textarea style="display: none;" id="desctxt_9496">Two compliments for the thread. 
+
+&#039;tis a good day.
+
+Eyeofnight: Do you have mutual respect for the dystopian wastelands of the potential tomorrow?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Eyeofnight</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=588&amp;ref=1214542721" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9498" style="width: 100%; overflow: auto; min-height: 125px;">That is correct, Sheepking</div>
+		<textarea style="display: none;" id="desctxt_9498">That is correct, Sheepking</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Eyeofnight, 4 years, 6 months ago<br />Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">SheepKing</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=211&amp;ref=1222648137" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9503" style="width: 100%; overflow: auto; min-height: 125px;">We need more people like you.</div>
+		<textarea style="display: none;" id="desctxt_9503">We need more people like you.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Linked</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=19&amp;ref=1203762048" width="89" height="38" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9504" style="width: 100%; overflow: auto; min-height: 125px;">hey ryan, want a tough one? go check out my post on the last page of the Weirdest Experiences thread. =^,.,^= i&#039;m not crazy though.</div>
+		<textarea style="display: none;" id="desctxt_9504">hey ryan, want a tough one? go check out my post on the last page of the Weirdest Experiences thread. =^,.,^= i&#039;m not crazy though.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9916" style="width: 100%; overflow: auto; min-height: 125px;">Lol, that&#039;s funny Sheepking... I haven&#039;t seen you here very often... what&#039;s up with that? &gt;.&lt;</div>
+		<textarea style="display: none;" id="desctxt_9916">Lol, that&#039;s funny Sheepking... I haven&#039;t seen you here very often... what&#039;s up with that? &gt;.&lt;</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Akio, 4 years, 5 months ago<br />Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">SheepKing</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=211&amp;ref=1222648137" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9919" style="width: 100%; overflow: auto; min-height: 125px;">I&#039;m here. Watching. Waiting. I&#039;m just lurking in the shadows. Spooky huh?<br />
+</div>
+		<textarea style="display: none;" id="desctxt_9919">I&#039;m here. Watching. Waiting. I&#039;m just lurking in the shadows. Spooky huh?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9929" style="width: 100%; overflow: auto; min-height: 125px;">Not as much as that gnome...<br />
+</div>
+		<textarea style="display: none;" id="desctxt_9929">Not as much as that gnome...</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=426" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 35 queries. 0.535 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

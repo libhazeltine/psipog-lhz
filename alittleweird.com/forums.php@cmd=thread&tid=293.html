@@ -1,0 +1,345 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Aliens</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Aliens</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Aliens</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">SheepKing</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=211&amp;ref=1222648137" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7337" style="width: 100%; overflow: auto; min-height: 125px;">Anyone else run <a href="mailto:Seti@home?">Seti@home</a> :-P<br />
+<br />
+It&#039;d be pretty bad ass if it turned up some strange radio signals eh?<br />
+Then again... Maybe the aliens are already here!<br />
+</div>
+		<textarea style="display: none;" id="desctxt_7337">Anyone else run Seti@home? :-P
+
+It&#039;d be pretty bad ass if it turned up some strange radio signals eh?
+Then again... Maybe the aliens are already here!</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Sean</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=2&amp;ref=1214247941" width="117" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_7343" style="width: 100%; overflow: auto; min-height: 125px;">I think (in my gut) that it&#039;s more probable that aliens already know were here, but don&#039;t want to &quot;make contact&quot;.<br />
+<br />
+This one kills me:<br />
+<br />
+<br />
+<div id="Bvvqf0b6eefcc67a3" class="vvqbox vvqyoutube" style="width:425px;height:335px;"><br />
+<p><a href="http://www.youtube.com/watch?v=nNnllwGmUB8" target="_blank" title="YouTube Video">http://www.youtube.com/watch?v=nNnllwGmUB8</a></p><br />
+</div><br />
+<script type="text/javascript"><br />
+<!--<br />
+	vvq_youtube("Bvvqf0b6eefcc67a3", "425", "335", "nNnllwGmUB8");<br />
+--><br />
+</script><br />
+<br />
+~Sean</div>
+		<textarea style="display: none;" id="desctxt_7343">I think (in my gut) that it&#039;s more probable that aliens already know were here, but don&#039;t want to &quot;make contact&quot;.
+
+This one kills me:
+
+[media]http://youtube.com/watch?v=nNnllwGmUB8[/media]
+
+~Sean</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Antisankari</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=224&amp;ref=1213032338" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7344" style="width: 100%; overflow: auto; min-height: 125px;">Do they have one of those &quot;cure cancer&quot; programs active at the moment? I saw one a while ago but it had expired last year.<br />
+<br />
+Damn it. That would actually be useful computing. Unless we reach Master Yoda and he comes and teaches us to use the Force, but I would rather bet my money on protein sorting and molecular research.</div>
+		<textarea style="display: none;" id="desctxt_7344">Do they have one of those &quot;cure cancer&quot; programs active at the moment? I saw one a while ago but it had expired last year.
+
+Damn it. That would actually be useful computing. Unless we reach Master Yoda and he comes and teaches us to use the Force, but I would rather bet my money on protein sorting and molecular research.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Antisankari, 4 years, 9 months ago<br />Posted 4 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">zos</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=438&amp;ref=1210381401" width="125" height="96" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_7347" style="width: 100%; overflow: auto; min-height: 125px;">sounds interesting, did anybody here ever hear about &quot;alien abductions&quot;? you know it&#039;s like you&#039;re in your bed sleeping and suddenly,you feel like you can&#039;t move your body and you start hearing voices,and seeing little grey men,who operate on you and put things in you and rape, ehh nevermind, anyways i think  it&#039;s just sleep paralysis,hey you know what? i just realised that i watch too much of the natgeo channel!!!!!!!!!</div>
+		<textarea style="display: none;" id="desctxt_7347">sounds interesting, did anybody here ever hear about &quot;alien abductions&quot;? you know it&#039;s like you&#039;re in your bed sleeping and suddenly,you feel like you can&#039;t move your body and you start hearing voices,and seeing little grey men,who operate on you and put things in you and rape, ehh nevermind, anyways i think  it&#039;s just sleep paralysis,hey you know what? i just realised that i watch too much of the natgeo channel!!!!!!!!!</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by zos, 4 years, 9 months ago<br />Posted 4 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">keen31</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=253&amp;ref=1203827935" width="53" height="55" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7348" style="width: 100%; overflow: auto; min-height: 125px;">folding@home on the PS3 does a HUGE part for whatever research it is that its for. there are dedicated teams that have multiple ps3s just for that stuff.<br />
+<br />
+edit: that yaweh guy is pretty nuts</div>
+		<textarea style="display: none;" id="desctxt_7348">folding@home on the PS3 does a HUGE part for whatever research it is that its for. there are dedicated teams that have multiple ps3s just for that stuff.
+
+edit: that yaweh guy is pretty nuts</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by keen31, 4 years, 9 months ago<br />Posted 4 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Runtest</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_7349" style="width: 100%; overflow: auto; min-height: 125px;">This makes me want to learn to flare psiballs even more. I would kill to be a prophet and make these things seem like UFO&#039;s. LoL</div>
+		<textarea style="display: none;" id="desctxt_7349">This makes me want to learn to flare psiballs even more. I would kill to be a prophet and make these things seem like UFO&#039;s. LoL</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Anonymous Dark</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=354&amp;ref=1203377944" width="100" height="86" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7350" style="width: 100%; overflow: auto; min-height: 125px;">Good luck with that runtest...if you can make a psi ball that&#039;s brilliant enough to be passed off as a UFO, you certainly have a talent for flaring beyond anything ever seen before...<br />
+<br />
+I, personally, believe that they&#039;re out there, though I doubt they&#039;ve visited us. And if they have, I doubt they really care much for us.</div>
+		<textarea style="display: none;" id="desctxt_7350">Good luck with that runtest...if you can make a psi ball that&#039;s brilliant enough to be passed off as a UFO, you certainly have a talent for flaring beyond anything ever seen before...
+
+I, personally, believe that they&#039;re out there, though I doubt they&#039;ve visited us. And if they have, I doubt they really care much for us.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">SheepKing</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=211&amp;ref=1222648137" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_7354" style="width: 100%; overflow: auto; min-height: 125px;">Hallelujah Yahwaey.<br />
+<br />
+1) UFO siting, cost of cable t.v.<br />
+2) Becoming a slave to aliens because of a man who read the hebrew bible; Cost of hebrew bible and lessons in hebrew for the man.<br />
+3) Being a willing slave to our gracious alien overlords; Priceless.</div>
+		<textarea style="display: none;" id="desctxt_7354">Hallelujah Yahwaey.
+
+1) UFO siting, cost of cable t.v.
+2) Becoming a slave to aliens because of a man who read the hebrew bible; Cost of hebrew bible and lessons in hebrew for the man.
+3) Being a willing slave to our gracious alien overlords; Priceless.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">vondur</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=457&amp;ref=1206950893" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7461" style="width: 100%; overflow: auto; min-height: 125px;">In the video above they say that that man mentions a UFO that everyone in Los Vegas will be able to see as soon as &quot;next week&quot;.  However, the date of that video being posted was in 2006, so obviously that did not happen…</div>
+		<textarea style="display: none;" id="desctxt_7461">In the video above they say that that man mentions a UFO that everyone in Los Vegas will be able to see as soon as &quot;next week&quot;.  However, the date of that video being posted was in 2006, so obviously that did not happen…</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">cinderwild</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_7477" style="width: 100%; overflow: auto; min-height: 125px;">Talk about a buzzsaw kill, Anonymous Dark.</div>
+		<textarea style="display: none;" id="desctxt_7477">Talk about a buzzsaw kill, Anonymous Dark.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Linked</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=19&amp;ref=1203762048" width="89" height="38" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7483" style="width: 100%; overflow: auto; min-height: 125px;">it could have been a balllon. and the movement was probly just the camera-man jittering.<br />
+and maybe the aliens are already here and look like humans. you never know it could happen....maybe &gt;.&gt;</div>
+		<textarea style="display: none;" id="desctxt_7483">it could have been a balllon. and the movement was probly just the camera-man jittering.
+and maybe the aliens are already here and look like humans. you never know it could happen....maybe &gt;.&gt;</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Linked, 4 years, 9 months ago<br />Posted 4 years, 9 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=293" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 27 queries. 0.328 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

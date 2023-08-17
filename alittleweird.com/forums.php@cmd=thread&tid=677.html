@@ -1,0 +1,572 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Chi and Psi?</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Chi and Psi?</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Chi and Psi?</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">f3licks</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=848&amp;ref=1227833859" width="125" height="78" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13013" style="width: 100%; overflow: auto; min-height: 125px;"><br />
+<div id="Bvvq0db0e50f096a9" class="vvqbox vvqyoutube" style="width:425px;height:335px;"><br />
+<p><a href="http://www.youtube.com/watch?v=A8iCIYx1CYc" target="_blank" title="YouTube Video">http://www.youtube.com/watch?v=A8iCIYx1CYc</a></p><br />
+</div><br />
+<script type="text/javascript"><br />
+<!--<br />
+	vvq_youtube("Bvvq0db0e50f096a9", "425", "335", "A8iCIYx1CYc");<br />
+--><br />
+</script><br />
+<a href="http://www.youtube.com/watch?v=A8iCIYx1CYc&amp;feature=related" target="_blank" title="http://www.youtube.com/watch?v=A8iCIYx1CYc&amp;feature=related">If the embedding didn&#039;t work, here&#039;s the link.</a><br />
+<br />
+This video has been posted before, in the Weird Videos forum, but that&#039;s not really the focus of this thread.<br />
+This man, John Chang can not only electrokinesis (not a universally liked term, I know, but it seems fitting) and pyrokinesis <a href="http://www.youtube.com/watch?v=Aos0hnwiHt8" target="_blank" title="http://www.youtube.com/watch?v=Aos0hnwiHt8">but several other impressive manifestations.</a><br />
+<br />
+Now, he does this by combining two types of &#039;chi&#039; and says they come from what I think are Chakra points (correct me if I am wrong). In psionics, by utilizing a different paradigm and method, we can produce similar results.<br />
+<br />
+Here&#039;s a theory I am considering: Chi, Chakra, Psi, these are all the same thing, each simply with a different take on the world. An empirical example of this would be religion, with several groups of people coming up with different conclusions and methodologies for the same fundamental purpose; explaining the world.<br />
+<br />
+OK, religion might not be the best example, but the point is that there are so many similarities, especially in chi and psi, that is it more likely that there are multiple similar somethings or that they are one and the same.<br />
+<br />
+Anything in this post is open to discussion, I&#039;m trying to make a pretty active thread, so I&#039;d really like to hear what you think.</div>
+		<textarea style="display: none;" id="desctxt_13013">[media]http://www.youtube.com/watch?v=A8iCIYx1CYc&amp;feature=related[/media]
+[url=http://www.youtube.com/watch?v=A8iCIYx1CYc&amp;feature=related]If the embedding didn&#039;t work, here&#039;s the link.[/url]
+
+This video has been posted before, in the Weird Videos forum, but that&#039;s not really the focus of this thread.
+This man, John Chang can not only electrokinesis (not a universally liked term, I know, but it seems fitting) and pyrokinesis [url=http://www.youtube.com/watch?v=Aos0hnwiHt8]but several other impressive manifestations.[/url]
+
+Now, he does this by combining two types of &#039;chi&#039; and says they come from what I think are Chakra points (correct me if I am wrong). In psionics, by utilizing a different paradigm and method, we can produce similar results.
+
+Here&#039;s a theory I am considering: Chi, Chakra, Psi, these are all the same thing, each simply with a different take on the world. An empirical example of this would be religion, with several groups of people coming up with different conclusions and methodologies for the same fundamental purpose; explaining the world.
+
+OK, religion might not be the best example, but the point is that there are so many similarities, especially in chi and psi, that is it more likely that there are multiple similar somethings or that they are one and the same.
+
+Anything in this post is open to discussion, I&#039;m trying to make a pretty active thread, so I&#039;d really like to hear what you think.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">X-Master</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=433&amp;ref=1238933408" width="115" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13016" style="width: 100%; overflow: auto; min-height: 125px;">Well I have been thinking on this for awhile, and I had come to the conclusion that Psi and chi along with all of the other various types of energy, ki, pranayama, ect are pretty much the same thing. And that the only difference between any of them is the difference people make in their minds about them. So really, we should be able to apply all of the different ideas and paradigms from the other systems and do many of the same kinds of things that the other systems can do, just inside the understanding of whatever system you are using, so you would not have to learn the others in their totality to be able to get them to work for you. Hopefully that elaboration was of suffecient clarity.</div>
+		<textarea style="display: none;" id="desctxt_13016">Well I have been thinking on this for awhile, and I had come to the conclusion that Psi and chi along with all of the other various types of energy, ki, pranayama, ect are pretty much the same thing. And that the only difference between any of them is the difference people make in their minds about them. So really, we should be able to apply all of the different ideas and paradigms from the other systems and do many of the same kinds of things that the other systems can do, just inside the understanding of whatever system you are using, so you would not have to learn the others in their totality to be able to get them to work for you. Hopefully that elaboration was of suffecient clarity.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Corpse</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=553&amp;ref=1239824741" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13021" style="width: 100%; overflow: auto; min-height: 125px;">Well, by definition they are closely similar.<br />
+Psi refers to psychic energy, and chi refers to life force.</div>
+		<textarea style="display: none;" id="desctxt_13021">Well, by definition they are closely similar.
+Psi refers to psychic energy, and chi refers to life force.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">DigGil</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13026" style="width: 100%; overflow: auto; min-height: 125px;">I think there isn&#039;t really any energy (so the &quot;psi&quot; we talk about is just to help on visualization) but psi is instead a neutral term to say «that that makes psychic(or psionic) abilities to happen», usually I talk like if it were an actual energy so I don&#039;t cause misunderstoods. <br />
+Then &quot;chakras&quot; are some key body (or soul?) parts I can&#039;t tell about because of my lack of knowledge on the subject.<br />
+Finally Chi (or Ki, like japonese people say) is a special state of mind that&#039;s usually interpreted as the energies or life forces working.<br />
+<br />
+Well I don&#039;t consider any other terms and probably mine are wrong (so your welcome to say... whatever you think...) but this is my current definition and how I treat these terms (unless when talking to you because most of you say &quot;psi&quot; is energy).</div>
+		<textarea style="display: none;" id="desctxt_13026">I think there isn&#039;t really any energy (so the &quot;psi&quot; we talk about is just to help on visualization) but psi is instead a neutral term to say «that that makes psychic(or psionic) abilities to happen», usually I talk like if it were an actual energy so I don&#039;t cause misunderstoods. 
+Then &quot;chakras&quot; are some key body (or soul?) parts I can&#039;t tell about because of my lack of knowledge on the subject.
+Finally Chi (or Ki, like japonese people say) is a special state of mind that&#039;s usually interpreted as the energies or life forces working.
+
+Well I don&#039;t consider any other terms and probably mine are wrong (so your welcome to say... whatever you think...) but this is my current definition and how I treat these terms (unless when talking to you because most of you say &quot;psi&quot; is energy).</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">ShadowmanX</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13030" style="width: 100%; overflow: auto; min-height: 125px;">Chakras are energy centers within your body. They are actually there to transport energy from your astral body to your physical body</div>
+		<textarea style="display: none;" id="desctxt_13030">Chakras are energy centers within your body. They are actually there to transport energy from your astral body to your physical body</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Raathuus</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=764&amp;ref=1259211929" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13034" style="width: 100%; overflow: auto; min-height: 125px;">My thoughts are sort of a combination of what&#039;s already been said.  Because everything in its basic form is energy, then yes, psi is energy.  The question then, though, is what is psi?  What sort of energy?  The only way we can figure that out is by process of elimination... but what about energies unknown to us?  Thus, the only way to know the relation between psi and chi is to know everything.</div>
+		<textarea style="display: none;" id="desctxt_13034">My thoughts are sort of a combination of what&#039;s already been said.  Because everything in its basic form is energy, then yes, psi is energy.  The question then, though, is what is psi?  What sort of energy?  The only way we can figure that out is by process of elimination... but what about energies unknown to us?  Thus, the only way to know the relation between psi and chi is to know everything.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">f3licks</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=848&amp;ref=1227833859" width="125" height="78" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13036" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Corpse:</em><br />
+Well, by definition they are closely similar.<br />
+Psi refers to psychic energy, and chi refers to life force.</div>But who&#039;s to say that psionics doesn&#039;t use life force?<br />
+. . . actually, that kind of sounds dangerous.<br />
+<br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by X-Master:</em><br />
+Well I have been thinking on this for awhile, and I had come to the conclusion that Psi and chi along with all of the other various types of energy, ki, pranayama, ect are pretty much the same thing. And that the only difference between any of them is the difference people make in their minds about them. So really, we should be able to apply all of the different ideas and paradigms from the other systems and do many of the same kinds of things that the other systems can do, just inside the understanding of whatever system you are using, so you would not have to learn the others in their totality to be able to get them to work for you. Hopefully that elaboration was of suffecient clarity.</div>That would make the problem thinking outside the box. :D<br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by DigGil:</em><br />
+I think there isn&#039;t really any energy (so the &quot;psi&quot; we talk about is just to help on visualization) but psi is instead a neutral term to say «that that makes psychic(or psionic) abilities to happen», usually I talk like if it were an actual energy so I don&#039;t cause misunderstoods. <br />
+Then &quot;chakras&quot; are some key body (or soul?) parts I can&#039;t tell about because of my lack of knowledge on the subject.<br />
+Finally Chi (or Ki, like japonese people say) is a special state of mind that&#039;s usually interpreted as the energies or life forces working.<br />
+<br />
+Well I don&#039;t consider any other terms and probably mine are wrong (so your welcome to say... whatever you think...) but this is my current definition and how I treat these terms (unless when talking to you because most of you say &quot;psi&quot; is energy).</div>What would that make Chi?<br />
+<br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by ShadowmanX:</em><br />
+Chakras are energy centers within your body. They are actually there to transport energy from your astral body to your physical body</div>But then what is this energy?<br />
+<br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Raathuus:</em><br />
+My thoughts are sort of a combination of what&#039;s already been said.  Because everything in its basic form is energy, then yes, psi is energy.  The question then, though, is what is psi?  What sort of energy?  The only way we can figure that out is by process of elimination... but what about energies unknown to us?  Thus, the only way to know the relation between psi and chi is to know everything.</div>Good. At least it won&#039;t be hard or anything.</div>
+		<textarea style="display: none;" id="desctxt_13036">[quote][i]posted by Corpse:[/i]
+Well, by definition they are closely similar.
+Psi refers to psychic energy, and chi refers to life force.[/quote]
+
+But who&#039;s to say that psionics doesn&#039;t use life force?
+. . . actually, that kind of sounds dangerous.
+
+[quote][i]posted by X-Master:[/i]
+Well I have been thinking on this for awhile, and I had come to the conclusion that Psi and chi along with all of the other various types of energy, ki, pranayama, ect are pretty much the same thing. And that the only difference between any of them is the difference people make in their minds about them. So really, we should be able to apply all of the different ideas and paradigms from the other systems and do many of the same kinds of things that the other systems can do, just inside the understanding of whatever system you are using, so you would not have to learn the others in their totality to be able to get them to work for you. Hopefully that elaboration was of suffecient clarity.[/quote]
+
+That would make the problem thinking outside the box. :D
+[quote][i]posted by DigGil:[/i]
+I think there isn&#039;t really any energy (so the &quot;psi&quot; we talk about is just to help on visualization) but psi is instead a neutral term to say «that that makes psychic(or psionic) abilities to happen», usually I talk like if it were an actual energy so I don&#039;t cause misunderstoods. 
+Then &quot;chakras&quot; are some key body (or soul?) parts I can&#039;t tell about because of my lack of knowledge on the subject.
+Finally Chi (or Ki, like japonese people say) is a special state of mind that&#039;s usually interpreted as the energies or life forces working.
+
+Well I don&#039;t consider any other terms and probably mine are wrong (so your welcome to say... whatever you think...) but this is my current definition and how I treat these terms (unless when talking to you because most of you say &quot;psi&quot; is energy).[/quote]
+
+What would that make Chi?
+
+[quote][i]posted by ShadowmanX:[/i]
+Chakras are energy centers within your body. They are actually there to transport energy from your astral body to your physical body[/quote]
+
+But then what is this energy?
+
+[quote][i]posted by Raathuus:[/i]
+My thoughts are sort of a combination of what&#039;s already been said.  Because everything in its basic form is energy, then yes, psi is energy.  The question then, though, is what is psi?  What sort of energy?  The only way we can figure that out is by process of elimination... but what about energies unknown to us?  Thus, the only way to know the relation between psi and chi is to know everything.[/quote]
+
+Good. At least it won&#039;t be hard or anything.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">ShadowmanX</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13049" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by f3licks:</em><br />
+But who&#039;s to say that psionics doesn&#039;t use life force?<br />
+. . . actually, that kind of sounds dangerous.</div>Not if you think that life energy is all around us and that we draw from it all the time. Its not something that is given to you once, and stays in you and as soon as you use it up, you&#039;re going to die. Acually, well thats my theory, you have only a small amount of energy inside you. Its a permanent flow from outside into you and back to the outside.<br />
+<br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by f3licks:</em><br />
+But then what is this energy?</div>I guess noone can answer that one</div>
+		<textarea style="display: none;" id="desctxt_13049">[quote][i]posted by f3licks:[/i]
+But who&#039;s to say that psionics doesn&#039;t use life force?
+. . . actually, that kind of sounds dangerous.[/quote]
+
+Not if you think that life energy is all around us and that we draw from it all the time. Its not something that is given to you once, and stays in you and as soon as you use it up, you&#039;re going to die. Acually, well thats my theory, you have only a small amount of energy inside you. Its a permanent flow from outside into you and back to the outside.
+
+[quote][i]posted by f3licks:[/i]
+But then what is this energy?
+[/quote]
+
+I guess noone can answer that one</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">f3licks</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=848&amp;ref=1227833859" width="125" height="78" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13057" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by ShadowmanX:</em><br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by f3licks:</em><br />
+But who&#039;s to say that psionics doesn&#039;t use life force?<br />
+. . . actually, that kind of sounds dangerous.</div>Not if you think that life energy is all around us and that we draw from it all the time. Its not something that is given to you once, and stays in you and as soon as you use it up, you&#039;re going to die. Acually, well thats my theory, you have only a small amount of energy inside you. Its a permanent flow from outside into you and back to the outside.<br />
+<br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by f3licks:</em><br />
+But then what is this energy?</div>I guess noone can answer that one</div>Maybe. I never draw energy when I manipulate, and I think the energy comes internally.</div>
+		<textarea style="display: none;" id="desctxt_13057">[quote][i]posted by ShadowmanX:[/i]
+[quote][i]posted by f3licks:[/i]
+But who&#039;s to say that psionics doesn&#039;t use life force?
+. . . actually, that kind of sounds dangerous.[/quote]
+
+Not if you think that life energy is all around us and that we draw from it all the time. Its not something that is given to you once, and stays in you and as soon as you use it up, you&#039;re going to die. Acually, well thats my theory, you have only a small amount of energy inside you. Its a permanent flow from outside into you and back to the outside.
+
+[quote][i]posted by f3licks:[/i]
+But then what is this energy?
+[/quote]
+
+I guess noone can answer that one[/quote]
+
+Maybe. I never draw energy when I manipulate, and I think the energy comes internally.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">ShadowmanX</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13073" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by f3licks:</em><br />
+Maybe. I never draw energy when I manipulate, and I think the energy comes internally.</div>What I meant is you draw energy permanently without even knowing it. Energy is running into you and out of you all the time. i didn&#039;t mean what happens when you manipulate, I have no idea where the energy therefore comes. Could be even both</div>
+		<textarea style="display: none;" id="desctxt_13073">[quote][i]posted by f3licks:[/i]
+Maybe. I never draw energy when I manipulate, and I think the energy comes internally.[/quote]
+
+What I meant is you draw energy permanently without even knowing it. Energy is running into you and out of you all the time. i didn&#039;t mean what happens when you manipulate, I have no idea where the energy therefore comes. Could be even both</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">jarmohak</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13075" style="width: 100%; overflow: auto; min-height: 125px;">To be exact, when comparizing Cakras vs. any energy form, they&#039;re not the same. Cakras are points where some kind of energy (depending from a point etc. it&#039;s not that easy to open this thing up to one who doesn&#039;t know &quot;anything-at-all&quot; about it, sry for being rude) activates. Example, when speaking of &quot;love kind of state&quot;, it&#039;s energy of anahata-cakra (in the middle of the chest).<br />
+<br />
+When doing anything with psi/chi/ki/prana/etc. you &quot;waste&quot; your energy. One has certain amount of energy in his/her body, and when it&#039;s used one may guess what happens. There are few techniques to get more this energy, but those techniques are hard to accomplish and they only bring VERY little of that energy back to you. When speaking about leeching another persons energy, one is just lying :) Well, not so to speak lying, but it&#039;s not from another person, but it&#039;s from the whole universe which has unlimited amount of energy to be used. It&#039;s possible that if your energy &quot;needs&quot; are huge at some moment, then via resonance the person you&#039;re &quot;leeching&quot; from, feels tired or loss of energy or what ever.<br />
+<br />
+Take care, and behave nicely :)</div>
+		<textarea style="display: none;" id="desctxt_13075">To be exact, when comparizing Cakras vs. any energy form, they&#039;re not the same. Cakras are points where some kind of energy (depending from a point etc. it&#039;s not that easy to open this thing up to one who doesn&#039;t know &quot;anything-at-all&quot; about it, sry for being rude) activates. Example, when speaking of &quot;love kind of state&quot;, it&#039;s energy of anahata-cakra (in the middle of the chest).
+
+When doing anything with psi/chi/ki/prana/etc. you &quot;waste&quot; your energy. One has certain amount of energy in his/her body, and when it&#039;s used one may guess what happens. There are few techniques to get more this energy, but those techniques are hard to accomplish and they only bring VERY little of that energy back to you. When speaking about leeching another persons energy, one is just lying :) Well, not so to speak lying, but it&#039;s not from another person, but it&#039;s from the whole universe which has unlimited amount of energy to be used. It&#039;s possible that if your energy &quot;needs&quot; are huge at some moment, then via resonance the person you&#039;re &quot;leeching&quot; from, feels tired or loss of energy or what ever.
+
+Take care, and behave nicely :)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">deny_tk</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13076" style="width: 100%; overflow: auto; min-height: 125px;">I&#039;ve seen a couple of John Chang threads on this forum so I will fill you in on some details..<br />
+<br />
+I highly recommend reading the book &quot;The Magus of Java&quot; by Kosta Danaos, as it is about this man you see in the first post, John Chang. Kosta Danaos was a student of his and he decided to write a book about him with John&#039;s consent.<br />
+<br />
+If the author is to be trusted then I think you will find the book quite interesting.<br />
+<br />
+According to the book Chi has both Yin and Yang components, and that it is the interaction between the two that makes life possible. Although most people thought yin and yang are just concepts, according to the book they are pretty much physical energies with different properties. Yang is in every object, and Yin supposedly comes from the Earth.<br />
+<br />
+This is a direct citation from the book:<br />
+<br />
+&quot;Inside our bodies, both flow in equal amounts. These energies are opposites, they can never meet. Yin and yang normally run parallel to each other, never letting go of one another. I use my yin and yang together as one; that is why I can do what I do. By itself, yang ch&#039;i cannot pass the limits of the body.&quot;<br />
+<br />
+John practices Neikung. It is written in the book that there are 72 different levels in this practice. You become level 1 when you fill your dantien (a point 3 to 4 inches below the navel, something like that) with yang chi to it&#039;s full capacity. In level 2 you compress the yang, and introduce twice as much into the same area. It is written in the book that you must be sexually abstinent to complete level two. <br />
+<br />
+In level 3 you make the dantien mobile. In level 4 you bring the yang from the dantien down to the hui yin and gather as much yin as you have yang down there. Then pull it up to the dantien (both yin and yang) if your lucky. It says in the book that many died before trying level 4 as it is very painful. <br />
+<br />
+Quote from the book for level 4:<br />
+<br />
+&quot;They float around inside the body, and the pain is incredible, constant, unbeliveable. Only if you have the discipline to ignore it can you control them and put their power inside your dantien.&quot;<br />
+<br />
+Every level from then is just doubling the energy inside you.<br />
+<br />
+John replenishes his chi by meditating. If i remember correctly (didn&#039;t have time to find it in the book) it takes about 81 hours of absolute meditation to fill up the dantien to it&#039;s full capacity.<br />
+<br />
+Be advised that the book does not offer techniques for this meditation, nor does it go in great detail about it. There is another book from the same author that supposedly reveals level 1, but I haven&#039;t read it yet so I&#039;m not sure about that.<br />
+<br />
+What else..<br />
+<br />
+Yes. John states that lighting the newspaper on fire was done with his yang chi. The properties of yin are somewhat different, it&#039;s a passive force which absorbs energy, something like that. John was able to resist air rifle pellets without injuries supposedly using his yin chi. This &quot;electricity&quot; you see him using in the video is done using both yin and yang. <br />
+<br />
+There are plenty more anecdotes in the book so I suggest reading it. <br />
+<br />
+</div>
+		<textarea style="display: none;" id="desctxt_13076">I&#039;ve seen a couple of John Chang threads on this forum so I will fill you in on some details..
+
+I highly recommend reading the book &quot;The Magus of Java&quot; by Kosta Danaos, as it is about this man you see in the first post, John Chang. Kosta Danaos was a student of his and he decided to write a book about him with John&#039;s consent.
+
+If the author is to be trusted then I think you will find the book quite interesting.
+
+According to the book Chi has both Yin and Yang components, and that it is the interaction between the two that makes life possible. Although most people thought yin and yang are just concepts, according to the book they are pretty much physical energies with different properties. Yang is in every object, and Yin supposedly comes from the Earth.
+
+This is a direct citation from the book:
+
+&quot;Inside our bodies, both flow in equal amounts. These energies are opposites, they can never meet. Yin and yang normally run parallel to each other, never letting go of one another. I use my yin and yang together as one; that is why I can do what I do. By itself, yang ch&#039;i cannot pass the limits of the body.&quot;
+
+John practices Neikung. It is written in the book that there are 72 different levels in this practice. You become level 1 when you fill your dantien (a point 3 to 4 inches below the navel, something like that) with yang chi to it&#039;s full capacity. In level 2 you compress the yang, and introduce twice as much into the same area. It is written in the book that you must be sexually abstinent to complete level two. 
+
+In level 3 you make the dantien mobile. In level 4 you bring the yang from the dantien down to the hui yin and gather as much yin as you have yang down there. Then pull it up to the dantien (both yin and yang) if your lucky. It says in the book that many died before trying level 4 as it is very painful. 
+
+Quote from the book for level 4:
+
+&quot;They float around inside the body, and the pain is incredible, constant, unbeliveable. Only if you have the discipline to ignore it can you control them and put their power inside your dantien.&quot;
+
+Every level from then is just doubling the energy inside you.
+
+John replenishes his chi by meditating. If i remember correctly (didn&#039;t have time to find it in the book) it takes about 81 hours of absolute meditation to fill up the dantien to it&#039;s full capacity.
+
+Be advised that the book does not offer techniques for this meditation, nor does it go in great detail about it. There is another book from the same author that supposedly reveals level 1, but I haven&#039;t read it yet so I&#039;m not sure about that.
+
+What else..
+
+Yes. John states that lighting the newspaper on fire was done with his yang chi. The properties of yin are somewhat different, it&#039;s a passive force which absorbs energy, something like that. John was able to resist air rifle pellets without injuries supposedly using his yin chi. This &quot;electricity&quot; you see him using in the video is done using both yin and yang. 
+
+There are plenty more anecdotes in the book so I suggest reading it.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">f3licks</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=848&amp;ref=1227833859" width="125" height="78" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13083" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by deny_tk:</em><br />
+I&#039;ve seen a couple of John Chang threads on this forum so I will fill you in on some details..<br />
+<br />
+I highly recommend reading the book &quot;The Magus of Java&quot; by Kosta Danaos, as it is about this man you see in the first post, John Chang. Kosta Danaos was a student of his and he decided to write a book about him with John&#039;s consent.<br />
+<br />
+If the author is to be trusted then I think you will find the book quite interesting.<br />
+<br />
+According to the book Chi has both Yin and Yang components, and that it is the interaction between the two that makes life possible. Although most people thought yin and yang are just concepts, according to the book they are pretty much physical energies with different properties. Yang is in every object, and Yin supposedly comes from the Earth.<br />
+<br />
+This is a direct citation from the book:<br />
+<br />
+&quot;Inside our bodies, both flow in equal amounts. These energies are opposites, they can never meet. Yin and yang normally run parallel to each other, never letting go of one another. I use my yin and yang together as one; that is why I can do what I do. By itself, yang ch&#039;i cannot pass the limits of the body.&quot;<br />
+<br />
+John practices Neikung. It is written in the book that there are 72 different levels in this practice. You become level 1 when you fill your dantien (a point 3 to 4 inches below the navel, something like that) with yang chi to it&#039;s full capacity. In level 2 you compress the yang, and introduce twice as much into the same area. It is written in the book that you must be sexually abstinent to complete level two. <br />
+<br />
+In level 3 you make the dantien mobile. In level 4 you bring the yang from the dantien down to the hui yin and gather as much yin as you have yang down there. Then pull it up to the dantien (both yin and yang) if your lucky. It says in the book that many died before trying level 4 as it is very painful. <br />
+<br />
+Quote from the book for level 4:<br />
+<br />
+&quot;They float around inside the body, and the pain is incredible, constant, unbeliveable. Only if you have the discipline to ignore it can you control them and put their power inside your dantien.&quot;<br />
+<br />
+Every level from then is just doubling the energy inside you.<br />
+<br />
+John replenishes his chi by meditating. If i remember correctly (didn&#039;t have time to find it in the book) it takes about 81 hours of absolute meditation to fill up the dantien to it&#039;s full capacity.<br />
+<br />
+Be advised that the book does not offer techniques for this meditation, nor does it go in great detail about it. There is another book from the same author that supposedly reveals level 1, but I haven&#039;t read it yet so I&#039;m not sure about that.<br />
+<br />
+What else..<br />
+<br />
+Yes. John states that lighting the newspaper on fire was done with his yang chi. The properties of yin are somewhat different, it&#039;s a passive force which absorbs energy, something like that. John was able to resist air rifle pellets without injuries supposedly using his yin chi. This &quot;electricity&quot; you see him using in the video is done using both yin and yang. <br />
+<br />
+There are plenty more anecdotes in the book so I suggest reading it.</div>Thanks, I&#039;ll have to check that out.</div>
+		<textarea style="display: none;" id="desctxt_13083">[quote][i]posted by deny_tk:[/i]
+I&#039;ve seen a couple of John Chang threads on this forum so I will fill you in on some details..
+
+I highly recommend reading the book &quot;The Magus of Java&quot; by Kosta Danaos, as it is about this man you see in the first post, John Chang. Kosta Danaos was a student of his and he decided to write a book about him with John&#039;s consent.
+
+If the author is to be trusted then I think you will find the book quite interesting.
+
+According to the book Chi has both Yin and Yang components, and that it is the interaction between the two that makes life possible. Although most people thought yin and yang are just concepts, according to the book they are pretty much physical energies with different properties. Yang is in every object, and Yin supposedly comes from the Earth.
+
+This is a direct citation from the book:
+
+&quot;Inside our bodies, both flow in equal amounts. These energies are opposites, they can never meet. Yin and yang normally run parallel to each other, never letting go of one another. I use my yin and yang together as one; that is why I can do what I do. By itself, yang ch&#039;i cannot pass the limits of the body.&quot;
+
+John practices Neikung. It is written in the book that there are 72 different levels in this practice. You become level 1 when you fill your dantien (a point 3 to 4 inches below the navel, something like that) with yang chi to it&#039;s full capacity. In level 2 you compress the yang, and introduce twice as much into the same area. It is written in the book that you must be sexually abstinent to complete level two. 
+
+In level 3 you make the dantien mobile. In level 4 you bring the yang from the dantien down to the hui yin and gather as much yin as you have yang down there. Then pull it up to the dantien (both yin and yang) if your lucky. It says in the book that many died before trying level 4 as it is very painful. 
+
+Quote from the book for level 4:
+
+&quot;They float around inside the body, and the pain is incredible, constant, unbeliveable. Only if you have the discipline to ignore it can you control them and put their power inside your dantien.&quot;
+
+Every level from then is just doubling the energy inside you.
+
+John replenishes his chi by meditating. If i remember correctly (didn&#039;t have time to find it in the book) it takes about 81 hours of absolute meditation to fill up the dantien to it&#039;s full capacity.
+
+Be advised that the book does not offer techniques for this meditation, nor does it go in great detail about it. There is another book from the same author that supposedly reveals level 1, but I haven&#039;t read it yet so I&#039;m not sure about that.
+
+What else..
+
+Yes. John states that lighting the newspaper on fire was done with his yang chi. The properties of yin are somewhat different, it&#039;s a passive force which absorbs energy, something like that. John was able to resist air rifle pellets without injuries supposedly using his yin chi. This &quot;electricity&quot; you see him using in the video is done using both yin and yang. 
+
+There are plenty more anecdotes in the book so I suggest reading it.[/quote]
+
+Thanks, I&#039;ll have to check that out.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 10 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=677" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 29 queries. 0.335 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Official PsiPog EST Time</title>
+    <script type="text/javascript">
+    //<![CDATA[
+
+var curTime = 1345305952 * 1000;
+
+function addZero(a)
+{
+	if (a < 10)
+		return "0" + a;
+	return "" + a;
+}
+
+function getWeekday(a)
+{
+	if (a == 0) return "Sun";
+	else if (a == 1) return "Mon";
+	else if (a == 2) return "Tue";
+	else if (a == 3) return "Wed";
+	else if (a == 4) return "Thu";
+	else if (a == 5) return "Fri";
+	else if (a == 6) return "Sat";
+	return "???";
+}
+
+function getMonth(a)
+{
+	if (a == 0) return "Jan";
+	else if (a == 1) return "Feb";
+	else if (a == 2) return "Mar";
+	else if (a == 3) return "Apr";
+	else if (a == 4) return "May";
+	else if (a == 5) return "Jun";
+	else if (a == 6) return "Jul";
+	else if (a == 7) return "Aug";
+	else if (a == 8) return "Sep";
+	else if (a == 9) return "Oct";
+	else if (a == 10) return "Nov";
+	else if (a == 11) return "Dec";
+	return "???";
+}
+
+function incTime()
+{
+	var md = document.getElementById("mtime");
+	var sd = document.getElementById("stime");
+	var da = new Date();
+	
+	curTime += 1000;
+	da.setTime(curTime);
+
+	var am = "am";
+	if (da.getHours() >= 12)
+		am = "pm";
+	var hh = da.getHours() % 12;
+	if (hh == 0)
+		hh = 12;
+
+	md.innerHTML = hh + ":" +
+		addZero(da.getMinutes()) + ":" +
+		addZero(da.getSeconds()) + " " + am;
+
+	sd.innerHTML = getWeekday(da.getDay()) + ", " +
+		da.getDate() + " " + getMonth(da.getMonth()) + " " +
+		da.getFullYear() + " " +
+		da.getHours() + ":" +
+		addZero(da.getMinutes()) + ":" +
+		addZero(da.getSeconds()) + " " +
+		"-0400";
+}
+
+setInterval("incTime();", 1000);
+
+    //]]>
+    </script>
+    <style type="text/css">
+    /*<![CDATA[*/
+ div.c1 {
+ 	text-align: center;
+ 	margin: 100px 10px 10px 10px; }
+    /*]]>*/
+    </style>
+  </head>
+  <body>
+    <div class="c1">
+      Official PsiPog EDT Time:
+      <h1 id="mtime">12:05:52 pm</h1>
+      <span id="stime">Sat, 18 Aug 2012 12:05:52 -0400</span><br />
+      <br />
+      <p><em>(don't forget to refresh every time you visit)</em></p>
+    </div>
+  </body>
+</html>
+

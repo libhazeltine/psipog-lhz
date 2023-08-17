@@ -1,0 +1,354 @@
+/* get things started */
+
+   body {
+      font: x-small sans-serif;
+      background-color: #333333;
+      color: #000000;
+      margin: 0;
+      padding: 20px 0 20px 0;
+      text-align: center; }
+
+   #globalWrapper {
+      font-size: 127%;
+      width: 986px;
+      margin: 0 auto;
+      text-align: left; }
+
+   /* default definitions for normal tags */
+
+   table {
+      background: white;
+      font-size: 100%;
+      color: black; }
+
+   img {
+      border: none;
+      vertical-align: middle; }
+
+   p {
+      margin: 1.3em 0 1.3em 0;
+      line-height: 1.3em; }
+
+   p img {
+      margin: 0; }
+
+   a:link {
+      text-decoration: none;
+      color: #0000ff; }
+
+   a:visited {
+      text-decoration: none;
+      color: #9977ff; }
+
+   a:hover {
+      text-decoration: underline;
+      color: #0000ff; }
+
+   a:active {
+      text-decoration: underline;
+      color: #ff0000; }
+
+   hr {
+      height: 1px;
+      color: #aaa;
+      background-color: #aaa;
+      border: 0;
+      margin: .2em 0 .2em 0; }
+
+   h1, h2, h3, h4, h5, h6 {
+      color: black;
+      background: none;
+      font-weight: normal;
+      margin: 0;
+      padding-top: .5em;
+      padding-bottom: .17em;
+      /* border-bottom: 1px solid #aaa; */ }
+
+   h1 {
+      font-size: 188%; }
+
+   h2 {
+      font-size: 150%; }
+
+   h3, h4, h5, h6 {
+      border-bottom: none;
+      font-weight: bold; }
+
+   h3 {
+      font-size: 132%; }
+
+   h4 {
+      font-size: 116%; }
+
+   h5 {
+      font-size: 100%; }
+
+   h6 {
+      font-size: 80%;  }
+
+   ul {
+      line-height: 1.5em;
+      list-style-type: square;
+      margin: 0.3em 0 0 1.5em;
+      padding: 0;
+      list-style-image: url("l_bullet.gif"); }
+
+   ol {
+      line-height: 1.5em;
+      margin: .3em 0 0 3.2em;
+      padding: 0;
+      list-style-image: none; }
+
+   li {
+      margin-bottom: .1em; }
+
+   dt {
+      font-weight: bold;
+      margin-bottom: .1em; }
+
+   dl {
+      margin-top: .2em;
+      margin-bottom: .5em; }
+
+   dd {
+      line-height: 1.5em;
+      margin-left: 2em;
+      margin-bottom: .1em; }
+
+   form {
+      border: none;
+      margin: 0; }
+
+   textarea {
+      width: 100%;
+      padding: .1em; }
+
+   select {
+      vertical-align: top; }
+
+   abbr, acronym, .explain {
+      border-bottom: 1px dotted black;
+      color: black;
+      background: none;
+      cursor: help; }
+
+   q {
+      font-family: Times, "Times New Roman", serif;
+      font-style: italic; }
+
+   blockquote {
+      font-family: Times, "Times New Roman", serif;
+      font-style: italic; }
+
+   code {
+      background-color: #f9f9f9; }
+
+   pre {
+      padding: 1em;
+      border: 1px dashed #2f6fab;
+      color: black;
+      background-color: #f9f9f9;
+      line-height: 1.1em; }
+
+   /* global classes */
+
+   .hiddenText {
+      display: none; }
+
+   .centerText {
+      text-align: center; }
+
+   .pageTitle {
+      color: black;
+      background: none;
+      font-weight: normal;
+      margin: 0;
+      padding-top: .5em;
+      padding-bottom: .17em;
+      border-bottom: 1px solid #aaa; }
+
+   .smileyImg {
+      vertical-align: baseline; }
+
+   /* layout */
+
+   #layoutPsiPog {
+      background-color: #990000;
+      background-image: url("l_psipog.gif");
+      width: 986px;
+      height: 96px; }
+
+   #layoutNav {
+      background-color: #7f0000;
+      width: 986px;
+      height: 44px;
+      margin: 0;
+      padding: 0;
+      overflow: hidden; }
+
+   #layoutNav img {
+      vertical-align: bottom;
+      border: none;
+      margin: 0;
+      padding: 0; }
+
+   #layoutFooter {
+      width: 986px;
+      height: 19px;
+      background: #ffffff url("l_footer.gif");
+      overflow: hidden; }
+
+   #rightAd {
+      float: right;
+      padding: 0 0 10px 10px;
+      background-color: #ffffff; }
+
+   #copyright {
+      width: 970px;
+      color: #ffffff;
+      font-size: 90%;
+      text-align: center;
+      padding: 10px; }
+
+   #copyright p {
+      margin: 0;
+      padding: 0; }
+
+   #copyright a:link {
+      text-decoration: none; 
+      color: #ffffff; }
+
+   #copyright a:visited {
+      text-decoration: none;
+      color: #ffffff; }
+
+   #copyright a:hover {
+      text-decoration: underline;
+      color: #ffff00; }
+
+   #copyright a:active {
+      text-decoration: underline;
+      color: #ffff00; }
+
+   .artSmall {
+      font-size: 80%; }
+
+   /* QnA stuff */
+
+   .qnaPages {
+      font-size: 95%; }
+
+   .qnaThread {
+      margin: 1em 0 1em 0;
+      padding: 0;
+      background-color: #fff;
+      border: 1px dotted #ccc; }
+
+   .qnaThread p {
+      margin: 0.5em 0 0.5em 0; }
+
+   .qnaThreadTop {
+      margin: 0;
+      padding: 10px;
+      background-color: #fff; }
+
+   .qnaThreadBot {
+      margin: 0;
+      padding: 10px;
+      background-color: #ffd; }
+
+   .qnaQues {
+      margin: 0;
+      padding: 0 0 0 10px; }
+
+   .qnaAns {
+      margin: 0;
+      padding: 0 0 0 20px; }
+
+   .qnaUser {
+      font-weight: bold;
+      font-size: 91%; }
+
+   .qnaHelp {
+      font-size: 91%; }
+
+   #contentMain {
+      min-height: 640px;
+      padding: 10px 30px;
+      width: 926px;
+      margin: 0;
+      border: 0;
+   }
+	
+   #contentWrap {
+      width: 986px;
+      margin: 0;
+      padding: 0;
+      background: url("l_contentback.gif") repeat-y;
+   }
+
+	/* forum stuff */
+	
+	.frmTblIndex, .frmTblViewForum, .frmTblViewTopic, .frmTblPoll {
+		background-color: transparent;
+		border-top: 1px solid #777;
+		border-left: 1px solid #777;
+		width: 98%;
+		margin: 10px auto;
+	}
+
+	.frmTblPoll {
+		width: auto;
+	}
+	
+	.frmTblPollResult, .frmTblPollResult tr td, .frmTblPollResult td {
+		border: 0;
+		margin: 0;
+		padding: 0;
+		width: auto;
+	}
+
+	.frmTblIndex td, .frmTblIndex th, .frmTblViewForum td, .frmTblViewForum th,
+	.frmTblViewTopic td, .frmTblViewTopic th, .frmTblPoll td, .frmTblPoll th {
+		vertical-align: middle;
+		padding: 8px;
+		border-right: 1px solid #777;
+		border-bottom: 1px solid #777;
+	}
+	
+	.frmTblIndex th, .frmTblViewForum th, .frmTblViewTopic th, .frmTblPoll th {
+		background-color: #700;
+		color: #fff;
+	}
+
+	.frmTblIndex td.category, .frmTblViewForum td.category, .frmTblViewTopic td.category, .frmTblPoll td.category {
+		background-color: #eee;
+		font-weight: bold;
+		font-size: 127%;
+	}
+	
+	.frmTblViewTopic tr.even1 td, .frmTblViewTopic tr.even2 td, .frmTblViewTopic tr.even3 td {
+		background-color: #eef;
+	}
+	
+	.frmTblViewTopic td {
+		vertical-align: top;
+	}
+	
+	.frmTblIndex td h2 {
+		margin: 0;
+		padding: 0;
+		font-size: 120%;
+	}
+	
+	.frmTblIndex td p {
+		margin: 0;
+		padding: 8px 0 0 0;
+	}
+	
+	.frmTblPoll th {
+		background-color: #555;
+	}
+
+
+

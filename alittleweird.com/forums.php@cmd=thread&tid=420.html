@@ -1,0 +1,512 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Energy Flow?</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Energy Flow?</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Energy Flow?</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">RazSh18</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=510&amp;ref=1213120644" width="110" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9206" style="width: 100%; overflow: auto; min-height: 125px;">Hey guys, I have a question which I hope you can answer it : <br />
+<br />
+As you know ( or at least I learned ) , energy is flowing in circles through the body. <br />
+But when we do a psi-ball there is a magnetic resistance between our hands which sets the opposite of flowing energy through the body.<br />
+<br />
+Can someone explain please? </div>
+		<textarea style="display: none;" id="desctxt_9206">Hey guys, I have a question which I hope you can answer it : 
+
+As you know ( or at least I learned ) , energy is flowing in circles through the body. 
+But when we do a psi-ball there is a magnetic resistance between our hands which sets the opposite of flowing energy through the body.
+
+Can someone explain please?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Falcon</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=521&amp;ref=1241106812" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9213" style="width: 100%; overflow: auto; min-height: 125px;">Is energy flowing in circles through the body?<br />
+And.. about the psi-ball, I don&#039;t know if that&#039;s about magnetic resistance, but when I&#039;m generiting heat or coldness between my hands.. is that a magnetic resistance?<br />
+<br />
+Uhm.. could you explain a little bit more what you mean please?<br />
+<br />
+F.</div>
+		<textarea style="display: none;" id="desctxt_9213">Is energy flowing in circles through the body?
+And.. about the psi-ball, I don&#039;t know if that&#039;s about magnetic resistance, but when I&#039;m generiting heat or coldness between my hands.. is that a magnetic resistance?
+
+Uhm.. could you explain a little bit more what you mean please?
+
+F.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">RazSh18</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=510&amp;ref=1213120644" width="110" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9215" style="width: 100%; overflow: auto; min-height: 125px;">I kind of read it in some article so I can&#039;t explain more than I do, but the consept is that when we face each palm to the other the palms would try to touch each other to create moving energy between the palms ( that&#039;s the theory Iv&#039;e read ) .<br />
+<br />
+So when I tried it I got megnetic pulse that opposed the will of the palms to create contact. <br />
+<br />
+That&#039;s the best I can explain. Sorry </div>
+		<textarea style="display: none;" id="desctxt_9215">I kind of read it in some article so I can&#039;t explain more than I do, but the consept is that when we face each palm to the other the palms would try to touch each other to create moving energy between the palms ( that&#039;s the theory Iv&#039;e read ) .
+
+So when I tried it I got megnetic pulse that opposed the will of the palms to create contact. 
+
+That&#039;s the best I can explain. Sorry</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Falcon</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=521&amp;ref=1241106812" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9216" style="width: 100%; overflow: auto; min-height: 125px;">Ah nvm, I&#039;m no expert on this, so I just thought: &#039;Huh? What tha heck!?!&#039; :P<br />
+But, I don&#039;t know, I think you should ask Erik about this kinda stuff.. :\<br />
+<br />
+F.</div>
+		<textarea style="display: none;" id="desctxt_9216">Ah nvm, I&#039;m no expert on this, so I just thought: &#039;Huh? What tha heck!?!&#039; :P
+But, I don&#039;t know, I think you should ask Erik about this kinda stuff.. :\
+
+F.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">daslickest</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=565&amp;ref=1214163153" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9324" style="width: 100%; overflow: auto; min-height: 125px;">I get the same magnetic resistance.</div>
+		<textarea style="display: none;" id="desctxt_9324">I get the same magnetic resistance.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">runical</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9332" style="width: 100%; overflow: auto; min-height: 125px;">could you tell where you read this article? post a link if you read it on the internet? I&#039;d like to read it.</div>
+		<textarea style="display: none;" id="desctxt_9332">could you tell where you read this article? post a link if you read it on the internet? I&#039;d like to read it.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9376" style="width: 100%; overflow: auto; min-height: 125px;">The Circles through the body is a common Eastern Belief. It also says that every organ in the body balances off another. One is Ying, the other Yang. They both produce an energy which then flows in a circular path (the ying-yang). It&#039;s funny that you would mention this because it pertains to advanced healing. </div>
+		<textarea style="display: none;" id="desctxt_9376">The Circles through the body is a common Eastern Belief. It also says that every organ in the body balances off another. One is Ying, the other Yang. They both produce an energy which then flows in a circular path (the ying-yang). It&#039;s funny that you would mention this because it pertains to advanced healing.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">ryan</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=610&amp;ref=1214463002" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9455" style="width: 100%; overflow: auto; min-height: 125px;">Maybe that&#039;s why most people don&#039;t normally make psiballs? <br />
+If it would stop the natural flow of one&#039;s energy,<br />
+perhaps that&#039;s what makes it so uncommon.<br />
+<br />
+Unnatural in the same way facilitated transport of nutrient through cell membranes is unnatural I mean.<br />
+<br />
+It goes against what nature wants, but it can happen.</div>
+		<textarea style="display: none;" id="desctxt_9455">Maybe that&#039;s why most people don&#039;t normally make psiballs? 
+If it would stop the natural flow of one&#039;s energy,
+perhaps that&#039;s what makes it so uncommon.
+
+Unnatural in the same way facilitated transport of nutrient through cell membranes is unnatural I mean.
+
+It goes against what nature wants, but it can happen.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9476" style="width: 100%; overflow: auto; min-height: 125px;">You&#039;d have to understand more about the eastern sciences/philosophy before you drew that conclusion. First of all, They referred to any feeling or effect that caused any form of change as energy (and in essence, it is), they weren&#039;t as specific about energy as western science is.<br />
+<br />
+As for the last comment you made, I don&#039;t feel that anything goes against what nature wants because nature doesn&#039;t want anything. Nature is something free of ego or duality.<br />
+<br />
+I personally think that people normally don&#039;t make psiballs because the act of making one is just controlling muscles one wouldn&#039;t normally use.<br />
+<br />
+I recently learned in health class that we have muscles in the skin that either contract or relax, cant remember which, anyway, they cause the blood vessels to widen and radiate heat, I figure that if we can control these muscles, it&#039;s a possible explanation for psi-balls. If that&#039;s the case, it brings a Psion down to one key belief, Energy has more characteristics then just + and -.<br />
+<br />
+I think that if energy has more characteristics than just positive and negative, one could accurately prove the rest of psionics. In effect, the brain always reads energy and controls it, It&#039;s Scientific fact.<br />
+<br />
+I need to study that a little more, but I think it makes sense. As for controlling energy outside of the body, we&#039;re not completely insulated (70% of the body is made up of water, a conductor, not an insulator.) <br />
+<br />
+Now if I could prove a collective subconscious, I would be a millionaire right now ^_^.</div>
+		<textarea style="display: none;" id="desctxt_9476">You&#039;d have to understand more about the eastern sciences/philosophy before you drew that conclusion. First of all, They referred to any feeling or effect that caused any form of change as energy (and in essence, it is), they weren&#039;t as specific about energy as western science is.
+
+As for the last comment you made, I don&#039;t feel that anything goes against what nature wants because nature doesn&#039;t want anything. Nature is something free of ego or duality.
+
+I personally think that people normally don&#039;t make psiballs because the act of making one is just controlling muscles one wouldn&#039;t normally use.
+
+I recently learned in health class that we have muscles in the skin that either contract or relax, cant remember which, anyway, they cause the blood vessels to widen and radiate heat, I figure that if we can control these muscles, it&#039;s a possible explanation for psi-balls. If that&#039;s the case, it brings a Psion down to one key belief, Energy has more characteristics then just + and -.
+
+I think that if energy has more characteristics than just positive and negative, one could accurately prove the rest of psionics. In effect, the brain always reads energy and controls it, It&#039;s Scientific fact.
+
+I need to study that a little more, but I think it makes sense. As for controlling energy outside of the body, we&#039;re not completely insulated (70% of the body is made up of water, a conductor, not an insulator.) 
+
+Now if I could prove a collective subconscious, I would be a millionaire right now ^_^.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">ryan</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=610&amp;ref=1214463002" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9478" style="width: 100%; overflow: auto; min-height: 125px;">Akio: &quot;As for the last comment you made, I don&#039;t feel that anything goes against what nature wants because nature doesn&#039;t want anything. Nature is something free of ego or duality.&quot;<br />
+<br />
+No, you didn&#039;t quite understand.  Going against what nature wants is a scientific expression, to determine that without some kind of extra energy or will, it doesn&#039;t happen.  It doesn&#039;t mean nature has an &quot;ego&quot; or &quot;duality&quot;.<br />
+<br />
+If you followed up with the facilitated transport idea that I put in there,<br />
+inter-membrane proteins must use ATP (cellular energy currency) in order to trap a nutrients and bring it into the cell through the cell membrane, rather than diffusion, which requires no ATP (cellular energy currency) to bring nutrients into the cell through the cell membrane.  <br />
+The latter is &quot;what nature wants&quot; because it happens without any extra applied energy or will, while by contrast facilitated transport does.<br />
+<br />
+So, my idea here isn&#039;t that &quot;making psiballs is unnatural and shouldn&#039;t happen&quot; it is &quot;making psiballs requires energy or will power&quot; so in otherwords, it doesn&#039;t happen without us making it happen.  <br />
+<br />
+So, the idea of having to choose to develop your psionic muscle, in most cases, perfectly fits with the idea that making psiballs isn&#039;t what nature wants because rather than it just happening with psiballs forming all around us all the time without our consent, we must choose to apply energy/thought/will to making a psiball and practicing our psionic muscle.  <br />
+<br />
+SO with that said, <br />
+if energy flows naturally (as in normally) in circles through our body, then a magnetic resistence that you, and others on this forum, have experienced could be explained by the fact that when you make a psiball, you must apply energy/thought/will to making it, thus it goes against the natural (normal) flow of energy in your body and through your energy/thought/will it creates a magnetic resistence because it is unnatural (meaning you had to apply energy/thought/will in order to form a psiball, not that it shouldn&#039;t happen or that nature as a force of ego and duality doesn&#039;t want it to happen).<br />
+<br />
+In nature, when a magnetic resistence is formed, it is because something is pushing to opposing forces against each other or applying eneryg/force<br />
+(eg: when we push the opposite sides of a magnet together, we feel the magnetic resistence because we are pushing it together, however without us pushing it, there would be no magnetic force for us to feel.  Thus, it only happend because we applied extra thought/energy/will/force in order to make it happen)<br />
+<br />
+<br />
+</div>
+		<textarea style="display: none;" id="desctxt_9478">Akio: &quot;As for the last comment you made, I don&#039;t feel that anything goes against what nature wants because nature doesn&#039;t want anything. Nature is something free of ego or duality.&quot;
+
+No, you didn&#039;t quite understand.  Going against what nature wants is a scientific expression, to determine that without some kind of extra energy or will, it doesn&#039;t happen.  It doesn&#039;t mean nature has an &quot;ego&quot; or &quot;duality&quot;.
+
+If you followed up with the facilitated transport idea that I put in there,
+inter-membrane proteins must use ATP (cellular energy currency) in order to trap a nutrients and bring it into the cell through the cell membrane, rather than diffusion, which requires no ATP (cellular energy currency) to bring nutrients into the cell through the cell membrane.  
+The latter is &quot;what nature wants&quot; because it happens without any extra applied energy or will, while by contrast facilitated transport does.
+
+So, my idea here isn&#039;t that &quot;making psiballs is unnatural and shouldn&#039;t happen&quot; it is &quot;making psiballs requires energy or will power&quot; so in otherwords, it doesn&#039;t happen without us making it happen.  
+
+So, the idea of having to choose to develop your psionic muscle, in most cases, perfectly fits with the idea that making psiballs isn&#039;t what nature wants because rather than it just happening with psiballs forming all around us all the time without our consent, we must choose to apply energy/thought/will to making a psiball and practicing our psionic muscle.  
+
+SO with that said, 
+if energy flows naturally (as in normally) in circles through our body, then a magnetic resistence that you, and others on this forum, have experienced could be explained by the fact that when you make a psiball, you must apply energy/thought/will to making it, thus it goes against the natural (normal) flow of energy in your body and through your energy/thought/will it creates a magnetic resistence because it is unnatural (meaning you had to apply energy/thought/will in order to form a psiball, not that it shouldn&#039;t happen or that nature as a force of ego and duality doesn&#039;t want it to happen).
+
+In nature, when a magnetic resistence is formed, it is because something is pushing to opposing forces against each other or applying eneryg/force
+(eg: when we push the opposite sides of a magnet together, we feel the magnetic resistence because we are pushing it together, however without us pushing it, there would be no magnetic force for us to feel.  Thus, it only happend because we applied extra thought/energy/will/force in order to make it happen)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Amaroq</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=606&amp;ref=1214436810" width="95" height="95" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9480" style="width: 100%; overflow: auto; min-height: 125px;">If psionics isn&#039;t what nature wants, then why do we have it? Why did we evolve the ability to use it?<br />
+<br />
+I think that everyone is born with the potential. Maybe our ancestors had to use it to survive day to day life. They didn&#039;t have the knowledge or control we had. Just enough instinct to give themselves the edge they needed to survive.<br />
+<br />
+In short, cavemen didn&#039;t sit around making psiballs to catch their next meal. But perhaps they had just enough psychic instinct to allow themselves to survive otherwise normally.</div>
+		<textarea style="display: none;" id="desctxt_9480">If psionics isn&#039;t what nature wants, then why do we have it? Why did we evolve the ability to use it?
+
+I think that everyone is born with the potential. Maybe our ancestors had to use it to survive day to day life. They didn&#039;t have the knowledge or control we had. Just enough instinct to give themselves the edge they needed to survive.
+
+In short, cavemen didn&#039;t sit around making psiballs to catch their next meal. But perhaps they had just enough psychic instinct to allow themselves to survive otherwise normally.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">ryan</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=610&amp;ref=1214463002" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9493" style="width: 100%; overflow: auto; min-height: 125px;">Please understand.<br />
+The phrase &quot;what nature wants&quot; is an expression.<br />
+If nature wants something, then it can happen without any extra willpower/energy/thought/force/etc, anything.<br />
+It doesn&#039;t mean nature wants, in the sense that people want.<br />
+<br />
+What nature &quot;doesn&#039;t want&quot; is also an expression.<br />
+If nature doesn&#039;t want something, then it happens with the addition or presence of willpower/energy/thought/force/etc.<br />
+<br />
+When you pick up a rock, you become a &quot;force against nature&quot;.<br />
+(Another expression, please don&#039;t take it literally).<br />
+When you think, &quot;Pick up that rock.&quot; You are applying chemical energy to your brain and muscles so that your brain can send signals down to your nervous system and your muscles can contract and retract. <br />
+When you pick up that rock, you are going against gravity, pushing against the force, and you are using your energy/thought/willpower to do so.<br />
+That is against nature because without the addition of such things, it would have never happend.<br />
+<br />
+The rock, just sitting there in peace, isn&#039;t against nature because that happens naturally, it doesn&#039;t require any energy/thought/willpower for the rock to just sit there.  It just is.<br />
+<br />
+---<br />
+<br />
+Here&#039;s the trippy part, in order for something to be alive, does it require energy?<br />
+Yes. Lots and lots of energy.<br />
+In fact, 1 of the 5 requirements of life is &quot;Energy Use and Metabolism&quot;.<br />
+That means, life is not natural.<br />
+<br />
+Do I mean that it shouldn&#039;t happen?<br />
+No, it just means, it takes something extra for life to happen.<br />
+<br />
+Example:<br />
+You collect every molecule necessary to make a human being, put all those molecules in one place, does that big clump of molecules become a human being? No.<br />
+<br />
+This topic is getting a little bit too close to the theory of evolution and its numerous debates, so, I think I&#039;ll stop here.  <br />
+I hope someone got it.</div>
+		<textarea style="display: none;" id="desctxt_9493">Please understand.
+The phrase &quot;what nature wants&quot; is an expression.
+If nature wants something, then it can happen without any extra willpower/energy/thought/force/etc, anything.
+It doesn&#039;t mean nature wants, in the sense that people want.
+
+What nature &quot;doesn&#039;t want&quot; is also an expression.
+If nature doesn&#039;t want something, then it happens with the addition or presence of willpower/energy/thought/force/etc.
+
+When you pick up a rock, you become a &quot;force against nature&quot;.
+(Another expression, please don&#039;t take it literally).
+When you think, &quot;Pick up that rock.&quot; You are applying chemical energy to your brain and muscles so that your brain can send signals down to your nervous system and your muscles can contract and retract. 
+When you pick up that rock, you are going against gravity, pushing against the force, and you are using your energy/thought/willpower to do so.
+That is against nature because without the addition of such things, it would have never happend.
+
+The rock, just sitting there in peace, isn&#039;t against nature because that happens naturally, it doesn&#039;t require any energy/thought/willpower for the rock to just sit there.  It just is.
+
+---
+
+Here&#039;s the trippy part, in order for something to be alive, does it require energy?
+Yes. Lots and lots of energy.
+In fact, 1 of the 5 requirements of life is &quot;Energy Use and Metabolism&quot;.
+That means, life is not natural.
+
+Do I mean that it shouldn&#039;t happen?
+No, it just means, it takes something extra for life to happen.
+
+Example:
+You collect every molecule necessary to make a human being, put all those molecules in one place, does that big clump of molecules become a human being? No.
+
+This topic is getting a little bit too close to the theory of evolution and its numerous debates, so, I think I&#039;ll stop here.  
+I hope someone got it.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Eyeofnight</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=588&amp;ref=1214542721" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9497" style="width: 100%; overflow: auto; min-height: 125px;">I understand what you mean Ryan.<br />
+<br />
+As for the magnetic resistance, I do feel this but am not 100% sure whether it is related to psionics or our bodies. We constantly have electric pulses going through our bodies by way of nerves which could explain why one would feel this, if one is concentrating on both hands perhaps more of this charge is being sent to them, if only a small amount more. Since this charge is probably of the same sort then they would repel each other. <br />
+<br />
+Or I could be completely wrong, I do not have the experience in biology nor enough experience in psionics to truly get a firm idea.<br />
+<br />
+Just a possibility, also I apologize for my wording, I am horrible at putting my thoughts into words.<br />
+<br />
+Also, The energy circulation sounds interesting, I believe I shall search for information on that. Thank you for giving saomething interesting thing to learn about.</div>
+		<textarea style="display: none;" id="desctxt_9497">I understand what you mean Ryan.
+
+As for the magnetic resistance, I do feel this but am not 100% sure whether it is related to psionics or our bodies. We constantly have electric pulses going through our bodies by way of nerves which could explain why one would feel this, if one is concentrating on both hands perhaps more of this charge is being sent to them, if only a small amount more. Since this charge is probably of the same sort then they would repel each other. 
+
+Or I could be completely wrong, I do not have the experience in biology nor enough experience in psionics to truly get a firm idea.
+
+Just a possibility, also I apologize for my wording, I am horrible at putting my thoughts into words.
+
+Also, The energy circulation sounds interesting, I believe I shall search for information on that. Thank you for giving saomething interesting thing to learn about.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Eyeofnight, 4 years, 6 months ago<br />Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9917" style="width: 100%; overflow: auto; min-height: 125px;">I understand what you mean ryan, now that I look at it, however, I will say that The expression strains the ears of almost every spiritualist or Buddhist who read it.<br />
+ ^_^<br />
+</div>
+		<textarea style="display: none;" id="desctxt_9917">I understand what you mean ryan, now that I look at it, however, I will say that The expression strains the ears of almost every spiritualist or Buddhist who read it.
+ ^_^</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=420" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 30 queries. 0.335 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

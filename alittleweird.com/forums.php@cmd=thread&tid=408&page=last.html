@@ -1,0 +1,366 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; New catagory</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=4.html">A Little Weird.com</a> &raquo; New catagory</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">New catagory</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Jeffrey</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=283&amp;ref=1213976987" width="116" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9014" style="width: 100%; overflow: auto; min-height: 125px;">We should have a new section dedicated to people who need help.<br />
+<br />
+I&#039;ve seen a lot of people asking for help in the Weird Discussion, and I don&#039;t find it very weird. :-P</div>
+		<textarea style="display: none;" id="desctxt_9014">We should have a new section dedicated to people who need help.
+
+I&#039;ve seen a lot of people asking for help in the Weird Discussion, and I don&#039;t find it very weird. :-P</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">zephyr</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=338&amp;ref=1244008069" width="109" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9043" style="width: 100%; overflow: auto; min-height: 125px;">You bring up a very valid point. It would be nice to ask questions and actually get help. I have a feeling though that Sean didn&#039;t add that feature because the purpose of this site isn&#039;t to learn and teach psionics then it would be called Psigog II insead of A Little Weird. I do agree with you though a help section would be very nice.</div>
+		<textarea style="display: none;" id="desctxt_9043">You bring up a very valid point. It would be nice to ask questions and actually get help. I have a feeling though that Sean didn&#039;t add that feature because the purpose of this site isn&#039;t to learn and teach psionics then it would be called Psigog II insead of A Little Weird. I do agree with you though a help section would be very nice.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Nin10doFan</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=426&amp;ref=1233878811" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9064" style="width: 100%; overflow: auto; min-height: 125px;">+1 for this idea...</div>
+		<textarea style="display: none;" id="desctxt_9064">+1 for this idea...</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">zephyr</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=338&amp;ref=1244008069" width="109" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9075" style="width: 100%; overflow: auto; min-height: 125px;">Actually if you agree with Jeffery on this matter, Nin10doFan, it would make it +2 ^_^</div>
+		<textarea style="display: none;" id="desctxt_9075">Actually if you agree with Jeffery on this matter, Nin10doFan, it would make it +2 ^_^</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Dash</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=69&amp;ref=1224210982" width="113" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9084" style="width: 100%; overflow: auto; min-height: 125px;">+3...<br />
+<br />
+... dude..</div>
+		<textarea style="display: none;" id="desctxt_9084">+3...
+
+... dude..</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">zephyr</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=338&amp;ref=1244008069" width="109" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9093" style="width: 100%; overflow: auto; min-height: 125px;">Dash you need an Avatar....dude -_^</div>
+		<textarea style="display: none;" id="desctxt_9093">Dash you need an Avatar....dude -_^</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Dash</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=69&amp;ref=1224210982" width="113" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9103" style="width: 100%; overflow: auto; min-height: 125px;">i do have an avatar.. your computers just too crappy to pick it up..<br />
+<br />
+unless of course im the only one that sees it  &gt;.&gt;<br />
+can i get a head count? lol<br />
+<br />
+(not you zephyr..)</div>
+		<textarea style="display: none;" id="desctxt_9103">i do have an avatar.. your computers just too crappy to pick it up..
+
+unless of course im the only one that sees it  &gt;.&gt;
+can i get a head count? lol
+
+(not you zephyr..)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">zephyr</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=338&amp;ref=1244008069" width="109" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9105" style="width: 100%; overflow: auto; min-height: 125px;">All I see is an empty blue box with a little white box in the upper left corner and the word &quot;Avatar&quot; to the right of the white box. If that&#039;s your avatar then that&#039;s a bit creepy o.O<br />
+<br />
+If that&#039;s not it then enlighten me and explain the wonder that is your avatar -_^</div>
+		<textarea style="display: none;" id="desctxt_9105">All I see is an empty blue box with a little white box in the upper left corner and the word &quot;Avatar&quot; to the right of the white box. If that&#039;s your avatar then that&#039;s a bit creepy o.O
+
+If that&#039;s not it then enlighten me and explain the wonder that is your avatar -_^</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Nin10doFan</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=426&amp;ref=1233878811" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9118" style="width: 100%; overflow: auto; min-height: 125px;">I see it...</div>
+		<textarea style="display: none;" id="desctxt_9118">I see it...</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Sean</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=2&amp;ref=1214247941" width="117" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9119" style="width: 100%; overflow: auto; min-height: 125px;">I see your avatar fine.<br />
+<br />
+Also, zephyr hit the nail on the head with his first post.  I don&#039;t really want ALW to become a place flooded with questions about how to do this or that.  Now - I don&#039;t mind when people ask those questions.  It&#039;s just that I don&#039;t want the focus of ALW to shift over to helping newbies out, which is what I fear would begin to happen with a dedicated forum.<br />
+<br />
+Again, I have no problems helping newbies out.  I just don&#039;t want that to be a drawing point.<br />
+<br />
+~Sean</div>
+		<textarea style="display: none;" id="desctxt_9119">I see your avatar fine.
+
+Also, zephyr hit the nail on the head with his first post.  I don&#039;t really want ALW to become a place flooded with questions about how to do this or that.  Now - I don&#039;t mind when people ask those questions.  It&#039;s just that I don&#039;t want the focus of ALW to shift over to helping newbies out, which is what I fear would begin to happen with a dedicated forum.
+
+Again, I have no problems helping newbies out.  I just don&#039;t want that to be a drawing point.
+
+~Sean</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">zephyr</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=338&amp;ref=1244008069" width="109" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9122" style="width: 100%; overflow: auto; min-height: 125px;">Hahaha I was actually right =P Can I get a AMEN!!! <br />
+<br />
+O.O....<br />
+<br />
+...(Looks over his shoulder and whispers to Jeffery) You could always start a new forum topic with a hidden agenda -_^ </div>
+		<textarea style="display: none;" id="desctxt_9122">Hahaha I was actually right =P Can I get a AMEN!!! 
+
+O.O....
+
+...(Looks over his shoulder and whispers to Jeffery) You could always start a new forum topic with a hidden agenda -_^</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Jeffrey</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=283&amp;ref=1213976987" width="116" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9156" style="width: 100%; overflow: auto; min-height: 125px;">&gt;~&gt;<br />
+<br />
+...<br />
+<br />
+<br />
+Sorry, Sean. &#039;wasn&#039;t in for PsiPog. But yeah, it wasn&#039;t exactly for me, it was for the other people, cause it can get abit annoying seeing &#039;LOLTKHALPPLZKTHXBAI&#039; and the sort.<br />
+<br />
+Even IF I am one of them who need them.<br />
+<br />
+<br />
+Hah.</div>
+		<textarea style="display: none;" id="desctxt_9156">&gt;~&gt;
+
+...
+
+
+Sorry, Sean. &#039;wasn&#039;t in for PsiPog. But yeah, it wasn&#039;t exactly for me, it was for the other people, cause it can get abit annoying seeing &#039;LOLTKHALPPLZKTHXBAI&#039; and the sort.
+
+Even IF I am one of them who need them.
+
+
+Hah.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=408" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 28 queries. 0.272 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

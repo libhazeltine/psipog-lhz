@@ -1,0 +1,377 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Black Cat</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Black Cat</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Black Cat</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Kube</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=952&amp;ref=1249239276" width="102" height="77" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_14470" style="width: 100%; overflow: auto; min-height: 125px;">This is probably some kind of hallucination from being tired, but here it is anyway:<br />
+<br />
+The other day (A few weeks ago, actually), I woke up, as usual, and I looked at my feet while still in bed. On the bed, I saw a cat rolled up by my feet and looking at me. That&#039;s no unusual sight, as my cat often sleeps there and is black, like the one I saw, except it has white spots on its paws, but I thought my vision was blurry because I had just woken up. Then I looked outside my room and saw, standing in the hallway, my black and white cat. So I thought &quot;What the hell?!&quot; and looked over at my feet where the other one had been and it was gone. I was not dreaming and I keep thinking about it.<br />
+<br />
+I&#039;m not superstitious, but black cats are supposed to mean bad luck... Which hasn&#039;t manifested in any way since, except for the fact that I hit that part of my training where I have lots of trouble doing PK, but that could mean nothing. Also, I&#039;m not sure about it just being a hallucination, because when it looked at me I had that weird, intense feeling you sometimes get when you&#039;re being watched. I don&#039;t know if you&#039;ve ever felt that, but it can&#039;t really be mistaken for any other feeling.<br />
+<br />
+Anyway, I wanted to know your opinion on that. I&#039;m not sure what I should make of it and I can&#039;t get it off my mind.</div>
+		<textarea style="display: none;" id="desctxt_14470">This is probably some kind of hallucination from being tired, but here it is anyway:
+
+The other day (A few weeks ago, actually), I woke up, as usual, and I looked at my feet while still in bed. On the bed, I saw a cat rolled up by my feet and looking at me. That&#039;s no unusual sight, as my cat often sleeps there and is black, like the one I saw, except it has white spots on its paws, but I thought my vision was blurry because I had just woken up. Then I looked outside my room and saw, standing in the hallway, my black and white cat. So I thought &quot;What the hell?!&quot; and looked over at my feet where the other one had been and it was gone. I was not dreaming and I keep thinking about it.
+
+I&#039;m not superstitious, but black cats are supposed to mean bad luck... Which hasn&#039;t manifested in any way since, except for the fact that I hit that part of my training where I have lots of trouble doing PK, but that could mean nothing. Also, I&#039;m not sure about it just being a hallucination, because when it looked at me I had that weird, intense feeling you sometimes get when you&#039;re being watched. I don&#039;t know if you&#039;ve ever felt that, but it can&#039;t really be mistaken for any other feeling.
+
+Anyway, I wanted to know your opinion on that. I&#039;m not sure what I should make of it and I can&#039;t get it off my mind.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">DigGil</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_14472" style="width: 100%; overflow: auto; min-height: 125px;">As you moved your eyes the cat might have shift, they are very agile. Maybe it&#039;s from a neighbour. Apart from that I would ask if you had some experience before on clairvoyance or something similar.<br />
+I would doubt hallucination due tiredness or something like that if it happened to me unless it were hypnagogia.</div>
+		<textarea style="display: none;" id="desctxt_14472">As you moved your eyes the cat might have shift, they are very agile. Maybe it&#039;s from a neighbour. Apart from that I would ask if you had some experience before on clairvoyance or something similar.
+I would doubt hallucination due tiredness or something like that if it happened to me unless it were hypnagogia.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Kube</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=952&amp;ref=1249239276" width="102" height="77" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_14475" style="width: 100%; overflow: auto; min-height: 125px;">Well, the neighbors don&#039;t have a black cat and I can&#039;t see how it would&#039;ve sneaked into the house unnoticed.<br />
+<br />
+But yes, I did have a couple of premonitions in the past, while dreaming. Nothing really important, just a dream about a guy at school breaking his arm, which happened not long after, and I know I had another one once, but I can&#039;t remember wht it was about :P I also have these deja-vu experiences sometimes where I can tell people what they&#039;re about to say. I heard something about deja-vus being just the brain recording an event twice at the same time, but that it is only a premonition if you can stop the person and tell them exactly what&#039;s going to happen next. Or else it&#039;s just the brain playing tricks on you.<br />
+<br />
+It could have been hypnogogia, as you mentioned. I&#039;ve never experienced it while waking up, though, is it possible?</div>
+		<textarea style="display: none;" id="desctxt_14475">Well, the neighbors don&#039;t have a black cat and I can&#039;t see how it would&#039;ve sneaked into the house unnoticed.
+
+But yes, I did have a couple of premonitions in the past, while dreaming. Nothing really important, just a dream about a guy at school breaking his arm, which happened not long after, and I know I had another one once, but I can&#039;t remember wht it was about :P I also have these deja-vu experiences sometimes where I can tell people what they&#039;re about to say. I heard something about deja-vus being just the brain recording an event twice at the same time, but that it is only a premonition if you can stop the person and tell them exactly what&#039;s going to happen next. Or else it&#039;s just the brain playing tricks on you.
+
+It could have been hypnogogia, as you mentioned. I&#039;ve never experienced it while waking up, though, is it possible?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">sh</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_14479" style="width: 100%; overflow: auto; min-height: 125px;">That was a premonition of a bad luck to happen. Also its an astral pet that appeared for ya.</div>
+		<textarea style="display: none;" id="desctxt_14479">That was a premonition of a bad luck to happen. Also its an astral pet that appeared for ya.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Kube</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=952&amp;ref=1249239276" width="102" height="77" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_14483" style="width: 100%; overflow: auto; min-height: 125px;">Could you please elaborate on the subject of astral pet? What&#039;s it supposed to be exactly? &#039;Cause I haven&#039;t seen it since, although I&#039;ve often found myself looking for it or turning around, expecting to see it right there... As if I felt its presence.</div>
+		<textarea style="display: none;" id="desctxt_14483">Could you please elaborate on the subject of astral pet? What&#039;s it supposed to be exactly? &#039;Cause I haven&#039;t seen it since, although I&#039;ve often found myself looking for it or turning around, expecting to see it right there... As if I felt its presence.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">sh</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_14485" style="width: 100%; overflow: auto; min-height: 125px;">Astral pets are an animal of the higher or lower plane that has no actual form except to the owner. If you saw one, then they would shift to the eye. They can also get into anywhere. My friend has one, it seems it is a strange feline, but it appears to him when it wants to sometimes.<br />
+</div>
+		<textarea style="display: none;" id="desctxt_14485">Astral pets are an animal of the higher or lower plane that has no actual form except to the owner. If you saw one, then they would shift to the eye. They can also get into anywhere. My friend has one, it seems it is a strange feline, but it appears to him when it wants to sometimes.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Kube</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=952&amp;ref=1249239276" width="102" height="77" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_14487" style="width: 100%; overflow: auto; min-height: 125px;">Alright! Thanks for the info ^_^ I&#039;ll try to pick up more information on the subject and see if I can make contact with it again.<br />
+<br />
+EDIT: Never mind, the info is scarce... I&#039;ll try to do it on my own... Unless I&#039;m not supposed to?</div>
+		<textarea style="display: none;" id="desctxt_14487">Alright! Thanks for the info ^_^ I&#039;ll try to pick up more information on the subject and see if I can make contact with it again.
+
+EDIT: Never mind, the info is scarce... I&#039;ll try to do it on my own... Unless I&#039;m not supposed to?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Kube, 3 years, 4 months ago<br />Posted 3 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Everchanging</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=973&amp;ref=1244663608" width="118" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_14492" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Kube:</em><br />
+Alright! Thanks for the info ^_^ I&#039;ll try to pick up more information on the subject and see if I can make contact with it again.<br />
+<br />
+EDIT: Never mind, the info is scarce... I&#039;ll try to do it on my own... Unless I&#039;m not supposed to?</div>Hmm, what do you mean youre not supposed to?<br />
+<br />
+</div>
+		<textarea style="display: none;" id="desctxt_14492">[quote][i]posted by Kube:[/i]
+Alright! Thanks for the info ^_^ I&#039;ll try to pick up more information on the subject and see if I can make contact with it again.
+
+EDIT: Never mind, the info is scarce... I&#039;ll try to do it on my own... Unless I&#039;m not supposed to?[/quote]
+Hmm, what do you mean youre not supposed to?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">sh</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_14493" style="width: 100%; overflow: auto; min-height: 125px;">Ya can do anything ya wanna. I don&#039;t see why there would be reason not too.</div>
+		<textarea style="display: none;" id="desctxt_14493">Ya can do anything ya wanna. I don&#039;t see why there would be reason not too.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Kube</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=952&amp;ref=1249239276" width="102" height="77" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_14495" style="width: 100%; overflow: auto; min-height: 125px;">Alright :P I wasn&#039;t sure, is all... If its another entity and all, maybe there&#039;s some stuff you&#039;re not supposed to do like trying to find it, but thanks for the help, now I can put my efforts in figuring out how to see it again.</div>
+		<textarea style="display: none;" id="desctxt_14495">Alright :P I wasn&#039;t sure, is all... If its another entity and all, maybe there&#039;s some stuff you&#039;re not supposed to do like trying to find it, but thanks for the help, now I can put my efforts in figuring out how to see it again.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">DigGil</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_14503" style="width: 100%; overflow: auto; min-height: 125px;">hypnagogia is supposed to be while waking up...<br />
+Anyway, the theory of Astral Pet seems far-fetched to me, but I  agree in giving it a try.</div>
+		<textarea style="display: none;" id="desctxt_14503">hypnagogia is supposed to be while waking up...
+Anyway, the theory of Astral Pet seems far-fetched to me, but I  agree in giving it a try.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Kube</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=952&amp;ref=1249239276" width="102" height="77" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_14520" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by DigGil:</em><br />
+hypnagogia is supposed to be while waking up...</div>Really? :O I only have it when I&#039;m falling asleep... Most of the time, it&#039;s intentional, as I&#039;m trying to do OBE&#039;s, but it&#039;s not so rare that I get it randomly at night... It&#039;s never occurred in the morning.</div>
+		<textarea style="display: none;" id="desctxt_14520">[quote][i]posted by DigGil:[/i]
+hypnagogia is supposed to be while waking up...
+[/quote]
+
+Really? :O I only have it when I&#039;m falling asleep... Most of the time, it&#039;s intentional, as I&#039;m trying to do OBE&#039;s, but it&#039;s not so rare that I get it randomly at night... It&#039;s never occurred in the morning.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Everchanging</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=973&amp;ref=1244663608" width="118" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_14521" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by DigGil:</em><br />
+hypnagogia is supposed to be while waking up...<br />
+Anyway, the theory of Astral Pet seems far-fetched to me, but I  agree in giving it a try.</div>I must not agree, since it happens to me while falling asleep, it supoosed to be state beetwen sleep and being awake so why not both?</div>
+		<textarea style="display: none;" id="desctxt_14521">[quote][i]posted by DigGil:[/i]
+hypnagogia is supposed to be while waking up...
+Anyway, the theory of Astral Pet seems far-fetched to me, but I  agree in giving it a try.[/quote]
+
+I must not agree, since it happens to me while falling asleep, it supoosed to be state beetwen sleep and being awake so why not both?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Everchanging, 3 years, 4 months ago<br />Posted 3 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">DigGil</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_14528" style="width: 100%; overflow: auto; min-height: 125px;">Maybe I should check my definitions...</div>
+		<textarea style="display: none;" id="desctxt_14528">Maybe I should check my definitions...</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">wierdcuriosity123</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=995&amp;ref=1248385170" width="107" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_14671" style="width: 100%; overflow: auto; min-height: 125px;">hmm sounds interesting well sorta realated i got a fortune cookie a while ago lol and it read &quot;you will be showered with good luck&quot; so far its all true this tsuff happens and its so wierd to think about it...i beleive maybe the universe is telling you sothing about the future to come </div>
+		<textarea style="display: none;" id="desctxt_14671">hmm sounds interesting well sorta realated i got a fortune cookie a while ago lol and it read &quot;you will be showered with good luck&quot; so far its all true this tsuff happens and its so wierd to think about it...i beleive maybe the universe is telling you sothing about the future to come</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 4 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=801" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 31 queries. 0.345 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

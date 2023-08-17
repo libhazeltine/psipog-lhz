@@ -1,0 +1,486 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Meditation</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Meditation</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Meditation</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Ether</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=578&amp;ref=1213490800" width="125" height="105" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9066" style="width: 100%; overflow: auto; min-height: 125px;">Ok so we all know that regular meditation is important for developing Psionic abilities, but in our world today it is often hard to find time to meditate. I know that when I do take the time to meditate my Psionic abilities dramatically increase. Do you experience the same thing? Do you meditate daily? We also know that there are many different techniques for meditation. Some people like to just be quiet and still. I have even heard of people just starring at a shinny object. What do you like to do? Share your techniques or interesting experiences with meditation.</div>
+		<textarea style="display: none;" id="desctxt_9066">Ok so we all know that regular meditation is important for developing Psionic abilities, but in our world today it is often hard to find time to meditate. I know that when I do take the time to meditate my Psionic abilities dramatically increase. Do you experience the same thing? Do you meditate daily? We also know that there are many different techniques for meditation. Some people like to just be quiet and still. I have even heard of people just starring at a shinny object. What do you like to do? Share your techniques or interesting experiences with meditation.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Ether, 4 years, 6 months ago<br />Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9068" style="width: 100%; overflow: auto; min-height: 125px;">I practice walking meditations, it&#039;s something I just picked up. When I walk, I sync up my breath, heartbeat, and steps. This allows m to meditate onthe go ^_^.<br />
+<br />
+If I have the time I deffinitely try to have a full meditation once a day. If for nothing else it is truely relaxing.</div>
+		<textarea style="display: none;" id="desctxt_9068">I practice walking meditations, it&#039;s something I just picked up. When I walk, I sync up my breath, heartbeat, and steps. This allows m to meditate onthe go ^_^.
+
+If I have the time I deffinitely try to have a full meditation once a day. If for nothing else it is truely relaxing.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Zectra</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=96&amp;ref=1203358450" width="94" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9081" style="width: 100%; overflow: auto; min-height: 125px;">It&#039;s summer time :D<br />
+<br />
+I wake up every morning at 4:00am, jog three miles into the mountain, and meditate for a number of hours, get up and train in kung fu for another few hours, then sit down to meditate again before I jog home again sometimes around noon.<br />
+<br />
+If you don&#039;t have time, you can make time.  <br />
+<br />
+As for the rest of the year, I do a kinda like Akio;<br />
+If there&#039;s a few moments during the day where you&#039;re waiting for something to happen, or you&#039;re just bored,  then meditate.<br />
+I do it a lot while I wait for professors to grade college papers. No one notices ;)<br />
+<br />
+If you don&#039;t have anything else to do at that time except for rock back and forth on your feet, why not do something productive and mediate?</div>
+		<textarea style="display: none;" id="desctxt_9081">It&#039;s summer time :D
+
+I wake up every morning at 4:00am, jog three miles into the mountain, and meditate for a number of hours, get up and train in kung fu for another few hours, then sit down to meditate again before I jog home again sometimes around noon.
+
+If you don&#039;t have time, you can make time.  
+
+As for the rest of the year, I do a kinda like Akio;
+If there&#039;s a few moments during the day where you&#039;re waiting for something to happen, or you&#039;re just bored,  then meditate.
+I do it a lot while I wait for professors to grade college papers. No one notices ;)
+
+If you don&#039;t have anything else to do at that time except for rock back and forth on your feet, why not do something productive and mediate?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Zectra, 4 years, 6 months ago<br />Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Ether</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=578&amp;ref=1213490800" width="125" height="105" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9082" style="width: 100%; overflow: auto; min-height: 125px;">I agree. You can meditate whenever. My Biology professor was the slowest grader. I can relate.  What is your favorite method? I like to just sit and feel energy pulse within me. It&#039;s very relaxing.</div>
+		<textarea style="display: none;" id="desctxt_9082">I agree. You can meditate whenever. My Biology professor was the slowest grader. I can relate.  What is your favorite method? I like to just sit and feel energy pulse within me. It&#039;s very relaxing.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">RazSh18</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=510&amp;ref=1213120644" width="110" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9085" style="width: 100%; overflow: auto; min-height: 125px;">I like to sit on my bed against the wall and breath slowly ( 3 second of inhales and exhales ) with my eyes open so I won&#039;t get scared if someone knock the door.<br />
+<br />
+I also have problem finding the time to meditate. I&#039;m in big tests called Bagrut so all I can do is study, and not to mention my family are knocking on my door which force me to answer and break to med. <br />
+<br />
+poor little me :P <br />
+Quick question : How do you know when you reached Theta state? </div>
+		<textarea style="display: none;" id="desctxt_9085">I like to sit on my bed against the wall and breath slowly ( 3 second of inhales and exhales ) with my eyes open so I won&#039;t get scared if someone knock the door.
+
+I also have problem finding the time to meditate. I&#039;m in big tests called Bagrut so all I can do is study, and not to mention my family are knocking on my door which force me to answer and break to med. 
+
+poor little me :P 
+Quick question : How do you know when you reached Theta state?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Ether</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=578&amp;ref=1213490800" width="125" height="105" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9086" style="width: 100%; overflow: auto; min-height: 125px;">I believe that once the Theta brain state is reached you will have no physical awareness of your body or the physical world. I have reached what I believe to be this state before and it is very difficult to describe. It&#039;s almost as if you have been sucked inside yourself, like your body is giant room. It&#039;s a very pleasant feeling, and although this may be different for everyone it&#039;s just what I have experienced.</div>
+		<textarea style="display: none;" id="desctxt_9086">I believe that once the Theta brain state is reached you will have no physical awareness of your body or the physical world. I have reached what I believe to be this state before and it is very difficult to describe. It&#039;s almost as if you have been sucked inside yourself, like your body is giant room. It&#039;s a very pleasant feeling, and although this may be different for everyone it&#039;s just what I have experienced.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Ether, 4 years, 6 months ago<br />Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Nin10doFan</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=426&amp;ref=1233878811" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9087" style="width: 100%; overflow: auto; min-height: 125px;">I meditated for about 15 minutes, and tried to spin the psi wheel, and it wouldn&#039;t spin!  I at least got a little from it without meditating before, but now nothing!  =P</div>
+		<textarea style="display: none;" id="desctxt_9087">I meditated for about 15 minutes, and tried to spin the psi wheel, and it wouldn&#039;t spin!  I at least got a little from it without meditating before, but now nothing!  =P</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Zorro</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=582&amp;ref=1213557004" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9089" style="width: 100%; overflow: auto; min-height: 125px;">I have found that meditation increases my ablities as well. As for time, well, make time, add it into your day. For example, I sometimes find myself semi-meditating while I drive, paying attention to nothing but the road and my car, feeling the speed and focusing on the power of it all. The dashed lines on a road provide a great &quot;beat&quot; as you pass them at a constant rate, just like feeling your heartbeat, but visual. I am sure that this is probably not a great thing to do...I just do it naturally.<br />
+<br />
+I have also used candle meditation, it is rather simple. Just light a candle and focus on the flame, as a bright and shining point, all that matters. It sounds strange, but it most definately clears my mind.<br />
+<br />
+My favorite thing to do though is to just move energy. I start by drawing it to my hands and then just play it throughout my body. Again, rather simple and basic, but an awesome feeling that gives you a sense of the power you hold. I know that for me this works better than just trying to focus on nothing. Drawing up the energy and then feeling it move and moving it naturally clears the mind. I don&#039;t know that this counts as meditation, but I consider it to be because it gives the same results as meditation plus an additional awareness, and it improves all of my psionic abilities, particuarly work with the psi wheel.</div>
+		<textarea style="display: none;" id="desctxt_9089">I have found that meditation increases my ablities as well. As for time, well, make time, add it into your day. For example, I sometimes find myself semi-meditating while I drive, paying attention to nothing but the road and my car, feeling the speed and focusing on the power of it all. The dashed lines on a road provide a great &quot;beat&quot; as you pass them at a constant rate, just like feeling your heartbeat, but visual. I am sure that this is probably not a great thing to do...I just do it naturally.
+
+I have also used candle meditation, it is rather simple. Just light a candle and focus on the flame, as a bright and shining point, all that matters. It sounds strange, but it most definately clears my mind.
+
+My favorite thing to do though is to just move energy. I start by drawing it to my hands and then just play it throughout my body. Again, rather simple and basic, but an awesome feeling that gives you a sense of the power you hold. I know that for me this works better than just trying to focus on nothing. Drawing up the energy and then feeling it move and moving it naturally clears the mind. I don&#039;t know that this counts as meditation, but I consider it to be because it gives the same results as meditation plus an additional awareness, and it improves all of my psionic abilities, particuarly work with the psi wheel.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Zorro, 4 years, 6 months ago<br />Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Nin10doFan</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=426&amp;ref=1233878811" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9094" style="width: 100%; overflow: auto; min-height: 125px;">What am I supposed to be thinking when I meditate?  Because obviously whatever I did previously did not work...     </div>
+		<textarea style="display: none;" id="desctxt_9094">What am I supposed to be thinking when I meditate?  Because obviously whatever I did previously did not work...</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">cinderwild</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9101" style="width: 100%; overflow: auto; min-height: 125px;">Technically you aren&#039;t supposed to be thinking anything. It&#039;s all about feeling, not thought. That said, you can still &#039;meditate&#039; on matters, as a way of saying it, to learn more about something and clearing your mind of negative feelings and thoughts is a great way to &#039;reset&#039; yourself. It&#039;s not all about just psionics.</div>
+		<textarea style="display: none;" id="desctxt_9101">Technically you aren&#039;t supposed to be thinking anything. It&#039;s all about feeling, not thought. That said, you can still &#039;meditate&#039; on matters, as a way of saying it, to learn more about something and clearing your mind of negative feelings and thoughts is a great way to &#039;reset&#039; yourself. It&#039;s not all about just psionics.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">RazSh18</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=510&amp;ref=1213120644" width="110" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9111" style="width: 100%; overflow: auto; min-height: 125px;"> @ Nin10doFan<br />
+<br />
+In another explenation to cinderwild :<br />
+If you read this words without repeat them in our head ,<br />
+ than you are in focus (=the nothing you think in meditation ).<br />
+<br />
+for example: <br />
+know those times when you read a book, and suddenly realize you read more than you noticed and didn&#039;t understood nothing of that reading? that&#039;s &quot;think of nothing&quot; <br />
+<br />
+Tip: when you meditate, anything that run to your mind, say to it &quot; I&#039;ll handle you later, bye now&quot; . after few eventrully all of them will disapear.<br />
+<br />
+Good luck :P  <br />
+ </div>
+		<textarea style="display: none;" id="desctxt_9111">@ Nin10doFan
+
+In another explenation to cinderwild :
+If you read this words without repeat them in our head ,
+ than you are in focus (=the nothing you think in meditation ).
+
+for example: 
+know those times when you read a book, and suddenly realize you read more than you noticed and didn&#039;t understood nothing of that reading? that&#039;s &quot;think of nothing&quot; 
+
+Tip: when you meditate, anything that run to your mind, say to it &quot; I&#039;ll handle you later, bye now&quot; . after few eventrully all of them will disapear.
+
+Good luck :P</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Zectra</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=96&amp;ref=1203358450" width="94" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9113" style="width: 100%; overflow: auto; min-height: 125px;">Ether~<br />
+&quot;What is your favorite method?&quot;<br />
+<br />
+Well, the type of meditation I use most of the time, is a no-mind meditation.<br />
+Basically,  not thinking or feeling in any way at all; very similar to the border of sleeping and waking, or when you &quot;click out&quot;.<br />
+<br />
+I&#039;ve been doing it for a while now, so it&#039;s easier for me to just go straight into it in a calm environment.<br />
+<br />
+The method I used though, since I was in the middle of forest, was to listen to the sounds of birds and animals around me..  slowly cutting out each group, until I only noticed one group of chirps.  Then finally, cut that group out too.<br />
+<br />
+After that, I just hold it until I come out.<br />
+The point of no-mind is what you could consider &quot;pure&quot; meditation. The other parts, where you still feel etc, is still meditation, but I wouldn&#039;t say it&#039;s a pure state personally.</div>
+		<textarea style="display: none;" id="desctxt_9113">Ether~
+&quot;What is your favorite method?&quot;
+
+Well, the type of meditation I use most of the time, is a no-mind meditation.
+Basically,  not thinking or feeling in any way at all; very similar to the border of sleeping and waking, or when you &quot;click out&quot;.
+
+I&#039;ve been doing it for a while now, so it&#039;s easier for me to just go straight into it in a calm environment.
+
+The method I used though, since I was in the middle of forest, was to listen to the sounds of birds and animals around me..  slowly cutting out each group, until I only noticed one group of chirps.  Then finally, cut that group out too.
+
+After that, I just hold it until I come out.
+The point of no-mind is what you could consider &quot;pure&quot; meditation. The other parts, where you still feel etc, is still meditation, but I wouldn&#039;t say it&#039;s a pure state personally.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Falcon</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=521&amp;ref=1241106812" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9214" style="width: 100%; overflow: auto; min-height: 125px;">In Psionics, Meditation is meant to be able to concentrate better on these things, right?<br />
+I don&#039;t know if meditation &#039;increases your Psionic abillites&#039;, but for me, it doesn&#039;t.<br />
+For me it&#039;s easily to concentrate on these things, so Í don&#039;t agree that regular meditation improves your Psionic abillities.<br />
+<br />
+F.</div>
+		<textarea style="display: none;" id="desctxt_9214">In Psionics, Meditation is meant to be able to concentrate better on these things, right?
+I don&#039;t know if meditation &#039;increases your Psionic abillites&#039;, but for me, it doesn&#039;t.
+For me it&#039;s easily to concentrate on these things, so Í don&#039;t agree that regular meditation improves your Psionic abillities.
+
+F.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Linked</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=19&amp;ref=1203762048" width="89" height="38" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9260" style="width: 100%; overflow: auto; min-height: 125px;">could you consider it meditation if you realize you weren&#039;t breathing for about 20 mins? &gt;,.,&gt;</div>
+		<textarea style="display: none;" id="desctxt_9260">could you consider it meditation if you realize you weren&#039;t breathing for about 20 mins? &gt;,.,&gt;</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Zectra</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=96&amp;ref=1203358450" width="94" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9262" style="width: 100%; overflow: auto; min-height: 125px;">Yeah, depending on the situation, probably.<br />
+There are certain states of meditation in which your breathing and heart beat.. aswell as a few other things slow down to a near stop.</div>
+		<textarea style="display: none;" id="desctxt_9262">Yeah, depending on the situation, probably.
+There are certain states of meditation in which your breathing and heart beat.. aswell as a few other things slow down to a near stop.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Linked</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=19&amp;ref=1203762048" width="89" height="38" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9263" style="width: 100%; overflow: auto; min-height: 125px;">well it was a few times over the past few years when i was playing vidieo games and realized that i hadn&#039;t taken a single breat(not that i hadn&#039;t noticed it but i realy didn&#039;t) over a time of 5 - 20 mins.</div>
+		<textarea style="display: none;" id="desctxt_9263">well it was a few times over the past few years when i was playing vidieo games and realized that i hadn&#039;t taken a single breat(not that i hadn&#039;t noticed it but i realy didn&#039;t) over a time of 5 - 20 mins.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9266" style="width: 100%; overflow: auto; min-height: 125px;">I&#039;ve had that happen before too, it&#039;s really weird that you mention that cause I have that kind of feeling when I really get into something. Ofcourse, you should realise that sometimes you can skip processess in your body to make it run more efficiently. i.e. when you breathe, you don&#039;t have any concience thought in the breathing you are doing because the thing you are doing is taking up more space.<br />
+<br />
+To make an anology to computers, sometimes certain aspacts of process aren&#039;t completed to their fullest because the processess running take up to much RAM.<br />
+<br />
+Ussually if a process cannot fully complete itself, there is an error. In the case of your body, this error notification is your body telling you &quot;hey... you&#039;re not breathing... you should really take breath...Now...COME ON MAN!!! DON&#039;T QUIT ON ME!!! BREATHE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!&quot; and so on.<br />
+<br />
+OFcourse... there is always the fatal error if you don&#039;t breath, either passing out (rebooting) or death (shut down).<br />
+<br />
+<br />
+</div>
+		<textarea style="display: none;" id="desctxt_9266">I&#039;ve had that happen before too, it&#039;s really weird that you mention that cause I have that kind of feeling when I really get into something. Ofcourse, you should realise that sometimes you can skip processess in your body to make it run more efficiently. i.e. when you breathe, you don&#039;t have any concience thought in the breathing you are doing because the thing you are doing is taking up more space.
+
+To make an anology to computers, sometimes certain aspacts of process aren&#039;t completed to their fullest because the processess running take up to much RAM.
+
+Ussually if a process cannot fully complete itself, there is an error. In the case of your body, this error notification is your body telling you &quot;hey... you&#039;re not breathing... you should really take breath...Now...COME ON MAN!!! DON&#039;T QUIT ON ME!!! BREATHE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!&quot; and so on.
+
+OFcourse... there is always the fatal error if you don&#039;t breath, either passing out (rebooting) or death (shut down).</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Linked</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=19&amp;ref=1203762048" width="89" height="38" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9268" style="width: 100%; overflow: auto; min-height: 125px;">Good point, and too many computer anologies XD<br />
+too bad theres no way to &quot;restart&quot; your body after it &quot;shuts down&quot; :P</div>
+		<textarea style="display: none;" id="desctxt_9268">Good point, and too many computer anologies XD
+too bad theres no way to &quot;restart&quot; your body after it &quot;shuts down&quot; :P</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Ixien</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=571&amp;ref=1213416713" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9271" style="width: 100%; overflow: auto; min-height: 125px;">@Ether<br />
+<br />
+My favorite meditation method consists on focusing in my body&#039;s energy flux and visualizing that my energy is getting amplified each time I breath. The effects are that my energy becomes stronger and the my energetic sensibility increases. I do this meditation often when I&#039;m going to practice psychokinesis.</div>
+		<textarea style="display: none;" id="desctxt_9271">@Ether
+
+My favorite meditation method consists on focusing in my body&#039;s energy flux and visualizing that my energy is getting amplified each time I breath. The effects are that my energy becomes stronger and the my energetic sensibility increases. I do this meditation often when I&#039;m going to practice psychokinesis.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9273" style="width: 100%; overflow: auto; min-height: 125px;">sure there is! Think about the term &quot;legally dead&quot;, and how it applies to brain and open heart surgery. No, what I&#039;m really worried about is reformatting your hard drive...</div>
+		<textarea style="display: none;" id="desctxt_9273">sure there is! Think about the term &quot;legally dead&quot;, and how it applies to brain and open heart surgery. No, what I&#039;m really worried about is reformatting your hard drive...</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=410" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 36 queries. 0.277 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

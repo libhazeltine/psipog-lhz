@@ -1,0 +1,458 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Spontaneous Combustion... no, really</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=2.html">Weird Videos</a> &raquo; Spontaneous Combustion... no, really</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Spontaneous Combustion... no, really</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">EyeBall</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=277&amp;ref=1223270537" width="125" height="120" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11894" style="width: 100%; overflow: auto; min-height: 125px;"> <a href="http://www.youtube.com/watch?v=RQGYGrpab7s" target="_blank">http://www.youtube.com/watch?v=RQGYGrpab7s</a><br />
+<br />
+I was watching this thing on tv, and there was a documentary on spontaneous human combustion...<br />
+As funny and amazing as it may sound... apparently, its happened before.<br />
+Watch part 2-5 to see more.<br />
+<br />
+A paranormal event or a case of carelessness?</div>
+		<textarea style="display: none;" id="desctxt_11894">http://www.youtube.com/watch?v=RQGYGrpab7s
+
+I was watching this thing on tv, and there was a documentary on spontaneous human combustion...
+As funny and amazing as it may sound... apparently, its happened before.
+Watch part 2-5 to see more.
+
+A paranormal event or a case of carelessness?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">ShadowmanX</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11895" style="width: 100%; overflow: auto; min-height: 125px;">Holy Crap. I think its like the guy in the end says: psychic suicide<br />
+<br />
+The Acupuncturist is cool. I guess I try this Shock thing</div>
+		<textarea style="display: none;" id="desctxt_11895">Holy Crap. I think its like the guy in the end says: psychic suicide
+
+The Acupuncturist is cool. I guess I try this Shock thing</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Trick</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=744&amp;ref=1221873234" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11899" style="width: 100%; overflow: auto; min-height: 125px;">Its not paranormal. You eat too much salt and dry things, dont drink water, your body will overheat over a while. Eventually it leads to your body getting so hot it sets on fire. Its almost impossible, but its happened. Thats why its so rare. </div>
+		<textarea style="display: none;" id="desctxt_11899">Its not paranormal. You eat too much salt and dry things, dont drink water, your body will overheat over a while. Eventually it leads to your body getting so hot it sets on fire. Its almost impossible, but its happened. Thats why its so rare.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Faceless</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=570&amp;ref=1214279440" width="83" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11907" style="width: 100%; overflow: auto; min-height: 125px;">well i dont think that its the &quot;correct formula&quot; you have but pretty close. maybe add a lot of alcohal (igonre that spelinlg). And maybe add a cigarette, or some heat source. i gues it would also be a possibility that they ate a lot of salt and then ate something very acidic such as coca-cola or lemonade, and then drank water. That is probably less likly but... O ya iff you didnt get what that was getting to the table salt (NaCl)breaking done initially then adding the coca-cola(many unbonded H+ ions) then water (H2O) the H+ would bind to the Cl- to produce HCl leaving plain old sodium(Na+) and Oxygen (O) Then the sodium would be oxidized and then the remaining H+ would react to the sodium producing an explosion and then adding alcohol to our system as another fule...CABOOM! dead. Ya kinda unlikly but a lot of the time alcohol was found to be around or ingested at the time...<br />
+so theres maybe some insite. <br />
+BTW i didnt watch that video yet. So sorry to bore you to death.<br />
+The Great faceless Chemist... i mean puppeteer...  </div>
+		<textarea style="display: none;" id="desctxt_11907">well i dont think that its the &quot;correct formula&quot; you have but pretty close. maybe add a lot of alcohal (igonre that spelinlg). And maybe add a cigarette, or some heat source. i gues it would also be a possibility that they ate a lot of salt and then ate something very acidic such as coca-cola or lemonade, and then drank water. That is probably less likly but... O ya iff you didnt get what that was getting to the table salt (NaCl)breaking done initially then adding the coca-cola(many unbonded H+ ions) then water (H2O) the H+ would bind to the Cl- to produce HCl leaving plain old sodium(Na+) and Oxygen (O) Then the sodium would be oxidized and then the remaining H+ would react to the sodium producing an explosion and then adding alcohol to our system as another fule...CABOOM! dead. Ya kinda unlikly but a lot of the time alcohol was found to be around or ingested at the time...
+so theres maybe some insite. 
+BTW i didnt watch that video yet. So sorry to bore you to death.
+The Great faceless Chemist... i mean puppeteer...</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">ShadowmanX</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11909" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Faceless:</em><br />
+...CABOOM! dead.</div>It didn&#039;t look like there were explosions. I guess that would have caused more damage than there was ^^</div>
+		<textarea style="display: none;" id="desctxt_11909">[quote][i]posted by Faceless:[/i]
+...CABOOM! dead.[/quote]
+
+It didn&#039;t look like there were explosions. I guess that would have caused more damage than there was ^^</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Raathuus</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=764&amp;ref=1259211929" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11916" style="width: 100%; overflow: auto; min-height: 125px;">Ooh!  Ooh!  I have a theory!  Static electricity!  Notice how the remains were on a carpet?  Dragging her feet + dry air + ignitable substances in the body such as nitrogen = Spontaneous Human Combustion.  Simple really (just a theory though... for now!)</div>
+		<textarea style="display: none;" id="desctxt_11916">Ooh!  Ooh!  I have a theory!  Static electricity!  Notice how the remains were on a carpet?  Dragging her feet + dry air + ignitable substances in the body such as nitrogen = Spontaneous Human Combustion.  Simple really (just a theory though... for now!)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">ShadowmanX</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11920" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Raathuus:</em><br />
+Ooh!  Ooh!  I have a theory!  Static electricity!  Notice how the remains were on a carpet?  Dragging her feet + dry air + ignitable substances in the body such as nitrogen = Spontaneous Human Combustion.  Simple really (just a theory though... for now!)</div>Interesting, but I don&#039;t think you get temperatures of about 1500 degrees like that. As I remember they said to use about this temperature to cremate corpses and they it also takes hours than.<br />
+<br />
+And one more thing: How could a fire cause sausages in a fridge to boil, when it didn&#039;t even burn the whole house?</div>
+		<textarea style="display: none;" id="desctxt_11920">[quote][i]posted by Raathuus:[/i]
+Ooh!  Ooh!  I have a theory!  Static electricity!  Notice how the remains were on a carpet?  Dragging her feet + dry air + ignitable substances in the body such as nitrogen = Spontaneous Human Combustion.  Simple really (just a theory though... for now!)[/quote]
+
+Interesting, but I don&#039;t think you get temperatures of about 1500 degrees like that. As I remember they said to use about this temperature to cremate corpses and they it also takes hours than.
+
+And one more thing: How could a fire cause sausages in a fridge to boil, when it didn&#039;t even burn the whole house?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Atrum</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=755&amp;ref=1221862716" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11922" style="width: 100%; overflow: auto; min-height: 125px;">Well...WE are made up of Carbon, Sodium, and a few other flamable things...On top of that our bodies produce electricity in order to just move.<br />
+<br />
+Why CANT we be flammable?</div>
+		<textarea style="display: none;" id="desctxt_11922">Well...WE are made up of Carbon, Sodium, and a few other flamable things...On top of that our bodies produce electricity in order to just move.
+
+Why CANT we be flammable?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">ShadowmanX</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11924" style="width: 100%; overflow: auto; min-height: 125px;">Well, 65% Water makes the whole thing a lot more difficult. Sure the water can vaporize, but normal people would roll on the floor if they burn, or at least run like wild and not just stay sitting in the chair and waiting for their death.</div>
+		<textarea style="display: none;" id="desctxt_11924">Well, 65% Water makes the whole thing a lot more difficult. Sure the water can vaporize, but normal people would roll on the floor if they burn, or at least run like wild and not just stay sitting in the chair and waiting for their death.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Corpse</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=553&amp;ref=1239824741" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11925" style="width: 100%; overflow: auto; min-height: 125px;">That was very strange. I wonder if there have ever been any similar events.</div>
+		<textarea style="display: none;" id="desctxt_11925">That was very strange. I wonder if there have ever been any similar events.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Atrum</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=755&amp;ref=1221862716" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11934" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Corpse:</em><br />
+That was very strange. I wonder if there have ever been any similar events.</div>There has. Just do youe research.</div>
+		<textarea style="display: none;" id="desctxt_11934">[quote][i]posted by Corpse:[/i]
+That was very strange. I wonder if there have ever been any similar events.[/quote]
+
+There has. Just do youe research.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">EyeBall</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=277&amp;ref=1223270537" width="125" height="120" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11940" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by ShadowmanX:</em><br />
+Well, 65% Water makes the whole thing a lot more difficult. Sure the water can vaporize, but normal people would roll on the floor if they burn, or at least run like wild and not just stay sitting in the chair and waiting for their death.</div>Well, maybe they completely passed out or maybe even died due to the same chemicals that caused the spontaneous combustion?<br />
+<br />
+That or they were too lazy to get up from their comfy seat.</div>
+		<textarea style="display: none;" id="desctxt_11940">[quote][i]posted by ShadowmanX:[/i]
+Well, 65% Water makes the whole thing a lot more difficult. Sure the water can vaporize, but normal people would roll on the floor if they burn, or at least run like wild and not just stay sitting in the chair and waiting for their death.[/quote]
+
+Well, maybe they completely passed out or maybe even died due to the same chemicals that caused the spontaneous combustion?
+
+That or they were too lazy to get up from their comfy seat.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">NewAgeAlchemist</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=459&amp;ref=1207160982" width="125" height="20" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12213" style="width: 100%; overflow: auto; min-height: 125px;">The story with the eye witness is clearly the most interesting and thought provoking, but unfortunately with two different stories about the state of the body there would need to be more information to draw a conclusion. The rest really seem to fit well with the wick theory.</div>
+		<textarea style="display: none;" id="desctxt_12213">The story with the eye witness is clearly the most interesting and thought provoking, but unfortunately with two different stories about the state of the body there would need to be more information to draw a conclusion. The rest really seem to fit well with the wick theory.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">jack</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=759&amp;ref=1220326318" width="125" height="105" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12303" style="width: 100%; overflow: auto; min-height: 125px;">A long time ago I thought it was caused by pyrokinesis,=3 but nah...<br />
+I think it&#039;s the aliens XD<br />
+<br />
+btw how could you burn up your entire body just b/c of something u eat...the quatity of water in your body won&#039;t go under 50% percent or else you ganna be dead from dehydration muahahahaha. The temperature to burn an entire body to ashes in two minutes is insanely high that it is almost like an nature event...<br />
+<br />
+</div>
+		<textarea style="display: none;" id="desctxt_12303">A long time ago I thought it was caused by pyrokinesis,=3 but nah...
+I think it&#039;s the aliens XD
+
+btw how could you burn up your entire body just b/c of something u eat...the quatity of water in your body won&#039;t go under 50% percent or else you ganna be dead from dehydration muahahahaha. The temperature to burn an entire body to ashes in two minutes is insanely high that it is almost like an nature event...</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">ShadowmanX</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12304" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by jack:</em><br />
+A long time ago I thought it was caused by pyrokinesis,=3 but nah...<br />
+I think it&#039;s the aliens XD<br />
+<br />
+btw how could you burn up your entire body just b/c of something u eat...the quatity of water in your body won&#039;t go under 50% percent or else you ganna be dead from dehydration muahahahaha. The temperature to burn an entire body to ashes in two minutes is insanely high that it is almost like an nature event...</div>Thats why I dont think it was because of something they ate. Also there were a lot of experts who had no idea how this could have happened, so the eating idea far from right. I guess they would have thought of this if this was a possibility.<br />
+<br />
+And aliens? Nah, I sceptic about this. If aliens visit us then why should they do something like that? Wouldn&#039;t taking over the planet be easier? or do you think we are just their 	guinea pigs?</div>
+		<textarea style="display: none;" id="desctxt_12304">[quote][i]posted by jack:[/i]
+A long time ago I thought it was caused by pyrokinesis,=3 but nah...
+I think it&#039;s the aliens XD
+
+btw how could you burn up your entire body just b/c of something u eat...the quatity of water in your body won&#039;t go under 50% percent or else you ganna be dead from dehydration muahahahaha. The temperature to burn an entire body to ashes in two minutes is insanely high that it is almost like an nature event...[/quote]
+
+Thats why I dont think it was because of something they ate. Also there were a lot of experts who had no idea how this could have happened, so the eating idea far from right. I guess they would have thought of this if this was a possibility.
+
+And aliens? Nah, I sceptic about this. If aliens visit us then why should they do something like that? Wouldn&#039;t taking over the planet be easier? or do you think we are just their 	guinea pigs?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Jacob</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=949&amp;ref=1248714472" width="108" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13801" style="width: 100%; overflow: auto; min-height: 125px;">Pyrokineses lol!.<br />
+<br />
+No, but seriouslly wtff, it scares the living crap out of me.<br />
+I wonder how many of you actually watched all the parts, I usually have a well thought theory about most things.<br />
+<br />
+scientifically you could try and look what could cause enough energy to disolve a body. Then sigarets/matches, kerosine is not the case.<br />
+The only thing natural that would cause this energy would be a lightning bolt<br />
+Or a nuclear reaction, basically when you look at hiroshima or nagasaki some people close enough to the blast where completely disolved aswell.</div>
+		<textarea style="display: none;" id="desctxt_13801">Pyrokineses lol!.
+
+No, but seriouslly wtff, it scares the living crap out of me.
+I wonder how many of you actually watched all the parts, I usually have a well thought theory about most things.
+
+scientifically you could try and look what could cause enough energy to disolve a body. Then sigarets/matches, kerosine is not the case.
+The only thing natural that would cause this energy would be a lightning bolt
+Or a nuclear reaction, basically when you look at hiroshima or nagasaki some people close enough to the blast where completely disolved aswell.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Jacob, 3 years, 6 months ago<br />Posted 3 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Mr. Tallyman</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=910&amp;ref=1239146679" width="80" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13843" style="width: 100%; overflow: auto; min-height: 125px;">wine has sulphates in it.. sulpher = matches</div>
+		<textarea style="display: none;" id="desctxt_13843">wine has sulphates in it.. sulpher = matches</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">DeathMinister</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=56&amp;ref=1208895944" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_14819" style="width: 100%; overflow: auto; min-height: 125px;">Well, there are many things in a persons body that can generate an enormous amount of energy.  Example being the well known point that by splitting an atom in the human body, or any other substance, you get some of the largest explosions known to man.  I know that&#039;s probably not what is happening here, but with so much potential energy inside everything it&#039;s easy to see where the source of spontaneous human combustion might come from.<br />
+<br />
+Also, the Illusion of Reality video Mr. Tallyman posted <a href="forums.php@cmd=thread&amp;tid=780.html" target="_blank" title="http://alittleweird.com/forums.php?cmd=thread&amp;tid=780">here</a> shows a lot about the strange characteristics particles and energy have in our universe.  Not exactly sure how all of this could work together to make spontaneous human combustion, but I don&#039;t think anyone really does.  Just an idea.</div>
+		<textarea style="display: none;" id="desctxt_14819">Well, there are many things in a persons body that can generate an enormous amount of energy.  Example being the well known point that by splitting an atom in the human body, or any other substance, you get some of the largest explosions known to man.  I know that&#039;s probably not what is happening here, but with so much potential energy inside everything it&#039;s easy to see where the source of spontaneous human combustion might come from.
+
+Also, the Illusion of Reality video Mr. Tallyman posted [url=http://alittleweird.com/forums.php?cmd=thread&amp;tid=780]here[/url] shows a lot about the strange characteristics particles and energy have in our universe.  Not exactly sure how all of this could work together to make spontaneous human combustion, but I don&#039;t think anyone really does.  Just an idea.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Jacob</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=949&amp;ref=1248714472" width="108" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_14826" style="width: 100%; overflow: auto; min-height: 125px;">There is also a possibility that this is all made up.</div>
+		<textarea style="display: none;" id="desctxt_14826">There is also a possibility that this is all made up.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Trick</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=744&amp;ref=1221873234" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_14936" style="width: 100%; overflow: auto; min-height: 125px;">I thought so too, until my health teacher told me about it. She pretty much said what I said in my last post. </div>
+		<textarea style="display: none;" id="desctxt_14936">I thought so too, until my health teacher told me about it. She pretty much said what I said in my last post.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 3 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=600" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 36 queries. 0.292 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

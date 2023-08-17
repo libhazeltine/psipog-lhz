@@ -1,0 +1,410 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; zero gravity shields</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; zero gravity shields</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">zero gravity shields</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">speeddemon92</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_15002" style="width: 100%; overflow: auto; min-height: 125px;">hey i was wondering if it was possible to make a zero gravity shield or a shield with less gravity than normal. i was wanting to make one to put around objects especially for flight. imagine what you could do with that. you could even use a construct to help control flight</div>
+		<textarea style="display: none;" id="desctxt_15002">hey i was wondering if it was possible to make a zero gravity shield or a shield with less gravity than normal. i was wanting to make one to put around objects especially for flight. imagine what you could do with that. you could even use a construct to help control flight</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">f3licks</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=848&amp;ref=1227833859" width="125" height="78" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_15003" style="width: 100%; overflow: auto; min-height: 125px;">Theoretically, maybe.<br />
+<br />
+But practically? No.</div>
+		<textarea style="display: none;" id="desctxt_15003">Theoretically, maybe.
+
+But practically? No.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">speeddemon92</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_15009" style="width: 100%; overflow: auto; min-height: 125px;">well i&#039;ve heard of it being done (i think it was back in the psipog forum but idk) i just wasn&#039;t sure if it really worked</div>
+		<textarea style="display: none;" id="desctxt_15009">well i&#039;ve heard of it being done (i think it was back in the psipog forum but idk) i just wasn&#039;t sure if it really worked</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Raathuus</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=764&amp;ref=1259211929" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_15013" style="width: 100%; overflow: auto; min-height: 125px;">As f3licks said, it would be theoretically possible.  The difficulty of executing it, though, would be quite a factor.</div>
+		<textarea style="display: none;" id="desctxt_15013">As f3licks said, it would be theoretically possible.  The difficulty of executing it, though, would be quite a factor.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">f3licks</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=848&amp;ref=1227833859" width="125" height="78" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_15014" style="width: 100%; overflow: auto; min-height: 125px;">Also, that&#039;s assuming that one can create anything that defies gravity.<br />
+<br />
+I&#039;m not sure where you&#039;d begin programming something like that.</div>
+		<textarea style="display: none;" id="desctxt_15014">Also, that&#039;s assuming that one can create anything that defies gravity.
+
+I&#039;m not sure where you&#039;d begin programming something like that.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">speeddemon92</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_15019" style="width: 100%; overflow: auto; min-height: 125px;">well if i find a way to do it i&#039;ll post it. hmm i wonder if it could be done by just making the shield block the force of gravity........hmmm. i&#039;ll be sure to post my results. (assuming i can make a shield. i haven&#039;t been able to program a construct well D=  )</div>
+		<textarea style="display: none;" id="desctxt_15019">well if i find a way to do it i&#039;ll post it. hmm i wonder if it could be done by just making the shield block the force of gravity........hmmm. i&#039;ll be sure to post my results. (assuming i can make a shield. i haven&#039;t been able to program a construct well D=  )</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Kube</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=952&amp;ref=1249239276" width="102" height="77" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_15021" style="width: 100%; overflow: auto; min-height: 125px;">Here&#039;s a way, it might be tough, though.<br />
+<br />
+You program the shield to apply a force that cancels out gravity, pointing towards the sky. It would be tough, though, because every object is attracted by gravity in different ways, so it would only have the right effect for the person who programmed it. It would also have to be one hell of a force, &#039;cause gravity, you probably noticed, is pretty strong :P<br />
+<br />
+(it would be better to apply a force a little under gravity so it doesn&#039;t really cancel it out, but crates microgravity like in orbit around the earth... if you completely canceled out gravity, you&#039;d find yourself attracted to the Moon....)</div>
+		<textarea style="display: none;" id="desctxt_15021">Here&#039;s a way, it might be tough, though.
+
+You program the shield to apply a force that cancels out gravity, pointing towards the sky. It would be tough, though, because every object is attracted by gravity in different ways, so it would only have the right effect for the person who programmed it. It would also have to be one hell of a force, &#039;cause gravity, you probably noticed, is pretty strong :P
+
+(it would be better to apply a force a little under gravity so it doesn&#039;t really cancel it out, but crates microgravity like in orbit around the earth... if you completely canceled out gravity, you&#039;d find yourself attracted to the Moon....)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">speeddemon92</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_15022" style="width: 100%; overflow: auto; min-height: 125px;">ok i&#039;ll try that soon. and i didn&#039;t think about the canceled gravity and going to the moon. glad you said that. XD<br />
+<br />
+i&#039;d be really cool if this will work imagine what you could do! floating cars (LOTS of work) and possibly staffs and broom sticks (though people will think your a witch or wizard if you&#039;re seen). though i think something like that would need some help with movement......hmmm physical would be something like fans or engines (rocket might be too much but a model plane is possible) or psychic would need either TK or macro-K. and you could even charge people to shield their stuff!!! .........man i&#039;m getting way too into this! XD</div>
+		<textarea style="display: none;" id="desctxt_15022">ok i&#039;ll try that soon. and i didn&#039;t think about the canceled gravity and going to the moon. glad you said that. XD
+
+i&#039;d be really cool if this will work imagine what you could do! floating cars (LOTS of work) and possibly staffs and broom sticks (though people will think your a witch or wizard if you&#039;re seen). though i think something like that would need some help with movement......hmmm physical would be something like fans or engines (rocket might be too much but a model plane is possible) or psychic would need either TK or macro-K. and you could even charge people to shield their stuff!!! .........man i&#039;m getting way too into this! XD</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">sh</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_15024" style="width: 100%; overflow: auto; min-height: 125px;">I have a suggestion, to ask first and don&#039;t assume people need it. If ya do things to peoples stuff without asking, there are multiple things that could happen.</div>
+		<textarea style="display: none;" id="desctxt_15024">I have a suggestion, to ask first and don&#039;t assume people need it. If ya do things to peoples stuff without asking, there are multiple things that could happen.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">f3licks</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=848&amp;ref=1227833859" width="125" height="78" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_15026" style="width: 100%; overflow: auto; min-height: 125px;">@ sh $ speeddemon92<br />
+<br />
+That&#039;s assuming this would actually work.<br />
+Even if you could somehow cancel gravity (which should be impossible)you&#039;d never be able to float entire cars, or anything bigger than a bit of dust.</div>
+		<textarea style="display: none;" id="desctxt_15026">@ sh $ speeddemon92
+
+That&#039;s assuming this would actually work.
+Even if you could somehow cancel gravity (which should be impossible)you&#039;d never be able to float entire cars, or anything bigger than a bit of dust.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Kube</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=952&amp;ref=1249239276" width="102" height="77" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_15029" style="width: 100%; overflow: auto; min-height: 125px;">how would it be impossible? gravity is just another force like when you push an object with your hands, or with PK, so a force powerful enough could cancel gravity, although it would have to be very strong.<br />
+<br />
+Here&#039;s an example: 548.8 N is the force needed to cancel out my attraction to the Earth.<br />
+<br />
+Therefore, if you&#039;d apply that force within the shield, pushing under my feet, you&#039;d get an anti-gravity shield around me. (objects lighter than me in that spot would start floating and eventually leave the shield, though...</div>
+		<textarea style="display: none;" id="desctxt_15029">how would it be impossible? gravity is just another force like when you push an object with your hands, or with PK, so a force powerful enough could cancel gravity, although it would have to be very strong.
+
+Here&#039;s an example: 548.8 N is the force needed to cancel out my attraction to the Earth.
+
+Therefore, if you&#039;d apply that force within the shield, pushing under my feet, you&#039;d get an anti-gravity shield around me. (objects lighter than me in that spot would start floating and eventually leave the shield, though...</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Kube, 3 years, 3 months ago<br />Posted 3 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">sh</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_15039" style="width: 100%; overflow: auto; min-height: 125px;">Aha, I wonder if its entirely possible, though I could possibly achieve it within a few weeks. Is it worth it?</div>
+		<textarea style="display: none;" id="desctxt_15039">Aha, I wonder if its entirely possible, though I could possibly achieve it within a few weeks. Is it worth it?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">speeddemon92</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_15041" style="width: 100%; overflow: auto; min-height: 125px;">i think so and whoever does it will probably be the first to successfully do that so who know you might even become famous. (just a thought that got off track) btw could you remind me how to find the force in newtons again? (its been 2 years since i learned that so i forgot)</div>
+		<textarea style="display: none;" id="desctxt_15041">i think so and whoever does it will probably be the first to successfully do that so who know you might even become famous. (just a thought that got off track) btw could you remind me how to find the force in newtons again? (its been 2 years since i learned that so i forgot)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Kube</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=952&amp;ref=1249239276" width="102" height="77" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_15045" style="width: 100%; overflow: auto; min-height: 125px;">your weight in kilograms multiplied by 9.8<br />
+<br />
+(I edited mine, the 1234.8 N was with my weight in pounds xD The real one is 548.8, so the job just got easier.)</div>
+		<textarea style="display: none;" id="desctxt_15045">your weight in kilograms multiplied by 9.8
+
+(I edited mine, the 1234.8 N was with my weight in pounds xD The real one is 548.8, so the job just got easier.)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">sh</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_15047" style="width: 100%; overflow: auto; min-height: 125px;">Cool! I will find mine out sometime. yay.</div>
+		<textarea style="display: none;" id="desctxt_15047">Cool! I will find mine out sometime. yay.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Sussch</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=622&amp;ref=1252769070" width="100" height="92" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_15049" style="width: 100%; overflow: auto; min-height: 125px;">You could start by getting the feeling of Earth and the gravity pull between you and the Earth.<br />
+Then visualize the force gradually weakening.<br />
+<br />
+I haven&#039;t been able to get the feeling quite yet, but I think it might work for a construct program. It&#039;s hard to get the feeling of something as big as a planet though :(</div>
+		<textarea style="display: none;" id="desctxt_15049">You could start by getting the feeling of Earth and the gravity pull between you and the Earth.
+Then visualize the force gradually weakening.
+
+I haven&#039;t been able to get the feeling quite yet, but I think it might work for a construct program. It&#039;s hard to get the feeling of something as big as a planet though :(</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">speeddemon92</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_15050" style="width: 100%; overflow: auto; min-height: 125px;">btw for those that don&#039;t know to find you weight in kilograms you just need to find out your weight in pounds then divide by 2.2 its that easy! <br />
+<br />
+so lets see (i really need to reweigh soon!!!) i&#039;m about 194 lbs.<br />
+<br />
+so 194 lbs. / 2.2 lbs/kg = 88.18181818 kg then 88.18181818 kg x 9.8 N/kg = 864.181818164 N if i did my math right</div>
+		<textarea style="display: none;" id="desctxt_15050">btw for those that don&#039;t know to find you weight in kilograms you just need to find out your weight in pounds then divide by 2.2 its that easy! 
+
+so lets see (i really need to reweigh soon!!!) i&#039;m about 194 lbs.
+
+so 194 lbs. / 2.2 lbs/kg = 88.18181818 kg then 88.18181818 kg x 9.8 N/kg = 864.181818164 N if i did my math right</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">f3licks</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=848&amp;ref=1227833859" width="125" height="78" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_15059" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by sh:</em><br />
+Aha, I wonder if its entirely possible, though I could possibly achieve it within a few weeks. Is it worth it?</div>You have with that.<br />
+Let us know how is goes.</div>
+		<textarea style="display: none;" id="desctxt_15059">[quote][i]posted by sh:[/i]
+Aha, I wonder if its entirely possible, though I could possibly achieve it within a few weeks. Is it worth it?[/quote]
+
+You have with that.
+Let us know how is goes.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 3 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=836" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 34 queries. 0.350 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

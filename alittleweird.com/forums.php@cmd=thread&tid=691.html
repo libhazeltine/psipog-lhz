@@ -1,0 +1,359 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Pseudo Flying Dream</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Pseudo Flying Dream</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Pseudo Flying Dream</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">f3licks</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=848&amp;ref=1227833859" width="125" height="78" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13202" style="width: 100%; overflow: auto; min-height: 125px;">I had a strange dream a couple of nights ago. I was standing on my lawn, and for some reason (I&#039;m betting it made sense at the time) I decided to leap off, not feet first, but head first. Instead of getting a concussion, I floated down, and was even able to pull up a bit. Through trial and error I discovered that I could get higher and higher by swooping low and then pulling up, and I repeated the process until I landed on my roof.<br />
+Strangely undaunted, I leaped off, a soared away.<br />
+<br />
+. . .so, what gives?</div>
+		<textarea style="display: none;" id="desctxt_13202">I had a strange dream a couple of nights ago. I was standing on my lawn, and for some reason (I&#039;m betting it made sense at the time) I decided to leap off, not feet first, but head first. Instead of getting a concussion, I floated down, and was even able to pull up a bit. Through trial and error I discovered that I could get higher and higher by swooping low and then pulling up, and I repeated the process until I landed on my roof.
+Strangely undaunted, I leaped off, a soared away.
+
+. . .so, what gives?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Corpse</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=553&amp;ref=1239824741" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13203" style="width: 100%; overflow: auto; min-height: 125px;">I honestly don&#039;t see why this dream would be of great relevance to anything.<br />
+<br />
+<br />
+<br />
+But if you still seem to think so, go to this website and type in the key elements that you experienced within that dream.<br />
+<br />
+ <a href="http://www.dreammoods.com/" target="_blank">http://www.dreammoods.com/</a></div>
+		<textarea style="display: none;" id="desctxt_13203">I honestly don&#039;t see why this dream would be of great relevance to anything.
+
+
+
+But if you still seem to think so, go to this website and type in the key elements that you experienced within that dream.
+
+http://www.dreammoods.com/</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">f3licks</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=848&amp;ref=1227833859" width="125" height="78" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13205" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Corpse:</em><br />
+I honestly don&#039;t see why this dream would be of great relevance to anything.<br />
+<br />
+<br />
+<br />
+But if you still seem to think so, go to this website and type in the key elements that you experienced within that dream.<br />
+<br />
+ <a href="http://www.dreammoods.com/" target="_blank">http://www.dreammoods.com/</a></div><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Corpse:</em><br />
+I honestly don&#039;t see why this dream would be of great relevance to anything.<br />
+<br />
+<br />
+<br />
+But if you still seem to think so, go to this website and type in the key elements that you experienced within that dream.<br />
+<br />
+ <a href="http://www.dreammoods.com/" target="_blank">http://www.dreammoods.com/</a></div>I don&#039;t put a lot of stock in those things, I was just curious if anyone else has had dreams like this.</div>
+		<textarea style="display: none;" id="desctxt_13205">[quote][i]posted by Corpse:[/i]
+I honestly don&#039;t see why this dream would be of great relevance to anything.
+
+
+
+But if you still seem to think so, go to this website and type in the key elements that you experienced within that dream.
+
+http://www.dreammoods.com/[/quote]
+
+[quote][i]posted by Corpse:[/i]
+I honestly don&#039;t see why this dream would be of great relevance to anything.
+
+
+
+But if you still seem to think so, go to this website and type in the key elements that you experienced within that dream.
+
+http://www.dreammoods.com/[/quote]
+
+I don&#039;t put a lot of stock in those things, I was just curious if anyone else has had dreams like this.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">SheepKing</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=211&amp;ref=1222648137" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13211" style="width: 100%; overflow: auto; min-height: 125px;">I had a &#039;flying&#039; dream last night. Typically the dreams involve me being able to jump very high and float down.<br />
+<br />
+<br />
+As for the significance of dreams, what did you think about that day? What did you do that day? <br />
+<br />
+I find most of my dreams directly relate to things happening in real life.</div>
+		<textarea style="display: none;" id="desctxt_13211">I had a &#039;flying&#039; dream last night. Typically the dreams involve me being able to jump very high and float down.
+
+
+As for the significance of dreams, what did you think about that day? What did you do that day? 
+
+I find most of my dreams directly relate to things happening in real life.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">somefatguy</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=36&amp;ref=1209135545" width="90" height="89" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13214" style="width: 100%; overflow: auto; min-height: 125px;">I have had countless flying dreams. Many of which are very similar to f3lick&#039;s and Sheepking&#039;s. I have never thought much of dreams, and still don&#039;t. Even if the dream relates to an emotion you experienced during your day, or is playing with the happenings in your life--so what? <br />
+<br />
+If the dream is only messing with the past, it doesn&#039;t help us at all. We were there; the dream is only reviewing what happened in a strange and twisted way, if even at all. If the dream said something about the future, however, then they would be slightly more useful. Some people believe they do speak of the future. Still, my thoughts on this is negative as well. Even if a dream spoke of the future in some way, usually the dream is so twisted and confusing that you would never be able to make sense of it anyways.</div>
+		<textarea style="display: none;" id="desctxt_13214">I have had countless flying dreams. Many of which are very similar to f3lick&#039;s and Sheepking&#039;s. I have never thought much of dreams, and still don&#039;t. Even if the dream relates to an emotion you experienced during your day, or is playing with the happenings in your life--so what? 
+
+If the dream is only messing with the past, it doesn&#039;t help us at all. We were there; the dream is only reviewing what happened in a strange and twisted way, if even at all. If the dream said something about the future, however, then they would be slightly more useful. Some people believe they do speak of the future. Still, my thoughts on this is negative as well. Even if a dream spoke of the future in some way, usually the dream is so twisted and confusing that you would never be able to make sense of it anyways.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by somefatguy, 3 years, 9 months ago<br />Posted 3 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Sussch</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=622&amp;ref=1252769070" width="100" height="92" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13215" style="width: 100%; overflow: auto; min-height: 125px;">I sometimes have these pseudo flying dreams after having practiced psi manipulation for a few days.<br />
+<br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by somefatguy:</em><br />
+Even if the dream relates to an emotion you experienced during your day, or is playing with the happenings in your life--so what? <br />
+<br />
+If the dream is only messing with the past, it doesn&#039;t help us at all. We were there; the dream is only reviewing what happened in a strange and twisted way, if even at all.</div>While dreaming, jumping as far as I want and as high as I need seems to be natural. It feels as if this is how it should be (I feel the same way even after waking up). This makes me feel more powerful and that&#039;s why I like these dreams.</div>
+		<textarea style="display: none;" id="desctxt_13215">I sometimes have these pseudo flying dreams after having practiced psi manipulation for a few days.
+
+[quote][i]posted by somefatguy:[/i]
+Even if the dream relates to an emotion you experienced during your day, or is playing with the happenings in your life--so what? 
+
+If the dream is only messing with the past, it doesn&#039;t help us at all. We were there; the dream is only reviewing what happened in a strange and twisted way, if even at all.[/quote]
+
+While dreaming, jumping as far as I want and as high as I need seems to be natural. It feels as if this is how it should be (I feel the same way even after waking up). This makes me feel more powerful and that&#039;s why I like these dreams.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Darkness</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=886&amp;ref=1232436541" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13387" style="width: 100%; overflow: auto; min-height: 125px;">A long time ago, I had a dream where I was walking up my Grandma&#039;s driveway, and I was just playing around and I started spining( I like to spin around in circles) and I lifted off a bit. I was psyched. I tried again and lept...I ended up zooming high into the sky and FALLING at full speed back down. And right before I went KER-SPLAT I twitched...no wait...I lurched in every direction at once (real world) and I woke up...Alot of my dreams involve me falling and waking up before I go splat...</div>
+		<textarea style="display: none;" id="desctxt_13387">A long time ago, I had a dream where I was walking up my Grandma&#039;s driveway, and I was just playing around and I started spining( I like to spin around in circles) and I lifted off a bit. I was psyched. I tried again and lept...I ended up zooming high into the sky and FALLING at full speed back down. And right before I went KER-SPLAT I twitched...no wait...I lurched in every direction at once (real world) and I woke up...Alot of my dreams involve me falling and waking up before I go splat...</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Darkness</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=886&amp;ref=1232436541" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13388" style="width: 100%; overflow: auto; min-height: 125px;">Oops...sorry...pressed the back button...</div>
+		<textarea style="display: none;" id="desctxt_13388">Oops...sorry...pressed the back button...</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Darkness, 3 years, 8 months ago<br />Posted 3 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Darkness</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=886&amp;ref=1232436541" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13581" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by somefatguy:</em><br />
+ Even if a dream spoke of the future in some way, usually the dream is so twisted and confusing that you would never be able to make sense of it anyways.</div>That&#039;s not entirely true. I&#039;ve had my share of clear visions. Just a few weeks ago there was a fire in my neighborhood. 4 nights before that I kept have a same dream. Me running out of the house after smelling smoke, and looking to my RIGHT. Then, I see it. A fire so big, it lit up half the sky.  I ran to see if I could help them when it exploded (not the big explosions in the movies, just a small bang) I see a garden hose near the house. I turn on the water and start spraying it. I scream for help but my call doesn&#039;t go past the &#039;somebody&#039; Something just exploded in my face. I&#039;m dead. Dream ends. It goes like this for another night. But the third night, I don&#039;t do anything This was happening around 4:00 AM. But anyways...A firetruck speeds past me as I watch on helplessly.  Dream ended right there. The FOURTH night, I tried to save the house, and I died. Again. Now I&#039;m pretty sure there&#039;s absolutely no possible way this was a coincidence. 4 friggen nights of that damn nightmare and then ****! I&#039;m back in the nightmare. Only this time, if I die, I stay dead. O.O 3rd friggen dream came real.</div>
+		<textarea style="display: none;" id="desctxt_13581">[quote][i]posted by somefatguy:[/i]
+ Even if a dream spoke of the future in some way, usually the dream is so twisted and confusing that you would never be able to make sense of it anyways.[/quote]
+That&#039;s not entirely true. I&#039;ve had my share of clear visions. Just a few weeks ago there was a fire in my neighborhood. 4 nights before that I kept have a same dream. Me running out of the house after smelling smoke, and looking to my RIGHT. Then, I see it. A fire so big, it lit up half the sky.  I ran to see if I could help them when it exploded (not the big explosions in the movies, just a small bang) I see a garden hose near the house. I turn on the water and start spraying it. I scream for help but my call doesn&#039;t go past the &#039;somebody&#039; Something just exploded in my face. I&#039;m dead. Dream ends. It goes like this for another night. But the third night, I don&#039;t do anything This was happening around 4:00 AM. But anyways...A firetruck speeds past me as I watch on helplessly.  Dream ended right there. The FOURTH night, I tried to save the house, and I died. Again. Now I&#039;m pretty sure there&#039;s absolutely no possible way this was a coincidence. 4 friggen nights of that damn nightmare and then ****! I&#039;m back in the nightmare. Only this time, if I die, I stay dead. O.O 3rd friggen dream came real.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Darkness, 3 years, 7 months ago<br />Posted 3 years, 7 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=691" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 25 queries. 0.324 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

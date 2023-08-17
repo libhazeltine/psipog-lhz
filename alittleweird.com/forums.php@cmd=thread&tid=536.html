@@ -1,0 +1,431 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; I&#039;m Back! Now lets get to work!</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; I&#039;m Back! Now lets get to work!</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">I&#039;m Back! Now lets get to work!</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11002" style="width: 100%; overflow: auto; min-height: 125px;">Hey, I&#039;m back here at my home after a bit of a vacation... I&#039;m just getting myself situated here as I type this. It&#039;s really amazing, but I have a lot to tell after my trip, including some ghostly encounters. With that being said, lets get to work!<br />
+<br />
+First off, was my first day on the trip. I was staying at my grandma&#039;s house (which happens to be in the area of town with alot of paranormal activity around it.) I have reason to believe I was attacked by a Psi-Vamp Spirit while I was there, as I lost quite a bit of energy there, and for days I was unable to retrieve the lost energy. On top of the fact that I had many childhood instances there involving ghostly encounters and other paranormal activity, this made me wonder what exactly was causing the high level of activity at the house, and what exactly was causing such a high concentration of activity for that matter.<br />
+<br />
+So I&#039;m leaving the Discussion up to you. The important things to note are as follows;<br />
+<br />
+1. There is a cemetery in that neighborhood, a fairly old one at that.<br />
+<br />
+2. Many of the buildings that have high activity have their own wells, My grandmas is confirmed to have abnormally high nitrate levels in the area.<br />
+<br />
+3. I noticed that my grandma has a huge amount of reflective surfaces, at least 2 in every room. Mostly Mirrors, but there are a few partially reflective surfaces like polished wood and glass.<br />
+<br />
+4. the Spirits at my grandma&#039;s house seem to be in distress or hostile.<br />
+<br />
+5. My grandma uses many white surfaces and she also collects Angels<br />
+<br />
+6. There are a large level of electronic devices at my grandparents house, but not as much as is at my house, and I document less paranormal activity here than there.<br />
+<br />
+7. I&#039;m not a paranoid person, all of what I said is just an observation, and it is up to you to come to the correct conclusion.<br />
+<br />
+One other thing to note is Feng shui. This is something I am researching in the moment and it may shed some light as to what is going on. With that being said, I wanted to bring this up to discussion.<br />
+<br />
+ </div>
+		<textarea style="display: none;" id="desctxt_11002">Hey, I&#039;m back here at my home after a bit of a vacation... I&#039;m just getting myself situated here as I type this. It&#039;s really amazing, but I have a lot to tell after my trip, including some ghostly encounters. With that being said, lets get to work!
+
+First off, was my first day on the trip. I was staying at my grandma&#039;s house (which happens to be in the area of town with alot of paranormal activity around it.) I have reason to believe I was attacked by a Psi-Vamp Spirit while I was there, as I lost quite a bit of energy there, and for days I was unable to retrieve the lost energy. On top of the fact that I had many childhood instances there involving ghostly encounters and other paranormal activity, this made me wonder what exactly was causing the high level of activity at the house, and what exactly was causing such a high concentration of activity for that matter.
+
+So I&#039;m leaving the Discussion up to you. The important things to note are as follows;
+
+1. There is a cemetery in that neighborhood, a fairly old one at that.
+
+2. Many of the buildings that have high activity have their own wells, My grandmas is confirmed to have abnormally high nitrate levels in the area.
+
+3. I noticed that my grandma has a huge amount of reflective surfaces, at least 2 in every room. Mostly Mirrors, but there are a few partially reflective surfaces like polished wood and glass.
+
+4. the Spirits at my grandma&#039;s house seem to be in distress or hostile.
+
+5. My grandma uses many white surfaces and she also collects Angels
+
+6. There are a large level of electronic devices at my grandparents house, but not as much as is at my house, and I document less paranormal activity here than there.
+
+7. I&#039;m not a paranoid person, all of what I said is just an observation, and it is up to you to come to the correct conclusion.
+
+One other thing to note is Feng shui. This is something I am researching in the moment and it may shed some light as to what is going on. With that being said, I wanted to bring this up to discussion.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Corpse</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=553&amp;ref=1239824741" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11009" style="width: 100%; overflow: auto; min-height: 125px;">I was going to say you may have lost energy due to being paranoid,<br />
+because A LOT of energy gets put into our emotions (this is why depressed people<br />
+are always weak) until stated so in #7.<br />
+<br />
+In my personal opinion, it sounds like it&#039;s haunted, I mean if there&#039;s a graveyard <br />
+there, then there&#039;s got to be SOME ghostly activity.<br />
+<br />
+<br />
+But I would like to know why did you say that there is reflective surfaces and white <br />
+objects? I don&#039;t see how this can relate to ghosts.</div>
+		<textarea style="display: none;" id="desctxt_11009">I was going to say you may have lost energy due to being paranoid,
+because A LOT of energy gets put into our emotions (this is why depressed people
+are always weak) until stated so in #7.
+
+In my personal opinion, it sounds like it&#039;s haunted, I mean if there&#039;s a graveyard 
+there, then there&#039;s got to be SOME ghostly activity.
+
+
+But I would like to know why did you say that there is reflective surfaces and white 
+objects? I don&#039;t see how this can relate to ghosts.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11013" style="width: 100%; overflow: auto; min-height: 125px;">Reflective surfaces have been connected to ghostly activity... Primarily the Idea that mirrors reflect light, and have a tendency to trap spirits in a location... white surfaces also reflect light. So I thought it was important to include these things.<br />
+<br />
+Furthermore, The Paranormal and mirrors have been intertwined for a long time. Bloody Mary may be considered a very small &quot;ritual&quot; with mirrors. And there are plenty of historical ghosts that &quot;live&quot; around mirrors, so to speak. <br />
+<br />
+So, the main reason is that mirrors and any kind of reflective surface may have an effect on ghosts.<br />
+<br />
+_________________________________________________________________________________________<br />
+<br />
+<br />
+One other interesting thing I found about the house. The man who previously owned it built the house from the ground up. Before he could finish the whole house, he died. Apparently, There was heightened paranormal activity in the area until my grandparents fixed up the house. <br />
+<br />
+Since then, when my parents were young, they stayed at my Grandparents house. One interesting is to note that I had an experience with seeing a dead relative there. I cannot guarantee that I acctually saw this, as I have no memory of the event, however; my family told me this myself, and they have no reason to lie, so the only reason I ever have questioned the credibility is because it has become effectively heresay.<br />
+<br />
+_________________________________________________________________________________________<br />
+<br />
+There are more interesting personal experiences that I&#039;ve had, but related to the house is primarily a sense that something was there... I&#039;ve also seen half-images, they are things I can see in front of my face, but are only partially visible. This has occurred around therefor years before I could really see aura&#039;s. Now I tend to see human-like auras around the house in no particular place for no particular reason. <br />
+<br />
+Shadow people are also significant at the house. In the sense that people have experienced this kind of activity there from time to time.<br />
+<br />
+I&#039;m not really sure if this helps anyone, but more information is usually helpful. Good luck ^_-<br />
+ </div>
+		<textarea style="display: none;" id="desctxt_11013">Reflective surfaces have been connected to ghostly activity... Primarily the Idea that mirrors reflect light, and have a tendency to trap spirits in a location... white surfaces also reflect light. So I thought it was important to include these things.
+
+Furthermore, The Paranormal and mirrors have been intertwined for a long time. Bloody Mary may be considered a very small &quot;ritual&quot; with mirrors. And there are plenty of historical ghosts that &quot;live&quot; around mirrors, so to speak. 
+
+So, the main reason is that mirrors and any kind of reflective surface may have an effect on ghosts.
+
+_________________________________________________________________________________________
+
+
+One other interesting thing I found about the house. The man who previously owned it built the house from the ground up. Before he could finish the whole house, he died. Apparently, There was heightened paranormal activity in the area until my grandparents fixed up the house. 
+
+Since then, when my parents were young, they stayed at my Grandparents house. One interesting is to note that I had an experience with seeing a dead relative there. I cannot guarantee that I acctually saw this, as I have no memory of the event, however; my family told me this myself, and they have no reason to lie, so the only reason I ever have questioned the credibility is because it has become effectively heresay.
+
+_________________________________________________________________________________________
+
+There are more interesting personal experiences that I&#039;ve had, but related to the house is primarily a sense that something was there... I&#039;ve also seen half-images, they are things I can see in front of my face, but are only partially visible. This has occurred around therefor years before I could really see aura&#039;s. Now I tend to see human-like auras around the house in no particular place for no particular reason. 
+
+Shadow people are also significant at the house. In the sense that people have experienced this kind of activity there from time to time.
+
+I&#039;m not really sure if this helps anyone, but more information is usually helpful. Good luck ^_-</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Linked</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=19&amp;ref=1203762048" width="89" height="38" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11014" style="width: 100%; overflow: auto; min-height: 125px;">wow, O_O.<br />
+your account of the house has many strikeing similarities to my grandmothers house.<br />
+She has a well, not as many reflective surfaces, but still a good amount. no graveyard near by either. and i have also noticed a &quot;person&quot; some times at night, walking around the corner of the hallway. i currently live with my grandmother and see this man almost every 3 nights. my older sister used to have encounters with a small girl, the man we never discovered who he is but the girl was named victoria. these spirits have been in the house for a number of years. as was another vague entity with no definite form, this one has not appeared for around 7 years, and the girl left the house when my sister moved out. the man still appears, though i&#039;ve never gotten a good look at him i have seen him many time. He gives off a very unnerving presence. so unnerving i even put up a powerfull shield to keep him out of my room at night. also, my grandmother has a good amount of electronics aswell.</div>
+		<textarea style="display: none;" id="desctxt_11014">wow, O_O.
+your account of the house has many strikeing similarities to my grandmothers house.
+She has a well, not as many reflective surfaces, but still a good amount. no graveyard near by either. and i have also noticed a &quot;person&quot; some times at night, walking around the corner of the hallway. i currently live with my grandmother and see this man almost every 3 nights. my older sister used to have encounters with a small girl, the man we never discovered who he is but the girl was named victoria. these spirits have been in the house for a number of years. as was another vague entity with no definite form, this one has not appeared for around 7 years, and the girl left the house when my sister moved out. the man still appears, though i&#039;ve never gotten a good look at him i have seen him many time. He gives off a very unnerving presence. so unnerving i even put up a powerfull shield to keep him out of my room at night. also, my grandmother has a good amount of electronics aswell.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11016" style="width: 100%; overflow: auto; min-height: 125px;">Many times Wiring and high electrical activity causes paranoia and have also been linked to paranormal activity. I think now that paranormal activity is directly related to electromagnetism.<br />
+<br />
+I don&#039;t know, more study is required... but interesting to hear that much linked.</div>
+		<textarea style="display: none;" id="desctxt_11016">Many times Wiring and high electrical activity causes paranoia and have also been linked to paranormal activity. I think now that paranormal activity is directly related to electromagnetism.
+
+I don&#039;t know, more study is required... but interesting to hear that much linked.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Linked</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=19&amp;ref=1203762048" width="89" height="38" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11019" style="width: 100%; overflow: auto; min-height: 125px;">just thought i should put in as much detail as possible :)</div>
+		<textarea style="display: none;" id="desctxt_11019">just thought i should put in as much detail as possible :)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">nonconformist</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=616&amp;ref=1215149170" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11023" style="width: 100%; overflow: auto; min-height: 125px;">hey has anyone ever seen a dementor like creature. Completely black???</div>
+		<textarea style="display: none;" id="desctxt_11023">hey has anyone ever seen a dementor like creature. Completely black???</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Faceless</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=570&amp;ref=1214279440" width="83" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11028" style="width: 100%; overflow: auto; min-height: 125px;">yes i have. except the only thing is it was completly black, no face thingy like in the movies, and it also didnt have the tail thing. it kinda cut off at its waist. but it seemed to have really long arms that where hanging down past where the body stoped. <br />
+@ Linked <br />
+once in a while i have to put a strong sheild up because in my room the shadows have a tendency to stir and move so ur not the only one who dose that.</div>
+		<textarea style="display: none;" id="desctxt_11028">yes i have. except the only thing is it was completly black, no face thingy like in the movies, and it also didnt have the tail thing. it kinda cut off at its waist. but it seemed to have really long arms that where hanging down past where the body stoped. 
+@ Linked 
+once in a while i have to put a strong sheild up because in my room the shadows have a tendency to stir and move so ur not the only one who dose that.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Linked</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=19&amp;ref=1203762048" width="89" height="38" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11029" style="width: 100%; overflow: auto; min-height: 125px;">well mine is a weird shield, i was realy creeped out and kinda scared when i put it up. and now it doesn&#039;t go down. The shield has actually been up for at least 5 or 6 months, i have recharged it once in that time.</div>
+		<textarea style="display: none;" id="desctxt_11029">well mine is a weird shield, i was realy creeped out and kinda scared when i put it up. and now it doesn&#039;t go down. The shield has actually been up for at least 5 or 6 months, i have recharged it once in that time.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Linked, 4 years, 4 months ago<br />Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11078" style="width: 100%; overflow: auto; min-height: 125px;">I haven&#039;t used a powerful shield in quite a while... my house (or rather, my parents house) seems to be naturally shielded and to have it&#039;s own resonance of energy. I want to more know about the house itself, but it really does seem like there has been a lot of love in the house itself.<br />
+<br />
+A few spirits hang around inside the house, but they seem to all be kind ones. The only creepy thing in the whole house is the windows... spirits that peer in to the windows. These are the ones that seem dark in nature, but that&#039;s about it.<br />
+<br />
+It&#039;s a natural barrier... and the only time something menacing has made it through the barrier is on occasions where I am studying information from the darker side of the occult. (i.e satanic rituals as went on in the underground network of tunnels beneath a few churches, some ritualistic uses of the necronomicon produced by &quot;Simon&quot;, etc.)Even then, that seems to be along the lines of &quot;you bring power to all that you acknowledge&quot;<br />
+. (hear no evil, see no evil, speak no evil)<br />
+<br />
+Interestingly enough I learned to gather energy from my house, it&#039;s pretty interesting when I can set up things that I normally wouldn&#039;t be able to do ^_^. <br />
+<br />
+<br />
+Anyway, most of what has happened as of yet is pretty minor, I&#039;m glad that my energy is restored from the attack now and that&#039;s all that matters for me.<br />
+<br />
+and for the Kirby saying of the day <br />
+<br />
+(Rule 34 when applied to string theory is a very scary, but intriguing thing to think about when doing a Google Search...) <br />
+ \<br />
+ (&gt;^_^)&gt;</div>
+		<textarea style="display: none;" id="desctxt_11078">I haven&#039;t used a powerful shield in quite a while... my house (or rather, my parents house) seems to be naturally shielded and to have it&#039;s own resonance of energy. I want to more know about the house itself, but it really does seem like there has been a lot of love in the house itself.
+
+A few spirits hang around inside the house, but they seem to all be kind ones. The only creepy thing in the whole house is the windows... spirits that peer in to the windows. These are the ones that seem dark in nature, but that&#039;s about it.
+
+It&#039;s a natural barrier... and the only time something menacing has made it through the barrier is on occasions where I am studying information from the darker side of the occult. (i.e satanic rituals as went on in the underground network of tunnels beneath a few churches, some ritualistic uses of the necronomicon produced by &quot;Simon&quot;, etc.)Even then, that seems to be along the lines of &quot;you bring power to all that you acknowledge&quot;
+. (hear no evil, see no evil, speak no evil)
+
+Interestingly enough I learned to gather energy from my house, it&#039;s pretty interesting when I can set up things that I normally wouldn&#039;t be able to do ^_^. 
+
+
+Anyway, most of what has happened as of yet is pretty minor, I&#039;m glad that my energy is restored from the attack now and that&#039;s all that matters for me.
+
+and for the Kirby saying of the day 
+
+(Rule 34 when applied to string theory is a very scary, but intriguing thing to think about when doing a Google Search...) 
+ \
+ (&gt;^_^)&gt;</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Akio, 4 years, 3 months ago<br />Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=536" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 26 queries. 0.328 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

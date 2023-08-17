@@ -1,0 +1,598 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Analyze a dream...</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Analyze a dream...</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Analyze a dream...</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">SheepKing</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=211&amp;ref=1222648137" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_8285" style="width: 100%; overflow: auto; min-height: 125px;">So, here&#039;s your chance to analyze a dream I had! It&#039;s a bit of a lengthy read, but if you&#039;re into dreams and interpreting meaning, go for it: <br />
+<br />
+Weirdest dream by far...<br />
+In a strange land filled with armies of unorganized idiots on a mission to stop what plagues them, there are few heroes. Among that few: Me, Brian (friend of mine), 2 Unknown females.<br />
+<br />
+<br />
+<br />
+<br />
+Lying within the floating city is a network of caves that are haunted by demon gods. Each god holds an artifact that can help slay another god (Megaman ftw), already defeated are two of the five gods.<br />
+<br />
+<br />
+<br />
+<br />
+The setting: Flying our mario esq 2d castle boats into the sky the army of idiots and the heroes unload on to the floating city and it&#039;s underlying cave network. Confusion sets in as Youseff and Brian enter the first cave and wonder why we gave our only artifacts, a sword and helmet with the power to extinguish the flames that power one of the demons. We bicker for some time about it and decide to continue on followed by our weak yet determined band of idiot warriors. We are armed with the only weapon we could muster up, after the trading of our artifacts: Butter knives.<br />
+<br />
+Descent into the cave quickly yields traps that are easily passable by the likes of Heroes, Yet idiots fall into them left and right. We quickly decide that it would not be safe to have an idiots in the dungeons and send them back. We descend deeper. As we continue into the dungeon its lord knows the small traps it lays are futile. The descent to the demon are swift. We enter the main chamber. A dragon demon awaits throwing fire and laughing at us; He is impervious to butter knives it seems. We are forced to retreat to the next dungeon hoping it will hold something more worthwhile.<br />
+<br />
+Brian leaves me. I enter the next dungeon alone. But am quickly followed by a few idiots. It appears that this dungeon lords likes to play games. It is reminiscent of a <br />
+department store. Yet it holds deadly secrets. A small child behind me is quickly snapped up by a floating button up shirt. I struggle to find him on the shelves hanging, squirming, suffocating. He is lucky. I save him.<br />
+<br />
+I quickly realize the simplicity of the trap. Any object you touch can turn into something that will kill you. Avoid things that float; Avoid anything that brings your attention to it. I wander on. What i learned quickly falls by the way side as a knife set quickly is brought to my attention. I need a weapon to fight what may be on, Yet I know I shouldn&#039;t. I pick up the knife and look at it. Suddenly, blink, it&#039;s gone. I turn around and there stands the salesman dressed in black, hunched over holding the knife set.<br />
+<br />
+&quot;You want it?&quot; He says<br />
+&quot;Yes.&quot;<br />
+He tells , &quot;Here take it, and it appears on the floor infront of me.&quot;<br />
+&quot;But, can you guarantee that it won&#039;t be haunted?&quot;<br />
+Smirking he says, &quot; No, just go for it though, it&#039;s probably alright.&quot;<br />
+<br />
+Before I can decide what to do about the knife, a person I do not know enters the scene. She quickly snatches the knife. The perspective is on her. I see from her eyes, and from a third person at the same time. I feel her muscles tense, and twitch with anger. She frantically looks around for someone to kill. Though she is now deadly she only succeeds in wounding another person. I fight the knife from her hand without hurting her, and direct her and the victim out of the cave.<br />
+<br />
+Enters the female hero. &quot;Come with me.&quot; We make a dash through the store; Dodging floating dishes that we know would surely harm us. Dodging obstacle and obstacle of devious looking things. We are now being followed by two female ghosts who, though attractive, radiate malicious intent. We enter the long stare case, the ceiling is now stone. We jump down the stair case and float for what seems like forever. There are six doors. Two doors on the right, and left. And a set of double doors in the center.<br />
+<br />
+The female hero checks small holes in the doors for signs of heat and flames. Putting a cigarette to each hole and attempting to light it. Four doors will produce real heat and fire. The point starts peeling from the doors. The cigarettes light on all but two. We enter the flameless, yet hot doors on the right. It is a bar; a resteraunt for the dead. It is a macabre scene, Colorless except for the patrons that sit at it&#039;s tables. Some do not mind us, others I can feel are becoming agitated.<br />
+<br />
+There are four identical rooms that we go through, small with tables to the left, uncomfortably close to where we walk. A bar to our right. At each pivot is a clown, in each room the clown is a different color. But always brighter than the others. He is disgusting. He wants me dead.<br />
+<br />
+Somehow we know his name; By speaking his name you can throw him into a confused fit of rage where he will try to escape from. His name is spoken, though I can&#039;t remember it, and is sent fleeing each room. That was easy.<br />
+<br />
+We get to the final doors that we seek, behind which is the demon who haunts this cave network. The door is cold, She enters first. Then I enter.<br />
+<br />
+It is a study. A bookshelf to one side, a large mirror and desk to the other side. A green lamp set on a table near one corner, some plants. In the center is a multicolor rug.<br />
+<br />
+She says, &quot; Youseff, it&#039;s going to get hot in here. Everything around us will burn up. You will feel the heat, you will feel the flames. Your body will melt.&quot;<br />
+<br />
+As she starts talking, she locks the door and the rooms color starts changing. It becomes warmer and warmer... I can see the reflection of heat but no flames anywhere, her body starts to char.<br />
+<br />
+She keeps talking, &quot; The demons that haunt this place all share a common thing: Fire.&quot; She sits in front of me, her body is ignited and crumbling away, yet her clothes remain intact. &quot;Do not be afraid, let the flames take you.&quot;<br />
+<br />
+I stand up and start at my arms, they are charring, my skin is starting to turn black and flake away. My face begins to melt, I can see it from third person, I try to talk but am muffled by the liquid skin that has now covered my mouth.<br />
+<br />
+&quot;Be confident. This is your test.&quot;<br />
+<br />
+I take a deep breath, &quot;I will never give up. I will be strong.&quot;<br />
+<br />
+I stand and we take each others hands, both melted, burned, charred, disfigured we slowly dance around in circles and the world spins.<br />
+<br />
+And then we are whole again, sitting at the desk that appeared infront of the large mirror to the side of the room is our foe; Relaxed, eating an apple, dressed in black.<br />
+<br />
+&quot;That was easy now, wasn&#039;t it?&quot;<br />
+<br />
+The end.<br />
+</div>
+		<textarea style="display: none;" id="desctxt_8285">So, here&#039;s your chance to analyze a dream I had! It&#039;s a bit of a lengthy read, but if you&#039;re into dreams and interpreting meaning, go for it: 
+
+Weirdest dream by far...
+In a strange land filled with armies of unorganized idiots on a mission to stop what plagues them, there are few heroes. Among that few: Me, Brian (friend of mine), 2 Unknown females.
+
+
+
+
+Lying within the floating city is a network of caves that are haunted by demon gods. Each god holds an artifact that can help slay another god (Megaman ftw), already defeated are two of the five gods.
+
+
+
+
+The setting: Flying our mario esq 2d castle boats into the sky the army of idiots and the heroes unload on to the floating city and it&#039;s underlying cave network. Confusion sets in as Youseff and Brian enter the first cave and wonder why we gave our only artifacts, a sword and helmet with the power to extinguish the flames that power one of the demons. We bicker for some time about it and decide to continue on followed by our weak yet determined band of idiot warriors. We are armed with the only weapon we could muster up, after the trading of our artifacts: Butter knives.
+
+Descent into the cave quickly yields traps that are easily passable by the likes of Heroes, Yet idiots fall into them left and right. We quickly decide that it would not be safe to have an idiots in the dungeons and send them back. We descend deeper. As we continue into the dungeon its lord knows the small traps it lays are futile. The descent to the demon are swift. We enter the main chamber. A dragon demon awaits throwing fire and laughing at us; He is impervious to butter knives it seems. We are forced to retreat to the next dungeon hoping it will hold something more worthwhile.
+
+Brian leaves me. I enter the next dungeon alone. But am quickly followed by a few idiots. It appears that this dungeon lords likes to play games. It is reminiscent of a 
+department store. Yet it holds deadly secrets. A small child behind me is quickly snapped up by a floating button up shirt. I struggle to find him on the shelves hanging, squirming, suffocating. He is lucky. I save him.
+
+I quickly realize the simplicity of the trap. Any object you touch can turn into something that will kill you. Avoid things that float; Avoid anything that brings your attention to it. I wander on. What i learned quickly falls by the way side as a knife set quickly is brought to my attention. I need a weapon to fight what may be on, Yet I know I shouldn&#039;t. I pick up the knife and look at it. Suddenly, blink, it&#039;s gone. I turn around and there stands the salesman dressed in black, hunched over holding the knife set.
+
+&quot;You want it?&quot; He says
+&quot;Yes.&quot;
+He tells , &quot;Here take it, and it appears on the floor infront of me.&quot;
+&quot;But, can you guarantee that it won&#039;t be haunted?&quot;
+Smirking he says, &quot; No, just go for it though, it&#039;s probably alright.&quot;
+
+Before I can decide what to do about the knife, a person I do not know enters the scene. She quickly snatches the knife. The perspective is on her. I see from her eyes, and from a third person at the same time. I feel her muscles tense, and twitch with anger. She frantically looks around for someone to kill. Though she is now deadly she only succeeds in wounding another person. I fight the knife from her hand without hurting her, and direct her and the victim out of the cave.
+
+Enters the female hero. &quot;Come with me.&quot; We make a dash through the store; Dodging floating dishes that we know would surely harm us. Dodging obstacle and obstacle of devious looking things. We are now being followed by two female ghosts who, though attractive, radiate malicious intent. We enter the long stare case, the ceiling is now stone. We jump down the stair case and float for what seems like forever. There are six doors. Two doors on the right, and left. And a set of double doors in the center.
+
+The female hero checks small holes in the doors for signs of heat and flames. Putting a cigarette to each hole and attempting to light it. Four doors will produce real heat and fire. The point starts peeling from the doors. The cigarettes light on all but two. We enter the flameless, yet hot doors on the right. It is a bar; a resteraunt for the dead. It is a macabre scene, Colorless except for the patrons that sit at it&#039;s tables. Some do not mind us, others I can feel are becoming agitated.
+
+There are four identical rooms that we go through, small with tables to the left, uncomfortably close to where we walk. A bar to our right. At each pivot is a clown, in each room the clown is a different color. But always brighter than the others. He is disgusting. He wants me dead.
+
+Somehow we know his name; By speaking his name you can throw him into a confused fit of rage where he will try to escape from. His name is spoken, though I can&#039;t remember it, and is sent fleeing each room. That was easy.
+
+We get to the final doors that we seek, behind which is the demon who haunts this cave network. The door is cold, She enters first. Then I enter.
+
+It is a study. A bookshelf to one side, a large mirror and desk to the other side. A green lamp set on a table near one corner, some plants. In the center is a multicolor rug.
+
+She says, &quot; Youseff, it&#039;s going to get hot in here. Everything around us will burn up. You will feel the heat, you will feel the flames. Your body will melt.&quot;
+
+As she starts talking, she locks the door and the rooms color starts changing. It becomes warmer and warmer... I can see the reflection of heat but no flames anywhere, her body starts to char.
+
+She keeps talking, &quot; The demons that haunt this place all share a common thing: Fire.&quot; She sits in front of me, her body is ignited and crumbling away, yet her clothes remain intact. &quot;Do not be afraid, let the flames take you.&quot;
+
+I stand up and start at my arms, they are charring, my skin is starting to turn black and flake away. My face begins to melt, I can see it from third person, I try to talk but am muffled by the liquid skin that has now covered my mouth.
+
+&quot;Be confident. This is your test.&quot;
+
+I take a deep breath, &quot;I will never give up. I will be strong.&quot;
+
+I stand and we take each others hands, both melted, burned, charred, disfigured we slowly dance around in circles and the world spins.
+
+And then we are whole again, sitting at the desk that appeared infront of the large mirror to the side of the room is our foe; Relaxed, eating an apple, dressed in black.
+
+&quot;That was easy now, wasn&#039;t it?&quot;
+
+The end.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Linked</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=19&amp;ref=1203762048" width="89" height="38" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_8297" style="width: 100%; overflow: auto; min-height: 125px;">I have no idea what it means but i got a alot of laughs out of that. XD<br />
+sorry i&#039;m not saying your crazy or anything its just some of the situations are hilarius.</div>
+		<textarea style="display: none;" id="desctxt_8297">I have no idea what it means but i got a alot of laughs out of that. XD
+sorry i&#039;m not saying your crazy or anything its just some of the situations are hilarius.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_8328" style="width: 100%; overflow: auto; min-height: 125px;">Okay, there is only two things I gather from that. <br />
+<br />
+1. You think that everone around you except for your friend are either dangerous or idiots.<br />
+<br />
+2. You want to get some... Satisfaction...*cough*<br />
+<br />
+Other than that, I get that you play to many video games, I&#039;ll coment more later...</div>
+		<textarea style="display: none;" id="desctxt_8328">Okay, there is only two things I gather from that. 
+
+1. You think that everone around you except for your friend are either dangerous or idiots.
+
+2. You want to get some... Satisfaction...*cough*
+
+Other than that, I get that you play to many video games, I&#039;ll coment more later...</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Akio, 4 years, 7 months ago<br />Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">SheepKing</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=211&amp;ref=1222648137" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_8347" style="width: 100%; overflow: auto; min-height: 125px;">Linked: I see how it can be funny. :)<br />
+<br />
+Akio: You are turning minor details into the basis of a generalized conclusion. But I&#039;m interested in seeing where you want to go with it.<br />
+</div>
+		<textarea style="display: none;" id="desctxt_8347">Linked: I see how it can be funny. :)
+
+Akio: You are turning minor details into the basis of a generalized conclusion. But I&#039;m interested in seeing where you want to go with it.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_8348" style="width: 100%; overflow: auto; min-height: 125px;">It&#039;s simple, ussually, in dreams, your subconcience will try to entertain you while hinting at the problem or desire through minor details. <br />
+<br />
+It&#039;s the minor details that make a story...</div>
+		<textarea style="display: none;" id="desctxt_8348">It&#039;s simple, ussually, in dreams, your subconcience will try to entertain you while hinting at the problem or desire through minor details. 
+
+It&#039;s the minor details that make a story...</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">SheepKing</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=211&amp;ref=1222648137" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_8349" style="width: 100%; overflow: auto; min-height: 125px;">I was talking about the Video Game statement. <br />
+<br />
+Now I&#039;m just waiting for &quot;More later...&quot;</div>
+		<textarea style="display: none;" id="desctxt_8349">I was talking about the Video Game statement. 
+
+Now I&#039;m just waiting for &quot;More later...&quot;</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_8352" style="width: 100%; overflow: auto; min-height: 125px;">The Video Game Statement involves the fact that you desire to play video games... My guess is you have been really craving to play megaman ^_^</div>
+		<textarea style="display: none;" id="desctxt_8352">The Video Game Statement involves the fact that you desire to play video games... My guess is you have been really craving to play megaman ^_^</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Akio, 4 years, 7 months ago<br />Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">DigGil</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_8373" style="width: 100%; overflow: auto; min-height: 125px;">There are game classics on that dream!<br />
+This is weird and very long. My advice:<br />
+Try to play less games and link events of that dream with things that happened to you, like what you watched on TV or read, and even who you have been talking lately. I think you can analyze your dream better than everyone, because the feelings and thoughs you have about the dream are yours. The trick is: your mind can only picture about you know about. If you haven&#039;t get the meaning, then don&#039;t worry about it. It&#039;s just a dream.</div>
+		<textarea style="display: none;" id="desctxt_8373">There are game classics on that dream!
+This is weird and very long. My advice:
+Try to play less games and link events of that dream with things that happened to you, like what you watched on TV or read, and even who you have been talking lately. I think you can analyze your dream better than everyone, because the feelings and thoughs you have about the dream are yours. The trick is: your mind can only picture about you know about. If you haven&#039;t get the meaning, then don&#039;t worry about it. It&#039;s just a dream.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">SheepKing</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=211&amp;ref=1222648137" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_8375" style="width: 100%; overflow: auto; min-height: 125px;">The lesson of this story: Most people have no idea how to interpret dreams :-P.<br />
+<br />
+Thanks for the effort though. ;)<br />
+<br />
+P.S. I haven&#039;t played a lot of video games for a couple years.</div>
+		<textarea style="display: none;" id="desctxt_8375">The lesson of this story: Most people have no idea how to interpret dreams :-P.
+
+Thanks for the effort though. ;)
+
+P.S. I haven&#039;t played a lot of video games for a couple years.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Oipo</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_8381" style="width: 100%; overflow: auto; min-height: 125px;">There are a number of interpretations possible for this dream. Due to my current research and stuff into conspiracy theories, I&#039;m quick to think about the current state of the world, wherein your dream shows that the idiots are the general population, unaware of the things happening, and that you and your friend save the world...-ish.<br />
+<br />
+But all that aside(it&#039;s kind of unlikely), it maybe signifies that your life is a life full of hurdles, and that although your friends help you, you are the one who needs to put that final bit of effort into it, to advance, to understand. Or something.</div>
+		<textarea style="display: none;" id="desctxt_8381">There are a number of interpretations possible for this dream. Due to my current research and stuff into conspiracy theories, I&#039;m quick to think about the current state of the world, wherein your dream shows that the idiots are the general population, unaware of the things happening, and that you and your friend save the world...-ish.
+
+But all that aside(it&#039;s kind of unlikely), it maybe signifies that your life is a life full of hurdles, and that although your friends help you, you are the one who needs to put that final bit of effort into it, to advance, to understand. Or something.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">keen31</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=253&amp;ref=1203827935" width="53" height="55" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9928" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by SheepKing:</em><br />
+The lesson of this story: Most people have no idea how to interpret dreams :-P.<br />
+<br />
+Thanks for the effort though. ;)<br />
+<br />
+P.S. I haven&#039;t played a lot of video games for a couple years.</div>start here: <a href="http://www.hyperdictionary.com" target="_blank">www.hyperdictionary.com</a><br />
+<br />
+punch in all the words you can, in their simplest form. id recommend copying out the dream definitions into a text file or something so you can look at them all at once when youre done.<br />
+<br />
+anything you remember is significant. however, it can be tricky to divine the significance of each piece because sometimes it is literal (i.e. you ate pizza for dinner so you see pizza&#039;s in your dream) or if it is symbolic (i.e. you see your best friend with their back toward you and they dont turn when you call)... the latter being that the event is meaningful in another way (obviously).<br />
+<br />
+first tip - other people in dreams USUALLY (not always) represent an aspect of yourself. ask yourself what that person represents to you. maybe its an old friend from school that was always a real jerkoff. if you see that person in your dream it may signify the part of yourself that you see as being callous, or mean, or perhaps scared/insecure. whatever it was you identified with that person, it may signify that aspect of yourself.<br />
+<br />
+once you go over all the definitions and you pick out the parts of those defs. that ring true to you, then you have to piece them together and see how they interlock. if you see your mom in your dream and she is sick and frail... mom = caring/protecting instincts in you... sick/frail = neglected/disconnected .... mom+sick = you have been very callow as of late, you have been neglecting the side of you that is caring and nuturing... possibly in relation to something/someone else in the dream, a certain situation, or maybe in general. this is where being the dreamer comes into play.<br />
+<br />
+i havent even read the dream yet, i will in a moment. but if you really want to get down to the nitty gritty it takes a bit of mental gymnastics, and YOU as the dream will have the most insight.<br />
+<br />
+if youd still like to work on this dream (i recommend trying to work through ANY dream that is remembered, especially ones that are impressive or recurrent) let me know, id be willing to take some potshots at it with you.<br />
+<br />
+p.s. sorry for the necroposts, havent been around much lately so i was trying to catch up.</div>
+		<textarea style="display: none;" id="desctxt_9928">[quote][i]posted by SheepKing:[/i]
+The lesson of this story: Most people have no idea how to interpret dreams :-P.
+
+Thanks for the effort though. ;)
+
+P.S. I haven&#039;t played a lot of video games for a couple years.[/quote]
+
+
+start here: www.hyperdictionary.com
+
+punch in all the words you can, in their simplest form. id recommend copying out the dream definitions into a text file or something so you can look at them all at once when youre done.
+
+anything you remember is significant. however, it can be tricky to divine the significance of each piece because sometimes it is literal (i.e. you ate pizza for dinner so you see pizza&#039;s in your dream) or if it is symbolic (i.e. you see your best friend with their back toward you and they dont turn when you call)... the latter being that the event is meaningful in another way (obviously).
+
+first tip - other people in dreams USUALLY (not always) represent an aspect of yourself. ask yourself what that person represents to you. maybe its an old friend from school that was always a real jerkoff. if you see that person in your dream it may signify the part of yourself that you see as being callous, or mean, or perhaps scared/insecure. whatever it was you identified with that person, it may signify that aspect of yourself.
+
+once you go over all the definitions and you pick out the parts of those defs. that ring true to you, then you have to piece them together and see how they interlock. if you see your mom in your dream and she is sick and frail... mom = caring/protecting instincts in you... sick/frail = neglected/disconnected .... mom+sick = you have been very callow as of late, you have been neglecting the side of you that is caring and nuturing... possibly in relation to something/someone else in the dream, a certain situation, or maybe in general. this is where being the dreamer comes into play.
+
+i havent even read the dream yet, i will in a moment. but if you really want to get down to the nitty gritty it takes a bit of mental gymnastics, and YOU as the dream will have the most insight.
+
+if youd still like to work on this dream (i recommend trying to work through ANY dream that is remembered, especially ones that are impressive or recurrent) let me know, id be willing to take some potshots at it with you.
+
+p.s. sorry for the necroposts, havent been around much lately so i was trying to catch up.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by keen31, 4 years, 5 months ago<br />Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">DigGil</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9940" style="width: 100%; overflow: auto; min-height: 125px;">I used the Hyperdictonary to try out a dream that I had about that Tremors&#039; worm like monster (the &quot;graboid&quot;), but I found all unsense...</div>
+		<textarea style="display: none;" id="desctxt_9940">I used the Hyperdictonary to try out a dream that I had about that Tremors&#039; worm like monster (the &quot;graboid&quot;), but I found all unsense...</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">keen31</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=253&amp;ref=1203827935" width="53" height="55" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9946" style="width: 100%; overflow: auto; min-height: 125px;">it doesnt have the best selection of words, but it has pretty much anything youll find on any other site easily.<br />
+<br />
+break the things down to their simplest form. graboid will definitely not be in there. worm might. monster might. underground might. running might.<br />
+<br />
+these are the things youll have to look up. and THEN the hard part is trying to decide how meaningful each part is, and how they connect to one another. usually the most obvious/memorable thing in the dream will be the focus. also consider the dream&#039;s overall theme or how you would sum it up. that is what you will want to try and nail down... the topic. then you can use the rest of the details to add little bits to the topic.<br />
+<br />
+so, hypothetically: worm = lowly/negative. person in the dream, its you. so this worm is chasing you? chase = avoidance of a situation or problem. so you are avoiding some situation or part of yourself that is or makes you feel inferior/insecure/negative. where was this dream? lets say it was in the forest... lost in forest = searching your subconcious for better self-understanding. so; worm + chase + lostinforest = you have feelings of negativity or low self esteem and you are trying to overcome them, you are looking inside to see who you really are and dispel these feelings, but they seem too powerful and they are always right behind you, looming.<br />
+<br />
+now keep doing that, with EVERY detail. toss out the details that are irrelevant (i.e. if you watched tremors yesterday maybe the fact that its a worm is not important, maybe just that its a monster, and your brain used the tremor worm because its so fresh), etc.<br />
+<br />
+its time consuming, confusing, and it really makes you think hard about yourself and how you feel and think (usually with results you dont expect). so dont think you know everything about yourself going into it and dont be afraid of a conclusion about yourself or your thoughts that seems like it isnt you or it doesnt make sense, because a lot of times dreams are giving us messages about those things we ARENT addressing or DONT see, so that we can rectify them and integrate them.<br />
+<br />
+GL.</div>
+		<textarea style="display: none;" id="desctxt_9946">it doesnt have the best selection of words, but it has pretty much anything youll find on any other site easily.
+
+break the things down to their simplest form. graboid will definitely not be in there. worm might. monster might. underground might. running might.
+
+these are the things youll have to look up. and THEN the hard part is trying to decide how meaningful each part is, and how they connect to one another. usually the most obvious/memorable thing in the dream will be the focus. also consider the dream&#039;s overall theme or how you would sum it up. that is what you will want to try and nail down... the topic. then you can use the rest of the details to add little bits to the topic.
+
+so, hypothetically: worm = lowly/negative. person in the dream, its you. so this worm is chasing you? chase = avoidance of a situation or problem. so you are avoiding some situation or part of yourself that is or makes you feel inferior/insecure/negative. where was this dream? lets say it was in the forest... lost in forest = searching your subconcious for better self-understanding. so; worm + chase + lostinforest = you have feelings of negativity or low self esteem and you are trying to overcome them, you are looking inside to see who you really are and dispel these feelings, but they seem too powerful and they are always right behind you, looming.
+
+now keep doing that, with EVERY detail. toss out the details that are irrelevant (i.e. if you watched tremors yesterday maybe the fact that its a worm is not important, maybe just that its a monster, and your brain used the tremor worm because its so fresh), etc.
+
+its time consuming, confusing, and it really makes you think hard about yourself and how you feel and think (usually with results you dont expect). so dont think you know everything about yourself going into it and dont be afraid of a conclusion about yourself or your thoughts that seems like it isnt you or it doesnt make sense, because a lot of times dreams are giving us messages about those things we ARENT addressing or DONT see, so that we can rectify them and integrate them.
+
+GL.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">chillpill</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=635&amp;ref=1215645183" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9950" style="width: 100%; overflow: auto; min-height: 125px;">I&#039;m sorry, I didn&#039;t have the patience to read it all.<br />
+Very detailed though, you have a great memory.<br />
+<br />
+Video game aspects in dreams, depending on how much you play video games, usually represents some form of miscontrol.  For example, a character in a video game has no control over its life; it lives by video game rules and will begin and end in the way that the video game (and the player of the video game) dictates.  Dreaming you are a character in a video game, or that you are playing the role of a character in a video game (or video game-like concept) might mean that you feel you lack control in your life.<br />
+However, that&#039;s only if you believe the Carl Jung theory on the collective conscious.  <br />
+<br />
+Going by the Freudian methods, the part that I read up to (with the female heroine) suggests a lot of withdrawn sexual desire (e.g. putting long cigarettes in holes).  Doesn&#039;t mean you want to have sex necessarily, it just means it is on your mind (in either a overwhelmingly positive sense, or a negative sense).  <br />
+(However, almost everything Freudian seems to have to do with sex...)<br />
+When you dream, your unconscious is sending you coded messages of things it had to deal with during the day.  That could be things that were overwhelmingly on your mind or things that you repressed.  Why it was overwhelmingly on your mind or why you repressed it could be the simplest reasons, doesn&#039;t mean you are an addict or anything, so don&#039;t get the wrong idea about what I&#039;m saying.  <br />
+<br />
+Btw, that&#039;s my interpretation, it could definately be off because:<br />
+1 - I didn&#039;t read the whole thing.<br />
+2 - I&#039;m not you, and symbols mean different things to me than you.<br />
+</div>
+		<textarea style="display: none;" id="desctxt_9950">I&#039;m sorry, I didn&#039;t have the patience to read it all.
+Very detailed though, you have a great memory.
+
+Video game aspects in dreams, depending on how much you play video games, usually represents some form of miscontrol.  For example, a character in a video game has no control over its life; it lives by video game rules and will begin and end in the way that the video game (and the player of the video game) dictates.  Dreaming you are a character in a video game, or that you are playing the role of a character in a video game (or video game-like concept) might mean that you feel you lack control in your life.
+However, that&#039;s only if you believe the Carl Jung theory on the collective conscious.  
+
+Going by the Freudian methods, the part that I read up to (with the female heroine) suggests a lot of withdrawn sexual desire (e.g. putting long cigarettes in holes).  Doesn&#039;t mean you want to have sex necessarily, it just means it is on your mind (in either a overwhelmingly positive sense, or a negative sense).  
+(However, almost everything Freudian seems to have to do with sex...)
+When you dream, your unconscious is sending you coded messages of things it had to deal with during the day.  That could be things that were overwhelmingly on your mind or things that you repressed.  Why it was overwhelmingly on your mind or why you repressed it could be the simplest reasons, doesn&#039;t mean you are an addict or anything, so don&#039;t get the wrong idea about what I&#039;m saying.  
+
+Btw, that&#039;s my interpretation, it could definately be off because:
+1 - I didn&#039;t read the whole thing.
+2 - I&#039;m not you, and symbols mean different things to me than you.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">DigGil</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10000" style="width: 100%; overflow: auto; min-height: 125px;">That that ChillPill say on the Carl Jung interpretation is liked to my theory, but that&#039;s only true if while sleeping his subconscious had the notion of &quot;how a videogame works&quot; information on dreams doesn&#039;t came from nothing. Most of the people subconscious takes better the idea of &quot;entertainment&quot; or &quot;adventure&quot;, that&#039;s why I say he is the best person to interpret his own dream.<br />
+<br />
+-keen31: I know what you say, that&#039;s why I searched &quot;monster&quot; (first I searched for &quot;deathworm&quot;, like the mongolian deathworm, but no results. The 2 monsters are liked :p).<br />
+In my dream there were some people from my family like my uncle, my godmother, and my parents (my older cousin and grandpa too, I think but I can´t really remember because a great part of the focus was around my uncle) that happened at the front of my house which is like a backyard but the groud is covered by stone.<br />
+For some reason (at this time I can&#039;t remember) I needed to go to the back of my house, then like I always do I run across the stoned ground to jump over a wall when the thin stone ground broke and the monster apeared. Due to the blast there was only dust on the air. When the dust lied down there was still the monster&#039;s head digging in a way that a huge funnel shaped hole was made. I ran away because the stoned floor was breaking into the hole directly to the monster, then I started to dream more lucidly (that usually happens when I&#039;m ready to wake up) and run against the monster with a rope until I wake up... writting this took me more time that dreaming it :P...</div>
+		<textarea style="display: none;" id="desctxt_10000">That that ChillPill say on the Carl Jung interpretation is liked to my theory, but that&#039;s only true if while sleeping his subconscious had the notion of &quot;how a videogame works&quot; information on dreams doesn&#039;t came from nothing. Most of the people subconscious takes better the idea of &quot;entertainment&quot; or &quot;adventure&quot;, that&#039;s why I say he is the best person to interpret his own dream.
+
+-keen31: I know what you say, that&#039;s why I searched &quot;monster&quot; (first I searched for &quot;deathworm&quot;, like the mongolian deathworm, but no results. The 2 monsters are liked :p).
+In my dream there were some people from my family like my uncle, my godmother, and my parents (my older cousin and grandpa too, I think but I can´t really remember because a great part of the focus was around my uncle) that happened at the front of my house which is like a backyard but the groud is covered by stone.
+For some reason (at this time I can&#039;t remember) I needed to go to the back of my house, then like I always do I run across the stoned ground to jump over a wall when the thin stone ground broke and the monster apeared. Due to the blast there was only dust on the air. When the dust lied down there was still the monster&#039;s head digging in a way that a huge funnel shaped hole was made. I ran away because the stoned floor was breaking into the hole directly to the monster, then I started to dream more lucidly (that usually happens when I&#039;m ready to wake up) and run against the monster with a rope until I wake up... writting this took me more time that dreaming it :P...</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">chillpill</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=635&amp;ref=1215645183" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10014" style="width: 100%; overflow: auto; min-height: 125px;">You&#039;re definately right there DigGil, he definately IS the best person to analyze his own dream, but he did say &quot;go for it&quot; haha.</div>
+		<textarea style="display: none;" id="desctxt_10014">You&#039;re definately right there DigGil, he definately IS the best person to analyze his own dream, but he did say &quot;go for it&quot; haha.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=374" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 32 queries. 0.369 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

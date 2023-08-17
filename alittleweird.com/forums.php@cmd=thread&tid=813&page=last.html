@@ -1,0 +1,346 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Magic</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Magic</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Magic</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Subliminal</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=879&amp;ref=1231742413" width="96" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_14615" style="width: 100%; overflow: auto; min-height: 125px;">Alright, so browsing I came across a thread in which magic was mentioned. More specifically, what the distinguishment is between magic and psionics.<br />
+<br />
+Reading through that thread, I realized that there are people here I&#039;d really like to talk to. Magic is one of those things that I have gotten into during my absence here.<br />
+<br />
+So tell me, who here is interested in or currently does magic?</div>
+		<textarea style="display: none;" id="desctxt_14615">Alright, so browsing I came across a thread in which magic was mentioned. More specifically, what the distinguishment is between magic and psionics.
+
+Reading through that thread, I realized that there are people here I&#039;d really like to talk to. Magic is one of those things that I have gotten into during my absence here.
+
+So tell me, who here is interested in or currently does magic?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Subliminal, 3 years, 4 months ago<br />Posted 3 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Morcyont</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=867&amp;ref=1262407330" width="125" height="73" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_14617" style="width: 100%; overflow: auto; min-height: 125px;">I was thinking of trying it, but most of it sounds very fluffy. After reading through some articles about it I felt like I was playing a fantasy RPG. :)<br />
+<br />
+edit: <a href="mailto:mastera95@msn.com">mastera95@msn.com</a>, yes we may.</div>
+		<textarea style="display: none;" id="desctxt_14617">I was thinking of trying it, but most of it sounds very fluffy. After reading through some articles about it I felt like I was playing a fantasy RPG. :)
+
+edit: mastera95@msn.com, yes we may.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Morcyont, 3 years, 4 months ago<br />Posted 3 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Subliminal</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=879&amp;ref=1231742413" width="96" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_14618" style="width: 100%; overflow: auto; min-height: 125px;">Most articles you read ARE fluffy. You have to be very selective about what you pick up. <br />
+<br />
+<a href="mailto:corruptedlifestream@gmail.com">corruptedlifestream@gmail.com</a><br />
+<br />
+Email me, can we talk more? :)</div>
+		<textarea style="display: none;" id="desctxt_14618">Most articles you read ARE fluffy. You have to be very selective about what you pick up. 
+
+corruptedlifestream@gmail.com
+
+Email me, can we talk more? :)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">sh</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_14620" style="width: 100%; overflow: auto; min-height: 125px;">I put some magical documents online. They are @  <a href="http://spellhawk.blogspot.com/2009/05/how-to-do-magic-and-examples.html" target="_blank">http://spellhawk.blogspot.com/2009/05/how-to-do-magic-and-examples.html</a> and  <a href="http://spellhawk.com." target="_blank">http://spellhawk.com.</a> I would appreciate if I knew they were fluff or not.</div>
+		<textarea style="display: none;" id="desctxt_14620">I put some magical documents online. They are @ http://spellhawk.blogspot.com/2009/05/how-to-do-magic-and-examples.html and http://spellhawk.com. I would appreciate if I knew they were fluff or not.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Subliminal</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=879&amp;ref=1231742413" width="96" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_14622" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by sh:</em><br />
+I put some magical documents online. They are @  <a href="http://spellhawk.blogspot.com/2009/05/how-to-do-magic-and-examples.html" target="_blank">http://spellhawk.blogspot.com/2009/05/how-to-do-magic-and-examples.html</a> and  <a href="http://spellhawk.com." target="_blank">http://spellhawk.com.</a> I would appreciate if I knew they were fluff or not.</div>Haven&#039;t looked at the second...The first is fluffy though.<br />
+Magic and Magick are not two different things, first off.<br />
+Magic is just another way to spell Magick, and Magickian is another word for Magician.<br />
+It&#039;s all the same.<br />
+<br />
+If you found someone really into magic you&#039;d lose them right there.<br />
+Then you go on to mention magicians in way of pulling bunnies out of a hat, and fictional characters, which doesn&#039;t help your momentum.<br />
+<br />
+You also speak of certain things as though they are a sort of &quot;base system&quot;, without citing which system they come from...There are a lot of problems with it.. </div>
+		<textarea style="display: none;" id="desctxt_14622">[quote][i]posted by sh:[/i]
+I put some magical documents online. They are @ http://spellhawk.blogspot.com/2009/05/how-to-do-magic-and-examples.html and http://spellhawk.com. I would appreciate if I knew they were fluff or not.[/quote]
+
+Haven&#039;t looked at the second...The first is fluffy though.
+Magic and Magick are not two different things, first off.
+Magic is just another way to spell Magick, and Magickian is another word for Magician.
+It&#039;s all the same.
+
+If you found someone really into magic you&#039;d lose them right there.
+Then you go on to mention magicians in way of pulling bunnies out of a hat, and fictional characters, which doesn&#039;t help your momentum.
+
+You also speak of certain things as though they are a sort of &quot;base system&quot;, without citing which system they come from...There are a lot of problems with it..</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Morcyont</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=867&amp;ref=1262407330" width="125" height="73" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_14627" style="width: 100%; overflow: auto; min-height: 125px;">Can anyone be kind enough to tell me where I can find some nice quality articles or tutorials on the subject?</div>
+		<textarea style="display: none;" id="desctxt_14627">Can anyone be kind enough to tell me where I can find some nice quality articles or tutorials on the subject?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">sh</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_14631" style="width: 100%; overflow: auto; min-height: 125px;">Thank ya, I will try to fix it in a few days. Fixed the intro, except the citings of &#039;base systems&#039;</div>
+		<textarea style="display: none;" id="desctxt_14631">Thank ya, I will try to fix it in a few days. Fixed the intro, except the citings of &#039;base systems&#039;</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by sh, 3 years, 4 months ago<br />Posted 3 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">sh</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_14632" style="width: 100%; overflow: auto; min-height: 125px;">So what did I mention in the doc that was a &#039;base system&#039;? I need the citings for possible changes to be made.</div>
+		<textarea style="display: none;" id="desctxt_14632">So what did I mention in the doc that was a &#039;base system&#039;? I need the citings for possible changes to be made.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Subliminal</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=879&amp;ref=1231742413" width="96" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_14638" style="width: 100%; overflow: auto; min-height: 125px;">There technically is no &quot;base system&quot;..that&#039;s the point. <br />
+You use terms such as &quot;chi&quot; which belong to a certain system..<br />
+<br />
+Though there are terms that are the same thing just different words, you should cite which goes with what. For instance, someone using a particular system may have absolutely no idea what you mean by &quot;aether&quot;. <br />
+<br />
+..That being said you actually should define these words.</div>
+		<textarea style="display: none;" id="desctxt_14638">There technically is no &quot;base system&quot;..that&#039;s the point. 
+You use terms such as &quot;chi&quot; which belong to a certain system..
+
+Though there are terms that are the same thing just different words, you should cite which goes with what. For instance, someone using a particular system may have absolutely no idea what you mean by &quot;aether&quot;. 
+
+..That being said you actually should define these words.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">sh</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_14643" style="width: 100%; overflow: auto; min-height: 125px;">All fixed up! So anyone who wants to, feel free to view the doc I put up. I would appreciate a review or comment on it too.</div>
+		<textarea style="display: none;" id="desctxt_14643">All fixed up! So anyone who wants to, feel free to view the doc I put up. I would appreciate a review or comment on it too.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">wierdcuriosity123</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=995&amp;ref=1248385170" width="107" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_14668" style="width: 100%; overflow: auto; min-height: 125px;">hey watsup every one so my whole 13 years so far in life(yes im nly 13) ive had interest in werewolves and witches since my parents are pretty much hard core my dad works on make up fx for movies so ive grown up 2 watching scary movies but since 9 till now im so interesed in these things. my grandma(i know its sorta wierd) was a card reader and has a special connection with earth and nature.i myself feel i have the conection with animals and nature as crazy as it sounds lol so message back and start a conversation reply 2 my new thread...earthly connections</div>
+		<textarea style="display: none;" id="desctxt_14668">hey watsup every one so my whole 13 years so far in life(yes im nly 13) ive had interest in werewolves and witches since my parents are pretty much hard core my dad works on make up fx for movies so ive grown up 2 watching scary movies but since 9 till now im so interesed in these things. my grandma(i know its sorta wierd) was a card reader and has a special connection with earth and nature.i myself feel i have the conection with animals and nature as crazy as it sounds lol so message back and start a conversation reply 2 my new thread...earthly connections</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 4 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=813" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 27 queries. 0.273 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

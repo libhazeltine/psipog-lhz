@@ -1,0 +1,341 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Fate Conspires</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Fate Conspires</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Fate Conspires</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">SheepKing</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=211&amp;ref=1222648137" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7872" style="width: 100%; overflow: auto; min-height: 125px;">So, this is what I&#039;ve been seeing lately.<br />
+<br />
+Two weeks ago I decided I needed to start following through with my plans. I realized that it is better to start &#039;acting&#039; on your instincts to accomplish something then to sit around and try and figure out what to accomplish. I have had a little more energy than usual, and feel like I&#039;m getting a little more things done than normal.<br />
+<br />
+Now; Several days after I realized I wanted to uh, improve my situation, a friend forwards me an email he gets that&#039;s like one of those motivational e-mails from some guy who sells, call it motivation. It&#039;s about focusing and acting on your goals, and even if you don&#039;t have goals, to start acting on what you already know about yourself and what you want. As time goes on, I start doing a little more here and there, and start knocking out the small things I have been putting aside. There have been several small things up to this moment that have made me say &quot;Huh, I&#039;ve been thinking about this.&quot; Or &quot;Hmm, I&#039;ve had this idea in my head for a little while.&quot; And now a blog I read normally (steve pavlina&#039;s) has a piece on acting on things you know rather than waiting for the &quot;new great idea&quot;.<br />
+<br />
+I can&#039;t help but feel like that&#039;s a sign saying &quot;You&#039;re on the right track.&quot;<br />
+<br />
+But the cynic in me says, &quot;Coincidence&quot; or &quot;You&#039;re making something out of nothing.&quot;<br />
+<br />
+From where you stand, if this happened to you. How would you react?</div>
+		<textarea style="display: none;" id="desctxt_7872">So, this is what I&#039;ve been seeing lately.
+
+Two weeks ago I decided I needed to start following through with my plans. I realized that it is better to start &#039;acting&#039; on your instincts to accomplish something then to sit around and try and figure out what to accomplish. I have had a little more energy than usual, and feel like I&#039;m getting a little more things done than normal.
+
+Now; Several days after I realized I wanted to uh, improve my situation, a friend forwards me an email he gets that&#039;s like one of those motivational e-mails from some guy who sells, call it motivation. It&#039;s about focusing and acting on your goals, and even if you don&#039;t have goals, to start acting on what you already know about yourself and what you want. As time goes on, I start doing a little more here and there, and start knocking out the small things I have been putting aside. There have been several small things up to this moment that have made me say &quot;Huh, I&#039;ve been thinking about this.&quot; Or &quot;Hmm, I&#039;ve had this idea in my head for a little while.&quot; And now a blog I read normally (steve pavlina&#039;s) has a piece on acting on things you know rather than waiting for the &quot;new great idea&quot;.
+
+I can&#039;t help but feel like that&#039;s a sign saying &quot;You&#039;re on the right track.&quot;
+
+But the cynic in me says, &quot;Coincidence&quot; or &quot;You&#039;re making something out of nothing.&quot;
+
+From where you stand, if this happened to you. How would you react?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_7874" style="width: 100%; overflow: auto; min-height: 125px;"><br />
+I would Stick with the feeling that&#039;s telling me I&#039;m on the right track, heck, even if I am wrong, it&#039;s better than not doing something that could be for the better because I felt that it was nothing and brush it aside.<br />
+<br />
+Doubt never helped anything, that&#039;s my personal belief.<br />
+<br />
+The real Question you should be asking yourself is whether the changes are good or bad? If there for the good, and you truly believe that, then to hell if it&#039;s just coincidence, it&#039;s still happening and you are still experiencing it, so why not make the best out of it?</div>
+		<textarea style="display: none;" id="desctxt_7874">I would Stick with the feeling that&#039;s telling me I&#039;m on the right track, heck, even if I am wrong, it&#039;s better than not doing something that could be for the better because I felt that it was nothing and brush it aside.
+
+Doubt never helped anything, that&#039;s my personal belief.
+
+The real Question you should be asking yourself is whether the changes are good or bad? If there for the good, and you truly believe that, then to hell if it&#039;s just coincidence, it&#039;s still happening and you are still experiencing it, so why not make the best out of it?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Wandering Wolf</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=492&amp;ref=1209855800" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7905" style="width: 100%; overflow: auto; min-height: 125px;">I support Akio&#039;s answer. It is healthier to just go along with it and think positive. Negativity will never do you much good.<br />
+<br />
+If you see one that repeats itself way too many times, however, you are better off ignoring it and saving yourself the torment. I literally wish I had a dollar for every time I &quot;just so happened to&quot; look at a clock when it &quot;just so happened to&quot; read &quot;9:11&quot;. Eventually, I just stopped caring about it. I always knew that it probably didn&#039;t mean anything because I knew that, if it did, there wouldn&#039;t be much of a point of it repeating itself so many times in such an ambiguous manner. Repetitive symbolism is almost meaningless. I&#039;d rather hold onto my sanity than be that open minded.<br />
+<br />
+I even have my own proverb that concerns the act of keeping an open mind. It goes like this,<br />
+<br />
+&quot;Keep an open mind, but not so open that your brain falls out.&quot;<br />
+<br />
+- Wandering Wolf<br />
+<br />
+One-time coincidences, on the other hand, are worth looking at in a positive light. Such coincidences will at least give you hope for what could be. <br />
+<br />
+Anyhow, you do sound like you are on the right track, so keep at it.<br />
+<br />
+- WW</div>
+		<textarea style="display: none;" id="desctxt_7905">I support Akio&#039;s answer. It is healthier to just go along with it and think positive. Negativity will never do you much good.
+
+If you see one that repeats itself way too many times, however, you are better off ignoring it and saving yourself the torment. I literally wish I had a dollar for every time I &quot;just so happened to&quot; look at a clock when it &quot;just so happened to&quot; read &quot;9:11&quot;. Eventually, I just stopped caring about it. I always knew that it probably didn&#039;t mean anything because I knew that, if it did, there wouldn&#039;t be much of a point of it repeating itself so many times in such an ambiguous manner. Repetitive symbolism is almost meaningless. I&#039;d rather hold onto my sanity than be that open minded.
+
+I even have my own proverb that concerns the act of keeping an open mind. It goes like this,
+
+&quot;Keep an open mind, but not so open that your brain falls out.&quot;
+
+- Wandering Wolf
+
+One-time coincidences, on the other hand, are worth looking at in a positive light. Such coincidences will at least give you hope for what could be. 
+
+Anyhow, you do sound like you are on the right track, so keep at it.
+
+- WW</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Wandering Wolf, 4 years, 7 months ago<br />Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">keen31</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=253&amp;ref=1203827935" width="53" height="55" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_7907" style="width: 100%; overflow: auto; min-height: 125px;">in my experience &quot;coincidences&quot; MEAN youre on the right track. some people call them &quot;synchronicities&quot; as well... where different things echo each other or what is in your mind.<br />
+<br />
+id say youre on the right track, keep at it. generally when i am (or people ive talked to are) on the right track, that stuff happens more and more, and if you are aware of it you can only benefit from that. snowball effect, etc.<br />
+<br />
+congrats on your accomplishments (both present and pending)!</div>
+		<textarea style="display: none;" id="desctxt_7907">in my experience &quot;coincidences&quot; MEAN youre on the right track. some people call them &quot;synchronicities&quot; as well... where different things echo each other or what is in your mind.
+
+id say youre on the right track, keep at it. generally when i am (or people ive talked to are) on the right track, that stuff happens more and more, and if you are aware of it you can only benefit from that. snowball effect, etc.
+
+congrats on your accomplishments (both present and pending)!</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">NewAgeAlchemist</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=459&amp;ref=1207160982" width="125" height="20" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7908" style="width: 100%; overflow: auto; min-height: 125px;">The discussion is really the same as Vimick&#039;s topic on coincidences and a few of Sean&#039;s blogs. I&#039;m a firm believer Synchronicity is just random events or a subconscious direction; you put yourself into situations with some semblance of a direction and the human mind has an affinity for both finding patterns and associating knowledge for easier recall. At the same time though even I&#039;m a little surprised.<br />
+<br />
+I&#039;ve been playing with the permanent magnet motor and my theory on that point is pretty complete until i actually build a model, so tonight i was reading up on electrical generator. One article put forth the idea that if you were to take one of the small motors and set up a string so you could turn it, it would produce electricity. I thought to myself, hmm, i&#039;ve got one of those laying around somewhere and tried to look for it to play with. Checking various spots in my room I discover an old kit to build an electric motor that can be put in a plastic boat husk to create a working motorboat.<br />
+<br />
+Certainly my brain knew it was in there, but to me it was a re-discovery of something after 5-10+ years. More on the side of randomness though, I was up late earlier this week watching the sub of the newest Naruto movie and a guy IMed me. Apparently his chat program of choice has a feature to generate the name of someone online to talk to, and it choose me.  I&#039;d been thinking about traveling(leaning toward walking) across the US taking only maybe a sleeping bag, the clothing I was wearing and a debit card; Get to talking to the guy and turns out hes the same age and contemplating a similar trip(he was thinking primarily buses though), its crazy because even if he did know me I&#039;ve not mentioned the idea to anyone.<br />
+<br />
+I can see the grounds for believing in a cosmic alignment pretty clearly but still have to believe its more likely just a combination of chance and both conscious and subconscious direction.</div>
+		<textarea style="display: none;" id="desctxt_7908">The discussion is really the same as Vimick&#039;s topic on coincidences and a few of Sean&#039;s blogs. I&#039;m a firm believer Synchronicity is just random events or a subconscious direction; you put yourself into situations with some semblance of a direction and the human mind has an affinity for both finding patterns and associating knowledge for easier recall. At the same time though even I&#039;m a little surprised.
+
+I&#039;ve been playing with the permanent magnet motor and my theory on that point is pretty complete until i actually build a model, so tonight i was reading up on electrical generator. One article put forth the idea that if you were to take one of the small motors and set up a string so you could turn it, it would produce electricity. I thought to myself, hmm, i&#039;ve got one of those laying around somewhere and tried to look for it to play with. Checking various spots in my room I discover an old kit to build an electric motor that can be put in a plastic boat husk to create a working motorboat.
+
+Certainly my brain knew it was in there, but to me it was a re-discovery of something after 5-10+ years. More on the side of randomness though, I was up late earlier this week watching the sub of the newest Naruto movie and a guy IMed me. Apparently his chat program of choice has a feature to generate the name of someone online to talk to, and it choose me.  I&#039;d been thinking about traveling(leaning toward walking) across the US taking only maybe a sleeping bag, the clothing I was wearing and a debit card; Get to talking to the guy and turns out hes the same age and contemplating a similar trip(he was thinking primarily buses though), its crazy because even if he did know me I&#039;ve not mentioned the idea to anyone.
+
+I can see the grounds for believing in a cosmic alignment pretty clearly but still have to believe its more likely just a combination of chance and both conscious and subconscious direction.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Vince</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_7960" style="width: 100%; overflow: auto; min-height: 125px;">Always follow the synchronities! <br />
+<br />
+Everytime I do, amazing, unexpected things happen. I just find myself in the right place at the right time. Even bad things lead me to the success in the area I focused my attention at.<br />
+<br />
+Maybe it&#039;s law of attaction, maybe it&#039;s micro-pk, maybe it&#039;s telekinesis, maybe it&#039;s you-name-it. Strange things happen if you put enough attention to what you really want.</div>
+		<textarea style="display: none;" id="desctxt_7960">Always follow the synchronities! 
+
+Everytime I do, amazing, unexpected things happen. I just find myself in the right place at the right time. Even bad things lead me to the success in the area I focused my attention at.
+
+Maybe it&#039;s law of attaction, maybe it&#039;s micro-pk, maybe it&#039;s telekinesis, maybe it&#039;s you-name-it. Strange things happen if you put enough attention to what you really want.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=341" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 22 queries. 0.272 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

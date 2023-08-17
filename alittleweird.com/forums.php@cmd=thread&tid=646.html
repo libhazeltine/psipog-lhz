@@ -1,0 +1,355 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; What do you think of this?</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; What do you think of this?</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">What do you think of this?</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Psikillion</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=593&amp;ref=1213954510" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12532" style="width: 100%; overflow: auto; min-height: 125px;">First before I go into more detail I want to ask that you do not try and convince me whether God exists or not. Second I want you to think about these experiences very carefully, because they are really complicated (I think, for the lack of a better word).<br />
+<br />
+A few days ago I had one of those shocking moments that my life needs more control or else my life will be terrible in the future. However this is not what I wanted you to think about (because that is a personal experience), but what happened after it.<br />
+<br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;">I went to bed very upset, and was wondering how the heck I will be able to pull all of that off. I felt helpless and did not know what to do. Then what happened was I felt like someone was mentally placing their arm around my shoulders (all of that was mental, not involving any physical things at all). My guess at the time was that it was God reminding me that he was there (which I have not been able to disprove). Then I decided the best way to handle my situation is to allow God to completely control it, because it was pretty obvious that I (as my own person) cannot do it. Then I felt as if I was mentally shaking someone&#039;s hand.<br />
+<br />
+When that was over I suddenly had this really weird dream. I died in such a horrific way that I was completely destroyed. My family decided to bury me (though how they buried me, I have no clue). Near my tombstone and in the ground I was buried in were the most beautiful flowers ever (for the lack of better words, or at least that is what came into my mind when I was dreaming). These flowers were made out of pure silver that one can see their own reflections in it. Also these flowers are in a shape that makes it look like these flowers are fire. A person went up to my grave and looked at one of these flowers. It seemed like he completely changed and became more cheerful when he was looking at this flower, and decided to take it and leave.</div>First I would like to mention about my experiences in receiving telepathy in order to clarify my first experience for you:<br />
+<br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;">1. July 2008 One of my friends and I played this telepathy game which was like the colors and shapes game, except it was objects at the table. I managed to get it right once, but unfortunately after then he did not have the time to practice with me (work).<br />
+<br />
+2. August 2008 I did the telepathy game (the colors and shapes) with wolfdancer on Psionline and I was usually off in either the shapes or the colors category.<br />
+<br />
+3. September 2008 to present I decided in order to become more skilled in telepathy I need to make a telepathical beacon to pick up the signals in telepathy and other people&#039;s thoughts.<br />
+<br />
+4. I have no shields unless my subconscious has certain defenses already made.<br />
+<br />
+5. When I do receive something in telepathy it takes a while and does not seem to come out as clear. However, this experience was instantaneous and extremely clear.</div>For the dream I translated as such (even though I probably will forget to translate a few of the details):<br />
+<br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;">My physical and spiritual life will completely change (utter destruction). This change would effect me forever (buried). This change will bear fruit which will affect others (the flowers). This fruit will make others look introspectively at their own lives (the silver and the man looking at the flowers). These people will change similar to what will happen for me (the fire shape of the flowers and man completely changed). These people would be changed for the better (the cheerful part). Others I have not seen would hear the story of how I completely changed through others (man walking away with flower).</div>I am of course open to any suggestions, and I would like to thank you in advance for any help you might give. ;D</div>
+		<textarea style="display: none;" id="desctxt_12532">First before I go into more detail I want to ask that you do not try and convince me whether God exists or not. Second I want you to think about these experiences very carefully, because they are really complicated (I think, for the lack of a better word).
+
+A few days ago I had one of those shocking moments that my life needs more control or else my life will be terrible in the future. However this is not what I wanted you to think about (because that is a personal experience), but what happened after it.
+
+[quote]I went to bed very upset, and was wondering how the heck I will be able to pull all of that off. I felt helpless and did not know what to do. Then what happened was I felt like someone was mentally placing their arm around my shoulders (all of that was mental, not involving any physical things at all). My guess at the time was that it was God reminding me that he was there (which I have not been able to disprove). Then I decided the best way to handle my situation is to allow God to completely control it, because it was pretty obvious that I (as my own person) cannot do it. Then I felt as if I was mentally shaking someone&#039;s hand.
+
+When that was over I suddenly had this really weird dream. I died in such a horrific way that I was completely destroyed. My family decided to bury me (though how they buried me, I have no clue). Near my tombstone and in the ground I was buried in were the most beautiful flowers ever (for the lack of better words, or at least that is what came into my mind when I was dreaming). These flowers were made out of pure silver that one can see their own reflections in it. Also these flowers are in a shape that makes it look like these flowers are fire. A person went up to my grave and looked at one of these flowers. It seemed like he completely changed and became more cheerful when he was looking at this flower, and decided to take it and leave.[/quote]
+
+First I would like to mention about my experiences in receiving telepathy in order to clarify my first experience for you:
+
+[quote]1. July 2008 One of my friends and I played this telepathy game which was like the colors and shapes game, except it was objects at the table. I managed to get it right once, but unfortunately after then he did not have the time to practice with me (work).
+
+2. August 2008 I did the telepathy game (the colors and shapes) with wolfdancer on Psionline and I was usually off in either the shapes or the colors category.
+
+3. September 2008 to present I decided in order to become more skilled in telepathy I need to make a telepathical beacon to pick up the signals in telepathy and other people&#039;s thoughts.
+
+4. I have no shields unless my subconscious has certain defenses already made.
+
+5. When I do receive something in telepathy it takes a while and does not seem to come out as clear. However, this experience was instantaneous and extremely clear.[/quote]
+
+For the dream I translated as such (even though I probably will forget to translate a few of the details):
+
+[quote]My physical and spiritual life will completely change (utter destruction). This change would effect me forever (buried). This change will bear fruit which will affect others (the flowers). This fruit will make others look introspectively at their own lives (the silver and the man looking at the flowers). These people will change similar to what will happen for me (the fire shape of the flowers and man completely changed). These people would be changed for the better (the cheerful part). Others I have not seen would hear the story of how I completely changed through others (man walking away with flower).[/quote]
+
+I am of course open to any suggestions, and I would like to thank you in advance for any help you might give. ;D</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Psikillion, 3 years, 11 months ago<br />Posted 3 years, 11 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Chadwick</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=555&amp;ref=1221955619" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12534" style="width: 100%; overflow: auto; min-height: 125px;">You made a good translation.</div>
+		<textarea style="display: none;" id="desctxt_12534">You made a good translation.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 11 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">templedog</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=862&amp;ref=1229687303" width="125" height="117" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12550" style="width: 100%; overflow: auto; min-height: 125px;">God isn&#039;t real. End of discussion. </div>
+		<textarea style="display: none;" id="desctxt_12550">God isn&#039;t real. End of discussion.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 11 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Psikillion</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=593&amp;ref=1213954510" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12552" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by templedog:</em><br />
+God isn&#039;t real. End of discussion.</div><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Psikillion:</em><br />
+First before I go into more detail I want to ask that you do not try and convince me whether God exists or not. Second I want you to think about these experiences very carefully, because they are really complicated (I think, for the lack of a better word).</div></div>
+		<textarea style="display: none;" id="desctxt_12552">[quote][i]posted by templedog:[/i]
+God isn&#039;t real. End of discussion.[/quote]
+
+[quote][i]posted by Psikillion:[/i]
+First before I go into more detail I want to ask that you do not try and convince me whether God exists or not. Second I want you to think about these experiences very carefully, because they are really complicated (I think, for the lack of a better word).[/quote]</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 11 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">anisus</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=732&amp;ref=1219047680" width="125" height="123" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12561" style="width: 100%; overflow: auto; min-height: 125px;">I can relate to the part about feeling &quot;someone&quot; put their arm around you and in essence comforting you. I&#039;ve had a somewhat similiar experience once that invloved me feeling much like you did, about life and fear about the future. I went to bed upset as well(very upset) and out of nowhere, this amazing image was displayed in the forefront of my mind (not in my mind, but much like a psychotropic hullucination, in front of the mind. It was warm and brilliant and there was this intense feeling of &quot;someone&quot; or something looking out for me. I won&#039;t say it&#039;s god, but I can see where you are coming from. <br />
+I also had a dream that night after my experience, but I do not recall it at all. I do remember the experience very well though and I still wonder what it means. I think the empasis should be placed more on the &quot;arm around shoulder&quot; experience you had moreso than the dream, only because it seems to have been a very mysterious and interesting experience. I see dreams as mostly our own answers to questions or problems in our lives our conscious minds are unable to answer, unless it&#039;s lucid of course, then we make them.   </div>
+		<textarea style="display: none;" id="desctxt_12561">I can relate to the part about feeling &quot;someone&quot; put their arm around you and in essence comforting you. I&#039;ve had a somewhat similiar experience once that invloved me feeling much like you did, about life and fear about the future. I went to bed upset as well(very upset) and out of nowhere, this amazing image was displayed in the forefront of my mind (not in my mind, but much like a psychotropic hullucination, in front of the mind. It was warm and brilliant and there was this intense feeling of &quot;someone&quot; or something looking out for me. I won&#039;t say it&#039;s god, but I can see where you are coming from. 
+I also had a dream that night after my experience, but I do not recall it at all. I do remember the experience very well though and I still wonder what it means. I think the empasis should be placed more on the &quot;arm around shoulder&quot; experience you had moreso than the dream, only because it seems to have been a very mysterious and interesting experience. I see dreams as mostly our own answers to questions or problems in our lives our conscious minds are unable to answer, unless it&#039;s lucid of course, then we make them.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 11 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">f3licks</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=848&amp;ref=1227833859" width="125" height="78" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12562" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by templedog:</em><br />
+God isn&#039;t real. End of discussion.</div>Really? Come on dude, that is not the point of this thread.</div>
+		<textarea style="display: none;" id="desctxt_12562">[quote][i]posted by templedog:[/i]
+God isn&#039;t real. End of discussion.[/quote]
+
+Really? Come on dude, that is not the point of this thread.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 11 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Riven</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=656&amp;ref=1217444530" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12563" style="width: 100%; overflow: auto; min-height: 125px;">Not to be pessimistic or anything, but do you think you being buried in your dream is just a change while you&#039;re alive, or a serious type thing like you actually dying?<br />
+<br />
+Otherwise I think it&#039;s a pretty good dream translation.<br />
+<br />
+I felt something sort of similar when I was going through a really rough period in my life and I was thinking about killing myself. I remember I was sitting there on my bed, when I sort of felt (like you said, mentally) like someone sat down next to me and asked &quot;Why are you doing this?&quot; I thought the reasons why and it said &quot;I&#039;ll tell you what. You trust me and wait one day. If it doesn&#039;t change by tomorrow, do what you want.&quot; After much persuasion I agreed, and waited. The next day a group of girls invited me to sit at their table, and we all became friends. That might not sound like much, but especially around that time I didn&#039;t fit in, and had very few if any friends for several years. I don&#039;t remember my dream that night, and I don&#039;t have really any experience in telepathy.<br />
+<br />
+So considering my own experience, I really don&#039;t think yours is impossible or even unlikely ;)</div>
+		<textarea style="display: none;" id="desctxt_12563">Not to be pessimistic or anything, but do you think you being buried in your dream is just a change while you&#039;re alive, or a serious type thing like you actually dying?
+
+Otherwise I think it&#039;s a pretty good dream translation.
+
+I felt something sort of similar when I was going through a really rough period in my life and I was thinking about killing myself. I remember I was sitting there on my bed, when I sort of felt (like you said, mentally) like someone sat down next to me and asked &quot;Why are you doing this?&quot; I thought the reasons why and it said &quot;I&#039;ll tell you what. You trust me and wait one day. If it doesn&#039;t change by tomorrow, do what you want.&quot; After much persuasion I agreed, and waited. The next day a group of girls invited me to sit at their table, and we all became friends. That might not sound like much, but especially around that time I didn&#039;t fit in, and had very few if any friends for several years. I don&#039;t remember my dream that night, and I don&#039;t have really any experience in telepathy.
+
+So considering my own experience, I really don&#039;t think yours is impossible or even unlikely ;)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 11 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">joke-lain</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=517&amp;ref=1210639719" width="103" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12564" style="width: 100%; overflow: auto; min-height: 125px;">Last year I went to main. And I guess a whole bunch things happened and I went to bed, crying. I was wishing that I was home at that moment, but I knew that was impossible ans it would confuse too many people. So I wished god to help me get to sleep and calm me down.<br />
+<br />
+Then, I felt someone holding my hand. Yeah, I fell asleep smiling.<br />
+<br />
+It&#039;s kind of a weird experience you had.<br />
+<br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by templedog:</em><br />
+God isn&#039;t real. End of discussion.</div>You&#039;re messed up in the head.<br />
+<br />
+</div>
+		<textarea style="display: none;" id="desctxt_12564">Last year I went to main. And I guess a whole bunch things happened and I went to bed, crying. I was wishing that I was home at that moment, but I knew that was impossible ans it would confuse too many people. So I wished god to help me get to sleep and calm me down.
+
+Then, I felt someone holding my hand. Yeah, I fell asleep smiling.
+
+It&#039;s kind of a weird experience you had.
+
+[quote][i]posted by templedog:[/i]
+God isn&#039;t real. End of discussion.[/quote]
+You&#039;re messed up in the head.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 11 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=646" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 24 queries. 0.323 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

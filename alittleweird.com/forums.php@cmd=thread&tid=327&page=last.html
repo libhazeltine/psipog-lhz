@@ -1,0 +1,380 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Funny Dream</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Funny Dream</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Funny Dream</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">SheepKing</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=211&amp;ref=1222648137" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7674" style="width: 100%; overflow: auto; min-height: 125px;">So I fell asleep today while in the chat over the geiger counter; And I guess it was in my mind as I went to bed and I was aware of it in the dream.<br />
+<br />
+I dreamt about being in this library place where everyone from a little weird would go and hang out and chat :-P It was funny because people would use computers to talk but they where also there in person. It was sort of like... Everyone recognized that each person was someone from the community; but didn&#039;t ask who and only talked about psi stuff when they got on the internet.<br />
+<br />
+It was just funny because I recognized certain people being certain personalities. I think the funniest character was Sean; It was him spot on; from what he looks like in the videos, but his attitude was just like completely indifferent and almost comically so. I guess I saw Psi_Ninja there too and mad_hatter heheh.<br />
+<br />
+Dreams are pretty cool; And this is actually one of the only dreams I remember from the week so far; and it was long as hell, though In only slept for an hour or two. Anyone have any cool little dreams lately, related to the community?</div>
+		<textarea style="display: none;" id="desctxt_7674">So I fell asleep today while in the chat over the geiger counter; And I guess it was in my mind as I went to bed and I was aware of it in the dream.
+
+I dreamt about being in this library place where everyone from a little weird would go and hang out and chat :-P It was funny because people would use computers to talk but they where also there in person. It was sort of like... Everyone recognized that each person was someone from the community; but didn&#039;t ask who and only talked about psi stuff when they got on the internet.
+
+It was just funny because I recognized certain people being certain personalities. I think the funniest character was Sean; It was him spot on; from what he looks like in the videos, but his attitude was just like completely indifferent and almost comically so. I guess I saw Psi_Ninja there too and mad_hatter heheh.
+
+Dreams are pretty cool; And this is actually one of the only dreams I remember from the week so far; and it was long as hell, though In only slept for an hour or two. Anyone have any cool little dreams lately, related to the community?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Sean</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=2&amp;ref=1214247941" width="117" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_7678" style="width: 100%; overflow: auto; min-height: 125px;">Just false OBE dreams.<br />
+<br />
+I&#039;m still trying to capture an OBE on camera, so sometimes I&#039;ll dream I have an OBE, and look around my room for my camera.  Upon waking up, I can tell it was a dream though :-P.<br />
+<br />
+~Sean</div>
+		<textarea style="display: none;" id="desctxt_7678">Just false OBE dreams.
+
+I&#039;m still trying to capture an OBE on camera, so sometimes I&#039;ll dream I have an OBE, and look around my room for my camera.  Upon waking up, I can tell it was a dream though :-P.
+
+~Sean</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Waldo</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=471&amp;ref=1208009607" width="84" height="108" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7679" style="width: 100%; overflow: auto; min-height: 125px;">Sadly, no dreams relating to the community specifically (probably because I&#039;m not that invovled with you guys! =(). Always with the PK dreams though, sigh. They don&#039;t seem to help much. =P<br />
+<br />
+Waldo x</div>
+		<textarea style="display: none;" id="desctxt_7679">Sadly, no dreams relating to the community specifically (probably because I&#039;m not that invovled with you guys! =(). Always with the PK dreams though, sigh. They don&#039;t seem to help much. =P
+
+Waldo x</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Anonymous Dark</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=354&amp;ref=1203377944" width="100" height="86" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_7695" style="width: 100%; overflow: auto; min-height: 125px;">I had a dream that I could fly and move large objects with TK...I was so convinced it was real and that I was the most accomplished psion in the world--until I woke up, that is.<br />
+<br />
+:=[</div>
+		<textarea style="display: none;" id="desctxt_7695">I had a dream that I could fly and move large objects with TK...I was so convinced it was real and that I was the most accomplished psion in the world--until I woke up, that is.
+
+:=[</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Anonymous Dark, 4 years, 8 months ago<br />Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">AndPious</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=321&amp;ref=1203813988" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7698" style="width: 100%; overflow: auto; min-height: 125px;">I recently had a dream in which there was some invading &quot;force&quot; (don&#039;t remember whether human or alien), but they were coming through a sort of warp gate. There was a hallway in front of the gate (you would enter the hallway upon coming through), and the entire hallway was the door to the gate. It began to open, but I knew that was bad and I used TK to stop it, multiple times. It would just halt and close again in the same way a PC CD-drive would if you stuck your hand in front of it while it opened.<br />
+<br />
+Later in the dream I left that place and donned some BDUs to go fight. That&#039;s the only PK dream I&#039;ve ever had, but I&#039;ve had many flying dreams.</div>
+		<textarea style="display: none;" id="desctxt_7698">I recently had a dream in which there was some invading &quot;force&quot; (don&#039;t remember whether human or alien), but they were coming through a sort of warp gate. There was a hallway in front of the gate (you would enter the hallway upon coming through), and the entire hallway was the door to the gate. It began to open, but I knew that was bad and I used TK to stop it, multiple times. It would just halt and close again in the same way a PC CD-drive would if you stuck your hand in front of it while it opened.
+
+Later in the dream I left that place and donned some BDUs to go fight. That&#039;s the only PK dream I&#039;ve ever had, but I&#039;ve had many flying dreams.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Anonymous Dark</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=354&amp;ref=1203377944" width="100" height="86" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_7703" style="width: 100%; overflow: auto; min-height: 125px;">Mmm, I had a rather interesting dream last night...just a dream, no vision, but it had an odd...feeling about it. Sort of mysterious and mystical...<br />
+<br />
+It was dusk in the artic, or someplace like it. There was a small little camp on a sort of icy plateau, and behind the camp was a steep, vertical wall of ice, sort of like a glacier I guess. The light was fading fast and the aura was shimmering between various hues in the sky, though the remaining light of day and the light from various fires made it pretty easy to see what was going on.<br />
+<br />
+There were eight people, I don&#039;t remember their features too well, but they were all adults and were wearing heavy pelts and furs, sort of like what you see Eskimos wear. They were lined up in front of the glacier, parallel to it. A small crowd was watching them. It was dark over by the glacier, but the eight people seemed to give off a faint cyan glow...they weren&#039;t glowing, but the air around them sort of was...it&#039;s hard to explain. Anyways, they all did something, and floated up into the air, stopping maybe eight feet up. Some of them appeared to be straddling the air, but most just floated there as if they were standing on solid ground. There were some cheers and someone declared &quot;...successfully levitated 0.6 meters off the ground&quot;, though they were definitely higher up than 0.6 meters...<br />
+<br />
+I don&#039;t remember much after that. I think they just floated there for a while, then the scene flashed to some kids playing soccer on the ice, and that&#039;s all I can remember. I don&#039;t know how I know this, but I know that the people in my dream were conducting some sort of psionic experiment and it had gone well...it also seemed they were all trying to connect with something...spiritual or other-worldly (again, I don&#039;t know how I know this).<br />
+<br />
+Pretty freaky dream. It was quite vivid and I&#039;ve been thinking of it all day... &gt;.&gt;</div>
+		<textarea style="display: none;" id="desctxt_7703">Mmm, I had a rather interesting dream last night...just a dream, no vision, but it had an odd...feeling about it. Sort of mysterious and mystical...
+
+It was dusk in the artic, or someplace like it. There was a small little camp on a sort of icy plateau, and behind the camp was a steep, vertical wall of ice, sort of like a glacier I guess. The light was fading fast and the aura was shimmering between various hues in the sky, though the remaining light of day and the light from various fires made it pretty easy to see what was going on.
+
+There were eight people, I don&#039;t remember their features too well, but they were all adults and were wearing heavy pelts and furs, sort of like what you see Eskimos wear. They were lined up in front of the glacier, parallel to it. A small crowd was watching them. It was dark over by the glacier, but the eight people seemed to give off a faint cyan glow...they weren&#039;t glowing, but the air around them sort of was...it&#039;s hard to explain. Anyways, they all did something, and floated up into the air, stopping maybe eight feet up. Some of them appeared to be straddling the air, but most just floated there as if they were standing on solid ground. There were some cheers and someone declared &quot;...successfully levitated 0.6 meters off the ground&quot;, though they were definitely higher up than 0.6 meters...
+
+I don&#039;t remember much after that. I think they just floated there for a while, then the scene flashed to some kids playing soccer on the ice, and that&#039;s all I can remember. I don&#039;t know how I know this, but I know that the people in my dream were conducting some sort of psionic experiment and it had gone well...it also seemed they were all trying to connect with something...spiritual or other-worldly (again, I don&#039;t know how I know this).
+
+Pretty freaky dream. It was quite vivid and I&#039;ve been thinking of it all day... &gt;.&gt;</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Anonymous Dark, 4 years, 8 months ago<br />Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Gumby</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7729" style="width: 100%; overflow: auto; min-height: 125px;">Back in my PsiPog days, I had a nightmare where everybody at my school found out about PsiPog and everybody was learning psi and stuff, I walked into the library and everybody was on the forums. </div>
+		<textarea style="display: none;" id="desctxt_7729">Back in my PsiPog days, I had a nightmare where everybody at my school found out about PsiPog and everybody was learning psi and stuff, I walked into the library and everybody was on the forums.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">AndPious</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=321&amp;ref=1203813988" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_7732" style="width: 100%; overflow: auto; min-height: 125px;">And that was a nightmare?</div>
+		<textarea style="display: none;" id="desctxt_7732">And that was a nightmare?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Antisankari</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=224&amp;ref=1213032338" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7733" style="width: 100%; overflow: auto; min-height: 125px;">Called inflation.<br />
+<br />
+What might happen if this thing became mainstream....</div>
+		<textarea style="display: none;" id="desctxt_7733">Called inflation.
+
+What might happen if this thing became mainstream....</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Gumby</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_7737" style="width: 100%; overflow: auto; min-height: 125px;">Yeah it was a nightmare. Cause I dont want EVERYBODY to be practicing psi..Just very few people, like it is now. </div>
+		<textarea style="display: none;" id="desctxt_7737">Yeah it was a nightmare. Cause I dont want EVERYBODY to be practicing psi..Just very few people, like it is now.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">DigGil</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7881" style="width: 100%; overflow: auto; min-height: 125px;">I don&#039;t agree with Gumby, if in my town there was someone who at least belief in what&#039;s writen at PsiPog I would like to know!!<br />
+<br />
+I never had dreams about PsiPog or ALW, but I&#039;ve already had many about psi stuff.Curiously I had a dream about Spoonbending and PK last night. I&#039;ve never get PK right, but I practise it some days a week and when I practise it specialy hard the next night I dream with it. Yesterday I dreamt that I was in one of Jack Houck&#039;s PK Parties. Miraclously, I meltd a spoon at first try!! I was so happy that I did it over and over again without any trouble! wooow! I wish that dream to come true!<br />
+<br />
+At about 4 months ago I dreamt about falling of the bed, then when I stand up I lifted my arm away and a pen started to levitate with a strange weak glow!<br />
+<br />
+What a sleep times I have!</div>
+		<textarea style="display: none;" id="desctxt_7881">I don&#039;t agree with Gumby, if in my town there was someone who at least belief in what&#039;s writen at PsiPog I would like to know!!
+
+I never had dreams about PsiPog or ALW, but I&#039;ve already had many about psi stuff.Curiously I had a dream about Spoonbending and PK last night. I&#039;ve never get PK right, but I practise it some days a week and when I practise it specialy hard the next night I dream with it. Yesterday I dreamt that I was in one of Jack Houck&#039;s PK Parties. Miraclously, I meltd a spoon at first try!! I was so happy that I did it over and over again without any trouble! wooow! I wish that dream to come true!
+
+At about 4 months ago I dreamt about falling of the bed, then when I stand up I lifted my arm away and a pen started to levitate with a strange weak glow!
+
+What a sleep times I have!</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_7938" style="width: 100%; overflow: auto; min-height: 125px;">I&#039;ve had Pk dreams Before, I think it&#039;s because of thesubconcience desire to have it happen, much like a release of Desire built up in Practice.<br />
+<br />
+My weirdest dreams involve alot of Breathing in water, and a voice playing through my head saying &quot;I am Just a Drop, I am the Whole Ocean.&quot; then Everything around me fades into blue, then black, and I wake up.</div>
+		<textarea style="display: none;" id="desctxt_7938">I&#039;ve had Pk dreams Before, I think it&#039;s because of thesubconcience desire to have it happen, much like a release of Desire built up in Practice.
+
+My weirdest dreams involve alot of Breathing in water, and a voice playing through my head saying &quot;I am Just a Drop, I am the Whole Ocean.&quot; then Everything around me fades into blue, then black, and I wake up.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">DigGil</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_8222" style="width: 100%; overflow: auto; min-height: 125px;">Dreams can be because of that. Desire, wish and strong though can cause dream. It sometimes can happen just for remember things. I think on sleeping as brain&#039;s defragmentation tool. Memories acrossing mind appear as visions.</div>
+		<textarea style="display: none;" id="desctxt_8222">Dreams can be because of that. Desire, wish and strong though can cause dream. It sometimes can happen just for remember things. I think on sleeping as brain&#039;s defragmentation tool. Memories acrossing mind appear as visions.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=327" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 29 queries. 0.276 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

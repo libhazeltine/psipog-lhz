@@ -1,0 +1,467 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; 2012 ~ Heaven is a place on Earth ~ Boom</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; 2012 ~ Heaven is a place on Earth ~ Boom</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">2012 ~ Heaven is a place on Earth ~ Boom</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Boom</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7620" style="width: 100%; overflow: auto; min-height: 125px;">If your going to read this all I ask is you that read the whole thing. This post touches topics on spirituality and progression of the soul. <br />
+<br />
+Thought Process - Positive thinking brings about positive action. Positive thinking reinforced with positive emotions brings about change. I&#039;m talking about life changes.<br />
+<br />
+The Garden Of Eden is a state of mind. You might even say Heaven on Earth is a state of mind. Its ALL a state of mind. The particular state of mind grants you new opportunities. New perceptions. The universe might attract someone to you that is looking to give someone an opportunity of a life time. Most likely it will lead you to one person who in then will lead you to another or you will listen to what they are saying intuitively. Its a little like a wild domino effect.<br />
+<br />
+The challenge in this world is to think positive in any situation. Its ok to think negative, because time is constantly moving. You thought negative then, what are you thinking now. If you start thinking positive the universe will put you in situations that promote your thinking and attract people to you. You are the company you keep. As you get older the people you keep by yourself for the longest are most likely the ones that know where your coming from when you speak.<br />
+<br />
+Domino Effect - You think positive to knock one domino over but you must keep thinking positive to knock them all down. It makes us human to be mad but it becomes a problem if you stay mad. Thats the point. Its ok to FEEL the good and bad but its not ok to let the bad vibes linger. Consider the dominos spiritual boundaries.<br />
+<br />
+Intuition - Heaven is a place on earth? Remember that song? My taste in music does not include that genre or that, but my intuition likes that song. It clicks with it. More specifically the &#039;heaven is a place on earth&#039; part. Listening to positive music is great. Things can click in any aspect of life.<br />
+<br />
+Love is a force, like solar rays. When you feel love for yourself other people can feel that.Keep knocking down the dominos and you get closer to heaven on earth or to a feeling of heaven on earth.<br />
+<br />
+-Theres two type of people in this world. The ones that realize and the ones that don&#039;t / good people / bad people / negative people - positive people. Everyone else is the in between.<br />
+<br />
+But were all still connected. Negativity just disconnects us. <br />
+<br />
+<br />
+The Indigo<br />
+<br />
+The indigo, spiritual warrior, crystal child they are just titles to people that are born to realize. Kids, Adults that know who they are or have a desire to know thus not taking a life time to find themselves thus enabling them to make change happen quicker and in more peoples lives as the more people you come in contact with (another domino effect).<br />
+<br />
+Emotional Knowing<br />
+<br />
+If you feel good, embrace it and remember what it felt like. If you feel bad question why you feel bad then counter it with a variation of love. Have Hope &amp; Faith.<br />
+<br />
+You dont have to be flying on cloud nine but you do need that desire to progress. Accepting &#039;this is as good as it gets&#039; can be..not so great. It can always get better. Its not your place to know how, just believe that it will. God will take care of the rest. Even if you dont plan on leaving your house for a month. Remember that saying &quot;where there is a will there is a way&quot;. Your &#039;will&#039; is your thinking/emotions combined. The &#039;way&#039; is the force that is the universe. The universe is always responding to your will. Good and Bad.<br />
+<br />
+The Ghost and The Darkness<br />
+<br />
+Darkness doesnt always mean darkness. Concept.<br />
+<br />
+The Evil in this world is the ghost..cause if you don&#039;t pay attention to it, it goes away. Attention is another way to give something thought - or power.<br />
+<br />
+The Ghost is evil or &#039;negative&#039; the darkness is the universe and you are the light. We were made in his image, the light. Light = Love<br />
+<br />
+Good thing about faith and hope, nothing has to exist for it to be there. Both are branches of love. Love being god. God being the universe. The Universe being you.<br />
+<br />
+2012<br />
+<br />
+The whole concept behind the 2012 hysteria is to bring about this form of thinking. You raise earths vibrations by raising your own. You raise your own through what was previously written.<br />
+<br />
+Theres no way a human being that is dominantly negative to raise any vibrations cause the individual is not yet able raise there own vibe. You can do positive things and go about them in negative ways. That negative way is just that, negative. The road to hell is paved in &#039;good intentions&#039;.<br />
+<br />
+I also believe that &quot;2012&quot; is going on now.<br />
+<br />
+You see this philosophy is a hidden message in things we see on a daily basis. Because all things are derived from negative and/or positive emotions.<br />
+<br />
+&quot;If this is wrong, there is no right.&quot;</div>
+		<textarea style="display: none;" id="desctxt_7620">If your going to read this all I ask is you that read the whole thing. This post touches topics on spirituality and progression of the soul. 
+
+Thought Process - Positive thinking brings about positive action. Positive thinking reinforced with positive emotions brings about change. I&#039;m talking about life changes.
+
+The Garden Of Eden is a state of mind. You might even say Heaven on Earth is a state of mind. Its ALL a state of mind. The particular state of mind grants you new opportunities. New perceptions. The universe might attract someone to you that is looking to give someone an opportunity of a life time. Most likely it will lead you to one person who in then will lead you to another or you will listen to what they are saying intuitively. Its a little like a wild domino effect.
+
+The challenge in this world is to think positive in any situation. Its ok to think negative, because time is constantly moving. You thought negative then, what are you thinking now. If you start thinking positive the universe will put you in situations that promote your thinking and attract people to you. You are the company you keep. As you get older the people you keep by yourself for the longest are most likely the ones that know where your coming from when you speak.
+
+Domino Effect - You think positive to knock one domino over but you must keep thinking positive to knock them all down. It makes us human to be mad but it becomes a problem if you stay mad. Thats the point. Its ok to FEEL the good and bad but its not ok to let the bad vibes linger. Consider the dominos spiritual boundaries.
+
+Intuition - Heaven is a place on earth? Remember that song? My taste in music does not include that genre or that, but my intuition likes that song. It clicks with it. More specifically the &#039;heaven is a place on earth&#039; part. Listening to positive music is great. Things can click in any aspect of life.
+
+Love is a force, like solar rays. When you feel love for yourself other people can feel that.Keep knocking down the dominos and you get closer to heaven on earth or to a feeling of heaven on earth.
+
+-Theres two type of people in this world. The ones that realize and the ones that don&#039;t / good people / bad people / negative people - positive people. Everyone else is the in between.
+
+But were all still connected. Negativity just disconnects us. 
+
+
+The Indigo
+
+The indigo, spiritual warrior, crystal child they are just titles to people that are born to realize. Kids, Adults that know who they are or have a desire to know thus not taking a life time to find themselves thus enabling them to make change happen quicker and in more peoples lives as the more people you come in contact with (another domino effect).
+
+Emotional Knowing
+
+If you feel good, embrace it and remember what it felt like. If you feel bad question why you feel bad then counter it with a variation of love. Have Hope &amp; Faith.
+
+You dont have to be flying on cloud nine but you do need that desire to progress. Accepting &#039;this is as good as it gets&#039; can be..not so great. It can always get better. Its not your place to know how, just believe that it will. God will take care of the rest. Even if you dont plan on leaving your house for a month. Remember that saying &quot;where there is a will there is a way&quot;. Your &#039;will&#039; is your thinking/emotions combined. The &#039;way&#039; is the force that is the universe. The universe is always responding to your will. Good and Bad.
+
+The Ghost and The Darkness
+
+Darkness doesnt always mean darkness. Concept.
+
+The Evil in this world is the ghost..cause if you don&#039;t pay attention to it, it goes away. Attention is another way to give something thought - or power.
+
+The Ghost is evil or &#039;negative&#039; the darkness is the universe and you are the light. We were made in his image, the light. Light = Love
+
+Good thing about faith and hope, nothing has to exist for it to be there. Both are branches of love. Love being god. God being the universe. The Universe being you.
+
+2012
+
+The whole concept behind the 2012 hysteria is to bring about this form of thinking. You raise earths vibrations by raising your own. You raise your own through what was previously written.
+
+Theres no way a human being that is dominantly negative to raise any vibrations cause the individual is not yet able raise there own vibe. You can do positive things and go about them in negative ways. That negative way is just that, negative. The road to hell is paved in &#039;good intentions&#039;.
+
+I also believe that &quot;2012&quot; is going on now.
+
+You see this philosophy is a hidden message in things we see on a daily basis. Because all things are derived from negative and/or positive emotions.
+
+&quot;If this is wrong, there is no right.&quot;</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Boom, 4 years, 8 months ago<br />Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">SheepKing</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=211&amp;ref=1222648137" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_7631" style="width: 100%; overflow: auto; min-height: 125px;">So; Do you really believe this?<br />
+<br />
+</div>
+		<textarea style="display: none;" id="desctxt_7631">So; Do you really believe this?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Boom</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7639" style="width: 100%; overflow: auto; min-height: 125px;">I wrote it, why would i believe it. </div>
+		<textarea style="display: none;" id="desctxt_7639">I wrote it, why would i believe it.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Boom</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_7640" style="width: 100%; overflow: auto; min-height: 125px;">wouldnt*</div>
+		<textarea style="display: none;" id="desctxt_7640">wouldnt*</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Boom</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7641" style="width: 100%; overflow: auto; min-height: 125px;">I should replace &#039;positive thinking&#039; with &#039;dont be such a dick&#039;. I do plan on putting it in different words in the future. People tend to think negative when they hear &#039;think positive&#039;. I think thats funny.</div>
+		<textarea style="display: none;" id="desctxt_7641">I should replace &#039;positive thinking&#039; with &#039;dont be such a dick&#039;. I do plan on putting it in different words in the future. People tend to think negative when they hear &#039;think positive&#039;. I think thats funny.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">NewAgeAlchemist</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=459&amp;ref=1207160982" width="125" height="20" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_7649" style="width: 100%; overflow: auto; min-height: 125px;">its certainly a collection of thoughts, but the spiritual splatter style of writing probably won&#039;t convince others. Its not really presented in a new or interesting way.<br />
+<br />
+The whole indigo thing isn&#039;t anything special in my mind, I rather doubt they are that different from everyone else. Probably just a new name for the same ideological movement.<br />
+<br />
+Your whole thing about two types of people, it appears you actually have two extremists and a vague everything else. Pretty sure that doesn&#039;t qualify as a good category system.</div>
+		<textarea style="display: none;" id="desctxt_7649">its certainly a collection of thoughts, but the spiritual splatter style of writing probably won&#039;t convince others. Its not really presented in a new or interesting way.
+
+The whole indigo thing isn&#039;t anything special in my mind, I rather doubt they are that different from everyone else. Probably just a new name for the same ideological movement.
+
+Your whole thing about two types of people, it appears you actually have two extremists and a vague everything else. Pretty sure that doesn&#039;t qualify as a good category system.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Boom</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7651" style="width: 100%; overflow: auto; min-height: 125px;">Those thoughts were not written to include the grey area. </div>
+		<textarea style="display: none;" id="desctxt_7651">Those thoughts were not written to include the grey area.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">deusxmachina</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=490&amp;ref=1209145387" width="100" height="85" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_7736" style="width: 100%; overflow: auto; min-height: 125px;">For some people, at least me personally, the reason people have negative connotations about &#039;positive thinking&#039; is that it has taken on the archetype of this fluffybunny, tree-hugging, spiritually-advanced-to-the-point-their-head&#039;s-up-their-ass new ager tool.<br />
+<br />
+Ugh. 2012.<br />
+I think most people who are mostly awakened will agree the world isn&#039;t gonna end, we&#039;ve figured this much out.<br />
+<br />
+However, there is a LOT of change going on. Positive thinking might be enough to keep things flowing smoothly, it might not. Serious action could be required. No one really knows, I just know that nearly every sensitive I know is rather concerned about spiritual occurrences 3-4 years from now. Spiritually, things will develop before most humans will be cognizant of what&#039;s going on, if ever. <br />
+<br />
+<br />
+Why is all of this happening? My personal theory is that the spiritual plane has drifted from the physical, and that now it is becoming more proximal (in the n-dimensional sense) and the bridge between the two is getting stronger.<br />
+<br />
+I&#039;m sure any entities have their own agenda for this, so things could get quite interesting. <br />
+<br />
+Some people talk about various spiritual wars, I&#039;m not sure what to think about this. I disagree with a notion of &#039;t3h 3pic B4ttl3 Between Darkness and Light!!!1&#039; but I think there is a high probability of conflicts that may or may not affect normal everyday human existence. <br />
+<br />
+  </div>
+		<textarea style="display: none;" id="desctxt_7736">For some people, at least me personally, the reason people have negative connotations about &#039;positive thinking&#039; is that it has taken on the archetype of this fluffybunny, tree-hugging, spiritually-advanced-to-the-point-their-head&#039;s-up-their-ass new ager tool.
+
+Ugh. 2012.
+I think most people who are mostly awakened will agree the world isn&#039;t gonna end, we&#039;ve figured this much out.
+
+However, there is a LOT of change going on. Positive thinking might be enough to keep things flowing smoothly, it might not. Serious action could be required. No one really knows, I just know that nearly every sensitive I know is rather concerned about spiritual occurrences 3-4 years from now. Spiritually, things will develop before most humans will be cognizant of what&#039;s going on, if ever. 
+
+
+Why is all of this happening? My personal theory is that the spiritual plane has drifted from the physical, and that now it is becoming more proximal (in the n-dimensional sense) and the bridge between the two is getting stronger.
+
+I&#039;m sure any entities have their own agenda for this, so things could get quite interesting. 
+
+Some people talk about various spiritual wars, I&#039;m not sure what to think about this. I disagree with a notion of &#039;t3h 3pic B4ttl3 Between Darkness and Light!!!1&#039; but I think there is a high probability of conflicts that may or may not affect normal everyday human existence.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Boom</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7743" style="width: 100%; overflow: auto; min-height: 125px;">The WAY of LOVE is never wrong. </div>
+		<textarea style="display: none;" id="desctxt_7743">The WAY of LOVE is never wrong.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Boom</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_7744" style="width: 100%; overflow: auto; min-height: 125px;">And Sean, Delete this as well. </div>
+		<textarea style="display: none;" id="desctxt_7744">And Sean, Delete this as well.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">mrj</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7760" style="width: 100%; overflow: auto; min-height: 125px;">Who are you trying to convince? Us? Or yourself?</div>
+		<textarea style="display: none;" id="desctxt_7760">Who are you trying to convince? Us? Or yourself?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">deusxmachina</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=490&amp;ref=1209145387" width="100" height="85" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_7796" style="width: 100%; overflow: auto; min-height: 125px;">@ mrj - if that&#039;s directed at me... <br />
+<br />
+I couldn&#039;t care less what other people&#039;s stance is at this point, I&#039;m just trying to sound things out for myself. For some reason thoughts are far clearer when presented to a public forum rather than rattling around in one&#039;s own head.<br />
+<br />
+As for Boom....you&#039;d have to ask &#039;em :-P<br />
+<br />
+<br />
+I agree though, if there is any universal law, it is love. However, being universal, it is essentially impossible to define. Additionally, it&#039;s subject to subjectivity (Yay Spoonerisms!) by mortals. <br />
+<br />
+E.g. will said action result in more love in the world, or less? That&#039;s how I roll. Lol rickroll....eggroll? wow brain rambling.<br />
+<br />
+<br />
+</div>
+		<textarea style="display: none;" id="desctxt_7796">@ mrj - if that&#039;s directed at me... 
+
+I couldn&#039;t care less what other people&#039;s stance is at this point, I&#039;m just trying to sound things out for myself. For some reason thoughts are far clearer when presented to a public forum rather than rattling around in one&#039;s own head.
+
+As for Boom....you&#039;d have to ask &#039;em :-P
+
+
+I agree though, if there is any universal law, it is love. However, being universal, it is essentially impossible to define. Additionally, it&#039;s subject to subjectivity (Yay Spoonerisms!) by mortals. 
+
+E.g. will said action result in more love in the world, or less? That&#039;s how I roll. Lol rickroll....eggroll? wow brain rambling.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">mrj</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7816" style="width: 100%; overflow: auto; min-height: 125px;">sorry machina it wasnt, I need to learn to use the quote tool.</div>
+		<textarea style="display: none;" id="desctxt_7816">sorry machina it wasnt, I need to learn to use the quote tool.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=321" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 29 queries. 0.334 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

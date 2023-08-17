@@ -1,0 +1,503 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Energy limit?</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Energy limit?</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Energy limit?</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">RazSh18</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=510&amp;ref=1213120644" width="110" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_8052" style="width: 100%; overflow: auto; min-height: 125px;">Is there a limit wow much energy a man can posses in one action/moment? <br />
+<br />
+for example, an energy fight ( Reminder - Just an example :P ) :<br />
+[Throwing energy ball at each other ] <br />
+ can someone be out of energy or &quot;used too much&quot; than he can handle? <br />
+</div>
+		<textarea style="display: none;" id="desctxt_8052">Is there a limit wow much energy a man can posses in one action/moment? 
+
+for example, an energy fight ( Reminder - Just an example :P ) :
+[Throwing energy ball at each other ] 
+ can someone be out of energy or &quot;used too much&quot; than he can handle?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_8055" style="width: 100%; overflow: auto; min-height: 125px;">depends, Some people use energy that they store up within themselves. This works like a safety limit and means that you will, at one point, run out of usable personal energy, however; In some forms of Energy manipulation, people draw from things all the time, even in mid fight. So they do not experience any &quot;drain&quot; on there energy.<br />
+This is probably because they still have normal energy levels at any givin time.<br />
+<br />
+As for this second form, YOu still lose potiassium and other things in the blood just from focussing, this is like a secondary limit. People who take energy from theirselves don&#039;t have to worry about it as much as those who manipulate it from without themselves.<br />
+<br />
+Please note that none of this has any scientific backing. It&#039;s only what I have observed and experienced in Psi Research.<br />
+<br />
+So, in conclusion, there are 2 limits that can hinder your ability. The first is your energy in yourself, which if used up is not dealdly, but can be dibilitating. The other is your limit of focus, which is measured in certain chemicals in the blood stream, which if completely drained can acctually kill you.<br />
+<br />
+I would take some rest if you feel nausia when practicing, eat something, meditate, just walk around for a bit. Just don&#039;t force yourself to focus on anything for a while. then, if you feel better later, you can continue.<br />
+<br />
+Anything else you were wondering or would like to know? I&#039;m open to any questions.<br />
+</div>
+		<textarea style="display: none;" id="desctxt_8055">depends, Some people use energy that they store up within themselves. This works like a safety limit and means that you will, at one point, run out of usable personal energy, however; In some forms of Energy manipulation, people draw from things all the time, even in mid fight. So they do not experience any &quot;drain&quot; on there energy.
+This is probably because they still have normal energy levels at any givin time.
+
+As for this second form, YOu still lose potiassium and other things in the blood just from focussing, this is like a secondary limit. People who take energy from theirselves don&#039;t have to worry about it as much as those who manipulate it from without themselves.
+
+Please note that none of this has any scientific backing. It&#039;s only what I have observed and experienced in Psi Research.
+
+So, in conclusion, there are 2 limits that can hinder your ability. The first is your energy in yourself, which if used up is not dealdly, but can be dibilitating. The other is your limit of focus, which is measured in certain chemicals in the blood stream, which if completely drained can acctually kill you.
+
+I would take some rest if you feel nausia when practicing, eat something, meditate, just walk around for a bit. Just don&#039;t force yourself to focus on anything for a while. then, if you feel better later, you can continue.
+
+Anything else you were wondering or would like to know? I&#039;m open to any questions.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Zectra</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=96&amp;ref=1203358450" width="94" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_8056" style="width: 100%; overflow: auto; min-height: 125px;">To give a little similar and different perspective than Akio&#039;s...<br />
+<br />
+Limits on things like this should be a difficult question for anyone to answer since we have not explored it enough to find any solid (Non-theoretical) proof or evidence like that;  You should not limit yourself to other peoples theories.<br />
+<br />
+I would answer this as..   No, there is no limit to the potential energy that can be possessed, however, to be able to possess larger quantities of energy, you have to work up to it.<br />
+<br />
+It&#039;s like weight lifting. If you try to lift too much weight at a time when you&#039;re not ready for it, you can hurt your body in numerous ways and even kill yourself if you&#039;re especially careless.<br />
+In psi and chi, it&#039;s the same. If you try to use too much energy when your energy tunnels aren&#039;t advanced enough to use that much, you can kill them.<br />
+<br />
+<br />
+I hurt myself a year ago in a qi gong class when I got too carried away. I was expelling an enormous amount of energy(compared to my usual dose) at a time, and after a minute or so, I felt a horrible throbbing pain shoot up my spine and latch onto the inner back of my head/neck(imagine around where the brain stem and cerebellum are),  then I collapsed completely exhausted and blacked out for moment.<br />
+(I&#039;m fine now.)<br />
+<br />
+<br />
+It&#039;s best to take everything gradually, and when you feel uncomfortable with what you&#039;re doing, stop and give it a rest until you recover.</div>
+		<textarea style="display: none;" id="desctxt_8056">To give a little similar and different perspective than Akio&#039;s...
+
+Limits on things like this should be a difficult question for anyone to answer since we have not explored it enough to find any solid (Non-theoretical) proof or evidence like that;  You should not limit yourself to other peoples theories.
+
+I would answer this as..   No, there is no limit to the potential energy that can be possessed, however, to be able to possess larger quantities of energy, you have to work up to it.
+
+It&#039;s like weight lifting. If you try to lift too much weight at a time when you&#039;re not ready for it, you can hurt your body in numerous ways and even kill yourself if you&#039;re especially careless.
+In psi and chi, it&#039;s the same. If you try to use too much energy when your energy tunnels aren&#039;t advanced enough to use that much, you can kill them.
+
+
+I hurt myself a year ago in a qi gong class when I got too carried away. I was expelling an enormous amount of energy(compared to my usual dose) at a time, and after a minute or so, I felt a horrible throbbing pain shoot up my spine and latch onto the inner back of my head/neck(imagine around where the brain stem and cerebellum are),  then I collapsed completely exhausted and blacked out for moment.
+(I&#039;m fine now.)
+
+
+It&#039;s best to take everything gradually, and when you feel uncomfortable with what you&#039;re doing, stop and give it a rest until you recover.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">RazSh18</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=510&amp;ref=1213120644" width="110" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_8058" style="width: 100%; overflow: auto; min-height: 125px;">Akio : <br />
+&quot;People who take energy from theirselves don&#039;t have to worry about it as much as those who manipulate it from without themselves.&quot; <br />
+- If I do to take for myself inner energy that count manipulating my energy? <br />
+- Aren&#039;t there a quality in energies? like inner energy is better than the enviroment?<br />
+- How come after I do psiball I feel like I&#039;ve finished my energy limit for that day?<br />
+  and how can I adventages of my whole energy storage, I fell like 70% of the energy  <br />
+  gone to the world and the rest did get to the psiball :S<br />
+ <br />
+<br />
+Zectra:<br />
+- I got your aid and will use it. So if I do GYM for physical enhancing what I&#039;ll do <br />
+  for energy enhancing? <br />
+</div>
+		<textarea style="display: none;" id="desctxt_8058">Akio : 
+&quot;People who take energy from theirselves don&#039;t have to worry about it as much as those who manipulate it from without themselves.&quot; 
+- If I do to take for myself inner energy that count manipulating my energy? 
+- Aren&#039;t there a quality in energies? like inner energy is better than the enviroment?
+- How come after I do psiball I feel like I&#039;ve finished my energy limit for that day?
+  and how can I adventages of my whole energy storage, I fell like 70% of the energy  
+  gone to the world and the rest did get to the psiball :S
+ 
+
+Zectra:
+- I got your aid and will use it. So if I do GYM for physical enhancing what I&#039;ll do 
+  for energy enhancing?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Zectra</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=96&amp;ref=1203358450" width="94" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_8059" style="width: 100%; overflow: auto; min-height: 125px;">Akio:<br />
+You can find a few articles around on how to increase your capacity for energy manipulation..<br />
+Practicing and trying to do a little more every day will help you a lot.<br />
+<br />
+I&#039;d suggest meditating whenever you get the chance to..  like if you&#039;re sitting in the car, or after you finish your work at school, or whenever you&#039;re just bored out of your mind and can&#039;t think of anything to do.<br />
+<br />
+For a really quick techinque, since I have to get to work...:<br />
+You talked about your Dāntián in the other thread, right?<br />
+Well, when you&#039;re meditating, try working on opening your chakras up and absorbing more energy into them, then once you feel you&#039;ve gained as much as you can,  try manipulating those points -inside- you.   Spiral the energy around,  move it up and down your body,  let it flow out to different limbs and then return back to it&#039;s resting point.<br />
+<br />
+The more you&#039;re able to control your energy, the more you&#039;ll be able to produce and absorb.  And of course.. the more energy you have, the less you have to worry about it running out ;D</div>
+		<textarea style="display: none;" id="desctxt_8059">Akio:
+You can find a few articles around on how to increase your capacity for energy manipulation..
+Practicing and trying to do a little more every day will help you a lot.
+
+I&#039;d suggest meditating whenever you get the chance to..  like if you&#039;re sitting in the car, or after you finish your work at school, or whenever you&#039;re just bored out of your mind and can&#039;t think of anything to do.
+
+For a really quick techinque, since I have to get to work...:
+You talked about your Dāntián in the other thread, right?
+Well, when you&#039;re meditating, try working on opening your chakras up and absorbing more energy into them, then once you feel you&#039;ve gained as much as you can,  try manipulating those points -inside- you.   Spiral the energy around,  move it up and down your body,  let it flow out to different limbs and then return back to it&#039;s resting point.
+
+The more you&#039;re able to control your energy, the more you&#039;ll be able to produce and absorb.  And of course.. the more energy you have, the less you have to worry about it running out ;D</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">RazSh18</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=510&amp;ref=1213120644" width="110" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_8060" style="width: 100%; overflow: auto; min-height: 125px;">Sound very good way to enhance my energy :D <br />
+I actually got excited when you remembered the Dāntián and told me to use it too :) <br />
+<br />
+thanks, I&#039;ll try it now =D </div>
+		<textarea style="display: none;" id="desctxt_8060">Sound very good way to enhance my energy :D 
+I actually got excited when you remembered the Dāntián and told me to use it too :) 
+
+thanks, I&#039;ll try it now =D</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_8067" style="width: 100%; overflow: auto; min-height: 125px;">RazSh18:<br />
+<br />
+-for your first part, I don&#039;t quite understand this first question, but I think the answer might be yes, maybe you could explain it more?<br />
+<br />
+-There are qualities to every energy, but no one is better than any other. I have touched on this in other threads, but not in great detail.<br />
+<br />
+-You mentioned you have trouble manipulating your chakra flows, so it makes sense that if you draw from within your body and you have trouble manipulating, you may feel that your limitis being reached sooner. It could also be attributed to chemical inbalances or other conditions. I have a thyroid condition, for example, so I have an abnormality of blue chakra.<br />
+<br />
+I would honestly suggest trying other energy manipulation techniques, everyone has their own way of gathering energy, personalize it so it works for you.<br />
+<br />
+I have a friend who&#039;s specialty is manipulating the energy from around him. I&#039;ve seen him make a psiball that raised the temperature within it by 30 degrees. I also know a few people who have specific energy conditions that give them Elevated ability in one area, and a deficiency in others. It&#039;s not really about what limitations you have, it&#039;s about understanding what you&#039;re best at, and using those to your advantage.<br />
+<br />
+   <br />
+<br />
+</div>
+		<textarea style="display: none;" id="desctxt_8067">RazSh18:
+
+-for your first part, I don&#039;t quite understand this first question, but I think the answer might be yes, maybe you could explain it more?
+
+-There are qualities to every energy, but no one is better than any other. I have touched on this in other threads, but not in great detail.
+
+-You mentioned you have trouble manipulating your chakra flows, so it makes sense that if you draw from within your body and you have trouble manipulating, you may feel that your limitis being reached sooner. It could also be attributed to chemical inbalances or other conditions. I have a thyroid condition, for example, so I have an abnormality of blue chakra.
+
+I would honestly suggest trying other energy manipulation techniques, everyone has their own way of gathering energy, personalize it so it works for you.
+
+I have a friend who&#039;s specialty is manipulating the energy from around him. I&#039;ve seen him make a psiball that raised the temperature within it by 30 degrees. I also know a few people who have specific energy conditions that give them Elevated ability in one area, and a deficiency in others. It&#039;s not really about what limitations you have, it&#039;s about understanding what you&#039;re best at, and using those to your advantage.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">RazSh18</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=510&amp;ref=1213120644" width="110" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_8092" style="width: 100%; overflow: auto; min-height: 125px;">Akio: <br />
+&quot;People who take energy from theirselves don&#039;t have to worry about it as much as those who manipulate it from without themselves.&quot; <br />
+- I ment that &quot;manipulate it from without themselvs&quot; is being aware of drawing energy?<br />
+<br />
+- About the energy&#039;s Quality, if i try to manipulate paper psiwheel, I should work with <br />
+  my energy or the wind energy for example?<br />
+<br />
+- When you say &quot; everyone has their own way of gathering energy &quot; I draw the energy <br />
+  from myself , because I see myself as the most familiar energy I know to handle. Am <br />
+  I wrong?<br />
+<br />
+- About the chemical inbalance, I have to say that from age of 5 ( +\- ) I&#039;ve stopped <br />
+  eating vegetabels and fruits. My basic diet holds on Milk groceries and pastryes ( <br />
+  baked stuff ) . My health is good though and I&#039;m an athlete at sports, so I do have <br />
+  balanced diet... I&#039;m confused =(<br />
+<br />
+- &quot;it&#039;s about understanding what you&#039;re best at, and using those to your advantage.&quot;<br />
+  I&#039;m good at running but at sport tests I gotten tired of running by half of the time <br />
+  I run normally.<br />
+<br />
+Someone heard of the UYTA.com site? It have been closed but I managed to save the Ebook it holds, I&#039;ll read it for now and then.</div>
+		<textarea style="display: none;" id="desctxt_8092">Akio: 
+&quot;People who take energy from theirselves don&#039;t have to worry about it as much as those who manipulate it from without themselves.&quot; 
+- I ment that &quot;manipulate it from without themselvs&quot; is being aware of drawing energy?
+
+- About the energy&#039;s Quality, if i try to manipulate paper psiwheel, I should work with 
+  my energy or the wind energy for example?
+
+- When you say &quot; everyone has their own way of gathering energy &quot; I draw the energy 
+  from myself , because I see myself as the most familiar energy I know to handle. Am 
+  I wrong?
+
+- About the chemical inbalance, I have to say that from age of 5 ( +\- ) I&#039;ve stopped 
+  eating vegetabels and fruits. My basic diet holds on Milk groceries and pastryes ( 
+  baked stuff ) . My health is good though and I&#039;m an athlete at sports, so I do have 
+  balanced diet... I&#039;m confused =(
+
+- &quot;it&#039;s about understanding what you&#039;re best at, and using those to your advantage.&quot;
+  I&#039;m good at running but at sport tests I gotten tired of running by half of the time 
+  I run normally.
+
+Someone heard of the UYTA.com site? It have been closed but I managed to save the Ebook it holds, I&#039;ll read it for now and then.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_8174" style="width: 100%; overflow: auto; min-height: 125px;">- yes and no, You just don&#039;t let if flow through your chakra system, and use it from around you instead.<br />
+<br />
+-why not just manipulate the winds energy and use that energy to direct thewind at the psiwheel? Either way, It&#039;s up to you, but the qualities of different energies aren&#039;t always that straightforward.<br />
+<br />
+-You aren&#039;t wrong, but you&#039;ll have very focussed, but significantly limited energy to work with. I use that energy that is naturally gatheresd by my body for directing elements of chance, not for macro Pk at any rate. I was really reffering to trying out things like Drawing energy into your body while in meditation, but whatever you decide is fine.<br />
+<br />
+-I would eat some vegetables and fruits because there are chemicals in there that are healthy for you and improve focus. Try eating a banana before a test, it&#039;ll improve your focus. Put simply, you&#039;re diet so far is good for muscle and bone developement, but not necisarily mental developement. Eat a healthy diet, and you will not only have plenty of physical abilty, but also mental ability.<br />
+<br />
+- Your Diet might explain this, but I&#039;m not sure. Try Changing your Diet to encompass atleast a few fruits and veggies, you might even find it easier to move energy also.<br />
+<br />
+Furthermore, if you&#039;ve read any of the articles at psipog, in many cases they&#039;ll warn you that focus drains these chemicles in the blood. Trying to exert yourself to much without these chemicles, or to much of a drop in these chemicals to quickly can have negative repricussions on your health. If you feel any nausia while practicing, you should stop, eat something, walk afround a bit, or maybe even take a nap for a while. <br />
+<br />
+I think I&#039;ve hit the root of your problem, you need to take a look at your diet and try to encompass these into your diet.<br />
+<br />
+I&#039;d recommentd to read up on  <a href="http://www.nutritiondata.com/" target="_blank">http://www.nutritiondata.com/</a> or any other Nutrition site in order to learn about howto keep a healthy diet.<br />
+</div>
+		<textarea style="display: none;" id="desctxt_8174">- yes and no, You just don&#039;t let if flow through your chakra system, and use it from around you instead.
+
+-why not just manipulate the winds energy and use that energy to direct thewind at the psiwheel? Either way, It&#039;s up to you, but the qualities of different energies aren&#039;t always that straightforward.
+
+-You aren&#039;t wrong, but you&#039;ll have very focussed, but significantly limited energy to work with. I use that energy that is naturally gatheresd by my body for directing elements of chance, not for macro Pk at any rate. I was really reffering to trying out things like Drawing energy into your body while in meditation, but whatever you decide is fine.
+
+-I would eat some vegetables and fruits because there are chemicals in there that are healthy for you and improve focus. Try eating a banana before a test, it&#039;ll improve your focus. Put simply, you&#039;re diet so far is good for muscle and bone developement, but not necisarily mental developement. Eat a healthy diet, and you will not only have plenty of physical abilty, but also mental ability.
+
+- Your Diet might explain this, but I&#039;m not sure. Try Changing your Diet to encompass atleast a few fruits and veggies, you might even find it easier to move energy also.
+
+Furthermore, if you&#039;ve read any of the articles at psipog, in many cases they&#039;ll warn you that focus drains these chemicles in the blood. Trying to exert yourself to much without these chemicles, or to much of a drop in these chemicals to quickly can have negative repricussions on your health. If you feel any nausia while practicing, you should stop, eat something, walk afround a bit, or maybe even take a nap for a while. 
+
+I think I&#039;ve hit the root of your problem, you need to take a look at your diet and try to encompass these into your diet.
+
+I&#039;d recommentd to read up on http://www.nutritiondata.com/ or any other Nutrition site in order to learn about howto keep a healthy diet.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">RazSh18</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=510&amp;ref=1213120644" width="110" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_8180" style="width: 100%; overflow: auto; min-height: 125px;">Well, I do have vitamins (which answer lots of the recomended vitamins &amp; minerals in the site ) . I should continiue use them :) <br />
+<br />
+Thank you Akio  =D </div>
+		<textarea style="display: none;" id="desctxt_8180">Well, I do have vitamins (which answer lots of the recomended vitamins &amp; minerals in the site ) . I should continiue use them :) 
+
+Thank you Akio  =D</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_8181" style="width: 100%; overflow: auto; min-height: 125px;">Glad to be of help ^_^.<br />
+</div>
+		<textarea style="display: none;" id="desctxt_8181">Glad to be of help ^_^.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=355" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 27 queries. 0.331 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

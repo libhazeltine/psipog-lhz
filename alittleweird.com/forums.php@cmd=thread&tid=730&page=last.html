@@ -1,0 +1,432 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Shadow People</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Shadow People</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Shadow People</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">therealman777</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13600" style="width: 100%; overflow: auto; min-height: 125px;">What&#039;s up guys? I used to post on Psipog alot when I was younger under this ID. I made it when I was 16, I know its lame, but just in case any of the same people are still hanging around I figured I&#039;d keep it.<br />
+So yeah I saw like a shadow man on my ceiling a little while ago, and it scared the ever living @#%# out of me. It was on my ceiling, in the shape of a guy wearing a hat. I moved my hand to see if it was my arm casting the shadow and nothing happened. It was somewhat dark in my room but not so much that you couldnt see clearly. So I went to go turn my light on and the shadow started sliding in a dead straight line aross the ceiling. So I stopped, moved my arms around again, and it just stayed there motionless on the ceiling. I went to go turn the light on again and the shadow slid completely across the ceiling, down the wall and into nothingness. I did not sleep for a month after that incident.<br />
+This happened in the fall I think, I was thinking about it tonight and thought Psipog would be a good place to see if anyone else had any similar experiences. Psipog is now defunct apparently so now I&#039;m here. <br />
+Any info, idea&#039;s, ect. would be appreciated.<br />
+Thanks guys, <br />
+Steve</div>
+		<textarea style="display: none;" id="desctxt_13600">What&#039;s up guys? I used to post on Psipog alot when I was younger under this ID. I made it when I was 16, I know its lame, but just in case any of the same people are still hanging around I figured I&#039;d keep it.
+So yeah I saw like a shadow man on my ceiling a little while ago, and it scared the ever living @#%# out of me. It was on my ceiling, in the shape of a guy wearing a hat. I moved my hand to see if it was my arm casting the shadow and nothing happened. It was somewhat dark in my room but not so much that you couldnt see clearly. So I went to go turn my light on and the shadow started sliding in a dead straight line aross the ceiling. So I stopped, moved my arms around again, and it just stayed there motionless on the ceiling. I went to go turn the light on again and the shadow slid completely across the ceiling, down the wall and into nothingness. I did not sleep for a month after that incident.
+This happened in the fall I think, I was thinking about it tonight and thought Psipog would be a good place to see if anyone else had any similar experiences. Psipog is now defunct apparently so now I&#039;m here. 
+Any info, idea&#039;s, ect. would be appreciated.
+Thanks guys, 
+Steve</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Mr. Tallyman</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=910&amp;ref=1239146679" width="80" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13601" style="width: 100%; overflow: auto; min-height: 125px;">I heard about these shadow folk a while ago.. cant say I&#039;ve had an experience.. <br />
+<br />
+Here is a link I found about dem guys<br />
+<br />
+ <a href="http://crystalinks.com/shadowpeople.html" target="_blank">http://crystalinks.com/shadowpeople.html</a><br />
+<br />
+Hope your feeling better :)</div>
+		<textarea style="display: none;" id="desctxt_13601">I heard about these shadow folk a while ago.. cant say I&#039;ve had an experience.. 
+
+Here is a link I found about dem guys
+
+http://crystalinks.com/shadowpeople.html
+
+Hope your feeling better :)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Morcyont</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=867&amp;ref=1262407330" width="125" height="73" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13602" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by therealman777:</em><br />
+What&#039;s up guys? I used to post on Psipog alot when I was younger under this ID. I made it when I was 16, I know its lame, but just in case any of the same people are still hanging around I figured I&#039;d keep it.<br />
+So yeah I saw like a shadow man on my ceiling a little while ago, and it scared the ever living @#%# out of me. It was on my ceiling, in the shape of a guy wearing a hat. I moved my hand to see if it was my arm casting the shadow and nothing happened. It was somewhat dark in my room but not so much that you couldnt see clearly. So I went to go turn my light on and the shadow started sliding in a dead straight line aross the ceiling. So I stopped, moved my arms around again, and it just stayed there motionless on the ceiling. I went to go turn the light on again and the shadow slid completely across the ceiling, down the wall and into nothingness. I did not sleep for a month after that incident.<br />
+This happened in the fall I think, I was thinking about it tonight and thought Psipog would be a good place to see if anyone else had any similar experiences. Psipog is now defunct apparently so now I&#039;m here. <br />
+Any info, idea&#039;s, ect. would be appreciated.<br />
+Thanks guys, <br />
+Steve</div>Man, I REALLY WANT TO SEE THAT MOVIE! :-P.<br />
+If I was you, I would try to get this shadow man to reappear.<br />
+Do you think they can be caught on camera? I&#039;ve also had some shadow people experiences, but they are usually less interactive than the one you encountered.<br />
+Just gotta love the interesting stories on the ALW forums! </div>
+		<textarea style="display: none;" id="desctxt_13602">[quote][i]posted by therealman777:[/i]
+What&#039;s up guys? I used to post on Psipog alot when I was younger under this ID. I made it when I was 16, I know its lame, but just in case any of the same people are still hanging around I figured I&#039;d keep it.
+So yeah I saw like a shadow man on my ceiling a little while ago, and it scared the ever living @#%# out of me. It was on my ceiling, in the shape of a guy wearing a hat. I moved my hand to see if it was my arm casting the shadow and nothing happened. It was somewhat dark in my room but not so much that you couldnt see clearly. So I went to go turn my light on and the shadow started sliding in a dead straight line aross the ceiling. So I stopped, moved my arms around again, and it just stayed there motionless on the ceiling. I went to go turn the light on again and the shadow slid completely across the ceiling, down the wall and into nothingness. I did not sleep for a month after that incident.
+This happened in the fall I think, I was thinking about it tonight and thought Psipog would be a good place to see if anyone else had any similar experiences. Psipog is now defunct apparently so now I&#039;m here. 
+Any info, idea&#039;s, ect. would be appreciated.
+Thanks guys, 
+Steve[/quote]
+
+Man, I REALLY WANT TO SEE THAT MOVIE! :-P.
+If I was you, I would try to get this shadow man to reappear.
+Do you think they can be caught on camera? I&#039;ve also had some shadow people experiences, but they are usually less interactive than the one you encountered.
+Just gotta love the interesting stories on the ALW forums!</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">ShadowmanX</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13603" style="width: 100%; overflow: auto; min-height: 125px;">I remember also having such an experience, although not quite as freaky as yours therealman.<br />
+<br />
+Once I got into the shower and as I was stepping in, some pure black blob (well, it seemed like a ball or something about that shape) of about 20 centimeters diameter fell from the ceiling to the bottom of the shower. Pretty fast that was, as I looked down on the floor there was nothing.<br />
+Another time, when I was on my way to school suddenly something small and pink with about the same size rushed from the left to the right, in mid-air. As i looked to right I didn&#039;t see anything.<br />
+<br />
+That two experiences are years ago, but happened only about two weeks apart, I guess. But I can&#039;t remember any feeling of dread, like described on the site you linked Tallyman. Only an understandable feeling of surprise</div>
+		<textarea style="display: none;" id="desctxt_13603">I remember also having such an experience, although not quite as freaky as yours therealman.
+
+Once I got into the shower and as I was stepping in, some pure black blob (well, it seemed like a ball or something about that shape) of about 20 centimeters diameter fell from the ceiling to the bottom of the shower. Pretty fast that was, as I looked down on the floor there was nothing.
+Another time, when I was on my way to school suddenly something small and pink with about the same size rushed from the left to the right, in mid-air. As i looked to right I didn&#039;t see anything.
+
+That two experiences are years ago, but happened only about two weeks apart, I guess. But I can&#039;t remember any feeling of dread, like described on the site you linked Tallyman. Only an understandable feeling of surprise</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by ShadowmanX, 3 years, 7 months ago<br />Posted 3 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">f3licks</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=848&amp;ref=1227833859" width="125" height="78" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13605" style="width: 100%; overflow: auto; min-height: 125px;">I&#039;ve never had an experience like that, but I don&#039;t dread would be the foremost emotion for me.<br />
+Surprise, curiosity, maybe, but not fear.</div>
+		<textarea style="display: none;" id="desctxt_13605">I&#039;ve never had an experience like that, but I don&#039;t dread would be the foremost emotion for me.
+Surprise, curiosity, maybe, but not fear.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Float</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=625&amp;ref=1240779348" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13606" style="width: 100%; overflow: auto; min-height: 125px;">Hmmm... I&#039;ve had similar experiences to be fully honest. I attribute it more so to the &quot;astral nasties&quot; concept. The closer and more frequent you visit the Astral for instance, the more entities that dwell there become visible to you. That or a more developed sense of awareness toward such entities by means of clairvoyance or general spiritual development. It&#039;s hard to say. It also brings back memories of Constantine, the whole &quot;you see them they see you&quot; thing. Could be due to your practices in general, the more you practice different things the higher you &quot;resonate&quot; in the other planes of existence and the more attention you get from other beings. *shrugs* really have no clue what to tell you :P perhaps clean your surrounding area and they will stop appearing if they scare you. Or convince yourself they don&#039;t exist. Fear of seeing things usually works in not seeing them. That or creating their appearance in your mind.</div>
+		<textarea style="display: none;" id="desctxt_13606">Hmmm... I&#039;ve had similar experiences to be fully honest. I attribute it more so to the &quot;astral nasties&quot; concept. The closer and more frequent you visit the Astral for instance, the more entities that dwell there become visible to you. That or a more developed sense of awareness toward such entities by means of clairvoyance or general spiritual development. It&#039;s hard to say. It also brings back memories of Constantine, the whole &quot;you see them they see you&quot; thing. Could be due to your practices in general, the more you practice different things the higher you &quot;resonate&quot; in the other planes of existence and the more attention you get from other beings. *shrugs* really have no clue what to tell you :P perhaps clean your surrounding area and they will stop appearing if they scare you. Or convince yourself they don&#039;t exist. Fear of seeing things usually works in not seeing them. That or creating their appearance in your mind.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">ShadowmanX</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13607" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Float:</em><br />
+Or convince yourself they don&#039;t exist. Fear of seeing things usually works in not seeing them. That or creating their appearance in your mind.</div>Why always so negative? I would try to get in contact with them, maybe becoming friends with them. I know that sounds like stupid childstalk, but you&#039;ll never know, they could prove to be useful to you and maybe you can be useful to them. On the site Tallyman posted they say that shadow people might be lifes that hadn&#039;t ended completely for some reason. So maybe they are lonely.<br />
+I&#039;d say try to overcome your fear and communicate with them, when you see one again</div>
+		<textarea style="display: none;" id="desctxt_13607">[quote][i]posted by Float:[/i]
+Or convince yourself they don&#039;t exist. Fear of seeing things usually works in not seeing them. That or creating their appearance in your mind.[/quote]
+
+Why always so negative? I would try to get in contact with them, maybe becoming friends with them. I know that sounds like stupid childstalk, but you&#039;ll never know, they could prove to be useful to you and maybe you can be useful to them. On the site Tallyman posted they say that shadow people might be lifes that hadn&#039;t ended completely for some reason. So maybe they are lonely.
+I&#039;d say try to overcome your fear and communicate with them, when you see one again</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">f3licks</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=848&amp;ref=1227833859" width="125" height="78" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13608" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by ShadowmanX:</em><br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Float:</em><br />
+Or convince yourself they don&#039;t exist. Fear of seeing things usually works in not seeing them. That or creating their appearance in your mind.</div>Why always so negative? I would try to get in contact with them, maybe becoming friends with them. I know that sounds like stupid childstalk, but you&#039;ll never know, they could prove to be useful to you and maybe you can be useful to them. On the site Tallyman posted they say that shadow people might be lifes that hadn&#039;t ended completely for some reason. So maybe they are lonely.<br />
+I&#039;d say try to overcome your fear and communicate with them, when you see one again</div>Same here.<br />
+Imagine being able to communicate with something like that!<br />
+<br />
+I wonder if you link telepathically to one. . .</div>
+		<textarea style="display: none;" id="desctxt_13608">[quote][i]posted by ShadowmanX:[/i]
+[quote][i]posted by Float:[/i]
+Or convince yourself they don&#039;t exist. Fear of seeing things usually works in not seeing them. That or creating their appearance in your mind.[/quote]
+
+Why always so negative? I would try to get in contact with them, maybe becoming friends with them. I know that sounds like stupid childstalk, but you&#039;ll never know, they could prove to be useful to you and maybe you can be useful to them. On the site Tallyman posted they say that shadow people might be lifes that hadn&#039;t ended completely for some reason. So maybe they are lonely.
+I&#039;d say try to overcome your fear and communicate with them, when you see one again[/quote]
+
+Same here.
+Imagine being able to communicate with something like that!
+
+I wonder if you link telepathically to one. . .</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Float</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=625&amp;ref=1240779348" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13609" style="width: 100%; overflow: auto; min-height: 125px;">I wasn&#039;t attempting to promote negativity and fear in such a situation. I was simply stating the obvious. If someone doesn&#039;t wish to see things like this, the mind is very effective in washing these images out if you convince yourself that you are too &quot;scared&quot; of it. There are a lot of people who saw things when they were kids, but because they thought it couldn&#039;t exist, or because they were too scared, they drowned out the images. That&#039;s all I was saying.<br />
+<br />
+If you would WANT to make contact with whatever &quot;it&quot; is, then I would still strongly advise that some precautions are made. Nothing worse than trying to go and be all diplomatic overseas without anyone knowing you&#039;re over there to offer protection if something goes wrong. I have my own feelings on &quot;shielding&quot; but in this instance a &quot;shield&quot; would probably be advised. I also don&#039;t think it should be done in a threatening manor. I know if someone came to me holding a shield, strapped with a sword, and had a big smile on their face I&#039;d be fairly concerned they were going to try to make me laugh and then chop off my head. In which case I&#039;d either flea the scene or react in a similar way.<br />
+<br />
+It takes some thinking before you run out there and just do something. Trust and respect are good qualities, but nothing beats preparation and purpose. Why would you want to make contact, and what out of this &quot;meeting&quot; would you hope to achieve? All questions you should consider before doing it.</div>
+		<textarea style="display: none;" id="desctxt_13609">I wasn&#039;t attempting to promote negativity and fear in such a situation. I was simply stating the obvious. If someone doesn&#039;t wish to see things like this, the mind is very effective in washing these images out if you convince yourself that you are too &quot;scared&quot; of it. There are a lot of people who saw things when they were kids, but because they thought it couldn&#039;t exist, or because they were too scared, they drowned out the images. That&#039;s all I was saying.
+
+If you would WANT to make contact with whatever &quot;it&quot; is, then I would still strongly advise that some precautions are made. Nothing worse than trying to go and be all diplomatic overseas without anyone knowing you&#039;re over there to offer protection if something goes wrong. I have my own feelings on &quot;shielding&quot; but in this instance a &quot;shield&quot; would probably be advised. I also don&#039;t think it should be done in a threatening manor. I know if someone came to me holding a shield, strapped with a sword, and had a big smile on their face I&#039;d be fairly concerned they were going to try to make me laugh and then chop off my head. In which case I&#039;d either flea the scene or react in a similar way.
+
+It takes some thinking before you run out there and just do something. Trust and respect are good qualities, but nothing beats preparation and purpose. Why would you want to make contact, and what out of this &quot;meeting&quot; would you hope to achieve? All questions you should consider before doing it.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">f3licks</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=848&amp;ref=1227833859" width="125" height="78" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13615" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Float:</em><br />
+I wasn&#039;t attempting to promote negativity and fear in such a situation. I was simply stating the obvious. If someone doesn&#039;t wish to see things like this, the mind is very effective in washing these images out if you convince yourself that you are too &quot;scared&quot; of it. There are a lot of people who saw things when they were kids, but because they thought it couldn&#039;t exist, or because they were too scared, they drowned out the images. That&#039;s all I was saying.<br />
+<br />
+If you would WANT to make contact with whatever &quot;it&quot; is, then I would still strongly advise that some precautions are made. Nothing worse than trying to go and be all diplomatic overseas without anyone knowing you&#039;re over there to offer protection if something goes wrong. I have my own feelings on &quot;shielding&quot; but in this instance a &quot;shield&quot; would probably be advised. I also don&#039;t think it should be done in a threatening manor. I know if someone came to me holding a shield, strapped with a sword, and had a big smile on their face I&#039;d be fairly concerned they were going to try to make me laugh and then chop off my head. In which case I&#039;d either flea the scene or react in a similar way.<br />
+<br />
+It takes some thinking before you run out there and just do something. Trust and respect are good qualities, but nothing beats preparation and purpose. Why would you want to make contact, and what out of this &quot;meeting&quot; would you hope to achieve? All questions you should consider before doing it.</div>Yes, I do think a shield would be in order, but that&#039;s not really the point.<br />
+What I would want to gain would be any knowledge about the creatures.</div>
+		<textarea style="display: none;" id="desctxt_13615">[quote][i]posted by Float:[/i]
+I wasn&#039;t attempting to promote negativity and fear in such a situation. I was simply stating the obvious. If someone doesn&#039;t wish to see things like this, the mind is very effective in washing these images out if you convince yourself that you are too &quot;scared&quot; of it. There are a lot of people who saw things when they were kids, but because they thought it couldn&#039;t exist, or because they were too scared, they drowned out the images. That&#039;s all I was saying.
+
+If you would WANT to make contact with whatever &quot;it&quot; is, then I would still strongly advise that some precautions are made. Nothing worse than trying to go and be all diplomatic overseas without anyone knowing you&#039;re over there to offer protection if something goes wrong. I have my own feelings on &quot;shielding&quot; but in this instance a &quot;shield&quot; would probably be advised. I also don&#039;t think it should be done in a threatening manor. I know if someone came to me holding a shield, strapped with a sword, and had a big smile on their face I&#039;d be fairly concerned they were going to try to make me laugh and then chop off my head. In which case I&#039;d either flea the scene or react in a similar way.
+
+It takes some thinking before you run out there and just do something. Trust and respect are good qualities, but nothing beats preparation and purpose. Why would you want to make contact, and what out of this &quot;meeting&quot; would you hope to achieve? All questions you should consider before doing it.[/quote]
+
+Yes, I do think a shield would be in order, but that&#039;s not really the point.
+What I would want to gain would be any knowledge about the creatures.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">anisus</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=732&amp;ref=1219047680" width="125" height="123" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13616" style="width: 100%; overflow: auto; min-height: 125px;">Wow, I didn&#039;t know there was an actual term for these entities. A few years ago, I saw something that I guess I can now call shadow people. I was looking out across the street from my mom&#039;s house where there&#039;s a gated field. My sister happen to be there too and all of a sudden, these two black figures started darting across the field. At first I thought it was people, but I noticed they were practically zooming from one end of the field to the other in no time and they were both black as night with no discernable characteristics. I felt like I couldn&#039;t even keep my eyes on them, they were so fast and strange. There was no sound coming from them, and then they just disappeared. I looked at my sister and she looked at me and I had to ask her twice if we just saw what we saw. I&#039;m glad she was there otherwise I would&#039;ve not been sure. Wow, shadow people.<br />
+That&#039;s a little frightening that it was right in your room realman. </div>
+		<textarea style="display: none;" id="desctxt_13616">Wow, I didn&#039;t know there was an actual term for these entities. A few years ago, I saw something that I guess I can now call shadow people. I was looking out across the street from my mom&#039;s house where there&#039;s a gated field. My sister happen to be there too and all of a sudden, these two black figures started darting across the field. At first I thought it was people, but I noticed they were practically zooming from one end of the field to the other in no time and they were both black as night with no discernable characteristics. I felt like I couldn&#039;t even keep my eyes on them, they were so fast and strange. There was no sound coming from them, and then they just disappeared. I looked at my sister and she looked at me and I had to ask her twice if we just saw what we saw. I&#039;m glad she was there otherwise I would&#039;ve not been sure. Wow, shadow people.
+That&#039;s a little frightening that it was right in your room realman.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">therealman777</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13681" style="width: 100%; overflow: auto; min-height: 125px;">Hey, thanks for all your input guys. I was thinking, I don&#039;t practice astral travel or psionics or any of the other things suggested in the posts, nor do I think I&#039;m clairvoyant. It got me thinking though and I remembered that around the time this happened me and some friends were going out &quot;Ghosthunting&quot; alot. Maybe that has something to do with it. Let me tell you though, seeing something like that in your BEDROOM is FREAKY!!!!!!!<br />
+Thanks again guys.<br />
+Steve</div>
+		<textarea style="display: none;" id="desctxt_13681">Hey, thanks for all your input guys. I was thinking, I don&#039;t practice astral travel or psionics or any of the other things suggested in the posts, nor do I think I&#039;m clairvoyant. It got me thinking though and I remembered that around the time this happened me and some friends were going out &quot;Ghosthunting&quot; alot. Maybe that has something to do with it. Let me tell you though, seeing something like that in your BEDROOM is FREAKY!!!!!!!
+Thanks again guys.
+Steve</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">ghostseer00</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=951&amp;ref=1242257054" width="125" height="103" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13787" style="width: 100%; overflow: auto; min-height: 125px;">i have these experiences all the time except they&#039;re a LOT more interactive and deatailed</div>
+		<textarea style="display: none;" id="desctxt_13787">i have these experiences all the time except they&#039;re a LOT more interactive and deatailed</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Jacob</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=949&amp;ref=1248714472" width="108" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13798" style="width: 100%; overflow: auto; min-height: 125px;">I can&#039;t recall seeing a shadow-man myself, when I was 5 years old or so, I was playing in the living room and I saw a white flash for a couple of mini seconds somewhere in an open cabinet.<br />
+<br />
+Although I tend to think its something in my head, same goes for psi... I believed in it only after the 10th time being visible.<br />
+<br />
+Also never forget you might see certain things in something that might have been light casting a shadow on a t-shirt that was drying in the stairway or the sun that breaks through the clouds etc.</div>
+		<textarea style="display: none;" id="desctxt_13798">I can&#039;t recall seeing a shadow-man myself, when I was 5 years old or so, I was playing in the living room and I saw a white flash for a couple of mini seconds somewhere in an open cabinet.
+
+Although I tend to think its something in my head, same goes for psi... I believed in it only after the 10th time being visible.
+
+Also never forget you might see certain things in something that might have been light casting a shadow on a t-shirt that was drying in the stairway or the sun that breaks through the clouds etc.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 6 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=730" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 30 queries. 0.282 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

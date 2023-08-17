@@ -1,0 +1,408 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; my vision on the future</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; my vision on the future</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">my vision on the future</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">windninja</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13338" style="width: 100%; overflow: auto; min-height: 125px;">There are a lot of articles on the internet about what would happen in 2012 and to be honest i dont believe that a disaster or something like that would happen, what i do believe is that humans are evolving into humans with special abilities, a kinda like the marvel world. Its a feeling i&#039;v had all my live. <br />
+<br />
+Some maybe would think, &#039;why dude&#039;, well when i was young a dog was running after me and i was so scared and without knowing what happend i was running really fast i lost balance and broke my arm, the weird thing is when i was running it was like a blue mist inside me was giving me a lot of energy. since then i feel something inside is present. a year after that i had a OBE, i thought i would die, it was like my soul wanted to leave my body, and i&#039;v had this experiency twice in my live. For years i was thinking why did it happend to me and whats wrong to me. so yesterday when i again was thinking about it i searched with google. I typed &#039;soul leaving body&#039; and then i found  the site of PsiPog. I just coudnt beleive when i was reading the article of OBE, and while looking at the site i found the psiball section, it shocked me they where talking about the method of taking energy of the inside, in the form of a blue ball.<br />
+<br />
+So people, what do u think of it, do u think that it could be possible that in the future a lot of people would have special powers?<br />
+<br />
+*sorry for bad english</div>
+		<textarea style="display: none;" id="desctxt_13338">There are a lot of articles on the internet about what would happen in 2012 and to be honest i dont believe that a disaster or something like that would happen, what i do believe is that humans are evolving into humans with special abilities, a kinda like the marvel world. Its a feeling i&#039;v had all my live. 
+
+Some maybe would think, &#039;why dude&#039;, well when i was young a dog was running after me and i was so scared and without knowing what happend i was running really fast i lost balance and broke my arm, the weird thing is when i was running it was like a blue mist inside me was giving me a lot of energy. since then i feel something inside is present. a year after that i had a OBE, i thought i would die, it was like my soul wanted to leave my body, and i&#039;v had this experiency twice in my live. For years i was thinking why did it happend to me and whats wrong to me. so yesterday when i again was thinking about it i searched with google. I typed &#039;soul leaving body&#039; and then i found  the site of PsiPog. I just coudnt beleive when i was reading the article of OBE, and while looking at the site i found the psiball section, it shocked me they where talking about the method of taking energy of the inside, in the form of a blue ball.
+
+So people, what do u think of it, do u think that it could be possible that in the future a lot of people would have special powers?
+
+*sorry for bad english</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by windninja, 3 years, 8 months ago<br />Posted 3 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Wingsofchaos</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13339" style="width: 100%; overflow: auto; min-height: 125px;">No, I don&#039;t think a lot of people will have OMGSPESHULPOWERZ!!!!111<br />
+<br />
+I do think a lot of people might indeed be psychic.<br />
+<br />
+Just some advice, I&#039;m not trying to be extremely mean, don&#039;t call psychic abilities &quot;special powers&quot; it makes you sound fluffy.</div>
+		<textarea style="display: none;" id="desctxt_13339">No, I don&#039;t think a lot of people will have OMGSPESHULPOWERZ!!!!111
+
+I do think a lot of people might indeed be psychic.
+
+Just some advice, I&#039;m not trying to be extremely mean, don&#039;t call psychic abilities &quot;special powers&quot; it makes you sound fluffy.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Morcyont</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=867&amp;ref=1262407330" width="125" height="73" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13342" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by windninja:</em><br />
+There are a lot of articles on the internet about what would happen in 2012 and to be honest i dont believe that a disaster or something like that would happen, what i do believe is that humans are evolving into humans with special abilities, a kinda like the marvel world. Its a feeling i&#039;v had all my live. <br />
+<br />
+Some maybe would think, &#039;why dude&#039;, well when i was young a dog was running after me and i was so scared and without knowing what happend i was running really fast i lost balance and broke my arm, the weird thing is when i was running it was like a blue mist inside me was giving me a lot of energy. since then i feel something inside is present. a year after that i had a OBE, i thought i would die, it was like my soul wanted to leave my body, and i&#039;v had this experiency twice in my live. For years i was thinking why did it happend to me and whats wrong to me. so yesterday when i again was thinking about it i searched with google. I typed &#039;soul leaving body&#039; and then i found  the site of PsiPog. I just coudnt beleive when i was reading the article of OBE, and while looking at the site i found the psiball section, it shocked me they where talking about the method of taking energy of the inside, in the form of a blue ball.<br />
+<br />
+So people, what do u think of it, do u think that it could be possible that in the future a lot of people would have special powers?<br />
+<br />
+*sorry for bad english</div>OH YEAH! I want to be Superman!<br />
+No I don&#039;t believe in the 2012 disaster.<br />
+No I don&#039;t believe anyone is going to have &quot;special powers&quot;.<br />
+Why did you call it &quot;special powers&quot;? </div>
+		<textarea style="display: none;" id="desctxt_13342">[quote][i]posted by windninja:[/i]
+There are a lot of articles on the internet about what would happen in 2012 and to be honest i dont believe that a disaster or something like that would happen, what i do believe is that humans are evolving into humans with special abilities, a kinda like the marvel world. Its a feeling i&#039;v had all my live. 
+
+Some maybe would think, &#039;why dude&#039;, well when i was young a dog was running after me and i was so scared and without knowing what happend i was running really fast i lost balance and broke my arm, the weird thing is when i was running it was like a blue mist inside me was giving me a lot of energy. since then i feel something inside is present. a year after that i had a OBE, i thought i would die, it was like my soul wanted to leave my body, and i&#039;v had this experiency twice in my live. For years i was thinking why did it happend to me and whats wrong to me. so yesterday when i again was thinking about it i searched with google. I typed &#039;soul leaving body&#039; and then i found  the site of PsiPog. I just coudnt beleive when i was reading the article of OBE, and while looking at the site i found the psiball section, it shocked me they where talking about the method of taking energy of the inside, in the form of a blue ball.
+
+So people, what do u think of it, do u think that it could be possible that in the future a lot of people would have special powers?
+
+*sorry for bad english[/quote]
+
+OH YEAH! I want to be Superman!
+No I don&#039;t believe in the 2012 disaster.
+No I don&#039;t believe anyone is going to have &quot;special powers&quot;.
+Why did you call it &quot;special powers&quot;?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Sussch</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=622&amp;ref=1252769070" width="100" height="92" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13343" style="width: 100%; overflow: auto; min-height: 125px;">Everyone probably has psionic abilities.<br />
+However, many can&#039;t use them properly and shut them down in order to protect themselves and others.<br />
+<br />
+I think that in the future a lot of people will be able to use psionics to a greater extent.</div>
+		<textarea style="display: none;" id="desctxt_13343">Everyone probably has psionic abilities.
+However, many can&#039;t use them properly and shut them down in order to protect themselves and others.
+
+I think that in the future a lot of people will be able to use psionics to a greater extent.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Raathuus</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=764&amp;ref=1259211929" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13345" style="width: 100%; overflow: auto; min-height: 125px;">Well, on the topic of 2012, I&#039;m not sure.  By what I recall seeing on one of those History Channel hour long documentaries, the way the translation of the Mayan prediction went was &quot;a wave of change&quot; or something like that.  Since I can&#039;t tell what the sense that phrasing is (physical, spiritual, the like...), I&#039;d suggest just waiting and seeing what the outcome is.  If it&#039;s just another average day, so be it.</div>
+		<textarea style="display: none;" id="desctxt_13345">Well, on the topic of 2012, I&#039;m not sure.  By what I recall seeing on one of those History Channel hour long documentaries, the way the translation of the Mayan prediction went was &quot;a wave of change&quot; or something like that.  Since I can&#039;t tell what the sense that phrasing is (physical, spiritual, the like...), I&#039;d suggest just waiting and seeing what the outcome is.  If it&#039;s just another average day, so be it.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">X-Master</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=433&amp;ref=1238933408" width="115" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13349" style="width: 100%; overflow: auto; min-height: 125px;">Well it could just be a day when we look back at what has transpired in the previous years, and be like, &quot;Oh, thats what that all meant.&quot;.</div>
+		<textarea style="display: none;" id="desctxt_13349">Well it could just be a day when we look back at what has transpired in the previous years, and be like, &quot;Oh, thats what that all meant.&quot;.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">ShadowmanX</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13350" style="width: 100%; overflow: auto; min-height: 125px;">How about this theory:<br />
+A huge change will occur, caused by something or someone. And I believe that we could influence that change. I think this change is not a currently defined change, it rather will be defined when its time and til then it can be &quot;modified&quot;(I cant think of a better word right now).<br />
+<br />
+I hope the change will be of a positive nature, but as the world is currently evolving I fear the opposite</div>
+		<textarea style="display: none;" id="desctxt_13350">How about this theory:
+A huge change will occur, caused by something or someone. And I believe that we could influence that change. I think this change is not a currently defined change, it rather will be defined when its time and til then it can be &quot;modified&quot;(I cant think of a better word right now).
+
+I hope the change will be of a positive nature, but as the world is currently evolving I fear the opposite</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">ed.</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=446&amp;ref=1213317482" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13353" style="width: 100%; overflow: auto; min-height: 125px;">I&#039;m pretty sure we&#039;ll all be still alive in 2012. My physics teacher brought up some good points about this. It was something along the things of how these things are never predicted and end up coming true. Instead, after an event happens, connections are made to a prediction that has already existed. Example, Nostradamus. Nothing has ever been correctly predetermined by analyzing his writings. We instead try to connect events to anything we can find in his books of predictions. Basically, I don&#039;t think we should try and live by these end of the world predictions. It will happen, but not in 2012.</div>
+		<textarea style="display: none;" id="desctxt_13353">I&#039;m pretty sure we&#039;ll all be still alive in 2012. My physics teacher brought up some good points about this. It was something along the things of how these things are never predicted and end up coming true. Instead, after an event happens, connections are made to a prediction that has already existed. Example, Nostradamus. Nothing has ever been correctly predetermined by analyzing his writings. We instead try to connect events to anything we can find in his books of predictions. Basically, I don&#039;t think we should try and live by these end of the world predictions. It will happen, but not in 2012.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Antisankari</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=224&amp;ref=1213032338" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13354" style="width: 100%; overflow: auto; min-height: 125px;">Why not?<br />
+Isnt 2012 as good as any year for it?</div>
+		<textarea style="display: none;" id="desctxt_13354">Why not?
+Isnt 2012 as good as any year for it?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">X-Master</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=433&amp;ref=1238933408" width="115" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13356" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Antisankari:</em><br />
+Why not?<br />
+Isnt 2012 as good as any year for it?</div>I have to concur. Why not 2012? I understand what you are saying ed., since that is pretty much the only way to make sense of Nostradamus, and some of his predictions, no one knows how to make heads or tails of.<br />
+<br />
+I think what ShadowmanX is trying to talk about the paradox of how the future is predetermined, but can be changed.<br />
+</div>
+		<textarea style="display: none;" id="desctxt_13356">[quote][i]posted by Antisankari:[/i]
+Why not?
+Isnt 2012 as good as any year for it?[/quote]
+
+I have to concur. Why not 2012? I understand what you are saying ed., since that is pretty much the only way to make sense of Nostradamus, and some of his predictions, no one knows how to make heads or tails of.
+
+I think what ShadowmanX is trying to talk about the paradox of how the future is predetermined, but can be changed.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Eldibs</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=77&amp;ref=1223740672" width="19" height="36" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13365" style="width: 100%; overflow: auto; min-height: 125px;">It&#039;s the time when we Americans decide whether or not to give Obama another four years. That&#039;s what 2012 is all about.<br />
+<br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by windninja:</em><br />
+the weird thing is when i was running it was like a blue mist inside me was giving me a lot of energy.</div>You speak as though it was a physical feeling inside of you, but then you use a visual descriptor. What, exactly, does &quot;blue&quot; feel like? Reminds me of Futurama: &quot;Did everything just taste purple for a second?&quot; The color of the psiball you try to make is irrelevant (for instance, I visualize purple, not blue), and completely unrelated to your synesthesia.</div>
+		<textarea style="display: none;" id="desctxt_13365">It&#039;s the time when we Americans decide whether or not to give Obama another four years. That&#039;s what 2012 is all about.
+
+[quote][i]posted by windninja:[/i]
+the weird thing is when i was running it was like a blue mist inside me was giving me a lot of energy.[/quote]
+
+You speak as though it was a physical feeling inside of you, but then you use a visual descriptor. What, exactly, does &quot;blue&quot; feel like? Reminds me of Futurama: &quot;Did everything just taste purple for a second?&quot; The color of the psiball you try to make is irrelevant (for instance, I visualize purple, not blue), and completely unrelated to your synesthesia.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Eldibs, 3 years, 8 months ago<br />Posted 3 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Morcyont</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=867&amp;ref=1262407330" width="125" height="73" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13367" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Eldibs:</em><br />
+It&#039;s the time when we Americans decide whether or not to give Obama another four years. That&#039;s what 2012 is all about.</div>WOW I laughed my ass OFF at that! IT ALL makes sense now!</div>
+		<textarea style="display: none;" id="desctxt_13367">[quote][i]posted by Eldibs:[/i]
+It&#039;s the time when we Americans decide whether or not to give Obama another four years. That&#039;s what 2012 is all about.
+[/quote]
+
+WOW I laughed my ass OFF at that! IT ALL makes sense now!</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Psikillion</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=593&amp;ref=1213954510" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13369" style="width: 100%; overflow: auto; min-height: 125px;">If the world is going to end, does that mean that we will finally have gotten rid of all these people who spout that there is going to be an end to the world?<br />
+<br />
+Just some food for thought.</div>
+		<textarea style="display: none;" id="desctxt_13369">If the world is going to end, does that mean that we will finally have gotten rid of all these people who spout that there is going to be an end to the world?
+
+Just some food for thought.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Lee</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=870&amp;ref=1256962743" width="98" height="98" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13370" style="width: 100%; overflow: auto; min-height: 125px;">Hmmm. Well, I graduate in 2012, so I sure hope we aren&#039;t all going to die! *sarcasm*<br />
+<br />
+We don&#039;t have to evolve to have psychic abilities, and all of us here should realize that. We aren&#039;t super-human...all humans already have the potential, they just don&#039;t act on it. At least, that&#039;s what I think.</div>
+		<textarea style="display: none;" id="desctxt_13370">Hmmm. Well, I graduate in 2012, so I sure hope we aren&#039;t all going to die! *sarcasm*
+
+We don&#039;t have to evolve to have psychic abilities, and all of us here should realize that. We aren&#039;t super-human...all humans already have the potential, they just don&#039;t act on it. At least, that&#039;s what I think.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 8 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=703" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 30 queries. 0.333 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

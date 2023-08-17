@@ -1,0 +1,507 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Stealth shield v2.0</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Stealth shield v2.0</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Stealth shield v2.0</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Kube</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=952&amp;ref=1249239276" width="102" height="77" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_15743" style="width: 100%; overflow: auto; min-height: 125px;">In <a href="forums.php@cmd=thread&amp;tid=863.html" target="_blank" title="http://alittleweird.com/forums.php?cmd=thread&amp;tid=863">another thread</a> not long ago, we talked about making an undetectable shield or barrier via suggestion. So I was wondering if there could be other ways to do it and I thought of this:<br />
+<br />
+Make a shield. Instead of sending out the message that you&#039;re not there and kind of hypnotizing the subject, which can always fail depending on the person you&#039;re trying it on, why not make one that <strong>really</strong> makes you invisible?<br />
+<br />
+So instead of telling their brain that they cannot see you, you&#039;d be sending their eyes the image of what you&#039;re standing in front of. Basically, it would be a construct that makes the light that would usually touch you and bounce off, creating colors, deviate from its path, go around the shield and then go back on its original trajectory, as if you had never been there. The witness would see nothing, as the colors reflected by the surface(s) you&#039;re standing in front of would just go around you and to their eyes, making it seem as if you weren&#039;t there at all.<br />
+<br />
+That way, there&#039;s no need to worry about the whole problem of certain people noticing you, since their eyes don&#039;t see you in the first place.<br />
+<br />
+I&#039;m sure this has been suggested before, but I thought it was a good idea. What do you think? It&#039;s most likely extremely difficult to make such a shield, though...</div>
+		<textarea style="display: none;" id="desctxt_15743">In [url=http://alittleweird.com/forums.php?cmd=thread&amp;tid=863]another thread[/url] not long ago, we talked about making an undetectable shield or barrier via suggestion. So I was wondering if there could be other ways to do it and I thought of this:
+
+Make a shield. Instead of sending out the message that you&#039;re not there and kind of hypnotizing the subject, which can always fail depending on the person you&#039;re trying it on, why not make one that [b]really[/b] makes you invisible?
+
+So instead of telling their brain that they cannot see you, you&#039;d be sending their eyes the image of what you&#039;re standing in front of. Basically, it would be a construct that makes the light that would usually touch you and bounce off, creating colors, deviate from its path, go around the shield and then go back on its original trajectory, as if you had never been there. The witness would see nothing, as the colors reflected by the surface(s) you&#039;re standing in front of would just go around you and to their eyes, making it seem as if you weren&#039;t there at all.
+
+That way, there&#039;s no need to worry about the whole problem of certain people noticing you, since their eyes don&#039;t see you in the first place.
+
+I&#039;m sure this has been suggested before, but I thought it was a good idea. What do you think? It&#039;s most likely extremely difficult to make such a shield, though...</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Sussch</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=622&amp;ref=1252769070" width="100" height="92" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_15748" style="width: 100%; overflow: auto; min-height: 125px;">When a bum started begging money from me every day, I thought that it would be nice to have a real invisibility shield aswell.<br />
+<br />
+However, there&#039;s a big problem with it - the one in the shield wouldn&#039;t be able to see anything, because photons&#039; trajectories are bent around him / her.<br />
+<br />
+Maybe a chameleon-like shield could be built in such a way that it actually makes you invisible?</div>
+		<textarea style="display: none;" id="desctxt_15748">When a bum started begging money from me every day, I thought that it would be nice to have a real invisibility shield aswell.
+
+However, there&#039;s a big problem with it - the one in the shield wouldn&#039;t be able to see anything, because photons&#039; trajectories are bent around him / her.
+
+Maybe a chameleon-like shield could be built in such a way that it actually makes you invisible?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">f3licks</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=848&amp;ref=1227833859" width="125" height="78" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_15749" style="width: 100%; overflow: auto; min-height: 125px;">OK, lets talk about feasibility.<br />
+<br />
+For the shield to work as you described, it would have to display your background simultaneously from all directions at once.<br />
+Then, it would have to physically bend light. That&#039;s not exactly easy.</div>
+		<textarea style="display: none;" id="desctxt_15749">OK, lets talk about feasibility.
+
+For the shield to work as you described, it would have to display your background simultaneously from all directions at once.
+Then, it would have to physically bend light. That&#039;s not exactly easy.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Kube</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=952&amp;ref=1249239276" width="102" height="77" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_15752" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by f3licks:</em><br />
+OK, lets talk about feasibility.<br />
+<br />
+For the shield to work as you described, it would have to display your background simultaneously from all directions at once.<br />
+Then, it would have to physically bend light. That&#039;s not exactly easy.</div>As I said, it&#039;s probably very difficult to make; it would take years of practice maybe. But no, projecting the background has nothing to do with it, as you&#039;re not making yourself invisible per-say; you&#039;re making light bend and so, the person looking in your direction receives the light that went around you and which was reflected by the wall or whatever you were standing in front of. That light is of the color of that object and so, when the person receives the light, they see behind you. Simple optical physics.<br />
+<br />
+@Sussch: Yeah I thought about the seeing problem... haven&#039;t found a work-around yet... You could make it so there&#039;s a portion of the shield that let&#039;s in light, but the others would see a face floating around... Not exactly useful. But if you can bend light this way, you could also make that chameleon shield since instead of deviating the light, you&#039;re actually making yourself absorb/reflect different colors than usual.<br />
+<br />
+But like we said, manipulating it would be hard. To bend the path of something that moves at the speed of light, you&#039;d probably need crazy PK skills...</div>
+		<textarea style="display: none;" id="desctxt_15752">[quote][i]posted by f3licks:[/i]
+OK, lets talk about feasibility.
+
+For the shield to work as you described, it would have to display your background simultaneously from all directions at once.
+Then, it would have to physically bend light. That&#039;s not exactly easy.[/quote]
+
+As I said, it&#039;s probably very difficult to make; it would take years of practice maybe. But no, projecting the background has nothing to do with it, as you&#039;re not making yourself invisible per-say; you&#039;re making light bend and so, the person looking in your direction receives the light that went around you and which was reflected by the wall or whatever you were standing in front of. That light is of the color of that object and so, when the person receives the light, they see behind you. Simple optical physics.
+
+@Sussch: Yeah I thought about the seeing problem... haven&#039;t found a work-around yet... You could make it so there&#039;s a portion of the shield that let&#039;s in light, but the others would see a face floating around... Not exactly useful. But if you can bend light this way, you could also make that chameleon shield since instead of deviating the light, you&#039;re actually making yourself absorb/reflect different colors than usual.
+
+But like we said, manipulating it would be hard. To bend the path of something that moves at the speed of light, you&#039;d probably need crazy PK skills...</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Sussch</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=622&amp;ref=1252769070" width="100" height="92" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_15754" style="width: 100%; overflow: auto; min-height: 125px;">Well, I believe that researchers have done it with metamaterials - a really tough shield with a similar exterior to metamaterials could help aswell.<br />
+<br />
+As for the seeing problem, there could be the workaround of blind-vision by using sounds or feeling one&#039;s surroundings.<br />
+<br />
+But it&#039;s certainly going to need some crazy constructs and PK skills.<br />
+</div>
+		<textarea style="display: none;" id="desctxt_15754">Well, I believe that researchers have done it with metamaterials - a really tough shield with a similar exterior to metamaterials could help aswell.
+
+As for the seeing problem, there could be the workaround of blind-vision by using sounds or feeling one&#039;s surroundings.
+
+But it&#039;s certainly going to need some crazy constructs and PK skills.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Insectoid</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=1010&amp;ref=1251218696" width="50" height="50" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_15758" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by f3licks:</em><br />
+Then, it would have to physically bend light. That&#039;s not exactly easy.</div>Scientifically speaking. Remember that telekinesis is supposedly impossible.<br />
+<br />
+Anyways, what if you could find a way for light to pass directly through you? If <a href="http://www.psipog.net/art-concerning-phasing.html" target="_blank" title="http://www.psipog.net/art-concerning-phasing.html">passing through solid matter</a> is possible, then perhaps the same concept could work for light? There&#039;s still the problem with seeing, but honing your awareness could help with that.</div>
+		<textarea style="display: none;" id="desctxt_15758">[quote][i]posted by f3licks:[/i]
+Then, it would have to physically bend light. That&#039;s not exactly easy.[/quote]
+[quote]
+Scientifically speaking. Remember that telekinesis is supposedly impossible.
+
+Anyways, what if you could find a way for light to pass directly through you? If [url=http://www.psipog.net/art-concerning-phasing.html]passing through solid matter[/url] is possible, then perhaps the same concept could work for light? There&#039;s still the problem with seeing, but honing your awareness could help with that.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Kube</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=952&amp;ref=1249239276" width="102" height="77" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_15760" style="width: 100%; overflow: auto; min-height: 125px;">@Insectoid: Could work. You&#039;d have to be pretty good at phasing to keep it going for a while, though. Otherwise, you&#039;d just disappear for an instant.<br />
+<br />
+EDIT: Oh, and it could fix the seeing thing: You make it so your pupils let the light in, as usual, but your retina is the only part of your body that stops the light from going through. That <em>would</em> make two spots on the back of your head appear, though, if the other person was in exactly the right direction, so you couldn&#039;t be completely invisible. Maybe make it so only 50% of the light goes through your retina so you can see (although it would seem to you like the lighting was dim, kinda like nighttime) and the other person would probably not notice the spots, as they wouldn&#039;t be opaque.</div>
+		<textarea style="display: none;" id="desctxt_15760">@Insectoid: Could work. You&#039;d have to be pretty good at phasing to keep it going for a while, though. Otherwise, you&#039;d just disappear for an instant.
+
+EDIT: Oh, and it could fix the seeing thing: You make it so your pupils let the light in, as usual, but your retina is the only part of your body that stops the light from going through. That [i]would[/i] make two spots on the back of your head appear, though, if the other person was in exactly the right direction, so you couldn&#039;t be completely invisible. Maybe make it so only 50% of the light goes through your retina so you can see (although it would seem to you like the lighting was dim, kinda like nighttime) and the other person would probably not notice the spots, as they wouldn&#039;t be opaque.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Kube, 3 years, 1 month ago<br />Posted 3 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">f3licks</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=848&amp;ref=1227833859" width="125" height="78" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_15763" style="width: 100%; overflow: auto; min-height: 125px;">@Insectoid:<br />
+<br />
+How is telekinesis impossible?<br />
+It&#039;s very possible, both theoretically and practically.</div>
+		<textarea style="display: none;" id="desctxt_15763">@Insectoid:
+
+How is telekinesis impossible?
+It&#039;s very possible, both theoretically and practically.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Kube</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=952&amp;ref=1249239276" width="102" height="77" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_15765" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by f3licks:</em><br />
+@Insectoid:<br />
+<br />
+How is telekinesis impossible?<br />
+It&#039;s very possible, both theoretically and practically.</div>What I think Insectoid meant was we here at ALW and other communities know it&#039;s practically possible, but theoretically, it&#039;s breaking the laws of physics. Here are a few examples:<br />
+<br />
+The Inverse-Square Law<br />
+The Second Law of Thermodynamics<br />
+Momentum<br />
+<br />
+I&#039;m in a hurry so I just gave the Wikipedia examples (bad habit of mine) but you should look them up, it makes sense as to why PK would oppose them. So yes, practically, it is possible, but with our current physics system, it is theoretically impossible. But rules are meant to eb broken, right? ;)</div>
+		<textarea style="display: none;" id="desctxt_15765">[quote][i]posted by f3licks:[/i]
+@Insectoid:
+
+How is telekinesis impossible?
+It&#039;s very possible, both theoretically and practically.[/quote]
+
+What I think Insectoid meant was we here at ALW and other communities know it&#039;s practically possible, but theoretically, it&#039;s breaking the laws of physics. Here are a few examples:
+
+The Inverse-Square Law
+The Second Law of Thermodynamics
+Momentum
+
+I&#039;m in a hurry so I just gave the Wikipedia examples (bad habit of mine) but you should look them up, it makes sense as to why PK would oppose them. So yes, practically, it is possible, but with our current physics system, it is theoretically impossible. But rules are meant to eb broken, right? ;)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Insectoid</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=1010&amp;ref=1251218696" width="50" height="50" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_15767" style="width: 100%; overflow: auto; min-height: 125px;">Yeah, I just meant to say that we&#039;re already breaking commonly-excepted science here, so we won&#039;t know anything about what can be done with light until someone tries it.<br />
+<br />
+The sight-problem is a vexing one. I was going to suggest making it so that only the visible spectrum of light passed through your body, but we can&#039;t see in infrared or ultraviolet light anyways...<br />
+<br />
+Ah, maybe the best idea is to just use a combination of the don&#039;t-notice-me shield and making the light pass through your body. I guess it kind of defeats the purpose to use both though...</div>
+		<textarea style="display: none;" id="desctxt_15767">Yeah, I just meant to say that we&#039;re already breaking commonly-excepted science here, so we won&#039;t know anything about what can be done with light until someone tries it.
+
+The sight-problem is a vexing one. I was going to suggest making it so that only the visible spectrum of light passed through your body, but we can&#039;t see in infrared or ultraviolet light anyways...
+
+Ah, maybe the best idea is to just use a combination of the don&#039;t-notice-me shield and making the light pass through your body. I guess it kind of defeats the purpose to use both though...</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Kube</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=952&amp;ref=1249239276" width="102" height="77" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_15771" style="width: 100%; overflow: auto; min-height: 125px;">You could maybe make a construct that captures the images right before your eyes and sends it to you telepathically or something... Since the construct isn&#039;t visible, others wouldn&#039;t notice it, but then again, concentrating on making light phase through you would already require all your attention, if you try to maintain such a complex construct at the same time... Unless it&#039;s completely autonomous, and can sustain itself, and created before you actually start phasing the light...?</div>
+		<textarea style="display: none;" id="desctxt_15771">You could maybe make a construct that captures the images right before your eyes and sends it to you telepathically or something... Since the construct isn&#039;t visible, others wouldn&#039;t notice it, but then again, concentrating on making light phase through you would already require all your attention, if you try to maintain such a complex construct at the same time... Unless it&#039;s completely autonomous, and can sustain itself, and created before you actually start phasing the light...?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Insectoid</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=1010&amp;ref=1251218696" width="50" height="50" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_15773" style="width: 100%; overflow: auto; min-height: 125px;">If someone could actually do everything listed on this page though I think they could deal with not being invisible...</div>
+		<textarea style="display: none;" id="desctxt_15773">If someone could actually do everything listed on this page though I think they could deal with not being invisible...</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">f3licks</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=848&amp;ref=1227833859" width="125" height="78" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_15776" style="width: 100%; overflow: auto; min-height: 125px;">I just don&#039;t think it&#039;s possible to bend light, period.</div>
+		<textarea style="display: none;" id="desctxt_15776">I just don&#039;t think it&#039;s possible to bend light, period.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Kube</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=952&amp;ref=1249239276" width="102" height="77" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_15780" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Insectoid:</em><br />
+If someone could actually do everything listed on this page though I think they could deal with not being invisible...</div>haha true XD<br />
+<br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by f3licks:</em><br />
+I just don&#039;t think it&#039;s possible to bend light, period.</div>Well black holes do it :P That&#039;s a no-no for obvious reasons, though... So our best bet, if anyone ever did try this, would be either the phasing one or the regular &quot;don&#039;t notice me&quot; one.</div>
+		<textarea style="display: none;" id="desctxt_15780">[quote][i]posted by Insectoid:[/i]
+If someone could actually do everything listed on this page though I think they could deal with not being invisible...[/quote]
+
+haha true XD
+
+[quote][i]posted by f3licks:[/i]
+I just don&#039;t think it&#039;s possible to bend light, period.[/quote]
+
+Well black holes do it :P That&#039;s a no-no for obvious reasons, though... So our best bet, if anyone ever did try this, would be either the phasing one or the regular &quot;don&#039;t notice me&quot; one.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Jacob</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=949&amp;ref=1248714472" width="108" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_15784" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by f3licks:</em><br />
+I just don&#039;t think it&#039;s possible to bend light, period.</div>Look at an object inside or behind a glass of water. But of course that does not mean we can bend light using some-sort of shield.</div>
+		<textarea style="display: none;" id="desctxt_15784">[quote][i]posted by f3licks:[/i]
+I just don&#039;t think it&#039;s possible to bend light, period.[/quote]
+
+Look at an object inside or behind a glass of water. But of course that does not mean we can bend light using some-sort of shield.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Kube</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=952&amp;ref=1249239276" width="102" height="77" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_15789" style="width: 100%; overflow: auto; min-height: 125px;">@Jacob: Unless the shield acts like glass or any other transparent material...</div>
+		<textarea style="display: none;" id="desctxt_15789">@Jacob: Unless the shield acts like glass or any other transparent material...</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Reniiji</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_15889" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Jacob:</em><br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by f3licks:</em><br />
+I just don&#039;t think it&#039;s possible to bend light, period.</div>Look at an object inside or behind a glass of water. But of course that does not mean we can bend light using some-sort of shield.</div>Then bend space.Think relativity guys.<br />
+<br />
+</div>
+		<textarea style="display: none;" id="desctxt_15889">[quote][i]posted by Jacob:[/i]
+[quote][i]posted by f3licks:[/i]
+I just don&#039;t think it&#039;s possible to bend light, period.[/quote]
+
+Look at an object inside or behind a glass of water. But of course that does not mean we can bend light using some-sort of shield.[/quote]Then bend space.Think relativity guys.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Kube</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=952&amp;ref=1249239276" width="102" height="77" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_15905" style="width: 100%; overflow: auto; min-height: 125px;">How would you go about bending space, though?</div>
+		<textarea style="display: none;" id="desctxt_15905">How would you go about bending space, though?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Reniiji</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_15919" style="width: 100%; overflow: auto; min-height: 125px;">This is a difficult technique, but this is what I&#039;d try if I had enough control on psi:<br />
+1&gt; Create abstraction : ether (shiny white fluid).<br />
+2&gt; Create abstraction : mathematical view of  local space.<br />
+3&gt; Attach a unique point on ether to a unique point in local space.(Attach a few points consciously and engage subconscious for the rest)<br />
+4&gt; Program local space to move with the ether.<br />
+5&gt; Visualize ether as a sheet all around you and give it a wave and watch it flutter with the space around it.</div>
+		<textarea style="display: none;" id="desctxt_15919">This is a difficult technique, but this is what I&#039;d try if I had enough control on psi:
+1&gt; Create abstraction : ether (shiny white fluid).
+2&gt; Create abstraction : mathematical view of  local space.
+3&gt; Attach a unique point on ether to a unique point in local space.(Attach a few points consciously and engage subconscious for the rest)
+4&gt; Program local space to move with the ether.
+5&gt; Visualize ether as a sheet all around you and give it a wave and watch it flutter with the space around it.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Kube</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=952&amp;ref=1249239276" width="102" height="77" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_15922" style="width: 100%; overflow: auto; min-height: 125px;">We need someone to try this :P</div>
+		<textarea style="display: none;" id="desctxt_15922">We need someone to try this :P</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 1 month ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=877" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 36 queries. 0.376 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

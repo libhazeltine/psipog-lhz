@@ -1,0 +1,775 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Kabalarian Philosophy</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Kabalarian Philosophy</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Kabalarian Philosophy</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">FreedomBud</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=891&amp;ref=1233616312" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13099" style="width: 100%; overflow: auto; min-height: 125px;">Although ideas based around numerology have always seemed a little hokey to me, this is one thing that has me starting to go back on that idea. The Kabalarian philosophy suggests that our name has a major impact on the type of people we become. I know their results have been pretty dead-on for myself and a few friends.<br />
+<br />
+Check it out :)<br />
+ <a href="http://www.kabalarians.com/" target="_blank">http://www.kabalarians.com/</a></div>
+		<textarea style="display: none;" id="desctxt_13099">Although ideas based around numerology have always seemed a little hokey to me, this is one thing that has me starting to go back on that idea. The Kabalarian philosophy suggests that our name has a major impact on the type of people we become. I know their results have been pretty dead-on for myself and a few friends.
+
+Check it out :)
+http://www.kabalarians.com/</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">X-Master</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=433&amp;ref=1238933408" width="115" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13100" style="width: 100%; overflow: auto; min-height: 125px;">you have a very inquisitive, restless, seeking nature.<br />
+<br />
+You feel impelled by intense desires that you cannot comprehend or satisfy.<br />
+<br />
+You have had the desire to accomplish something outstanding and to do something very worthwhile for humanity, especially early in your life.<br />
+<br />
+This name gives you a versatile, clever, analytical mind, but unfortunately you cannot direct your interest toward an undertaking for long, as you do not have the patience and practicality for systematic hard work and attention to detail.<br />
+<br />
+You resent obstacles, delays, and restrictions.<br />
+<br />
+This name gives you ambition, high ideals, and much creative ability, but the intense dynamic nature is too often spent in feelings and in moods, rather than in constructive action.<br />
+<br />
+creates an active mind and a restless urge to explore new ideas, we emphasize that it causes an emotional intensity that is hard to control.<br />
+<br />
+This name, when combined with the last name, can frustrate happiness, contentment, and success, as well as cause health weaknesses in the solar plexus, and nervous system.<br />
+<br />
+I guess that it describes me pretty well. Even though the part about the patience I do not agree with fully. But this could just be a generalization, kind of like cold reading, so I don&#039;t know. I guess we will have to see what others have to say.</div>
+		<textarea style="display: none;" id="desctxt_13100">you have a very inquisitive, restless, seeking nature.
+
+You feel impelled by intense desires that you cannot comprehend or satisfy.
+
+You have had the desire to accomplish something outstanding and to do something very worthwhile for humanity, especially early in your life.
+
+This name gives you a versatile, clever, analytical mind, but unfortunately you cannot direct your interest toward an undertaking for long, as you do not have the patience and practicality for systematic hard work and attention to detail.
+
+You resent obstacles, delays, and restrictions.
+
+This name gives you ambition, high ideals, and much creative ability, but the intense dynamic nature is too often spent in feelings and in moods, rather than in constructive action.
+
+creates an active mind and a restless urge to explore new ideas, we emphasize that it causes an emotional intensity that is hard to control.
+
+This name, when combined with the last name, can frustrate happiness, contentment, and success, as well as cause health weaknesses in the solar plexus, and nervous system.
+
+I guess that it describes me pretty well. Even though the part about the patience I do not agree with fully. But this could just be a generalization, kind of like cold reading, so I don&#039;t know. I guess we will have to see what others have to say.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by X-Master, 3 years, 10 months ago<br />Posted 3 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">clay</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=701&amp;ref=1233551632" width="70" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13102" style="width: 100%; overflow: auto; min-height: 125px;">Your First Name of: Clay<br />
+<br />
+Your first name of Clay has given you a quick, analytical mind.<br />
+ <br />
+You are creative, versatile, and imaginative.<br />
+ <br />
+However, independence, positivity and the urge for action and progress are such strong forces in your nature that you find it difficult to control them.<br />
+ <br />
+You feel happy as long as headway is being made, but as soon as you are obstructed or your individuality and freedom of action are restricted, you experience an intense nervous reaction.<br />
+ <br />
+Moods of depression can result during which you become sarcastic and stubborn in your attitude toward everyone, especially to those in closest association with you.<br />
+While the name Clay creates the urge to be creative and original, we emphasize that it causes a restless intensity that defies relaxation.<br />
+ <br />
+This name, when combined with the last name, can frustrate happiness, contentment, and success, as well as cause health weaknesses in the solar plexus, and tension or accidents to the head.<br />
+<br />
+<br />
+===Other than the part about head healthiness (i dont get a lot of headaches, headcolds, etc.) seems... suprisingly close</div>
+		<textarea style="display: none;" id="desctxt_13102">Your First Name of: Clay
+
+Your first name of Clay has given you a quick, analytical mind.
+ 
+You are creative, versatile, and imaginative.
+ 
+However, independence, positivity and the urge for action and progress are such strong forces in your nature that you find it difficult to control them.
+ 
+You feel happy as long as headway is being made, but as soon as you are obstructed or your individuality and freedom of action are restricted, you experience an intense nervous reaction.
+ 
+Moods of depression can result during which you become sarcastic and stubborn in your attitude toward everyone, especially to those in closest association with you.
+While the name Clay creates the urge to be creative and original, we emphasize that it causes a restless intensity that defies relaxation.
+ 
+This name, when combined with the last name, can frustrate happiness, contentment, and success, as well as cause health weaknesses in the solar plexus, and tension or accidents to the head.
+
+
+===Other than the part about head healthiness (i dont get a lot of headaches, headcolds, etc.) seems... suprisingly close</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Riven</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=656&amp;ref=1217444530" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13110" style="width: 100%; overflow: auto; min-height: 125px;">Your first name of Ashley has given you a rather quiet, reserved, serious, studious nature.<br />
+ <br />
+You have sensitivity and appreciation for the finer and deeper things of life, the beauties of nature, music, art, and literature.<br />
+ <br />
+The people who mean the most to you are those who can offer you intellectual companionship.<br />
+ <br />
+It is only when you are among those who understand your deeper nature that you can really be yourself.<br />
+ <br />
+The experience of having your remarks taken lightly or belittled, particularly during the early years of your life, has caused you to keep your thoughts and feelings to yourself.<br />
+ <br />
+You do not express yourself spontaneously when conversing with others; hence other people may often regard you as being aloof, and even unfriendly. <br />
+<br />
+Although the name Ashley creates the urge to be reliable and responsible, we emphasize that it limits self-expression and friendly congeniality with a moody disposition.<br />
+ <br />
+---------------<br />
+<br />
+Well. That fits just about perfectly. I was talking with some of my friends about this, how a lot of Amandas become music teachers, Chris becomes a lawyer, etc. My old english teacher had a book on names, and how the sounds shaped the &quot;feel&quot; of the name and the personality from that.</div>
+		<textarea style="display: none;" id="desctxt_13110">Your first name of Ashley has given you a rather quiet, reserved, serious, studious nature.
+ 
+You have sensitivity and appreciation for the finer and deeper things of life, the beauties of nature, music, art, and literature.
+ 
+The people who mean the most to you are those who can offer you intellectual companionship.
+ 
+It is only when you are among those who understand your deeper nature that you can really be yourself.
+ 
+The experience of having your remarks taken lightly or belittled, particularly during the early years of your life, has caused you to keep your thoughts and feelings to yourself.
+ 
+You do not express yourself spontaneously when conversing with others; hence other people may often regard you as being aloof, and even unfriendly. 
+
+Although the name Ashley creates the urge to be reliable and responsible, we emphasize that it limits self-expression and friendly congeniality with a moody disposition.
+ 
+---------------
+
+Well. That fits just about perfectly. I was talking with some of my friends about this, how a lot of Amandas become music teachers, Chris becomes a lawyer, etc. My old english teacher had a book on names, and how the sounds shaped the &quot;feel&quot; of the name and the personality from that.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">FreedomBud</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=891&amp;ref=1233616312" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13111" style="width: 100%; overflow: auto; min-height: 125px;">That is a good point you have brought up x-master. I did briefly consider the results just being cold reading techniques, however I have not ruled it out either way; both seem pretty plausible. I mean, there is money involved for some of the services that they offer so it seems it may just be a ploy. But, for the people I know who have done it their results were pretty varied and fit them quite well. In light of that I decided to post it here to see what other people thought of it and I appreciate your taking the time to respond. I wish I could post mine as well but I already used my 6 freebies &gt;.&lt;<br />
+<br />
+</div>
+		<textarea style="display: none;" id="desctxt_13111">That is a good point you have brought up x-master. I did briefly consider the results just being cold reading techniques, however I have not ruled it out either way; both seem pretty plausible. I mean, there is money involved for some of the services that they offer so it seems it may just be a ploy. But, for the people I know who have done it their results were pretty varied and fit them quite well. In light of that I decided to post it here to see what other people thought of it and I appreciate your taking the time to respond. I wish I could post mine as well but I already used my 6 freebies &gt;.&lt;</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">f3licks</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=848&amp;ref=1227833859" width="125" height="78" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13112" style="width: 100%; overflow: auto; min-height: 125px;">[quote    * The name of Andrew has made you serious-minded, responsible, and stable.<br />
+       <br />
+    * You love the security of a home and family, you are fond of children, and, as a parent you would be fair and understanding.<br />
+       <br />
+    * Although you have good business judgment, you are not aggressive in your dealings because you do not like to create issues.<br />
+       <br />
+    * You would be successful in any position dealing with the public as you have a diplomatic and tactful manner and possess a charming, easy-going nature which puts people at ease.<br />
+       <br />
+    * People are drawn to you because they feel that you are patient, kind, understanding, and responsive.<br />
+<br />
+    * Although the name Andrew creates the urge to be reliable and responsible, we emphasize that it causes procrastination, lack of confidence, and the inability to realize your goals and ambitions.<br />
+       <br />
+    * This name, when combined with the last name, can frustrate happiness, contentment, and success, as well as cause health weaknesses in the fluid systems, and worry or mental tension.<br />
+<br />
+Seems right. Strange. . .<br />
+</div>
+		<textarea style="display: none;" id="desctxt_13112">[quote    * The name of Andrew has made you serious-minded, responsible, and stable.
+       
+    * You love the security of a home and family, you are fond of children, and, as a parent you would be fair and understanding.
+       
+    * Although you have good business judgment, you are not aggressive in your dealings because you do not like to create issues.
+       
+    * You would be successful in any position dealing with the public as you have a diplomatic and tactful manner and possess a charming, easy-going nature which puts people at ease.
+       
+    * People are drawn to you because they feel that you are patient, kind, understanding, and responsive.
+
+    * Although the name Andrew creates the urge to be reliable and responsible, we emphasize that it causes procrastination, lack of confidence, and the inability to realize your goals and ambitions.
+       
+    * This name, when combined with the last name, can frustrate happiness, contentment, and success, as well as cause health weaknesses in the fluid systems, and worry or mental tension.[/quote]
+
+Seems right. Strange. . .</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Raathuus</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=764&amp;ref=1259211929" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13114" style="width: 100%; overflow: auto; min-height: 125px;"><br />
+Your first name of (excluded for confidentiality) has given you a very practical, hard-working, systematic nature.<br />
+ <br />
+Your interests are focused on technical, mechanical, and scientific things, rather than interests of an artistic, musical, or social nature.<br />
+ <br />
+You have a rather skeptical outlook on life and rather materialistic standards.<br />
+ <br />
+In reaching your goals, you are very independent and resourceful, patient and determined.<br />
+ <br />
+You can be so very positive and definite in your own ideas and opinions that others sense a lack of tact and friendliness in your manner of expression.<br />
+The name (excluded for confidentiality) creates the urge to be creative and original, but we point out that it limits your versatility and scope, tuning you to technical details.<br />
+ <br />
+This name, when combined with the last name, can frustrate happiness, contentment, and success, as well as cause health weaknesses centering in the head, and in the stomach and intestinal organs.<br />
+<br />
+---------------------------<br />
+<br />
+Well, well, well... I seem to be the odd one out in this situation.  This seems to be only about HALF right.  While I am, in a sense, &quot;very practical, hard-working, and systematic,&quot; I wouldn&#039;t say too terribly much of it.  And while I am too in a sense &quot;technical, mechanical, and scientific,&quot; I am quite artistic, I am very musical (I play numerous instruments), and I somewhat social (why else would I be here?).  &quot;Skeptical?!&quot;  I&#039;m quite open-minded, thank you very much!  The only thing I&#039;m skeptical right now of is this!  The &quot;Reaching Your Goals&quot; part I can understand, though.  The rest... eh, it&#039;s kinda right.  It does seem sort of like a cold reading, though...</div>
+		<textarea style="display: none;" id="desctxt_13114">Your first name of (excluded for confidentiality) has given you a very practical, hard-working, systematic nature.
+ 
+Your interests are focused on technical, mechanical, and scientific things, rather than interests of an artistic, musical, or social nature.
+ 
+You have a rather skeptical outlook on life and rather materialistic standards.
+ 
+In reaching your goals, you are very independent and resourceful, patient and determined.
+ 
+You can be so very positive and definite in your own ideas and opinions that others sense a lack of tact and friendliness in your manner of expression.
+The name (excluded for confidentiality) creates the urge to be creative and original, but we point out that it limits your versatility and scope, tuning you to technical details.
+ 
+This name, when combined with the last name, can frustrate happiness, contentment, and success, as well as cause health weaknesses centering in the head, and in the stomach and intestinal organs.
+
+---------------------------
+
+Well, well, well... I seem to be the odd one out in this situation.  This seems to be only about HALF right.  While I am, in a sense, &quot;very practical, hard-working, and systematic,&quot; I wouldn&#039;t say too terribly much of it.  And while I am too in a sense &quot;technical, mechanical, and scientific,&quot; I am quite artistic, I am very musical (I play numerous instruments), and I somewhat social (why else would I be here?).  &quot;Skeptical?!&quot;  I&#039;m quite open-minded, thank you very much!  The only thing I&#039;m skeptical right now of is this!  The &quot;Reaching Your Goals&quot; part I can understand, though.  The rest... eh, it&#039;s kinda right.  It does seem sort of like a cold reading, though...</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Riven</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=656&amp;ref=1217444530" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13119" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Raathuus:</em><br />
+Well, well, well... I seem to be the odd one out in this situation.  This seems to be only about HALF right.  While I am, in a sense, &quot;very practical, hard-working, and systematic,&quot; I wouldn&#039;t say too terribly much of it.  And while I am too in a sense &quot;technical, mechanical, and scientific,&quot; I am quite artistic, I am very musical (I play numerous instruments), and I somewhat social (why else would I be here?).  &quot;Skeptical?!&quot;  I&#039;m quite open-minded, thank you very much!  The only thing I&#039;m skeptical right now of is this!  The &quot;Reaching Your Goals&quot; part I can understand, though.  The rest... eh, it&#039;s kinda right.  It does seem sort of like a cold reading, though...</div>All the same, it is pretty scary how often this is turning out right... What is interesting to me is the whole real name/nickname thing. One of my friends is really named Katherine, but the description didn&#039;t fit her too well, and her nickname is Michelle, and it fit her more, but not that great. So I wonder if it&#039;s a mix of the two, or just coincedence. Probably the latter, but still.</div>
+		<textarea style="display: none;" id="desctxt_13119">[quote][i]posted by Raathuus:[/i]
+Well, well, well... I seem to be the odd one out in this situation.  This seems to be only about HALF right.  While I am, in a sense, &quot;very practical, hard-working, and systematic,&quot; I wouldn&#039;t say too terribly much of it.  And while I am too in a sense &quot;technical, mechanical, and scientific,&quot; I am quite artistic, I am very musical (I play numerous instruments), and I somewhat social (why else would I be here?).  &quot;Skeptical?!&quot;  I&#039;m quite open-minded, thank you very much!  The only thing I&#039;m skeptical right now of is this!  The &quot;Reaching Your Goals&quot; part I can understand, though.  The rest... eh, it&#039;s kinda right.  It does seem sort of like a cold reading, though...[/quote]
+
+All the same, it is pretty scary how often this is turning out right... What is interesting to me is the whole real name/nickname thing. One of my friends is really named Katherine, but the description didn&#039;t fit her too well, and her nickname is Michelle, and it fit her more, but not that great. So I wonder if it&#039;s a mix of the two, or just coincedence. Probably the latter, but still.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">harmony</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=620&amp;ref=1214944384" width="80" height="80" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13185" style="width: 100%; overflow: auto; min-height: 125px;">* The name of Harmony creates a very quiet, practical nature and a clever and inventive mind.<br />
+       <br />
+    * Being analytical and naturally studious, you are interested in a factual understanding of the mysteries of life.<br />
+       <br />
+    * Your methodical nature requires that you like to finish what you start without interruptions and also to have everything in its place and properly organized.<br />
+       <br />
+    * An ability to concentrate could take you into computer programming or accountancy or any work requiring concentration and attention to detail.<br />
+       <br />
+    * You have, also, a flair for creative expression with your hands.<br />
+       <br />
+    * You take life seriously and can be easily and deeply hurt and go into moods which can be quite extreme at times, causing much turmoil and unhappiness.<br />
+<br />
+    * Although the name Harmony creates an interest in the deeper aspects of life, we emphasize that it limits your versatility and scope, tuning you to technical details.<br />
+       <br />
+    * This name, when combined with the last name, can frustrate happiness, contentment, and success, as well as cause health weaknesses in the heart, lungs, bronchial area, and elimination system.<br />
+<br />
+This describes me very well, actually. My mom says she had my name chosen when she was a teen, long before I came to be. So, for me, it has more significance.  <br />
+<br />
+Anyway, this is my first post. I have enjoyed reading you guys for a long while now. Sorry, to not have jumped in sooner. :)<br />
+<br />
+And, thanks, FreedomBud, for the link! The generator does turn up some very interesting results.</div>
+		<textarea style="display: none;" id="desctxt_13185">* The name of Harmony creates a very quiet, practical nature and a clever and inventive mind.
+       
+    * Being analytical and naturally studious, you are interested in a factual understanding of the mysteries of life.
+       
+    * Your methodical nature requires that you like to finish what you start without interruptions and also to have everything in its place and properly organized.
+       
+    * An ability to concentrate could take you into computer programming or accountancy or any work requiring concentration and attention to detail.
+       
+    * You have, also, a flair for creative expression with your hands.
+       
+    * You take life seriously and can be easily and deeply hurt and go into moods which can be quite extreme at times, causing much turmoil and unhappiness.
+
+    * Although the name Harmony creates an interest in the deeper aspects of life, we emphasize that it limits your versatility and scope, tuning you to technical details.
+       
+    * This name, when combined with the last name, can frustrate happiness, contentment, and success, as well as cause health weaknesses in the heart, lungs, bronchial area, and elimination system.
+
+This describes me very well, actually. My mom says she had my name chosen when she was a teen, long before I came to be. So, for me, it has more significance.  
+
+Anyway, this is my first post. I have enjoyed reading you guys for a long while now. Sorry, to not have jumped in sooner. :)
+
+And, thanks, FreedomBud, for the link! The generator does turn up some very interesting results.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by harmony, 3 years, 9 months ago<br />Posted 3 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">SheepKing</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=211&amp;ref=1222648137" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13186" style="width: 100%; overflow: auto; min-height: 125px;">    * The name of Youseff creates an overly-sensitive nature which causes you to sense and feel far more than you can understand or put into words.<br />
+       <br />
+    * You have a deep, artistic, and creative side which shows through a love for music and literature.<br />
+       <br />
+    * Writing is a more natural mode of expression for your deeper thoughts and feelings than the spoken word.<br />
+       <br />
+    * You have an ability to concentrate and work intently on anything which holds your interest.<br />
+       <br />
+    * However, you prefer to avoid routine, monotony, and mental tasks.<br />
+<br />
+    * Although the name Youseff creates an active mind and a restless urge to explore new ideas, we emphasize that it limits self-expression and friendly congeniality with a moody disposition.<br />
+       <br />
+    * This name, when combined with the last name, can frustrate happiness, contentment, and success, as well as cause health weaknesses in the solar plexus, heart, lungs and bronchial area.<br />
+<br />
+-----<br />
+<br />
+1. True<br />
+2. False<br />
+3. True<br />
+4. True<br />
+5. True<br />
+6. Self Expression is limited, Moody disposition false.<br />
+7. So far I have a strong heart and healthy lungs/chest/stomach.<br />
+<br />
+The question is, does everyone not relate to something in the above posts? Even if they aren&#039;t your name?<br />
+</div>
+		<textarea style="display: none;" id="desctxt_13186">* The name of Youseff creates an overly-sensitive nature which causes you to sense and feel far more than you can understand or put into words.
+       
+    * You have a deep, artistic, and creative side which shows through a love for music and literature.
+       
+    * Writing is a more natural mode of expression for your deeper thoughts and feelings than the spoken word.
+       
+    * You have an ability to concentrate and work intently on anything which holds your interest.
+       
+    * However, you prefer to avoid routine, monotony, and mental tasks.
+
+    * Although the name Youseff creates an active mind and a restless urge to explore new ideas, we emphasize that it limits self-expression and friendly congeniality with a moody disposition.
+       
+    * This name, when combined with the last name, can frustrate happiness, contentment, and success, as well as cause health weaknesses in the solar plexus, heart, lungs and bronchial area.
+
+-----
+
+1. True
+2. False
+3. True
+4. True
+5. True
+6. Self Expression is limited, Moody disposition false.
+7. So far I have a strong heart and healthy lungs/chest/stomach.
+
+The question is, does everyone not relate to something in the above posts? Even if they aren&#039;t your name?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Sean</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=2&amp;ref=1214247941" width="117" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13192" style="width: 100%; overflow: auto; min-height: 125px;">I call bullshit.  I know two Andrews, and they have very different personalities.  I know two Megans... very different.  I know two Teresas.... three Richards, five Michaels... etc.  Very different people.<br />
+<br />
+Their video states that &quot;name = mind just because... gravity exists just because, therefore name = mind just because&quot;... also &quot;buy our product!&quot;  Heh.<br />
+<br />
+Thank you for sharing though, these things are always interesting, even though I am very critical of them.<br />
+<br />
+~Sean</div>
+		<textarea style="display: none;" id="desctxt_13192">I call bullshit.  I know two Andrews, and they have very different personalities.  I know two Megans... very different.  I know two Teresas.... three Richards, five Michaels... etc.  Very different people.
+
+Their video states that &quot;name = mind just because... gravity exists just because, therefore name = mind just because&quot;... also &quot;buy our product!&quot;  Heh.
+
+Thank you for sharing though, these things are always interesting, even though I am very critical of them.
+
+~Sean</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Wingsofchaos</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13381" style="width: 100%; overflow: auto; min-height: 125px;">    * The name of John has made you serious-minded, responsible, and stable.<br />
+       <br />
+    * You love the security of a home and family, you are fond of children, and, as a parent you would be fair and understanding.<br />
+       <br />
+    * Although you have good business judgment, you are not aggressive in your dealings because you do not like to create issues.<br />
+       <br />
+    * You would be successful in any position dealing with the public as you have a diplomatic and tactful manner and possess a charming, easy-going nature which puts people at ease.<br />
+       <br />
+    * People are drawn to you because they feel that you are patient, kind, understanding, and responsive.<br />
+<br />
+    * Although the name John creates the urge to be reliable and responsible, we emphasize that it causes procrastination, lack of confidence, and the inability to realize your goals and ambitions.<br />
+       <br />
+    * This name, when combined with the last name, can frustrate happiness, contentment, and success, as well as cause health weaknesses in the fluid systems, and worry or mental tension.<br />
+<br />
+1. Half true.<br />
+2. Probably true, I won&#039;t know until I actually have kids, and If my girl has kids, she might have a seizure, which is a risk I&#039;m unwilling to take.<br />
+3. True<br />
+4. usually true.<br />
+5. true<br />
+6. Sometimes<br />
+7. Usually I&#039;m pretty happy, though I do worry sometimes, but who the fuck doesn&#039;t?</div>
+		<textarea style="display: none;" id="desctxt_13381">* The name of John has made you serious-minded, responsible, and stable.
+       
+    * You love the security of a home and family, you are fond of children, and, as a parent you would be fair and understanding.
+       
+    * Although you have good business judgment, you are not aggressive in your dealings because you do not like to create issues.
+       
+    * You would be successful in any position dealing with the public as you have a diplomatic and tactful manner and possess a charming, easy-going nature which puts people at ease.
+       
+    * People are drawn to you because they feel that you are patient, kind, understanding, and responsive.
+
+    * Although the name John creates the urge to be reliable and responsible, we emphasize that it causes procrastination, lack of confidence, and the inability to realize your goals and ambitions.
+       
+    * This name, when combined with the last name, can frustrate happiness, contentment, and success, as well as cause health weaknesses in the fluid systems, and worry or mental tension.
+
+1. Half true.
+2. Probably true, I won&#039;t know until I actually have kids, and If my girl has kids, she might have a seizure, which is a risk I&#039;m unwilling to take.
+3. True
+4. usually true.
+5. true
+6. Sometimes
+7. Usually I&#039;m pretty happy, though I do worry sometimes, but who the fuck doesn&#039;t?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Morcyont</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=867&amp;ref=1262407330" width="125" height="73" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13382" style="width: 100%; overflow: auto; min-height: 125px;">    * Your first name of Austin has given you creative ability, imagination along practical lines, and the patience to pay attention to detail for a while.<br />
+       <br />
+    * Although you are attracted to technical, mechanical, scientific fields, you lack the patience to follow through with this interest.<br />
+       <br />
+    * This name gives a certain amount of practicality to your thinking; but there is also a tendency to scatter your efforts for, although you want system and order and stability in your life, you are too apt to be distracted from the job you are doing and to become involved in spontaneous interests.<br />
+<br />
+    * Although the name Austin creates the urge to be both logical and technical, we emphasize that it frustrates you through a scattered and emotional nature.<br />
+       <br />
+    * This name, when combined with the last name, can frustrate happiness, contentment, and success, as well as cause health weaknesses in the elimination system, liver and bloodstream.<br />
+<br />
+It&#039;s pretty close, But I think its a load of bullshit.<br />
+No Matter what my name is I would be the same. Names are just part of the human mind, I don&#039;t think anything cares about names other than humans. This is a very interesting topic though.</div>
+		<textarea style="display: none;" id="desctxt_13382">* Your first name of Austin has given you creative ability, imagination along practical lines, and the patience to pay attention to detail for a while.
+       
+    * Although you are attracted to technical, mechanical, scientific fields, you lack the patience to follow through with this interest.
+       
+    * This name gives a certain amount of practicality to your thinking; but there is also a tendency to scatter your efforts for, although you want system and order and stability in your life, you are too apt to be distracted from the job you are doing and to become involved in spontaneous interests.
+
+    * Although the name Austin creates the urge to be both logical and technical, we emphasize that it frustrates you through a scattered and emotional nature.
+       
+    * This name, when combined with the last name, can frustrate happiness, contentment, and success, as well as cause health weaknesses in the elimination system, liver and bloodstream.
+
+It&#039;s pretty close, But I think its a load of bullshit.
+No Matter what my name is I would be the same. Names are just part of the human mind, I don&#039;t think anything cares about names other than humans. This is a very interesting topic though.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Antisankari</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=224&amp;ref=1213032338" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13383" style="width: 100%; overflow: auto; min-height: 125px;">Since 30&#039;s?<br />
+<br />
+I just could not resist:<br />
+<br />
+Adolf:<br />
+<br />
+<br />
+    * Your first name of Adolf makes you a quick thinker, both philosophical and creative.<br />
+       <br />
+    * You appreciate music, art, and drama and, if given training, could excel in those fields.<br />
+       <br />
+    * Self-consciousness may prevent you from feeling at ease in positions of impromptu expression.<br />
+       <br />
+    * Desiring to be free from detail and monotony, you find it difficult to finish what you start if it does not hold your interest.<br />
+       <br />
+    * You enjoy reading and the beauties of nature, experiencing peace and relaxation in outdoor activities.<br />
+       <br />
+<br />
+    * A very individual, independent person, you live within your own thoughts.<br />
+<br />
+    * Although the name Adolf creates an interest in the deeper aspects of life, we emphasize that it causes procrastination, lack of confidence, and the inability to realize your goals and ambitions.<br />
+       <br />
+    * This name, when combined with the last name, can frustrate happiness, contentment, and success, as well as cause health weaknesses in the heart, lungs, bronchial area, and fluid systems.</div>
+		<textarea style="display: none;" id="desctxt_13383">Since 30&#039;s?
+
+I just could not resist:
+
+Adolf:
+
+
+    * Your first name of Adolf makes you a quick thinker, both philosophical and creative.
+       
+    * You appreciate music, art, and drama and, if given training, could excel in those fields.
+       
+    * Self-consciousness may prevent you from feeling at ease in positions of impromptu expression.
+       
+    * Desiring to be free from detail and monotony, you find it difficult to finish what you start if it does not hold your interest.
+       
+    * You enjoy reading and the beauties of nature, experiencing peace and relaxation in outdoor activities.
+       
+
+    * A very individual, independent person, you live within your own thoughts.
+
+    * Although the name Adolf creates an interest in the deeper aspects of life, we emphasize that it causes procrastination, lack of confidence, and the inability to realize your goals and ambitions.
+       
+    * This name, when combined with the last name, can frustrate happiness, contentment, and success, as well as cause health weaknesses in the heart, lungs, bronchial area, and fluid systems.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Antisankari, 3 years, 8 months ago<br />Posted 3 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Riven</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=656&amp;ref=1217444530" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13384" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Antisankari:</em><br />
+    * Although the name Adolf creates an interest in the deeper aspects of life, we emphasize that it causes procrastination, lack of confidence, and the inability to realize your goals and ambitions.</div>Well. That seemed to be off just a little bit. But so far, a lot of these have been pretty on, though it is a little broad. Everyone has qualities like those suggested at some point. My end view: It&#039;s just another way to make money, though names do seem to shape some people.<br />
+<br />
+</div>
+		<textarea style="display: none;" id="desctxt_13384">[quote][i]posted by Antisankari:[/i]
+    * Although the name Adolf creates an interest in the deeper aspects of life, we emphasize that it causes procrastination, lack of confidence, and the inability to realize your goals and ambitions.[/quote]
+
+Well. That seemed to be off just a little bit. But so far, a lot of these have been pretty on, though it is a little broad. Everyone has qualities like those suggested at some point. My end view: It&#039;s just another way to make money, though names do seem to shape some people.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">delimew</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=108&amp;ref=1205485279" width="39" height="42" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13385" style="width: 100%; overflow: auto; min-height: 125px;">Your first name of Deli has given you a quick, active mind, which has caused you to delve into many different ideas and theories.<br />
+ <br />
+You have a desire for association with people and, since you have no difficulty in being spontaneous and expressive with others, you have considerable ability for discussion and debate.<br />
+ <br />
+You enjoy unexpected opportunities for meeting people, or doing things on the spur of the moment.<br />
+ <br />
+Where you have difficulty is in organizing and systematizing the handling of your responsibilities.<br />
+ <br />
+Though you can work on any undertaking intently as long as it absorbs your interest, you cannot persevere when confronted by obstacles or by tedious monotony.<br />
+ <br />
+Thus your success in your undertakings is limited.<br />
+Although the name Deli creates an active mind and a restless urge to explore new ideas, we emphasize that it frustrates you through a scattered and emotional nature.<br />
+ <br />
+This name, when combined with the last name, can frustrate happiness, contentment, and success, as well as cause health weaknesses in the solar plexus, liver and bloodstream.<br />
+<br />
+<br />
+<br />
+O.o<br />
+it actually had a thing for deli (it&#039;s a nickname, but i felt like going with it)<br />
+btw, i tried deli with both genders, (don&#039;t ask) and it&#039;s the same for each one <br />
+<br />
+1. yea, i&#039;d say that is true. <br />
+2. mixed feelings...<br />
+i do have some desire for association with people, but i do have difficulty with being spontaneous and expressive. i&#039;ve really good thoughts with discussions and debate, but lack the communication skills to get these thoughts across clearly &gt;.&gt;<br />
+3. mayhaps this is my aspergers speaking, but unexpected and spur of the moment scares me, so no.<br />
+4. also, no.<br />
+5. eh, pretty true. i work well with what has my interest, but grow bored fast.<br />
+6. not sure what to say here &gt;.&gt;<br />
+7. i&#039;m not really sure what it&#039;s trying to say by &quot;scattered and emotional nature.&quot;, but my active mind and urge to explore ideas is in no way frustrating. i rely on it to get through my boring life &gt;.&gt;<br />
+8. *shrugs*</div>
+		<textarea style="display: none;" id="desctxt_13385">Your first name of Deli has given you a quick, active mind, which has caused you to delve into many different ideas and theories.
+ 
+You have a desire for association with people and, since you have no difficulty in being spontaneous and expressive with others, you have considerable ability for discussion and debate.
+ 
+You enjoy unexpected opportunities for meeting people, or doing things on the spur of the moment.
+ 
+Where you have difficulty is in organizing and systematizing the handling of your responsibilities.
+ 
+Though you can work on any undertaking intently as long as it absorbs your interest, you cannot persevere when confronted by obstacles or by tedious monotony.
+ 
+Thus your success in your undertakings is limited.
+Although the name Deli creates an active mind and a restless urge to explore new ideas, we emphasize that it frustrates you through a scattered and emotional nature.
+ 
+This name, when combined with the last name, can frustrate happiness, contentment, and success, as well as cause health weaknesses in the solar plexus, liver and bloodstream.
+
+
+
+O.o
+it actually had a thing for deli (it&#039;s a nickname, but i felt like going with it)
+btw, i tried deli with both genders, (don&#039;t ask) and it&#039;s the same for each one 
+
+1. yea, i&#039;d say that is true. 
+2. mixed feelings...
+i do have some desire for association with people, but i do have difficulty with being spontaneous and expressive. i&#039;ve really good thoughts with discussions and debate, but lack the communication skills to get these thoughts across clearly &gt;.&gt;
+3. mayhaps this is my aspergers speaking, but unexpected and spur of the moment scares me, so no.
+4. also, no.
+5. eh, pretty true. i work well with what has my interest, but grow bored fast.
+6. not sure what to say here &gt;.&gt;
+7. i&#039;m not really sure what it&#039;s trying to say by &quot;scattered and emotional nature.&quot;, but my active mind and urge to explore ideas is in no way frustrating. i rely on it to get through my boring life &gt;.&gt;
+8. *shrugs*</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 8 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=680" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 32 queries. 0.275 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

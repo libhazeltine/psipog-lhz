@@ -1,0 +1,443 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Wierd Feelings/Sheild trouble</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Wierd Feelings/Sheild trouble</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Wierd Feelings/Sheild trouble</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Atrum</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=755&amp;ref=1221862716" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11510" style="width: 100%; overflow: auto; min-height: 125px;">I&#039;m going to try to explain this the best I can. Today was...well...wierd as far as my normal goes. When my classroom room felt cold, I tried to put up a sheild like I usually do, and I couldnt for some reason. I come home, and I try doing my practice (without meditation) and I could move my bead and put up a weaker sheild.<br />
+<br />
+Basically my psionics skills have been going on and off on me all day. Once, I cant use a sheild, now I can. And now, I&#039;ve been getting a wierd vibe from my sub-c...<br />
+<br />
+I think it may have been how noisy it was that day, but I&#039;m not so sure. That doesnt explain the vibe.</div>
+		<textarea style="display: none;" id="desctxt_11510">I&#039;m going to try to explain this the best I can. Today was...well...wierd as far as my normal goes. When my classroom room felt cold, I tried to put up a sheild like I usually do, and I couldnt for some reason. I come home, and I try doing my practice (without meditation) and I could move my bead and put up a weaker sheild.
+
+Basically my psionics skills have been going on and off on me all day. Once, I cant use a sheild, now I can. And now, I&#039;ve been getting a wierd vibe from my sub-c...
+
+I think it may have been how noisy it was that day, but I&#039;m not so sure. That doesnt explain the vibe.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Atrum, 4 years, 3 months ago<br />Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">deathsmessenger</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11515" style="width: 100%; overflow: auto; min-height: 125px;">whats a sheild?</div>
+		<textarea style="display: none;" id="desctxt_11515">whats a sheild?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Goggle Hat</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=195&amp;ref=1218865481" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11517" style="width: 100%; overflow: auto; min-height: 125px;">Atrum:<br />
+You could just be having an &quot;off&quot; day. Those happen to everyone sometimes, but just in case, try a few cleansing exercises, you know, black chi out, white chi in, those sorts.<br />
+<br />
+If it&#039;s worse or still bad tomorrow, you might have a parasite or mental block or summat.<br />
+<br />
+<br />
+Death&#039;s Messenger:<br />
+ A shield is a type of mental construct designed to keep stuff either outside or inside of it.<br />
+<br />
+If you&#039;re interested in shielding, you could look at the shielding archives at Psi-Pog:<br />
+ <a href="http://www.psipog.net/cat-shields.html" target="_blank">http://www.psipog.net/cat-shields.html</a></div>
+		<textarea style="display: none;" id="desctxt_11517">Atrum:
+You could just be having an &quot;off&quot; day. Those happen to everyone sometimes, but just in case, try a few cleansing exercises, you know, black chi out, white chi in, those sorts.
+
+If it&#039;s worse or still bad tomorrow, you might have a parasite or mental block or summat.
+
+
+Death&#039;s Messenger:
+ A shield is a type of mental construct designed to keep stuff either outside or inside of it.
+
+If you&#039;re interested in shielding, you could look at the shielding archives at Psi-Pog:
+http://www.psipog.net/cat-shields.html</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Atrum</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=755&amp;ref=1221862716" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11522" style="width: 100%; overflow: auto; min-height: 125px;">Ok, now things got wierd. (This happened the night I posted this) <br />
+<br />
+My mom said goodnight to me and went off to bed. I watched a little TV for about an hour. When I went to bed, bits and pieces of my day just suddenly flowed into my head. All of the movies I watched on Youtube, things in science class, and more. Just slapped my upside the face. I tried to meditate off, but that didnt help. Then, I started calling myself insane throughout the night for no reason. I finally got up and walked over to my shelf. I had an urge to practice my tk for some reason. Perhaps I thought I had some sort of excess energy flow. When I reached for a bead on my shelf, I got this pen instead. And I could literally FEEL its energy. Like I was connected to it, yet repelling it. Like...A magnet. And it moved in all different directions. I could move objects heavier than usual with tk. I went from beads to pens/mini lucky japanese cats in one night. Then, it all stopped. I felt an adreneline rush because that was the most psychic ability I&#039;ve ever shown. This happened 3 times that night. And today, I figured out I can STILL move a pencil or something that wieght.</div>
+		<textarea style="display: none;" id="desctxt_11522">Ok, now things got wierd. (This happened the night I posted this) 
+
+My mom said goodnight to me and went off to bed. I watched a little TV for about an hour. When I went to bed, bits and pieces of my day just suddenly flowed into my head. All of the movies I watched on Youtube, things in science class, and more. Just slapped my upside the face. I tried to meditate off, but that didnt help. Then, I started calling myself insane throughout the night for no reason. I finally got up and walked over to my shelf. I had an urge to practice my tk for some reason. Perhaps I thought I had some sort of excess energy flow. When I reached for a bead on my shelf, I got this pen instead. And I could literally FEEL its energy. Like I was connected to it, yet repelling it. Like...A magnet. And it moved in all different directions. I could move objects heavier than usual with tk. I went from beads to pens/mini lucky japanese cats in one night. Then, it all stopped. I felt an adreneline rush because that was the most psychic ability I&#039;ve ever shown. This happened 3 times that night. And today, I figured out I can STILL move a pencil or something that wieght.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Atrum, 4 years, 3 months ago<br />Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Goggle Hat</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=195&amp;ref=1218865481" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11527" style="width: 100%; overflow: auto; min-height: 125px;">Neato, but it seems a bit out of control.<br />
+<br />
+I feel a bit out of my depth with this, as I&#039;ve never experienced anything like it. Try putting shielding up to block the extra sensory input untill you&#039;re ready for it. Look for intruders in your mind; thoughts and ideas that don&#039;t belong. Find their source and send it away to the light.<br />
+<br />
+Good for you that you&#039;ve managed to move up from the bead. A good exercise right now might be placing a double or triple A battery on the table and attempting to roll it in a specific direction. <br />
+<br />
+If you feel like practicing finesse, get a padlock and try applying force with a screwdriver and picking it with your TK. Useful skill.<br />
+<br />
+I still can&#039;t get the Psiwheel to spin under glass, and I&#039;ve been practicing for six years.</div>
+		<textarea style="display: none;" id="desctxt_11527">Neato, but it seems a bit out of control.
+
+I feel a bit out of my depth with this, as I&#039;ve never experienced anything like it. Try putting shielding up to block the extra sensory input untill you&#039;re ready for it. Look for intruders in your mind; thoughts and ideas that don&#039;t belong. Find their source and send it away to the light.
+
+Good for you that you&#039;ve managed to move up from the bead. A good exercise right now might be placing a double or triple A battery on the table and attempting to roll it in a specific direction. 
+
+If you feel like practicing finesse, get a padlock and try applying force with a screwdriver and picking it with your TK. Useful skill.
+
+I still can&#039;t get the Psiwheel to spin under glass, and I&#039;ve been practicing for six years.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11529" style="width: 100%; overflow: auto; min-height: 125px;">such a pure form you are, Atrum... You seem not to have any deception put unto you, and therefore your ability not to question has propelled your skill, perhaps you could give a demonstration if you get your ability high enough?<br />
+</div>
+		<textarea style="display: none;" id="desctxt_11529">such a pure form you are, Atrum... You seem not to have any deception put unto you, and therefore your ability not to question has propelled your skill, perhaps you could give a demonstration if you get your ability high enough?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">DarkTiger</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11532" style="width: 100%; overflow: auto; min-height: 125px;">Atrum: that&#039;s awesome. The whole feeling energy thing is a good technique to move objects, and I got a pencil to move by pushing on it&#039;s energy field.Something similar happened to me when I first started... Now, it just seems that you have to work on control. Just keep practicing because that was my mistake (I got lazy and stopped doing PK for a while) now I&#039;m back :P .<br />
+<br />
+ <a href="http://www.darktiger.x10hosting.com/psi/pencil.mp4" target="_blank">http://www.darktiger.x10hosting.com/psi/pencil.mp4</a><br />
+<br />
+That was tonight using an energy-feeling technique. (Yes, I know I shouldn&#039;t use my hands but this was my first time doing PK in two months)<br />
+<br />
+Your first post could have just been empathy or just almost any other factor of something that you did differently that day.<br />
+<br />
+Anyways, good job and keep it up!</div>
+		<textarea style="display: none;" id="desctxt_11532">Atrum: that&#039;s awesome. The whole feeling energy thing is a good technique to move objects, and I got a pencil to move by pushing on it&#039;s energy field.Something similar happened to me when I first started... Now, it just seems that you have to work on control. Just keep practicing because that was my mistake (I got lazy and stopped doing PK for a while) now I&#039;m back :P .
+
+http://www.darktiger.x10hosting.com/psi/pencil.mp4
+
+That was tonight using an energy-feeling technique. (Yes, I know I shouldn&#039;t use my hands but this was my first time doing PK in two months)
+
+Your first post could have just been empathy or just almost any other factor of something that you did differently that day.
+
+Anyways, good job and keep it up!</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by DarkTiger, 4 years, 3 months ago<br />Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Atrum</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=755&amp;ref=1221862716" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11539" style="width: 100%; overflow: auto; min-height: 125px;">@DarkTiger: Thank you. The only thing holding me back is I can only seem to make things move on my hand. (In any direction) Perhaps its just easier because I can feel the energy easier on both of my hands?<br />
+<br />
+@Akio: Thanks again. I do question some, however I have seen many wierd things as a kid and therefore I usually believe everything in the paranormal phenomena area. (Like...Horror movie ghost type paranormal. Running over ghosts with your car and such) I believe we live in a world of impossibles where anything can be done. Think about it. 500 years ago, people would&#039;ve thought TV was impossible.<br />
+<br />
+But thats my 2 cents.<br />
+<br />
+@Goggle Hat: What d oyou mean by control? Well...There IS this male voice inside my head that I know isnt my sub-c. He keeps saying. &quot;You insane person. Your insane. *my name here*, your insane you even had to go to therapy and you know it&quot; and so on...He&#039;s gone now...Before I do anything else, I&#039;m trying to get stuff to move without being placed in the palm of my hand. As for the tk trouble, I never liked the psiwheel. Thats why I used beads. Lightweight, easy to roll. (P.S Gogglehat...on a psi forum...You dont play Psychonauts do you?)</div>
+		<textarea style="display: none;" id="desctxt_11539">@DarkTiger: Thank you. The only thing holding me back is I can only seem to make things move on my hand. (In any direction) Perhaps its just easier because I can feel the energy easier on both of my hands?
+
+@Akio: Thanks again. I do question some, however I have seen many wierd things as a kid and therefore I usually believe everything in the paranormal phenomena area. (Like...Horror movie ghost type paranormal. Running over ghosts with your car and such) I believe we live in a world of impossibles where anything can be done. Think about it. 500 years ago, people would&#039;ve thought TV was impossible.
+
+But thats my 2 cents.
+
+@Goggle Hat: What d oyou mean by control? Well...There IS this male voice inside my head that I know isnt my sub-c. He keeps saying. &quot;You insane person. Your insane. *my name here*, your insane you even had to go to therapy and you know it&quot; and so on...He&#039;s gone now...Before I do anything else, I&#039;m trying to get stuff to move without being placed in the palm of my hand. As for the tk trouble, I never liked the psiwheel. Thats why I used beads. Lightweight, easy to roll. (P.S Gogglehat...on a psi forum...You dont play Psychonauts do you?)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Atrum, 4 years, 3 months ago<br />Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Goggle Hat</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=195&amp;ref=1218865481" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11544" style="width: 100%; overflow: auto; min-height: 125px;">By control I mean that it sounds like you were overwhelmed by the feelings you were experiencing, and that crazy voice, too. Glad to here that he&#039;s gone.<br />
+<br />
+As for my TK problems, I&#039;m pretty sure they stem from a bad practice schedule, even though earlier this year I practiced like clockwork for three months. Before and since then I&#039;ve been practicing at different times.<br />
+<br />
+Lastly, yes, I&#039;ve played Psychonauts, but that&#039;s not where my name comes from. I call myself Goggle Hat because I wear a hat with goggles on it. <br />
+<br />
+Like, all the time.</div>
+		<textarea style="display: none;" id="desctxt_11544">By control I mean that it sounds like you were overwhelmed by the feelings you were experiencing, and that crazy voice, too. Glad to here that he&#039;s gone.
+
+As for my TK problems, I&#039;m pretty sure they stem from a bad practice schedule, even though earlier this year I practiced like clockwork for three months. Before and since then I&#039;ve been practicing at different times.
+
+Lastly, yes, I&#039;ve played Psychonauts, but that&#039;s not where my name comes from. I call myself Goggle Hat because I wear a hat with goggles on it. 
+
+Like, all the time.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Atrum</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=755&amp;ref=1221862716" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11545" style="width: 100%; overflow: auto; min-height: 125px;">Come to think of it my schedule&#039;s kinda idsorganized too. Anywhere from 6-9:00 And from 5-30 minutes. And oh. I love psychonauts. It&#039;s a really unique game. Dunno why it got so much praise yet people dont buy it. Well, I&#039;m still new at tk, but if you need help, drop me a pm. (I think I posted it on Deathmessangers topic) Ok. I&#039;ll try to practice control a little more.</div>
+		<textarea style="display: none;" id="desctxt_11545">Come to think of it my schedule&#039;s kinda idsorganized too. Anywhere from 6-9:00 And from 5-30 minutes. And oh. I love psychonauts. It&#039;s a really unique game. Dunno why it got so much praise yet people dont buy it. Well, I&#039;m still new at tk, but if you need help, drop me a pm. (I think I posted it on Deathmessangers topic) Ok. I&#039;ll try to practice control a little more.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Atrum, 4 years, 3 months ago<br />Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Atrum</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=755&amp;ref=1221862716" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11554" style="width: 100%; overflow: auto; min-height: 125px;">Argh...I finally figure out the second voice in my head is the other half of my subconcious. I think. Thats what he says and the other voice says it&#039;s true. Everyone has a darker side right? My black wolf and my white wolf. Constantly fighting and I&#039;m supposed to be the impartial. Greeeaat.</div>
+		<textarea style="display: none;" id="desctxt_11554">Argh...I finally figure out the second voice in my head is the other half of my subconcious. I think. Thats what he says and the other voice says it&#039;s true. Everyone has a darker side right? My black wolf and my white wolf. Constantly fighting and I&#039;m supposed to be the impartial. Greeeaat.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Amaroq</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=606&amp;ref=1214436810" width="95" height="95" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11620" style="width: 100%; overflow: auto; min-height: 125px;">[Oops, wrong topic. Please delete this post.]</div>
+		<textarea style="display: none;" id="desctxt_11620">[Oops, wrong topic. Please delete this post.]</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Amaroq, 4 years, 2 months ago<br />Posted 4 years, 2 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Goggle Hat</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=195&amp;ref=1218865481" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11646" style="width: 100%; overflow: auto; min-height: 125px;">Aaahhhh....no.<br />
+<br />
+Any voices in your head calling you crazy are not good for you. They are likely not your subconscious. I&#039;d be willing to bet money that those voices are not your subconscious. Kick them out. You should be able to. Since you can&#039;t actually kick your subconscious out of your head, trying won&#039;t hurt you. </div>
+		<textarea style="display: none;" id="desctxt_11646">Aaahhhh....no.
+
+Any voices in your head calling you crazy are not good for you. They are likely not your subconscious. I&#039;d be willing to bet money that those voices are not your subconscious. Kick them out. You should be able to. Since you can&#039;t actually kick your subconscious out of your head, trying won&#039;t hurt you.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 2 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Antisankari</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=224&amp;ref=1213032338" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11647" style="width: 100%; overflow: auto; min-height: 125px;">No! No.<br />
+<br />
+You are wrong!<br />
+Why do you lie! Why!?! Why!!!?<br />
+Bwahahaaa...<br />
+<br />
+We kills the lie teller!<br />
+No! We good! We nice!<br />
+Fool! We bad! And you know it!<br />
+<br />
+....Ahem.<br />
+<br />
+</div>
+		<textarea style="display: none;" id="desctxt_11647">No! No.
+
+You are wrong!
+Why do you lie! Why!?! Why!!!?
+Bwahahaaa...
+
+We kills the lie teller!
+No! We good! We nice!
+Fool! We bad! And you know it!
+
+....Ahem.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 2 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Atrum</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=755&amp;ref=1221862716" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11649" style="width: 100%; overflow: auto; min-height: 125px;">Hehe. Yeah, right about now, I am going insane here...But hows that any different than the current me? Another block. Will meditate and do some things....</div>
+		<textarea style="display: none;" id="desctxt_11649">Hehe. Yeah, right about now, I am going insane here...But hows that any different than the current me? Another block. Will meditate and do some things....</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 2 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=570" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 31 queries. 0.332 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

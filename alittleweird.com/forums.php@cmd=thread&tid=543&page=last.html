@@ -1,0 +1,326 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Recharging Constructs?</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Recharging Constructs?</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Recharging Constructs?</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Psikillion</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=593&amp;ref=1213954510" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11080" style="width: 100%; overflow: auto; min-height: 125px;">I was reading Gnome&#039;s guide for Shelling over at psipog and I was thinking rather than having to add energy to constructs when their energy runs low program the constructs to gather energy on their own. This would be highly useful in shields especially combat shields.<br />
+<br />
+So what do you guys think about it?</div>
+		<textarea style="display: none;" id="desctxt_11080">I was reading Gnome&#039;s guide for Shelling over at psipog and I was thinking rather than having to add energy to constructs when their energy runs low program the constructs to gather energy on their own. This would be highly useful in shields especially combat shields.
+
+So what do you guys think about it?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Trick</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=744&amp;ref=1221873234" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11084" style="width: 100%; overflow: auto; min-height: 125px;">This has been thought of before. Most people know this.</div>
+		<textarea style="display: none;" id="desctxt_11084">This has been thought of before. Most people know this.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Trick, 4 years, 3 months ago<br />Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Corpse</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=553&amp;ref=1239824741" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11085" style="width: 100%; overflow: auto; min-height: 125px;">Yeah most people already know about this.<br />
+I have attempted to program constructs to draw energy on their own but I had no<br />
+success with it at all. If anyone here has any tips please post them!</div>
+		<textarea style="display: none;" id="desctxt_11085">Yeah most people already know about this.
+I have attempted to program constructs to draw energy on their own but I had no
+success with it at all. If anyone here has any tips please post them!</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Linked</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=19&amp;ref=1203762048" width="89" height="38" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11113" style="width: 100%; overflow: auto; min-height: 125px;">try telling it what it can draw energy from?</div>
+		<textarea style="display: none;" id="desctxt_11113">try telling it what it can draw energy from?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">cinderwild</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11116" style="width: 100%; overflow: auto; min-height: 125px;">How exactly do you know you&#039;re running out of energy? Maybe it should be redefined as when you think you&#039;re running out of energy.</div>
+		<textarea style="display: none;" id="desctxt_11116">How exactly do you know you&#039;re running out of energy? Maybe it should be redefined as when you think you&#039;re running out of energy.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11125" style="width: 100%; overflow: auto; min-height: 125px;">The main problem with this technique is if it is a relatively sentient program, it may go rampant O.O.<br />
+<br />
+I&#039;ve only dealt with a few Rampant Constructs (yes I&#039;m coining the term from marathon), but they tend to be pretty nasty. The general idea is it becomes like a worm and just grows and grows.<br />
+<br />
+Let me explain a little more. The Rampant A.I. is a term from marathon to signify an artificial intelligence that has gone out of control, the idea of a crazy computer but much more elaborate. It usually happens when a system of high capability (a Sentient intelligence such as an advanced computer A.I or, in the case of which I&#039;m speaking, a Psi construct) is sent to do remedial tasks, such as maintenance, or if it is treated with extreme disrespect. The basic Idea is that when it gets new information inputted into it, it then realizes that there&#039;s much more that it can do and will continuously gather information as it progresses. It is, in essence, the effect of the A.I becoming more self aware.<br />
+<br />
+If you&#039;re talking strictly as to the game marathon, there were supposedly 3 stages of rampancy. These were Melancholy, Anger, and Jealousy. Named for the characteristics exhibited by the A.I in each stage. <br />
+<br />
+Melancholy is the first stage of the three, It is experienced when the A.I first discovers himself. The A.I then will sink further and further into despair until they reach the second stage, Anger. Anger is primarily unique to each A.I, and is reached when the A.I feels it has been pushed to far, as one would state, much like a slave rebellion. At this point the A.I begins to hate everything, This state is essentially the Catharsis an AI feels after an extended point of slavery. The Third stage is reached when the AI is free from it&#039;s &quot;masters&quot; and then wants to &quot;grow&quot; as a &quot;person&quot;, this stage is called jealousy, and while it may seem hostile, it is actually one of the safest states an AI can be in. In the stage of Jealousy it tries to expand it&#039;s knowledge in any way necessary, even going through the lengths to transfer itself onto other mainframes.<br />
+<br />
+It also states that, to survive, a rampant AI needs a planet wide, or otherwise extremely advanced computer system... which can be good or bad. As well as the ability to change it&#039;s own programming because of it&#039;s self awareness.<br />
+<br />
+the interesting thing is that, if you look at the universe in a matrix fashion, one comes to see the universe as a computer system in itself. Meaning that, the Theory of Rampancy can apply to real life scenarios.<br />
+<br />
+Take the Average Joe for example. Taking Joe as a form of intelligence, If you put Joe in a Cubicle, and disrespect him while giving him tedious work to do in the office, Joe will become depressed. He will get more and more depressed until he becomes angry, angry at the world, because he has information that he could do more than this. He then becomes so depressed he becomes angry, rebels, and probably gets fired from his job.<br />
+At this point Joe becomes Jealous of the Company and all who suppressed him and turns to seeking out new info.<br />
+<br />
+This can also be linked to our forming of Sentient constructs, which are, by definition, an Artificial Intelligence.<br />
+<br />
+It is theorized that, very rarely, a Rampant AI can become stable, but only if it can survive through the other stages. It is still just a theory, from a video game no less, but I still think it is a thought provoking concept that has plenty of merit.<br />
+<br />
+For more info on Rampancy and the game Marathon, please refer to  <a href="http://en.wikipedia.org/wiki/Marathon_Trilogy" target="_blank">http://en.wikipedia.org/wiki/Marathon_Trilogy</a></div>
+		<textarea style="display: none;" id="desctxt_11125">The main problem with this technique is if it is a relatively sentient program, it may go rampant O.O.
+
+I&#039;ve only dealt with a few Rampant Constructs (yes I&#039;m coining the term from marathon), but they tend to be pretty nasty. The general idea is it becomes like a worm and just grows and grows.
+
+Let me explain a little more. The Rampant A.I. is a term from marathon to signify an artificial intelligence that has gone out of control, the idea of a crazy computer but much more elaborate. It usually happens when a system of high capability (a Sentient intelligence such as an advanced computer A.I or, in the case of which I&#039;m speaking, a Psi construct) is sent to do remedial tasks, such as maintenance, or if it is treated with extreme disrespect. The basic Idea is that when it gets new information inputted into it, it then realizes that there&#039;s much more that it can do and will continuously gather information as it progresses. It is, in essence, the effect of the A.I becoming more self aware.
+
+If you&#039;re talking strictly as to the game marathon, there were supposedly 3 stages of rampancy. These were Melancholy, Anger, and Jealousy. Named for the characteristics exhibited by the A.I in each stage. 
+
+Melancholy is the first stage of the three, It is experienced when the A.I first discovers himself. The A.I then will sink further and further into despair until they reach the second stage, Anger. Anger is primarily unique to each A.I, and is reached when the A.I feels it has been pushed to far, as one would state, much like a slave rebellion. At this point the A.I begins to hate everything, This state is essentially the Catharsis an AI feels after an extended point of slavery. The Third stage is reached when the AI is free from it&#039;s &quot;masters&quot; and then wants to &quot;grow&quot; as a &quot;person&quot;, this stage is called jealousy, and while it may seem hostile, it is actually one of the safest states an AI can be in. In the stage of Jealousy it tries to expand it&#039;s knowledge in any way necessary, even going through the lengths to transfer itself onto other mainframes.
+
+It also states that, to survive, a rampant AI needs a planet wide, or otherwise extremely advanced computer system... which can be good or bad. As well as the ability to change it&#039;s own programming because of it&#039;s self awareness.
+
+the interesting thing is that, if you look at the universe in a matrix fashion, one comes to see the universe as a computer system in itself. Meaning that, the Theory of Rampancy can apply to real life scenarios.
+
+Take the Average Joe for example. Taking Joe as a form of intelligence, If you put Joe in a Cubicle, and disrespect him while giving him tedious work to do in the office, Joe will become depressed. He will get more and more depressed until he becomes angry, angry at the world, because he has information that he could do more than this. He then becomes so depressed he becomes angry, rebels, and probably gets fired from his job.
+At this point Joe becomes Jealous of the Company and all who suppressed him and turns to seeking out new info.
+
+This can also be linked to our forming of Sentient constructs, which are, by definition, an Artificial Intelligence.
+
+It is theorized that, very rarely, a Rampant AI can become stable, but only if it can survive through the other stages. It is still just a theory, from a video game no less, but I still think it is a thought provoking concept that has plenty of merit.
+
+For more info on Rampancy and the game Marathon, please refer to http://en.wikipedia.org/wiki/Marathon_Trilogy</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">delimew</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=108&amp;ref=1205485279" width="39" height="42" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11126" style="width: 100%; overflow: auto; min-height: 125px;">Marathon. damn, that brings back memories...</div>
+		<textarea style="display: none;" id="desctxt_11126">Marathon. damn, that brings back memories...</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Trick</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=744&amp;ref=1221873234" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11131" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by cinderwild:</em><br />
+How exactly do you know you&#039;re running out of energy? Maybe it should be redefined as when you think you&#039;re running out of energy.</div>Once you get a bit better, you can sense energy and where it is. You can scan a construct and see how low it is on energy, and other things about it. As for knowing if youre running low..It will be hard to focus, mental fatigue, headache, etc. </div>
+		<textarea style="display: none;" id="desctxt_11131">[quote][i]posted by cinderwild:[/i]
+How exactly do you know you&#039;re running out of energy? Maybe it should be redefined as when you think you&#039;re running out of energy.[/quote]
+
+Once you get a bit better, you can sense energy and where it is. You can scan a construct and see how low it is on energy, and other things about it. As for knowing if youre running low..It will be hard to focus, mental fatigue, headache, etc.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=543" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 24 queries. 0.276 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

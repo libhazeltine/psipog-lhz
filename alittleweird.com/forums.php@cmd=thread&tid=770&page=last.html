@@ -1,0 +1,444 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Behavior of dreams.</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Behavior of dreams.</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Behavior of dreams.</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Jacob</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=949&amp;ref=1248714472" width="108" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_14122" style="width: 100%; overflow: auto; min-height: 125px;">I have had numorous occassions where something strange happens in your dream. Allthough I made this thread to note the scientific explanations in a nutshell without trying to predict the psychic backgrounds.<br />
+The strange things that you might recognize<br />
+<br />
+1: You have had the same dream, usually nightmare as someone else in your house.<br />
+<br />
+2: You are drowning, then you try to breath and you seem to be able to get oxygen underwater.<br />
+<br />
+3: Your dream is suddenly cut off with the feeling that your falling down, almost as soon as you are aware you panically kick your legs and arms around in your bed as if you are being tazed or electrified, then you wake up in a rather unpleasant way: &lt;- When you fall back asleep this will usually happen again!, and you will wake up more unpleasant every time.<br />
+<br />
+4: Your consciousness seems to have full control over your dream, Usually you will wake up in this state. But you don&#039;t wake up, insteed you try to maintain your sleeping phase... This can occur for a couple of seconds up to half a minute in my longest case.<br />
+<br />
+5: You wake up, but Wait!!!... You don&#039;t, You can&#039;t move... Its very dark... Your getting hot, your heartbeat rises... You are terrified.<br />
+You wait about 5 more seconds and at that point your senses seem to be active and you wake up sweaty. 180 bpm and eyes wide open.<br />
+<br />
+<br />
+I have talked to people about this and most are familiar with point 1 to 4, noteworthy point 3; I haven&#039;t talked to someone who is not familiar with that one.<br />
+<br />
+Point 5 on the otherhand, only few people I talked to are familair with it and trust me you don&#039;t want to know, its a really rare occasion. I have read article&#039;s about it stating that from the sleeping state to the normal state usually activate&#039;s the consciousness and the senses aswell. But it can activate the consciousness... But doesn&#039;t activate the smell, sight, feeling, and muscle contraction that is usually activated. Not only I have witnessed that it is not a pleasant feeling.</div>
+		<textarea style="display: none;" id="desctxt_14122">I have had numorous occassions where something strange happens in your dream. Allthough I made this thread to note the scientific explanations in a nutshell without trying to predict the psychic backgrounds.
+The strange things that you might recognize
+
+1: You have had the same dream, usually nightmare as someone else in your house.
+
+2: You are drowning, then you try to breath and you seem to be able to get oxygen underwater.
+
+3: Your dream is suddenly cut off with the feeling that your falling down, almost as soon as you are aware you panically kick your legs and arms around in your bed as if you are being tazed or electrified, then you wake up in a rather unpleasant way: &lt;- When you fall back asleep this will usually happen again!, and you will wake up more unpleasant every time.
+
+4: Your consciousness seems to have full control over your dream, Usually you will wake up in this state. But you don&#039;t wake up, insteed you try to maintain your sleeping phase... This can occur for a couple of seconds up to half a minute in my longest case.
+
+5: You wake up, but Wait!!!... You don&#039;t, You can&#039;t move... Its very dark... Your getting hot, your heartbeat rises... You are terrified.
+You wait about 5 more seconds and at that point your senses seem to be active and you wake up sweaty. 180 bpm and eyes wide open.
+
+
+I have talked to people about this and most are familiar with point 1 to 4, noteworthy point 3; I haven&#039;t talked to someone who is not familiar with that one.
+
+Point 5 on the otherhand, only few people I talked to are familair with it and trust me you don&#039;t want to know, its a really rare occasion. I have read article&#039;s about it stating that from the sleeping state to the normal state usually activate&#039;s the consciousness and the senses aswell. But it can activate the consciousness... But doesn&#039;t activate the smell, sight, feeling, and muscle contraction that is usually activated. Not only I have witnessed that it is not a pleasant feeling.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Jacob, 3 years, 6 months ago<br />Posted 3 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Kube</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=952&amp;ref=1249239276" width="102" height="77" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_14124" style="width: 100%; overflow: auto; min-height: 125px;">Yeah, number three happens a lot. Usually during nightmares or disturbing dreams. (for me anyways)</div>
+		<textarea style="display: none;" id="desctxt_14124">Yeah, number three happens a lot. Usually during nightmares or disturbing dreams. (for me anyways)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">sh</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_14129" style="width: 100%; overflow: auto; min-height: 125px;">I had number 2 and 3 happen to me.</div>
+		<textarea style="display: none;" id="desctxt_14129">I had number 2 and 3 happen to me.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Riven</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=656&amp;ref=1217444530" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_14131" style="width: 100%; overflow: auto; min-height: 125px;">I&#039;ve had 1,3,4, and 5. Though 1 wasn&#039;t a nightmare. 5 was awful... I felt like I was in a giant static bubble thing, and I couldn&#039;t move or see anything. I struggled against it and finally broke free, slamming my fist as hard as possible into the wall. Not fun.<br />
+<br />
+Also, I have dreams that are sequels... even though sometimes they&#039;re years apart. Usually only a few days though.</div>
+		<textarea style="display: none;" id="desctxt_14131">I&#039;ve had 1,3,4, and 5. Though 1 wasn&#039;t a nightmare. 5 was awful... I felt like I was in a giant static bubble thing, and I couldn&#039;t move or see anything. I struggled against it and finally broke free, slamming my fist as hard as possible into the wall. Not fun.
+
+Also, I have dreams that are sequels... even though sometimes they&#039;re years apart. Usually only a few days though.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Jacob</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=949&amp;ref=1248714472" width="108" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_14143" style="width: 100%; overflow: auto; min-height: 125px;">I forgot another one... You wake up: Oh hell no, please get me back in that dream. <br />
+Lol I just got that a lot.<br />
+<br />
+I can remember one time I woke up really sad, Like you met a nice person and became a friend. Or you seemed to have Improved a lot in your psychic abillity. You can fly, and other amazing stuff.<br />
+<br />
+But then you wake up and the achievements that feels like you put a lot of effort in it, are gone within a flash.</div>
+		<textarea style="display: none;" id="desctxt_14143">I forgot another one... You wake up: Oh hell no, please get me back in that dream. 
+Lol I just got that a lot.
+
+I can remember one time I woke up really sad, Like you met a nice person and became a friend. Or you seemed to have Improved a lot in your psychic abillity. You can fly, and other amazing stuff.
+
+But then you wake up and the achievements that feels like you put a lot of effort in it, are gone within a flash.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Jacob, 3 years, 5 months ago<br />Posted 3 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Raathuus</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=764&amp;ref=1259211929" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_14147" style="width: 100%; overflow: auto; min-height: 125px;">Am I the only one here with pleasant dreams?<br />
+<br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Jacob:</em><br />
+But then you wake up and the achievements that feels like you put a lot of effort in it, are gone within a flash.</div>I hate it when that happens.  I usually find something I lost or is otherwise unaccessible and when I wake up I&#039;m like, &quot;NOOOOOO!  I WANT IT BACK!&quot;</div>
+		<textarea style="display: none;" id="desctxt_14147">Am I the only one here with pleasant dreams?
+
+[quote][i]posted by Jacob:[/i]
+But then you wake up and the achievements that feels like you put a lot of effort in it, are gone within a flash.[/quote]
+
+I hate it when that happens.  I usually find something I lost or is otherwise unaccessible and when I wake up I&#039;m like, &quot;NOOOOOO!  I WANT IT BACK!&quot;</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">f3licks</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=848&amp;ref=1227833859" width="125" height="78" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_14148" style="width: 100%; overflow: auto; min-height: 125px;">I get number 3 a lot, but I want a number 4 dream!</div>
+		<textarea style="display: none;" id="desctxt_14148">I get number 3 a lot, but I want a number 4 dream!</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">AngelsFall</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=966&amp;ref=1243825081" width="83" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_14156" style="width: 100%; overflow: auto; min-height: 125px;">I woke up once and felt myself slipping back into my &quot;dream state&quot; (it was a very distinct feeling of being submerged in water or something like that). I proceeded to have a horrible nightmare where demons were in my room and were tormenting me, and I was writhing and my face melted into itself so I had no features.<br />
+<br />
+I don&#039;t often get nightmares so this was really odd for me.<br />
+<br />
+It might be sleep paralysis though, although this was exponentially more detailed and frightening than the only other experience I&#039;ve had with sleep paralysis/hypnopompic hallucinations.</div>
+		<textarea style="display: none;" id="desctxt_14156">I woke up once and felt myself slipping back into my &quot;dream state&quot; (it was a very distinct feeling of being submerged in water or something like that). I proceeded to have a horrible nightmare where demons were in my room and were tormenting me, and I was writhing and my face melted into itself so I had no features.
+
+I don&#039;t often get nightmares so this was really odd for me.
+
+It might be sleep paralysis though, although this was exponentially more detailed and frightening than the only other experience I&#039;ve had with sleep paralysis/hypnopompic hallucinations.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Jacob</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=949&amp;ref=1248714472" width="108" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_14244" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by AngelsFall:</em><br />
+I woke up once and felt myself slipping back into my &quot;dream state&quot; (it was a very distinct feeling of being submerged in water or something like that). I proceeded to have a horrible nightmare where demons were in my room and were tormenting me, and I was writhing and my face melted into itself so I had no features.<br />
+<br />
+I don&#039;t often get nightmares so this was really odd for me.<br />
+<br />
+It might be sleep paralysis though, although this was exponentially more detailed and frightening than the only other experience I&#039;ve had with sleep paralysis/hypnopompic hallucinations.</div>Well I personally think that nightmare&#039;s are more common then we think. Have you ever  forgot about something that happend in your sleep in an instance. And you find it weird because you where just thinking about it seconds ago just after you woke up.<br />
+<br />
+My theory is that when dreams are fascinating or &#039;cool&#039; you tend to intensively think about it. When you think about something in reality you can usually remember it in detail. But dreams are erased shortly after you wake up, therefore when a dream is scary or completely boring your mind will usually remove it completely ( unless you think about it shortly after.)<br />
+<br />
+Everytime &quot;we&quot; humans go to sleep, but also animals like my dog. We dream, there is not a single time our minds are idle when we sleep. We had thousands of dreams in our lives already. But when you think back of it you can only remember 4 or 5... Well at least in my case. Its fortunate though I don&#039;t think I would want to remember all the bullcrap.</div>
+		<textarea style="display: none;" id="desctxt_14244">[quote][i]posted by AngelsFall:[/i]
+I woke up once and felt myself slipping back into my &quot;dream state&quot; (it was a very distinct feeling of being submerged in water or something like that). I proceeded to have a horrible nightmare where demons were in my room and were tormenting me, and I was writhing and my face melted into itself so I had no features.
+
+I don&#039;t often get nightmares so this was really odd for me.
+
+It might be sleep paralysis though, although this was exponentially more detailed and frightening than the only other experience I&#039;ve had with sleep paralysis/hypnopompic hallucinations.[/quote]
+
+Well I personally think that nightmare&#039;s are more common then we think. Have you ever  forgot about something that happend in your sleep in an instance. And you find it weird because you where just thinking about it seconds ago just after you woke up.
+
+My theory is that when dreams are fascinating or &#039;cool&#039; you tend to intensively think about it. When you think about something in reality you can usually remember it in detail. But dreams are erased shortly after you wake up, therefore when a dream is scary or completely boring your mind will usually remove it completely ( unless you think about it shortly after.)
+
+Everytime &quot;we&quot; humans go to sleep, but also animals like my dog. We dream, there is not a single time our minds are idle when we sleep. We had thousands of dreams in our lives already. But when you think back of it you can only remember 4 or 5... Well at least in my case. Its fortunate though I don&#039;t think I would want to remember all the bullcrap.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Jacob, 3 years, 5 months ago<br />Posted 3 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">.Dreamer</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=969&amp;ref=1244294545" width="87" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_14251" style="width: 100%; overflow: auto; min-height: 125px;">Number 5 happens to me all the time...In my case,the rapid heartbeat is always followed by a sharp electrocuting pain in the lower back. :/.And it only gets worse if I try to OBE.I can move or shake it off,but there&#039;s no fun in doing that..(But it happens when I try to go back to sleep)<br />
+<br />
+Also, I&#039;ve had a few dreams where I cannot focus my vision because I&#039;m &quot;too tired&quot; to dream (LOL).And usually I will fall asleep in my dream.<br />
+<br />
+<br />
+And you didn&#039;t mention Recurring dreams. :)</div>
+		<textarea style="display: none;" id="desctxt_14251">Number 5 happens to me all the time...In my case,the rapid heartbeat is always followed by a sharp electrocuting pain in the lower back. :/.And it only gets worse if I try to OBE.I can move or shake it off,but there&#039;s no fun in doing that..(But it happens when I try to go back to sleep)
+
+Also, I&#039;ve had a few dreams where I cannot focus my vision because I&#039;m &quot;too tired&quot; to dream (LOL).And usually I will fall asleep in my dream.
+
+
+And you didn&#039;t mention Recurring dreams. :)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by .Dreamer, 3 years, 5 months ago<br />Posted 3 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Jacob</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=949&amp;ref=1248714472" width="108" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_14274" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by .Dreamer:</em><br />
+And you didn&#039;t mention Recurring dreams. :)</div>tell me about it! :3</div>
+		<textarea style="display: none;" id="desctxt_14274">[quote][i]posted by .Dreamer:[/i]
+And you didn&#039;t mention Recurring dreams. :)[/quote]
+
+tell me about it! :3</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Everchanging</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=973&amp;ref=1244663608" width="118" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_14275" style="width: 100%; overflow: auto; min-height: 125px;">When I was younger many of these happened to me quite frequentlly (generally 4 and 5 of which 4 I&#039;m still having regulary), but sleep paralysis never appeared to scary at all. I had also once 3 but not other way round, I was trying to fell asleep consciously, then after some time I had this sensation of falling down, so I panicked and waked up. I had also a few previous dream continuations (propably same as Riven).</div>
+		<textarea style="display: none;" id="desctxt_14275">When I was younger many of these happened to me quite frequentlly (generally 4 and 5 of which 4 I&#039;m still having regulary), but sleep paralysis never appeared to scary at all. I had also once 3 but not other way round, I was trying to fell asleep consciously, then after some time I had this sensation of falling down, so I panicked and waked up. I had also a few previous dream continuations (propably same as Riven).</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">sh</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_14289" style="width: 100%; overflow: auto; min-height: 125px;">I had 3 several times in my past, then me body got me past that.</div>
+		<textarea style="display: none;" id="desctxt_14289">I had 3 several times in my past, then me body got me past that.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">.Dreamer</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=969&amp;ref=1244294545" width="87" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_14295" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Jacob:</em><br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by .Dreamer:</em><br />
+And you didn&#039;t mention Recurring dreams. :)</div>tell me about it! :3</div>A recurring dream is a dream that you&#039;ve dreamed more than once. (WOW I just used the word &quot;dream&quot; 3 times...In a single sentence! w00t).It&#039;s the exactly same dream you had last night/ a week ago/ a few years ago.It&#039;s sooo weird :O</div>
+		<textarea style="display: none;" id="desctxt_14295">[quote][i]posted by Jacob:[/i]
+[quote][i]posted by .Dreamer:[/i]
+And you didn&#039;t mention Recurring dreams. :)[/quote]
+
+tell me about it! :3[/quote]
+
+A recurring dream is a dream that you&#039;ve dreamed more than once. (WOW I just used the word &quot;dream&quot; 3 times...In a single sentence! w00t).It&#039;s the exactly same dream you had last night/ a week ago/ a few years ago.It&#039;s sooo weird :O</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">sh</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_14300" style="width: 100%; overflow: auto; min-height: 125px;">Ya, I know its weird and theres certain conditions which actually cause it. I believe its set on by an idea that you hear earlier that day. And the dream is a warning of what might occur if you do the idea. Don&#039;t get me wrong,there may be other idea or things at work.</div>
+		<textarea style="display: none;" id="desctxt_14300">Ya, I know its weird and theres certain conditions which actually cause it. I believe its set on by an idea that you hear earlier that day. And the dream is a warning of what might occur if you do the idea. Don&#039;t get me wrong,there may be other idea or things at work.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Jacob</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=949&amp;ref=1248714472" width="108" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_14331" style="width: 100%; overflow: auto; min-height: 125px;">Last night I had another one of those dreams where you gain awareness, but this time it was different. I was sure this one was real but for a fact it wasnt when I woke up.<br />
+Pretty logicall afterward, I was in a village that I didn&#039;t know and my hair was suddenly short when it is supposed to be long.</div>
+		<textarea style="display: none;" id="desctxt_14331">Last night I had another one of those dreams where you gain awareness, but this time it was different. I was sure this one was real but for a fact it wasnt when I woke up.
+Pretty logicall afterward, I was in a village that I didn&#039;t know and my hair was suddenly short when it is supposed to be long.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Jacob, 3 years, 5 months ago<br />Posted 3 years, 5 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=770" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 32 queries. 0.276 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

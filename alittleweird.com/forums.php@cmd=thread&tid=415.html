@@ -1,0 +1,380 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Energy Awareness</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Energy Awareness</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Energy Awareness</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Zorro</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=582&amp;ref=1213557004" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9146" style="width: 100%; overflow: auto; min-height: 125px;">I have noticed in the reading that I have done over the last few weeks that a lot of times it seems as if people are only interested in &quot;doing it.&quot; Making a psi wheel move, obtaining an OBE, doing something that has gratification in the moment. I was wondering if anyone just is aware of energy and appreciates it for being present and powerful, nothing more.<br />
+<br />
+I am very new to this, when I say very, I mean it. I don&#039;t believe that I approach things the same way that many do. For example, I spend more time just playing with energy and being aware of it than I do actually doing things with it, like making psi balls or playing with a psi wheel, but when I do do those things I have found that I have been very succesful very quickly. I am wondering...could this have to do with the awareness of energy I have developed? Would being aware of energies cause one to have more success?</div>
+		<textarea style="display: none;" id="desctxt_9146">I have noticed in the reading that I have done over the last few weeks that a lot of times it seems as if people are only interested in &quot;doing it.&quot; Making a psi wheel move, obtaining an OBE, doing something that has gratification in the moment. I was wondering if anyone just is aware of energy and appreciates it for being present and powerful, nothing more.
+
+I am very new to this, when I say very, I mean it. I don&#039;t believe that I approach things the same way that many do. For example, I spend more time just playing with energy and being aware of it than I do actually doing things with it, like making psi balls or playing with a psi wheel, but when I do do those things I have found that I have been very succesful very quickly. I am wondering...could this have to do with the awareness of energy I have developed? Would being aware of energies cause one to have more success?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Nin10doFan</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=426&amp;ref=1233878811" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9150" style="width: 100%; overflow: auto; min-height: 125px;">Maybe...  How are you &#039;aware&#039; of it?  In what ways do you play with energy but not actually do things with it?</div>
+		<textarea style="display: none;" id="desctxt_9150">Maybe...  How are you &#039;aware&#039; of it?  In what ways do you play with energy but not actually do things with it?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Sean</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=2&amp;ref=1214247941" width="117" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9151" style="width: 100%; overflow: auto; min-height: 125px;">That&#039;s an interesting thought.  I like how you word your perspective.<br />
+<br />
+I don&#039;t know how your perspective would translate into skill, but I do find it to be healthy and accurate.  It will have me thinking - thanks :-).<br />
+<br />
+~Sean</div>
+		<textarea style="display: none;" id="desctxt_9151">That&#039;s an interesting thought.  I like how you word your perspective.
+
+I don&#039;t know how your perspective would translate into skill, but I do find it to be healthy and accurate.  It will have me thinking - thanks :-).
+
+~Sean</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Ether</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=578&amp;ref=1213490800" width="125" height="105" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9153" style="width: 100%; overflow: auto; min-height: 125px;">Personally, I believe that too many people try to jump into the more complex realms of Psionics before mastering the basics. I think that by simply experiencing energy one becomes more attuned to the world around him, thus, becoming more attuned to himself. Through this one can truly understand the power he possesses and better understand the energy behind the things that he does. By feeling energy I think we are left with an incredibly humble and sublime feeling which is fundamental to Psionics. I therefore believe that this has definitely contributed to your success, for the same reason that many experience more success after meditation.</div>
+		<textarea style="display: none;" id="desctxt_9153">Personally, I believe that too many people try to jump into the more complex realms of Psionics before mastering the basics. I think that by simply experiencing energy one becomes more attuned to the world around him, thus, becoming more attuned to himself. Through this one can truly understand the power he possesses and better understand the energy behind the things that he does. By feeling energy I think we are left with an incredibly humble and sublime feeling which is fundamental to Psionics. I therefore believe that this has definitely contributed to your success, for the same reason that many experience more success after meditation.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Ether, 4 years, 6 months ago<br />Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Waldo</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=471&amp;ref=1208009607" width="84" height="108" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9154" style="width: 100%; overflow: auto; min-height: 125px;">My thoughts on this matter are quite clear. I&#039;m pretty sure that it&#039;s very beneficial to be able to perceive something correctly in trying to affect it. After all, if you can&#039;t really sense the energy you are moving about... how do you even know you&#039;re doing it at all? I jest. But really, the more sensitive you are to energy, the easier it will be to perceive when you&#039;re doing something wrong, and help you figure out how to correct it. That&#039;s why I believe it makes a massive difference in your progress.<br />
+<br />
+Sadly, I&#039;m rather bad at sensing... anything, really. As of yet. I&#039;m sure I will get better soonish. It&#039;s a good job I can do PK. =P</div>
+		<textarea style="display: none;" id="desctxt_9154">My thoughts on this matter are quite clear. I&#039;m pretty sure that it&#039;s very beneficial to be able to perceive something correctly in trying to affect it. After all, if you can&#039;t really sense the energy you are moving about... how do you even know you&#039;re doing it at all? I jest. But really, the more sensitive you are to energy, the easier it will be to perceive when you&#039;re doing something wrong, and help you figure out how to correct it. That&#039;s why I believe it makes a massive difference in your progress.
+
+Sadly, I&#039;m rather bad at sensing... anything, really. As of yet. I&#039;m sure I will get better soonish. It&#039;s a good job I can do PK. =P</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">SheepKing</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=211&amp;ref=1222648137" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9155" style="width: 100%; overflow: auto; min-height: 125px;">The sensing/awareness of energy is vital to a smooth growth in the ability to manipulate psi; Without it you are blind-firing all you got, and it may take substantially &#039;more&#039; energy to achieve whatever goal you are setting out to do.<br />
+<br />
+I have stumbled many times with being able to move energy but not directly sense this, and till this day it has affected my growth negatively. As of now my primary goal is to be more aware of the energy in my body, and around it, rather than to be able to manipulate it.<br />
+<br />
+Though at times I had great sensitivity to viewing/feeling the energy around me, as I gravitated to more action oriented goals, they lost importance and faded away.<br />
+<br />
+Keep in touch with it, and you should continue to grow and understand psi better. Good luck to you on that.</div>
+		<textarea style="display: none;" id="desctxt_9155">The sensing/awareness of energy is vital to a smooth growth in the ability to manipulate psi; Without it you are blind-firing all you got, and it may take substantially &#039;more&#039; energy to achieve whatever goal you are setting out to do.
+
+I have stumbled many times with being able to move energy but not directly sense this, and till this day it has affected my growth negatively. As of now my primary goal is to be more aware of the energy in my body, and around it, rather than to be able to manipulate it.
+
+Though at times I had great sensitivity to viewing/feeling the energy around me, as I gravitated to more action oriented goals, they lost importance and faded away.
+
+Keep in touch with it, and you should continue to grow and understand psi better. Good luck to you on that.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Zorro</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=582&amp;ref=1213557004" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9159" style="width: 100%; overflow: auto; min-height: 125px;">In response to Nin10doFan:<br />
+I guess the best way to explain it is to say that I play with the energy. There is really no way to explain it, I wish I was more articulate, maybe I would be able to do it justice then. I just start by drawing energy to a certain point, much like the beginnings of a psiball, but instead of doing something with it, I simply &quot;play&quot; it. Starting with moving it up and down my body, just around. It eventually comes to a point where it is like a tide, a very powerful and angry storm. It never leaves my body though, I control it within, sending it throughout. I call this energy play. You really learn the power of it all and to control it, not just what you can do with it, I think that it builds a respect for it, almost an awe. It is humbling, but it also builds confidence once you realize the depth of the power. Realize, I have in no way done this justice, try it, I can try to explain the process more later if you want, just ask.<br />
+<br />
+I know that this has made me very aware of energy, not just within, but everywhere. I could list out the things that I have experienced and how long I have been at this, but then it might sound braggish and I don&#039;t want that, but I believe this to be the reason why. I will say that I pick up on &quot;other&quot; energies, very easily. I am very sensitive, I always have been, I just never knew what it was and this has deepend the sensitivity.<br />
+<br />
+And Ether really hit my point, I think that people would learn skills much quicker if they took the time to do basic energy work without an &quot;end&quot; or accomplishment first. There is no failure with this, no trying something with no results, if you can feel energy, you can do this immediately. Eventually, as it has with me, it would help things like the psi wheel, immediate actions.<br />
+<br />
+I think everything has to do with perception and sensation to the energy myself.</div>
+		<textarea style="display: none;" id="desctxt_9159">In response to Nin10doFan:
+I guess the best way to explain it is to say that I play with the energy. There is really no way to explain it, I wish I was more articulate, maybe I would be able to do it justice then. I just start by drawing energy to a certain point, much like the beginnings of a psiball, but instead of doing something with it, I simply &quot;play&quot; it. Starting with moving it up and down my body, just around. It eventually comes to a point where it is like a tide, a very powerful and angry storm. It never leaves my body though, I control it within, sending it throughout. I call this energy play. You really learn the power of it all and to control it, not just what you can do with it, I think that it builds a respect for it, almost an awe. It is humbling, but it also builds confidence once you realize the depth of the power. Realize, I have in no way done this justice, try it, I can try to explain the process more later if you want, just ask.
+
+I know that this has made me very aware of energy, not just within, but everywhere. I could list out the things that I have experienced and how long I have been at this, but then it might sound braggish and I don&#039;t want that, but I believe this to be the reason why. I will say that I pick up on &quot;other&quot; energies, very easily. I am very sensitive, I always have been, I just never knew what it was and this has deepend the sensitivity.
+
+And Ether really hit my point, I think that people would learn skills much quicker if they took the time to do basic energy work without an &quot;end&quot; or accomplishment first. There is no failure with this, no trying something with no results, if you can feel energy, you can do this immediately. Eventually, as it has with me, it would help things like the psi wheel, immediate actions.
+
+I think everything has to do with perception and sensation to the energy myself.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Ether</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=578&amp;ref=1213490800" width="125" height="105" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9171" style="width: 100%; overflow: auto; min-height: 125px;">Here is a great video demoing what I believe to be that of which Zorro is speaking:<br />
+<br />
+ <a href="http://www.astraldynamics.com/video/RB_NEW_Demonstration.wmv" target="_blank">http://www.astraldynamics.com/video/RB_NEW_Demonstration.wmv</a></div>
+		<textarea style="display: none;" id="desctxt_9171">Here is a great video demoing what I believe to be that of which Zorro is speaking:
+
+http://www.astraldynamics.com/video/RB_NEW_Demonstration.wmv</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Ether, 4 years, 6 months ago<br />Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">DigGil</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9178" style="width: 100%; overflow: auto; min-height: 125px;">that link don&#039;t work for me...:(</div>
+		<textarea style="display: none;" id="desctxt_9178">that link don&#039;t work for me...:(</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Zorro</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=582&amp;ref=1213557004" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9180" style="width: 100%; overflow: auto; min-height: 125px;">Thanks Ether, I was intending on finding that and posting it today. Thanks for sharing that with me again, it is great to see now that I firmly believe.<br />
+<br />
+Thanks to everyone else as well, isn&#039;t energy great? Not just what you can do with it, but the concept itself :)<br />
+<br />
+</div>
+		<textarea style="display: none;" id="desctxt_9180">Thanks Ether, I was intending on finding that and posting it today. Thanks for sharing that with me again, it is great to see now that I firmly believe.
+
+Thanks to everyone else as well, isn&#039;t energy great? Not just what you can do with it, but the concept itself :)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Amaroq</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=606&amp;ref=1214436810" width="95" height="95" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9425" style="width: 100%; overflow: auto; min-height: 125px;">I&#039;m not good at sensing energy either. I can feel the energy that I manipulate and I am aware of my own constructs, but I am not aware of energy around me unless I focus on sensing it.<br />
+<br />
+Sometimes I &#039;play&#039; with energy too. Just making it move around my arms or body for fun.<br />
+<br />
+Be careful though. One time, I was drawing energy up from the ground all around me, having thought that it would be a fun thing at the time to make a DBZ-style &#039;powerup&#039; type thing around myself. After doing it for a while, it felt like someone suddenly stabbed me in the heart with a wooden pencil.<br />
+<br />
+A friend of mine told me it&#039;s probably because I had less energy in my body than around me. There was a &quot;pressure imbalance&quot; of sorts, and apparently some of the energy had forced itself into my body through a chakra point.<br />
+<br />
+I personally think chakra points sound too stereotypical. But that&#039;s what my friend thinks.<br />
+<br />
+In her words, you have to give energy a purpose or a container. Otherwise, it can be dangerous.</div>
+		<textarea style="display: none;" id="desctxt_9425">I&#039;m not good at sensing energy either. I can feel the energy that I manipulate and I am aware of my own constructs, but I am not aware of energy around me unless I focus on sensing it.
+
+Sometimes I &#039;play&#039; with energy too. Just making it move around my arms or body for fun.
+
+Be careful though. One time, I was drawing energy up from the ground all around me, having thought that it would be a fun thing at the time to make a DBZ-style &#039;powerup&#039; type thing around myself. After doing it for a while, it felt like someone suddenly stabbed me in the heart with a wooden pencil.
+
+A friend of mine told me it&#039;s probably because I had less energy in my body than around me. There was a &quot;pressure imbalance&quot; of sorts, and apparently some of the energy had forced itself into my body through a chakra point.
+
+I personally think chakra points sound too stereotypical. But that&#039;s what my friend thinks.
+
+In her words, you have to give energy a purpose or a container. Otherwise, it can be dangerous.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Amaroq, 4 years, 6 months ago<br />Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">ryan</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=610&amp;ref=1214463002" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9440" style="width: 100%; overflow: auto; min-height: 125px;">Being aware of your own energy is important, as it is part of yourself and self-awareness is a wonderful thing.  <br />
+<br />
+It&#039;s refreshing to hear that someone is happy with just acknowledging their energy rather than feeling incompetant because they can&#039;t use their energy to have an ability they saw on an anime or a TV show.  </div>
+		<textarea style="display: none;" id="desctxt_9440">Being aware of your own energy is important, as it is part of yourself and self-awareness is a wonderful thing.  
+
+It&#039;s refreshing to hear that someone is happy with just acknowledging their energy rather than feeling incompetant because they can&#039;t use their energy to have an ability they saw on an anime or a TV show.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=415" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 28 queries. 0.331 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

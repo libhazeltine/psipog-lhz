@@ -1,0 +1,455 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Help with TK needed!</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Help with TK needed!</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Help with TK needed!</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">M. Dragon Fang</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=482&amp;ref=1208622720" width="80" height="98" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7613" style="width: 100%; overflow: auto; min-height: 125px;">I&#039;ve been practicing TK for a while now, but no results.<br />
+<br />
+Every day I try to practice using my psiwheel, but I actually never have a feeling like &quot;now it&#039;s going to happen&quot; or something. I also can&#039;t seem to stay concentrated at it very long...<br />
+so:<br />
+- can someone teach me how to meditate?<br />
+- how to put a lot of focus in only 1 thing.<br />
+<br />
+If someone would be able to help me that would be greatly apriciated. :)<br />
+<br />
+~M. Dragon Fang</div>
+		<textarea style="display: none;" id="desctxt_7613">I&#039;ve been practicing TK for a while now, but no results.
+
+Every day I try to practice using my psiwheel, but I actually never have a feeling like &quot;now it&#039;s going to happen&quot; or something. I also can&#039;t seem to stay concentrated at it very long...
+so:
+- can someone teach me how to meditate?
+- how to put a lot of focus in only 1 thing.
+
+If someone would be able to help me that would be greatly apriciated. :)
+
+~M. Dragon Fang</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by M. Dragon Fang, 4 years, 8 months ago<br />Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Dash</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=69&amp;ref=1224210982" width="113" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_7614" style="width: 100%; overflow: auto; min-height: 125px;">from what i&#039;ve heard, theres lots of ways to meditate.. i personally like the &quot;sit there&quot; method<br />
+which is just sitting there, relaxing and clearing your mind,<br />
+<br />
+<br />
+focus is basically something you train<br />
+<br />
+to help myself with focus (being a gear-head)<br />
+i try to figure out how stuff works.. <br />
+i took my keyboard apart for example.. er... <br />
+<br />
+well just find something to occupy your mind in a way that you become absorbed it what your doing<br />
+<br />
+i recommend a book..  ... with a good story</div>
+		<textarea style="display: none;" id="desctxt_7614">from what i&#039;ve heard, theres lots of ways to meditate.. i personally like the &quot;sit there&quot; method
+which is just sitting there, relaxing and clearing your mind,
+
+
+focus is basically something you train
+
+to help myself with focus (being a gear-head)
+i try to figure out how stuff works.. 
+i took my keyboard apart for example.. er... 
+
+well just find something to occupy your mind in a way that you become absorbed it what your doing
+
+i recommend a book..  ... with a good story</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Dash, 4 years, 8 months ago<br />Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">M. Dragon Fang</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=482&amp;ref=1208622720" width="80" height="98" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7615" style="width: 100%; overflow: auto; min-height: 125px;">I&#039;ve also read things about clearing your mind. You must NEVER push all your thoughts away, but you have to throw them out of your head.<br />
+I sometimes try to do that by:<br />
+1. closing my eyes<br />
+2. see your head in front of you with a &quot;window&quot; on your forhead.<br />
+3. in that window you see the keywords of your toughts<br />
+4. see these keywords that aren&#039;t about the thing you&#039;re concentrating on coming out of your ears, and then vanish into the air<br />
+<br />
+anyways, I don&#039;t think gaming counts as &quot;something to occupy your mind in a way that you become absorbed it what your doing&quot; ^^;<br />
+but thanks for your info Dash</div>
+		<textarea style="display: none;" id="desctxt_7615">I&#039;ve also read things about clearing your mind. You must NEVER push all your thoughts away, but you have to throw them out of your head.
+I sometimes try to do that by:
+1. closing my eyes
+2. see your head in front of you with a &quot;window&quot; on your forhead.
+3. in that window you see the keywords of your toughts
+4. see these keywords that aren&#039;t about the thing you&#039;re concentrating on coming out of your ears, and then vanish into the air
+
+anyways, I don&#039;t think gaming counts as &quot;something to occupy your mind in a way that you become absorbed it what your doing&quot; ^^;
+but thanks for your info Dash</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Waldo</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=471&amp;ref=1208009607" width="84" height="108" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_7616" style="width: 100%; overflow: auto; min-height: 125px;">Any time I do meditate (not often) I simply sit somewhere quiet, look at something brighter than the surroundings, relax and clear my mind. Then I try the best I can to keep my mind on nothing, just gently bringing my mind back to that if a stray thought gets in there somewhere. The bright whatever is just something to focus on - it&#039;s often easier to keep your mind on one thing that think about nothing at all. Hold it for 5-10 minutes, and you&#039;ve meditated, basically. I can&#039;t really help you with focus as it pertains to TK, because I&#039;m still trying to get it consistent myself. Sigh. Hope I was of some help! =)<br />
+<br />
+Waldo x</div>
+		<textarea style="display: none;" id="desctxt_7616">Any time I do meditate (not often) I simply sit somewhere quiet, look at something brighter than the surroundings, relax and clear my mind. Then I try the best I can to keep my mind on nothing, just gently bringing my mind back to that if a stray thought gets in there somewhere. The bright whatever is just something to focus on - it&#039;s often easier to keep your mind on one thing that think about nothing at all. Hold it for 5-10 minutes, and you&#039;ve meditated, basically. I can&#039;t really help you with focus as it pertains to TK, because I&#039;m still trying to get it consistent myself. Sigh. Hope I was of some help! =)
+
+Waldo x</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Gumby</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7617" style="width: 100%; overflow: auto; min-height: 125px;">I dont think the problem is your connecting. I wouldnt even worry about the connection. I dont connect with things first, when I move stuff the connection comes from doing it. About the meditation: the way I meditate is the breathing method from NI&#039;s TK training manual. You breath in and out, and fully focus on your breathing. When you think of something else, bring your focus back to your breathing. How to focus on only one thing, I wouldnt worry about that either. Just meditate for a bit, and try to move it, and do it every day and in time youll be able to do it. In my opinion your just over thinking stuff :-)</div>
+		<textarea style="display: none;" id="desctxt_7617">I dont think the problem is your connecting. I wouldnt even worry about the connection. I dont connect with things first, when I move stuff the connection comes from doing it. About the meditation: the way I meditate is the breathing method from NI&#039;s TK training manual. You breath in and out, and fully focus on your breathing. When you think of something else, bring your focus back to your breathing. How to focus on only one thing, I wouldnt worry about that either. Just meditate for a bit, and try to move it, and do it every day and in time youll be able to do it. In my opinion your just over thinking stuff :-)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Antisankari</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=224&amp;ref=1213032338" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_7618" style="width: 100%; overflow: auto; min-height: 125px;">Gumby has a point.<br />
+<br />
+Most important words in his post: &quot;do&quot; , &quot;it&quot; , &quot;every&quot; and &quot;day&quot;. Ad infinitum.<br />
+<br />
+Sooner or later a success will follow.<br />
+<br />
+</div>
+		<textarea style="display: none;" id="desctxt_7618">Gumby has a point.
+
+Most important words in his post: &quot;do&quot; , &quot;it&quot; , &quot;every&quot; and &quot;day&quot;. Ad infinitum.
+
+Sooner or later a success will follow.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">M. Dragon Fang</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=482&amp;ref=1208622720" width="80" height="98" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7621" style="width: 100%; overflow: auto; min-height: 125px;">gumby:<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;">the way I meditate is the breathing method from NI&#039;s TK training manual. You breath in and out, and fully focus on your breathing. When you think of something else, bring your focus back to your breathing.</div>I always count the times I breath out. that&#039;s ok isn&#039;t it?<br />
+I also have a track of a japanese bamboo flute. it is said it is used for meditation. should I put it on while meditating?<br />
+<br />
+Anyways, thanks for your help everyone!<br />
+and other kenisis kinds require the same sort of meditation as telekenisis?</div>
+		<textarea style="display: none;" id="desctxt_7621">gumby:[QUOTE]the way I meditate is the breathing method from NI&#039;s TK training manual. You breath in and out, and fully focus on your breathing. When you think of something else, bring your focus back to your breathing.[/QUOTE]
+I always count the times I breath out. that&#039;s ok isn&#039;t it?
+I also have a track of a japanese bamboo flute. it is said it is used for meditation. should I put it on while meditating?
+
+Anyways, thanks for your help everyone!
+and other kenisis kinds require the same sort of meditation as telekenisis?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by M. Dragon Fang, 4 years, 8 months ago<br />Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Waldo</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=471&amp;ref=1208009607" width="84" height="108" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_7622" style="width: 100%; overflow: auto; min-height: 125px;">All the types of &quot;kinesis&quot; are the same thing. So if meditating helps you with telekinesis, then it is going to help with the others as well. And note, you don&#039;t actually have to meditate to perform psychokinesis, it can just help with holding clear states of mind. Like I said, I don&#039;t do it much, and manage PK fairly well.<br />
+<br />
+If the music helps you relax, then do it. However, it&#039;s not necessary, and might even hinder you by distracting you. Give it a go with and without, and see what is better for keeping your mind clear. Simple. =)<br />
+<br />
+Waldo x</div>
+		<textarea style="display: none;" id="desctxt_7622">All the types of &quot;kinesis&quot; are the same thing. So if meditating helps you with telekinesis, then it is going to help with the others as well. And note, you don&#039;t actually have to meditate to perform psychokinesis, it can just help with holding clear states of mind. Like I said, I don&#039;t do it much, and manage PK fairly well.
+
+If the music helps you relax, then do it. However, it&#039;s not necessary, and might even hinder you by distracting you. Give it a go with and without, and see what is better for keeping your mind clear. Simple. =)
+
+Waldo x</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">delimew</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=108&amp;ref=1205485279" width="39" height="42" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7625" style="width: 100%; overflow: auto; min-height: 125px;">remember, everyones different with this sort of stuff. there&#039;s no right or wrong way to do things, just ways that work better for some people than they do for others. <br />
+<br />
+so, while we&#039;ll help you as much as we can, in the end it is just a matter of you doing what you feel suits you best. just don&#039;t be afraid to find out what that is ^-^</div>
+		<textarea style="display: none;" id="desctxt_7625">remember, everyones different with this sort of stuff. there&#039;s no right or wrong way to do things, just ways that work better for some people than they do for others. 
+
+so, while we&#039;ll help you as much as we can, in the end it is just a matter of you doing what you feel suits you best. just don&#039;t be afraid to find out what that is ^-^</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">M. Dragon Fang</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=482&amp;ref=1208622720" width="80" height="98" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_7628" style="width: 100%; overflow: auto; min-height: 125px;">Again, thanks for the replies!<br />
+I&#039;m going to try meditating now, with the japanese bamboo flute blowing softly. maybe I&#039;ll make a psi-ball during meditation? :3<br />
+<br />
+EDIT: holy crap! after 5 minutes of meditation I started to try to &quot;connect&quot; with the psi wheel. making it follow my hand. after a minute or 2 it kinda reacted on my hands movements. I could most of the time stop it, and make it turn around clockwise or counter-clockwise at will! When it stoped moving I tried to concentrate extra hard and then the piece of paper fell of the pin! I was like OH FUCK! and still now, my hands are shaking, and my legs too… anyways, I&#039;m almost sure it weren&#039;t air currents because it really followe d my hand most of the time and it moved so… special…<br />
+now this is what I call proof that meditation can help you!<br />
+but, I&#039;ll try again after dinner</div>
+		<textarea style="display: none;" id="desctxt_7628">Again, thanks for the replies!
+I&#039;m going to try meditating now, with the japanese bamboo flute blowing softly. maybe I&#039;ll make a psi-ball during meditation? :3
+
+EDIT: holy crap! after 5 minutes of meditation I started to try to &quot;connect&quot; with the psi wheel. making it follow my hand. after a minute or 2 it kinda reacted on my hands movements. I could most of the time stop it, and make it turn around clockwise or counter-clockwise at will! When it stoped moving I tried to concentrate extra hard and then the piece of paper fell of the pin! I was like OH FUCK! and still now, my hands are shaking, and my legs too… anyways, I&#039;m almost sure it weren&#039;t air currents because it really followe d my hand most of the time and it moved so… special…
+now this is what I call proof that meditation can help you!
+but, I&#039;ll try again after dinner</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by M. Dragon Fang, 4 years, 8 months ago<br />Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Gumby</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7629" style="width: 100%; overflow: auto; min-height: 125px;">Yeah. But remember not to overdo it. I just go bout 30 minutes a day. :-) I got pretty good too.</div>
+		<textarea style="display: none;" id="desctxt_7629">Yeah. But remember not to overdo it. I just go bout 30 minutes a day. :-) I got pretty good too.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">M. Dragon Fang</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=482&amp;ref=1208622720" width="80" height="98" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_7645" style="width: 100%; overflow: auto; min-height: 125px;">I don&#039;t think I&#039;ll overdo it, but I&#039;m still thinking about the fact that air currents or my SLOWLY moving hand may have blew it :(</div>
+		<textarea style="display: none;" id="desctxt_7645">I don&#039;t think I&#039;ll overdo it, but I&#039;m still thinking about the fact that air currents or my SLOWLY moving hand may have blew it :(</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Boom</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7646" style="width: 100%; overflow: auto; min-height: 125px;">Usually if you can get it to go around 3 times in one consistent motion I&#039;d say thats something. No one can really give you a direct and correct answer especially if your working with the tack and paper. Use foil if your not already. </div>
+		<textarea style="display: none;" id="desctxt_7646">Usually if you can get it to go around 3 times in one consistent motion I&#039;d say thats something. No one can really give you a direct and correct answer especially if your working with the tack and paper. Use foil if your not already.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">M. Dragon Fang</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=482&amp;ref=1208622720" width="80" height="98" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_7647" style="width: 100%; overflow: auto; min-height: 125px;">I&#039;m using paper, and it works for me. (tin)foil only gets blowed easier.<br />
+sadly enough, I&#039;ll have no time for practicing today &gt;_&lt;</div>
+		<textarea style="display: none;" id="desctxt_7647">I&#039;m using paper, and it works for me. (tin)foil only gets blowed easier.
+sadly enough, I&#039;ll have no time for practicing today &gt;_&lt;</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">M. Dragon Fang</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=482&amp;ref=1208622720" width="80" height="98" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7682" style="width: 100%; overflow: auto; min-height: 125px;">Dang, I totaly messed up. during meditation it seems that I&#039;m only thinking of what I am concentrating on (breathing OR psiwheel moving), but then, when I walk toward that psiwheel, and start trying to make it move, I lose my concentration!<br />
+halp?<br />
+<br />
+EDIT: ****, double post. there should be a delete button on your own posts</div>
+		<textarea style="display: none;" id="desctxt_7682">Dang, I totaly messed up. during meditation it seems that I&#039;m only thinking of what I am concentrating on (breathing OR psiwheel moving), but then, when I walk toward that psiwheel, and start trying to make it move, I lose my concentration!
+halp?
+
+EDIT: ****, double post. there should be a delete button on your own posts</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by M. Dragon Fang, 4 years, 8 months ago<br />Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">RazSh18</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=510&amp;ref=1213120644" width="110" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_8012" style="width: 100%; overflow: auto; min-height: 125px;">I have a similar problem, when I try to move the psywheel I imagine a brust of energy flowing out of my palms and hitting the corner of the psywheel, BUT NOTHING HAPPENS .<br />
+<br />
+Am I doing something wrong? <br />
+<br />
+-Razsh18</div>
+		<textarea style="display: none;" id="desctxt_8012">I have a similar problem, when I try to move the psywheel I imagine a brust of energy flowing out of my palms and hitting the corner of the psywheel, BUT NOTHING HAPPENS .
+
+Am I doing something wrong? 
+
+-Razsh18</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by RazSh18, 4 years, 7 months ago<br />Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=320" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 32 queries. 0.277 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

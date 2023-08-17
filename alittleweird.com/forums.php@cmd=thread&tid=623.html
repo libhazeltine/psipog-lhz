@@ -1,0 +1,327 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Just a Whole Bunch o&#039; Thoughts...</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=3.html">Recycle Bin</a> &raquo; Just a Whole Bunch o&#039; Thoughts...</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Just a Whole Bunch o&#039; Thoughts...</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Raathuus</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=764&amp;ref=1259211929" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12226" style="width: 100%; overflow: auto; min-height: 125px;">Over the past week or two, I&#039;ve been having a lot of thoughts.  Mostly of bunch of philosophical stuff that I&#039;ve been wanting to let out.  So, if you&#039;ll just sit back in that chair of yours and listen, I&#039;ll continue.  Who knows?  Maybe you&#039;ll be entertained, learn something, or maybe just fall asleep.<br />
+<br />
+Okay?  Good.  Now, recently I&#039;ve been thinking of this: &quot;Why did I want to learn psionics?&quot;  Lemme give you some background information.  I discovered PsiPog not too long ago.  I was bored and was on the internet.  I&#039;d always had a belief in the paranormal, so I started searching up more information that I hadn&#039;t already found about telekinesis.  Eventually, I found a site hosted on www.freewebs.com that was about telekinesis (I forgot the name). Reading through it, I thought it was stupid because the author sounded REALLY fluffy in the way they described things.  Luckily, though, they started talking about psi wheels.  Interestingly, they had a picture that they claimed that they had forgotten where they got it from, though, because it said the picture wasn&#039;t available because that site had last been updated in about 2004, by me right clicking and following the link, I got 404&#039;d on PsiPog.  Me, being curious and wondering what PsiPog was, erased the extra stuff on the URL.  And thus, I learned.  And I learned it well.  In about 2 days, I had made a psiball, moved a psi wheel, and read just about every article available.  To cut a long story short and not bore you with the details, I got here today, typing all this.<br />
+<br />
+<br />
+...you still awake?  Good.  So... let&#039;s discuss a new thought.  &quot;What am I going to do with these skills?&quot;  It took me a long time to come up with the answer to this.  I decided to think of this in a different way to get the answer.  &quot;What am I good at?&quot;  So I thought about it and found it: controlling others with telepathic suggestion.  No joke.  It&#039;s fun.  Look at a non, think to them, &quot;Move your head a bit to the right.&quot;  I smile every time it happens (it happens a lot).  So I thought about it and found out what I should do with it: create mind-slaves.  I&#039;m evil aren&#039;t I?  Now, this probably won&#039;t happen for a while (it probably will happen about the same time that I can prove psionics is real to doubters by using telekinesis to force-choke people while saying, &quot;I find your lack of faith disturbing.&quot;), so I&#039;ll be practicing until then.  Don&#039;t be surprised if one day you think, &quot;Gee, I think I&#039;ll stop what I&#039;m doing and go worship Raathuus.&quot;  Muaa-ha-ha-haaaa-ha-ha-haa-ha-ha... *cough*... *cough*....... <br />
+<br />
+Well now, where was I.... oh well.  It seems the Fountain of Thoughts has run dry.  Maybe I&#039;ll think more stuff later...</div>
+		<textarea style="display: none;" id="desctxt_12226">Over the past week or two, I&#039;ve been having a lot of thoughts.  Mostly of bunch of philosophical stuff that I&#039;ve been wanting to let out.  So, if you&#039;ll just sit back in that chair of yours and listen, I&#039;ll continue.  Who knows?  Maybe you&#039;ll be entertained, learn something, or maybe just fall asleep.
+
+Okay?  Good.  Now, recently I&#039;ve been thinking of this: &quot;Why did I want to learn psionics?&quot;  Lemme give you some background information.  I discovered PsiPog not too long ago.  I was bored and was on the internet.  I&#039;d always had a belief in the paranormal, so I started searching up more information that I hadn&#039;t already found about telekinesis.  Eventually, I found a site hosted on www.freewebs.com that was about telekinesis (I forgot the name). Reading through it, I thought it was stupid because the author sounded REALLY fluffy in the way they described things.  Luckily, though, they started talking about psi wheels.  Interestingly, they had a picture that they claimed that they had forgotten where they got it from, though, because it said the picture wasn&#039;t available because that site had last been updated in about 2004, by me right clicking and following the link, I got 404&#039;d on PsiPog.  Me, being curious and wondering what PsiPog was, erased the extra stuff on the URL.  And thus, I learned.  And I learned it well.  In about 2 days, I had made a psiball, moved a psi wheel, and read just about every article available.  To cut a long story short and not bore you with the details, I got here today, typing all this.
+
+
+...you still awake?  Good.  So... let&#039;s discuss a new thought.  &quot;What am I going to do with these skills?&quot;  It took me a long time to come up with the answer to this.  I decided to think of this in a different way to get the answer.  &quot;What am I good at?&quot;  So I thought about it and found it: controlling others with telepathic suggestion.  No joke.  It&#039;s fun.  Look at a non, think to them, &quot;Move your head a bit to the right.&quot;  I smile every time it happens (it happens a lot).  So I thought about it and found out what I should do with it: create mind-slaves.  I&#039;m evil aren&#039;t I?  Now, this probably won&#039;t happen for a while (it probably will happen about the same time that I can prove psionics is real to doubters by using telekinesis to force-choke people while saying, &quot;I find your lack of faith disturbing.&quot;), so I&#039;ll be practicing until then.  Don&#039;t be surprised if one day you think, &quot;Gee, I think I&#039;ll stop what I&#039;m doing and go worship Raathuus.&quot;  Muaa-ha-ha-haaaa-ha-ha-haa-ha-ha... *cough*... *cough*....... 
+
+Well now, where was I.... oh well.  It seems the Fountain of Thoughts has run dry.  Maybe I&#039;ll think more stuff later...</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Raathuus, 4 years ago<br />Posted 4 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Corpse</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=553&amp;ref=1239824741" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12228" style="width: 100%; overflow: auto; min-height: 125px;">That was entertaining. Thank you for sharing that. :)</div>
+		<textarea style="display: none;" id="desctxt_12228">That was entertaining. Thank you for sharing that. :)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">ed.</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=446&amp;ref=1213317482" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12232" style="width: 100%; overflow: auto; min-height: 125px;">Hahaha that&#039;s cool.<br />
+<br />
+BTW nice avy, I assume you play WoW. What server do you play on if you do?</div>
+		<textarea style="display: none;" id="desctxt_12232">Hahaha that&#039;s cool.
+
+BTW nice avy, I assume you play WoW. What server do you play on if you do?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Raathuus</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=764&amp;ref=1259211929" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12234" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by ed.:</em><br />
+Hahaha that&#039;s cool.<br />
+<br />
+BTW nice avy, I assume you play WoW. What server do you play on if you do?</div>Well, I haven&#039;t been playing WoW that much anymore.  I&#039;ve been playing Warhammer Online recently.  And anyways, I got that while I was testing a private server that I made.  I just turned on fly mode and got a screenshot (That&#039;s why it has sort of an angle upward and to the side).</div>
+		<textarea style="display: none;" id="desctxt_12234">[quote][i]posted by ed.:[/i]
+Hahaha that&#039;s cool.
+
+BTW nice avy, I assume you play WoW. What server do you play on if you do?[/quote]
+
+Well, I haven&#039;t been playing WoW that much anymore.  I&#039;ve been playing Warhammer Online recently.  And anyways, I got that while I was testing a private server that I made.  I just turned on fly mode and got a screenshot (That&#039;s why it has sort of an angle upward and to the side).</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">f3licks</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=848&amp;ref=1227833859" width="125" height="78" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12250" style="width: 100%; overflow: auto; min-height: 125px;"><span style="color: #0000ff;">Keep us posted on the whole mindslaves thing. ;)</span><br />
+<br />
+</div>
+		<textarea style="display: none;" id="desctxt_12250">[color=blue]Keep us posted on the whole mindslaves thing. ;)[/color]</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Psikillion</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=593&amp;ref=1213954510" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12253" style="width: 100%; overflow: auto; min-height: 125px;">Force-choking people would be great in getting rid of all skeptics.<br />
+<br />
+Make sure you get James Randi as well.</div>
+		<textarea style="display: none;" id="desctxt_12253">Force-choking people would be great in getting rid of all skeptics.
+
+Make sure you get James Randi as well.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Antisankari</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=224&amp;ref=1213032338" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12254" style="width: 100%; overflow: auto; min-height: 125px;">Good luck in your quest.<br />
+</div>
+		<textarea style="display: none;" id="desctxt_12254">Good luck in your quest.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">DigGil</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12256" style="width: 100%; overflow: auto; min-height: 125px;"><strong>Try</strong> to <span style="text-decoration: underline;">don&#039;t control</span> me!</div>
+		<textarea style="display: none;" id="desctxt_12256">[b]Try[/b] to [u]don&#039;t control[/u] me!</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Raathuus</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=764&amp;ref=1259211929" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12307" style="width: 100%; overflow: auto; min-height: 125px;">Well, I&#039;ve been thinking for the past week and 3 days, and I&#039;ve got more thoughts.  This post&#039;s topic: Why We Should Keep Psionics Fairly Select.  You might be thinking right now, &quot;What?&quot;  I&#039;ll explain.<br />
+<br />
+Did you ever look around and want to show everyone what you can do with psionics?  I did.  But luckily I didn&#039;t show off.  Instead I thought of what would happen by posing a hypothetical situation:  What if someone went on a popular televised news station.  They then showed off some telekinesis quite well.  Then what?  There would be controversy.  Skeptics would go after every slightest thing to attempt to debunk them.  Religions (particularly monotheistic ones) would call it the devil&#039;s work and ban it.  Some people would go crazy about it and want to learn how to do it.  They learn, and more follow.  Many have learned, and thus some of the crazier use their newfound skill as a way to commit crimes.  As more find this effective, governments make efforts to ban any practice.  Some become infuriated and go against the government in a rebellion.  Chaos follows.<br />
+<br />
+While this seems quite worst-case scenario, it could happen.  Least-case would probably be the whole event goes unnoticed by the people.  And while I&#039;m all for working with others, try not to show off to random people.  I say it&#039;s also okay to say &quot;I can move stuff with my mind&quot; to people you know, because if you don&#039;t intend to <br />
+show them, they tend to think you&#039;re joking, which is okay by my standards.<br />
+<br />
+Besides, if everyone does it, it&#039;s not cool anymore.</div>
+		<textarea style="display: none;" id="desctxt_12307">Well, I&#039;ve been thinking for the past week and 3 days, and I&#039;ve got more thoughts.  This post&#039;s topic: Why We Should Keep Psionics Fairly Select.  You might be thinking right now, &quot;What?&quot;  I&#039;ll explain.
+
+Did you ever look around and want to show everyone what you can do with psionics?  I did.  But luckily I didn&#039;t show off.  Instead I thought of what would happen by posing a hypothetical situation:  What if someone went on a popular televised news station.  They then showed off some telekinesis quite well.  Then what?  There would be controversy.  Skeptics would go after every slightest thing to attempt to debunk them.  Religions (particularly monotheistic ones) would call it the devil&#039;s work and ban it.  Some people would go crazy about it and want to learn how to do it.  They learn, and more follow.  Many have learned, and thus some of the crazier use their newfound skill as a way to commit crimes.  As more find this effective, governments make efforts to ban any practice.  Some become infuriated and go against the government in a rebellion.  Chaos follows.
+
+While this seems quite worst-case scenario, it could happen.  Least-case would probably be the whole event goes unnoticed by the people.  And while I&#039;m all for working with others, try not to show off to random people.  I say it&#039;s also okay to say &quot;I can move stuff with my mind&quot; to people you know, because if you don&#039;t intend to 
+show them, they tend to think you&#039;re joking, which is okay by my standards.
+
+Besides, if everyone does it, it&#039;s not cool anymore.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=623" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 25 queries. 0.327 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

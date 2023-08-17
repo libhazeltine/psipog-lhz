@@ -1,0 +1,385 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Hey guys. Something weird happened to me last friday night....</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Hey guys. Something weird happened to me last friday night....</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Hey guys. Something weird happened to me last friday night....</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Darkness</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=886&amp;ref=1232436541" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13172" style="width: 100%; overflow: auto; min-height: 125px;">I&#039;ve recently figured out a few songs that I thought I would never be able to play. Yet here I am, a 12  year old kid, who can now play songs from Jake Shimabukuro. O.o It started out one night when I wasn&#039;t able to sleep. I thought I would do something like mess around with my Rubix Cube, when I decided to play my &#039;Ukulele (an instrument with four strings. Kinda like a small guitar) Anyway, I grabbed my iPod and started listening to Jake play some songs from his &#039;Gently Weeps&#039; CD. I just so happened to play the same chords he played.....WTF?! How is this possible? Am I some kind of musical genius or what? I never, ever, EVER could figure out anything he played, yet I can now do the impossible.  Sheesh, I wouldn&#039;t be surprized if I could fly.....well...that&#039;s an overstatement but still....I never thought I could play it....,When I was online one day, a long time ago, I read on a supernatural site that &quot;Sometimes, when people have sudden urges to do things, and they succeed at perfecting it, it means that they have been visited by someone or something that was talented in this region.&quot; HOW THE HELL DID I LEARN IT?!Oh and I haven&#039;t played in like, three months.</div>
+		<textarea style="display: none;" id="desctxt_13172">I&#039;ve recently figured out a few songs that I thought I would never be able to play. Yet here I am, a 12  year old kid, who can now play songs from Jake Shimabukuro. O.o It started out one night when I wasn&#039;t able to sleep. I thought I would do something like mess around with my Rubix Cube, when I decided to play my &#039;Ukulele (an instrument with four strings. Kinda like a small guitar) Anyway, I grabbed my iPod and started listening to Jake play some songs from his &#039;Gently Weeps&#039; CD. I just so happened to play the same chords he played.....WTF?! How is this possible? Am I some kind of musical genius or what? I never, ever, EVER could figure out anything he played, yet I can now do the impossible.  Sheesh, I wouldn&#039;t be surprized if I could fly.....well...that&#039;s an overstatement but still....I never thought I could play it....,When I was online one day, a long time ago, I read on a supernatural site that &quot;Sometimes, when people have sudden urges to do things, and they succeed at perfecting it, it means that they have been visited by someone or something that was talented in this region.&quot; HOW THE HELL DID I LEARN IT?!Oh and I haven&#039;t played in like, three months.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Darkness, 3 years, 8 months ago<br />Posted 3 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">DigGil</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13173" style="width: 100%; overflow: auto; min-height: 125px;">Now it&#039;s better make use of it before it fails!</div>
+		<textarea style="display: none;" id="desctxt_13173">Now it&#039;s better make use of it before it fails!</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Morcyont</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=867&amp;ref=1262407330" width="125" height="73" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13176" style="width: 100%; overflow: auto; min-height: 125px;">Wow, very interesting! I wish I could do the same with my guitar :).</div>
+		<textarea style="display: none;" id="desctxt_13176">Wow, very interesting! I wish I could do the same with my guitar :).</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">X-Master</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=433&amp;ref=1238933408" width="115" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13177" style="width: 100%; overflow: auto; min-height: 125px;">I don&#039;t know about the supernatural part. It could be true. But as far as being able to play like that, it is possible to acheive something like that in probably any conceivable skill. Since you seem to have had some prior experince with playing the Ukulele, and maybe also have memories of watching other more skilled users preform, and if you did watch someone preform, then you probably have very detailed memories stored of that event, whether you can recall them or not. So using those memories you were able to do the &#039;monkey see monkey do&#039; trick of imitation, but at a much higher level.<br />
+<br />
+But due to the way the archaic educational system works, we lose a lot of access to those inner resources. So therefore something like learning an instrument which should only take a matter of weeks or months, possibliy even days, with access to those resources, where as without access, takes years. Now imagine a piece of black paper with a hole the size of a pin in it, now shine a flashlight on the hole and imagine how much light is coming through. Now take another piece of black paper with a hole in it the size of a 3 inch hole and shine a flashlight on it. The point of the exercise? The pin hole is the amount of information that can get through on the educational system, the 3 inch hole would be the amount of information that can get through if we had more access to those inner resources. And of course the light from the flashlight representing information. I am not trying to say the educational system is bad, but there is a lot of research it could take advantage of that would bring it up to where it needs to be for the 21st Century, instead of being geared towards the late 19th to early 20th Century like it is now. At least in America.<br />
+<br />
+Any how, it is interesting to see something like that pop-up. It is possible for anyone on the forum to do that. I do have some information on the subject if anyone is interested.</div>
+		<textarea style="display: none;" id="desctxt_13177">I don&#039;t know about the supernatural part. It could be true. But as far as being able to play like that, it is possible to acheive something like that in probably any conceivable skill. Since you seem to have had some prior experince with playing the Ukulele, and maybe also have memories of watching other more skilled users preform, and if you did watch someone preform, then you probably have very detailed memories stored of that event, whether you can recall them or not. So using those memories you were able to do the &#039;monkey see monkey do&#039; trick of imitation, but at a much higher level.
+
+But due to the way the archaic educational system works, we lose a lot of access to those inner resources. So therefore something like learning an instrument which should only take a matter of weeks or months, possibliy even days, with access to those resources, where as without access, takes years. Now imagine a piece of black paper with a hole the size of a pin in it, now shine a flashlight on the hole and imagine how much light is coming through. Now take another piece of black paper with a hole in it the size of a 3 inch hole and shine a flashlight on it. The point of the exercise? The pin hole is the amount of information that can get through on the educational system, the 3 inch hole would be the amount of information that can get through if we had more access to those inner resources. And of course the light from the flashlight representing information. I am not trying to say the educational system is bad, but there is a lot of research it could take advantage of that would bring it up to where it needs to be for the 21st Century, instead of being geared towards the late 19th to early 20th Century like it is now. At least in America.
+
+Any how, it is interesting to see something like that pop-up. It is possible for anyone on the forum to do that. I do have some information on the subject if anyone is interested.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by X-Master, 3 years, 9 months ago<br />Posted 3 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Subliminal</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=879&amp;ref=1231742413" width="96" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13179" style="width: 100%; overflow: auto; min-height: 125px;">I don&#039;t really believe that&#039;s anything supernatural.<br />
+<br />
+It sounds like you have listened to his music a lot. Having a musical ear allows you to replicate any note you may hear. You may have unconciously been working out how to play what you&#039;ve been hearing, and that day you just happened to have a breakthrough.<br />
+<br />
+I only say this because, as a musician, I have had the same thing happen, myself. </div>
+		<textarea style="display: none;" id="desctxt_13179">I don&#039;t really believe that&#039;s anything supernatural.
+
+It sounds like you have listened to his music a lot. Having a musical ear allows you to replicate any note you may hear. You may have unconciously been working out how to play what you&#039;ve been hearing, and that day you just happened to have a breakthrough.
+
+I only say this because, as a musician, I have had the same thing happen, myself.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">NaThaNiel</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=871&amp;ref=1248839781" width="104" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13183" style="width: 100%; overflow: auto; min-height: 125px;">I agree with Subliminal; it was probably your subconscious practicing the songs as your conscious busied itself with other things. Its happened to me before. So far, it is the only way that I have been able to get results with psychokinesis (and only once at that).<br />
+<br />
+This is also like something I have seen in a number of books on writing. The process usually consists of some form of brainstorming, leaving the work for a while, and coming back to see what ideas you have. The point is to let the subconscious organize and collect what you already know then deliver it to the conscious in a ready to use form.<br />
+<br />
+Whether this should be considered &quot;supernatural&quot;, &quot;paranormal&quot;, or &quot;natural,&quot; is to be decided by one&#039;s own definitions of each. Personally, I think that many normal things that happen in our lives but that we never notice are, in fact, the very things that we seek as psychic and paranormal; we just never slow down, listen, feel, and realize that it&#039;s all around us.</div>
+		<textarea style="display: none;" id="desctxt_13183">I agree with Subliminal; it was probably your subconscious practicing the songs as your conscious busied itself with other things. Its happened to me before. So far, it is the only way that I have been able to get results with psychokinesis (and only once at that).
+
+This is also like something I have seen in a number of books on writing. The process usually consists of some form of brainstorming, leaving the work for a while, and coming back to see what ideas you have. The point is to let the subconscious organize and collect what you already know then deliver it to the conscious in a ready to use form.
+
+Whether this should be considered &quot;supernatural&quot;, &quot;paranormal&quot;, or &quot;natural,&quot; is to be decided by one&#039;s own definitions of each. Personally, I think that many normal things that happen in our lives but that we never notice are, in fact, the very things that we seek as psychic and paranormal; we just never slow down, listen, feel, and realize that it&#039;s all around us.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Darkness</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=886&amp;ref=1232436541" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13389" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by X-Master:</em><br />
+I don&#039;t know about the supernatural part. It could be true. But as far as being able to play like that, it is possible to acheive something like that in probably any conceivable skill. Since you seem to have had some prior experince with playing the Ukulele, and maybe also have memories of watching other more skilled users preform, and if you did watch someone preform, then you probably have very detailed memories stored of that event, whether you can recall them or not. So using those memories you were able to do the &#039;monkey see monkey do&#039; trick of imitation, but at a much higher level.<br />
+<br />
+But due to the way the archaic educational system works, we lose a lot of access to those inner resources. So therefore something like learning an instrument which should only take a matter of weeks or months, possibliy even days, with access to those resources, where as without access, takes years. Now imagine a piece of black paper with a hole the size of a pin in it, now shine a flashlight on the hole and imagine how much light is coming through. Now take another piece of black paper with a hole in it the size of a 3 inch hole and shine a flashlight on it. The point of the exercise? The pin hole is the amount of information that can get through on the educational system, the 3 inch hole would be the amount of information that can get through if we had more access to those inner resources. And of course the light from the flashlight representing information. I am not trying to say the educational system is bad, but there is a lot of research it could take advantage of that would bring it up to where it needs to be for the 21st Century, instead of being geared towards the late 19th to early 20th Century like it is now. At least in America.<br />
+<br />
+Any how, it is interesting to see something like that pop-up. It is possible for anyone on the forum to do that. I do have some information on the subject if anyone is interested.</div>Dude...SPEAKA ENGALISH<br />
+</div>
+		<textarea style="display: none;" id="desctxt_13389">[quote][i]posted by X-Master:[/i]
+I don&#039;t know about the supernatural part. It could be true. But as far as being able to play like that, it is possible to acheive something like that in probably any conceivable skill. Since you seem to have had some prior experince with playing the Ukulele, and maybe also have memories of watching other more skilled users preform, and if you did watch someone preform, then you probably have very detailed memories stored of that event, whether you can recall them or not. So using those memories you were able to do the &#039;monkey see monkey do&#039; trick of imitation, but at a much higher level.
+
+But due to the way the archaic educational system works, we lose a lot of access to those inner resources. So therefore something like learning an instrument which should only take a matter of weeks or months, possibliy even days, with access to those resources, where as without access, takes years. Now imagine a piece of black paper with a hole the size of a pin in it, now shine a flashlight on the hole and imagine how much light is coming through. Now take another piece of black paper with a hole in it the size of a 3 inch hole and shine a flashlight on it. The point of the exercise? The pin hole is the amount of information that can get through on the educational system, the 3 inch hole would be the amount of information that can get through if we had more access to those inner resources. And of course the light from the flashlight representing information. I am not trying to say the educational system is bad, but there is a lot of research it could take advantage of that would bring it up to where it needs to be for the 21st Century, instead of being geared towards the late 19th to early 20th Century like it is now. At least in America.
+
+Any how, it is interesting to see something like that pop-up. It is possible for anyone on the forum to do that. I do have some information on the subject if anyone is interested.[/quote]
+
+
+Dude...SPEAKA ENGALISH</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Psikillion</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=593&amp;ref=1213954510" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13391" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Subliminal:</em><br />
+I don&#039;t really believe that&#039;s anything supernatural.<br />
+<br />
+It sounds like you have listened to his music a lot. Having a musical ear allows you to replicate any note you may hear. You may have unconciously been working out how to play what you&#039;ve been hearing, and that day you just happened to have a breakthrough.<br />
+<br />
+I only say this because, as a musician, I have had the same thing happen, myself.</div>I agree, because I have family and friends who play musical instruments and sometimes they can play something that was just on the radio. They have no care for psionics.<br />
+<br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Darkness:</em><br />
+I thought I would do something like mess around with my Rubix Cube, when I decided to play my &#039;Ukulele (an instrument with four strings. Kinda like a small guitar)</div>I would say it is more like a lute than a guitar, because not all guitars are acoustic.<br />
+<br />
+Example of a lute:<br />
+<br />
+<img src="http://hamletgreenstage08.files.wordpress.com/2008/06/instrument-lute.jpg" alt="External Image" /><br />
+<br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Darkness:</em><br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by X-Master:</em><br />
+I don&#039;t know about the supernatural part. It could be true. But as far as being able to play like that, it is possible to acheive something like that in probably any conceivable skill. Since you seem to have had some prior experince with playing the Ukulele, and maybe also have memories of watching other more skilled users preform, and if you did watch someone preform, then you probably have very detailed memories stored of that event, whether you can recall them or not. So using those memories you were able to do the &#039;monkey see monkey do&#039; trick of imitation, but at a much higher level.<br />
+<br />
+But due to the way the archaic educational system works, we lose a lot of access to those inner resources. So therefore something like learning an instrument which should only take a matter of weeks or months, possibliy even days, with access to those resources, where as without access, takes years. Now imagine a piece of black paper with a hole the size of a pin in it, now shine a flashlight on the hole and imagine how much light is coming through. Now take another piece of black paper with a hole in it the size of a 3 inch hole and shine a flashlight on it. The point of the exercise? The pin hole is the amount of information that can get through on the educational system, the 3 inch hole would be the amount of information that can get through if we had more access to those inner resources. And of course the light from the flashlight representing information. I am not trying to say the educational system is bad, but there is a lot of research it could take advantage of that would bring it up to where it needs to be for the 21st Century, instead of being geared towards the late 19th to early 20th Century like it is now. At least in America.<br />
+<br />
+Any how, it is interesting to see something like that pop-up. It is possible for anyone on the forum to do that. I do have some information on the subject if anyone is interested.</div>Dude...SPEAKA ENGALISH</div>He is, the problem is you are 12 and he is at least 16. My bet is he is somewhere in the 18 to mid-20s, because the tone of his writing sounds like that of a college/university student.<br />
+<br />
+He has access to more information, more people of different beliefs, and has the capability of choosing what he believes. All of these can be done in the K to 12 grades in varying degrees, but you would have to work harder. I think it would also be safe to say that he also has more patience than a 12 year old (no offense).<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by X-Master:</em><br />
+I don&#039;t know about the supernatural part. It could be true. But as far as being able to play like that, it is possible to acheive something like that in probably any conceivable skill. Since you seem to have had some prior experince with playing the Ukulele, and maybe also have memories of watching other more skilled users preform, and if you did watch someone preform, then you probably have very detailed memories stored of that event, whether you can recall them or not. So using those memories you were able to do the &#039;monkey see monkey do&#039; trick of imitation, but at a much higher level.<br />
+<br />
+But due to the way the archaic educational system works, we lose a lot of access to those inner resources. So therefore something like learning an instrument which should only take a matter of weeks or months, possibliy even days, with access to those resources, where as without access, takes years. Now imagine a piece of black paper with a hole the size of a pin in it, now shine a flashlight on the hole and imagine how much light is coming through. Now take another piece of black paper with a hole in it the size of a 3 inch hole and shine a flashlight on it. The point of the exercise? The pin hole is the amount of information that can get through on the educational system, the 3 inch hole would be the amount of information that can get through if we had more access to those inner resources. And of course the light from the flashlight representing information. I am not trying to say the educational system is bad, but there is a lot of research it could take advantage of that would bring it up to where it needs to be for the 21st Century, instead of being geared towards the late 19th to early 20th Century like it is now. At least in America.<br />
+<br />
+Any how, it is interesting to see something like that pop-up. It is possible for anyone on the forum to do that. I do have some information on the subject if anyone is interested.</div>I am interested in some of this information, so send it to aenigmadolosaATgmailDOTcom.</div>
+		<textarea style="display: none;" id="desctxt_13391">[quote][i]posted by Subliminal:[/i]
+I don&#039;t really believe that&#039;s anything supernatural.
+
+It sounds like you have listened to his music a lot. Having a musical ear allows you to replicate any note you may hear. You may have unconciously been working out how to play what you&#039;ve been hearing, and that day you just happened to have a breakthrough.
+
+I only say this because, as a musician, I have had the same thing happen, myself.[/quote]
+
+I agree, because I have family and friends who play musical instruments and sometimes they can play something that was just on the radio. They have no care for psionics.
+
+[quote][i]posted by Darkness:[/i]
+I thought I would do something like mess around with my Rubix Cube, when I decided to play my &#039;Ukulele (an instrument with four strings. Kinda like a small guitar)[/quote]
+
+I would say it is more like a lute than a guitar, because not all guitars are acoustic.
+
+Example of a lute:
+
+[img]http://hamletgreenstage08.files.wordpress.com/2008/06/instrument-lute.jpg[/img]
+
+[quote][i]posted by Darkness:[/i]
+[quote][i]posted by X-Master:[/i]
+I don&#039;t know about the supernatural part. It could be true. But as far as being able to play like that, it is possible to acheive something like that in probably any conceivable skill. Since you seem to have had some prior experince with playing the Ukulele, and maybe also have memories of watching other more skilled users preform, and if you did watch someone preform, then you probably have very detailed memories stored of that event, whether you can recall them or not. So using those memories you were able to do the &#039;monkey see monkey do&#039; trick of imitation, but at a much higher level.
+
+But due to the way the archaic educational system works, we lose a lot of access to those inner resources. So therefore something like learning an instrument which should only take a matter of weeks or months, possibliy even days, with access to those resources, where as without access, takes years. Now imagine a piece of black paper with a hole the size of a pin in it, now shine a flashlight on the hole and imagine how much light is coming through. Now take another piece of black paper with a hole in it the size of a 3 inch hole and shine a flashlight on it. The point of the exercise? The pin hole is the amount of information that can get through on the educational system, the 3 inch hole would be the amount of information that can get through if we had more access to those inner resources. And of course the light from the flashlight representing information. I am not trying to say the educational system is bad, but there is a lot of research it could take advantage of that would bring it up to where it needs to be for the 21st Century, instead of being geared towards the late 19th to early 20th Century like it is now. At least in America.
+
+Any how, it is interesting to see something like that pop-up. It is possible for anyone on the forum to do that. I do have some information on the subject if anyone is interested.[/quote]
+
+
+Dude...SPEAKA ENGALISH[/quote]
+
+He is, the problem is you are 12 and he is at least 16. My bet is he is somewhere in the 18 to mid-20s, because the tone of his writing sounds like that of a college/university student.
+
+He has access to more information, more people of different beliefs, and has the capability of choosing what he believes. All of these can be done in the K to 12 grades in varying degrees, but you would have to work harder. I think it would also be safe to say that he also has more patience than a 12 year old (no offense).[quote][i]posted by X-Master:[/i]
+I don&#039;t know about the supernatural part. It could be true. But as far as being able to play like that, it is possible to acheive something like that in probably any conceivable skill. Since you seem to have had some prior experince with playing the Ukulele, and maybe also have memories of watching other more skilled users preform, and if you did watch someone preform, then you probably have very detailed memories stored of that event, whether you can recall them or not. So using those memories you were able to do the &#039;monkey see monkey do&#039; trick of imitation, but at a much higher level.
+
+But due to the way the archaic educational system works, we lose a lot of access to those inner resources. So therefore something like learning an instrument which should only take a matter of weeks or months, possibliy even days, with access to those resources, where as without access, takes years. Now imagine a piece of black paper with a hole the size of a pin in it, now shine a flashlight on the hole and imagine how much light is coming through. Now take another piece of black paper with a hole in it the size of a 3 inch hole and shine a flashlight on it. The point of the exercise? The pin hole is the amount of information that can get through on the educational system, the 3 inch hole would be the amount of information that can get through if we had more access to those inner resources. And of course the light from the flashlight representing information. I am not trying to say the educational system is bad, but there is a lot of research it could take advantage of that would bring it up to where it needs to be for the 21st Century, instead of being geared towards the late 19th to early 20th Century like it is now. At least in America.
+
+Any how, it is interesting to see something like that pop-up. It is possible for anyone on the forum to do that. I do have some information on the subject if anyone is interested.[/quote]
+
+I am interested in some of this information, so send it to aenigmadolosaATgmailDOTcom.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">bainzyboy14</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13403" style="width: 100%; overflow: auto; min-height: 125px;">hi this might be the answer when you use a rubix cube (i should know i have one)sometimes your mind goes blank and is open to any sounds and mimics them any more guestions email me i can also provide help with psi balls<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Darkness:</em><br />
+I&#039;ve recently figured out a few songs that I thought I would never be able to play. Yet here I am, a 12  year old kid, who can now play songs from Jake Shimabukuro. O.o It started out one night when I wasn&#039;t able to sleep. I thought I would do something like mess around with my Rubix Cube, when I decided to play my &#039;Ukulele (an instrument with four strings. Kinda like a small guitar) Anyway, I grabbed my iPod and started listening to Jake play some songs from his &#039;Gently Weeps&#039; CD. I just so happened to play the same chords he played.....WTF?! How is this possible? Am I some kind of musical genius or what? I never, ever, EVER could figure out anything he played, yet I can now do the impossible.  Sheesh, I wouldn&#039;t be surprized if I could fly.....well...that&#039;s an overstatement but still....I never thought I could play it....,When I was online one day, a long time ago, I read on a supernatural site that &quot;Sometimes, when people have sudden urges to do things, and they succeed at perfecting it, it means that they have been visited by someone or something that was talented in this region.&quot; HOW THE HELL DID I LEARN IT?!Oh and I haven&#039;t played in like, three months.</div></div>
+		<textarea style="display: none;" id="desctxt_13403">hi this might be the answer when you use a rubix cube (i should know i have one)sometimes your mind goes blank and is open to any sounds and mimics them any more guestions email me i can also provide help with psi balls[quote][i]posted by Darkness:[/i]
+I&#039;ve recently figured out a few songs that I thought I would never be able to play. Yet here I am, a 12  year old kid, who can now play songs from Jake Shimabukuro. O.o It started out one night when I wasn&#039;t able to sleep. I thought I would do something like mess around with my Rubix Cube, when I decided to play my &#039;Ukulele (an instrument with four strings. Kinda like a small guitar) Anyway, I grabbed my iPod and started listening to Jake play some songs from his &#039;Gently Weeps&#039; CD. I just so happened to play the same chords he played.....WTF?! How is this possible? Am I some kind of musical genius or what? I never, ever, EVER could figure out anything he played, yet I can now do the impossible.  Sheesh, I wouldn&#039;t be surprized if I could fly.....well...that&#039;s an overstatement but still....I never thought I could play it....,When I was online one day, a long time ago, I read on a supernatural site that &quot;Sometimes, when people have sudden urges to do things, and they succeed at perfecting it, it means that they have been visited by someone or something that was talented in this region.&quot; HOW THE HELL DID I LEARN IT?!Oh and I haven&#039;t played in like, three months.[/quote]</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 8 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=687" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 25 queries. 0.323 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

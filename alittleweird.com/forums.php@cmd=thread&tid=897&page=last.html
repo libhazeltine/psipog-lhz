@@ -1,0 +1,384 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Is it true?</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Is it true?</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Is it true?</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Dazhie</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=1038&amp;ref=1258908565" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_16162" style="width: 100%; overflow: auto; min-height: 125px;">If we go to youtube there&#039;s A LOT of evidence of the Illuminati presence.<br />
+Everywhere.<br />
+<br />
+Media, Music industry, Politics, even Coca-Cola. (which the symbol backwords means &#039;Alo Diabo&#039; = Hey Devil)<br />
+<br />
+Rihanna has a lot of songs talking about possession (when reviewed) like the one she keeps singing bum bum be-dum. in the vid they said bum was possession or stupid something like that. And be-dum, well, &quot;be dumb&quot;.<br />
+<br />
+Subliminal message? &quot;Hey, stupid stupid, be dumb&quot;<br />
+<br />
+Lady Gaga keeps doing the Eye Of Horus and oral sex songs like Pokerface (sorry about referring it, but I&#039;m not talking on it). Pokerface would be Poke her face? That&#039;s all on vids.<br />
+<br />
+I may send some more links, but I&#039;ll send this one for now:<br />
+<br />
+ <a href="http://www.youtube.com/watch?v=N4WaWjNNVGY" target="_blank">http://www.youtube.com/watch?v=N4WaWjNNVGY</a><br />
+<br />
+It speaks how Michael Jackson was against &#039;manipulation&#039; and probably he knew the truth, the video shows a lot more than that. It&#039;s good info on the matter.<br />
+<br />
+I would really enjoy yor opinion.<br />
+<br />
+If they control the world, it&#039;s a matter of time until the New Word Order gets effect or worse (ok, maybe not worse), a third world war (but pretty nasty).<br />
+<br />
+Are the 2012 Mayan prophecies related to the illuminati?<br />
+<br />
+I saw somewhere they spread the virus of AIDS and are producing some more.<br />
+<br />
+I am open-minded especially if it fits. That&#039;s my problem. It fits.<br />
+<br />
+Pretty weird. I mean... A little weird, huh? :P</div>
+		<textarea style="display: none;" id="desctxt_16162">If we go to youtube there&#039;s A LOT of evidence of the Illuminati presence.
+Everywhere.
+
+Media, Music industry, Politics, even Coca-Cola. (which the symbol backwords means &#039;Alo Diabo&#039; = Hey Devil)
+
+Rihanna has a lot of songs talking about possession (when reviewed) like the one she keeps singing bum bum be-dum. in the vid they said bum was possession or stupid something like that. And be-dum, well, &quot;be dumb&quot;.
+
+Subliminal message? &quot;Hey, stupid stupid, be dumb&quot;
+
+Lady Gaga keeps doing the Eye Of Horus and oral sex songs like Pokerface (sorry about referring it, but I&#039;m not talking on it). Pokerface would be Poke her face? That&#039;s all on vids.
+
+I may send some more links, but I&#039;ll send this one for now:
+
+http://www.youtube.com/watch?v=N4WaWjNNVGY
+
+It speaks how Michael Jackson was against &#039;manipulation&#039; and probably he knew the truth, the video shows a lot more than that. It&#039;s good info on the matter.
+
+I would really enjoy yor opinion.
+
+If they control the world, it&#039;s a matter of time until the New Word Order gets effect or worse (ok, maybe not worse), a third world war (but pretty nasty).
+
+Are the 2012 Mayan prophecies related to the illuminati?
+
+I saw somewhere they spread the virus of AIDS and are producing some more.
+
+I am open-minded especially if it fits. That&#039;s my problem. It fits.
+
+Pretty weird. I mean... A little weird, huh? :P</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Dazhie, 2 years, 11 months ago<br />Posted 2 years, 11 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Sussch</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=622&amp;ref=1252769070" width="100" height="92" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_16167" style="width: 100%; overflow: auto; min-height: 125px;">Interesting, but I don&#039;t think that many of these subliminal messages have been encoded on purpose.<br />
+<br />
+I guess that the diversity of languages and symbols could have contributed to this.<br />
+<br />
+The whole 2012 thing seems somewhat overblown - how could Mayans have seen something happen in such a distant future? Maybe they made a slight miscalculation or something and the so-called end of the world already occurred in the 16th or 17th century? But then again, why did they create a calendar that lasted beyond their own existence?<br />
+Let&#039;s just wait and see, what comes - it could be something spectacular or something as dull as the year 2000.<br />
+<br />
+As for the viruses, they have performed compulsory vaccinations that have led to a lot more deaths than the real viruses actually caused. Biological weaponry is a real problem and such an attack is difficult to prove.<br />
+<br />
+Just an opinion without any proofs..</div>
+		<textarea style="display: none;" id="desctxt_16167">Interesting, but I don&#039;t think that many of these subliminal messages have been encoded on purpose.
+
+I guess that the diversity of languages and symbols could have contributed to this.
+
+The whole 2012 thing seems somewhat overblown - how could Mayans have seen something happen in such a distant future? Maybe they made a slight miscalculation or something and the so-called end of the world already occurred in the 16th or 17th century? But then again, why did they create a calendar that lasted beyond their own existence?
+Let&#039;s just wait and see, what comes - it could be something spectacular or something as dull as the year 2000.
+
+As for the viruses, they have performed compulsory vaccinations that have led to a lot more deaths than the real viruses actually caused. Biological weaponry is a real problem and such an attack is difficult to prove.
+
+Just an opinion without any proofs..</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 2 years, 11 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Kube</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=952&amp;ref=1249239276" width="102" height="77" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_16171" style="width: 100%; overflow: auto; min-height: 125px;">I think there&#039;s much more chances of being Singularity in I think it&#039;s around 2045 than the NWO. I just don&#039;t think a powerful group would spend so much time plotting behind the curtains like that. If they have so much influence, they&#039;d make a move so everyone would know about it and get their thing going in my opinion...<br />
+<br />
+About AIDS: Are you referring to that video where the guy says George W. Bush built a time machine, went to Mesopotamia during the Jurassic, and spread his man-made AIDS to infect all dinosaurs, making lots of fossils in the area and that&#039;s why he sent his troops there to take over and recover the fossil fuel he create with AIDS in the Jurassic? Things like this is why I tend not to believe in things about the Illuminati... Oh, also, AIDS isn&#039;t a virus; HIV is. ;D</div>
+		<textarea style="display: none;" id="desctxt_16171">I think there&#039;s much more chances of being Singularity in I think it&#039;s around 2045 than the NWO. I just don&#039;t think a powerful group would spend so much time plotting behind the curtains like that. If they have so much influence, they&#039;d make a move so everyone would know about it and get their thing going in my opinion...
+
+About AIDS: Are you referring to that video where the guy says George W. Bush built a time machine, went to Mesopotamia during the Jurassic, and spread his man-made AIDS to infect all dinosaurs, making lots of fossils in the area and that&#039;s why he sent his troops there to take over and recover the fossil fuel he create with AIDS in the Jurassic? Things like this is why I tend not to believe in things about the Illuminati... Oh, also, AIDS isn&#039;t a virus; HIV is. ;D</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 2 years, 11 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Dash</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=69&amp;ref=1224210982" width="113" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_16174" style="width: 100%; overflow: auto; min-height: 125px;">Oh, sure..   Weaken their systems with AIDS and then send swine flu after them..<br />
+<br />
+After all that, maybe the vampire robot Nazis who are also zombies will flood the world, ridding it of the ever present &quot;hippie,&quot;  And promoting republican trends for the next thousand years?<br />
+<br />
+LIKE THEY DID TO THE BRITISH!!!!<br />
+<br />
+<br />
+I wouldn&#039;t invest too much time into this, man..<br />
+Even if they are behind everything, what difference would it make?<br />
+<br />
+We&#039;d still listen to their catchy songs, eat their crappy breakfast cereal, and work a dead-end job with no hope of anything better than the mediocre.<br />
+<br />
+And unless you&#039;ll be the one to lead the revolution, I suggest accepting your perceived reality, and just try to die happy.<br />
+<br />
+<br />
+Life doesn&#039;t have to be easy or make sense for you to be happy.   Roswell, 9/11, and the crucifixion of Jesus taught us that.<br />
+If you believe in any of that stuff, that is..<br />
+<br />
+Then again, I could be transmitting from a chip in my brain to allude you..  heh heh..  you never know, right?<br />
+<br />
+</div>
+		<textarea style="display: none;" id="desctxt_16174">Oh, sure..   Weaken their systems with AIDS and then send swine flu after them..
+
+After all that, maybe the vampire robot Nazis who are also zombies will flood the world, ridding it of the ever present &quot;hippie,&quot;  And promoting republican trends for the next thousand years?
+
+LIKE THEY DID TO THE BRITISH!!!!
+
+
+I wouldn&#039;t invest too much time into this, man..
+Even if they are behind everything, what difference would it make?
+
+We&#039;d still listen to their catchy songs, eat their crappy breakfast cereal, and work a dead-end job with no hope of anything better than the mediocre.
+
+And unless you&#039;ll be the one to lead the revolution, I suggest accepting your perceived reality, and just try to die happy.
+
+
+Life doesn&#039;t have to be easy or make sense for you to be happy.   Roswell, 9/11, and the crucifixion of Jesus taught us that.
+If you believe in any of that stuff, that is..
+
+Then again, I could be transmitting from a chip in my brain to allude you..  heh heh..  you never know, right?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 2 years, 11 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Dazhie</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=1038&amp;ref=1258908565" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_16175" style="width: 100%; overflow: auto; min-height: 125px;">Sussch, if they weren&#039;t enconded on purpose there a lot of dumb geniuses. I mean, after they discovered two lyrics on the same song, proud geniuses! I don&#039;t believe that much on coincidences. The mayans calendar is just it, a calendar. Which marks an end and a beginning of a new era. It&#039;s a round calendar, once it ends, gets back. I don&#039;t believe really something is going to happen. Why wait until the last second? That idea of spreading virus (HIV, not AIDS, sorry), is just that. Idea. But there were prophecies that remark those kind of things. Swine flu might be a little stupid right now, but it brought a lot of deaths. How about if the next time it takes a little more and spreads too much? Let&#039;s hope nop, as Sussch said, Biological attacks are a big problem (:<br />
+<br />
+And I agree with you Kube. Why not now if they do exist and control everything? I would like to answer it but I just saw vids which had some controversial stuff. Characteristic handshakes, hidden messages, symbols everywhere. I mean, one is coincidence, two is luck, three is bad luck, how about more than a million? It just doesn&#039;t fit right.<br />
+<br />
+Finally, Dash.<br />
+I&#039;m not that interested in living happy. Well, i am, just this isn&#039;t the happy I want. As you said, Life Doesn&#039;t Have To Be Easy. Right, I can&#039;t fight against the system and die, not on a cross for God&#039;s sake. But a bullet in the head. Or, I can live in a dead end job doing something I hate till the rest of my life. That&#039;s the difference between dying fast or dying slowly.<br />
+<br />
+I just believe if something&#039;s wrong, people should fight against it.<br />
+<br />
+&#039;Oh, this song makes me want to kill myself. But has such a nice chorus.&#039;<br />
+<br />
+And not support it.</div>
+		<textarea style="display: none;" id="desctxt_16175">Sussch, if they weren&#039;t enconded on purpose there a lot of dumb geniuses. I mean, after they discovered two lyrics on the same song, proud geniuses! I don&#039;t believe that much on coincidences. The mayans calendar is just it, a calendar. Which marks an end and a beginning of a new era. It&#039;s a round calendar, once it ends, gets back. I don&#039;t believe really something is going to happen. Why wait until the last second? That idea of spreading virus (HIV, not AIDS, sorry), is just that. Idea. But there were prophecies that remark those kind of things. Swine flu might be a little stupid right now, but it brought a lot of deaths. How about if the next time it takes a little more and spreads too much? Let&#039;s hope nop, as Sussch said, Biological attacks are a big problem (:
+
+And I agree with you Kube. Why not now if they do exist and control everything? I would like to answer it but I just saw vids which had some controversial stuff. Characteristic handshakes, hidden messages, symbols everywhere. I mean, one is coincidence, two is luck, three is bad luck, how about more than a million? It just doesn&#039;t fit right.
+
+Finally, Dash.
+I&#039;m not that interested in living happy. Well, i am, just this isn&#039;t the happy I want. As you said, Life Doesn&#039;t Have To Be Easy. Right, I can&#039;t fight against the system and die, not on a cross for God&#039;s sake. But a bullet in the head. Or, I can live in a dead end job doing something I hate till the rest of my life. That&#039;s the difference between dying fast or dying slowly.
+
+I just believe if something&#039;s wrong, people should fight against it.
+
+&#039;Oh, this song makes me want to kill myself. But has such a nice chorus.&#039;
+
+And not support it.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 2 years, 11 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=897" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 21 queries. 0.277 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

@@ -1,0 +1,459 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; The end of technology?</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; The end of technology?</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">The end of technology?</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">SheepKing</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=211&amp;ref=1222648137" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12539" style="width: 100%; overflow: auto; min-height: 125px;">I was reading an article about Parallel Processing/Programing (Using multiple &quot;cores&quot; in PC to increase speed/efficiency) and it kind of got me thinking about when, if anytime soon, technology will &#039;slow down&#039;.<br />
+<br />
+Does it have to reach an end point one day? Will there always be something new to discover? Even if there is always something new to discover, how much impact will those future discoveries about the nature of the universe, computer, or anything else actually impact the lives of people?<br />
+<br />
+How dramatically will people allow their own lives to change because of technology?<br />
+<br />
+Tell me what you think.</div>
+		<textarea style="display: none;" id="desctxt_12539">I was reading an article about Parallel Processing/Programing (Using multiple &quot;cores&quot; in PC to increase speed/efficiency) and it kind of got me thinking about when, if anytime soon, technology will &#039;slow down&#039;.
+
+Does it have to reach an end point one day? Will there always be something new to discover? Even if there is always something new to discover, how much impact will those future discoveries about the nature of the universe, computer, or anything else actually impact the lives of people?
+
+How dramatically will people allow their own lives to change because of technology?
+
+Tell me what you think.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 11 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Antisankari</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=224&amp;ref=1213032338" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12540" style="width: 100%; overflow: auto; min-height: 125px;">Multicore programming is a bitch to implement.<br />
+Its just a &quot;cheap&quot; way to increase processing power by burdening the programmer with the horrible task of managing concurrency. :(<br />
+<br />
+Plus the sad fact is that quite many mathematical algorithms are completely linear in their execution. Each phase depending on results gained before. Cant really execute that in parallel.<br />
+<br />
+Multicores would be best used to run several independent systems in parallel. Less communication those systems would have between eachother, the better.<br />
+<br />
+<br />
+Why would theren not be any &quot;new discoveries&quot;? Especially computer science can evolve in both software and hardware fields quite infinitely.  Hardware level speed of execution could come near to its absolute maximum some day, but on the software side, only imagination is the limit.</div>
+		<textarea style="display: none;" id="desctxt_12540">Multicore programming is a bitch to implement.
+Its just a &quot;cheap&quot; way to increase processing power by burdening the programmer with the horrible task of managing concurrency. :(
+
+Plus the sad fact is that quite many mathematical algorithms are completely linear in their execution. Each phase depending on results gained before. Cant really execute that in parallel.
+
+Multicores would be best used to run several independent systems in parallel. Less communication those systems would have between eachother, the better.
+
+
+Why would theren not be any &quot;new discoveries&quot;? Especially computer science can evolve in both software and hardware fields quite infinitely.  Hardware level speed of execution could come near to its absolute maximum some day, but on the software side, only imagination is the limit.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Antisankari, 3 years, 11 months ago<br />Posted 3 years, 11 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Vimick</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12542" style="width: 100%; overflow: auto; min-height: 125px;">moore&#039;s law.<br />
+<br />
+&#039;nuff said<br />
+<br />
+(look it up if you dont know what im talking about)</div>
+		<textarea style="display: none;" id="desctxt_12542">moore&#039;s law.
+
+&#039;nuff said
+
+(look it up if you dont know what im talking about)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 11 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">joke-lain</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=517&amp;ref=1210639719" width="103" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12543" style="width: 100%; overflow: auto; min-height: 125px;">As long as there are stars in the sky, and numbers to count, Technology will continue.<br />
+<br />
+Lol, I don&#039;t know. I believe there could be a &quot;stopping&quot; point, but it will be billions of years before that happens.<br />
+<br />
+As for the Parallel Processing/Programing, I have never heard of it before. I would love to hear more, though.</div>
+		<textarea style="display: none;" id="desctxt_12543">As long as there are stars in the sky, and numbers to count, Technology will continue.
+
+Lol, I don&#039;t know. I believe there could be a &quot;stopping&quot; point, but it will be billions of years before that happens.
+
+As for the Parallel Processing/Programing, I have never heard of it before. I would love to hear more, though.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 11 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Psikillion</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=593&amp;ref=1213954510" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12545" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Vimick:</em><br />
+moore&#039;s law.<br />
+<br />
+&#039;nuff said<br />
+<br />
+(look it up if you dont know what im talking about)</div>Actually not completely true, the amount of transistors that can be put on a chip will reach a plateau eventually.  <a href="http://en.wikipedia.org/wiki/Moore%27s_law#Ultimate_limits_of_the_law" target="_blank">http://en.wikipedia.org/wiki/Moore%27s_law#Ultimate_limits_of_the_law</a><br />
+<br />
+However, with photonic transistors (using light instead of electricity) being worked on it is possible that we may continue moore&#039;s law after electronic transistors plateau.<br />
+<br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by SheepKing:</em><br />
+I was reading an article about Parallel Processing/Programing (Using multiple &quot;cores&quot; in PC to increase speed/efficiency) and it kind of got me thinking about when, if anytime soon, technology will &#039;slow down&#039;.<br />
+<br />
+Does it have to reach an end point one day? Will there always be something new to discover? Even if there is always something new to discover, how much impact will those future discoveries about the nature of the universe, computer, or anything else actually impact the lives of people?<br />
+<br />
+How dramatically will people allow their own lives to change because of technology?<br />
+<br />
+Tell me what you think.</div>Technology won&#039;t end unless society ends. Technology keeps expanding in more ways then one, so who knows how much impact it would affect us in the future?</div>
+		<textarea style="display: none;" id="desctxt_12545">[quote][i]posted by Vimick:[/i]
+moore&#039;s law.
+
+&#039;nuff said
+
+(look it up if you dont know what im talking about)[/quote]
+
+Actually not completely true, the amount of transistors that can be put on a chip will reach a plateau eventually. http://en.wikipedia.org/wiki/Moore%27s_law#Ultimate_limits_of_the_law
+
+However, with photonic transistors (using light instead of electricity) being worked on it is possible that we may continue moore&#039;s law after electronic transistors plateau.
+
+[quote][i]posted by SheepKing:[/i]
+I was reading an article about Parallel Processing/Programing (Using multiple &quot;cores&quot; in PC to increase speed/efficiency) and it kind of got me thinking about when, if anytime soon, technology will &#039;slow down&#039;.
+
+Does it have to reach an end point one day? Will there always be something new to discover? Even if there is always something new to discover, how much impact will those future discoveries about the nature of the universe, computer, or anything else actually impact the lives of people?
+
+How dramatically will people allow their own lives to change because of technology?
+
+Tell me what you think.[/quote]
+
+Technology won&#039;t end unless society ends. Technology keeps expanding in more ways then one, so who knows how much impact it would affect us in the future?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 11 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Antisankari</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=224&amp;ref=1213032338" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12547" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by joke-lain:</em><br />
+<br />
+As for the Parallel Processing/Programing, I have never heard of it before. I would love to hear more, though.</div>Easiest way you could describe its goals would go along these lines.<br />
+<br />
+&quot;If you have a housemaiden who cleans your house in one hour, How would you organize 120 housemaids in a way that they could clean your house in 30 seconds?&quot;<br />
+<br />
+Its not easy. If there is only 1 mop, and 1 bucket and possibly just a single broom, they need to be very well organized. Otherwise some maids will wait for some others to release their resources for others.<br />
+<br />
+<br />
+On the other hand, you must do two calculations that both take 1 second to perform. With a single core, you would first calculate the first one and right after you would do the other one. With multicore processing you can actually have one core performing the other calculation while the other core is doing its own one. <br />
+<br />
+Naturally it only works if the calculations do not have any dependencies.<br />
+<br />
+<br />
+This is the near future of the computing as they have almost given up on silicon based single chip based development.<br />
+</div>
+		<textarea style="display: none;" id="desctxt_12547">[quote][i]posted by joke-lain:[/i]
+
+As for the Parallel Processing/Programing, I have never heard of it before. I would love to hear more, though.[/quote]
+
+Easiest way you could describe its goals would go along these lines.
+
+&quot;If you have a housemaiden who cleans your house in one hour, How would you organize 120 housemaids in a way that they could clean your house in 30 seconds?&quot;
+
+Its not easy. If there is only 1 mop, and 1 bucket and possibly just a single broom, they need to be very well organized. Otherwise some maids will wait for some others to release their resources for others.
+
+
+On the other hand, you must do two calculations that both take 1 second to perform. With a single core, you would first calculate the first one and right after you would do the other one. With multicore processing you can actually have one core performing the other calculation while the other core is doing its own one. 
+
+Naturally it only works if the calculations do not have any dependencies.
+
+
+This is the near future of the computing as they have almost given up on silicon based single chip based development.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 11 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">templedog</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=862&amp;ref=1229687303" width="125" height="117" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12549" style="width: 100%; overflow: auto; min-height: 125px;">Technology? I donno, we are always striving to catch the speed of light. </div>
+		<textarea style="display: none;" id="desctxt_12549">Technology? I donno, we are always striving to catch the speed of light.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 11 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">SheepKing</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=211&amp;ref=1222648137" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12554" style="width: 100%; overflow: auto; min-height: 125px;">What happens when there isn&#039;t enough economic incentive for the companies that produce technology for personal use to continue to do so?</div>
+		<textarea style="display: none;" id="desctxt_12554">What happens when there isn&#039;t enough economic incentive for the companies that produce technology for personal use to continue to do so?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 11 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Psikillion</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=593&amp;ref=1213954510" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12555" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by SheepKing:</em><br />
+What happens when there isn&#039;t enough economic incentive for the companies that produce technology for personal use to continue to do so?</div>Well that is interesting, I see three scenarios:<br />
+<br />
+1. We go back to the barter system in order to continue making technology.<br />
+<br />
+2. We embrace socialism so much that we getting rid of the concept of &quot;wealth&quot; and all you need is to ask to have said thing you need.<br />
+<br />
+3. Economic depression, world chaos and society collapses. (far more likely of the three)</div>
+		<textarea style="display: none;" id="desctxt_12555">[quote][i]posted by SheepKing:[/i]
+What happens when there isn&#039;t enough economic incentive for the companies that produce technology for personal use to continue to do so?[/quote]
+
+Well that is interesting, I see three scenarios:
+
+1. We go back to the barter system in order to continue making technology.
+
+2. We embrace socialism so much that we getting rid of the concept of &quot;wealth&quot; and all you need is to ask to have said thing you need.
+
+3. Economic depression, world chaos and society collapses. (far more likely of the three)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 11 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">f3licks</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=848&amp;ref=1227833859" width="125" height="78" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12565" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by templedog:</em><br />
+Technology? I donno, we are always striving to catch the speed of light.</div>Matter can&#039;t go the speed of light.<br />
+<br />
+</div>
+		<textarea style="display: none;" id="desctxt_12565">[quote][i]posted by templedog:[/i]
+Technology? I donno, we are always striving to catch the speed of light.[/quote]
+
+Matter can&#039;t go the speed of light.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 11 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">kiepmad</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12608" style="width: 100%; overflow: auto; min-height: 125px;">There are always economic incentive for companies, except if you have a monopol. (microsoft anyone :P )<br />
+<br />
+anyway, progress cannot be stopped. How do you make money? be better then the other company, ie. have better technology.<br />
+<br />
+Additionnally, companies rely on new technology to make customers buy new products, ie. another computer, tv, cellphone. If they hadn&#039;t invented Blue Ray, none would buy any new video-playing devices after having a nicely working dvd-player, except if they break. But if you make your products break early, none will buy them, because there&#039;s probably a better alternative.</div>
+		<textarea style="display: none;" id="desctxt_12608">There are always economic incentive for companies, except if you have a monopol. (microsoft anyone :P )
+
+anyway, progress cannot be stopped. How do you make money? be better then the other company, ie. have better technology.
+
+Additionnally, companies rely on new technology to make customers buy new products, ie. another computer, tv, cellphone. If they hadn&#039;t invented Blue Ray, none would buy any new video-playing devices after having a nicely working dvd-player, except if they break. But if you make your products break early, none will buy them, because there&#039;s probably a better alternative.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 11 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">X-Master</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=433&amp;ref=1238933408" width="115" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12610" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by f3licks:</em><br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by templedog:</em><br />
+Technology? I donno, we are always striving to catch the speed of light.</div>Matter can&#039;t go the speed of light.</div>Well based on our current understanding of physics and present technological capacity it can&#039;t.<br />
+<br />
+I have to agree with Psikillion, that technological progress will not end until society does. Of course, that only means human society other societies may continue to exist, but that is beyond the scope of this thread.<br />
+<br />
+</div>
+		<textarea style="display: none;" id="desctxt_12610">[quote][i]posted by f3licks:[/i]
+[quote][i]posted by templedog:[/i]
+Technology? I donno, we are always striving to catch the speed of light.[/quote]
+
+Matter can&#039;t go the speed of light.[/quote]
+
+Well based on our current understanding of physics and present technological capacity it can&#039;t.
+
+I have to agree with Psikillion, that technological progress will not end until society does. Of course, that only means human society other societies may continue to exist, but that is beyond the scope of this thread.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 11 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=648" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 28 queries. 0.330 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

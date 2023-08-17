@@ -1,0 +1,414 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; That sort of seeing things with your eyes closed thing</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; That sort of seeing things with your eyes closed thing</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">That sort of seeing things with your eyes closed thing</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">bright</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=442&amp;ref=1219022178" width="112" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10970" style="width: 100%; overflow: auto; min-height: 125px;">I&#039;m sure there&#039;s some technical psionic lingo describing this but does anyone get that thing where their eyes are closed but they can see through them (well not through the eyelids but you know). It&#039;s only ever happened to me a few times, and now I&#039;m concentrating on trying to induce it. <br />
+<br />
+Time number one: high school, falling asleep in science class but still talking to friend, saw through the table, through my shoe, at my toes. I moved each one and saw it move, and also whilst doing this sleepily told my friend what was going on.<br />
+<br />
+Time Number TWO! some groggy morning.<br />
+<br />
+Time number three, a few days ago in the bath I started falling asleep but couldn&#039;t completely fall asleep because I was in the bath, I then saw my hands, and I moved my fingers, the more lucid I got the more out of focus it got.<br />
+<br />
+Time number three: today in the bath, it happened again, I would say with less success but still well enough.<br />
+<br />
+Does anyone have any explanations for this or any informed advice about what to try next?</div>
+		<textarea style="display: none;" id="desctxt_10970">I&#039;m sure there&#039;s some technical psionic lingo describing this but does anyone get that thing where their eyes are closed but they can see through them (well not through the eyelids but you know). It&#039;s only ever happened to me a few times, and now I&#039;m concentrating on trying to induce it. 
+
+Time number one: high school, falling asleep in science class but still talking to friend, saw through the table, through my shoe, at my toes. I moved each one and saw it move, and also whilst doing this sleepily told my friend what was going on.
+
+Time Number TWO! some groggy morning.
+
+Time number three, a few days ago in the bath I started falling asleep but couldn&#039;t completely fall asleep because I was in the bath, I then saw my hands, and I moved my fingers, the more lucid I got the more out of focus it got.
+
+Time number three: today in the bath, it happened again, I would say with less success but still well enough.
+
+Does anyone have any explanations for this or any informed advice about what to try next?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">DarkTiger</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10972" style="width: 100%; overflow: auto; min-height: 125px;">No explanation but I guess it&#039;s kind of how you see though an OBE. I have had the same experience (mostly when I&#039;m sleepy). It&#039;s kind of cool, I don&#039;t know what it&#039;s called though, but pretty weird. Sometimes, if I concentrate, I can get to this state, but I&#039;ve only been able to do it twice (plus, it was right after it had happened by accident)<br />
+<br />
+*LoL I was going to make a thread about this a week ago</div>
+		<textarea style="display: none;" id="desctxt_10972">No explanation but I guess it&#039;s kind of how you see though an OBE. I have had the same experience (mostly when I&#039;m sleepy). It&#039;s kind of cool, I don&#039;t know what it&#039;s called though, but pretty weird. Sometimes, if I concentrate, I can get to this state, but I&#039;ve only been able to do it twice (plus, it was right after it had happened by accident)
+
+*LoL I was going to make a thread about this a week ago</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by DarkTiger, 4 years, 4 months ago<br />Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">bright</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=442&amp;ref=1219022178" width="112" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10975" style="width: 100%; overflow: auto; min-height: 125px;">LOL I guess you get the silver, or do I get the silver :s</div>
+		<textarea style="display: none;" id="desctxt_10975">LOL I guess you get the silver, or do I get the silver :s</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">delimew</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=108&amp;ref=1205485279" width="39" height="42" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10977" style="width: 100%; overflow: auto; min-height: 125px;">it sounds to me like you could be having an OBE of sorts. does it feel that way to you at all?</div>
+		<textarea style="display: none;" id="desctxt_10977">it sounds to me like you could be having an OBE of sorts. does it feel that way to you at all?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">DigGil</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10978" style="width: 100%; overflow: auto; min-height: 125px;">I read somewhere in this forum (the videos section I think) about a german teaching people to read with the eyes closed.<br />
+<br />
+I think that a way to see (or &quot;see&quot;) without eyes is using astral hands or Remote Viewing (try out this link about a RV investigator: <a href="http://www.jackhouck.com" target="_blank">www.jackhouck.com</a>).</div>
+		<textarea style="display: none;" id="desctxt_10978">I read somewhere in this forum (the videos section I think) about a german teaching people to read with the eyes closed.
+
+I think that a way to see (or &quot;see&quot;) without eyes is using astral hands or Remote Viewing (try out this link about a RV investigator: www.jackhouck.com).</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Faceless</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=570&amp;ref=1214279440" width="83" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10986" style="width: 100%; overflow: auto; min-height: 125px;">this has happened to me too. i was starting to fall asleepin biology and my teacher yelled at me cause i had my eyes shut , buut i said no they wernt i just watched you put stuff up on the chalk board and i wrote it down. he shrugged and got back to teaching. i didnt see through anything that i can remember. <br />
+i have done remote veiwing before, but not obe(that i know of). </div>
+		<textarea style="display: none;" id="desctxt_10986">this has happened to me too. i was starting to fall asleepin biology and my teacher yelled at me cause i had my eyes shut , buut i said no they wernt i just watched you put stuff up on the chalk board and i wrote it down. he shrugged and got back to teaching. i didnt see through anything that i can remember. 
+i have done remote veiwing before, but not obe(that i know of).</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">bright</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=442&amp;ref=1219022178" width="112" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10989" style="width: 100%; overflow: auto; min-height: 125px;">It may have been a minor obe is such a thing exists, but i do doubt it. I&#039;m wondering though, if such a thing exists then why don&#039;t blind people report of it happening? </div>
+		<textarea style="display: none;" id="desctxt_10989">It may have been a minor obe is such a thing exists, but i do doubt it. I&#039;m wondering though, if such a thing exists then why don&#039;t blind people report of it happening?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">delimew</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=108&amp;ref=1205485279" width="39" height="42" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10991" style="width: 100%; overflow: auto; min-height: 125px;">that&#039;s... an interesting question. i&#039;ll have to think about that.<br />
+<br />
+though, while a little of topic, i have seen blind people walking around by themself in a big room which was supported by pillars. there were times i was sure someone was about to walk into them, but the always walked around instead. i don&#039;t think they even realized they did it. it was kinda cool IMO.</div>
+		<textarea style="display: none;" id="desctxt_10991">that&#039;s... an interesting question. i&#039;ll have to think about that.
+
+though, while a little of topic, i have seen blind people walking around by themself in a big room which was supported by pillars. there were times i was sure someone was about to walk into them, but the always walked around instead. i don&#039;t think they even realized they did it. it was kinda cool IMO.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">DigGil</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10993" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by bright:</em><br />
+It may have been a minor obe is such a thing exists, but i do doubt it. I&#039;m wondering though, if such a thing exists then why don&#039;t blind people report of it happening?</div>Because they don&#039;t beleive they can do it, it&#039;s like psyballs, or riding a bike.<br />
+<br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by delimew:</em><br />
+that&#039;s... an interesting question. i&#039;ll have to think about that.<br />
+<br />
+though, while a little of topic, i have seen blind people walking around by themself in a big room which was supported by pillars. there were times i was sure someone was about to walk into them, but the always walked around instead. i don&#039;t think they even realized they did it. it was kinda cool IMO.</div>I&#039;ve heard about that too and I know why: Probabily that room is from theirs house, they remember how theirs home is. Just a simple thing people are used to.</div>
+		<textarea style="display: none;" id="desctxt_10993">[quote][i]posted by bright:[/i]
+It may have been a minor obe is such a thing exists, but i do doubt it. I&#039;m wondering though, if such a thing exists then why don&#039;t blind people report of it happening?[/quote]
+
+Because they don&#039;t beleive they can do it, it&#039;s like psyballs, or riding a bike.
+
+[quote][i]posted by delimew:[/i]
+that&#039;s... an interesting question. i&#039;ll have to think about that.
+
+though, while a little of topic, i have seen blind people walking around by themself in a big room which was supported by pillars. there were times i was sure someone was about to walk into them, but the always walked around instead. i don&#039;t think they even realized they did it. it was kinda cool IMO.[/quote]
+
+I&#039;ve heard about that too and I know why: Probabily that room is from theirs house, they remember how theirs home is. Just a simple thing people are used to.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">delimew</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=108&amp;ref=1205485279" width="39" height="42" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10994" style="width: 100%; overflow: auto; min-height: 125px;">actually, no. sorry, I was in a hurry and forgot to mention that. it was at some place where we were staying at for some blind foundation gathering thing (I&#039;m near blind myself). I don&#039;t think they&#039;d even been there before.</div>
+		<textarea style="display: none;" id="desctxt_10994">actually, no. sorry, I was in a hurry and forgot to mention that. it was at some place where we were staying at for some blind foundation gathering thing (I&#039;m near blind myself). I don&#039;t think they&#039;d even been there before.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">somefatguy</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=36&amp;ref=1209135545" width="90" height="89" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10995" style="width: 100%; overflow: auto; min-height: 125px;">I have encountered a few instances where I could sort of see through my closed eye-lids as well. But, I always considered it to be fake in a way. My explanation is that my mind predicted surrounding objects around me according to other senses, memory, and logic. For instance, if I were to move my hands in front of my face while my eyes were closed, I would see them moving because I know they are moving, so my mind just fills in the blank. I have also looked around my room with my eyes closed, and in a way I also saw the room, but once again, my theory is that my mind just used it&#039;s memory to draw a picture of what is there.  </div>
+		<textarea style="display: none;" id="desctxt_10995">I have encountered a few instances where I could sort of see through my closed eye-lids as well. But, I always considered it to be fake in a way. My explanation is that my mind predicted surrounding objects around me according to other senses, memory, and logic. For instance, if I were to move my hands in front of my face while my eyes were closed, I would see them moving because I know they are moving, so my mind just fills in the blank. I have also looked around my room with my eyes closed, and in a way I also saw the room, but once again, my theory is that my mind just used it&#039;s memory to draw a picture of what is there.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">DigGil</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10997" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>Remembaring post by DigGil:</em><br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by delimew:</em><br />
+that&#039;s... an interesting question. i&#039;ll have to think about that.<br />
+<br />
+though, while a little of topic, i have seen blind people walking around by themself in a big room which was supported by pillars. there were times i was sure someone was about to walk into them, but the always walked around instead. i don&#039;t think they even realized they did it. it was kinda cool IMO.</div>I&#039;ve heard about that too and I know why: Probabily that room is from theirs house, they remember how theirs home is. Just a simple thing people are used to.</div>You got the point.</div>
+		<textarea style="display: none;" id="desctxt_10997">[quote][i]Remembaring post by DigGil:[/i]
+[quote][i]posted by delimew:[/i]
+that&#039;s... an interesting question. i&#039;ll have to think about that.
+
+though, while a little of topic, i have seen blind people walking around by themself in a big room which was supported by pillars. there were times i was sure someone was about to walk into them, but the always walked around instead. i don&#039;t think they even realized they did it. it was kinda cool IMO.[/quote]
+
+I&#039;ve heard about that too and I know why: Probabily that room is from theirs house, they remember how theirs home is. Just a simple thing people are used to.[/quote]
+
+You got the point.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">bright</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=442&amp;ref=1219022178" width="112" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10999" style="width: 100%; overflow: auto; min-height: 125px;">Somefatguy, even if it turns out it&#039;s just your mind pulling together several pieces of information to create this picture , or experience. Isn&#039;t still really amazing, isn&#039;t it still something worth persuing. I wonder sometimes about the elaborate ways my mind could be tricking me, or mistaking one really unlikely thing for one unlikely thing, and I&#039;ve come to the conclusion that regardless of what these things are they still demonstrate the awesome power of the mind, even if what we are descovering isn&#039;t what we originally think it is, it&#039;s still something worth discovering, it&#039;s still pioneering. <br />
+<br />
+So if i&#039;m not seeing through my eyes but i&#039;m only remembering what went where and by changing certain pieces of information like moving a limb predicting or guessing how my environment would react, that&#039;s a pretty great skill that could be applied in life or science or WHATEVER; you see where i&#039;m going with this.</div>
+		<textarea style="display: none;" id="desctxt_10999">Somefatguy, even if it turns out it&#039;s just your mind pulling together several pieces of information to create this picture , or experience. Isn&#039;t still really amazing, isn&#039;t it still something worth persuing. I wonder sometimes about the elaborate ways my mind could be tricking me, or mistaking one really unlikely thing for one unlikely thing, and I&#039;ve come to the conclusion that regardless of what these things are they still demonstrate the awesome power of the mind, even if what we are descovering isn&#039;t what we originally think it is, it&#039;s still something worth discovering, it&#039;s still pioneering. 
+
+So if i&#039;m not seeing through my eyes but i&#039;m only remembering what went where and by changing certain pieces of information like moving a limb predicting or guessing how my environment would react, that&#039;s a pretty great skill that could be applied in life or science or WHATEVER; you see where i&#039;m going with this.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">somefatguy</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=36&amp;ref=1209135545" width="90" height="89" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11011" style="width: 100%; overflow: auto; min-height: 125px;">Yes, I see what you mean. </div>
+		<textarea style="display: none;" id="desctxt_11011">Yes, I see what you mean.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11017" style="width: 100%; overflow: auto; min-height: 125px;">Interesting.... I think that allowing yourself to relax and not focus on anything seems to be the trick.<br />
+<br />
+I recommend that you bring yourself to, maybe the theta state, of brainwave activity through your method of choice, and then half consciously nudge yourself to the state of mind.<br />
+<br />
+I see aura&#039;s well, but seeing with the minds eye is a bit more difficult for me. Best of luck ^_-</div>
+		<textarea style="display: none;" id="desctxt_11017">Interesting.... I think that allowing yourself to relax and not focus on anything seems to be the trick.
+
+I recommend that you bring yourself to, maybe the theta state, of brainwave activity through your method of choice, and then half consciously nudge yourself to the state of mind.
+
+I see aura&#039;s well, but seeing with the minds eye is a bit more difficult for me. Best of luck ^_-</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Atrum</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=755&amp;ref=1221862716" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11168" style="width: 100%; overflow: auto; min-height: 125px;">This has happened to me numerous times. I&#039;ve almost perfected it a bit. ;) For me, it usually works better if I think about light. I can see mostly light around objects rather than seeing the object itself. Kinda helps me when walking around with my eyes closed...(Although kinda pointless for me)<br />
+<br />
+Wow...that was probably the best thing I&#039;ve written on this forum so far!</div>
+		<textarea style="display: none;" id="desctxt_11168">This has happened to me numerous times. I&#039;ve almost perfected it a bit. ;) For me, it usually works better if I think about light. I can see mostly light around objects rather than seeing the object itself. Kinda helps me when walking around with my eyes closed...(Although kinda pointless for me)
+
+Wow...that was probably the best thing I&#039;ve written on this forum so far!</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Atrum, 4 years, 3 months ago<br />Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=531" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 32 queries. 0.328 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

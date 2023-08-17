@@ -1,0 +1,349 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Problems with Advancement</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Problems with Advancement</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Problems with Advancement</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">f3licks</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=848&amp;ref=1227833859" width="125" height="78" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_14909" style="width: 100%; overflow: auto; min-height: 125px;">I practice psionics, in a very on and off fashion, mostly because any time something new and exciting happens psionically, I seem to subconsciously back away from psionics.<br />
+<br />
+Here&#039;s an example: while I was on vacation and trying to get to sleep in a hot room, I created an awesome-by-my-standards construct that basically orbited around me. The construct was a mass of cold, and it gave off something similar to a cool breeze that was continuously moving around.<br />
+<br />
+That was about a week ago, and I haven&#039;t made a construct since.<br />
+<br />
+Does this happen to anyone else?<br />
+Or, even if not, does anyone have advice?<br />
+<br />
+Thanks in advance.</div>
+		<textarea style="display: none;" id="desctxt_14909">I practice psionics, in a very on and off fashion, mostly because any time something new and exciting happens psionically, I seem to subconsciously back away from psionics.
+
+Here&#039;s an example: while I was on vacation and trying to get to sleep in a hot room, I created an awesome-by-my-standards construct that basically orbited around me. The construct was a mass of cold, and it gave off something similar to a cool breeze that was continuously moving around.
+
+That was about a week ago, and I haven&#039;t made a construct since.
+
+Does this happen to anyone else?
+Or, even if not, does anyone have advice?
+
+Thanks in advance.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">mrj</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_14910" style="width: 100%; overflow: auto; min-height: 125px;">I tend to practice in the same way, actually.<br />
+<br />
+And yes, the same thing happens to me, and that is really the definition of &quot;on and off practice&quot; isn&#039;t it? As for advice, well...what is it you want? I don&#039;t ask that just because I need some more info first, but really, think about it. What is it you are trying to achieve? If you think you are subconsciously backing away from psionics, maybe you could do one of two things.<br />
+<br />
+Try another system out<br />
+<br />
+OR <br />
+<br />
+Consult thyself<br />
+<br />
+As for the &quot;other systems&quot; suggestion, <a href="http://www.perspectiveshift.net/search/label/resources" target="_blank" title="http://www.perspectiveshift.net/search/label/resources">Float&#039;s website</a> has some interesting stuff on that topic. Lots of things about magic systems, and other ideas. <br />
+<br />
+As for &quot;self council&quot; however, think about simply asking yourself some questions. Things like &quot;Why am I practicing?&quot; &quot;Is practice unappealing in any way?&quot;. What does your subconscious come up with? You don&#039;t have to tell me or anyone, but rather, just come to terms with it. Someone told me once (yes its one of these sayings :P) that &quot;If you&#039;re truly honest with yourself, magical things will happen&quot;. Now I&#039;m sure he didn&#039;t reference the paranormal with that, but it leads into something. So what is it exactly? Where am I going with this?<br />
+<br />
+It&#039;s just as simple as motivation. Let&#039;s go back to the question &quot;what do you want?&quot;.<br />
+<br />
+When I first was interested in actively pursuing psychic abilities, it was in 2003. I was into the old (and infamous) &quot;Radki&quot; websites, as well as alot of other &quot;energy communities&quot; and Psipog as well. I was a kid, and, like most kids wanted to do cool stuff I saw on TV. But I practiced every day, even dragging my brother into it. I had even gotten a few weird effects from practicing alot. But that started to change when I found conflicting belief systems, and the concept of &quot;fluff&quot;. When it came to challenging and conflicting opinions, I was on both sides. What I mean by that is, I really didn&#039;t know where I was, but I wanted to have some sort of solid ground. After being exposed to the <a href="http://www.youtube.com/watch?v=WiZKhIT33i0" target="_blank" title="http://www.youtube.com/watch?v=WiZKhIT33i0">RadKi Challenge</a> I decided it was fake, and &quot;joined&quot; Psipogs ideals. I still wanted to do &quot;cool stuff&quot;, but the motivation slowly dwindled as the reality of things settled in. I stopped caring.<br />
+<br />
+It&#039;s like flame. It burns bright and vigorously, but only for so long. And then you have to clean up the ashes. It is an example of an unhealthy motivation. <br />
+<br />
+So what is a healthy one? Probably something solid, lasting and realistic. (A candle maybe?)<br />
+<br />
+Another thing I&#039;ve noticed is that having a person go through it with you, or at least, give you feedback on the subject, is very helpful. They don&#039;t even have to practice with you. It could be someone doing research. You just need feedback. But I believe they have to be a person in real life. I personally think that nothing else really cuts it, although online places are great to test yourself out.<br />
+<br />
+Basically, motivation is the key. <br />
+_________________________________________________________________________________<br />
+<br />
+But I do have one more thing to say. When you &quot;subconsciously back away from psionics&quot;, confront yourself. Challenge any automatic habits or behaviors/thoughts. Ask yourself &quot;why&quot; and keep challenging the reason given to you, and resolve anything if necessary. <br />
+<br />
+I say this because I may have posted something long and irrelevant if the motivation thing doesn&#039;t apply to you, and because it is simply a good way to make/break habits. <br />
+<br />
+Either way, I hope you get something out of this.<br />
+</div>
+		<textarea style="display: none;" id="desctxt_14910">I tend to practice in the same way, actually.
+
+And yes, the same thing happens to me, and that is really the definition of &quot;on and off practice&quot; isn&#039;t it? As for advice, well...what is it you want? I don&#039;t ask that just because I need some more info first, but really, think about it. What is it you are trying to achieve? If you think you are subconsciously backing away from psionics, maybe you could do one of two things.
+
+Try another system out
+
+OR 
+
+Consult thyself
+
+As for the &quot;other systems&quot; suggestion, [url=http://www.perspectiveshift.net/search/label/resources] Float&#039;s website [/url] has some interesting stuff on that topic. Lots of things about magic systems, and other ideas. 
+
+As for &quot;self council&quot; however, think about simply asking yourself some questions. Things like &quot;Why am I practicing?&quot; &quot;Is practice unappealing in any way?&quot;. What does your subconscious come up with? You don&#039;t have to tell me or anyone, but rather, just come to terms with it. Someone told me once (yes its one of these sayings :P) that &quot;If you&#039;re truly honest with yourself, magical things will happen&quot;. Now I&#039;m sure he didn&#039;t reference the paranormal with that, but it leads into something. So what is it exactly? Where am I going with this?
+
+It&#039;s just as simple as motivation. Let&#039;s go back to the question &quot;what do you want?&quot;.
+
+When I first was interested in actively pursuing psychic abilities, it was in 2003. I was into the old (and infamous) &quot;Radki&quot; websites, as well as alot of other &quot;energy communities&quot; and Psipog as well. I was a kid, and, like most kids wanted to do cool stuff I saw on TV. But I practiced every day, even dragging my brother into it. I had even gotten a few weird effects from practicing alot. But that started to change when I found conflicting belief systems, and the concept of &quot;fluff&quot;. When it came to challenging and conflicting opinions, I was on both sides. What I mean by that is, I really didn&#039;t know where I was, but I wanted to have some sort of solid ground. After being exposed to the [url=http://www.youtube.com/watch?v=WiZKhIT33i0] RadKi Challenge [/url] I decided it was fake, and &quot;joined&quot; Psipogs ideals. I still wanted to do &quot;cool stuff&quot;, but the motivation slowly dwindled as the reality of things settled in. I stopped caring.
+
+It&#039;s like flame. It burns bright and vigorously, but only for so long. And then you have to clean up the ashes. It is an example of an unhealthy motivation. 
+
+So what is a healthy one? Probably something solid, lasting and realistic. (A candle maybe?)
+
+Another thing I&#039;ve noticed is that having a person go through it with you, or at least, give you feedback on the subject, is very helpful. They don&#039;t even have to practice with you. It could be someone doing research. You just need feedback. But I believe they have to be a person in real life. I personally think that nothing else really cuts it, although online places are great to test yourself out.
+
+Basically, motivation is the key. 
+_________________________________________________________________________________
+
+But I do have one more thing to say. When you &quot;subconsciously back away from psionics&quot;, confront yourself. Challenge any automatic habits or behaviors/thoughts. Ask yourself &quot;why&quot; and keep challenging the reason given to you, and resolve anything if necessary. 
+
+I say this because I may have posted something long and irrelevant if the motivation thing doesn&#039;t apply to you, and because it is simply a good way to make/break habits. 
+
+Either way, I hope you get something out of this.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Jacob</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=949&amp;ref=1248714472" width="108" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_14912" style="width: 100%; overflow: auto; min-height: 125px;">I got the same problem. Or well, problem... It seems like the longer I don&#039;t practice psionics the more I&#039;m capable of when I do.<br />
+<br />
+Maybe its because I charge really slow.</div>
+		<textarea style="display: none;" id="desctxt_14912">I got the same problem. Or well, problem... It seems like the longer I don&#039;t practice psionics the more I&#039;m capable of when I do.
+
+Maybe its because I charge really slow.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Jacob, 3 years, 3 months ago<br />Posted 3 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Sean</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=2&amp;ref=1214247941" width="117" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_14913" style="width: 100%; overflow: auto; min-height: 125px;">I wrote this post a while ago, but I think it might apply here:<br />
+<br />
+ <a href="2007/12/26/overcoming-mediocre-results/index.html" target="_blank">http://alittleweird.com/2007/12/26/overcoming-mediocre-results/</a><br />
+<br />
+~Sean</div>
+		<textarea style="display: none;" id="desctxt_14913">I wrote this post a while ago, but I think it might apply here:
+
+http://alittleweird.com/2007/12/26/overcoming-mediocre-results/
+
+~Sean</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">f3licks</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=848&amp;ref=1227833859" width="125" height="78" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_14926" style="width: 100%; overflow: auto; min-height: 125px;">@mrj: Thanks, that really put it in perspective.<br />
+I think I just need to re examine my motivations for practicing.@<br />
+<br />
+@Sean: That kind of helps.<br />
+I mean, it&#039;s not really the level of the results, it&#039;s more that getting results period seems to be my kryptonite. :p</div>
+		<textarea style="display: none;" id="desctxt_14926">@mrj: Thanks, that really put it in perspective.
+I think I just need to re examine my motivations for practicing.@
+
+@Sean: That kind of helps.
+I mean, it&#039;s not really the level of the results, it&#039;s more that getting results period seems to be my kryptonite. :p</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 3 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=830" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 21 queries. 0.328 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

@@ -1,0 +1,335 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Old Frank&#039;s secret box</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Old Frank&#039;s secret box</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Old Frank&#039;s secret box</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">zandor117</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=305&amp;ref=1215571805" width="91" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10253" style="width: 100%; overflow: auto; min-height: 125px;">Im just reposting this, I got it from another board a few months ago and the original post no longer exists. The story is interesting though and worth reading into.<br />
+<br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;">Back in the early &#039;90s I was working with the London Underground as a security guard; a low-paid shitty job with few benefits and the perpetual worry you were going to get spat on by some syphilitic tramp or made to chase graffiti-spraying kids down tunnels. A horrible, nasty little job and I got out of there after about a year and am now working for social services (which is freaky enough, but it&#039;s a different story or three). <br />
+<br />
+Anyway, one of the few things I got out of the shithole of a job was meeting Old Frank (not his real name). Frank was pushing 60 and looked a bit like Captain Birdseye; he&#039;d been working the trains since the 50s and also had an opium habit, which he&#039;d picked up on National Service in Egypt (he&#039;d served in the Suez Crisis fyi). Anyway, Frank would tell us all stories about the weird and wonderful of troglodyte London - the murders, the &#039;abandoned&#039; tunnels, the strange noises, the disappearances, all manner of freaky stuff. Me, I personally never had anything weirder than a naked bloke turn up in the security room while I went for a piss - but I digress. Frank was a wealth of fun and opioid frolics. We took it all with a pinch of salt. <br />
+<br />
+Fast-forward to eighteen months ago. Frank&#039;s dead. Two policemen on my doorstep, because Old Frank (who I haven&#039;t seen in almost six years) had listed me as &#039;next of kin&#039; (!) in the latter he&#039;d sellotaped to his fridge in the event of his death. I guess to a degree I was, even if I hadn&#039;t seen him for so long - he had no family and I&#039;d sent him Christmas and birthday cards every year since (I live in Manchester now). I was asked to handle his estate, a crappy little apartment in Romford. <br />
+<br />
+Most of what I found there was just as crappy. I brought my girlfriend down and we picked through the detritus of this dead old man&#039;s life. He&#039;d kept it relatively tidy. Anyway, the meat and potatoes of the story. Under his bed we found a locked box - one of those things you keep papers in. Well, we&#039;d been told anything we found was ours, so we - being impudent shits - jumped to the hope it might be money or deeds to some secret mansion he owned. No such luck. We popped the lock to find it full of photographs; lots of photographs and letters, some of them stamped, lots of the usual government forms and paraphenalia. Some of the pictures featured me, or old workmates. I took the box back to my hotel room. <br />
+<br />
+Here&#039;s where it gets weird. That night I started sifting through them. My girlfriend was asleep. As I poured over these pictures, they became increasingly strange. Underneath the ones featuring the railways, I found pictures of him back in the Army. Smiling, uniformed kids - out in Egypt, Malaya... all of them neatly labelled in copperplate handwriting. A historian would have loved them. Then I came to the others. <br />
+<br />
+At first I thought it was a joke, but they were too well made to have been overexposures or fakes. There were photos of soldiers, dressed in 1970s uniforms, and they were on the London Underground. I don&#039;t just mean standing around. They were putting up sandbags, readying guns, the works. The annotations all referred to &quot;1976&quot;. There were a series of pics of Underground Staff being talked to by army officers; and stretchers with wounded men. There was a picture of a train - an armoured train (and I know what they look like, I&#039;ve been to Poland and seen the armoured train museum) bristling with guns and waiting at a train station. Unfortunately I couldn&#039;t see any identifying marks on the station itself, but it looked like on of the normal innercity Tube stops. <br />
+<br />
+The weirdest picture freaked me out though. It was of soldiers in battle positions, on the platform and on the railway track itself and it looked like they were FIRING AT SOMETHING INSIDE THE TUNNEL. <br />
+<br />
+Not something as in something was there, I mean you could SEE something in there. It was a polaroid and there was something big in the tunnel, like it was coming into the light. <br />
+<br />
+I freaked out a little, put it back in the box with the other &#039;weird&#039; photos and read the forms. Most were good service stuff, military forms from the 50s, and memories of the railways. But there were three forms that didn&#039;t make any sense. One was an Official Secrets Act form dated late-July 1976. Nothing incriminating was on it. The second was a short typed note that came from British Rail asking for &#039;solidarity in these trying times&#039; and &#039;discretion relating to events on London lines&#039;. The final was practically illegible, but it too was dated in August 1976 and seemed to have been sent back and forth between a legal firm in Hackney and Old Frank. At some point he&#039;d attempted to scribble the entire thing out. It too was dated 1976. <br />
+<br />
+I went to bed, slept till mid-morning, and woke to find the box missing. My girlfriend told me she&#039;d assumed that the fact I&#039;d left all the pictures of me and the old crew out on the desk meant that I didn&#039;t want the rest of it. I was angry, but I didn&#039;t blame her. <br />
+<br />
+However, I did manage to keep one of the photograhs. It&#039;s of a British Army officer talking to what appears to be a traindriver on this unknown station, and pointing off towards his left. I took it to a photographer and he tells me it&#039;s from a Model 430 polaroid camera - completely legit. I&#039;ve tried looking into events that happened in 1976 relating to the army or the Underground, but I&#039;ve been stonewalled. I managed to get through to a man on the telephone at London Underground who informed me that it would be best if I &#039;turn my interests elsewhere&#039;. <br />
+<br />
+About eight months back I did get one lead, but it didn&#039;t go anyway. In a copy of a local rag for Hackney, published at a Seven Sisters Road printers that no longer exists, I found reference to strange noises, including perceived &quot;gunfire and explosions&quot; and the closure of Manor House Tube Station for three days in late-July 1976. No mainstream papers reference this. <br />
+<br />
+Personally, I&#039;m not too sure what happened down there, but I don&#039;t think it was an exercise. Some of those photographs were bloody real looking. <br />
+<br />
+Thanks for listening.<br />
+</div></div>
+		<textarea style="display: none;" id="desctxt_10253">Im just reposting this, I got it from another board a few months ago and the original post no longer exists. The story is interesting though and worth reading into.
+
+[quote]
+Back in the early &#039;90s I was working with the London Underground as a security guard; a low-paid shitty job with few benefits and the perpetual worry you were going to get spat on by some syphilitic tramp or made to chase graffiti-spraying kids down tunnels. A horrible, nasty little job and I got out of there after about a year and am now working for social services (which is freaky enough, but it&#039;s a different story or three). 
+
+Anyway, one of the few things I got out of the shithole of a job was meeting Old Frank (not his real name). Frank was pushing 60 and looked a bit like Captain Birdseye; he&#039;d been working the trains since the 50s and also had an opium habit, which he&#039;d picked up on National Service in Egypt (he&#039;d served in the Suez Crisis fyi). Anyway, Frank would tell us all stories about the weird and wonderful of troglodyte London - the murders, the &#039;abandoned&#039; tunnels, the strange noises, the disappearances, all manner of freaky stuff. Me, I personally never had anything weirder than a naked bloke turn up in the security room while I went for a piss - but I digress. Frank was a wealth of fun and opioid frolics. We took it all with a pinch of salt. 
+
+Fast-forward to eighteen months ago. Frank&#039;s dead. Two policemen on my doorstep, because Old Frank (who I haven&#039;t seen in almost six years) had listed me as &#039;next of kin&#039; (!) in the latter he&#039;d sellotaped to his fridge in the event of his death. I guess to a degree I was, even if I hadn&#039;t seen him for so long - he had no family and I&#039;d sent him Christmas and birthday cards every year since (I live in Manchester now). I was asked to handle his estate, a crappy little apartment in Romford. 
+
+Most of what I found there was just as crappy. I brought my girlfriend down and we picked through the detritus of this dead old man&#039;s life. He&#039;d kept it relatively tidy. Anyway, the meat and potatoes of the story. Under his bed we found a locked box - one of those things you keep papers in. Well, we&#039;d been told anything we found was ours, so we - being impudent shits - jumped to the hope it might be money or deeds to some secret mansion he owned. No such luck. We popped the lock to find it full of photographs; lots of photographs and letters, some of them stamped, lots of the usual government forms and paraphenalia. Some of the pictures featured me, or old workmates. I took the box back to my hotel room. 
+
+Here&#039;s where it gets weird. That night I started sifting through them. My girlfriend was asleep. As I poured over these pictures, they became increasingly strange. Underneath the ones featuring the railways, I found pictures of him back in the Army. Smiling, uniformed kids - out in Egypt, Malaya... all of them neatly labelled in copperplate handwriting. A historian would have loved them. Then I came to the others. 
+
+At first I thought it was a joke, but they were too well made to have been overexposures or fakes. There were photos of soldiers, dressed in 1970s uniforms, and they were on the London Underground. I don&#039;t just mean standing around. They were putting up sandbags, readying guns, the works. The annotations all referred to &quot;1976&quot;. There were a series of pics of Underground Staff being talked to by army officers; and stretchers with wounded men. There was a picture of a train - an armoured train (and I know what they look like, I&#039;ve been to Poland and seen the armoured train museum) bristling with guns and waiting at a train station. Unfortunately I couldn&#039;t see any identifying marks on the station itself, but it looked like on of the normal innercity Tube stops. 
+
+The weirdest picture freaked me out though. It was of soldiers in battle positions, on the platform and on the railway track itself and it looked like they were FIRING AT SOMETHING INSIDE THE TUNNEL. 
+
+Not something as in something was there, I mean you could SEE something in there. It was a polaroid and there was something big in the tunnel, like it was coming into the light. 
+
+I freaked out a little, put it back in the box with the other &#039;weird&#039; photos and read the forms. Most were good service stuff, military forms from the 50s, and memories of the railways. But there were three forms that didn&#039;t make any sense. One was an Official Secrets Act form dated late-July 1976. Nothing incriminating was on it. The second was a short typed note that came from British Rail asking for &#039;solidarity in these trying times&#039; and &#039;discretion relating to events on London lines&#039;. The final was practically illegible, but it too was dated in August 1976 and seemed to have been sent back and forth between a legal firm in Hackney and Old Frank. At some point he&#039;d attempted to scribble the entire thing out. It too was dated 1976. 
+
+I went to bed, slept till mid-morning, and woke to find the box missing. My girlfriend told me she&#039;d assumed that the fact I&#039;d left all the pictures of me and the old crew out on the desk meant that I didn&#039;t want the rest of it. I was angry, but I didn&#039;t blame her. 
+
+However, I did manage to keep one of the photograhs. It&#039;s of a British Army officer talking to what appears to be a traindriver on this unknown station, and pointing off towards his left. I took it to a photographer and he tells me it&#039;s from a Model 430 polaroid camera - completely legit. I&#039;ve tried looking into events that happened in 1976 relating to the army or the Underground, but I&#039;ve been stonewalled. I managed to get through to a man on the telephone at London Underground who informed me that it would be best if I &#039;turn my interests elsewhere&#039;. 
+
+About eight months back I did get one lead, but it didn&#039;t go anyway. In a copy of a local rag for Hackney, published at a Seven Sisters Road printers that no longer exists, I found reference to strange noises, including perceived &quot;gunfire and explosions&quot; and the closure of Manor House Tube Station for three days in late-July 1976. No mainstream papers reference this. 
+
+Personally, I&#039;m not too sure what happened down there, but I don&#039;t think it was an exercise. Some of those photographs were bloody real looking. 
+
+Thanks for listening.
+[/quote]</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">keen31</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=253&amp;ref=1203827935" width="53" height="55" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10261" style="width: 100%; overflow: auto; min-height: 125px;">interesting indeed.</div>
+		<textarea style="display: none;" id="desctxt_10261">interesting indeed.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">SheepKing</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=211&amp;ref=1222648137" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10267" style="width: 100%; overflow: auto; min-height: 125px;">Pretty interesting if it has any merit. </div>
+		<textarea style="display: none;" id="desctxt_10267">Pretty interesting if it has any merit.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Linked</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=19&amp;ref=1203762048" width="89" height="38" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10268" style="width: 100%; overflow: auto; min-height: 125px;">pretty weird.</div>
+		<textarea style="display: none;" id="desctxt_10268">pretty weird.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Faceless</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=570&amp;ref=1214279440" width="83" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10269" style="width: 100%; overflow: auto; min-height: 125px;">i guess this means it is time for some post cognitive preception. i&#039;ll tell you if anything comes up, or out... creepy.</div>
+		<textarea style="display: none;" id="desctxt_10269">i guess this means it is time for some post cognitive preception. i&#039;ll tell you if anything comes up, or out... creepy.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">cinderwild</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10358" style="width: 100%; overflow: auto; min-height: 125px;">That was a cool story, but it&#039;s absolutely hilarious the guy found the time to write such a legitimate sounding story but NOT include the pictures. The convenience of the papers being thrown away are also another reason to think of this as ONLY a story if not for the fact that he didn&#039;t even bother to post the pictures as well.<br />
+<br />
+Good story, I doubt it&#039;s anything else.</div>
+		<textarea style="display: none;" id="desctxt_10358">That was a cool story, but it&#039;s absolutely hilarious the guy found the time to write such a legitimate sounding story but NOT include the pictures. The convenience of the papers being thrown away are also another reason to think of this as ONLY a story if not for the fact that he didn&#039;t even bother to post the pictures as well.
+
+Good story, I doubt it&#039;s anything else.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">NewAgeAlchemist</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=459&amp;ref=1207160982" width="125" height="20" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10363" style="width: 100%; overflow: auto; min-height: 125px;">yeah really.. a little foresight would dictate you keep the box, make the little intro and publish a book of the pictures. Conspiracy nuts would eat that stuff up.</div>
+		<textarea style="display: none;" id="desctxt_10363">yeah really.. a little foresight would dictate you keep the box, make the little intro and publish a book of the pictures. Conspiracy nuts would eat that stuff up.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Faceless</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=570&amp;ref=1214279440" width="83" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10397" style="width: 100%; overflow: auto; min-height: 125px;">ya i agree when i was trying to view it i didnt get anything, but then again that might be just me.</div>
+		<textarea style="display: none;" id="desctxt_10397">ya i agree when i was trying to view it i didnt get anything, but then again that might be just me.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=472" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 24 queries. 0.335 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

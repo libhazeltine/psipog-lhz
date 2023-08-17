@@ -1,0 +1,761 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Some More Event/Class Announcements (PsionicsOnline)</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=3.html">Recycle Bin</a> &raquo; Some More Event/Class Announcements (PsionicsOnline)</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Some More Event/Class Announcements (PsionicsOnline)</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">metalforever</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13740" style="width: 100%; overflow: auto; min-height: 125px;">Some classes/events have been announced over on my side of the spectrum. They are as follows:<br />
+<br />
+<strong><em>Event #1:  Celebrating Another Year of PsionicsOnline, PK Party</em></strong><br />
+<br />
+Start: 05/22/2009 19:00<br />
+Timezone: America/New York<br />
+<br />
+Like the title says, this is a Psychokinesis party intended to celebrate one more year of the operation of this site.  Put on your party hat, and bring your forks. <br />
+<br />
+Sign-Up Here (User Registration Not Required):<br />
+<a href="http://www.psionicsonline.net/event/celebrating-another-year-psionicsonline-pk-party" target="_blank" title="http://www.psionicsonline.net/event/celebrating-another-year-psionicsonline-pk-party">http://www.psionicsonline.net/event/celebrating-another-year-psionicsonline-pk-party</a><br />
+<br />
+<strong><em>Event #2:  Making and Breaking Seals Seminar (Hosted By: Miri)</em></strong><br />
+<br />
+Start: 05/29/2009 21:00<br />
+Timezone: America/New York<br />
+<br />
+A basic introduction to the practical use and annulment of both containment and non-containment seals in psionic practices.  There will be a practical component to the seminar.  Questions are always welcome during the seminar.  Expect this seminar to run from one to two hours, depending on how many questions are asked. It will be held Friday, May 29th at 9pm (EST).<br />
+<br />
+Sign-Up Here (User Registration Not Required):<br />
+<a href="http://www.psionicsonline.net/event/making-and-breaking-seals-seminar-hosted-miri" target="_blank" title="http://www.psionicsonline.net/event/making-and-breaking-seals-seminar-hosted-miri">http://www.psionicsonline.net/event/making-and-breaking-seals-seminar-hosted-miri</a><br />
+<br />
+<strong><em>Class: The Basics of Psychokinesis (Hosted By: Metalforever)</em></strong><br />
+I noticed over the past few days, the sign ups for this hit over 30 (The minimum), so I announced topics and dates.  <br />
+<br />
+Class Information:<br />
+The purpose of this class is to inform beginners regarding the basics of Psychokinesis. Common problems , how to accomplish the skill, and how to make a psiwheel and a tinfoil will be addressed. This class is intended to become multi-session. By signing up for this course, you are expected to attend every class session unless you give notification ahead of time.<br />
+<br />
+<br />
+Dates and Topics:<br />
+Wednesday, May 27th- What is Psychokinesis?/ Class Introduction<br />
+Wednesday, June 3rd-  Technique Designing and Affirmations<br />
+Wednesday, June 17th- A Brief History of Psychokinesis Research<br />
+Wednesday, June 24th- The &quot;Just do It&quot; Method in Detail<br />
+Wednesday, July 1st- Progress Check/Troubleshooting<br />
+Wednesday, July 8th-  Moving on From the Psiwheel<br />
+Wednesday, July 15th- Closing/ Psiwheel Party<br />
+ <br />
+Dates and topics are tentative, and subject to change.<br />
+<br />
+Class information Here:<br />
+<a href="http://www.psionicsonline.net/class/basics-psychokinesis-hosted-metalforever" target="_blank" title="http://www.psionicsonline.net/class/basics-psychokinesis-hosted-metalforever">http://www.psionicsonline.net/class/basics-psychokinesis-hosted-metalforever</a><br />
+Sign-Up For This Class Here (You must be a member to see the join link):<br />
+<a href="http://www.psionicsonline.net/classes" target="_blank" title="http://www.psionicsonline.net/classes">http://www.psionicsonline.net/classes</a><br />
+<br />
+<br />
+<strong><em>Class Event #1:  Class Intro/What is Psychokinesis?</em></strong><br />
+The first session has been finalized, and an event on the calendar has been set for that date.  <br />
+<br />
+<br />
+Start: 05/27/2009 20:00<br />
+Timezone: America/New York<br />
+<br />
+This class session will focus on the do&#039;s and don&#039;ts of basic Psychokinesis and Psionic practice.  I will present what is to be expected for the class as a whole, and talk about acceptable -kinesis terms.  I will also incorporate some hands-on elements to this practice, such as creating a psiwheel, answering any beginners questions, and clearing up any misconceptions.<br />
+<br />
+Sign-up for just the first event (Does not require registration) Here:<br />
+<a href="http://www.psionicsonline.net/event/basics-psychokinesis-class-introwhat-psychokinesis" target="_blank" title="http://www.psionicsonline.net/event/basics-psychokinesis-class-introwhat-psychokinesis">http://www.psionicsonline.net/event/basics-psychokinesis-class-introwhat-psychokinesis</a><br />
+<br />
+<br />
+Thanks for reading.  I hope yall have an enjoyable evening,<br />
+<br />
+-metalforever (Sarah)</div>
+		<textarea style="display: none;" id="desctxt_13740">Some classes/events have been announced over on my side of the spectrum. They are as follows:
+
+[b][i]Event #1:  Celebrating Another Year of PsionicsOnline, PK Party[/i][/b]
+
+Start: 05/22/2009 19:00
+Timezone: America/New York
+
+Like the title says, this is a Psychokinesis party intended to celebrate one more year of the operation of this site.  Put on your party hat, and bring your forks. 
+
+Sign-Up Here (User Registration Not Required):
+[url]http://www.psionicsonline.net/event/celebrating-another-year-psionicsonline-pk-party[/url]
+
+[b][i]Event #2:  Making and Breaking Seals Seminar (Hosted By: Miri)[/i][/b]
+
+Start: 05/29/2009 21:00
+Timezone: America/New York
+
+A basic introduction to the practical use and annulment of both containment and non-containment seals in psionic practices.  There will be a practical component to the seminar.  Questions are always welcome during the seminar.  Expect this seminar to run from one to two hours, depending on how many questions are asked. It will be held Friday, May 29th at 9pm (EST).
+
+Sign-Up Here (User Registration Not Required):
+[url]http://www.psionicsonline.net/event/making-and-breaking-seals-seminar-hosted-miri[/url]
+
+[b][i]Class: The Basics of Psychokinesis (Hosted By: Metalforever)[/i][/b]
+I noticed over the past few days, the sign ups for this hit over 30 (The minimum), so I announced topics and dates.  
+
+Class Information:
+The purpose of this class is to inform beginners regarding the basics of Psychokinesis. Common problems , how to accomplish the skill, and how to make a psiwheel and a tinfoil will be addressed. This class is intended to become multi-session. By signing up for this course, you are expected to attend every class session unless you give notification ahead of time.
+
+
+Dates and Topics:
+Wednesday, May 27th- What is Psychokinesis?/ Class Introduction
+Wednesday, June 3rd-  Technique Designing and Affirmations
+Wednesday, June 17th- A Brief History of Psychokinesis Research
+Wednesday, June 24th- The &quot;Just do It&quot; Method in Detail
+Wednesday, July 1st- Progress Check/Troubleshooting
+Wednesday, July 8th-  Moving on From the Psiwheel
+Wednesday, July 15th- Closing/ Psiwheel Party
+ 
+Dates and topics are tentative, and subject to change.
+
+Class information Here:
+[url]http://www.psionicsonline.net/class/basics-psychokinesis-hosted-metalforever[/url]
+Sign-Up For This Class Here (You must be a member to see the join link):
+[url]http://www.psionicsonline.net/classes[/url]
+
+
+[b][i]Class Event #1:  Class Intro/What is Psychokinesis?[/i][/b]
+The first session has been finalized, and an event on the calendar has been set for that date.  
+
+
+Start: 05/27/2009 20:00
+Timezone: America/New York
+
+This class session will focus on the do&#039;s and don&#039;ts of basic Psychokinesis and Psionic practice.  I will present what is to be expected for the class as a whole, and talk about acceptable -kinesis terms.  I will also incorporate some hands-on elements to this practice, such as creating a psiwheel, answering any beginners questions, and clearing up any misconceptions.
+
+Sign-up for just the first event (Does not require registration) Here:
+[url]http://www.psionicsonline.net/event/basics-psychokinesis-class-introwhat-psychokinesis[/url]
+
+
+Thanks for reading.  I hope yall have an enjoyable evening,
+
+-metalforever (Sarah)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by metalforever, 3 years, 6 months ago<br />Posted 3 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">f3licks</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=848&amp;ref=1227833859" width="125" height="78" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13748" style="width: 100%; overflow: auto; min-height: 125px;">Alright, I&#039;ve been signed up for a while, I&#039;m glad we get to start soon.<br />
+<br />
+The class takes place in the IRC, right?</div>
+		<textarea style="display: none;" id="desctxt_13748">Alright, I&#039;ve been signed up for a while, I&#039;m glad we get to start soon.
+
+The class takes place in the IRC, right?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">ShadowmanX</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13763" style="width: 100%; overflow: auto; min-height: 125px;">Why has it to be Wednesday of all days? Thats the only day I have no time. I&#039;d have to sleep 3 hrs before and 3 hrs after the PK class, otherwise it wouldn&#039;t fit in my schedule, but I think I&#039;ll rather wait for the next class and hope its on a better time.</div>
+		<textarea style="display: none;" id="desctxt_13763">Why has it to be Wednesday of all days? Thats the only day I have no time. I&#039;d have to sleep 3 hrs before and 3 hrs after the PK class, otherwise it wouldn&#039;t fit in my schedule, but I think I&#039;ll rather wait for the next class and hope its on a better time.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">metalforever</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13771" style="width: 100%; overflow: auto; min-height: 125px;">Yes, IRC, see class information, thats what the links are for.<br />
+<br />
+ShadowmanX: Next time i will make it a different day, im sorry.  Thursdays are iffy because thats cleaning day at my house.  Friday people/I go out, or i have no internet.  Saturdays,, Sundays, likewise.</div>
+		<textarea style="display: none;" id="desctxt_13771">Yes, IRC, see class information, thats what the links are for.
+
+ShadowmanX: Next time i will make it a different day, im sorry.  Thursdays are iffy because thats cleaning day at my house.  Friday people/I go out, or i have no internet.  Saturdays,, Sundays, likewise.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Mars</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=553&amp;ref=1239824741" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13772" style="width: 100%; overflow: auto; min-height: 125px;">I&#039;m very happy to know that there are finally some more classes available.</div>
+		<textarea style="display: none;" id="desctxt_13772">I&#039;m very happy to know that there are finally some more classes available.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">metalforever</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13806" style="width: 100%; overflow: auto; min-height: 125px;">Yeah, I had a bit of a tougher year regarding courseload this time around.  Instead of college part time and high school, I tried to do college full time and high school, and still tried to find time for visiting colleges for fall 2009, submitting scholarships and college applications/paperwork.  It was busy for me for a little while, but things are starting to wind down so I scheduled a class, and a pk party celebrating another year of psionicsonline (though its a little late).  Miri was interested in holding a magickal class or two as well.</div>
+		<textarea style="display: none;" id="desctxt_13806">Yeah, I had a bit of a tougher year regarding courseload this time around.  Instead of college part time and high school, I tried to do college full time and high school, and still tried to find time for visiting colleges for fall 2009, submitting scholarships and college applications/paperwork.  It was busy for me for a little while, but things are starting to wind down so I scheduled a class, and a pk party celebrating another year of psionicsonline (though its a little late).  Miri was interested in holding a magickal class or two as well.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Riven</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=656&amp;ref=1217444530" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13910" style="width: 100%; overflow: auto; min-height: 125px;">Agh I&#039;d love to do the Basics class, but I work Wednesdays... I&#039;ll look at the logs though ^^ Thanks for posting these</div>
+		<textarea style="display: none;" id="desctxt_13910">Agh I&#039;d love to do the Basics class, but I work Wednesdays... I&#039;ll look at the logs though ^^ Thanks for posting these</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">metalforever</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13970" style="width: 100%; overflow: auto; min-height: 125px;">This is a reminder concerning the PK party scheduled tonight by our staff.<br />
+<br />
+Start: 05/22/2009 19:00 <br />
+Timezone: America/New York <br />
+<br />
+This party is being held on the IRC, or  Internet Relay Chat Network, in real time.  You can join this event when the time comes here:<br />
+ <a href="http://www.psionicsonline.net/irc" target="_blank">http://www.psionicsonline.net/irc</a><br />
+ <br />
+For those with a separate IRC client, you may access this party with the following information:<br />
+ <br />
+Server: irc.darkmyst.org<br />
+Channel: #psionicsonline<br />
+ <br />
+We hope to see you there!</div>
+		<textarea style="display: none;" id="desctxt_13970">This is a reminder concerning the PK party scheduled tonight by our staff.
+
+Start: 05/22/2009 19:00 
+Timezone: America/New York 
+
+This party is being held on the IRC, or  Internet Relay Chat Network, in real time.  You can join this event when the time comes here:
+http://www.psionicsonline.net/irc
+ 
+For those with a separate IRC client, you may access this party with the following information:
+ 
+Server: irc.darkmyst.org
+Channel: #psionicsonline
+ 
+We hope to see you there!</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by metalforever, 3 years, 6 months ago<br />Posted 3 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">metalforever</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_14066" style="width: 100%; overflow: auto; min-height: 125px;">The Basics of Psychokinesis: Class Intro/What is Psychokinesis?<br />
+<br />
+This class is being held tomorrow (May 27th, 2009) at 8PM New York<br />
+(Eastern Time).  It can be accessed by visiting this link:<br />
+ <a href="http://www.psionicsonline.net/irc" target="_blank">http://www.psionicsonline.net/irc</a> , or by visiting the<br />
+Darkmyst(irc.darkmyst.org) Server and #psionicsonline_pk channel using<br />
+your own personal IRC Chat client.  This class session will focus on<br />
+the do&#039;s and don&#039;ts of basic Psychokinesis and Psionic practice.  I<br />
+will also present what is to be expected for the class as a whole, and<br />
+talk about acceptable -kinesis terms.  I will also incorporate some<br />
+hands-on elements to this practice, such as creating a psiwheel,<br />
+answering any beginners questions, and clearing up any misconceptions.<br />
+ We hope to see you there!</div>
+		<textarea style="display: none;" id="desctxt_14066">The Basics of Psychokinesis: Class Intro/What is Psychokinesis?
+
+This class is being held tomorrow (May 27th, 2009) at 8PM New York
+(Eastern Time).  It can be accessed by visiting this link:
+http://www.psionicsonline.net/irc , or by visiting the
+Darkmyst(irc.darkmyst.org) Server and #psionicsonline_pk channel using
+your own personal IRC Chat client.  This class session will focus on
+the do&#039;s and don&#039;ts of basic Psychokinesis and Psionic practice.  I
+will also present what is to be expected for the class as a whole, and
+talk about acceptable -kinesis terms.  I will also incorporate some
+hands-on elements to this practice, such as creating a psiwheel,
+answering any beginners questions, and clearing up any misconceptions.
+ We hope to see you there!</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by metalforever, 3 years, 6 months ago<br />Posted 3 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">metalforever</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_14088" style="width: 100%; overflow: auto; min-height: 125px;">&quot;Marking and Breaking Seals&quot;, Hosted By: Miri<br />
+<br />
+This is a reminder concerning the seminar  &quot;Making and Breaking Seals&quot;, hosted by<br />
+miri.  This seminar will be held on May 29th, 2009, at 9PM New York (EST)<br />
+Time.  <br />
+You may join this seminar at this location:<br />
+ <a href="http://www.psionicsonline.net/irc.After" target="_blank">http://www.psionicsonline.net/irc.After</a> joining the chat, type<br />
+/join #psionicsonline_pk to enter the seminar.  Alternatively, if you wish<br />
+to use your own IRC chat client, you may join this seminar on the darkmyst<br />
+server (irc.darkmyst.org).  The channel is #psionicsonline_pk . <br />
+ <br />
+This seminar is a basic introduction to the practical use and annulment of both<br />
+containment and non-containment seals in psionic practices.  There will be a<br />
+practical component to the seminar.  Questions are always welcome during the<br />
+seminar.  Expect this seminar to run from one to two hours, depending on how<br />
+many questions are asked.</div>
+		<textarea style="display: none;" id="desctxt_14088">&quot;Marking and Breaking Seals&quot;, Hosted By: Miri
+
+This is a reminder concerning the seminar  &quot;Making and Breaking Seals&quot;, hosted by
+miri.  This seminar will be held on May 29th, 2009, at 9PM New York (EST)
+Time.  
+You may join this seminar at this location:
+http://www.psionicsonline.net/irc.After joining the chat, type
+/join #psionicsonline_pk to enter the seminar.  Alternatively, if you wish
+to use your own IRC chat client, you may join this seminar on the darkmyst
+server (irc.darkmyst.org).  The channel is #psionicsonline_pk . 
+ 
+This seminar is a basic introduction to the practical use and annulment of both
+containment and non-containment seals in psionic practices.  There will be a
+practical component to the seminar.  Questions are always welcome during the
+seminar.  Expect this seminar to run from one to two hours, depending on how
+many questions are asked.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">metalforever</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_14098" style="width: 100%; overflow: auto; min-height: 125px;">Log from the first class session can be found here:<br />
+ <a href="http://www.psionicsonline.net/class/logs/session-1-class-introwhat-psychokinesis-hosted-metalforever052709" target="_blank">http://www.psionicsonline.net/class/logs/session-1-class-introwhat-psychokinesis-hosted-metalforever052709</a></div>
+		<textarea style="display: none;" id="desctxt_14098">Log from the first class session can be found here:
+http://www.psionicsonline.net/class/logs/session-1-class-introwhat-psychokinesis-hosted-metalforever052709</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">metalforever</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_14125" style="width: 100%; overflow: auto; min-height: 125px;">Homework: Make notes regarding your habits. Get to know yourself on<br />
+paper. How do you learn in school?  Which methods towards learning<br />
+other subjects do you find effective? Do you learn through examples?<br />
+Do you learn visually?  Are you good at visualizing certain scenarios?<br />
+ What kind of habits when practicing other skills do you have?<br />
+<br />
+Length: Homework must be at least 3 paragraphs, or 15 sentences.  It<br />
+will be used for class session #2.<br />
+<br />
+Due:  Wednesday, June 3rd, During Class.<br />
+<br />
+<strong>About Session #2: The Basics of Psychokinesis: Technique Designing and Affirmations<br />
+(Hosted By: Metalforever)<br />
+<br />
+<br />
+Start: 06/03/2009 17:00<br />
+Timezone: America/New York<br />
+<br />
+<br />
+About:<br />
+This class session will focus on the creation of effective techniques<br />
+for use with basic psychokinetic tasks, such as moving the psiwheel.<br />
+We will also focus on what affirmations are, and why one should use<br />
+them when practicing.  I will also take the time to review what we<br />
+learned during the last class session, and answer any remaining<br />
+questions.<br />
+<br />
+<br />
+This class is being held on the IRC, or  Internet Relay Chat Network,<br />
+in real time.  You can join this class when the time comes here:<br />
+ <a href="http://www.psionicsonline.net/irc" target="_blank">http://www.psionicsonline.net/irc</a><br />
+and by typing:<br />
+/join #psionicsonline_pk<br />
+<br />
+For those with a separate IRC client, you may access this party with<br />
+the following information:<br />
+<br />
+Server: irc.darkmyst.org<br />
+Channel: #psionicsonline_pk</strong></div>
+		<textarea style="display: none;" id="desctxt_14125">Homework: Make notes regarding your habits. Get to know yourself on
+paper. How do you learn in school?  Which methods towards learning
+other subjects do you find effective? Do you learn through examples?
+Do you learn visually?  Are you good at visualizing certain scenarios?
+ What kind of habits when practicing other skills do you have?
+
+Length: Homework must be at least 3 paragraphs, or 15 sentences.  It
+will be used for class session #2.
+
+Due:  Wednesday, June 3rd, During Class.
+
+[b]About Session #2: The Basics of Psychokinesis: Technique Designing and Affirmations
+(Hosted By: Metalforever)
+
+
+Start: 06/03/2009 17:00
+Timezone: America/New York
+
+
+About:
+This class session will focus on the creation of effective techniques
+for use with basic psychokinetic tasks, such as moving the psiwheel.
+We will also focus on what affirmations are, and why one should use
+them when practicing.  I will also take the time to review what we
+learned during the last class session, and answer any remaining
+questions.
+
+
+This class is being held on the IRC, or  Internet Relay Chat Network,
+in real time.  You can join this class when the time comes here:
+http://www.psionicsonline.net/irc
+and by typing:
+/join #psionicsonline_pk
+
+For those with a separate IRC client, you may access this party with
+the following information:
+
+Server: irc.darkmyst.org
+Channel: #psionicsonline_pk[/b]</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">metalforever</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_14132" style="width: 100%; overflow: auto; min-height: 125px;">&quot;Making and Breaking Seals&quot;, Hosted By: Miri [05.29.09]<br />
+<br />
+<br />
+Logs:<br />
+ <a href="http://www.psionicsonline.net/class/logs/making-and-breaking-seals-seminar-hosted-miri-052909" target="_blank">http://www.psionicsonline.net/class/logs/making-and-breaking-seals-seminar-hosted-miri-052909</a></div>
+		<textarea style="display: none;" id="desctxt_14132">&quot;Making and Breaking Seals&quot;, Hosted By: Miri [05.29.09]
+
+
+Logs:
+http://www.psionicsonline.net/class/logs/making-and-breaking-seals-seminar-hosted-miri-052909</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by metalforever, 3 years, 5 months ago<br />Posted 3 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">metalforever</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_14233" style="width: 100%; overflow: auto; min-height: 125px;">Session #2: Technique Designing and Affirmations (Hosted By: Metalforever) [06.03.09]<br />
+<br />
+<br />
+Log:<br />
+<br />
+ <a href="http://www.psionicsonline.net/class/logs/session-2-technique-designing-and-affirmations-hosted-metalforever-060309" target="_blank">http://www.psionicsonline.net/class/logs/session-2-technique-designing-and-affirmations-hosted-metalforever-060309</a></div>
+		<textarea style="display: none;" id="desctxt_14233">Session #2: Technique Designing and Affirmations (Hosted By: Metalforever) [06.03.09]
+
+
+Log:
+
+http://www.psionicsonline.net/class/logs/session-2-technique-designing-and-affirmations-hosted-metalforever-060309</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by metalforever, 3 years, 5 months ago<br />Posted 3 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">metalforever</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_14235" style="width: 100%; overflow: auto; min-height: 125px;"><em>Start: 06/17/2009 19:00<br />
+Timezone: America/New York<br />
+<br />
+ <br />
+The Basics of Psychokinesis: A Brief History of Psychokinesis Research (Hosted By: Metalforever)<br />
+ <br />
+About:<br />
+This class session will review what was learned during the technique design lesson.  We will go into more detail regarding technique design, and will be answering any remaining questions regarding that area.  This session will serve as a &quot;progress&quot; checkpoint, where we discuss progress analytically.  Finally, we will focus on the main topic for tonight: research.  What is it within the context of Psionics?  What types of things do psychokinesis researchers study?  What controls are commonly seen when designing these experiments?  Which individuals are famous within this field and why?  The last question we will answer for that night involves how the students of PsionicsOnline can contribute to psi research.  I also hope to get everyone off on the right footing for any experiments they may hope to conduct, and discuss common pitfalls.  This class session will feature 2 exercises.  Although everything explained during this class lesson may seem detailed, it is merely an introduction compared to what can be found in our research section, which curiously, is merely an introduction towards what is it out there regarding psi research.<br />
+ ------------------------------------------<br />
+<br />
+This class is being held on the IRC, or  Internet Relay Chat Network, in real time.  You can join this class when the time comes here:<br />
+ <a href="http://www.psionicsonline.net/irc" target="_blank">http://www.psionicsonline.net/irc</a><br />
+and by typing:<br />
+/join #psionicsonline_pk<br />
+ <br />
+For those with a separate IRC client, you may access this party with the following information:<br />
+ <br />
+Server: irc.darkmyst.org<br />
+Channel: #psionicsonline_pk<br />
+ <br />
+I hope to see you there!</em><br />
+<strong>-----Homework (Due June 17th): Practice Macro-Psychokinesis using the schedule you created during the first class session, and the technique you created during this class session. Make notes regarding what seems to be working, and what does not seem to be working. Adjust your technique design towards what seems to be working better for you. Write at least 3-5 log entries during this process (you can create more), either using your own personal Psionic log, or PsionicsOnline&#039;s blog section before the next class session.</strong><br />
+<br />
+You may sign up for this class session at the following link:<br />
+ <a href="http://www.psionicsonline.net/event/basics-psychokinesis-brief-history-psychokinesis-research" target="_blank">http://www.psionicsonline.net/event/basics-psychokinesis-brief-history-psychokinesis-research</a><br />
+<br />
+You can sign up for the class here:<br />
+ <a href="http://www.psionicsonline.net/class/basics-psychokinesis-hosted-metalforever" target="_blank">http://www.psionicsonline.net/class/basics-psychokinesis-hosted-metalforever</a></div>
+		<textarea style="display: none;" id="desctxt_14235">[i]Start: 06/17/2009 19:00
+Timezone: America/New York
+
+ 
+The Basics of Psychokinesis: A Brief History of Psychokinesis Research (Hosted By: Metalforever)
+ 
+About:
+This class session will review what was learned during the technique design lesson.  We will go into more detail regarding technique design, and will be answering any remaining questions regarding that area.  This session will serve as a &quot;progress&quot; checkpoint, where we discuss progress analytically.  Finally, we will focus on the main topic for tonight: research.  What is it within the context of Psionics?  What types of things do psychokinesis researchers study?  What controls are commonly seen when designing these experiments?  Which individuals are famous within this field and why?  The last question we will answer for that night involves how the students of PsionicsOnline can contribute to psi research.  I also hope to get everyone off on the right footing for any experiments they may hope to conduct, and discuss common pitfalls.  This class session will feature 2 exercises.  Although everything explained during this class lesson may seem detailed, it is merely an introduction compared to what can be found in our research section, which curiously, is merely an introduction towards what is it out there regarding psi research.
+ ------------------------------------------
+
+This class is being held on the IRC, or  Internet Relay Chat Network, in real time.  You can join this class when the time comes here:
+http://www.psionicsonline.net/irc
+and by typing:
+/join #psionicsonline_pk
+ 
+For those with a separate IRC client, you may access this party with the following information:
+ 
+Server: irc.darkmyst.org
+Channel: #psionicsonline_pk
+ 
+I hope to see you there![/i]
+[b]-----Homework (Due June 17th): Practice Macro-Psychokinesis using the schedule you created during the first class session, and the technique you created during this class session. Make notes regarding what seems to be working, and what does not seem to be working. Adjust your technique design towards what seems to be working better for you. Write at least 3-5 log entries during this process (you can create more), either using your own personal Psionic log, or PsionicsOnline&#039;s blog section before the next class session.[/b]
+
+You may sign up for this class session at the following link:
+http://www.psionicsonline.net/event/basics-psychokinesis-brief-history-psychokinesis-research
+
+You can sign up for the class here:
+http://www.psionicsonline.net/class/basics-psychokinesis-hosted-metalforever</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">AngelsFall</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=966&amp;ref=1243825081" width="83" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_14240" style="width: 100%; overflow: auto; min-height: 125px;">Wow, your classes seem very well thought out and structured O_O<br />
+<br />
+I wish I could&#039;ve made the telekinesis ones &gt;_&gt; Oh well, I&#039;ll read the logs =p</div>
+		<textarea style="display: none;" id="desctxt_14240">Wow, your classes seem very well thought out and structured O_O
+
+I wish I could&#039;ve made the telekinesis ones &gt;_&gt; Oh well, I&#039;ll read the logs =p</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">metalforever</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_14243" style="width: 100%; overflow: auto; min-height: 125px;">Thank you. :)<br />
+<br />
+<br />
+I have created a reference chart to help to better understand log #2 and how everything fits together.<br />
+ <a href="http://www.psionicsonline.net/image/techniquereference.png" target="_blank">http://www.psionicsonline.net/image/techniquereference.png</a></div>
+		<textarea style="display: none;" id="desctxt_14243">Thank you. :)
+
+
+I have created a reference chart to help to better understand log #2 and how everything fits together.
+http://www.psionicsonline.net/image/techniquereference.png</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">AngelsFall</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=966&amp;ref=1243825081" width="83" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_14248" style="width: 100%; overflow: auto; min-height: 125px;">I&#039;m going to have to take a look at that a few more times before it sinks in... Maybe it&#039;s just 4 in the morning and that&#039;s my problem. xP<br />
+</div>
+		<textarea style="display: none;" id="desctxt_14248">I&#039;m going to have to take a look at that a few more times before it sinks in... Maybe it&#039;s just 4 in the morning and that&#039;s my problem. xP</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">metalforever</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_14494" style="width: 100%; overflow: auto; min-height: 125px;"><strong>Basic to Intermediate Healing of the Energy Body Seminar (by Miri)</strong><br />
+<br />
+<em><br />
+Start: 07/10/2009 21:00<br />
+End: 07/10/2009 23:30<br />
+Timezone: America/New York<br />
+<br />
+This class will cover basic and intermediate methodologies and philosophies of healing the energy body (both your own and those of others).  This is an introductory seminar but it&#039;s still aimed at people with some energy working experience.  Questions and walk-ins are welcome.  Expect the seminar to last between one and two hours.  It will be held Friday, July 10th at 9pm (EST) / 21:00 (GMT-5).<br />
+ <br />
+Please note both that this seminar will be run by Miri and that the seminar will be logged and edited for postage on this site.<br />
+<br />
+ </em><br />
+<br />
+For more information and signup, please visit:<br />
+<a href="http://www.psionicsonline.net/event/basic-intermediate-healing-energy-body-seminar-miri" target="_blank" title="http://www.psionicsonline.net/event/basic-intermediate-healing-energy-body-seminar-miri">Psionic Forums, Events, News, Classes and Blogs by Psionics Online</a></div>
+		<textarea style="display: none;" id="desctxt_14494">[b]Basic to Intermediate Healing of the Energy Body Seminar (by Miri)[/b]
+
+[i]
+Start: 07/10/2009 21:00
+End: 07/10/2009 23:30
+Timezone: America/New York
+
+This class will cover basic and intermediate methodologies and philosophies of healing the energy body (both your own and those of others).  This is an introductory seminar but it&#039;s still aimed at people with some energy working experience.  Questions and walk-ins are welcome.  Expect the seminar to last between one and two hours.  It will be held Friday, July 10th at 9pm (EST) / 21:00 (GMT-5).
+ 
+Please note both that this seminar will be run by Miri and that the seminar will be logged and edited for postage on this site.
+
+ [/i]
+
+For more information and signup, please visit:
+[url=http://www.psionicsonline.net/event/basic-intermediate-healing-energy-body-seminar-miri]Psionic Forums, Events, News, Classes and Blogs by Psionics Online[/url]</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by metalforever, 3 years, 4 months ago<br />Posted 3 years, 4 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=740" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 35 queries. 0.324 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

@@ -1,0 +1,364 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; The right time</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; The right time</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">The right time</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">RazSh18</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=510&amp;ref=1213120644" width="110" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9050" style="width: 100%; overflow: auto; min-height: 125px;">Hey all, I wanted to share something with you. <br />
+Lately (by weeks) I&#039;ve been thinking about my friends &quot; well these guys look open-headed for real TK &quot; and I wanted to show them the least I could do ( anyplace ) , even if I would fail. Just the feeling of success in expressing myself widely is enaf to me (its my greatest goal in life ).<br />
+<br />
+But then I think to myself &quot; maybe it&#039;s not the right time, I might fall to maniac-jail&quot; and pass that oprotunity. <br />
+<br />
+It&#039;s so furstrating =\<br />
+<br />
+Did you had those issius too? <br />
+(Thanks for your reading :) )</div>
+		<textarea style="display: none;" id="desctxt_9050">Hey all, I wanted to share something with you. 
+Lately (by weeks) I&#039;ve been thinking about my friends &quot; well these guys look open-headed for real TK &quot; and I wanted to show them the least I could do ( anyplace ) , even if I would fail. Just the feeling of success in expressing myself widely is enaf to me (its my greatest goal in life ).
+
+But then I think to myself &quot; maybe it&#039;s not the right time, I might fall to maniac-jail&quot; and pass that oprotunity. 
+
+It&#039;s so furstrating =\
+
+Did you had those issius too? 
+(Thanks for your reading :) )</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Antisankari</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=224&amp;ref=1213032338" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9051" style="width: 100%; overflow: auto; min-height: 125px;">If you performance is not enough to shut up everyone in the room, you should be the one to shut up =P<br />
+<br />
+Rule of thumb.</div>
+		<textarea style="display: none;" id="desctxt_9051">If you performance is not enough to shut up everyone in the room, you should be the one to shut up =P
+
+Rule of thumb.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Wandering Wolf</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=492&amp;ref=1209855800" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9053" style="width: 100%; overflow: auto; min-height: 125px;">The best time to demonstrate your abilities is when you have practiced so much that you can do it around others. I recommend trying it with family members first. </div>
+		<textarea style="display: none;" id="desctxt_9053">The best time to demonstrate your abilities is when you have practiced so much that you can do it around others. I recommend trying it with family members first.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">JakePsi</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9057" style="width: 100%; overflow: auto; min-height: 125px;">If i were you i would try not to big myself up to much before going to prove it to someone especially if all your going to show them is the pin-wheel excersise because that is really not a glamorous way to prove TK to a group of people...at least shove a glass over it :P I&#039;d be careful trying to prove such things to people. There was this guy ages ago that went round performing mind blowing phenomenon and it didn&#039;t end up to pretty. Anyway why do you feel the need to prove anything to anyone?</div>
+		<textarea style="display: none;" id="desctxt_9057">If i were you i would try not to big myself up to much before going to prove it to someone especially if all your going to show them is the pin-wheel excersise because that is really not a glamorous way to prove TK to a group of people...at least shove a glass over it :P I&#039;d be careful trying to prove such things to people. There was this guy ages ago that went round performing mind blowing phenomenon and it didn&#039;t end up to pretty. Anyway why do you feel the need to prove anything to anyone?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Ether</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=578&amp;ref=1213490800" width="125" height="105" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9063" style="width: 100%; overflow: auto; min-height: 125px;">Personally I think the best way to introduce a friend to Psionics is to have them try it for themselves. There is no better proof than proving it to yourself. I have done this with one of my friends. We talked about Psionics in a casual setting. Eventually I asked her to read some arcticles on psipog and try the psiwheel. She didn&#039;t get it at first, but it didn&#039;t take her long. Since then she has become extremely interested in all things paranormal and we have become great chat buddies for stuff like this. I know this may not work for everyone, but in my opinion it&#039;s a good place to start. Don&#039;t try to prove yourself. Your ego will get in the way.</div>
+		<textarea style="display: none;" id="desctxt_9063">Personally I think the best way to introduce a friend to Psionics is to have them try it for themselves. There is no better proof than proving it to yourself. I have done this with one of my friends. We talked about Psionics in a casual setting. Eventually I asked her to read some arcticles on psipog and try the psiwheel. She didn&#039;t get it at first, but it didn&#039;t take her long. Since then she has become extremely interested in all things paranormal and we have become great chat buddies for stuff like this. I know this may not work for everyone, but in my opinion it&#039;s a good place to start. Don&#039;t try to prove yourself. Your ego will get in the way.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Ether, 4 years, 6 months ago<br />Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9070" style="width: 100%; overflow: auto; min-height: 125px;">Agreed. <br />
+<br />
+The last thing you want to do is put your ego inbetween you and your studies. It&#039;s harmful to your mental health.</div>
+		<textarea style="display: none;" id="desctxt_9070">Agreed. 
+
+The last thing you want to do is put your ego inbetween you and your studies. It&#039;s harmful to your mental health.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">RazSh18</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=510&amp;ref=1213120644" width="110" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9079" style="width: 100%; overflow: auto; min-height: 125px;">@ Antisankari<br />
+How can you tell when your ability woul be &quot;The most impressive&quot; ? <br />
+there will always be some skeptical. Isn&#039;t it make you feel like you want to slap everybody in that room and tell them &quot; Look ! it&#039;s real! *demonstraiting TK* &quot; .<br />
+<br />
+How can you tell what will make them go &quot; OK.. He&#039;s right and shuttered all laws of physics... now we belive him... &quot;.<br />
+<br />
+@ Wandering Wolf<br />
+well the thing is, I feel much comfortable to do it near friends than family, but still, thier skiptical opinions are worth considering, and even convincing sometimes and that skeptisizm ( and doubt ) hamper TK and other psionics. <br />
+<br />
+@ JakePsi<br />
+Yo , :) . <br />
+Well psi-wheel wasn&#039;t my favorite way to demonstrait TK , but I thought of some force wave ( like Henry from LF2 ) on unsespecting victim ( not harming him of course :P  )<br />
+Thnaks for the warning, I&#039;ll think wisely ;).<br />
+I feel like I&#039;m developing my TK but get hamperd by the situation of I&#039;m the only one who is working in this subject without being able to share it with others, what can be more convincing that live TK ? <br />
+<br />
+@ Ether<br />
+Well I have a friend which I showed her video of me doung psi-ball and the camera went blue-pixels all over. And she got into it too but it&#039;s Tests months , so we can&#039;t meet and share stuffs. Beside that&#039; I don&#039;t trust her much :P LOL.<br />
+about your last sentence: I couldn&#039;t agree more, but how can you preform in front of people without some ego? even theaters and mimeing have egos when preforming.<br />
+<br />
+@ Akio<br />
+see my answer about ego on Ether&#039;s answer.<br />
+Few days ago I just felt like I was psi-attacking myself, I felt weak, sad and deppressed,. So, I think it really got me ( my ego ) :P . <br />
+<br />
+</div>
+		<textarea style="display: none;" id="desctxt_9079">@ Antisankari
+How can you tell when your ability woul be &quot;The most impressive&quot; ? 
+there will always be some skeptical. Isn&#039;t it make you feel like you want to slap everybody in that room and tell them &quot; Look ! it&#039;s real! *demonstraiting TK* &quot; .
+
+How can you tell what will make them go &quot; OK.. He&#039;s right and shuttered all laws of physics... now we belive him... &quot;.
+
+@ Wandering Wolf
+well the thing is, I feel much comfortable to do it near friends than family, but still, thier skiptical opinions are worth considering, and even convincing sometimes and that skeptisizm ( and doubt ) hamper TK and other psionics. 
+
+@ JakePsi
+Yo , :) . 
+Well psi-wheel wasn&#039;t my favorite way to demonstrait TK , but I thought of some force wave ( like Henry from LF2 ) on unsespecting victim ( not harming him of course :P  )
+Thnaks for the warning, I&#039;ll think wisely ;).
+I feel like I&#039;m developing my TK but get hamperd by the situation of I&#039;m the only one who is working in this subject without being able to share it with others, what can be more convincing that live TK ? 
+
+@ Ether
+Well I have a friend which I showed her video of me doung psi-ball and the camera went blue-pixels all over. And she got into it too but it&#039;s Tests months , so we can&#039;t meet and share stuffs. Beside that&#039; I don&#039;t trust her much :P LOL.
+about your last sentence: I couldn&#039;t agree more, but how can you preform in front of people without some ego? even theaters and mimeing have egos when preforming.
+
+@ Akio
+see my answer about ego on Ether&#039;s answer.
+Few days ago I just felt like I was psi-attacking myself, I felt weak, sad and deppressed,. So, I think it really got me ( my ego ) :P .</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Ether</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=578&amp;ref=1213490800" width="125" height="105" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9080" style="width: 100%; overflow: auto; min-height: 125px;">I think that your ego is the hardest thing to get passed. We need to accept that we are not doing it for them, but for ourselves. We need to understand that we are not doing it to show off or strike fear into people, but for the hope that we can give people an awareness to an unseen world. With any kind of power one is faced with the choice: What will I do with this? In the field of Psionics that answer should be creating a more positive and conscious world, never to feel powerful. It takes a very mature Psion to be able to show others without having an ego. I think that when that point is reached that is when your abilities will truly grow.</div>
+		<textarea style="display: none;" id="desctxt_9080">I think that your ego is the hardest thing to get passed. We need to accept that we are not doing it for them, but for ourselves. We need to understand that we are not doing it to show off or strike fear into people, but for the hope that we can give people an awareness to an unseen world. With any kind of power one is faced with the choice: What will I do with this? In the field of Psionics that answer should be creating a more positive and conscious world, never to feel powerful. It takes a very mature Psion to be able to show others without having an ego. I think that when that point is reached that is when your abilities will truly grow.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Zorro</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=582&amp;ref=1213557004" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9088" style="width: 100%; overflow: auto; min-height: 125px;">There will never be a &quot;right&quot; time to tell/show anyone and many people will be skeptical no matter what you say and probably no matter what you show them. I agree with Ether, doing it yourself is the only way that cements a belief in it. The only way that I truly came to believe this myself was by doing it, fortunately I picked it up rather quickly or I would have dismissed it as nuts. A lot depends on the person too, if they do not trust you and think that you would pull their leg, well, they probably aren&#039;t going to believe you.<br />
+<br />
+In other words, we could all talk to the world about this until we are blue in the face, we could show them a hundred times over, and yeah, a few people might believe it, but until we get them to try it, they aren&#039;t going to really believe it.<br />
+<br />
+And as for the ego thing, you have to have confidence, but not an ego. You must know what you can do, but that doesn&#039;t mean you have pride in it. It should never be a look what I can do thing, but a look what we can do, a sharing of abilities, but never a display.</div>
+		<textarea style="display: none;" id="desctxt_9088">There will never be a &quot;right&quot; time to tell/show anyone and many people will be skeptical no matter what you say and probably no matter what you show them. I agree with Ether, doing it yourself is the only way that cements a belief in it. The only way that I truly came to believe this myself was by doing it, fortunately I picked it up rather quickly or I would have dismissed it as nuts. A lot depends on the person too, if they do not trust you and think that you would pull their leg, well, they probably aren&#039;t going to believe you.
+
+In other words, we could all talk to the world about this until we are blue in the face, we could show them a hundred times over, and yeah, a few people might believe it, but until we get them to try it, they aren&#039;t going to really believe it.
+
+And as for the ego thing, you have to have confidence, but not an ego. You must know what you can do, but that doesn&#039;t mean you have pride in it. It should never be a look what I can do thing, but a look what we can do, a sharing of abilities, but never a display.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">JakePsi</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9096" style="width: 100%; overflow: auto; min-height: 125px;">There really is nothing more convincible than actually showing someone but is what your going to show so mind blowing that theres no possible variables altering whats being done? e.g. a gust of wind :P Also i agree with Zorro int eh afct that it shouldnt be a showing of aspect but more a sharing in abilities :)</div>
+		<textarea style="display: none;" id="desctxt_9096">There really is nothing more convincible than actually showing someone but is what your going to show so mind blowing that theres no possible variables altering whats being done? e.g. a gust of wind :P Also i agree with Zorro int eh afct that it shouldnt be a showing of aspect but more a sharing in abilities :)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=409" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 26 queries. 0.324 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

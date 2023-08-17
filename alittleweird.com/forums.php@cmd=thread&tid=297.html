@@ -1,0 +1,403 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Can’t wake up!!!!</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Can’t wake up!!!!</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Can’t wake up!!!!</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">bright</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=442&amp;ref=1219022178" width="112" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7377" style="width: 100%; overflow: auto; min-height: 125px;"><br />
+<br />
+I’m finding that I’m experiencing lucid dreams more and more frequently, which is great right? Wrong! <br />
+<br />
+Here’s a typical lucid dream: <br />
+1)	Become conscious.<br />
+2)	Go about my business, la de da.<br />
+3)	Realise I’m lucid, do whatever.<br />
+4)	Get bored, try to wake up.<br />
+5)	Can’t wake up!<br />
+6)	Can’t wake up!<br />
+7)	Can’t wake up!<br />
+8)	Wake up.<br />
+The other day after a long struggle I finally opened my eyes (in real life), but it was like the image in my dream was imprinted over what my eyes could see, things got a little messy from there: I did not return to sleep ( lots of coffee).<br />
+I’m not sure if this is normal, if anything can be normal within the paranormal, but I would appreciate your thoughts.<br />
+<br />
+Thanks<br />
+</div>
+		<textarea style="display: none;" id="desctxt_7377">I’m finding that I’m experiencing lucid dreams more and more frequently, which is great right? Wrong! 
+
+Here’s a typical lucid dream: 
+1)	Become conscious.
+2)	Go about my business, la de da.
+3)	Realise I’m lucid, do whatever.
+4)	Get bored, try to wake up.
+5)	Can’t wake up!
+6)	Can’t wake up!
+7)	Can’t wake up!
+8)	Wake up.
+The other day after a long struggle I finally opened my eyes (in real life), but it was like the image in my dream was imprinted over what my eyes could see, things got a little messy from there: I did not return to sleep ( lots of coffee).
+I’m not sure if this is normal, if anything can be normal within the paranormal, but I would appreciate your thoughts.
+
+Thanks</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Antisankari</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=224&amp;ref=1213032338" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_7379" style="width: 100%; overflow: auto; min-height: 125px;">Mmm... I&#039;ve had the similar thing in a different context.<br />
+I might wake up in the middle of the night and have the bloody &quot;dream image&quot; still fully animated and all getting blitted to my retina =P.<br />
+<br />
+It is hilarious, when you combine a sleepy mind with 100% authentic imaginery. It is actually funny to end up crouching behind your chair just to evade that horrible dinosaur, who was sitting next to you a few seconds ago.<br />
+<br />
+What exactly do you mean by being unable to wake up?<br />
+<br />
+Can&#039;t you open your eyes?<br />
+Can&#039;t you move your limbs?<br />
+Can&#039;t you think clearly?<br />
+<br />
+If you are conscious, it might be a variations of a sleep paralysis. Harmless jest of our minds... Then again, it might just be that you have discovered something interesting from your brains. </div>
+		<textarea style="display: none;" id="desctxt_7379">Mmm... I&#039;ve had the similar thing in a different context.
+I might wake up in the middle of the night and have the bloody &quot;dream image&quot; still fully animated and all getting blitted to my retina =P.
+
+It is hilarious, when you combine a sleepy mind with 100% authentic imaginery. It is actually funny to end up crouching behind your chair just to evade that horrible dinosaur, who was sitting next to you a few seconds ago.
+
+What exactly do you mean by being unable to wake up?
+
+Can&#039;t you open your eyes?
+Can&#039;t you move your limbs?
+Can&#039;t you think clearly?
+
+If you are conscious, it might be a variations of a sleep paralysis. Harmless jest of our minds... Then again, it might just be that you have discovered something interesting from your brains.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">bright</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=442&amp;ref=1219022178" width="112" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7380" style="width: 100%; overflow: auto; min-height: 125px;">I mean I try everything I can to wake up, I think of things that I did the day before, what I ate, what my room looks like. I try to open my eyes, move my limbs, although I’m only moving my limbs in the dream. A few months ago I would move my arm (in real life) and this would wake me up, that doesn’t work anymore. It’s like if you’re watching a movie at the cinema, you’re done with it so you try to get up and leave, but you can’t you’re just stuck there watching this damn horrible movie ( maybe Steven Spielberg’s 3 hour A.I.). I’m not inclined to think it has much to do with sleep paralysis, it is happening in my head, it seems connected to my O.B.E and psionics practice, and it’s not been happening long.</div>
+		<textarea style="display: none;" id="desctxt_7380">I mean I try everything I can to wake up, I think of things that I did the day before, what I ate, what my room looks like. I try to open my eyes, move my limbs, although I’m only moving my limbs in the dream. A few months ago I would move my arm (in real life) and this would wake me up, that doesn’t work anymore. It’s like if you’re watching a movie at the cinema, you’re done with it so you try to get up and leave, but you can’t you’re just stuck there watching this damn horrible movie ( maybe Steven Spielberg’s 3 hour A.I.). I’m not inclined to think it has much to do with sleep paralysis, it is happening in my head, it seems connected to my O.B.E and psionics practice, and it’s not been happening long.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">keen31</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=253&amp;ref=1203827935" width="53" height="55" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_7381" style="width: 100%; overflow: auto; min-height: 125px;">try an anchor.<br />
+<br />
+the same way you can trigger a lucid dream by remembering some sort of anchor to clue you in to being dreaming, perhaps there is something you can setup for your mind and/or body so that you can trigger a wake-up.<br />
+<br />
+i cant think of anything off-hand particularly... maybe a codeword? as you go to sleep tell(repeat to) yourself that if you say the word &quot;razzle-dazzle&quot; you will automatically become completely concious and awake (and return to your body if you think you may be leaving it) with no adverse effects or difficulty.<br />
+<br />
+as with lucid dream triggering and seeding, it will probably take time and practice, but if you are diligent with whatever you decide to use as an anchor/trigger i imagine you can use it as a rope to climb out.</div>
+		<textarea style="display: none;" id="desctxt_7381">try an anchor.
+
+the same way you can trigger a lucid dream by remembering some sort of anchor to clue you in to being dreaming, perhaps there is something you can setup for your mind and/or body so that you can trigger a wake-up.
+
+i cant think of anything off-hand particularly... maybe a codeword? as you go to sleep tell(repeat to) yourself that if you say the word &quot;razzle-dazzle&quot; you will automatically become completely concious and awake (and return to your body if you think you may be leaving it) with no adverse effects or difficulty.
+
+as with lucid dream triggering and seeding, it will probably take time and practice, but if you are diligent with whatever you decide to use as an anchor/trigger i imagine you can use it as a rope to climb out.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Anonymous Dark</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=354&amp;ref=1203377944" width="100" height="86" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7382" style="width: 100%; overflow: auto; min-height: 125px;">It sounds like you panic when you can&#039;t wake up...I&#039;m guessing that you just need to chill out, take a breath, and say, as the Beatles so aptly put it...&quot;I&#039;m only sleeping!&quot;<br />
+<br />
+When you feel in control and less panicky, it may be easier to wake up. It&#039;s the difference between struggling wildly against a captor and waiting for just the right moment to escape...though I don&#039;t know if it&#039;s such a good analogy if I compare your dream to a captor... &gt;.&gt;<br />
+<br />
+Of course, this may not help at all. I don&#039;t know, I&#039;ve never had a Lucid Dream. But things are just easier in general when you approach them with a collected, cool mindset.</div>
+		<textarea style="display: none;" id="desctxt_7382">It sounds like you panic when you can&#039;t wake up...I&#039;m guessing that you just need to chill out, take a breath, and say, as the Beatles so aptly put it...&quot;I&#039;m only sleeping!&quot;
+
+When you feel in control and less panicky, it may be easier to wake up. It&#039;s the difference between struggling wildly against a captor and waiting for just the right moment to escape...though I don&#039;t know if it&#039;s such a good analogy if I compare your dream to a captor... &gt;.&gt;
+
+Of course, this may not help at all. I don&#039;t know, I&#039;ve never had a Lucid Dream. But things are just easier in general when you approach them with a collected, cool mindset.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Anonymous Dark, 4 years, 9 months ago<br />Posted 4 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">cinderwild</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_7388" style="width: 100%; overflow: auto; min-height: 125px;">Many people have trouble remaining asleep when exploring sexual fantasies in lucid dreams, so why not try doing that if you haven&#039;t?<br />
+<br />
+<br />
+ I like the theory that someone else placed about you being in sleep paralysis at the time. If that&#039;s true, and you feel comfortable enough, maybe you could broaden your experiences and gives yourself the chance to have an OBE out of a lucid dream?</div>
+		<textarea style="display: none;" id="desctxt_7388">Many people have trouble remaining asleep when exploring sexual fantasies in lucid dreams, so why not try doing that if you haven&#039;t?
+
+
+ I like the theory that someone else placed about you being in sleep paralysis at the time. If that&#039;s true, and you feel comfortable enough, maybe you could broaden your experiences and gives yourself the chance to have an OBE out of a lucid dream?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">funkydeath</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=256&amp;ref=1205045662" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7398" style="width: 100%; overflow: auto; min-height: 125px;">I had a really weird dream a while ago. <br />
+In my dream i woke up in bed and didn&#039;t realise that i was sleeping, i turned on my side to see what the time was but when i looked at the clock my ceiling fan as on it.  this made me realise i was dreaming and i woke up... i opened my eyes and everything was back to normal, so i got out of bed and suddenly my vision became blurry and i realised i was dreaming and i woke up... once again i opened my eyes to the exact same scene... the only difference was that this time i realised i was dreaming and it started to scare me.  i went through what seemed like hundreds of different scenarios in which i explored my room i could do anything i wanted except leave, and as soon as i left the bed i would awaken, so i kept a hand on my bed as i tried to find away to wake up.  after what seemed like a life time i began to fear that in real life i was in a coma or something and that i would always be stuck in this dream, never leaving my room.  the next time i woke  up however, there was this man i had never seen before sitting on my bed next to me.  he just stared at me.  i freaked out and jumped out of the bed hoping that when i awoke in the next dream he would be gone. But he wasnt.  after a while i asked him if he realised that he was in my dream. he said that he was fully aware of everything that was happening. he said that i was stuck inside a dream held within an infinite amount of dreams.. and that no matter how hard i tried to get out id be stuck there forever.then he was gone.  anyways cutting this already very long story i finally realised that if i concentrated hard enough and rolled my body over in real life id wake up.. which is what happened.<br />
+<br />
+<br />
+</div>
+		<textarea style="display: none;" id="desctxt_7398">I had a really weird dream a while ago. 
+In my dream i woke up in bed and didn&#039;t realise that i was sleeping, i turned on my side to see what the time was but when i looked at the clock my ceiling fan as on it.  this made me realise i was dreaming and i woke up... i opened my eyes and everything was back to normal, so i got out of bed and suddenly my vision became blurry and i realised i was dreaming and i woke up... once again i opened my eyes to the exact same scene... the only difference was that this time i realised i was dreaming and it started to scare me.  i went through what seemed like hundreds of different scenarios in which i explored my room i could do anything i wanted except leave, and as soon as i left the bed i would awaken, so i kept a hand on my bed as i tried to find away to wake up.  after what seemed like a life time i began to fear that in real life i was in a coma or something and that i would always be stuck in this dream, never leaving my room.  the next time i woke  up however, there was this man i had never seen before sitting on my bed next to me.  he just stared at me.  i freaked out and jumped out of the bed hoping that when i awoke in the next dream he would be gone. But he wasnt.  after a while i asked him if he realised that he was in my dream. he said that he was fully aware of everything that was happening. he said that i was stuck inside a dream held within an infinite amount of dreams.. and that no matter how hard i tried to get out id be stuck there forever.then he was gone.  anyways cutting this already very long story i finally realised that if i concentrated hard enough and rolled my body over in real life id wake up.. which is what happened.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">bright</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=442&amp;ref=1219022178" width="112" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_7399" style="width: 100%; overflow: auto; min-height: 125px;">Funkydeath, the dream you just described was the sort of lucid dream I used to have about a year ago, it involved a lot of waking up and then realising it was a dream and attempting to wake up, only to find that this bed like all the other beds is a dream bed. Although, when I tried the rolling over trick ( in desperation) I just sort of kept rolling and rolling and rolling for what seemed like ages, accompanied with my muffled screams, then I did wake up. I suspect some comments people have made about calming down are correct, it’s probably like the old Chinese finger trap, right?<br />
+<br />
+What interests me now is that person who spoke to you, because I had a similar experience. I was lucid, and someone spoke to me and this person knew that I was lucid, so everything they said had significance. It was like another being talking to me, or my subconscious, I could feel the importance in what was being said to me like an important message. And the last thing this person said to me was “This is not a dream” this echoed until I awoke.<br />
+<br />
+So I wonder, ( I should really make a different thread for this right?) are there messages or truths to be found whilst you are lucid. People talk about being able to control their world whilst lucid, something that I’m often not able to do, is there significance in what people tell you, or what you see and where you are, and can maybe reap the benefits of being able to read the innermost parts of your mind?<br />
+<br />
+hmmmmmmmmmmmmmm.<br />
+</div>
+		<textarea style="display: none;" id="desctxt_7399">Funkydeath, the dream you just described was the sort of lucid dream I used to have about a year ago, it involved a lot of waking up and then realising it was a dream and attempting to wake up, only to find that this bed like all the other beds is a dream bed. Although, when I tried the rolling over trick ( in desperation) I just sort of kept rolling and rolling and rolling for what seemed like ages, accompanied with my muffled screams, then I did wake up. I suspect some comments people have made about calming down are correct, it’s probably like the old Chinese finger trap, right?
+
+What interests me now is that person who spoke to you, because I had a similar experience. I was lucid, and someone spoke to me and this person knew that I was lucid, so everything they said had significance. It was like another being talking to me, or my subconscious, I could feel the importance in what was being said to me like an important message. And the last thing this person said to me was “This is not a dream” this echoed until I awoke.
+
+So I wonder, ( I should really make a different thread for this right?) are there messages or truths to be found whilst you are lucid. People talk about being able to control their world whilst lucid, something that I’m often not able to do, is there significance in what people tell you, or what you see and where you are, and can maybe reap the benefits of being able to read the innermost parts of your mind?
+
+hmmmmmmmmmmmmmm.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">funkydeath</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=256&amp;ref=1205045662" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7403" style="width: 100%; overflow: auto; min-height: 125px;">yeah i have wondered about the person that had spoken to me too.  this i thought was probably the most note worthy part of the dream.  As he was someone id never seen well presented in a suit sitting on my bed.  he seemed kind of amused as he told me that i was stuck in the dream forever and that i could never get out, but honestly i think that it was because of what he said that let me finally get out.  and just like your dream his words did keep echoing until i broke free of the dream.<br />
+<br />
+i think its possible that it was the subconscious trying to help me awaken.  but id like to think it was something or someone else helping me get out:P <br />
+<br />
+its all very interesting</div>
+		<textarea style="display: none;" id="desctxt_7403">yeah i have wondered about the person that had spoken to me too.  this i thought was probably the most note worthy part of the dream.  As he was someone id never seen well presented in a suit sitting on my bed.  he seemed kind of amused as he told me that i was stuck in the dream forever and that i could never get out, but honestly i think that it was because of what he said that let me finally get out.  and just like your dream his words did keep echoing until i broke free of the dream.
+
+i think its possible that it was the subconscious trying to help me awaken.  but id like to think it was something or someone else helping me get out:P 
+
+its all very interesting</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by funkydeath, 4 years, 9 months ago<br />Posted 4 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Yujinn</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_7420" style="width: 100%; overflow: auto; min-height: 125px;">it wont let me make a new thread but i can add one here so i picked a thread close to what im having problems with. Even though its really not. Every night i can c the future in my sleep (i havent had real dreams in a long time). Thing is is that i cant choose what i wish to c plus what i think is cool is that ive seen life after death. (no i wont say what its like unless i feel like it) how can i control what i c?</div>
+		<textarea style="display: none;" id="desctxt_7420">it wont let me make a new thread but i can add one here so i picked a thread close to what im having problems with. Even though its really not. Every night i can c the future in my sleep (i havent had real dreams in a long time). Thing is is that i cant choose what i wish to c plus what i think is cool is that ive seen life after death. (no i wont say what its like unless i feel like it) how can i control what i c?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">bd333</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7569" style="width: 100%; overflow: auto; min-height: 125px;">I used to have really strange and vivid dreams that I could not wake up from until it seemed like a day was up. It was almost like I was switching from one reality to another. Some of my memories are actually from them as if they were reality at one time... I was okay with these dreams until they started manipulating my fears and using them against me. I would have these scary (for lack of a better word) dreams that I could not wake up from. What worked for me was, in my dream somehow, I gained full control of what my dream body did. If I closed my eyes for enough in my dream, I would wake up in reality, almost as if my dream self fell asleep.<br />
+My suggestion is trying to gain control over your dream form and finding something that works to get you out.</div>
+		<textarea style="display: none;" id="desctxt_7569">I used to have really strange and vivid dreams that I could not wake up from until it seemed like a day was up. It was almost like I was switching from one reality to another. Some of my memories are actually from them as if they were reality at one time... I was okay with these dreams until they started manipulating my fears and using them against me. I would have these scary (for lack of a better word) dreams that I could not wake up from. What worked for me was, in my dream somehow, I gained full control of what my dream body did. If I closed my eyes for enough in my dream, I would wake up in reality, almost as if my dream self fell asleep.
+My suggestion is trying to gain control over your dream form and finding something that works to get you out.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=297" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 27 queries. 0.327 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

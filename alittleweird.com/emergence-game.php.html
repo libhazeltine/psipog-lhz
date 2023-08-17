@@ -1,0 +1,237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Emergence Game</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA">
+<p class="pagetitle">Emergence Game</p>
+<div id="tabledest"></div>
+<script type="text/javascript">
+//<![CDATA[
+
+var cols = 30;
+var rows = 20;
+var cell_width = 15;
+var cell_height = 15;
+var colors = [];
+var cell_e = [];
+var is_playing = false;
+var play_speed = 128;
+var iter_frame = 1;
+
+var out = '<'+'table cellspacing="0" cellpadding="0" style="border: 1px solid #000; margin: 20px auto 8px auto;">';
+for (y = 0; y < rows; y++)
+{
+	out += '<'+'tr>';
+	for (x = 0; x < cols; x++)
+	{
+		colors[x + y * cols] = '';
+		out += '<'+'td><'+'div id="cell_' + x + '_' + y + '" style="width: ' + cell_width +
+			'px; height: ' + cell_height + 'px; font-size:0pt;">&nbsp;<'+'/div><'+'/td>';
+	}
+	out += '<'+'/tr>';
+}
+out += '<'+'/table>';
+
+document.getElementById('tabledest').innerHTML = out;
+
+for (y = 0; y < rows; y++)
+	for (x = 0; x < cols; x++)
+		cell_e[x + y * cols] = document.getElementById('cell_' + x + '_' + y);
+
+function output_colors()
+{
+	for (var i = 0; i < cell_e.length; i++)
+		cell_e[i].style.backgroundColor = colors[i];
+}
+
+function reset_colors()
+{
+	for (var i = 0; i < colors.length; i++)
+		colors[i] = 'rgb(' +
+			Math.floor(Math.random() * 255) + ', ' +
+			Math.floor(Math.random() * 255) + ', ' +
+			Math.floor(Math.random() * 255) + ')';
+}
+
+function set_buttons(e)
+{
+	document.getElementById('playbutton').value = e ? 'Play' : 'Pause';
+	document.getElementById('slowerbutton').disabled = e;
+	document.getElementById('fasterbutton').disabled = e;
+}
+
+function toggle_play()
+{
+	if (is_playing)
+	{
+		set_buttons(true);
+		is_playing = false;
+	}
+	else
+	{
+		set_buttons(false);
+		is_playing = true;
+		next_frame();
+	}
+}
+
+function play_faster()
+{
+	if (play_speed > 1)
+		play_speed = Math.floor(play_speed * 2 / 3);
+	else if (iter_frame < 20)
+		iter_frame++;
+}
+
+function play_slower()
+{
+	if (iter_frame > 1)
+		iter_frame--;
+	else
+		play_speed = Math.ceil(play_speed * 3 / 2);
+}
+
+function next_frame()
+{
+	for (var i = 0; i < iter_frame; i++)
+	{
+		var sx = Math.floor(Math.random() * cols);
+		var sy = Math.floor(Math.random() * rows);
+		var pos = sx + sy * cols;
+		var outpos = -1;
+		var dir = Math.floor(Math.random() * 4);
+
+		if (dir == 0 && sx > 0)
+			colors[outpos = pos - 1] = colors[pos];
+		else if (dir == 1 && sx < cols - 1)
+			colors[outpos = pos + 1] = colors[pos];
+		else if (dir == 2 && sy > 0)
+			colors[outpos = pos - cols] = colors[pos];
+		else if (dir == 3 && sy < rows - 1)
+			colors[outpos = pos + cols] = colors[pos];
+		if (outpos >= 0)
+			cell_e[outpos].style.backgroundColor = colors[outpos];
+	}
+		
+	if (is_playing)
+		setTimeout('next_frame();', play_speed);
+}
+
+
+
+reset_colors();
+output_colors();
+
+//]]>
+</script>
+<p style="text-align: center; margin: 0 0 0 20px;">
+	<input type="button" value="Reset" onclick="javascript: reset_colors(); output_colors();" />
+	<input type="button" value="Play" onclick="javascript: toggle_play();" id="playbutton" />
+	<input type="button" value="Slower" onclick="javascript: play_slower();" disabled="disabled" id="slowerbutton" />
+	<input type="button" value="Faster" onclick="javascript: play_faster();" disabled="disabled" id="fasterbutton" />
+</p>
+<p>
+	This is not a typical "game" - you do not play it.  It's a simulation that demonstrates how a world with
+	simple rules will have emergent properties.  The rules for this particular world are:
+</p>
+<ol>
+	<li>Create an image with random colors in each cell</li>
+	<li>Pick a random cell</li>
+	<li>Copy the cell's color to one of its neighbors</li>
+	<li>Repeat step 2-3, over and over again</li>
+</ol>
+<p>
+	To see this in action, click the Play button.  Then click on Faster to speed up the process.  Even though
+	the rules are simple, life-like "blobs" emerge, and seem to "attack" each other.  The number of unique colors
+	will dwindle down, as individual colors go extinct, until only one color remains.
+</p>
+<p>
+	<a href="index.html@s=emergence.html">Search for Blog Posts on "Emergence"</a>
+</p>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 8 queries. 0.186 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

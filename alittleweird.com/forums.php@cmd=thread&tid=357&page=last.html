@@ -1,0 +1,430 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; OBEs</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; OBEs</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">OBEs</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">M. Dragon Fang</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=482&amp;ref=1208622720" width="80" height="98" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_8075" style="width: 100%; overflow: auto; min-height: 125px;">I&#039;ve sort of stopped with kenisis, and started with OBEs.<br />
+<br />
+Now I&#039;m using the method by just laying still for a while, but I always just HAVE to move, my body does it automaticaly, even if I&#039;m telling it not to turn, scratch, or whatever! any help on this?<br />
+<br />
+Also, I seem to feel tingles really quick, especcialy in my hands. I get that after about 2-5 minutes. am I doing something wrong, or is this perfectly fine?<br />
+<br />
+And the last question: When do I know I have to stop thinking of anything?<br />
+<br />
+thanks in advance</div>
+		<textarea style="display: none;" id="desctxt_8075">I&#039;ve sort of stopped with kenisis, and started with OBEs.
+
+Now I&#039;m using the method by just laying still for a while, but I always just HAVE to move, my body does it automaticaly, even if I&#039;m telling it not to turn, scratch, or whatever! any help on this?
+
+Also, I seem to feel tingles really quick, especcialy in my hands. I get that after about 2-5 minutes. am I doing something wrong, or is this perfectly fine?
+
+And the last question: When do I know I have to stop thinking of anything?
+
+thanks in advance</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">cinderwild</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_8078" style="width: 100%; overflow: auto; min-height: 125px;">Here&#039;s some tips from myself. I&#039;ve had problems with the same things, and I admit they are still persisting. My advice is to try NOT to put so much importance in not moving. If you do, moving your body will completely break your attempt and you won&#039;t care to try again. Instead, let your body move and just accept it as &#039;not being there yet&#039;.<br />
+<br />
+As for stop thinking. Have you ever noticed what it feels like to fall asleep? That suspended, &#039;not caring&#039; kind of feeling? There will be a point where you stop consciously thinking and just start perceiving. Try to get to that point. Also, try laying down as if you&#039;re going to sleep (choose a different position than usual if you feel like you will actually fall asleep otherwise) and try and pinpoint that moment and suspend it.</div>
+		<textarea style="display: none;" id="desctxt_8078">Here&#039;s some tips from myself. I&#039;ve had problems with the same things, and I admit they are still persisting. My advice is to try NOT to put so much importance in not moving. If you do, moving your body will completely break your attempt and you won&#039;t care to try again. Instead, let your body move and just accept it as &#039;not being there yet&#039;.
+
+As for stop thinking. Have you ever noticed what it feels like to fall asleep? That suspended, &#039;not caring&#039; kind of feeling? There will be a point where you stop consciously thinking and just start perceiving. Try to get to that point. Also, try laying down as if you&#039;re going to sleep (choose a different position than usual if you feel like you will actually fall asleep otherwise) and try and pinpoint that moment and suspend it.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">RazSh18</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=510&amp;ref=1213120644" width="110" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_8093" style="width: 100%; overflow: auto; min-height: 125px;">I support cinderwild&#039;s tips and add some of my own :<br />
+1. To stop thinking , I visualize a crystal ballon that grab everything that I think and <br />
+   lock it away until I finish, in the end there will be no pop-ups left.<br />
+<br />
+2. In time your will learn to Ignore the need to move around, and &quot;paralyze&quot; yorself.<br />
+<br />
+-----&gt; GOOD LUCK =)<br />
+</div>
+		<textarea style="display: none;" id="desctxt_8093">I support cinderwild&#039;s tips and add some of my own :
+1. To stop thinking , I visualize a crystal ballon that grab everything that I think and 
+   lock it away until I finish, in the end there will be no pop-ups left.
+
+2. In time your will learn to Ignore the need to move around, and &quot;paralyze&quot; yorself.
+
+-----&gt; GOOD LUCK =)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">M. Dragon Fang</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=482&amp;ref=1208622720" width="80" height="98" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_8094" style="width: 100%; overflow: auto; min-height: 125px;">OK, thanks for the tips!<br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;">There will be a point where you stop consciously thinking</div>you mean it happens automatically?<br />
+<br />
+anyways, I still haven&#039;t found the anwer on this:<br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;">Also, I seem to feel tingles really quick, especcialy in my hands. I get that after about 2-5 minutes. am I doing something wrong, or is this perfectly fine?</div>I&#039;ve done some research myself but didn&#039;t find anything that says it&#039;s good… =/</div>
+		<textarea style="display: none;" id="desctxt_8094">OK, thanks for the tips!
+[quote]There will be a point where you stop consciously thinking[/quote]
+you mean it happens automatically?
+
+anyways, I still haven&#039;t found the anwer on this:
+[quote]Also, I seem to feel tingles really quick, especcialy in my hands. I get that after about 2-5 minutes. am I doing something wrong, or is this perfectly fine?[/quote]
+I&#039;ve done some research myself but didn&#039;t find anything that says it&#039;s good… =/</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Falcon</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=521&amp;ref=1241106812" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_8095" style="width: 100%; overflow: auto; min-height: 125px;">Don&#039;t know if that&#039;s wrong.<br />
+I always get that feeling when not doing something for a few minutes.<br />
+But I&#039;m not that much into OBE&#039;s, I&#039;m more into EM.<br />
+<br />
+F.</div>
+		<textarea style="display: none;" id="desctxt_8095">Don&#039;t know if that&#039;s wrong.
+I always get that feeling when not doing something for a few minutes.
+But I&#039;m not that much into OBE&#039;s, I&#039;m more into EM.
+
+F.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">RazSh18</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=510&amp;ref=1213120644" width="110" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_8096" style="width: 100%; overflow: auto; min-height: 125px;">I&#039;m with Falcon, but I&#039;m interested in psi manipulation and TK.<br />
+<br />
+What is EM ?</div>
+		<textarea style="display: none;" id="desctxt_8096">I&#039;m with Falcon, but I&#039;m interested in psi manipulation and TK.
+
+What is EM ?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Sean</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=2&amp;ref=1214247941" width="117" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_8097" style="width: 100%; overflow: auto; min-height: 125px;">The &quot;not moving&quot; means not telling your body to move.  If it moves on it&#039;s own, let it.  The point is to not send any signals consciously to the body.<br />
+<br />
+What sort of tingling?  Do you get the tingles when you try to sleep normally - without practicing for an OBE?<br />
+<br />
+After about 10 minutes of laying still, your body will fall asleep.  It will feel heavy.  At this point, you can try to either stop thinking, or focus your thoughts on one thing alone (like your breath, for example).<br />
+<br />
+~Sean</div>
+		<textarea style="display: none;" id="desctxt_8097">The &quot;not moving&quot; means not telling your body to move.  If it moves on it&#039;s own, let it.  The point is to not send any signals consciously to the body.
+
+What sort of tingling?  Do you get the tingles when you try to sleep normally - without practicing for an OBE?
+
+After about 10 minutes of laying still, your body will fall asleep.  It will feel heavy.  At this point, you can try to either stop thinking, or focus your thoughts on one thing alone (like your breath, for example).
+
+~Sean</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Waldo</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=471&amp;ref=1208009607" width="84" height="108" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_8098" style="width: 100%; overflow: auto; min-height: 125px;">@RazSh18: EM simply means energy manipulation - what you refer to as psi manipulation, generally. =)<br />
+<br />
+Waldo x</div>
+		<textarea style="display: none;" id="desctxt_8098">@RazSh18: EM simply means energy manipulation - what you refer to as psi manipulation, generally. =)
+
+Waldo x</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">M. Dragon Fang</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=482&amp;ref=1208622720" width="80" height="98" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_8125" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;">What sort of tingling? Do you get the tingles when you try to sleep normally - without practicing for an OBE?</div>I normally don&#039;t feel them, but I feel them alot more softly when I keep my body still without OBEing. in example, while watching TV.<br />
+<br />
+Also, is the time I&#039;m doing OBEs good? I always do them when I actually need to go to bed to sleep, but I&#039;m OBEing. so, is that a good time, or should I try OBEs on some other time?</div>
+		<textarea style="display: none;" id="desctxt_8125">[quote]What sort of tingling? Do you get the tingles when you try to sleep normally - without practicing for an OBE?[/quote]
+I normally don&#039;t feel them, but I feel them alot more softly when I keep my body still without OBEing. in example, while watching TV.
+
+Also, is the time I&#039;m doing OBEs good? I always do them when I actually need to go to bed to sleep, but I&#039;m OBEing. so, is that a good time, or should I try OBEs on some other time?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">stollz</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_8218" style="width: 100%; overflow: auto; min-height: 125px;">hmm<br />
+i have only had an OBE one time so i cant really give you much advice but i can tell you this :<br />
+<br />
+when i try there is usually about a 50/50 chance i get that tingling feeling. it starts small at my feet and grows up to my knees. at that point it actually starts to HURT. whenever it gets to the point where it hurts i just back out and quit trying for that night.<br />
+that is all i can reccommend.<br />
+<br />
+as for getting your body to fall asleep ill tell you my method. one i picked up from psipogs a while back :<br />
+when trying to make your body fall asleep try running a dialogue through your mind. it should sound something like this :<br />
+&quot;goodnight feet. thank you for doing so much work today and helping me walk around all day now it is time to go to bed&quot; <br />
+in your head say something like that to each of your body parts from the feet up.<br />
+<br />
+it works every time for me.</div>
+		<textarea style="display: none;" id="desctxt_8218">hmm
+i have only had an OBE one time so i cant really give you much advice but i can tell you this :
+
+when i try there is usually about a 50/50 chance i get that tingling feeling. it starts small at my feet and grows up to my knees. at that point it actually starts to HURT. whenever it gets to the point where it hurts i just back out and quit trying for that night.
+that is all i can reccommend.
+
+as for getting your body to fall asleep ill tell you my method. one i picked up from psipogs a while back :
+when trying to make your body fall asleep try running a dialogue through your mind. it should sound something like this :
+&quot;goodnight feet. thank you for doing so much work today and helping me walk around all day now it is time to go to bed&quot; 
+in your head say something like that to each of your body parts from the feet up.
+
+it works every time for me.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Nin10doFan</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=426&amp;ref=1233878811" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_8343" style="width: 100%; overflow: auto; min-height: 125px;">Hmm, well here&#039;s what I do:<br />
+<br />
+If something in the middle of the night wakes you up, or you&#039;re just still tired once you wake up, go back to sleep.  Don&#039;t get up, just lie there.  You can move if you want.  Just tell your body when your going to sleep after you&#039;ve woken up, to have an OBE.  Just &#039;plan&#039; for it.  Then usually I&#039;ll find right before I fall asleep, I&#039;m in this weird state of mind where I&#039;m not &#039;fully&#039; awake yet I&#039;m 100% conscious.  Then I hear hallucinations, usually wind in my ear...  Then I&#039;ll find myself &#039;float&#039; out of my body...  =P<br />
+<br />
+Come to think of it, I haven&#039;t had one since March, I should do them again.  Since I haven&#039;t really had any success with anything else...</div>
+		<textarea style="display: none;" id="desctxt_8343">Hmm, well here&#039;s what I do:
+
+If something in the middle of the night wakes you up, or you&#039;re just still tired once you wake up, go back to sleep.  Don&#039;t get up, just lie there.  You can move if you want.  Just tell your body when your going to sleep after you&#039;ve woken up, to have an OBE.  Just &#039;plan&#039; for it.  Then usually I&#039;ll find right before I fall asleep, I&#039;m in this weird state of mind where I&#039;m not &#039;fully&#039; awake yet I&#039;m 100% conscious.  Then I hear hallucinations, usually wind in my ear...  Then I&#039;ll find myself &#039;float&#039; out of my body...  =P
+
+Come to think of it, I haven&#039;t had one since March, I should do them again.  Since I haven&#039;t really had any success with anything else...</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">forcemaster245</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=646&amp;ref=1222058247" width="125" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10295" style="width: 100%; overflow: auto; min-height: 125px;">I also have some questions to ask about OBE.<br />
+<br />
+1.Whenever I lay on my bed and let my body fall asleep, I would suddenly feel sharp itches on certain parts of my body. When I ignore this itches, I feel these itchy areas turn numb after some time. Does this usually occur while your body is falling asleep?<br />
+<br />
+2.Yesterday night I was trying for an OBE again. As usual my body felt heavy after some time. But after this I felt my whole body vibrating and I suddenly felt like as if the whole world around me swirling, just like I would usually feel when I was about to fall asleep. Then I swear that my right arm actually twitched without me telling it to. After that I had this feeling that my neck and shoulders were somehow &quot;pulled&quot; away from my body. My question is, is it normal for all these to occur when you have an OBE?</div>
+		<textarea style="display: none;" id="desctxt_10295">I also have some questions to ask about OBE.
+
+1.Whenever I lay on my bed and let my body fall asleep, I would suddenly feel sharp itches on certain parts of my body. When I ignore this itches, I feel these itchy areas turn numb after some time. Does this usually occur while your body is falling asleep?
+
+2.Yesterday night I was trying for an OBE again. As usual my body felt heavy after some time. But after this I felt my whole body vibrating and I suddenly felt like as if the whole world around me swirling, just like I would usually feel when I was about to fall asleep. Then I swear that my right arm actually twitched without me telling it to. After that I had this feeling that my neck and shoulders were somehow &quot;pulled&quot; away from my body. My question is, is it normal for all these to occur when you have an OBE?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Luka</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10838" style="width: 100%; overflow: auto; min-height: 125px;">I have also tried doing OBEs but without much success. When I get into a trance I can stop moving and most of my thoughts, but I always end up being aware of my breathing (having to breathe by yourself (Not automatic)). This is really annoying because when I stop all my thoughts I forget to breathe. I have had a tingling feeling before, it was on my face.<br />
+<br />
+No success right now, except for trancing for an hour.</div>
+		<textarea style="display: none;" id="desctxt_10838">I have also tried doing OBEs but without much success. When I get into a trance I can stop moving and most of my thoughts, but I always end up being aware of my breathing (having to breathe by yourself (Not automatic)). This is really annoying because when I stop all my thoughts I forget to breathe. I have had a tingling feeling before, it was on my face.
+
+No success right now, except for trancing for an hour.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=357" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 29 queries. 0.281 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

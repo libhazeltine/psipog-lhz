@@ -1,0 +1,568 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Soul</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Soul</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Soul</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Amaroq</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=606&amp;ref=1214436810" width="95" height="95" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10409" style="width: 100%; overflow: auto; min-height: 125px;">Energy is everywhere, is it not? Where does it come from? Where do we in particular get it?<br />
+<br />
+There are those of us who use energy from our own bodies for stuff. There are others who need to take energy from other people just to get enough.<br />
+<br />
+Doesn&#039;t that imply that our bodies generate energy somehow?<br />
+<br />
+If we do generate our own energy, what is responsible for its creation? Do we all have a &#039;spirit&#039; of some sort that is responsible for this generation?</div>
+		<textarea style="display: none;" id="desctxt_10409">Energy is everywhere, is it not? Where does it come from? Where do we in particular get it?
+
+There are those of us who use energy from our own bodies for stuff. There are others who need to take energy from other people just to get enough.
+
+Doesn&#039;t that imply that our bodies generate energy somehow?
+
+If we do generate our own energy, what is responsible for its creation? Do we all have a &#039;spirit&#039; of some sort that is responsible for this generation?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">NewAgeAlchemist</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=459&amp;ref=1207160982" width="125" height="20" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10411" style="width: 100%; overflow: auto; min-height: 125px;">We constantly generate thermal energy and it happens to be caused by friction. Friction is produced primarily by muscle contraction and relaxation.[Insert your oooos and ahhs here]<br />
+<br />
+In seriousness though you probably mean it in the entirely metaphysical sense of the ideas. [At which point I want to run over to the other side of the boat to jump up and down saying everything is just an illusion] I suppose the first step is to define the energy you speak of, your question seems like a starting point but it can mean different things to different people even though they&#039;d agree with your vague point.<br />
+<br />
+</div>
+		<textarea style="display: none;" id="desctxt_10411">We constantly generate thermal energy and it happens to be caused by friction. Friction is produced primarily by muscle contraction and relaxation.[Insert your oooos and ahhs here]
+
+In seriousness though you probably mean it in the entirely metaphysical sense of the ideas. [At which point I want to run over to the other side of the boat to jump up and down saying everything is just an illusion] I suppose the first step is to define the energy you speak of, your question seems like a starting point but it can mean different things to different people even though they&#039;d agree with your vague point.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Antisankari</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=224&amp;ref=1213032338" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10413" style="width: 100%; overflow: auto; min-height: 125px;">E = mc^2.<br />
+<br />
+c^2 being constant, the only variable in this case is m.<br />
+So bigger your bottom, more energetic you are.</div>
+		<textarea style="display: none;" id="desctxt_10413">E = mc^2.
+
+c^2 being constant, the only variable in this case is m.
+So bigger your bottom, more energetic you are.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">DigGil</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10414" style="width: 100%; overflow: auto; min-height: 125px;">that&#039;s the mass&#039; energy! Useful energy will be less.<br />
+<br />
+For Amaroq&#039;s question: from my reaserch, the quantity of energy (psi, chi, ki whatever) is an illusion. It is part of stuff... better it is the stuff that makes stuff to be stuff (something like that :P). There are even people who don&#039;t use the &quot;energy&quot;, like NI, to do psionics. Probably is more a psychologic trigger to help psionics, than a reallity.<br />
+<br />
+NewAgeAlchemist@ Is hard to get different understandings on the word &quot;energy&quot; if you are in a paranormal forum...<br />
+</div>
+		<textarea style="display: none;" id="desctxt_10414">that&#039;s the mass&#039; energy! Useful energy will be less.
+
+For Amaroq&#039;s question: from my reaserch, the quantity of energy (psi, chi, ki whatever) is an illusion. It is part of stuff... better it is the stuff that makes stuff to be stuff (something like that :P). There are even people who don&#039;t use the &quot;energy&quot;, like NI, to do psionics. Probably is more a psychologic trigger to help psionics, than a reallity.
+
+NewAgeAlchemist@ Is hard to get different understandings on the word &quot;energy&quot; if you are in a paranormal forum...</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Amaroq</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=606&amp;ref=1214436810" width="95" height="95" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10479" style="width: 100%; overflow: auto; min-height: 125px;">Well, what I mean isn&#039;t necessarily a spiritual thing. Ironically. xD<br />
+<br />
+Perhaps our &#039;spirit&#039; (for lack of a better word), is like the core of our body. No matter how cold you get on the outside, the core of your body is always at the same temperature. Hypothermia is when you get too cold and this core starts losing heat.<br />
+<br />
+Perhaps the spirit is like this core. But instead of having a constant temperature, it has a constant amount of energy.</div>
+		<textarea style="display: none;" id="desctxt_10479">Well, what I mean isn&#039;t necessarily a spiritual thing. Ironically. xD
+
+Perhaps our &#039;spirit&#039; (for lack of a better word), is like the core of our body. No matter how cold you get on the outside, the core of your body is always at the same temperature. Hypothermia is when you get too cold and this core starts losing heat.
+
+Perhaps the spirit is like this core. But instead of having a constant temperature, it has a constant amount of energy.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10640" style="width: 100%; overflow: auto; min-height: 125px;">from my understanding everything is made of energy. This means that the spirit is just the compilation of the energy of your body made into a secondary form that retains the form that you were when you were alive. That is, if you are dead.<br />
+<br />
+It is your energy held together by the remnant power of your brain to control energy. Even after death, the energy of your brain, although the brain itself is gone, the ability of the energy in which it was made up of still has the power in which it has when you were a physical mass. Granted... this is a lose and no means my absolute translation ^_-.</div>
+		<textarea style="display: none;" id="desctxt_10640">from my understanding everything is made of energy. This means that the spirit is just the compilation of the energy of your body made into a secondary form that retains the form that you were when you were alive. That is, if you are dead.
+
+It is your energy held together by the remnant power of your brain to control energy. Even after death, the energy of your brain, although the brain itself is gone, the ability of the energy in which it was made up of still has the power in which it has when you were a physical mass. Granted... this is a lose and no means my absolute translation ^_-.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">clay</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=701&amp;ref=1233551632" width="70" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10650" style="width: 100%; overflow: auto; min-height: 125px;">dont they say as you use psi there is a depletion of glucose? well, glucose is just energy from food. I think we just use the basic energy from food to fuel our the other thing that seems to disappear while using psi is potassium, which is important in nerve impulses, specifically (for our case) in the brain. If i were to have to guess, I would say the energy all comes from our primary source, foodstuffs. The question is what do we convert it into in order to do the crazy stuff we do... One of the things for certain is that for healing our brains expand our electro-magnetic field around the hands. A &quot;faith healer&quot; was rigged up to some equiptment when he did his thing, and it turns out he was putting out a much larger than normal electromagnetic field when he did his faith healing. And electromagnetism has been proven to help with injuries, in ways such as speeding up bone regeneration in fractures and breaks. So this guy was actually healing them faster, not with god&#039;s help, but because of a stronger electromagnetic field.<br />
+Also, in case you wanted another tidbit, that is why wiccans, druids, and other magical religions use the quartz crystal as a part of healing, because it is used to magnify or direct electromagnetism, even in modern day machines :)<br />
+<br />
+I dunno if I answered anything, but its nice stuff to know anyways.</div>
+		<textarea style="display: none;" id="desctxt_10650">dont they say as you use psi there is a depletion of glucose? well, glucose is just energy from food. I think we just use the basic energy from food to fuel our the other thing that seems to disappear while using psi is potassium, which is important in nerve impulses, specifically (for our case) in the brain. If i were to have to guess, I would say the energy all comes from our primary source, foodstuffs. The question is what do we convert it into in order to do the crazy stuff we do... One of the things for certain is that for healing our brains expand our electro-magnetic field around the hands. A &quot;faith healer&quot; was rigged up to some equiptment when he did his thing, and it turns out he was putting out a much larger than normal electromagnetic field when he did his faith healing. And electromagnetism has been proven to help with injuries, in ways such as speeding up bone regeneration in fractures and breaks. So this guy was actually healing them faster, not with god&#039;s help, but because of a stronger electromagnetic field.
+Also, in case you wanted another tidbit, that is why wiccans, druids, and other magical religions use the quartz crystal as a part of healing, because it is used to magnify or direct electromagnetism, even in modern day machines :)
+
+I dunno if I answered anything, but its nice stuff to know anyways.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10661" style="width: 100%; overflow: auto; min-height: 125px;">I think that it has to do with sending energy out through the nervous system (which is much like the chakra system if you think about it)... There are other methods which can be explained, but it all takes time, which is something every man is short of ^_-</div>
+		<textarea style="display: none;" id="desctxt_10661">I think that it has to do with sending energy out through the nervous system (which is much like the chakra system if you think about it)... There are other methods which can be explained, but it all takes time, which is something every man is short of ^_-</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">clay</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=701&amp;ref=1233551632" width="70" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10689" style="width: 100%; overflow: auto; min-height: 125px;">yeah, Now that I think about it, it could all be electricity, yes? the brain makes its own current, and think about these:<br />
+<br />
+Telepathy: complex form of a telegraph, run n electricity<br />
+<br />
+Telekinesis: extreme magnetism, which is present around an electric current<br />
+<br />
+Empathy: reading complex messages sent out electronically by the brain of another<br />
+<br />
+Sheilding: perhaps doesnt block at all, just redirects things electromagnetically<br />
+<br />
+OBE&#039;s: focusing in on select frequencies and making your own realistic virtual world from them<br />
+<br />
+I mean, it can&#039;t explain everything, but could explain quite a bit. Maybe everything is just different frequencies of brain-created waves. Something I thought about while thinking of nothing at work, lol.<br />
+<br />
+So the brain is using up all that potassium and glucose as it sends an intense number of impulses out through the nerve cells. Something I&#039;d like some comments on please, give me more words and thoughts to munch on</div>
+		<textarea style="display: none;" id="desctxt_10689">yeah, Now that I think about it, it could all be electricity, yes? the brain makes its own current, and think about these:
+
+Telepathy: complex form of a telegraph, run n electricity
+
+Telekinesis: extreme magnetism, which is present around an electric current
+
+Empathy: reading complex messages sent out electronically by the brain of another
+
+Sheilding: perhaps doesnt block at all, just redirects things electromagnetically
+
+OBE&#039;s: focusing in on select frequencies and making your own realistic virtual world from them
+
+I mean, it can&#039;t explain everything, but could explain quite a bit. Maybe everything is just different frequencies of brain-created waves. Something I thought about while thinking of nothing at work, lol.
+
+So the brain is using up all that potassium and glucose as it sends an intense number of impulses out through the nerve cells. Something I&#039;d like some comments on please, give me more words and thoughts to munch on</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">DigGil</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10715" style="width: 100%; overflow: auto; min-height: 125px;">Nina Kulagina (see more at  <a href="http://www.youtube.com/watch?v=L61RptUUEqU" target="_blank">http://www.youtube.com/watch?v=L61RptUUEqU</a>) was a Russian telekinesis&#039;er who her powers were very studied. Those studies revealed that her electromagnetic field increased considerably. Unfortunately after some time she stopped doing telekinesis, because her vital signs like the heartbeat increased pretty dangerously too.<br />
+<br />
+By The Way: I heard that so many times, but how do you know that psionics (specially TK) cause lost of potassium?</div>
+		<textarea style="display: none;" id="desctxt_10715">Nina Kulagina (see more at http://www.youtube.com/watch?v=L61RptUUEqU) was a Russian telekinesis&#039;er who her powers were very studied. Those studies revealed that her electromagnetic field increased considerably. Unfortunately after some time she stopped doing telekinesis, because her vital signs like the heartbeat increased pretty dangerously too.
+
+By The Way: I heard that so many times, but how do you know that psionics (specially TK) cause lost of potassium?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by DigGil, 4 years, 4 months ago<br />Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">clay</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=701&amp;ref=1233551632" width="70" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10723" style="width: 100%; overflow: auto; min-height: 125px;">I just heard that that was part of a study, I dunno which one or if it can be trusted, but I&#039;ve heard it from a lot of people</div>
+		<textarea style="display: none;" id="desctxt_10723">I just heard that that was part of a study, I dunno which one or if it can be trusted, but I&#039;ve heard it from a lot of people</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10727" style="width: 100%; overflow: auto; min-height: 125px;">I think that Telekinesis is just a high level form of energy manipulation.<br />
+<br />
+Case in point: E=MC^2<br />
+<br />
+the only real question is how one can control energy outside the body in that density with that level of precision? psi is supposed to be the unknown mechanic, but I&#039;m skeptical. Not because I think it&#039;s not likely possible, but because there is no real basis (at least that I know of) that would deem psi to be a real, separate form. I think it may have something to do with electro-magnetism.<br />
+<br />
+I know that the human body has the ability to manipulate energy, it does it every day... the real question that we must face now is how. <br />
+<br />
+The fact that it would increase vital signs if it was dealt with the brain, as well as that it would drain vital ingredients in the blood. That happens every day from concentration alone. But the concentration is kicked in with energy manipulation above and beyond the accepted norm.<br />
+<br />
+More testing must be done...</div>
+		<textarea style="display: none;" id="desctxt_10727">I think that Telekinesis is just a high level form of energy manipulation.
+
+Case in point: E=MC^2
+
+the only real question is how one can control energy outside the body in that density with that level of precision? psi is supposed to be the unknown mechanic, but I&#039;m skeptical. Not because I think it&#039;s not likely possible, but because there is no real basis (at least that I know of) that would deem psi to be a real, separate form. I think it may have something to do with electro-magnetism.
+
+I know that the human body has the ability to manipulate energy, it does it every day... the real question that we must face now is how. 
+
+The fact that it would increase vital signs if it was dealt with the brain, as well as that it would drain vital ingredients in the blood. That happens every day from concentration alone. But the concentration is kicked in with energy manipulation above and beyond the accepted norm.
+
+More testing must be done...</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">SheepKing</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=211&amp;ref=1222648137" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10737" style="width: 100%; overflow: auto; min-height: 125px;">The theory that it&#039;s all electricity and radio waves coming out of us has been explained, and proved away. I don&#039;t think that&#039;s a valid argument. Also, the idea that it&#039;s electromagnetism is also pretty easy to disprove...<br />
+<br />
+</div>
+		<textarea style="display: none;" id="desctxt_10737">The theory that it&#039;s all electricity and radio waves coming out of us has been explained, and proved away. I don&#039;t think that&#039;s a valid argument. Also, the idea that it&#039;s electromagnetism is also pretty easy to disprove...</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10744" style="width: 100%; overflow: auto; min-height: 125px;">Electricity is only on form of flow... you have to understand that electricity is only the flow of electrons pulled (usually) from a high voltage area, to a low voltage area. Just as water (as in the case of a super soaker) flows from an area of high pressure to an area of low pressure. Electromagnetism is just the magnetic effects that objects with an electric current running through them display. There is much that we don&#039;t know about the universe and finding it out should be a priority. I have a feeling it may go much deeper than just what we know, Broaden your perspective SheepKing, it is much more likely than unlikely that this ability is possible...</div>
+		<textarea style="display: none;" id="desctxt_10744">Electricity is only on form of flow... you have to understand that electricity is only the flow of electrons pulled (usually) from a high voltage area, to a low voltage area. Just as water (as in the case of a super soaker) flows from an area of high pressure to an area of low pressure. Electromagnetism is just the magnetic effects that objects with an electric current running through them display. There is much that we don&#039;t know about the universe and finding it out should be a priority. I have a feeling it may go much deeper than just what we know, Broaden your perspective SheepKing, it is much more likely than unlikely that this ability is possible...</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">clay</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=701&amp;ref=1233551632" width="70" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10747" style="width: 100%; overflow: auto; min-height: 125px;">SheepKing<br />
+Yeah, I have some testing to do, but the electromagnetism has been proven. I&#039;ll need to find that publication again, but I&#039;ll post a link when I find it, about the healer who used electromagnetism. I&#039;ll be testing to see how well I can move a magnet this weekend, the theory being that I should be able to move a magnet on a greased pin, or maybe some teflon if I can nab some, as or more easily than my psiwheel, because even though it is heavier, it should contribute to the movement a bit itself.<br />
+<br />
+But if you have all the facts to disprove it before I waste my time, disprove away.<br />
+<br />
+Akio<br />
+I don&#039;t see how E=mc^2 fits in here. Do you mean we can move stuff because the mass is actually energy? because if so, the brain would have to have a lot of power, as a psi-wheel probably has the amount of energy of a few kegs of TNT<br />
+I think if that were the case, someone who could do telekinesis would do stuff like pyrokinesis very easily, even as far as burning themselves severely.<br />
+<br />
+unless I totally didn&#039;t get its reason for being there.<br />
+</div>
+		<textarea style="display: none;" id="desctxt_10747">SheepKing
+Yeah, I have some testing to do, but the electromagnetism has been proven. I&#039;ll need to find that publication again, but I&#039;ll post a link when I find it, about the healer who used electromagnetism. I&#039;ll be testing to see how well I can move a magnet this weekend, the theory being that I should be able to move a magnet on a greased pin, or maybe some teflon if I can nab some, as or more easily than my psiwheel, because even though it is heavier, it should contribute to the movement a bit itself.
+
+But if you have all the facts to disprove it before I waste my time, disprove away.
+
+Akio
+I don&#039;t see how E=mc^2 fits in here. Do you mean we can move stuff because the mass is actually energy? because if so, the brain would have to have a lot of power, as a psi-wheel probably has the amount of energy of a few kegs of TNT
+I think if that were the case, someone who could do telekinesis would do stuff like pyrokinesis very easily, even as far as burning themselves severely.
+
+unless I totally didn&#039;t get its reason for being there.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">clay</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=701&amp;ref=1233551632" width="70" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10748" style="width: 100%; overflow: auto; min-height: 125px;">yeah, can&#039;t find exact situation, but there is no doubt that all living things have electric current, and therefore create electromagnetism. Psi is making more electricity, for healing at the very least, as healers have been measure to have an output of 70 volts during healing. you can double check that info on  <a href="http://www.ocnsignal.com/scalar/" target="_blank">http://www.ocnsignal.com/scalar/</a><br />
+so i just want to see if thats the way all psi works.but sadly I have no access to anything that measures electricity. unless someone knows a cheap way to do that?</div>
+		<textarea style="display: none;" id="desctxt_10748">yeah, can&#039;t find exact situation, but there is no doubt that all living things have electric current, and therefore create electromagnetism. Psi is making more electricity, for healing at the very least, as healers have been measure to have an output of 70 volts during healing. you can double check that info on http://www.ocnsignal.com/scalar/
+so i just want to see if thats the way all psi works.but sadly I have no access to anything that measures electricity. unless someone knows a cheap way to do that?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">SheepKing</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=211&amp;ref=1222648137" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10749" style="width: 100%; overflow: auto; min-height: 125px;">I think you are getting your terms slightly confused clay. Though I can&#039;t site specific studies at the moment it has been disproven that there are Radio Waves, Strong Electric Currents, Magnetic Waves, or even Electromagnetic fields that are produced by the human body sturdy enough to manipulate outside objects, or conduct telepathy and the like.<br />
+<br />
+The testing for such things would be very simple and I&#039;m sure has not been overlooked. <br />
+<br />
+Also it appears you are confusing magnetism with electromagnetism.</div>
+		<textarea style="display: none;" id="desctxt_10749">I think you are getting your terms slightly confused clay. Though I can&#039;t site specific studies at the moment it has been disproven that there are Radio Waves, Strong Electric Currents, Magnetic Waves, or even Electromagnetic fields that are produced by the human body sturdy enough to manipulate outside objects, or conduct telepathy and the like.
+
+The testing for such things would be very simple and I&#039;m sure has not been overlooked. 
+
+Also it appears you are confusing magnetism with electromagnetism.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10750" style="width: 100%; overflow: auto; min-height: 125px;">I am saying that we can move stuff because mass is essentially energy, and we can move energy. However, there has to be more to it than that, the mechanic of Psi has been used to explain that... but we don&#039;t really know what Psi is... There are more questions to be answered, much more.<br />
+<br />
+The brain, in essence, does have a lot of energy in it, however; it is effectively contained by the separation of atoms.<br />
+<br />
+To explain, at least a little bit..<br />
+<br />
+There are two primary forces inside every atom, the Nuclear force, and the Electromagnetic force. The Electromagnetic force is the one most people are familiar with, it causes attraction between the nucleus (made up of protons which carry a positive charge, and neutrons which carry a neutral charge) and the electrons which orbit it. This also causes repulsion between like charges. <br />
+<br />
+Now you may be asking, &quot;wouldn&#039;t the nucleus blast apart because of the electromagnetic force?&quot; Well... without the nuclear force, that would be the case. The Nuclear force is very powerful, but only works a very short distance. Meaning that it&#039;s powerful enough to hold the nucleus of the atom together, but not at a great distance.<br />
+<br />
+Now... if you split an atom, it has been observed *cough*Hiroshima*cough* that it will cause a very powerful explosion... but how does one do that?<br />
+ <br />
+One method is by increasing the number and effectively the size of the nucleus. After it hits a particular size, the nuclear force will not be able to sustain the atom and it will blast apart into several smaller atoms (which, if they are unstable, will also blast apart, repeating the process until a stable state is reached).<br />
+<br />
+That is just a basic description though, by no means is it as knowledgeable as what it could be.<br />
+<br />
+For a small idea of the power that a single atom can present<br />
+<br />
+ <a href="http://www.bikiniatoll.com/facts.html" target="_blank">http://www.bikiniatoll.com/facts.html</a></div>
+		<textarea style="display: none;" id="desctxt_10750">I am saying that we can move stuff because mass is essentially energy, and we can move energy. However, there has to be more to it than that, the mechanic of Psi has been used to explain that... but we don&#039;t really know what Psi is... There are more questions to be answered, much more.
+
+The brain, in essence, does have a lot of energy in it, however; it is effectively contained by the separation of atoms.
+
+To explain, at least a little bit..
+
+There are two primary forces inside every atom, the Nuclear force, and the Electromagnetic force. The Electromagnetic force is the one most people are familiar with, it causes attraction between the nucleus (made up of protons which carry a positive charge, and neutrons which carry a neutral charge) and the electrons which orbit it. This also causes repulsion between like charges. 
+
+Now you may be asking, &quot;wouldn&#039;t the nucleus blast apart because of the electromagnetic force?&quot; Well... without the nuclear force, that would be the case. The Nuclear force is very powerful, but only works a very short distance. Meaning that it&#039;s powerful enough to hold the nucleus of the atom together, but not at a great distance.
+
+Now... if you split an atom, it has been observed *cough*Hiroshima*cough* that it will cause a very powerful explosion... but how does one do that?
+ 
+One method is by increasing the number and effectively the size of the nucleus. After it hits a particular size, the nuclear force will not be able to sustain the atom and it will blast apart into several smaller atoms (which, if they are unstable, will also blast apart, repeating the process until a stable state is reached).
+
+That is just a basic description though, by no means is it as knowledgeable as what it could be.
+
+For a small idea of the power that a single atom can present
+
+http://www.bikiniatoll.com/facts.html</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">clay</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=701&amp;ref=1233551632" width="70" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10766" style="width: 100%; overflow: auto; min-height: 125px;">SheepKing-<br />
+I need to find your stuff, cause I think 70 volts would be plenty to do telepathy or pk. it takes like, 6 volts to run a radio. BUt maybe I dunno what you mean by sturdy enough... Unless you are talking about amperage? Which I must admit I could find nothing on... and that could be a MAJOR hole.<br />
+Also, I&#039;m not confusing magnetism and electromagnetism. Electromagnetism is just magnetic force created by an electric current in a circle around the current. So now that I think about it, I should change the experiment and have the magnet suspended sideways on a horizontal pin, and try spinning it like an airplane&#039;s rotor<br />
+<br />
+Akio-<br />
+I know about atomic forces, I know that mass is energy, I was just saying that mass is a lot of energy, highly condensed, and I wondered how moving that much energy would even compare to just adding a bit of the lowest form of energy (heat) to a matchhead or something. It would seem to me that if that were the case, Since I can move a psiwheel (3 grams, which is about 270,000,000,000,000 Joules), shouldn&#039;t I be able to boil a pot of water, which should take about 350,000 Joules? Of course, maybe I am totally stupid and it should only take the energy needed to move it, not al the energy it contains. Which means I stand corrected and no longer ignorant, hooray :D My bad.</div>
+		<textarea style="display: none;" id="desctxt_10766">SheepKing-
+I need to find your stuff, cause I think 70 volts would be plenty to do telepathy or pk. it takes like, 6 volts to run a radio. BUt maybe I dunno what you mean by sturdy enough... Unless you are talking about amperage? Which I must admit I could find nothing on... and that could be a MAJOR hole.
+Also, I&#039;m not confusing magnetism and electromagnetism. Electromagnetism is just magnetic force created by an electric current in a circle around the current. So now that I think about it, I should change the experiment and have the magnet suspended sideways on a horizontal pin, and try spinning it like an airplane&#039;s rotor
+
+Akio-
+I know about atomic forces, I know that mass is energy, I was just saying that mass is a lot of energy, highly condensed, and I wondered how moving that much energy would even compare to just adding a bit of the lowest form of energy (heat) to a matchhead or something. It would seem to me that if that were the case, Since I can move a psiwheel (3 grams, which is about 270,000,000,000,000 Joules), shouldn&#039;t I be able to boil a pot of water, which should take about 350,000 Joules? Of course, maybe I am totally stupid and it should only take the energy needed to move it, not al the energy it contains. Which means I stand corrected and no longer ignorant, hooray :D My bad.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10772" style="width: 100%; overflow: auto; min-height: 125px;">A psi wheel moves because you are manipulating things around it usually...<br />
+<br />
+Using controlled heat from the body (or another form of energy, but radiant heat is energy!) to cause a current which inevitably causes the psi wheel to move. Its primarily because of the psi wheels design that you are able to move it easily.<br />
+<br />
+So, basically, it should only take the energy needed to move it.<br />
+<br />
+The real problem is increasing the amount of energy we can control at one time, which is probably possible only at times of extreme stress (i.e. moving large amounts of energy causes stress on the body)<br />
+<br />
+It is fairly confusing to look through everything, considering I&#039;m broke and can&#039;t travel for more detailed information.<br />
+<br />
+The internet is my only real resource, and it&#039;s fairly difficult to get anything more than basics off of the internet &gt;.&lt; </div>
+		<textarea style="display: none;" id="desctxt_10772">A psi wheel moves because you are manipulating things around it usually...
+
+Using controlled heat from the body (or another form of energy, but radiant heat is energy!) to cause a current which inevitably causes the psi wheel to move. Its primarily because of the psi wheels design that you are able to move it easily.
+
+So, basically, it should only take the energy needed to move it.
+
+The real problem is increasing the amount of energy we can control at one time, which is probably possible only at times of extreme stress (i.e. moving large amounts of energy causes stress on the body)
+
+It is fairly confusing to look through everything, considering I&#039;m broke and can&#039;t travel for more detailed information.
+
+The internet is my only real resource, and it&#039;s fairly difficult to get anything more than basics off of the internet &gt;.&lt;</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=487" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 36 queries. 0.374 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

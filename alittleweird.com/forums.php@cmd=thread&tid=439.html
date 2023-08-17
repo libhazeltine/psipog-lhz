@@ -1,0 +1,374 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; The iceman!</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=2.html">Weird Videos</a> &raquo; The iceman!</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">The iceman!</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Claudius</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=619&amp;ref=1214926797" width="125" height="86" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9646" style="width: 100%; overflow: auto; min-height: 125px;">Just thought I would share this very interesting video.<br />
+I&#039;m assuming he is using some sort of energy manipulation technique to keep his temperature high. <br />
+<br />
+ <a href="http://youtube.com/watch?v=madoDvtKEes" target="_blank">http://youtube.com/watch?v=madoDvtKEes</a></div>
+		<textarea style="display: none;" id="desctxt_9646">Just thought I would share this very interesting video.
+I&#039;m assuming he is using some sort of energy manipulation technique to keep his temperature high. 
+
+http://youtube.com/watch?v=madoDvtKEes</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">SheepKing</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=211&amp;ref=1222648137" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9648" style="width: 100%; overflow: auto; min-height: 125px;">Why not biofeedback?</div>
+		<textarea style="display: none;" id="desctxt_9648">Why not biofeedback?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Claudius</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=619&amp;ref=1214926797" width="125" height="86" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9652" style="width: 100%; overflow: auto; min-height: 125px;">Yea that could be it as well.</div>
+		<textarea style="display: none;" id="desctxt_9652">Yea that could be it as well.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Claudius</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=619&amp;ref=1214926797" width="125" height="86" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9653" style="width: 100%; overflow: auto; min-height: 125px;">Yea that could be it as well.</div>
+		<textarea style="display: none;" id="desctxt_9653">Yea that could be it as well.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">DigGil</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9704" style="width: 100%; overflow: auto; min-height: 125px;">I can do something similar but with heat temperature. And it&#039;s interesting he said that is ability have to do with mind, just like I do. I think it works thanks to the Law of Atraction.</div>
+		<textarea style="display: none;" id="desctxt_9704">I can do something similar but with heat temperature. And it&#039;s interesting he said that is ability have to do with mind, just like I do. I think it works thanks to the Law of Atraction.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Claudius</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=619&amp;ref=1214926797" width="125" height="86" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11444" style="width: 100%; overflow: auto; min-height: 125px;">A did a little bit more research on this topic.<br />
+<br />
+As it turns out, Wim Hof (The man in this video), is using a Tibetan discipline known as G-tummo; meaning &quot;inner fire.&quot; It is actually only part of a whole series of a Buddhist meditation in tibet. <br />
+<br />
+The heat which is produced by this meditation is only a small side effect. The meditation itself serves a much a bigger purpose. <br />
+<br />
+Many Buddhist monks practise this everyday, however Wim Hof is the only non-monk known that seems to have mastered this skill. That means just about anybody can do it given the right circumstances. <br />
+<br />
+I will look more into it and post more information about it. <br />
+Winter is just around the corner, so this is a good time for me to try research and experiment with various techniques.<br />
+<br />
+ <a href="http://en.wikipedia.org/wiki/Tummo" target="_blank">http://en.wikipedia.org/wiki/Tummo</a><br />
+ <a href="http://en.wikipedia.org/wiki/Wim_Hof" target="_blank">http://en.wikipedia.org/wiki/Wim_Hof</a><br />
+ <a href="http://www.mounteverest.net/news.php?id=15688" target="_blank">http://www.mounteverest.net/news.php?id=15688</a><br />
+<br />
+Any help will greatly be appreciated. <br />
+<br />
+<br />
+<br />
+</div>
+		<textarea style="display: none;" id="desctxt_11444">A did a little bit more research on this topic.
+
+As it turns out, Wim Hof (The man in this video), is using a Tibetan discipline known as G-tummo; meaning &quot;inner fire.&quot; It is actually only part of a whole series of a Buddhist meditation in tibet. 
+
+The heat which is produced by this meditation is only a small side effect. The meditation itself serves a much a bigger purpose. 
+
+Many Buddhist monks practise this everyday, however Wim Hof is the only non-monk known that seems to have mastered this skill. That means just about anybody can do it given the right circumstances. 
+
+I will look more into it and post more information about it. 
+Winter is just around the corner, so this is a good time for me to try research and experiment with various techniques.
+
+http://en.wikipedia.org/wiki/Tummo
+http://en.wikipedia.org/wiki/Wim_Hof
+http://www.mounteverest.net/news.php?id=15688
+
+Any help will greatly be appreciated.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">deathsmessenger</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11483" style="width: 100%; overflow: auto; min-height: 125px;">PK- my theiry...<br />
+<br />
+<br />
+Brain waves, that, through training can in flict movments.<br />
+Also, &quot;magnetic fields&quot;</div>
+		<textarea style="display: none;" id="desctxt_11483">PK- my theiry...
+
+
+Brain waves, that, through training can in flict movments.
+Also, &quot;magnetic fields&quot;</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">jack</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=759&amp;ref=1220326318" width="125" height="105" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11499" style="width: 100%; overflow: auto; min-height: 125px;">If you look closely on this link provided by Claudius, the picture with &quot;iceman&#039; meditating he sits in a position that&#039;s called a double lotus, I think...<br />
+Anyways I only used to do that and can only keep that position up for 5min back then, can&#039;t even do it AT ALL now...<br />
+<br />
+That position are used for meditation for a lot of monks =p And it&#039;s kinda painful, for me, feel free to try it.<br />
+<br />
+If you are already doing that for meditation then I guess you are just really good =p, feel free to share that with me.<br />
+<br />
+<a href="http://www.mounteverest.net/news.php?id=15688" target="_blank" title="http://www.mounteverest.net/news.php?id=15688">the mount Everest thingy...</a></div>
+		<textarea style="display: none;" id="desctxt_11499">If you look closely on this link provided by Claudius, the picture with &quot;iceman&#039; meditating he sits in a position that&#039;s called a double lotus, I think...
+Anyways I only used to do that and can only keep that position up for 5min back then, can&#039;t even do it AT ALL now...
+
+That position are used for meditation for a lot of monks =p And it&#039;s kinda painful, for me, feel free to try it.
+
+If you are already doing that for meditation then I guess you are just really good =p, feel free to share that with me.
+
+[url=http://www.mounteverest.net/news.php?id=15688]the mount Everest thingy...[/url]</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by jack, 4 years, 3 months ago<br />Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Atrum</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=755&amp;ref=1221862716" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11513" style="width: 100%; overflow: auto; min-height: 125px;">Perhaps this could esily be achieved with a form of Bioknesis? But the meditation thing sounds more logical.</div>
+		<textarea style="display: none;" id="desctxt_11513">Perhaps this could esily be achieved with a form of Bioknesis? But the meditation thing sounds more logical.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">jack</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=759&amp;ref=1220326318" width="125" height="105" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11564" style="width: 100%; overflow: auto; min-height: 125px;">the position I do for meditation might be different from others. I put my right leg on top of my left leg, both put out horizontally... It might hurt a little at first, and also when you try to stand up, but the pain subside when you starting to gather energy or even enter a trance. This position helps to clear your mind and your legs feels kinda cool and sweet while doing it(I can&#039;t really describe it, feels like a cool numbness and small static bouncing on my leg, the static is cool, and it gets comfortable(comfortable as in relaxing and like a cool massage)when I say &quot;sweet&quot;) I think a lot of people meditate this way but I&#039;m not that sure about it, so feel free to tell me how you do it.<br />
+<br />
+I feel like my post should go under meditation...</div>
+		<textarea style="display: none;" id="desctxt_11564">the position I do for meditation might be different from others. I put my right leg on top of my left leg, both put out horizontally... It might hurt a little at first, and also when you try to stand up, but the pain subside when you starting to gather energy or even enter a trance. This position helps to clear your mind and your legs feels kinda cool and sweet while doing it(I can&#039;t really describe it, feels like a cool numbness and small static bouncing on my leg, the static is cool, and it gets comfortable(comfortable as in relaxing and like a cool massage)when I say &quot;sweet&quot;) I think a lot of people meditate this way but I&#039;m not that sure about it, so feel free to tell me how you do it.
+
+I feel like my post should go under meditation...</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 2 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Amaroq</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=606&amp;ref=1214436810" width="95" height="95" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11619" style="width: 100%; overflow: auto; min-height: 125px;">That wikipedia entry said something about dissipating energy for superficial pleasure. I&#039;m curious about that, because I&#039;ve absorbed energy into my own body because it felt good, and can even make the same type of pleasure wash over me as if I&#039;d drawn energy in, but without taking it in first. (Just more difficult to do.)<br />
+<br />
+It makes me wonder if these Buddhists really know something about this energy thing we talk about and practice.</div>
+		<textarea style="display: none;" id="desctxt_11619">That wikipedia entry said something about dissipating energy for superficial pleasure. I&#039;m curious about that, because I&#039;ve absorbed energy into my own body because it felt good, and can even make the same type of pleasure wash over me as if I&#039;d drawn energy in, but without taking it in first. (Just more difficult to do.)
+
+It makes me wonder if these Buddhists really know something about this energy thing we talk about and practice.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 2 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Amaroq</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=606&amp;ref=1214436810" width="95" height="95" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11785" style="width: 100%; overflow: auto; min-height: 125px;">Don&#039;t mean to double post, but after reading wikipedia in regards to the yogas, my interest was piqued by the Yoga of Inner Fire, the practice that this guy&#039;s temperature boosting is similar to, I think someone said. Already having experience in energy work, I decided to basically try out the basic idea behind this yoga of inner fire. Instead of gathering energy in my chest, I attempted to generate a feeling of warmth, an &quot;inner fire&quot; of sorts in my chest, while out-doors in chilly weather. The funny thing is, it worked. If I could keep the &quot;inner fire&quot; going and spread it to my limbs (particularly my arms, as I was in a short sleeved shirt), I did not feel cold.</div>
+		<textarea style="display: none;" id="desctxt_11785">Don&#039;t mean to double post, but after reading wikipedia in regards to the yogas, my interest was piqued by the Yoga of Inner Fire, the practice that this guy&#039;s temperature boosting is similar to, I think someone said. Already having experience in energy work, I decided to basically try out the basic idea behind this yoga of inner fire. Instead of gathering energy in my chest, I attempted to generate a feeling of warmth, an &quot;inner fire&quot; of sorts in my chest, while out-doors in chilly weather. The funny thing is, it worked. If I could keep the &quot;inner fire&quot; going and spread it to my limbs (particularly my arms, as I was in a short sleeved shirt), I did not feel cold.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 2 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=439" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 28 queries. 0.337 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

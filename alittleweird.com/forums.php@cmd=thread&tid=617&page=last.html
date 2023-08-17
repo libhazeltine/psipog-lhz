@@ -1,0 +1,422 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Psionic food</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Psionic food</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Psionic food</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Faust</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=753&amp;ref=1219725334" width="100" height="74" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12102" style="width: 100%; overflow: auto; min-height: 125px;">Here&#039;s an odd thought for the forum.I know there have been discussions in the past about people making their plants grow faster with psionics and people talking to there plants and wondering which ones would be better to help them with psionics.I wonder if people tried to actively include the growth of fruits or vegetables in their psionic practice to instill alot of psionic energy into the plants?Then later when they were trying to do something eat a carrot or tomatoe specially grown and tada super psionic abilities.Or maybe even a specially infused hotdog.....oh the possibilities.....</div>
+		<textarea style="display: none;" id="desctxt_12102">Here&#039;s an odd thought for the forum.I know there have been discussions in the past about people making their plants grow faster with psionics and people talking to there plants and wondering which ones would be better to help them with psionics.I wonder if people tried to actively include the growth of fruits or vegetables in their psionic practice to instill alot of psionic energy into the plants?Then later when they were trying to do something eat a carrot or tomatoe specially grown and tada super psionic abilities.Or maybe even a specially infused hotdog.....oh the possibilities.....</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Corpse</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=553&amp;ref=1239824741" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12105" style="width: 100%; overflow: auto; min-height: 125px;">Ummmm okay let me try and get this straight, I don&#039;t think your asking a question by the looks of it, but just simply saying that you can store a bunch of psionic energy into food that you grow, then eat it and apparently get stronger...that sounds like in theory it could work. I might just try this one day, but not right now seeing as how the warmest temperature where I live is 5 degrees.</div>
+		<textarea style="display: none;" id="desctxt_12105">Ummmm okay let me try and get this straight, I don&#039;t think your asking a question by the looks of it, but just simply saying that you can store a bunch of psionic energy into food that you grow, then eat it and apparently get stronger...that sounds like in theory it could work. I might just try this one day, but not right now seeing as how the warmest temperature where I live is 5 degrees.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Corpse, 4 years, 1 month ago<br />Posted 4 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Faust</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=753&amp;ref=1219725334" width="100" height="74" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12106" style="width: 100%; overflow: auto; min-height: 125px;">Yeah I was just wondering if anyone had infact tried to instill any psionic energy in a growing plant and then consumed it.Like instead of trying to move a psi wheel or a pencil, concentrating on a plant when its growing to put more psi energy into it.And what people think the effects would be if you did that?? On a side note I was growing tomatoes and a couple are still growing not very fast though now(avg temp now +8C to -1C)   </div>
+		<textarea style="display: none;" id="desctxt_12106">Yeah I was just wondering if anyone had infact tried to instill any psionic energy in a growing plant and then consumed it.Like instead of trying to move a psi wheel or a pencil, concentrating on a plant when its growing to put more psi energy into it.And what people think the effects would be if you did that?? On a side note I was growing tomatoes and a couple are still growing not very fast though now(avg temp now +8C to -1C)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Corpse</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=553&amp;ref=1239824741" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12107" style="width: 100%; overflow: auto; min-height: 125px;">Hmm, I just got an idea, why not grow them inside? Just like a single tomato plant or something in a pot close (but not beside) a window. This way you can avoid the nasty temperature and still get sunlight.</div>
+		<textarea style="display: none;" id="desctxt_12107">Hmm, I just got an idea, why not grow them inside? Just like a single tomato plant or something in a pot close (but not beside) a window. This way you can avoid the nasty temperature and still get sunlight.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Faust</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=753&amp;ref=1219725334" width="100" height="74" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12111" style="width: 100%; overflow: auto; min-height: 125px;">Yeah a pot inside would be good, less bugs than outside and much warmer.Thinking back on it I wonder if it would be better to grow (a)fruits and vegetables with infused psi or (b)herbs and spices with infused psi.For some reason I think herbs and spices with psi might be more interesting then fruits and vegetables. They may be easier to grow and concentrate psi in.And you could spinkle it on your food for a little psi pep up.Just some random thoughts.....</div>
+		<textarea style="display: none;" id="desctxt_12111">Yeah a pot inside would be good, less bugs than outside and much warmer.Thinking back on it I wonder if it would be better to grow (a)fruits and vegetables with infused psi or (b)herbs and spices with infused psi.For some reason I think herbs and spices with psi might be more interesting then fruits and vegetables. They may be easier to grow and concentrate psi in.And you could spinkle it on your food for a little psi pep up.Just some random thoughts.....</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Corpse</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=553&amp;ref=1239824741" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12113" style="width: 100%; overflow: auto; min-height: 125px;">Just out of curiosity, what makes you think herbs/spices can concentrate psi better than fruits/veggies?</div>
+		<textarea style="display: none;" id="desctxt_12113">Just out of curiosity, what makes you think herbs/spices can concentrate psi better than fruits/veggies?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Faust</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=753&amp;ref=1219725334" width="100" height="74" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12115" style="width: 100%; overflow: auto; min-height: 125px;">I don&#039;t know they make food taste better, concentrated taste and some medicinal properties.Plus it would sound funny at a party, &quot;and what is the secret ingredient&quot; oh its psychic seasoning.</div>
+		<textarea style="display: none;" id="desctxt_12115">I don&#039;t know they make food taste better, concentrated taste and some medicinal properties.Plus it would sound funny at a party, &quot;and what is the secret ingredient&quot; oh its psychic seasoning.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Psikillion</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=593&amp;ref=1213954510" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12116" style="width: 100%; overflow: auto; min-height: 125px;">At best it would act like anything else you store energy in through psychometry.<br />
+<br />
+Otherwise I see three results:<br />
+<br />
+One, plant grows faster by a small margin.<br />
+<br />
+Two, plant is harmed or dies.<br />
+<br />
+Three, nothing happens.</div>
+		<textarea style="display: none;" id="desctxt_12116">At best it would act like anything else you store energy in through psychometry.
+
+Otherwise I see three results:
+
+One, plant grows faster by a small margin.
+
+Two, plant is harmed or dies.
+
+Three, nothing happens.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">ShadowmanX</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12123" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Psikillion:</em><br />
+At best it would act like anything else you store energy in through psychometry.<br />
+<br />
+Otherwise I see three results:<br />
+<br />
+One, plant grows faster by a small margin.<br />
+<br />
+Two, plant is harmed or dies.<br />
+<br />
+Three, nothing happens.</div>Four, the plant starts to walk around and tries to slave mankind.<br />
+Just kidding<br />
+<br />
+I will try that with pepper. I will take two piles. One is going to be charged and one not. Then I will see if any of those affects my PK</div>
+		<textarea style="display: none;" id="desctxt_12123">[quote][i]posted by Psikillion:[/i]
+At best it would act like anything else you store energy in through psychometry.
+
+Otherwise I see three results:
+
+One, plant grows faster by a small margin.
+
+Two, plant is harmed or dies.
+
+Three, nothing happens.[/quote]
+
+Four, the plant starts to walk around and tries to slave mankind.
+Just kidding
+
+I will try that with pepper. I will take two piles. One is going to be charged and one not. Then I will see if any of those affects my PK</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">psiball</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12159" style="width: 100%; overflow: auto; min-height: 125px;">I am going to get a packet of smarties and charge half up, and not charge up the other half. Kinda like u, ShadowmanX. I&#039;ll be right back. Maybe something will happen to me after I eat it.......</div>
+		<textarea style="display: none;" id="desctxt_12159">I am going to get a packet of smarties and charge half up, and not charge up the other half. Kinda like u, ShadowmanX. I&#039;ll be right back. Maybe something will happen to me after I eat it.......</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">psiball</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12160" style="width: 100%; overflow: auto; min-height: 125px;">Nothing really happened except that the charged up ones tasted different than the ones that weren&#039;t. :)</div>
+		<textarea style="display: none;" id="desctxt_12160">Nothing really happened except that the charged up ones tasted different than the ones that weren&#039;t. :)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Faust</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=753&amp;ref=1219725334" width="100" height="74" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12165" style="width: 100%; overflow: auto; min-height: 125px;">Hmm interesting, able to affect taste.I do think it would be easier to effect a living plant though.While its soaking up water and nutrients and CO2 ask it to suck up more psi energy maybe????</div>
+		<textarea style="display: none;" id="desctxt_12165">Hmm interesting, able to affect taste.I do think it would be easier to effect a living plant though.While its soaking up water and nutrients and CO2 ask it to suck up more psi energy maybe????</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">ShadowmanX</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12167" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by psiball:</em><br />
+Nothing really happened except that the charged up ones tasted different than the ones that weren&#039;t. :)</div>My idea was more of charging them for about two weeks and then looking if there was a difference. I&#039;m sure you cant expect great results from a few minutes, except you&#039;re really good/powerful</div>
+		<textarea style="display: none;" id="desctxt_12167">[quote][i]posted by psiball:[/i]
+Nothing really happened except that the charged up ones tasted different than the ones that weren&#039;t. :)[/quote]
+
+My idea was more of charging them for about two weeks and then looking if there was a difference. I&#039;m sure you cant expect great results from a few minutes, except you&#039;re really good/powerful</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by ShadowmanX, 4 years ago<br />Posted 4 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Eldibs</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=77&amp;ref=1223740672" width="19" height="36" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12181" style="width: 100%; overflow: auto; min-height: 125px;">A better test would be to find an unknowing victi... I mean participant, and have them see if it affects their practice (with them not knowing that you psionically messed with their food). That way you remove any &quot;well I ate psi, so I should naturally be better&quot; thoughts affecting your practice.<br />
+<br />
+Of course, just being able to make vegetables to grow bigger or faster is useful on its own...</div>
+		<textarea style="display: none;" id="desctxt_12181">A better test would be to find an unknowing victi... I mean participant, and have them see if it affects their practice (with them not knowing that you psionically messed with their food). That way you remove any &quot;well I ate psi, so I should naturally be better&quot; thoughts affecting your practice.
+
+Of course, just being able to make vegetables to grow bigger or faster is useful on its own...</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">ShadowmanX</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12182" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Eldibs:</em><br />
+A better test would be to find an unknowing victi... I mean participant, and have them see if it affects their practice (with them not knowing that you psionically messed with their food). That way you remove any &quot;well I ate psi, so I should naturally be better&quot; thoughts affecting your practice.<br />
+<br />
+Of course, just being able to make vegetables to grow bigger or faster is useful on its own...</div>Sure that would be the test to verife that it <strong>really</strong> worked, but at the moment its enough for me if I try it myself and see if there are any results. That way I see if anything happens. If nothing happens then it could be that I&#039;m not good enough to charge it with psi, but if it works I can go onto the next step</div>
+		<textarea style="display: none;" id="desctxt_12182">[quote][i]posted by Eldibs:[/i]
+A better test would be to find an unknowing victi... I mean participant, and have them see if it affects their practice (with them not knowing that you psionically messed with their food). That way you remove any &quot;well I ate psi, so I should naturally be better&quot; thoughts affecting your practice.
+
+Of course, just being able to make vegetables to grow bigger or faster is useful on its own...[/quote]
+
+Sure that would be the test to verife that it [b]really[/b] worked, but at the moment its enough for me if I try it myself and see if there are any results. That way I see if anything happens. If nothing happens then it could be that I&#039;m not good enough to charge it with psi, but if it works I can go onto the next step</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Amaroq</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=606&amp;ref=1214436810" width="95" height="95" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12214" style="width: 100%; overflow: auto; min-height: 125px;">Why not just make a construct to store energy in and then take it back into your body when you need it? Like a battery.</div>
+		<textarea style="display: none;" id="desctxt_12214">Why not just make a construct to store energy in and then take it back into your body when you need it? Like a battery.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Corpse</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=553&amp;ref=1239824741" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12215" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Amaroq:</em><br />
+Why not just make a construct to store energy in and then take it back into your body when you need it? Like a battery.</div>Because in theory psi/energy doesn&#039;t leave physical objects, but constructs alone tend to leak or their shells/shields will eventually break. Your gonna have to be pretty good to make those last.</div>
+		<textarea style="display: none;" id="desctxt_12215">[quote][i]posted by Amaroq:[/i]
+Why not just make a construct to store energy in and then take it back into your body when you need it? Like a battery.[/quote]
+
+Because in theory psi/energy doesn&#039;t leave physical objects, but constructs alone tend to leak or their shells/shields will eventually break. Your gonna have to be pretty good to make those last.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">f3licks</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=848&amp;ref=1227833859" width="125" height="78" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12219" style="width: 100%; overflow: auto; min-height: 125px;">Hmm, that sounds like it could work, but I see a few problems.<br />
+<br />
+First of all, if you put energy into a plant, I would think that the plant would simply absorb the energy and use it to grow, meaning it would have no extra energy at the time when you ate it.<br />
+<br />
+Second, this is assuming that plants can convert psionic energy into glucose. If not, would it hang around, or just go away after a while?</div>
+		<textarea style="display: none;" id="desctxt_12219">Hmm, that sounds like it could work, but I see a few problems.
+
+First of all, if you put energy into a plant, I would think that the plant would simply absorb the energy and use it to grow, meaning it would have no extra energy at the time when you ate it.
+
+Second, this is assuming that plants can convert psionic energy into glucose. If not, would it hang around, or just go away after a while?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=617" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 34 queries. 0.295 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

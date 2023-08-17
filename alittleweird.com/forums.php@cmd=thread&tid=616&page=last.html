@@ -1,0 +1,400 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Odd meditation</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Odd meditation</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Odd meditation</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Linked</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=19&amp;ref=1203762048" width="89" height="38" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12096" style="width: 100%; overflow: auto; min-height: 125px;">Ok so here it is. When i meditate, i go to a speacial place in my mind. It&#039;s basicly a field full of cherry blossom trees.<br />
+<img src="http://www.tree-pictures.com/cherry_blossom_tree.jpg" alt="External Image" /><br />
+But as i was meditating earlier today, i saw a tree that was black instead of pink. Does anyone know what this could mean?</div>
+		<textarea style="display: none;" id="desctxt_12096">Ok so here it is. When i meditate, i go to a speacial place in my mind. It&#039;s basicly a field full of cherry blossom trees.
+[img]http://www.tree-pictures.com/cherry_blossom_tree.jpg[/img]
+But as i was meditating earlier today, i saw a tree that was black instead of pink. Does anyone know what this could mean?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">ShadowmanX</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12097" style="width: 100%; overflow: auto; min-height: 125px;">When I meditate I try to not think of anything (I know thats pretty hard)<br />
+<br />
+All I can offer are theories:<br />
+<br />
+* You feel bad because of something and your subcon tries to tell you.<br />
+* Someone messed around with your mind<br />
+* You fear something<br />
+<br />
+Just theories, tell if something fits. probably a way to find out what it is would be talking to your subconscious if you are able to. Another way would be asking some Dream Character during a lucid dream if you can get lucids.</div>
+		<textarea style="display: none;" id="desctxt_12097">When I meditate I try to not think of anything (I know thats pretty hard)
+
+All I can offer are theories:
+
+* You feel bad because of something and your subcon tries to tell you.
+* Someone messed around with your mind
+* You fear something
+
+Just theories, tell if something fits. probably a way to find out what it is would be talking to your subconscious if you are able to. Another way would be asking some Dream Character during a lucid dream if you can get lucids.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by ShadowmanX, 4 years, 1 month ago<br />Posted 4 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Linked</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=19&amp;ref=1203762048" width="89" height="38" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12098" style="width: 100%; overflow: auto; min-height: 125px;">Thank you for the advice.</div>
+		<textarea style="display: none;" id="desctxt_12098">Thank you for the advice.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Corpse</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=553&amp;ref=1239824741" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12100" style="width: 100%; overflow: auto; min-height: 125px;">Hmmm, it&#039;s almost like having a dream...try searching up &quot;black cherry blossom&quot; on a dream dictionary.</div>
+		<textarea style="display: none;" id="desctxt_12100">Hmmm, it&#039;s almost like having a dream...try searching up &quot;black cherry blossom&quot; on a dream dictionary.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Renodin</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=111&amp;ref=1223032143" width="90" height="108" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12103" style="width: 100%; overflow: auto; min-height: 125px;">I personally doubt that means anything at all. You&#039;re only visualizing this place, so I don&#039;t see how a change in color could mean anything.</div>
+		<textarea style="display: none;" id="desctxt_12103">I personally doubt that means anything at all. You&#039;re only visualizing this place, so I don&#039;t see how a change in color could mean anything.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Anonymous Dark</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=354&amp;ref=1203377944" width="100" height="86" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12104" style="width: 100%; overflow: auto; min-height: 125px;">I don&#039;t think that anyone here has a clue as to what a black cherry blossom means. They may hazard a guess, but that&#039;s all it is; a guess. Interpret it as you will.</div>
+		<textarea style="display: none;" id="desctxt_12104">I don&#039;t think that anyone here has a clue as to what a black cherry blossom means. They may hazard a guess, but that&#039;s all it is; a guess. Interpret it as you will.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Faceless</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=570&amp;ref=1214279440" width="83" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12118" style="width: 100%; overflow: auto; min-height: 125px;">Linked. I suggest you tred carefully for the next few days. Something dosnt seem right to me about what you said. </div>
+		<textarea style="display: none;" id="desctxt_12118">Linked. I suggest you tred carefully for the next few days. Something dosnt seem right to me about what you said.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Psikillion</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=593&amp;ref=1213954510" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12119" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Faceless:</em><br />
+Linked. I suggest you tred carefully for the next few days. Something dosnt seem right to me about what you said.</div>I agree, but for some reason I think it is sudden and has something to do with your family.<br />
+<br />
+Just be careful and wary of your surroundings this week.</div>
+		<textarea style="display: none;" id="desctxt_12119">[quote][i]posted by Faceless:[/i]
+Linked. I suggest you tred carefully for the next few days. Something dosnt seem right to me about what you said.[/quote]
+
+I agree, but for some reason I think it is sudden and has something to do with your family.
+
+Just be careful and wary of your surroundings this week.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">NewAgeAlchemist</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=459&amp;ref=1207160982" width="125" height="20" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12120" style="width: 100%; overflow: auto; min-height: 125px;">A book on dream analysis probably won&#039;t yield anything as most people dream in black and white. You haven&#039;t really given us a lot to work with either. How much else is there in your scenery, are those objects colored and if so was there any change? What is the intent of your meditations (perhaps a phrase or prayer, goal or question)?<br />
+<br />
+Did it seem as though the tree was still there or actually some kind of negative space(read: vaccum like rather than bad,dark,evil)</div>
+		<textarea style="display: none;" id="desctxt_12120">A book on dream analysis probably won&#039;t yield anything as most people dream in black and white. You haven&#039;t really given us a lot to work with either. How much else is there in your scenery, are those objects colored and if so was there any change? What is the intent of your meditations (perhaps a phrase or prayer, goal or question)?
+
+Did it seem as though the tree was still there or actually some kind of negative space(read: vaccum like rather than bad,dark,evil)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">jack</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=759&amp;ref=1220326318" width="125" height="105" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12143" style="width: 100%; overflow: auto; min-height: 125px;">3 and half days later~~~hi<br />
+<br />
+um, black is not such a good thing as a color, since pink means love ^_^, black means something bad that&#039;s all I know. &gt;&lt; Maybe u are evil..jking. :D<br />
+Well, if you are really scared, imagine it black, and see it change to pink in your meditation. viola.<br />
+<br />
+try to make the experience as real as possible, including how you entered that place, maybe you walked there? what are you wearing? feel whatever it feels, and see the black cherry tree, see the pedals fell (make up ur own stuff if u wanna lol) , and pink pedals started to grow back, and feel, smell, the blossom, be one with it, and feel the pink aura back around the tree, and around you. viola.</div>
+		<textarea style="display: none;" id="desctxt_12143">3 and half days later~~~hi
+
+um, black is not such a good thing as a color, since pink means love ^_^, black means something bad that&#039;s all I know. &gt;&lt; Maybe u are evil..jking. :D
+Well, if you are really scared, imagine it black, and see it change to pink in your meditation. viola.
+
+try to make the experience as real as possible, including how you entered that place, maybe you walked there? what are you wearing? feel whatever it feels, and see the black cherry tree, see the pedals fell (make up ur own stuff if u wanna lol) , and pink pedals started to grow back, and feel, smell, the blossom, be one with it, and feel the pink aura back around the tree, and around you. viola.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">DigGil</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12146" style="width: 100%; overflow: auto; min-height: 125px;">Hi, since the last time I posted (long time)...<br />
+<br />
+Maybe you just lost the focus of the pink tree, don&#039;t let your mind wander too much. If what I&#039;m saying is truth try meditating again, but this time don&#039;t think about the colour neither if it&#039;s black. There&#039;s only PINK no more colours exist.<br />
+<br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by NewAgeAlchemist:</em><br />
+A book on dream analysis probably won&#039;t yield anything as most people dream in black and white.</div>I&#039;ve ever wondered if that&#039;s truth, I&#039;ve never dreamt without colours.<br />
+<br />
+<br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by jack:</em><br />
+um, black is not such a good thing as a color, since pink means love ^_^, black means something bad that&#039;s all I know. &gt;&lt; Maybe u are evil..jking. :D</div>That depends on where you are talking about the &quot;black&quot;. Eastern people (Asia principally) think black as being a colour of good, not bad.</div>
+		<textarea style="display: none;" id="desctxt_12146">Hi, since the last time I posted (long time)...
+
+Maybe you just lost the focus of the pink tree, don&#039;t let your mind wander too much. If what I&#039;m saying is truth try meditating again, but this time don&#039;t think about the colour neither if it&#039;s black. There&#039;s only PINK no more colours exist.
+
+[quote][i]posted by NewAgeAlchemist:[/i]
+A book on dream analysis probably won&#039;t yield anything as most people dream in black and white.[/quote]
+I&#039;ve ever wondered if that&#039;s truth, I&#039;ve never dreamt without colours.
+
+
+[quote][i]posted by jack:[/i]
+um, black is not such a good thing as a color, since pink means love ^_^, black means something bad that&#039;s all I know. &gt;&lt; Maybe u are evil..jking. :D
+[/quote]
+
+That depends on where you are talking about the &quot;black&quot;. Eastern people (Asia principally) think black as being a colour of good, not bad.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Psikillion</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=593&amp;ref=1213954510" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12147" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by NewAgeAlchemist:</em><br />
+A book on dream analysis probably won&#039;t yield anything as most people dream in black and white.</div>I beg to differ because I always dream in color, albeit it might be a bit dark but it is still in color.</div>
+		<textarea style="display: none;" id="desctxt_12147">[quote][i]posted by NewAgeAlchemist:[/i]
+A book on dream analysis probably won&#039;t yield anything as most people dream in black and white.[/quote]
+
+I beg to differ because I always dream in color, albeit it might be a bit dark but it is still in color.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">joke-lain</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=517&amp;ref=1210639719" width="103" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12466" style="width: 100%; overflow: auto; min-height: 125px;">Weird...<br />
+<br />
+One month and One week later.<br />
+<br />
+If your STILL having trouble, I would look through everything that is bothering you.<br />
+<br />
+I wouldn&#039;t necessarily try imagining a black cherry tree then turn it pink because that doesn&#039;t always work. It may go back to black because your subconscious subconsciously thinks of it turning black again. (It&#039;s happened to me before.)<br />
+<br />
+Or maybe you really wanted it it black, but you didn&#039;t realize it.<br />
+<br />
+By the way, this gives me a good story idea.</div>
+		<textarea style="display: none;" id="desctxt_12466">Weird...
+
+One month and One week later.
+
+If your STILL having trouble, I would look through everything that is bothering you.
+
+I wouldn&#039;t necessarily try imagining a black cherry tree then turn it pink because that doesn&#039;t always work. It may go back to black because your subconscious subconsciously thinks of it turning black again. (It&#039;s happened to me before.)
+
+Or maybe you really wanted it it black, but you didn&#039;t realize it.
+
+By the way, this gives me a good story idea.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 11 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=616" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 29 queries. 0.280 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

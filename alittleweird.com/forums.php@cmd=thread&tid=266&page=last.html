@@ -1,0 +1,426 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Trance Music</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Trance Music</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Trance Music</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Jeffrey</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=283&amp;ref=1213976987" width="116" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7034" style="width: 100%; overflow: auto; min-height: 125px;">I was just wondering, what would you guys recommended to use for getting into that mostly desired trance state for OBE&#039;s? I mean, I love trance and techno, but my computer crashed and I lost all of it, and barely remember anything.<br />
+<br />
+So, what do you guys suggest?</div>
+		<textarea style="display: none;" id="desctxt_7034">I was just wondering, what would you guys recommended to use for getting into that mostly desired trance state for OBE&#039;s? I mean, I love trance and techno, but my computer crashed and I lost all of it, and barely remember anything.
+
+So, what do you guys suggest?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Zectra</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=96&amp;ref=1203358450" width="94" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_7035" style="width: 100%; overflow: auto; min-height: 125px;">Hm.. in a state for OBE? I don&#039;t use trance music for obe&#039;s much anymore, but I know Paul Oakenfold and Paul Van Dike both have good tracks to listen to.  My favorite from Paul Oakenfold is &quot;This Is Trance.&quot;  It might be good; it calms down at the end in a way that secures the trance, plus it just sounds awesome.<br />
+<br />
+Other one, I can&#039;t remember who&#039;s it was, is finary binary, which just sounds delicious. But for a more stable trance you&#039;re probably safer with &quot;This Is Trance.&quot;<br />
+<br />
+Other than music though... ...I do have the full gateway experience.. Iunno what restrictions we have on sharing torrents like that though. I would however suggest them if you&#039;re interested.</div>
+		<textarea style="display: none;" id="desctxt_7035">Hm.. in a state for OBE? I don&#039;t use trance music for obe&#039;s much anymore, but I know Paul Oakenfold and Paul Van Dike both have good tracks to listen to.  My favorite from Paul Oakenfold is &quot;This Is Trance.&quot;  It might be good; it calms down at the end in a way that secures the trance, plus it just sounds awesome.
+
+Other one, I can&#039;t remember who&#039;s it was, is finary binary, which just sounds delicious. But for a more stable trance you&#039;re probably safer with &quot;This Is Trance.&quot;
+
+Other than music though... ...I do have the full gateway experience.. Iunno what restrictions we have on sharing torrents like that though. I would however suggest them if you&#039;re interested.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Sean</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=2&amp;ref=1214247941" width="117" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7043" style="width: 100%; overflow: auto; min-height: 125px;">I use Daft Punk - Alive, Daft Punk - Discovery, Blaqk Audio - CexCells, AFI - DecemberUnderground.</div>
+		<textarea style="display: none;" id="desctxt_7043">I use Daft Punk - Alive, Daft Punk - Discovery, Blaqk Audio - CexCells, AFI - DecemberUnderground.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">AndPious</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=321&amp;ref=1203813988" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_7055" style="width: 100%; overflow: auto; min-height: 125px;">You also might look up Skazi, Astrix, Armin Van Buuren, or DJ Tiesto to find something.</div>
+		<textarea style="display: none;" id="desctxt_7055">You also might look up Skazi, Astrix, Armin Van Buuren, or DJ Tiesto to find something.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Jeffrey</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=283&amp;ref=1213976987" width="116" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7062" style="width: 100%; overflow: auto; min-height: 125px;">Ah, thanks a million guys. I personally didn&#039;t know Daft Punk was trance. Thought it was techno... Eh. Now I know. :-)</div>
+		<textarea style="display: none;" id="desctxt_7062">Ah, thanks a million guys. I personally didn&#039;t know Daft Punk was trance. Thought it was techno... Eh. Now I know. :-)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Linked</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=19&amp;ref=1203762048" width="89" height="38" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_7095" style="width: 100%; overflow: auto; min-height: 125px;">does anyone know any music that can induce theta brainwaves?<br />
+I looked at Jeffrey&#039;s thread but i need something that doesn&#039;t take money and/or downloads.</div>
+		<textarea style="display: none;" id="desctxt_7095">does anyone know any music that can induce theta brainwaves?
+I looked at Jeffrey&#039;s thread but i need something that doesn&#039;t take money and/or downloads.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">AndPious</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=321&amp;ref=1203813988" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7112" style="width: 100%; overflow: auto; min-height: 125px;">Errr... binaural beats (which are NOT music) are the only thing I can think of. Also, if you don&#039;t want to pay for it or download it, the ways of attaining one become few.<br />
+<br />
+SBaGen can produce raw theta binaurals, and is free and small. You can also download music file versions of the i-doser drugs.</div>
+		<textarea style="display: none;" id="desctxt_7112">Errr... binaural beats (which are NOT music) are the only thing I can think of. Also, if you don&#039;t want to pay for it or download it, the ways of attaining one become few.
+
+SBaGen can produce raw theta binaurals, and is free and small. You can also download music file versions of the i-doser drugs.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">ShamanX</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=451&amp;ref=1206352699" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_7437" style="width: 100%; overflow: auto; min-height: 125px;">Hey everyone. I love listening to light ambience kind of trance, especially while in meditation. I know a pretty good free radio site, and here it is:  <a href="http://www.di.fm/" target="_blank">http://www.di.fm/</a><br />
+I am in love with the chillout section.</div>
+		<textarea style="display: none;" id="desctxt_7437">Hey everyone. I love listening to light ambience kind of trance, especially while in meditation. I know a pretty good free radio site, and here it is: http://www.di.fm/
+I am in love with the chillout section.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Jeffrey</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=283&amp;ref=1213976987" width="116" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7454" style="width: 100%; overflow: auto; min-height: 125px;">Oh, and one more thing:<br />
+<br />
+This is embarassing, but I don&#039;t exactly know how to get into a trance.<br />
+<br />
+Hahaha.<br />
+<br />
+I checked out that article of it on PsiPog and I still don&#039;t know. Either that, or I don&#039;t feel it/know what to feel.</div>
+		<textarea style="display: none;" id="desctxt_7454">Oh, and one more thing:
+
+This is embarassing, but I don&#039;t exactly know how to get into a trance.
+
+Hahaha.
+
+I checked out that article of it on PsiPog and I still don&#039;t know. Either that, or I don&#039;t feel it/know what to feel.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Luka</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10013" style="width: 100%; overflow: auto; min-height: 125px;">Me too. I have read articles but it is not really clear on how to get into a trance (it might be, but I have forgotten everything).</div>
+		<textarea style="display: none;" id="desctxt_10013">Me too. I have read articles but it is not really clear on how to get into a trance (it might be, but I have forgotten everything).</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">chillpill</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=635&amp;ref=1215645183" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10016" style="width: 100%; overflow: auto; min-height: 125px;">[edit] Rhythmic induction<br />
+The usage of repetitive rhythms to induce trance states is an ancient phenomenon. Throughout the world, shamanistic practitioners have been employing this method for millennia. Anthropologists and other researchers have documented the similarity of shamanistic auditory driving rituals among different cultures.<br />
+Wikipedia, Trance, Rhythmic Induction<br />
+<a href="index.html" target="_blank" title="http://alittleweird.com">http://en.wikipedia.org/wiki/Trance#Rhythmic_induction</a><br />
+<br />
+Repetitive rhythms, there ya go!<br />
+That&#039;s only one way though, and the term is so broadly used, it&#039;s hard to say, I guess it depends on what result you are looking for.<br />
+<br />
+(Btw, the song &quot;Black Swan&quot; by Thom Yorke (On the album &quot;The Eraser&quot; used to work for me)</div>
+		<textarea style="display: none;" id="desctxt_10016">[edit] Rhythmic induction
+The usage of repetitive rhythms to induce trance states is an ancient phenomenon. Throughout the world, shamanistic practitioners have been employing this method for millennia. Anthropologists and other researchers have documented the similarity of shamanistic auditory driving rituals among different cultures.
+Wikipedia, Trance, Rhythmic Induction
+[url=http://alittleweird.com]http://en.wikipedia.org/wiki/Trance#Rhythmic_induction[/url]
+
+Repetitive rhythms, there ya go!
+That&#039;s only one way though, and the term is so broadly used, it&#039;s hard to say, I guess it depends on what result you are looking for.
+
+(Btw, the song &quot;Black Swan&quot; by Thom Yorke (On the album &quot;The Eraser&quot; used to work for me)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by chillpill, 4 years, 5 months ago<br />Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Jeffrey</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=283&amp;ref=1213976987" width="116" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10022" style="width: 100%; overflow: auto; min-height: 125px;">Ah, I see. Thanks Chillpill. And thanks for the song recommendation. I&#039;ll check it out.<br />
+<br />
+<br />
+(-:</div>
+		<textarea style="display: none;" id="desctxt_10022">Ah, I see. Thanks Chillpill. And thanks for the song recommendation. I&#039;ll check it out.
+
+
+(-:</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Amaroq</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=606&amp;ref=1214436810" width="95" height="95" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10063" style="width: 100%; overflow: auto; min-height: 125px;">I can&#039;t say I&#039;ve ever been in a trance. Though I have listened to an mp3 with a hypnotist speaking on it, and he put me into a trancelike state.<br />
+<br />
+I&#039;m not gonna say what the guy on the recording did next... It wouldn&#039;t be PG-13.</div>
+		<textarea style="display: none;" id="desctxt_10063">I can&#039;t say I&#039;ve ever been in a trance. Though I have listened to an mp3 with a hypnotist speaking on it, and he put me into a trancelike state.
+
+I&#039;m not gonna say what the guy on the recording did next... It wouldn&#039;t be PG-13.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Amaroq, 4 years, 5 months ago<br />Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">cinderwild</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10095" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Amaroq:</em><br />
+I can&#039;t say I&#039;ve ever been in a trance. Though I have listened to an mp3 with a hypnotist speaking on it, and he put me into a trancelike state.<br />
+<br />
+I&#039;m not gonna say what the guy on the recording did next... It wouldn&#039;t be PG-13.</div>No one cares, say it!</div>
+		<textarea style="display: none;" id="desctxt_10095">[quote][i]posted by Amaroq:[/i]
+I can&#039;t say I&#039;ve ever been in a trance. Though I have listened to an mp3 with a hypnotist speaking on it, and he put me into a trancelike state.
+
+I&#039;m not gonna say what the guy on the recording did next... It wouldn&#039;t be PG-13.[/quote]
+
+No one cares, say it!</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Amaroq</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=606&amp;ref=1214436810" width="95" height="95" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10097" style="width: 100%; overflow: auto; min-height: 125px;">He made me imagine, vividly, the person I desire most giving me a bl**job. And he made it so that I could not move from my chair until I was &#039;done&#039; three times.<br />
+<br />
+That was the goal anyway. It almost, almost worked one time. But not quite, and I eventually decided to just get up anyway.</div>
+		<textarea style="display: none;" id="desctxt_10097">He made me imagine, vividly, the person I desire most giving me a bl**job. And he made it so that I could not move from my chair until I was &#039;done&#039; three times.
+
+That was the goal anyway. It almost, almost worked one time. But not quite, and I eventually decided to just get up anyway.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Amaroq, 4 years, 5 months ago<br />Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Jeffrey</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=283&amp;ref=1213976987" width="116" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10121" style="width: 100%; overflow: auto; min-height: 125px;">HAHAHAHA.<br />
+<br />
+OH GOD AHAHAHAHAHAHA. THAT IS AMAZING AMAROQ.<br />
+<br />
+You just made my day... And it just started like a few minutes ago.<br />
+<br />
+Send me the mp3!</div>
+		<textarea style="display: none;" id="desctxt_10121">HAHAHAHA.
+
+OH GOD AHAHAHAHAHAHA. THAT IS AMAZING AMAROQ.
+
+You just made my day... And it just started like a few minutes ago.
+
+Send me the mp3!</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Jeffrey, 4 years, 5 months ago<br />Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Jeffrey</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=283&amp;ref=1213976987" width="116" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10123" style="width: 100%; overflow: auto; min-height: 125px;">Double post for the lose.</div>
+		<textarea style="display: none;" id="desctxt_10123">Double post for the lose.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Jeffrey, 4 years, 5 months ago<br />Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=266" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 33 queries. 0.276 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

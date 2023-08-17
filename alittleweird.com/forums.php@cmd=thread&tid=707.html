@@ -1,0 +1,306 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Look at what I&#039;ve stumbled upon</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Look at what I&#039;ve stumbled upon</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Look at what I&#039;ve stumbled upon</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">DigGil</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13375" style="width: 100%; overflow: auto; min-height: 125px;">I remember reading at PsiPog Sean saying something about those people how always ask for psychic defense and then he said that the PsiPog community is not theirs&#039; psychic gang or so. But I was searching on Google unrelated when I came up with this website: <br />
+<br />
+ <a href="http://www.geocities.com/khai_pardus/division.html" target="_blank">http://www.geocities.com/khai_pardus/division.html</a><br />
+<br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>The above website has written:</em><br />
+If you suspect that you are under psychic or spiritual attack, DO NOT hesitate to contact us.</div>This is a website where they claim being shapeshifters and try to help other shapeshifters as well.</div>
+		<textarea style="display: none;" id="desctxt_13375">I remember reading at PsiPog Sean saying something about those people how always ask for psychic defense and then he said that the PsiPog community is not theirs&#039; psychic gang or so. But I was searching on Google unrelated when I came up with this website: 
+
+http://www.geocities.com/khai_pardus/division.html
+
+[quote][i]The above website has written:[/i]
+If you suspect that you are under psychic or spiritual attack, DO NOT hesitate to contact us.[/quote]
+
+This is a website where they claim being shapeshifters and try to help other shapeshifters as well.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by DigGil, 3 years, 8 months ago<br />Posted 3 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Antisankari</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=224&amp;ref=1213032338" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13376" style="width: 100%; overflow: auto; min-height: 125px;"> <a href="http://www.geocities.com/" target="_blank">http://www.geocities.com/</a><br />
+<br />
+Enough said.</div>
+		<textarea style="display: none;" id="desctxt_13376">http://www.geocities.com/
+
+Enough said.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Morcyont</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=867&amp;ref=1262407330" width="125" height="73" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13377" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by DigGil:</em><br />
+I remember reading at PsiPog Sean saying something about those people how always ask for psychic defense and then he said that the PsiPog community is not theirs&#039; psychic gang or so. But I was searching on Google unrelated when I came up with this website: <br />
+<br />
+ <a href="http://www.geocities.com/khai_pardus/division.html" target="_blank">http://www.geocities.com/khai_pardus/division.html</a><br />
+<br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>The above website has written:</em><br />
+If you suspect that you are under psychic or spiritual attack, DO NOT hesitate to contact us.</div>This is a website where they claim being shapeshifters and try to help other shapeshifters as well. The funny of this is that they distinguish between people how <strong>think</strong> that are shapeshifters (like role players) and that <strong>feel</strong> like animals. Plus they don&#039;t claim being able to change shape actually, just in sensing capability and behaviour.</div>Dang, my sword of Jeebus Adds +30 to Psi but their Lycanthropy skillz p00n me!<br />
+<br />
+^ What I think of when I hear stuff like this! :)</div>
+		<textarea style="display: none;" id="desctxt_13377">[quote][i]posted by DigGil:[/i]
+I remember reading at PsiPog Sean saying something about those people how always ask for psychic defense and then he said that the PsiPog community is not theirs&#039; psychic gang or so. But I was searching on Google unrelated when I came up with this website: 
+
+http://www.geocities.com/khai_pardus/division.html
+
+[quote][i]The above website has written:[/i]
+If you suspect that you are under psychic or spiritual attack, DO NOT hesitate to contact us.[/quote]
+
+This is a website where they claim being shapeshifters and try to help other shapeshifters as well. The funny of this is that they distinguish between people how [b]think[/b] that are shapeshifters (like role players) and that [b]feel[/b] like animals. Plus they don&#039;t claim being able to change shape actually, just in sensing capability and behaviour.[/quote]
+
+Dang, my sword of Jeebus Adds +30 to Psi but their Lycanthropy skillz p00n me!
+
+^ What I think of when I hear stuff like this! :)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">mrj</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13378" style="width: 100%; overflow: auto; min-height: 125px;">Eh, when it comes to these types of &quot;spiritual&quot; things, every &quot;sane&quot; site has 10 more insane ones lurking around the corner.</div>
+		<textarea style="display: none;" id="desctxt_13378">Eh, when it comes to these types of &quot;spiritual&quot; things, every &quot;sane&quot; site has 10 more insane ones lurking around the corner.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">DigGil</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13380" style="width: 100%; overflow: auto; min-height: 125px;">The point that I want you to reach is:<br />
+<br />
+ that is quite understandable why you can&#039;t just get here and ask Sean or me or whoever and call for protection because &quot;someone is attacking you&quot; or something like that. Nowadays&#039;s psychics capable of something like that are very rare to cross with (IMO) then it&#039;s too complicated to accomplish such task only with the knowledge in PsiPog and other links from there (like the Psionics Online Network). Just imagine if such calls where allowed! Really many people would ask help, much of it just spam.<br />
+<br />
+I don&#039;t care if they think they&#039;re witches, half-animals, half-plants, amoebas or losers who falls while crossing a corner. They talk about &quot;spiritual&quot;/&quot;psychic&quot; thingie like PsiPog, for example, did. The last paragraph was just for insight.<br />
+<br />
+<br />
+The website seems closed as the Yahoo! group, but you could read the rest of that note (green text) or the home page (link in the bottom, which is not any more useful, but just for curiosity). Seems they were starting psions or spiritualists because they knew that may be hard handle background psi while training the awareness without the defence (like shielding) like my self-experience says.<br />
+<br />
+The reason I took interest on that was because as you know there should be more techniques an abilities over psionics that are not covered by the most know psionic communities like this one. It really depends on the ways someone practice and thinks of it. This was a interesting finding: &quot;How would they manage to protect people?&quot; Which redirects to: &quot;What was their concept of psychic attack?&quot;.<br />
+<br />
+This website might seem too wild for you (not literally:P) but there are others like this one that are more &quot;To defend yourself THINK&quot;:  <a href="http://www.opus-net.org/default.htm" target="_blank">http://www.opus-net.org/default.htm</a></div>
+		<textarea style="display: none;" id="desctxt_13380">The point that I want you to reach is:
+
+ that is quite understandable why you can&#039;t just get here and ask Sean or me or whoever and call for protection because &quot;someone is attacking you&quot; or something like that. Nowadays&#039;s psychics capable of something like that are very rare to cross with (IMO) then it&#039;s too complicated to accomplish such task only with the knowledge in PsiPog and other links from there (like the Psionics Online Network). Just imagine if such calls where allowed! Really many people would ask help, much of it just spam.
+
+I don&#039;t care if they think they&#039;re witches, half-animals, half-plants, amoebas or losers who falls while crossing a corner. They talk about &quot;spiritual&quot;/&quot;psychic&quot; thingie like PsiPog, for example, did. The last paragraph was just for insight.
+
+
+The website seems closed as the Yahoo! group, but you could read the rest of that note (green text) or the home page (link in the bottom, which is not any more useful, but just for curiosity). Seems they were starting psions or spiritualists because they knew that may be hard handle background psi while training the awareness without the defence (like shielding) like my self-experience says.
+
+The reason I took interest on that was because as you know there should be more techniques an abilities over psionics that are not covered by the most know psionic communities like this one. It really depends on the ways someone practice and thinks of it. This was a interesting finding: &quot;How would they manage to protect people?&quot; Which redirects to: &quot;What was their concept of psychic attack?&quot;.
+
+This website might seem too wild for you (not literally:P) but there are others like this one that are more &quot;To defend yourself THINK&quot;: http://www.opus-net.org/default.htm</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by DigGil, 3 years, 8 months ago<br />Posted 3 years, 8 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=707" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 21 queries. 0.335 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

@@ -1,0 +1,361 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Testing Shields</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Testing Shields</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Testing Shields</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">f3licks</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=848&amp;ref=1227833859" width="125" height="78" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12429" style="width: 100%; overflow: auto; min-height: 125px;">I&#039;ve been practicing psionics on and off for about a year (all thanks to PsiPog ;P), although recently I have become a lot more interested.<br />
+I&#039;ve never done much with shields, not really needing them since I&#039;ve never tried to learn Empathy or Telepathy. I have started them now, but I don&#039;t know how to test how effective/strong they are.<br />
+<br />
+Any ideas would be very much appreciated.</div>
+		<textarea style="display: none;" id="desctxt_12429">I&#039;ve been practicing psionics on and off for about a year (all thanks to PsiPog ;P), although recently I have become a lot more interested.
+I&#039;ve never done much with shields, not really needing them since I&#039;ve never tried to learn Empathy or Telepathy. I have started them now, but I don&#039;t know how to test how effective/strong they are.
+
+Any ideas would be very much appreciated.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 11 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Trick</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=744&amp;ref=1221873234" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12430" style="width: 100%; overflow: auto; min-height: 125px;">I also had lots of trouble with this. You can project energy out of your hand, and have it bounce back if it hits psi. Project it at the shield, if you feel it on your hand youll know you have a shield. Thats just one way. Thats how I do it. I wouldnt really bother with them unless you need them. If your a sensitive empath/telepath, its simple. Make one, if the stuff stops, you did it. Most would disagree and say you should have learned prior to that, but I think it will be more gradual and you wont SUDDENLY need a shield. Those are just two ways. Theres many more. </div>
+		<textarea style="display: none;" id="desctxt_12430">I also had lots of trouble with this. You can project energy out of your hand, and have it bounce back if it hits psi. Project it at the shield, if you feel it on your hand youll know you have a shield. Thats just one way. Thats how I do it. I wouldnt really bother with them unless you need them. If your a sensitive empath/telepath, its simple. Make one, if the stuff stops, you did it. Most would disagree and say you should have learned prior to that, but I think it will be more gradual and you wont SUDDENLY need a shield. Those are just two ways. Theres many more.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 11 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Psikillion</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=593&amp;ref=1213954510" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12433" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Trick:</em><br />
+I also had lots of trouble with this. You can project energy out of your hand, and have it bounce back if it hits psi. Project it at the shield, if you feel it on your hand youll know you have a shield. Thats just one way. Thats how I do it. I wouldnt really bother with them unless you need them. If your a sensitive empath/telepath, its simple. Make one, if the stuff stops, you did it. Most would disagree and say you should have learned prior to that, but I think it will be more gradual and you wont SUDDENLY need a shield. Those are just two ways. Theres many more.</div>That is not necessarily a good way of testing it, because that just means that things are capable of bouncing off INSIDE your shield. This would most likely lead to a headache. :)<br />
+<br />
+I would recommend that you have the energy go away from your body, and then come back towards you like a boomerang. If you feel the energy then that means it has passed through the shield.<br />
+<br />
+However, this is only a way to prove that energy can bounce off your shield, not telepathic or empathic messages. Those you would have to test with someone else who knows telepathy/empathy. Any problems you do have should only be programming errors.</div>
+		<textarea style="display: none;" id="desctxt_12433">[quote][i]posted by Trick:[/i]
+I also had lots of trouble with this. You can project energy out of your hand, and have it bounce back if it hits psi. Project it at the shield, if you feel it on your hand youll know you have a shield. Thats just one way. Thats how I do it. I wouldnt really bother with them unless you need them. If your a sensitive empath/telepath, its simple. Make one, if the stuff stops, you did it. Most would disagree and say you should have learned prior to that, but I think it will be more gradual and you wont SUDDENLY need a shield. Those are just two ways. Theres many more.[/quote]
+
+That is not necessarily a good way of testing it, because that just means that things are capable of bouncing off INSIDE your shield. This would most likely lead to a headache. :)
+
+I would recommend that you have the energy go away from your body, and then come back towards you like a boomerang. If you feel the energy then that means it has passed through the shield.
+
+However, this is only a way to prove that energy can bounce off your shield, not telepathic or empathic messages. Those you would have to test with someone else who knows telepathy/empathy. Any problems you do have should only be programming errors.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 11 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">f3licks</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=848&amp;ref=1227833859" width="125" height="78" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12440" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Psikillion:</em><br />
+<br />
+That is not necessarily a good way of testing it, because that just means that things are capable of bouncing off INSIDE your shield. This would most likely lead to a headache. :)<br />
+<br />
+I would recommend that you have the energy go away from your body, and then come back towards you like a boomerang. If you feel the energy then that means it has passed through the shield.<br />
+<br />
+However, this is only a way to prove that energy can bounce off your shield, not telepathic or empathic messages. Those you would have to test with someone else who knows telepathy/empathy. Any problems you do have should only be programming errors.</div>I&#039;m learning Empathy at the same time, so I guess I&#039;ll have a more concrete test.<br />
+Thanks to both of you.</div>
+		<textarea style="display: none;" id="desctxt_12440">[quote][i]posted by Psikillion:[/i]
+
+That is not necessarily a good way of testing it, because that just means that things are capable of bouncing off INSIDE your shield. This would most likely lead to a headache. :)
+
+I would recommend that you have the energy go away from your body, and then come back towards you like a boomerang. If you feel the energy then that means it has passed through the shield.
+
+However, this is only a way to prove that energy can bounce off your shield, not telepathic or empathic messages. Those you would have to test with someone else who knows telepathy/empathy. Any problems you do have should only be programming errors.[/quote]
+
+I&#039;m learning Empathy at the same time, so I guess I&#039;ll have a more concrete test.
+Thanks to both of you.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 11 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Trick</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=744&amp;ref=1221873234" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12476" style="width: 100%; overflow: auto; min-height: 125px;">Psikillion: No. My way of testing for a shield is like a radar. The energy does not bounce back because the shield bounced it back. If you read my post, you program it to bounce back if it comes in contact with a shield. But the shield itself isnt what pushes the psi back. </div>
+		<textarea style="display: none;" id="desctxt_12476">Psikillion: No. My way of testing for a shield is like a radar. The energy does not bounce back because the shield bounced it back. If you read my post, you program it to bounce back if it comes in contact with a shield. But the shield itself isnt what pushes the psi back.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 11 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">joke-lain</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=517&amp;ref=1210639719" width="103" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12477" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by f3licks:</em><br />
+I&#039;m learning Empathy at the same time, so I guess I&#039;ll have a more concrete test.<br />
+Thanks to both of you.</div>Emapthy is easy. I used to think I&#039;d never get into the energy thing and psionics, and I don&#039;t practice often (once every blue moon)<br />
+<br />
+But Empathy came naturally to me. At first I thought I didn&#039;t have it until I learned what it meant.<br />
+<br />
+Empathy is the capacity to recognize or understand anothers state of mind or emotion.<br />
+ <a href="http://en.wikipedia.org/wiki/Empathy" target="_blank">http://en.wikipedia.org/wiki/Empathy</a><br />
+<br />
+Just try to figure out what someone is feeling by what they do or how they act, it doesn&#039;t have to be just an energy/psionic thing<br />
+</div>
+		<textarea style="display: none;" id="desctxt_12477">[quote][i]posted by f3licks:[/i]
+I&#039;m learning Empathy at the same time, so I guess I&#039;ll have a more concrete test.
+Thanks to both of you.[/quote]
+
+Emapthy is easy. I used to think I&#039;d never get into the energy thing and psionics, and I don&#039;t practice often (once every blue moon)
+
+But Empathy came naturally to me. At first I thought I didn&#039;t have it until I learned what it meant.
+
+Empathy is the capacity to recognize or understand anothers state of mind or emotion.
+http://en.wikipedia.org/wiki/Empathy
+
+Just try to figure out what someone is feeling by what they do or how they act, it doesn&#039;t have to be just an energy/psionic thing</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 11 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Trick</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=744&amp;ref=1221873234" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12488" style="width: 100%; overflow: auto; min-height: 125px;">Ok. But its psionic empathy he&#039;s trying to learn here. Not normal empathy. Empathy really isnt that hard, its happened to me for a while without realizing. Basically, always be aware of what your thinking. Throughout the day, know what your feeling. Eventually, when you go by other people youll start feeling things, and youll know its not yours. Just always be aware of what your feeling, and when you feel somebody elses emotion, it will stick out. This is actually something somebody taught me for telepathy, but thier mostly the same, and I&#039;ve been picking up peoples emotions for a while now. </div>
+		<textarea style="display: none;" id="desctxt_12488">Ok. But its psionic empathy he&#039;s trying to learn here. Not normal empathy. Empathy really isnt that hard, its happened to me for a while without realizing. Basically, always be aware of what your thinking. Throughout the day, know what your feeling. Eventually, when you go by other people youll start feeling things, and youll know its not yours. Just always be aware of what your feeling, and when you feel somebody elses emotion, it will stick out. This is actually something somebody taught me for telepathy, but thier mostly the same, and I&#039;ve been picking up peoples emotions for a while now.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 11 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">joke-lain</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=517&amp;ref=1210639719" width="103" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12503" style="width: 100%; overflow: auto; min-height: 125px;">That is true. He is trying to learn psionic empathy. I forgot the difference for a second there.<br />
+<br />
+Just do what Trick says. Keep your mind cleared and try not be overly emotional and remember your mood. If you find something out of place and you do not know why (Up to a point where you think you don&#039;t know emotions and you&#039;re ready pull your hair out because you think you&#039;ve gone hair wire) it is probably somebody else&#039;s emotions. My advice after this happens, find out who is feeling what you are feeling. The person shouldn&#039;t be that hard to find. Their actions and expressions should stand out from other (at least that&#039;s how it was for me).</div>
+		<textarea style="display: none;" id="desctxt_12503">That is true. He is trying to learn psionic empathy. I forgot the difference for a second there.
+
+Just do what Trick says. Keep your mind cleared and try not be overly emotional and remember your mood. If you find something out of place and you do not know why (Up to a point where you think you don&#039;t know emotions and you&#039;re ready pull your hair out because you think you&#039;ve gone hair wire) it is probably somebody else&#039;s emotions. My advice after this happens, find out who is feeling what you are feeling. The person shouldn&#039;t be that hard to find. Their actions and expressions should stand out from other (at least that&#039;s how it was for me).</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 11 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">f3licks</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=848&amp;ref=1227833859" width="125" height="78" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12516" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Trick:</em><br />
+Ok. But its psionic empathy he&#039;s trying to learn here. Not normal empathy. Empathy really isnt that hard, its happened to me for a while without realizing. Basically, always be aware of what your thinking. Throughout the day, know what your feeling. Eventually, when you go by other people youll start feeling things, and youll know its not yours. Just always be aware of what your feeling, and when you feel somebody elses emotion, it will stick out. This is actually something somebody taught me for telepathy, but thier mostly the same, and I&#039;ve been picking up peoples emotions for a while now.</div><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by joke-lain:</em><br />
+That is true. He is trying to learn psionic empathy. I forgot the difference for a second there.<br />
+<br />
+Just do what Trick says. Keep your mind cleared and try not be overly emotional and remember your mood. If you find something out of place and you do not know why (Up to a point where you think you don&#039;t know emotions and you&#039;re ready pull your hair out because you think you&#039;ve gone hair wire) it is probably somebody else&#039;s emotions. My advice after this happens, find out who is feeling what you are feeling. The person shouldn&#039;t be that hard to find. Their actions and expressions should stand out from other (at least that&#039;s how it was for me).</div>Thanks a lot!<br />
+I&#039;ve been working on reading people, and I think I&#039;m getting results, but I&#039;m pretty skeptical. It took me a long time just to acknowledge that psiballs were real.</div>
+		<textarea style="display: none;" id="desctxt_12516">[quote][i]posted by Trick:[/i]
+Ok. But its psionic empathy he&#039;s trying to learn here. Not normal empathy. Empathy really isnt that hard, its happened to me for a while without realizing. Basically, always be aware of what your thinking. Throughout the day, know what your feeling. Eventually, when you go by other people youll start feeling things, and youll know its not yours. Just always be aware of what your feeling, and when you feel somebody elses emotion, it will stick out. This is actually something somebody taught me for telepathy, but thier mostly the same, and I&#039;ve been picking up peoples emotions for a while now.[/quote]
+
+[quote][i]posted by joke-lain:[/i]
+That is true. He is trying to learn psionic empathy. I forgot the difference for a second there.
+
+Just do what Trick says. Keep your mind cleared and try not be overly emotional and remember your mood. If you find something out of place and you do not know why (Up to a point where you think you don&#039;t know emotions and you&#039;re ready pull your hair out because you think you&#039;ve gone hair wire) it is probably somebody else&#039;s emotions. My advice after this happens, find out who is feeling what you are feeling. The person shouldn&#039;t be that hard to find. Their actions and expressions should stand out from other (at least that&#039;s how it was for me).[/quote]
+
+Thanks a lot!
+I&#039;ve been working on reading people, and I think I&#039;m getting results, but I&#039;m pretty skeptical. It took me a long time just to acknowledge that psiballs were real.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 11 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">joke-lain</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=517&amp;ref=1210639719" width="103" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12519" style="width: 100%; overflow: auto; min-height: 125px;">Me, too. Sometimes I just thought it was in your head, but then again, someone could argue the world was all in your head, too.</div>
+		<textarea style="display: none;" id="desctxt_12519">Me, too. Sometimes I just thought it was in your head, but then again, someone could argue the world was all in your head, too.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 11 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=638" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 26 queries. 0.327 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

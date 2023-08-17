@@ -1,0 +1,473 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; New and needs help</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; New and needs help</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">New and needs help</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Atrum</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=755&amp;ref=1221862716" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11135" style="width: 100%; overflow: auto; min-height: 125px;">I&#039;ve always thought I had some kind of power. (Because I&#039;ve had wierd drems and I though I saw a ghost 3 times in a row) But I am trying out TK. and for the past week...nothing. I cant even do the psi wheel. I meditate about once a day too. Any tips?</div>
+		<textarea style="display: none;" id="desctxt_11135">I&#039;ve always thought I had some kind of power. (Because I&#039;ve had wierd drems and I though I saw a ghost 3 times in a row) But I am trying out TK. and for the past week...nothing. I cant even do the psi wheel. I meditate about once a day too. Any tips?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">nimabine</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11137" style="width: 100%; overflow: auto; min-height: 125px;">It took me a year of on-and-off practice to get the wheel to move (although this is not very common). Just keep at it :)</div>
+		<textarea style="display: none;" id="desctxt_11137">It took me a year of on-and-off practice to get the wheel to move (although this is not very common). Just keep at it :)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11138" style="width: 100%; overflow: auto; min-height: 125px;">I would recommend energy manipulation before you try any tk... And don&#039;t worry about practice, rather, try to make everything you do a small practice in itself. Incorperate it into your everyday life, and you should be fine. ^_^<br />
+<br />
+Good luck, and welcome to ALW.</div>
+		<textarea style="display: none;" id="desctxt_11138">I would recommend energy manipulation before you try any tk... And don&#039;t worry about practice, rather, try to make everything you do a small practice in itself. Incorperate it into your everyday life, and you should be fine. ^_^
+
+Good luck, and welcome to ALW.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Corpse</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=553&amp;ref=1239824741" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11139" style="width: 100%; overflow: auto; min-height: 125px;">Try reading more articles on psipog.</div>
+		<textarea style="display: none;" id="desctxt_11139">Try reading more articles on psipog.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">DigGil</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11140" style="width: 100%; overflow: auto; min-height: 125px;">There was at Psionics Online a very good log about &quot;Methodlessness &amp; Griping&quot; but it&#039;s gonne. It&#039;s a technique where you use your gut feeling or &quot;instinct&quot; to make your own technique. Anyway try to alternate techniques, for example I found this video with a interesting one:  <a href="http://www.youtube.com/watch?v=5gMw7zsRet4" target="_blank">http://www.youtube.com/watch?v=5gMw7zsRet4</a></div>
+		<textarea style="display: none;" id="desctxt_11140">There was at Psionics Online a very good log about &quot;Methodlessness &amp; Griping&quot; but it&#039;s gonne. It&#039;s a technique where you use your gut feeling or &quot;instinct&quot; to make your own technique. Anyway try to alternate techniques, for example I found this video with a interesting one: http://www.youtube.com/watch?v=5gMw7zsRet4</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">redefine</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=428&amp;ref=1219933762" width="0" height="0" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11142" style="width: 100%; overflow: auto; min-height: 125px;">yeah, we&#039;ve still got all the articles there, but the blogs got wiped when metal upgraded the site.<br />
+<br />
+i find energy manip helps alot. (i&#039;d still consider myself a beginner, but i did see a huge improvement with em). <br />
+<br />
+my advice, try as many things as possible. i was convinced i had the right way and was just not trying hard enough untill i tried other techniques (to the dissappointment of my ego :P)</div>
+		<textarea style="display: none;" id="desctxt_11142">yeah, we&#039;ve still got all the articles there, but the blogs got wiped when metal upgraded the site.
+
+i find energy manip helps alot. (i&#039;d still consider myself a beginner, but i did see a huge improvement with em). 
+
+my advice, try as many things as possible. i was convinced i had the right way and was just not trying hard enough untill i tried other techniques (to the dissappointment of my ego :P)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11143" style="width: 100%; overflow: auto; min-height: 125px;">one thing I personally like doing is manipulating the shadow of the psi wheel with my shadow.<br />
+<br />
+It usually moves when I do that.</div>
+		<textarea style="display: none;" id="desctxt_11143">one thing I personally like doing is manipulating the shadow of the psi wheel with my shadow.
+
+It usually moves when I do that.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Atrum</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=755&amp;ref=1221862716" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11144" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by DigGil:</em><br />
+There was at Psionics Online a very good log about &quot;Methodlessness &amp; Griping&quot; but it&#039;s gonne. It&#039;s a technique where you use your gut feeling or &quot;instinct&quot; to make your own technique. Anyway try to alternate techniques, for example I found this video with a interesting one:  <a href="http://www.youtube.com/watch?v=5gMw7zsRet4" target="_blank">http://www.youtube.com/watch?v=5gMw7zsRet4</a></div>I will try that out.<br />
+<br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Akio:</em><br />
+one thing I personally like doing is manipulating the shadow of the psi wheel with my shadow.<br />
+<br />
+It usually moves when I do that.</div>Ahh. Cant do that.<br />
+<br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Corpse:</em><br />
+Try reading more articles on psipog.</div>I have tried. Thats where I tried to get some practice.<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Akio:</em><br />
+I would recommend energy manipulation before you try any tk... And don&#039;t worry about practice, rather, try to make everything you do a small practice in itself. Incorperate it into your everyday life, and you should be fine. ^_^<br />
+<br />
+Good luck, and welcome to ALW.</div>What do you mean try to incorperate it? Like try to open the fridge or something? And what is energy manipulation? Is there an article somewhere? And thanks. The community is cool here. Also, is in natural to have vierd visions while meditating? I&#039;m also new at that and I thought your just supposed to see nothing. I&#039;ll post my vision later.</div>
+		<textarea style="display: none;" id="desctxt_11144">[quote][i]posted by DigGil:[/i]
+There was at Psionics Online a very good log about &quot;Methodlessness &amp; Griping&quot; but it&#039;s gonne. It&#039;s a technique where you use your gut feeling or &quot;instinct&quot; to make your own technique. Anyway try to alternate techniques, for example I found this video with a interesting one: http://www.youtube.com/watch?v=5gMw7zsRet4[/quote]
+
+I will try that out.
+
+[quote][i]posted by Akio:[/i]
+one thing I personally like doing is manipulating the shadow of the psi wheel with my shadow.
+
+It usually moves when I do that.[/quote]
+
+Ahh. Cant do that.
+
+[quote][i]posted by Corpse:[/i]
+Try reading more articles on psipog.[/quote]
+
+I have tried. Thats where I tried to get some practice.[quote][i]posted by Akio:[/i]
+I would recommend energy manipulation before you try any tk... And don&#039;t worry about practice, rather, try to make everything you do a small practice in itself. Incorperate it into your everyday life, and you should be fine. ^_^
+
+Good luck, and welcome to ALW.[/quote]
+
+What do you mean try to incorperate it? Like try to open the fridge or something? And what is energy manipulation? Is there an article somewhere? And thanks. The community is cool here. Also, is in natural to have vierd visions while meditating? I&#039;m also new at that and I thought your just supposed to see nothing. I&#039;ll post my vision later.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Linked</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=19&amp;ref=1203762048" width="89" height="38" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11151" style="width: 100%; overflow: auto; min-height: 125px;"> <a href="http://www.psipog.net/cat-psiballs.html" target="_blank">http://www.psipog.net/cat-psiballs.html</a><br />
+ <a href="http://www.psipog.net/cat-shields.html" target="_blank">http://www.psipog.net/cat-shields.html</a><br />
+ <a href="http://www.psipog.net/cat-constructs.html" target="_blank">http://www.psipog.net/cat-constructs.html</a><br />
+ <a href="http://www.psipog.net/cat-manipulation.html" target="_blank">http://www.psipog.net/cat-manipulation.html</a><br />
+<br />
+read the articles in all these sections, you don&#039;t have to read them all but they all contain some info or little nugget of wisdom that might help you.</div>
+		<textarea style="display: none;" id="desctxt_11151">http://www.psipog.net/cat-psiballs.html
+http://www.psipog.net/cat-shields.html
+http://www.psipog.net/cat-constructs.html
+http://www.psipog.net/cat-manipulation.html
+
+read the articles in all these sections, you don&#039;t have to read them all but they all contain some info or little nugget of wisdom that might help you.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Trick</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=744&amp;ref=1221873234" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11153" style="width: 100%; overflow: auto; min-height: 125px;">I recommend you make a schedule. You wont get anywhere without one. For example, every other day at 10:00 practice for 30 minutes. <br />
+<br />
+&quot;I&#039;ve been trying for over a week&quot;<br />
+<br />
+Sorry bud. Dont expect to get far with only a week of practice. It takes everybody different amounts of time. But one thing is true for everybody: those who stick with it get far. </div>
+		<textarea style="display: none;" id="desctxt_11153">I recommend you make a schedule. You wont get anywhere without one. For example, every other day at 10:00 practice for 30 minutes. 
+
+&quot;I&#039;ve been trying for over a week&quot;
+
+Sorry bud. Dont expect to get far with only a week of practice. It takes everybody different amounts of time. But one thing is true for everybody: those who stick with it get far.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Atrum</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=755&amp;ref=1221862716" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11165" style="width: 100%; overflow: auto; min-height: 125px;">Ok. I usually practice at different times. Everybody has these different tactics, and it gets confusing. O_O</div>
+		<textarea style="display: none;" id="desctxt_11165">Ok. I usually practice at different times. Everybody has these different tactics, and it gets confusing. O_O</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Linked</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=19&amp;ref=1203762048" width="89" height="38" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11193" style="width: 100%; overflow: auto; min-height: 125px;">just do what feels right for you.<br />
+if something doesn&#039;t work, try something else till you find something that does.</div>
+		<textarea style="display: none;" id="desctxt_11193">just do what feels right for you.
+if something doesn&#039;t work, try something else till you find something that does.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11195" style="width: 100%; overflow: auto; min-height: 125px;">Find what works for you, and then stick with only that technique unless you find one that works better for you. <br />
+<br />
+As for energy manipulation. Learn how to create psi-balls, create shields, move energy throughout your body. <br />
+<br />
+Learning these things generally increases your ability with psi overall<br />
+</div>
+		<textarea style="display: none;" id="desctxt_11195">Find what works for you, and then stick with only that technique unless you find one that works better for you. 
+
+As for energy manipulation. Learn how to create psi-balls, create shields, move energy throughout your body. 
+
+Learning these things generally increases your ability with psi overall</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Atrum</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=755&amp;ref=1221862716" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11199" style="width: 100%; overflow: auto; min-height: 125px;">Ok. Just learn psi balls first?</div>
+		<textarea style="display: none;" id="desctxt_11199">Ok. Just learn psi balls first?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11204" style="width: 100%; overflow: auto; min-height: 125px;">It&#039;s all up to you, but time and time again I see people fail because they never bothered to learn the basics.<br />
+<br />
+Actually, if I were you, I would start with meditation. During the meditation, breath deeply, In and out. As you breath, feel the energy coming up into your body from the earth. You will probably notice as you breath a sense of heat running up your legs, into your abdomen, and out to the rest of your body. <br />
+<br />
+Once you feel yourself full of that energy, breath in and out slowly before you open your eyes. You may be able to see your aura upon opening it, maybe not (I did but you may experience something different). go ahead and get up, stretch a little, get used to the feel of the energy in your body. After you are satiated, let the energy you have drawn in flow out with your breath, and feel the energy in the air. You will feel at peace, and at the end of it all, you will have a heightened sense of everything around you. <br />
+<br />
+Do this from time to time, when you are frustrated, or need to relax is probably the best time, because it will have a calming affect on your body. Some have reported that this exercise can heal, although it&#039;s up to you to decide that much.<br />
+<br />
+Once you&#039;ve done this at least once, then you can start playing around with energy. You can manipulate it, form it into constructs, and then just let it go. bring energy into your body from the air, and vice-versa. Get a feel for moving it around, in, and out of your body... This can be done whenever you want, it can be done right after a meditation exercise, or later on. The Idea here is just to play around with the energy and get a feel for it.<br />
+<br />
+As you begin to develop your skills, you may find that you can &quot;sense&quot; things about other people. This can be good, and this can be bad, it&#039;s really more of what your sensing and whether you need to be able to sense it.<br />
+<br />
+If you are getting negative affect from this new sense, it is probably good for you to learn how to shield. I can&#039;t really help you with shielding because it would be too complicated to teach you specifics. In this case, I would differ to  <a href="http://www.psipog.net/cat-shields.html" target="_blank">http://www.psipog.net/cat-shields.html</a> and tell you to read all the articles. At this point you should be able to understand them and figure out what works for you.<br />
+<br />
+After a while of following this loose guide, you should find that TK will come a little more naturally to you. Once you&#039;ve gone that far, then it&#039;s time for a strict practice schedule for Tk. Keep in mind that you should continue to follow the other guidelines I&#039;ve given you even during the strict TK schedule, as this will be helpful to you in practice. (believe me on this one, it will help you maintain yourself as you practice)<br />
+<br />
+And as a Final note, good luck.</div>
+		<textarea style="display: none;" id="desctxt_11204">It&#039;s all up to you, but time and time again I see people fail because they never bothered to learn the basics.
+
+Actually, if I were you, I would start with meditation. During the meditation, breath deeply, In and out. As you breath, feel the energy coming up into your body from the earth. You will probably notice as you breath a sense of heat running up your legs, into your abdomen, and out to the rest of your body. 
+
+Once you feel yourself full of that energy, breath in and out slowly before you open your eyes. You may be able to see your aura upon opening it, maybe not (I did but you may experience something different). go ahead and get up, stretch a little, get used to the feel of the energy in your body. After you are satiated, let the energy you have drawn in flow out with your breath, and feel the energy in the air. You will feel at peace, and at the end of it all, you will have a heightened sense of everything around you. 
+
+Do this from time to time, when you are frustrated, or need to relax is probably the best time, because it will have a calming affect on your body. Some have reported that this exercise can heal, although it&#039;s up to you to decide that much.
+
+Once you&#039;ve done this at least once, then you can start playing around with energy. You can manipulate it, form it into constructs, and then just let it go. bring energy into your body from the air, and vice-versa. Get a feel for moving it around, in, and out of your body... This can be done whenever you want, it can be done right after a meditation exercise, or later on. The Idea here is just to play around with the energy and get a feel for it.
+
+As you begin to develop your skills, you may find that you can &quot;sense&quot; things about other people. This can be good, and this can be bad, it&#039;s really more of what your sensing and whether you need to be able to sense it.
+
+If you are getting negative affect from this new sense, it is probably good for you to learn how to shield. I can&#039;t really help you with shielding because it would be too complicated to teach you specifics. In this case, I would differ to http://www.psipog.net/cat-shields.html and tell you to read all the articles. At this point you should be able to understand them and figure out what works for you.
+
+After a while of following this loose guide, you should find that TK will come a little more naturally to you. Once you&#039;ve gone that far, then it&#039;s time for a strict practice schedule for Tk. Keep in mind that you should continue to follow the other guidelines I&#039;ve given you even during the strict TK schedule, as this will be helpful to you in practice. (believe me on this one, it will help you maintain yourself as you practice)
+
+And as a Final note, good luck.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Atrum</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=755&amp;ref=1221862716" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11209" style="width: 100%; overflow: auto; min-height: 125px;">Ok. I&#039;ve been meditating for abot 2 weeks. (Thats where I got the vision) I&#039;ve always heared that it was ok to just try pushing a pen first. But I&#039;ll do that. Thanks for the directions. :3</div>
+		<textarea style="display: none;" id="desctxt_11209">Ok. I&#039;ve been meditating for abot 2 weeks. (Thats where I got the vision) I&#039;ve always heared that it was ok to just try pushing a pen first. But I&#039;ll do that. Thanks for the directions. :3</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Atrum</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=755&amp;ref=1221862716" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11221" style="width: 100%; overflow: auto; min-height: 125px;">kk, I THINK I made a psiball. It felt cold, but my hands felt warm...</div>
+		<textarea style="display: none;" id="desctxt_11221">kk, I THINK I made a psiball. It felt cold, but my hands felt warm...</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11225" style="width: 100%; overflow: auto; min-height: 125px;">That counts as a psi-ball ^_^. You seem very anxious to learn. You will probably make great progress.</div>
+		<textarea style="display: none;" id="desctxt_11225">That counts as a psi-ball ^_^. You seem very anxious to learn. You will probably make great progress.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Atrum</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=755&amp;ref=1221862716" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11239" style="width: 100%; overflow: auto; min-height: 125px;">*gets all exited* <br />
+<br />
+Now I need a thermometer...</div>
+		<textarea style="display: none;" id="desctxt_11239">*gets all exited* 
+
+Now I need a thermometer...</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=547" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 35 queries. 0.282 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

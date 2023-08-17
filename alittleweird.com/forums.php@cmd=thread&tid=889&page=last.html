@@ -1,0 +1,527 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Karma (Cognitive reality)</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Karma (Cognitive reality)</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Karma (Cognitive reality)</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">savemydonkey</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=1026&amp;ref=1256280257" width="125" height="118" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_16064" style="width: 100%; overflow: auto; min-height: 125px;">Hello friends, I&#039;m sure there&#039;s already a post about Karma, I just didn&#039;t want to look :P<br />
+<br />
+I&#039;ve recently come upon the theory, for those who believe in Karma, promoting the &quot;thoughts create one&#039;s reality&quot; hypothesis.  <br />
+<br />
+First, karma is looked at in different ways by the way.  Basically it is the concept that the consequences of one&#039;s actions will return to them somehow.  Some say that karma effects one&#039;s position in their next life, some say that there&#039;s immediate karma that will return the consequences of one&#039;s actions to you their current life, and some go on to say the same, except the consequences will have increased by a tenfold (relaying it somewhat to a &quot;snowball&quot; effect).  Those are just a few of the various outlooks on karma.  <br />
+<br />
+A way in which it could philosophically support the idea of &quot;thoughts creating one&#039;s reality&quot; is as follows:<br />
+Whenever someone hits another person with their car, they receive different karma depending on if they did it with or without intent, right? If someone maliciously ran someone down, they&#039;ll receive pretty bad karma later on for it.  If someone accidentally hit someone, depending on the situation, they will receive a different kind of karma.  The only difference in the aforementioned situations is what the person&#039;s intent or <strong>thoughts</strong> were.  Their karma will affect or <strong>create</strong> a situation in <strong>their reality</strong> (or in some cases, their next reality) <strong>depending on what they thought</strong> when they hit that person.  <br />
+<br />
+What do you guys think?<br />
+<br />
+Notes:<br />
+- I&#039;m unclear if &quot;cognitive reality&quot; is the appropriate term for this, so if it isn&#039;t please let me know! Thanks!<br />
+- I found this off another website which I have been having the hardest time in the world finding again to source, so if you know where this theory came from, please do post! Thanks!</div>
+		<textarea style="display: none;" id="desctxt_16064">Hello friends, I&#039;m sure there&#039;s already a post about Karma, I just didn&#039;t want to look :P
+
+I&#039;ve recently come upon the theory, for those who believe in Karma, promoting the &quot;thoughts create one&#039;s reality&quot; hypothesis.  
+
+First, karma is looked at in different ways by the way.  Basically it is the concept that the consequences of one&#039;s actions will return to them somehow.  Some say that karma effects one&#039;s position in their next life, some say that there&#039;s immediate karma that will return the consequences of one&#039;s actions to you their current life, and some go on to say the same, except the consequences will have increased by a tenfold (relaying it somewhat to a &quot;snowball&quot; effect).  Those are just a few of the various outlooks on karma.  
+
+A way in which it could philosophically support the idea of &quot;thoughts creating one&#039;s reality&quot; is as follows:
+Whenever someone hits another person with their car, they receive different karma depending on if they did it with or without intent, right? If someone maliciously ran someone down, they&#039;ll receive pretty bad karma later on for it.  If someone accidentally hit someone, depending on the situation, they will receive a different kind of karma.  The only difference in the aforementioned situations is what the person&#039;s intent or [b]thoughts[/b] were.  Their karma will affect or [b]create[/b] a situation in [b]their reality[/b] (or in some cases, their next reality) [b]depending on what they thought[/b] when they hit that person.  
+
+What do you guys think?
+
+Notes:
+- I&#039;m unclear if &quot;cognitive reality&quot; is the appropriate term for this, so if it isn&#039;t please let me know! Thanks!
+- I found this off another website which I have been having the hardest time in the world finding again to source, so if you know where this theory came from, please do post! Thanks!</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Dash</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=69&amp;ref=1224210982" width="113" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_16067" style="width: 100%; overflow: auto; min-height: 125px;">I think Karma is more of something you -think- you deserve.<br />
+<br />
+In some way, your subconscious registers what happened and makes your reality different depending on how bad you feel about it, and your beliefs.   Like the Law of Attraction.<br />
+<br />
+<br />
+Basically, read all the bold words in order.</div>
+		<textarea style="display: none;" id="desctxt_16067">I think Karma is more of something you -think- you deserve.
+
+In some way, your subconscious registers what happened and makes your reality different depending on how bad you feel about it, and your beliefs.   Like the Law of Attraction.
+
+
+Basically, read all the bold words in order.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">SL</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_16068" style="width: 100%; overflow: auto; min-height: 125px;">I puzzled over this topic once when I was about 10. I was riding my bike and was trying to estimate what karmic debt I might have tallied up by, for example,  unintentionally running over bugs with my bike. The result: the bike came to an instant halt, and I flew over the handlebars. I made a promise to myself, as I was tending to my bleeding elbows and kneecaps, to never worry about this topic again. I never got as far as to consider intentionality, though. I was a nice kid.<br />
+<br />
+My opinions: I don&#039;t think anyone is ever punished by an external force. Who would give a damn? I mean, really? That would be the most extreme form of micro-management. Karma is religous propaganda for population control or wishful thinking (hope that bastard gets it in the end). </div>
+		<textarea style="display: none;" id="desctxt_16068">I puzzled over this topic once when I was about 10. I was riding my bike and was trying to estimate what karmic debt I might have tallied up by, for example,  unintentionally running over bugs with my bike. The result: the bike came to an instant halt, and I flew over the handlebars. I made a promise to myself, as I was tending to my bleeding elbows and kneecaps, to never worry about this topic again. I never got as far as to consider intentionality, though. I was a nice kid.
+
+My opinions: I don&#039;t think anyone is ever punished by an external force. Who would give a damn? I mean, really? That would be the most extreme form of micro-management. Karma is religous propaganda for population control or wishful thinking (hope that bastard gets it in the end).</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Kube</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=952&amp;ref=1249239276" width="102" height="77" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_16069" style="width: 100%; overflow: auto; min-height: 125px;">Yeah I agree with Dash hand SL. If you believe you deserve to be punished you will be. If we can bend reality by unconscious beliefs, it would explain karma... Not mentioning it&#039;s much more believable than the &quot;My god(s) will punish you.&quot; in my opinion... Also, has anyone here ever read Terry Goodkind&#039;s Sword of Truth series? The Wizard&#039;s First Rule in his books is &quot;People are stupid. They will believe a lie because they want to believe it&#039;s true, or because they are afraid it might be true.&quot; In a way, this can apply here. They fear they will be punished, so they believe it with the entirety of their souls, eventually themselves causing the punishment to occur.</div>
+		<textarea style="display: none;" id="desctxt_16069">Yeah I agree with Dash hand SL. If you believe you deserve to be punished you will be. If we can bend reality by unconscious beliefs, it would explain karma... Not mentioning it&#039;s much more believable than the &quot;My god(s) will punish you.&quot; in my opinion... Also, has anyone here ever read Terry Goodkind&#039;s Sword of Truth series? The Wizard&#039;s First Rule in his books is &quot;People are stupid. They will believe a lie because they want to believe it&#039;s true, or because they are afraid it might be true.&quot; In a way, this can apply here. They fear they will be punished, so they believe it with the entirety of their souls, eventually themselves causing the punishment to occur.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">savemydonkey</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=1026&amp;ref=1256280257" width="125" height="118" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_16085" style="width: 100%; overflow: auto; min-height: 125px;">Although I really appreciate each of your responses, I really wasn&#039;t attempting to go into whether karma exists or not.  That gears just a little bit too close to a religious debate, which seems to be supported by SL&#039;s statement: &quot;Karma is religious propaganda for population control or wishful thinking (hope that bastards gets it in the end)&quot;.  In actuality, although karma is a concept held in many religions, it is not always religious - at least not anymore than other metaphysical concepts, such as the existence of psychic abilities, mediumship, etc.  <br />
+<br />
+&quot;I&#039;ve recently come upon the theory, <strong>for those who believe in Karma</strong>...&quot;<br />
+My main goal in posting this was to see what those who already believe in karma had to say about that perspective, because the argument seems like it would be very persuasive to someone who fullheartedly believed in karma.  I am honestly very neutral about the conept of karma, but I am always very open to other opinions and ideologies :)<br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Dash:</em><br />
+I think Karma is more of something you -think- you deserve.<br />
+<br />
+In some way, your subconscious registers what happened and makes your reality different depending on how bad you feel about it, and your beliefs.   Like the Law of Attraction.<br />
+<br />
+<br />
+Basically, read all the bold words in order.</div>I thought this was very insightful, and I could definitely see how the concept of karma could have been formed if such ideologies were true.  <br />
+<br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Kube:</em><br />
+Yeah I agree with Dash hand SL. If you believe you deserve to be punished you will be. If we can bend reality by unconscious beliefs, it would explain karma... Not mentioning it&#039;s much more believable than the &quot;My god(s) will punish you.&quot; in my opinion... Also, has anyone here ever read Terry Goodkind&#039;s Sword of Truth series? The Wizard&#039;s First Rule in his books is &quot;People are stupid. They will believe a lie because they want to believe it&#039;s true, or because they are afraid it might be true.&quot; In a way, this can apply here. They fear they will be punished, so they believe it with the entirety of their souls, eventually themselves causing the punishment to occur.</div>Although I found your post interesting, I would like to poke at something you said.  You stated that:<br />
+&quot;If we can bend reality by unconscious beliefs, it would explain karma... Not mentioning it&#039;s much more believable than the &#039;My god(s) will punish you.&#039; in my opinion...&quot;<br />
+Why is it so much less believable than karma, in your opinion?  <br />
+(I&#039;m not criticizing your statement, I just want to know more)</div>
+		<textarea style="display: none;" id="desctxt_16085">Although I really appreciate each of your responses, I really wasn&#039;t attempting to go into whether karma exists or not.  That gears just a little bit too close to a religious debate, which seems to be supported by SL&#039;s statement: &quot;Karma is religious propaganda for population control or wishful thinking (hope that bastards gets it in the end)&quot;.  In actuality, although karma is a concept held in many religions, it is not always religious - at least not anymore than other metaphysical concepts, such as the existence of psychic abilities, mediumship, etc.  
+
+&quot;I&#039;ve recently come upon the theory, [b]for those who believe in Karma[/b]...&quot;
+My main goal in posting this was to see what those who already believe in karma had to say about that perspective, because the argument seems like it would be very persuasive to someone who fullheartedly believed in karma.  I am honestly very neutral about the conept of karma, but I am always very open to other opinions and ideologies :)
+[quote][i]posted by Dash:[/i]
+I think Karma is more of something you -think- you deserve.
+
+In some way, your subconscious registers what happened and makes your reality different depending on how bad you feel about it, and your beliefs.   Like the Law of Attraction.
+
+
+Basically, read all the bold words in order.[/quote]
+
+I thought this was very insightful, and I could definitely see how the concept of karma could have been formed if such ideologies were true.  
+
+[quote][i]posted by Kube:[/i]
+Yeah I agree with Dash hand SL. If you believe you deserve to be punished you will be. If we can bend reality by unconscious beliefs, it would explain karma... Not mentioning it&#039;s much more believable than the &quot;My god(s) will punish you.&quot; in my opinion... Also, has anyone here ever read Terry Goodkind&#039;s Sword of Truth series? The Wizard&#039;s First Rule in his books is &quot;People are stupid. They will believe a lie because they want to believe it&#039;s true, or because they are afraid it might be true.&quot; In a way, this can apply here. They fear they will be punished, so they believe it with the entirety of their souls, eventually themselves causing the punishment to occur.[/quote]
+
+Although I found your post interesting, I would like to poke at something you said.  You stated that:
+&quot;If we can bend reality by unconscious beliefs, it would explain karma... Not mentioning it&#039;s much more believable than the &#039;My god(s) will punish you.&#039; in my opinion...&quot;
+Why is it so much less believable than karma, in your opinion?  
+(I&#039;m not criticizing your statement, I just want to know more)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Kube</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=952&amp;ref=1249239276" width="102" height="77" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_16090" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by savemydonkey:</em><br />
+Although I found your post interesting, I would like to poke at something you said.  You stated that:<br />
+&quot;If we can bend reality by unconscious beliefs, it would explain karma... Not mentioning it&#039;s much more believable than the &#039;My god(s) will punish you.&#039; in my opinion...&quot;<br />
+Why is it so much less believable than karma, in your opinion?  <br />
+(I&#039;m not criticizing your statement, I just want to know more)</div>Yeah when I posted it I thought it might not be phrased right hehe... What I meant is this: The idea of living beings inhabiting our world actually bending reality (Which is what we do here, let&#039;s face it)... Doesn&#039;t that sound a little more credible than saying forces from outside the universe are bending it and wasting their time punishing us little insects, specks of dust in the infinitely large cosmos? I didn&#039;t mean karma was more credible than the &quot;My god will punish you.&quot;, they&#039;re pretty much the same concept. I meant us and our sense of guilt being the actual cause of karmic reactions or whatever you want to call them to make more sense... An immortal being wouldn&#039;t care about us humans; even those who research medical ways to achieve immortality say this: an immortal being would end up with no feelings, needs or drive, as they&#039;d keep delaying their activities, having all the time in the world. They would feel no need to act, as all that keeps us going and reaching for new things is the fact that we&#039;ll die one day and must do it before that time. In other words, an immortal being or anything of the sort with no ultimate deadline to act and punish mortals would just not pay attention to them and let them be. (All according to various philosophers and all, of course. For some reason I haven&#039;t gotten around to talking to an immortal yet... ;P) Any better? :P<br />
+<br />
+But like you said, that&#039;s pretty much religious debate...</div>
+		<textarea style="display: none;" id="desctxt_16090">[quote][i]posted by savemydonkey:[/i]
+Although I found your post interesting, I would like to poke at something you said.  You stated that:
+&quot;If we can bend reality by unconscious beliefs, it would explain karma... Not mentioning it&#039;s much more believable than the &#039;My god(s) will punish you.&#039; in my opinion...&quot;
+Why is it so much less believable than karma, in your opinion?  
+(I&#039;m not criticizing your statement, I just want to know more)[/quote]
+
+Yeah when I posted it I thought it might not be phrased right hehe... What I meant is this: The idea of living beings inhabiting our world actually bending reality (Which is what we do here, let&#039;s face it)... Doesn&#039;t that sound a little more credible than saying forces from outside the universe are bending it and wasting their time punishing us little insects, specks of dust in the infinitely large cosmos? I didn&#039;t mean karma was more credible than the &quot;My god will punish you.&quot;, they&#039;re pretty much the same concept. I meant us and our sense of guilt being the actual cause of karmic reactions or whatever you want to call them to make more sense... An immortal being wouldn&#039;t care about us humans; even those who research medical ways to achieve immortality say this: an immortal being would end up with no feelings, needs or drive, as they&#039;d keep delaying their activities, having all the time in the world. They would feel no need to act, as all that keeps us going and reaching for new things is the fact that we&#039;ll die one day and must do it before that time. In other words, an immortal being or anything of the sort with no ultimate deadline to act and punish mortals would just not pay attention to them and let them be. (All according to various philosophers and all, of course. For some reason I haven&#039;t gotten around to talking to an immortal yet... ;P) Any better? :P
+
+But like you said, that&#039;s pretty much religious debate...</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Kube, 3 years ago<br />Posted 3 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">joke-lain</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=517&amp;ref=1210639719" width="103" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_16100" style="width: 100%; overflow: auto; min-height: 125px;">....MUST RESIST URGE......!<br />
+<br />
+Ok, I give up, I&#039;m going to comment on it.<br />
+<br />
+@Kube<br />
+Although I do believe in a higher power, I agree with you. Us actually bending the reality of our world is a lot more believable than &quot;My god will punish you.&quot; I hate the fact that people threaten other people with &quot;their&quot; god, expecting that if your loyal enough that your god will love you better than them. (I could be over analyzing this.)<br />
+<br />
+So karma is a lot more creditable and higher powers punishing us. Although I don&#039;t really believe in karma, I do believe people get what they deserve.<br />
+<br />
+(Actually, I believe people put too much thought or faith into karma.)<br />
+<br />
+Now, about that immortal being not caring. I disagree, I do believe he cares and loves us.<br />
+<br />
+But, we should really not get into a debate over this....<br />
+<br />
+joke<br />
+</div>
+		<textarea style="display: none;" id="desctxt_16100">....MUST RESIST URGE......!
+
+Ok, I give up, I&#039;m going to comment on it.
+
+@Kube
+Although I do believe in a higher power, I agree with you. Us actually bending the reality of our world is a lot more believable than &quot;My god will punish you.&quot; I hate the fact that people threaten other people with &quot;their&quot; god, expecting that if your loyal enough that your god will love you better than them. (I could be over analyzing this.)
+
+So karma is a lot more creditable and higher powers punishing us. Although I don&#039;t really believe in karma, I do believe people get what they deserve.
+
+(Actually, I believe people put too much thought or faith into karma.)
+
+Now, about that immortal being not caring. I disagree, I do believe he cares and loves us.
+
+But, we should really not get into a debate over this....
+
+joke</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">arzhul</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_16101" style="width: 100%; overflow: auto; min-height: 125px;">Actually Kube, they thought with human proccesses and thoughts, therefore their conclusions, I think, only applies to immortal humans.<br />
+Because we cannot understand how such a being would think, I see no way to debate this:P<br />
+Oh personal experience cannot be used to debate either.<br />
+So lets get back on karma ^^</div>
+		<textarea style="display: none;" id="desctxt_16101">Actually Kube, they thought with human proccesses and thoughts, therefore their conclusions, I think, only applies to immortal humans.
+Because we cannot understand how such a being would think, I see no way to debate this:P
+Oh personal experience cannot be used to debate either.
+So lets get back on karma ^^</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Kube</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=952&amp;ref=1249239276" width="102" height="77" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_16111" style="width: 100%; overflow: auto; min-height: 125px;">Yeah you&#039;re right, we could only apply this to human immortals, since we&#039;ve never had a detailed view on an immortal being&#039;s way of thinking. I was just quoting the generally accepted idea of immortality, both in modern science and philosophy, even dating back to ancient Greece. (i.e. Socrates said that before he was executed.)<br />
+<br />
+So yes, back onto karma :P</div>
+		<textarea style="display: none;" id="desctxt_16111">Yeah you&#039;re right, we could only apply this to human immortals, since we&#039;ve never had a detailed view on an immortal being&#039;s way of thinking. I was just quoting the generally accepted idea of immortality, both in modern science and philosophy, even dating back to ancient Greece. (i.e. Socrates said that before he was executed.)
+
+So yes, back onto karma :P</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Kube, 3 years ago<br />Posted 3 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">SL</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_16114" style="width: 100%; overflow: auto; min-height: 125px;">@savemydonkey: I just re-read my post and it sounds kinda bitchy. Sorry. <br />
+</div>
+		<textarea style="display: none;" id="desctxt_16114">@savemydonkey: I just re-read my post and it sounds kinda bitchy. Sorry.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">joke-lain</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=517&amp;ref=1210639719" width="103" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_16121" style="width: 100%; overflow: auto; min-height: 125px;">I&#039;ve never actually gotten the concept of Karma. I have understood it as if you do something bad, something bad will be done to you. And if you do something good, something good will be done to you.<br />
+<br />
+But, I had someone mention it to me as being if you had been having good luck, the tables would soon turn and you would get your equal share of bad luck.<br />
+<br />
+Joke<br />
+</div>
+		<textarea style="display: none;" id="desctxt_16121">I&#039;ve never actually gotten the concept of Karma. I have understood it as if you do something bad, something bad will be done to you. And if you do something good, something good will be done to you.
+
+But, I had someone mention it to me as being if you had been having good luck, the tables would soon turn and you would get your equal share of bad luck.
+
+Joke</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Sussch</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=622&amp;ref=1252769070" width="100" height="92" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_16122" style="width: 100%; overflow: auto; min-height: 125px;">=P Couldn&#039;t resist the urge..<br />
+<br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Dash:</em><br />
+I think Karma is more of something you -think- you deserve.<br />
+<br />
+In some way, your subconscious registers what happened and makes your reality different depending on how bad you feel about it, and your beliefs.   Like the Law of Attraction.</div><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by joke-lain:</em><br />
+But, I had someone mention it to me as being if you had been having good luck, the tables would soon turn and you would get your equal share of bad luck.</div>I used to think the same, but then I noticed that the one who is turning the tables, is me.<br />
+I was constantly having trouble with self-esteem and when something good happened, I became arrogant. In order to regain control over myself, I kept telling myself that I wasn&#039;t worth it.<br />
+Then I usually got bad luck next time and it all balanced out again.<br />
+<br />
+However, after finding out that I was the cause, one day I discovered that anything I had labeled as &quot;bad luck&quot;, was actually the opposite. That&#039;s because this &quot;bad luck&quot; occurred when I was trying to force myself to do something that actually wasn&#039;t for me and I couldn&#039;t even realize it before. Both &quot;good&quot; and &quot;bad&quot; luck like guide you in the journey of finding yourself.<br />
+<br />
+So, in theory you could live always having good luck if you think you are worth it.<br />
+<br />
+EDIT: There&#039;s probably a catch to this whole Karma thing - the subconsciousness captures other peoples&#039; thoughts and feelings about you. So, it&#039;s probably possible to &quot;punish&quot; someone, but I think that with a strong will and self-confidence, one could be able to resist it.</div>
+		<textarea style="display: none;" id="desctxt_16122">=P Couldn&#039;t resist the urge..
+
+[quote][i]posted by Dash:[/i]
+I think Karma is more of something you -think- you deserve.
+
+In some way, your subconscious registers what happened and makes your reality different depending on how bad you feel about it, and your beliefs.   Like the Law of Attraction.[/quote]
+
+[quote][i]posted by joke-lain:[/i]
+But, I had someone mention it to me as being if you had been having good luck, the tables would soon turn and you would get your equal share of bad luck.[/quote]
+
+I used to think the same, but then I noticed that the one who is turning the tables, is me.
+I was constantly having trouble with self-esteem and when something good happened, I became arrogant. In order to regain control over myself, I kept telling myself that I wasn&#039;t worth it.
+Then I usually got bad luck next time and it all balanced out again.
+
+However, after finding out that I was the cause, one day I discovered that anything I had labeled as &quot;bad luck&quot;, was actually the opposite. That&#039;s because this &quot;bad luck&quot; occurred when I was trying to force myself to do something that actually wasn&#039;t for me and I couldn&#039;t even realize it before. Both &quot;good&quot; and &quot;bad&quot; luck like guide you in the journey of finding yourself.
+
+So, in theory you could live always having good luck if you think you are worth it.
+
+EDIT: There&#039;s probably a catch to this whole Karma thing - the subconsciousness captures other peoples&#039; thoughts and feelings about you. So, it&#039;s probably possible to &quot;punish&quot; someone, but I think that with a strong will and self-confidence, one could be able to resist it.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Sussch, 3 years ago<br />Posted 3 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">savemydonkey</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=1026&amp;ref=1256280257" width="125" height="118" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_16251" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by arzhul:</em><br />
+Actually Kube, they thought with human proccesses and thoughts, therefore their conclusions, I think, only applies to immortal humans.<br />
+Because we cannot understand how such a being would think, I see no way to debate this:P<br />
+Oh personal experience cannot be used to debate either.<br />
+So lets get back on karma ^^</div><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Kube:</em><br />
+Yeah you&#039;re right, we could only apply this to human immortals, since we&#039;ve never had a detailed view on an immortal being&#039;s way of thinking. I was just quoting the generally accepted idea of immortality, both in modern science and philosophy, even dating back to ancient Greece. (i.e. Socrates said that before he was executed.)<br />
+<br />
+So yes, back onto karma :P</div>Thank you for your perspective guys, it&#039;s much appreciated.  Philosophy professors will love you, if they don&#039;t or haven&#039;t already.<br />
+<br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by SL:</em><br />
+@savemydonkey: I just re-read my post and it sounds kinda bitchy. Sorry.</div>No worries, I didn&#039;t interpret it as anything but your perspective - no harm done :)</div>
+		<textarea style="display: none;" id="desctxt_16251">[quote][i]posted by arzhul:[/i]
+Actually Kube, they thought with human proccesses and thoughts, therefore their conclusions, I think, only applies to immortal humans.
+Because we cannot understand how such a being would think, I see no way to debate this:P
+Oh personal experience cannot be used to debate either.
+So lets get back on karma ^^[/quote]
+
+[quote][i]posted by Kube:[/i]
+Yeah you&#039;re right, we could only apply this to human immortals, since we&#039;ve never had a detailed view on an immortal being&#039;s way of thinking. I was just quoting the generally accepted idea of immortality, both in modern science and philosophy, even dating back to ancient Greece. (i.e. Socrates said that before he was executed.)
+
+So yes, back onto karma :P[/quote]
+
+Thank you for your perspective guys, it&#039;s much appreciated.  Philosophy professors will love you, if they don&#039;t or haven&#039;t already.
+
+[quote][i]posted by SL:[/i]
+@savemydonkey: I just re-read my post and it sounds kinda bitchy. Sorry.[/quote]
+
+No worries, I didn&#039;t interpret it as anything but your perspective - no harm done :)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 2 years, 11 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Cyberjet189</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_16334" style="width: 100%; overflow: auto; min-height: 125px;">I personally think that karma is not so tied to individuals (someone does bad things and receives bad karma), but simply applies to a larger scale. As long as the overall karma (of the world/universe, whatever) is balanced, then it&#039;s all gravy. I think this also explains how some people do nothing but good and then get shafted all the time.</div>
+		<textarea style="display: none;" id="desctxt_16334">I personally think that karma is not so tied to individuals (someone does bad things and receives bad karma), but simply applies to a larger scale. As long as the overall karma (of the world/universe, whatever) is balanced, then it&#039;s all gravy. I think this also explains how some people do nothing but good and then get shafted all the time.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 2 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">joke-lain</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=517&amp;ref=1210639719" width="103" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_16344" style="width: 100%; overflow: auto; min-height: 125px;">I could agree with that, it would make sense. But, most people see Karma as an individual curse, and not a worldly concept. </div>
+		<textarea style="display: none;" id="desctxt_16344">I could agree with that, it would make sense. But, most people see Karma as an individual curse, and not a worldly concept.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 2 years, 10 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=889" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 31 queries. 0.319 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

@@ -1,0 +1,544 @@
+/*  
+Theme Name: A Little Weird
+Theme URI: http://www.alittleweird.com/
+Description: The theme designed and used specifically on A Little Weird.com
+Version: 2.0
+Author: Sean Connelly
+Author URI: http://www.alittleweird.com/
+
+	A Little Weird v2.0
+	 http://www.alittleweird.com/
+
+	This theme was designed and built by Sean Connelly,
+	whose blog you will find at http://www.alittleweird.com/
+
+	The CSS, XHTML and design is:
+	(C) Copyright 2008 Sean Connelly, All Rights Reserved
+
+*/
+
+/* get things started */
+
+	body {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		background-color: #2d2d2d;
+		background-image: url('images/alw_back.png');
+		background-repeat: repeat-x;
+		background-position: top center;
+		text-align: center;
+		font: x-small sans-serif;
+		color: #000; }
+
+	#globalWrapper {
+		width: 990px;
+		margin: 0 auto;
+		padding: 0;
+		border: 0;
+		text-align: left;
+		background-color: #fff;
+		background-image: url('images/alw_content.png');
+		background-position: top center;
+		background-repeat: repeat-y;
+		min-height: 500px;
+		font-size: 127%; }
+
+   /* default definitions for normal tags */
+
+   table {
+      background: transparent;
+      font-size: 100%;
+      color: black; }
+
+   img {
+      border: none;
+      vertical-align: middle; }
+
+   p {
+      margin: 1.3em 0 1.3em 0;
+      line-height: 1.3em; }
+
+   p img {
+      margin: 0; }
+
+   a:link {
+      text-decoration: none;
+      color: #0000ff; }
+
+   a:visited {
+      text-decoration: none;
+      color: #9977ff; }
+
+   a:hover {
+      text-decoration: underline;
+      color: #0000ff; }
+
+   a:active {
+      text-decoration: underline;
+      color: #ff0000; }
+
+   hr {
+      height: 1px;
+      color: #aaa;
+      background-color: #aaa;
+      border: 0;
+      margin: .2em 0 .2em 0; }
+
+   h1, h2, h3, h4, h5, h6 {
+      color: black;
+      background: none;
+      font-weight: normal;
+      margin: 0;
+      padding-top: .5em;
+      padding-bottom: .17em;
+      /* border-bottom: 1px solid #aaa; */ }
+
+   h1 {
+      font-size: 188%; }
+
+   h2 {
+      font-size: 150%; }
+
+   h3, h4, h5, h6 {
+      border-bottom: none;
+      font-weight: bold; }
+
+   h3 {
+      font-size: 132%; }
+
+   h4 {
+      font-size: 116%; }
+
+   h5 {
+      font-size: 100%; }
+
+   h6 {
+      font-size: 80%;  }
+
+   ul {
+      line-height: 1.5em;
+      list-style-type: square;
+      margin: 0.3em 0 0 1.5em;
+      padding: 0;
+      list-style-image: url('http://alittleweird.com/wp-content/themes/weird2/images/bullet.gif'); }
+
+   ol {
+      line-height: 1.5em;
+      margin: .3em 0 0 3.2em;
+      padding: 0;
+      list-style-image: none; }
+
+   li {
+      margin-bottom: .1em; }
+
+   dt {
+      font-weight: bold;
+      margin-bottom: .1em; }
+
+   dl {
+      margin-top: .2em;
+      margin-bottom: .5em; }
+
+   dd {
+      line-height: 1.5em;
+      margin-left: 2em;
+      margin-bottom: .1em; }
+
+   form {
+      border: none;
+      margin: 0; }
+
+   textarea {
+      padding: .1em; }
+
+   select {
+      vertical-align: top; }
+
+   abbr, acronym, .explain {
+      border-bottom: 1px dotted black;
+      color: black;
+      background: none;
+      cursor: help; }
+
+   q {
+      font-family: Times, 'Times New Roman', serif;
+      font-style: italic; }
+
+   blockquote {
+      font-family: Times, 'Times New Roman', serif;
+      font-style: italic; }
+
+   code {
+      background-color: #f9f9f9; }
+
+   pre {
+      padding: 1em;
+      border: 1px dashed #2f6fab;
+      color: black;
+      background-color: #f9f9f9;
+      line-height: 1.1em; }
+
+   /* global classes */
+
+   .hiddenText {
+      display: none; }
+
+   .centerText {
+      text-align: center; }
+
+   .pageTitle {
+      color: black;
+      background: none;
+      font-weight: normal;
+      margin: 0;
+      padding-top: .5em;
+      padding-bottom: .17em;
+      border-bottom: 1px solid #aaa; }
+
+   .smileyImg {
+      vertical-align: baseline; }
+
+   /* header/content/footer */
+
+	#alwHeader {
+		width: 990px;
+		height: 463px;
+		margin: 0;
+		padding: 0;
+		border: 0;
+		background-color: #333;
+		background-image: url('images/alw_header.png');
+		background-position: top center;
+		background-repeat: no-repeat; }
+
+	#alwHeaderLinks {
+		margin: 0;
+		padding: 213px 0 0 150px;
+		border: 0;
+		font-size: 0.1pt; }
+
+	#alwMain {
+		margin: -170px 0 0 40px;
+		padding: 0 0 40px 0; }
+
+	#googleAd {
+		width: 160px;
+		height: 600px;
+		padding: 0;
+		margin: 0;
+		float: left; }
+
+	#alwContent {
+		width: 560px;
+		margin: 0;
+		padding: 0 0 0 20px;
+		float: left; }
+
+	#alwContentNSB { /* content without sidebar */
+		width: 730px;
+		margin: 0;
+		padding: 0 0 0 20px;
+		float: left; }
+
+	#alwContentNGA { /* content without google ad */
+		width: 720px;
+		margin: 0;
+		padding: 0;
+		float: left; }
+
+	#alwContentNGANSB { /* content without google ad, sidebar */
+		width: 900px;
+		min-height: 300px;
+		margin: 0;
+		padding: 0; }
+
+	#alwSidebar {
+		width: 180px;
+		margin: 0;
+		padding-left: 10px;
+		float: left; }
+
+	#alwSidebar h2 {
+		font-size: 120%;
+		font-weight: bold; }
+
+	#alwSidebar ul {
+		list-style-image: none;
+		list-style-type: none; }
+
+	#alwSidebar li {
+		font-size: 94%; }
+
+	#alwFooter {
+		clear: both;
+		width: 990px;
+		height: 21px;
+		margin: 0;
+		padding: 0;
+		border: 0;
+		background-image: url('images/alw_footer.png');
+		background-position: bottom center;
+		background-repeat: no-repeat; }
+
+	#copyright {
+		color: #fff;
+		margin: 0;
+		padding: 0 0 10px 0;
+		font-size: 110%; }
+
+	#copyright a {
+		color: #eee;
+		text-decoration: underline; }
+
+	/* forums */
+
+	#forum {
+		margin: 0 auto;
+		width: 730px; }
+
+	#forum a {
+		color: #00b;
+		text-decoration: none; }
+
+	#forum a:hover {
+		text-decoration: underline; }
+
+	#forumHeader {
+		margin: 0 0 20px 0;
+		padding: 8px 0 0 8px;
+		background-color: #555;
+		width: 722px;
+		height: 24px;
+		overflow: hidden;
+		color: #fff;
+		background-image: url('../../../forums/frm_header.png');
+		background-repeat: no-repeat;
+		background-position: top left; }
+
+	#forumHeader a {
+		color: #bbb;
+		text-decoration: none; }
+
+	#forumHeader a:hover {
+		text-decoration: underline; }
+
+	.forumAlertWrapper {
+		width: 557px;
+		background-color: #eee;
+		background-image: url('../../../forums/frm_alert_back.png');
+		background-repeat: no-repeat;
+		background-position: top left;
+		margin: 10px auto;
+		padding: 0;
+		border: 0;
+	}
+
+	.forumAlert {
+		padding: 20px 20px 0 20px; }
+
+	.forumAlertFooter {
+		width: 557px;
+		height: 20px;
+		background-image: url('../../../forums/frm_alert_footer.png');
+		background-repeat: no-repeat;
+		background-position: top left;
+		margin: 0;
+		padding: 0;
+		border: 0; }
+
+	.forumWindow {
+		margin: 0;
+		padding: 3px 0 0 0;
+		background-color: #393939;
+		background-image: url('../../../forums/frm_table_header.png');
+		background-repeat: no-repeat;
+		background-position: top left;
+		width: 730px;
+		color: #fff; }
+
+	.forumWindowHeading {
+		margin-left: 5px;
+		font-size: 110%;
+		font-weight: bold; }
+
+	.forumWindowTable {
+		border: 0;
+		width: 100%; }
+
+	.forumWindowFooter {
+		margin: 0;
+		padding: 0;
+		background-color: #393939;
+		background-image: url('../../../forums/frm_table_footer.png');
+		background-repeat: no-repeat;
+		background-position: top left;
+		width: 730px;
+		height: 13px; }
+
+	.forumWindowTable th {
+		color: #fff;
+		padding: 3px;
+		font-size: 90%;
+		font-weight: normal;
+		text-align: left; }
+
+	.forumWindowTable td {
+		padding: 5px; }
+
+   .pagetitle {
+      font-size: 190%;
+      line-height: 2em;
+      color: #000;
+      height: 45px;
+      overflow: hidden;
+      margin: 0 0 5px 0;
+      padding: 0;
+      border-bottom: 1px solid #aaa; }
+
+   .post {
+      margin: 0;
+      padding: 0; }
+
+   .postheader {
+     /* background-image: url('images/post_header.png');*/
+      background-color: #333;
+      background-repeat: no-repeat;
+      height: 39px;
+      overflow: hidden;
+      padding: 0 0 0 10px;
+      margin: 0; }
+
+   .posttitle {
+      font-size: 150%;
+      line-height: 2em; }
+
+   .posttitle a:link {
+      text-decoration: none;
+      color: #ff0; }
+
+   .posttitle a:visited {
+      text-decoration: none;
+      color: #ff7; }
+
+   .posttitle a:hover {
+      text-decoration: underline;
+      color: #ff0; }
+
+   .posttitle a:active {
+      text-decoration: underline;
+      color: #fff; }
+
+   .postauth {
+      color: #fff;
+      float: right;
+      text-align: right;
+      padding-right: 10px; }
+
+   .postauth a {
+      color: #ff0; }
+
+   .postminimize {
+      width: 11px;
+      height: 11px;
+      margin-top: 6px;
+      cursor: pointer; }
+
+   .postmetadata {
+      height: 22px;
+      overflow: hidden;
+      line-height: 2em;
+      margin: 0 0 25px 0;
+      padding: 0 0 0 10px;
+      font-size: 88%;
+      color: white;
+      /*background-image: url('images/post_footer.png');*/
+      background-color: #222; }
+
+   .postmetadata a:link {
+      text-decoration: none;
+      color: #ff0; }
+
+   .postmetadata a:visited {
+      text-decoration: none;
+      color: #ff7; }
+
+   .postmetadata a:hover {
+      text-decoration: underline;
+      color: #ff0; }
+
+   .postmetadata a:active {
+      text-decoration: underline;
+      color: #fff; }
+
+   .searchmeta {
+      font-size: 90%;
+      margin: 0 0 10px 20px;
+      padding: 0; }
+
+   .navigation {
+      display: block;
+      text-align: center; }
+
+   img.centered {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; }
+
+   img.alignright {
+      padding: 4px;
+      margin: 0 0 2px 7px;
+      display: inline; }
+
+   img.alignleft {
+      padding: 4px;
+      margin: 0 7px 2px 0;
+      display: inline; }
+
+   .navigation {
+      padding-bottom: 2em;
+      display: block; }
+
+   .alignright {
+      float: right; }
+
+   .alignleft {
+      float: left }
+
+   .singlepost {
+      padding-top: 20px; }
+
+   .entry {
+      border: 1px solid white; }
+
+/* vidBoard stuff */
+
+#loginbanner {
+	margin: 0;
+	padding: 5px;
+	border: 1px solid #aaa;
+	background-color: #eee;
+	font-size: 8pt;
+	text-align: right; }
+#dscr {
+	position: absolute;
+	display: none; }
+#mainhead {
+	margin: 20px 0 20px 0;
+	border-bottom: 1px solid #aaa; }
+.maintopic {
+	position: relative;
+	width: 150px;
+	height: 165px;
+	margin: 0;
+	padding: 10px;
+	font-size: 8pt;
+	border: 2px solid #aaa;
+	overflow: hidden;
+	cursor: pointer; }
+.youtubethumb {
+	width: 130px;
+	height: 97px;
+	margin-left: 10px; }
+.topicrow {
+	height: 200px; }

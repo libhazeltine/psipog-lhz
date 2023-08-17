@@ -1,0 +1,722 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; The Enneagram</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; The Enneagram</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">The Enneagram</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">f3licks</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=848&amp;ref=1227833859" width="125" height="78" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_14395" style="width: 100%; overflow: auto; min-height: 125px;">For those of you who don&#039;t know about the Enneagram (Most of you, I bet), the Enneagram (meaning 9 cornered figure) is a system of 9 personality types. They are arranged in the Enneagram itself. Everyone has a personality type and a wing (one of the two types adjacent to your type)<br />
+Here&#039;s what the Enneagram looks like:<br />
+<img src="http://www.wishfulthinking.co.uk/blog/wp-content/basic-enneagram.jpg" alt="External Image" /><br />
+Each number represents a personality type.<br />
+<br />
+The types are as follows:<br />
+9- The Peacemaker<br />
+1- The Reformer<br />
+2- The Helper<br />
+3- The Achiever<br />
+4- The Individualist<br />
+5- The Investigator<br />
+6- The Loyalist<br />
+7- The Enthusiast<br />
+8- The Challenger<br />
+<br />
+You can find out more type specific information as well as a free sample test here:  <a href="http://www.enneagraminstitute.com" target="_blank">http://www.enneagraminstitute.com</a><br />
+<br />
+There&#039;s a decent amount of information about the Enneagram on the web, and in my experience, the Enneagram Institute is the best source.<br />
+<br />
+I don&#039;t know if this really qualifies as weird, but it certainly is interesting.<br />
+<br />
+I&#039;m a type 9 with a 1 wing, just by the way. Take the test, and post your results, if you want.<br />
+Use this thread to discuss anything Enneagram related.</div>
+		<textarea style="display: none;" id="desctxt_14395">For those of you who don&#039;t know about the Enneagram (Most of you, I bet), the Enneagram (meaning 9 cornered figure) is a system of 9 personality types. They are arranged in the Enneagram itself. Everyone has a personality type and a wing (one of the two types adjacent to your type)
+Here&#039;s what the Enneagram looks like:
+[img]http://www.wishfulthinking.co.uk/blog/wp-content/basic-enneagram.jpg[/img]
+Each number represents a personality type.
+
+The types are as follows:
+9- The Peacemaker
+1- The Reformer
+2- The Helper
+3- The Achiever
+4- The Individualist
+5- The Investigator
+6- The Loyalist
+7- The Enthusiast
+8- The Challenger
+
+You can find out more type specific information as well as a free sample test here: http://www.enneagraminstitute.com
+
+There&#039;s a decent amount of information about the Enneagram on the web, and in my experience, the Enneagram Institute is the best source.
+
+I don&#039;t know if this really qualifies as weird, but it certainly is interesting.
+
+I&#039;m a type 9 with a 1 wing, just by the way. Take the test, and post your results, if you want.
+Use this thread to discuss anything Enneagram related.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">ShadowmanX</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_14407" style="width: 100%; overflow: auto; min-height: 125px;">Type 1 -&gt; 4<br />
+Type 2 -&gt; 4<br />
+Type 3 -&gt; 4<br />
+Type 4 -&gt; 5<br />
+Type 5 -&gt; 5<br />
+Type 6 -&gt; 4<br />
+Type 7 -&gt; 1<br />
+Type 8 -&gt; 2<br />
+Type 9 -&gt; 7<br />
+<br />
+<br />
+Interesting</div>
+		<textarea style="display: none;" id="desctxt_14407">Type 1 -&gt; 4
+Type 2 -&gt; 4
+Type 3 -&gt; 4
+Type 4 -&gt; 5
+Type 5 -&gt; 5
+Type 6 -&gt; 4
+Type 7 -&gt; 1
+Type 8 -&gt; 2
+Type 9 -&gt; 7
+
+
+Interesting</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by ShadowmanX, 3 years, 5 months ago<br />Posted 3 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Riven</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=656&amp;ref=1217444530" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_14431" style="width: 100%; overflow: auto; min-height: 125px;">Type 1 -6<br />
+Type 2 -0<br />
+Type 3 -2<br />
+Type 4 -5 <br />
+Type 5 -6<br />
+Type 6 -6 <br />
+Type 7 -3<br />
+Type 8 -5 <br />
+Type 9 -3 <br />
+<br />
+In order: 1,5,6...4,8...7,9...3...2<br />
+<br />
+For you lazy or confused people:<br />
+<br />
+ <a href="http://www.enneagraminstitute.com/dis_sample_36.asp" target="_blank">http://www.enneagraminstitute.com/dis_sample_36.asp</a></div>
+		<textarea style="display: none;" id="desctxt_14431">Type 1 -6
+Type 2 -0
+Type 3 -2
+Type 4 -5 
+Type 5 -6
+Type 6 -6 
+Type 7 -3
+Type 8 -5 
+Type 9 -3 
+
+In order: 1,5,6...4,8...7,9...3...2
+
+For you lazy or confused people:
+
+http://www.enneagraminstitute.com/dis_sample_36.asp</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Riven, 3 years, 5 months ago<br />Posted 3 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Jacob</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=949&amp;ref=1248714472" width="108" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_14471" style="width: 100%; overflow: auto; min-height: 125px;">Does that mean that if your a peacemaker you can&#039;t be an individualist :P ?.</div>
+		<textarea style="display: none;" id="desctxt_14471">Does that mean that if your a peacemaker you can&#039;t be an individualist :P ?.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Jacob, 3 years, 4 months ago<br />Posted 3 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Mr. Tallyman</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=910&amp;ref=1239146679" width="80" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_14473" style="width: 100%; overflow: auto; min-height: 125px;">This test was full of terribly revealing questions.. and, I shant be sharing any results..<br />
+<br />
+I would like to say though, that I think its worth a look.<br />
+<br />
+Even if it looks like witchcraft..<br />
+<br />
+(Enneagram: Nine pointed star symbolizing the nine gifts, or fruits of the Holy Spirit..)</div>
+		<textarea style="display: none;" id="desctxt_14473">This test was full of terribly revealing questions.. and, I shant be sharing any results..
+
+I would like to say though, that I think its worth a look.
+
+Even if it looks like witchcraft..
+
+(Enneagram: Nine pointed star symbolizing the nine gifts, or fruits of the Holy Spirit..)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">mrj</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_14474" style="width: 100%; overflow: auto; min-height: 125px;">I also found the test to be incredibly accurate. No other personality test has really made it seem like I was reading a book of my own behavior.<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Mr. Tallyman:</em><br />
+(Enneagram: Nine pointed star symbolizing the nine gifts, or fruits of the Holy Spirit..)</div>I wonder if we can match the 9 gifts to the 9 types somehow... If they are that related. <br />
+<br />
+EDIT: Also, are there just nine of those? Some places list only seven, but some list up to twelve. :/</div>
+		<textarea style="display: none;" id="desctxt_14474">I also found the test to be incredibly accurate. No other personality test has really made it seem like I was reading a book of my own behavior.[quote][i]posted by Mr. Tallyman:[/i]
+(Enneagram: Nine pointed star symbolizing the nine gifts, or fruits of the Holy Spirit..)[/quote]
+
+I wonder if we can match the 9 gifts to the 9 types somehow... If they are that related. 
+
+EDIT: Also, are there just nine of those? Some places list only seven, but some list up to twelve. :/</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by mrj, 3 years, 4 months ago<br />Posted 3 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Riven</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=656&amp;ref=1217444530" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_14481" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by mrj:</em><br />
+I also found the test to be incredibly accurate. No other personality test has really made it seem like I was reading a book of my own behavior.<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Mr. Tallyman:</em><br />
+(Enneagram: Nine pointed star symbolizing the nine gifts, or fruits of the Holy Spirit..)</div>I wonder if we can match the 9 gifts to the 9 types somehow... If they are that related. <br />
+<br />
+EDIT: Also, are there just nine of those? Some places list only seven, but some list up to twelve. :/</div>These ones?<br />
+<br />
+1 Corinthians 12:7 &quot;To each person the manifestation of the Spirit is given for the benefit of all. 8 For one person is given through the Spirit the message of wisdom, and another the message of knowledge according to the same Spirit, 9 to another faith by the same Spirit, and to another gifts of healing by the one Spirit, 10 to another performance of miracles, to another prophecy, and to another discernment of spirits, to another different kinds of tongues, and to another the interpretation of tongues. 11 It is one and the same Spirit, distributing as he decides to each person, who produces all these things.&quot;<br />
+<br />
+There&#039;s 19 here<br />
+<br />
+ <a href="http://www.jesus-is-lord.com/gifts.htm" target="_blank">http://www.jesus-is-lord.com/gifts.htm</a></div>
+		<textarea style="display: none;" id="desctxt_14481">[quote][i]posted by mrj:[/i]
+I also found the test to be incredibly accurate. No other personality test has really made it seem like I was reading a book of my own behavior.[quote][i]posted by Mr. Tallyman:[/i]
+(Enneagram: Nine pointed star symbolizing the nine gifts, or fruits of the Holy Spirit..)[/quote]
+
+I wonder if we can match the 9 gifts to the 9 types somehow... If they are that related. 
+
+EDIT: Also, are there just nine of those? Some places list only seven, but some list up to twelve. :/[/quote]
+
+These ones?
+
+1 Corinthians 12:7 &quot;To each person the manifestation of the Spirit is given for the benefit of all. 8 For one person is given through the Spirit the message of wisdom, and another the message of knowledge according to the same Spirit, 9 to another faith by the same Spirit, and to another gifts of healing by the one Spirit, 10 to another performance of miracles, to another prophecy, and to another discernment of spirits, to another different kinds of tongues, and to another the interpretation of tongues. 11 It is one and the same Spirit, distributing as he decides to each person, who produces all these things.&quot;
+
+There&#039;s 19 here
+
+http://www.jesus-is-lord.com/gifts.htm</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Mr. Tallyman</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=910&amp;ref=1239146679" width="80" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_14488" style="width: 100%; overflow: auto; min-height: 125px;">I think that because numerology is all numbers, then its fundamental principals have more gravitation of belief.. (what i mean is that belief in something this bizarre would have been long forgotten if there was no personal evidence of its.. substance)<br />
+<br />
+And numerology only talks ten numbers.. (well, only nine)<br />
+<br />
+out of zero comes one.. and then zero goes away forever..<br />
+<br />
+it goes 123456789 and anything above, you add numbers to add up to one number..<br />
+<br />
+eg. 23 would be 2+3=5<br />
+or 138 would be 1+3+8=12 = 1+2=3<br />
+<br />
+Numerology is a subconcious enitity (as is symbolism..) such as our personality..<br />
+<br />
+I think nine numbers is good enough<br />
+<br />
+789<br />
+456<br />
+123<br />
+<br />
+five is at the center<br />
+the symbol for zero came from a closed fist.. which is five digits..<br />
+<br />
+I have already said too much..<br />
+<br />
+haha.. im not sure where this is going, but I find it all interesting!</div>
+		<textarea style="display: none;" id="desctxt_14488">I think that because numerology is all numbers, then its fundamental principals have more gravitation of belief.. (what i mean is that belief in something this bizarre would have been long forgotten if there was no personal evidence of its.. substance)
+
+And numerology only talks ten numbers.. (well, only nine)
+
+out of zero comes one.. and then zero goes away forever..
+
+it goes 123456789 and anything above, you add numbers to add up to one number..
+
+eg. 23 would be 2+3=5
+or 138 would be 1+3+8=12 = 1+2=3
+
+Numerology is a subconcious enitity (as is symbolism..) such as our personality..
+
+I think nine numbers is good enough
+
+789
+456
+123
+
+five is at the center
+the symbol for zero came from a closed fist.. which is five digits..
+
+I have already said too much..
+
+haha.. im not sure where this is going, but I find it all interesting!</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">f3licks</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=848&amp;ref=1227833859" width="125" height="78" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_14489" style="width: 100%; overflow: auto; min-height: 125px;">This is not exactly what I suspected when I made this thread.<br />
+Awesome.</div>
+		<textarea style="display: none;" id="desctxt_14489">This is not exactly what I suspected when I made this thread.
+Awesome.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Riven</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=656&amp;ref=1217444530" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_14497" style="width: 100%; overflow: auto; min-height: 125px;">1- The Reformer- prophesy<br />
+2- The Helper- healing<br />
+3- The Achiever- interpretation<br />
+4- The Individualist- tounges<br />
+5- The Investigator- knowledge<br />
+6- The Loyalist- discernment<br />
+7- The Enthusiast- faith<br />
+8- The Challenger- miracles<br />
+9- The Peacemaker- wisdom<br />
+<br />
+what i think matches the names :/<br />
+<br />
+@Mr. Tallyman<br />
+<br />
+666? that is interesting.<br />
+<br />
+@f3licks<br />
+<br />
+Since I have three top ones, how do I know which is really mine?</div>
+		<textarea style="display: none;" id="desctxt_14497">1- The Reformer- prophesy
+2- The Helper- healing
+3- The Achiever- interpretation
+4- The Individualist- tounges
+5- The Investigator- knowledge
+6- The Loyalist- discernment
+7- The Enthusiast- faith
+8- The Challenger- miracles
+9- The Peacemaker- wisdom
+
+what i think matches the names :/
+
+@Mr. Tallyman
+
+666? that is interesting.
+
+@f3licks
+
+Since I have three top ones, how do I know which is really mine?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Riven, 3 years, 4 months ago<br />Posted 3 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">f3licks</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=848&amp;ref=1227833859" width="125" height="78" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_14681" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Riven:</em><br />
+1- The Reformer- prophesy<br />
+2- The Helper- healing<br />
+3- The Achiever- interpretation<br />
+4- The Individualist- tounges<br />
+5- The Investigator- knowledge<br />
+6- The Loyalist- discernment<br />
+7- The Enthusiast- faith<br />
+8- The Challenger- miracles<br />
+9- The Peacemaker- wisdom<br />
+<br />
+what i think matches the names :/<br />
+<br />
+@Mr. Tallyman<br />
+<br />
+666? that is interesting.<br />
+<br />
+@f3licks<br />
+<br />
+Since I have three top ones, how do I know which is really mine?</div><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Riven:</em><br />
+1- The Reformer- prophesy<br />
+2- The Helper- healing<br />
+3- The Achiever- interpretation<br />
+4- The Individualist- tounges<br />
+5- The Investigator- knowledge<br />
+6- The Loyalist- discernment<br />
+7- The Enthusiast- faith<br />
+8- The Challenger- miracles<br />
+9- The Peacemaker- wisdom<br />
+<br />
+what i think matches the names :/<br />
+<br />
+@Mr. Tallyman<br />
+<br />
+666? that is interesting.<br />
+<br />
+@f3licks<br />
+<br />
+Since I have three top ones, how do I know which is really mine?</div><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Riven:</em><br />
+1- The Reformer- prophesy<br />
+2- The Helper- healing<br />
+3- The Achiever- interpretation<br />
+4- The Individualist- tounges<br />
+5- The Investigator- knowledge<br />
+6- The Loyalist- discernment<br />
+7- The Enthusiast- faith<br />
+8- The Challenger- miracles<br />
+9- The Peacemaker- wisdom<br />
+<br />
+what i think matches the names :/<br />
+<br />
+@Mr. Tallyman<br />
+<br />
+666? that is interesting.<br />
+<br />
+@f3licks<br />
+<br />
+Since I have three top ones, how do I know which is really mine?</div><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Riven:</em><br />
+1- The Reformer- prophesy<br />
+2- The Helper- healing<br />
+3- The Achiever- interpretation<br />
+4- The Individualist- tounges<br />
+5- The Investigator- knowledge<br />
+6- The Loyalist- discernment<br />
+7- The Enthusiast- faith<br />
+8- The Challenger- miracles<br />
+9- The Peacemaker- wisdom<br />
+<br />
+what i think matches the names :/<br />
+<br />
+@Mr. Tallyman<br />
+<br />
+666? that is interesting.<br />
+<br />
+@f3licks<br />
+<br />
+Since I have three top ones, how do I know which is really mine?</div><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Riven:</em><br />
+1- The Reformer- prophesy<br />
+2- The Helper- healing<br />
+3- The Achiever- interpretation<br />
+4- The Individualist- tounges<br />
+5- The Investigator- knowledge<br />
+6- The Loyalist- discernment<br />
+7- The Enthusiast- faith<br />
+8- The Challenger- miracles<br />
+9- The Peacemaker- wisdom<br />
+<br />
+what i think matches the names :/<br />
+<br />
+@Mr. Tallyman<br />
+<br />
+666? that is interesting.<br />
+<br />
+@f3licks<br />
+<br />
+Since I have three top ones, how do I know which is really mine?</div>Whatever sounds closest to you.</div>
+		<textarea style="display: none;" id="desctxt_14681">[quote][i]posted by Riven:[/i]
+1- The Reformer- prophesy
+2- The Helper- healing
+3- The Achiever- interpretation
+4- The Individualist- tounges
+5- The Investigator- knowledge
+6- The Loyalist- discernment
+7- The Enthusiast- faith
+8- The Challenger- miracles
+9- The Peacemaker- wisdom
+
+what i think matches the names :/
+
+@Mr. Tallyman
+
+666? that is interesting.
+
+@f3licks
+
+Since I have three top ones, how do I know which is really mine?[/quote]
+
+[quote][i]posted by Riven:[/i]
+1- The Reformer- prophesy
+2- The Helper- healing
+3- The Achiever- interpretation
+4- The Individualist- tounges
+5- The Investigator- knowledge
+6- The Loyalist- discernment
+7- The Enthusiast- faith
+8- The Challenger- miracles
+9- The Peacemaker- wisdom
+
+what i think matches the names :/
+
+@Mr. Tallyman
+
+666? that is interesting.
+
+@f3licks
+
+Since I have three top ones, how do I know which is really mine?[/quote]
+
+[quote][i]posted by Riven:[/i]
+1- The Reformer- prophesy
+2- The Helper- healing
+3- The Achiever- interpretation
+4- The Individualist- tounges
+5- The Investigator- knowledge
+6- The Loyalist- discernment
+7- The Enthusiast- faith
+8- The Challenger- miracles
+9- The Peacemaker- wisdom
+
+what i think matches the names :/
+
+@Mr. Tallyman
+
+666? that is interesting.
+
+@f3licks
+
+Since I have three top ones, how do I know which is really mine?[/quote]
+
+[quote][i]posted by Riven:[/i]
+1- The Reformer- prophesy
+2- The Helper- healing
+3- The Achiever- interpretation
+4- The Individualist- tounges
+5- The Investigator- knowledge
+6- The Loyalist- discernment
+7- The Enthusiast- faith
+8- The Challenger- miracles
+9- The Peacemaker- wisdom
+
+what i think matches the names :/
+
+@Mr. Tallyman
+
+666? that is interesting.
+
+@f3licks
+
+Since I have three top ones, how do I know which is really mine?[/quote]
+
+[quote][i]posted by Riven:[/i]
+1- The Reformer- prophesy
+2- The Helper- healing
+3- The Achiever- interpretation
+4- The Individualist- tounges
+5- The Investigator- knowledge
+6- The Loyalist- discernment
+7- The Enthusiast- faith
+8- The Challenger- miracles
+9- The Peacemaker- wisdom
+
+what i think matches the names :/
+
+@Mr. Tallyman
+
+666? that is interesting.
+
+@f3licks
+
+Since I have three top ones, how do I know which is really mine?[/quote]
+
+Whatever sounds closest to you.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 4 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=793" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 27 queries. 0.330 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

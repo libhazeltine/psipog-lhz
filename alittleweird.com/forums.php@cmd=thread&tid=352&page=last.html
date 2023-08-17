@@ -1,0 +1,457 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; The Shaolin Thread (Chi)</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; The Shaolin Thread (Chi)</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">The Shaolin Thread (Chi)</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Zectra</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=96&amp;ref=1203358450" width="94" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_8034" style="width: 100%; overflow: auto; min-height: 125px;">I thought I&#039;d finally post a thread on my own current passion..<br />
+Kung fu and Chi.<br />
+<br />
+A pretty interesting documentary by national geographic covering Shaolin Kung fu:<br />
+ <a href="http://youtube.com/watch?v=U11Cph-lj6Q" target="_blank">http://youtube.com/watch?v=U11Cph-lj6Q</a>  // Shaolin Kung Fu Part 1<br />
+ <a href="http://youtube.com/watch?v=RISx6YLAEgQ" target="_blank">http://youtube.com/watch?v=RISx6YLAEgQ</a>  // Shaolin Kung Fu Part 2<br />
+ <a href="http://youtube.com/watch?v=9BbGgD1c0wI" target="_blank">http://youtube.com/watch?v=9BbGgD1c0wI</a>  // Shaolin Kung Fu Part 3<br />
+ <a href="http://youtube.com/watch?v=RJyMWlu1LgY" target="_blank">http://youtube.com/watch?v=RJyMWlu1LgY</a>  // Shaolin Kung Fu Part 4<br />
+ <a href="http://youtube.com/watch?v=OGcnZaKJFD0" target="_blank">http://youtube.com/watch?v=OGcnZaKJFD0</a>  // Shaolin Kung Fu Part 5<br />
+<br />
+What do you guys think about this and Chi? Maybe we can get a nice discussion started here.<br />
+To me, having first started in psionics, it really broadens the variety and the scope of how far we can push ourselves to and past our limits.<br />
+</div>
+		<textarea style="display: none;" id="desctxt_8034">I thought I&#039;d finally post a thread on my own current passion..
+Kung fu and Chi.
+
+A pretty interesting documentary by national geographic covering Shaolin Kung fu:
+http://youtube.com/watch?v=U11Cph-lj6Q  // Shaolin Kung Fu Part 1
+http://youtube.com/watch?v=RISx6YLAEgQ  // Shaolin Kung Fu Part 2
+http://youtube.com/watch?v=9BbGgD1c0wI  // Shaolin Kung Fu Part 3
+http://youtube.com/watch?v=RJyMWlu1LgY  // Shaolin Kung Fu Part 4
+http://youtube.com/watch?v=OGcnZaKJFD0  // Shaolin Kung Fu Part 5
+
+What do you guys think about this and Chi? Maybe we can get a nice discussion started here.
+To me, having first started in psionics, it really broadens the variety and the scope of how far we can push ourselves to and past our limits.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Wandering Wolf</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=492&amp;ref=1209855800" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_8050" style="width: 100%; overflow: auto; min-height: 125px;">I&#039;ve always been fascinated by tai chi. I&#039;ve read a little bit here and there about what it can help one accomplish and I must say that it does seem to have a lot of potential and could improve one&#039;s energy manipulation skills in general.<br />
+<br />
+Perhaps one day, when I stop procrastinating about everything, I will begin practicing some tai chi myself and observe how it affects my own abilities.<br />
+<br />
+Chi seems to me like a much less subtle form of psi because of how destructive it can be when used correctly. Bruce Lee supposedly used chi to power his punching-bag-breaking punches and kicks.<br />
+<br />
+Can you manipulate chi efficiently, Zectra? If so, how do you use it and how does it affect your energy manipulation in general?</div>
+		<textarea style="display: none;" id="desctxt_8050">I&#039;ve always been fascinated by tai chi. I&#039;ve read a little bit here and there about what it can help one accomplish and I must say that it does seem to have a lot of potential and could improve one&#039;s energy manipulation skills in general.
+
+Perhaps one day, when I stop procrastinating about everything, I will begin practicing some tai chi myself and observe how it affects my own abilities.
+
+Chi seems to me like a much less subtle form of psi because of how destructive it can be when used correctly. Bruce Lee supposedly used chi to power his punching-bag-breaking punches and kicks.
+
+Can you manipulate chi efficiently, Zectra? If so, how do you use it and how does it affect your energy manipulation in general?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Wandering Wolf, 4 years, 7 months ago<br />Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Zectra</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=96&amp;ref=1203358450" width="94" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_8057" style="width: 100%; overflow: auto; min-height: 125px;">Well,  I started kung fu and Qi gong/Tai Chi classes a while ago, and I&#039;ve learned how to manipulate energy from a chi perspective probably a lot more than I did from a psi perspective (and I studied psi for..almost eight years).<br />
+<br />
+I use chi mostly in my kung fu classes plus my daily training a lot like what you would see in the videos above or with Bruce Lee, like you mentioned..  though I find it&#039;s also pretty useful externally..  occasionally when I find out one of my friends is having a bad time, I take a few minutes to &#039;pour&#039; my own energy into them to comfort them and help them think more clearly..  and lately I&#039;ve been looking into it a lot for physical healing purposes.<br />
+<br />
+As for as chi goes with affecting my energy manipulation in general, I have to say it&#039;s helped multiply my own skills much more than what they were before, especially local sense and empathy.<br />
+For comparison..  before I started Tai Chi,  I could &quot;feel&quot; a slight tingle of other peoples energy when I walked by them,  but after a year or so of dedicated practice, I started physically feeling like I was walking through a.. &quot;Thick Soup&quot; of energy, thoughts, and emotions everywhere I went o_o  <br />
+(That got pretty annoying though, so I had to start shielding from it a lot xD)<br />
+<br />
+<br />
+In the end..It&#039;s helped so much and emphasized the connection between energy manip and other abilities(Like TK), that whenever someone comes to me to learn and asks where they should start to learn this ability.. or that ability..(anything from pyrokinesis, to phasing and AP),  I always tell them to meditate and develop their ability to manipulate and control their energy as much as they possibly can, not just as a jumping off point, but as a fundamental practice that they should continue to practice through their entire path in psi or chi.<br />
+<br />
+It really does seem to have a base connection to everything, and like it shows in the videos above,  your own abilities can become increasingly powerful the more dedicated you are to it.</div>
+		<textarea style="display: none;" id="desctxt_8057">Well,  I started kung fu and Qi gong/Tai Chi classes a while ago, and I&#039;ve learned how to manipulate energy from a chi perspective probably a lot more than I did from a psi perspective (and I studied psi for..almost eight years).
+
+I use chi mostly in my kung fu classes plus my daily training a lot like what you would see in the videos above or with Bruce Lee, like you mentioned..  though I find it&#039;s also pretty useful externally..  occasionally when I find out one of my friends is having a bad time, I take a few minutes to &#039;pour&#039; my own energy into them to comfort them and help them think more clearly..  and lately I&#039;ve been looking into it a lot for physical healing purposes.
+
+As for as chi goes with affecting my energy manipulation in general, I have to say it&#039;s helped multiply my own skills much more than what they were before, especially local sense and empathy.
+For comparison..  before I started Tai Chi,  I could &quot;feel&quot; a slight tingle of other peoples energy when I walked by them,  but after a year or so of dedicated practice, I started physically feeling like I was walking through a.. &quot;Thick Soup&quot; of energy, thoughts, and emotions everywhere I went o_o  
+(That got pretty annoying though, so I had to start shielding from it a lot xD)
+
+
+In the end..It&#039;s helped so much and emphasized the connection between energy manip and other abilities(Like TK), that whenever someone comes to me to learn and asks where they should start to learn this ability.. or that ability..(anything from pyrokinesis, to phasing and AP),  I always tell them to meditate and develop their ability to manipulate and control their energy as much as they possibly can, not just as a jumping off point, but as a fundamental practice that they should continue to practice through their entire path in psi or chi.
+
+It really does seem to have a base connection to everything, and like it shows in the videos above,  your own abilities can become increasingly powerful the more dedicated you are to it.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Wandering Wolf</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=492&amp;ref=1209855800" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_8062" style="width: 100%; overflow: auto; min-height: 125px;">Very interesting. It was just as I suspected. It not only increased your energy manipulation ability, but your energy sensitivity as well. <br />
+<br />
+I once read that it is wiser to increase your energy sensitivity before using a desensitizing energy technique, such as the iron shirt/vest technique so that you will be able to tell if you are getting seriously injured.<br />
+<br />
+And I do agree with you that it should be used as a lifelong practice and not a springboard for &quot;bigger and better things&quot;.<br />
+<br />
+Well, that is all I have to say for now. I that hope others begin to reply to your thread.</div>
+		<textarea style="display: none;" id="desctxt_8062">Very interesting. It was just as I suspected. It not only increased your energy manipulation ability, but your energy sensitivity as well. 
+
+I once read that it is wiser to increase your energy sensitivity before using a desensitizing energy technique, such as the iron shirt/vest technique so that you will be able to tell if you are getting seriously injured.
+
+And I do agree with you that it should be used as a lifelong practice and not a springboard for &quot;bigger and better things&quot;.
+
+Well, that is all I have to say for now. I that hope others begin to reply to your thread.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">RazSh18</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=510&amp;ref=1213120644" width="110" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_8063" style="width: 100%; overflow: auto; min-height: 125px;">Saw The whole video, it was great for knowledge but I also understand now that I can&#039;t achive this matirial arts ( If i wanted to ) for my age ( 18 years old ) and my energy type  ( I see myself as consumer of positive rage ) which opposite the tai chi</div>
+		<textarea style="display: none;" id="desctxt_8063">Saw The whole video, it was great for knowledge but I also understand now that I can&#039;t achive this matirial arts ( If i wanted to ) for my age ( 18 years old ) and my energy type  ( I see myself as consumer of positive rage ) which opposite the tai chi</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">forcemaster245</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=646&amp;ref=1222058247" width="125" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10187" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Zectra:</em><br />
+Well,  I started kung fu and Qi gong/Tai Chi classes a while ago, and I&#039;ve learned how to manipulate energy from a chi perspective probably a lot more than I did from a psi perspective (and I studied psi for..almost eight years).<br />
+<br />
+I use chi mostly in my kung fu classes plus my daily training a lot like what you would see in the videos above or with Bruce Lee, like you mentioned..  though I find it&#039;s also pretty useful externally..  occasionally when I find out one of my friends is having a bad time, I take a few minutes to &#039;pour&#039; my own energy into them to comfort them and help them think more clearly..  and lately I&#039;ve been looking into it a lot for physical healing purposes.<br />
+<br />
+As for as chi goes with affecting my energy manipulation in general, I have to say it&#039;s helped multiply my own skills much more than what they were before, especially local sense and empathy.<br />
+For comparison..  before I started Tai Chi,  I could &quot;feel&quot; a slight tingle of other peoples energy when I walked by them,  but after a year or so of dedicated practice, I started physically feeling like I was walking through a.. &quot;Thick Soup&quot; of energy, thoughts, and emotions everywhere I went o_o  <br />
+(That got pretty annoying though, so I had to start shielding from it a lot xD)<br />
+<br />
+<br />
+In the end..It&#039;s helped so much and emphasized the connection between energy manip and other abilities(Like TK), that whenever someone comes to me to learn and asks where they should start to learn this ability.. or that ability..(anything from pyrokinesis, to phasing and AP),  I always tell them to meditate and develop their ability to manipulate and control their energy as much as they possibly can, not just as a jumping off point, but as a fundamental practice that they should continue to practice through their entire path in psi or chi.<br />
+<br />
+It really does seem to have a base connection to everything, and like it shows in the videos above,  your own abilities can become increasingly powerful the more dedicated you are to it.</div>it was somewhat the reverse for me actually...i learnt tai chi for almost three years before i started practising psychic abilities. i also believe that it was quite good for my psychic abilities. i could produce a psiball easily on my first try, and maybe this is due to the energy manipulation that i trained while i was learning tai chi. besides that, it is also easier for me to visualise, because i did that often during my tai chi training.besides that you can use your tai chi skills to ward off baddies effectively if you don&#039;t want to waste your psychic powers dealing with them.;)</div>
+		<textarea style="display: none;" id="desctxt_10187">[quote][i]posted by Zectra:[/i]
+Well,  I started kung fu and Qi gong/Tai Chi classes a while ago, and I&#039;ve learned how to manipulate energy from a chi perspective probably a lot more than I did from a psi perspective (and I studied psi for..almost eight years).
+
+I use chi mostly in my kung fu classes plus my daily training a lot like what you would see in the videos above or with Bruce Lee, like you mentioned..  though I find it&#039;s also pretty useful externally..  occasionally when I find out one of my friends is having a bad time, I take a few minutes to &#039;pour&#039; my own energy into them to comfort them and help them think more clearly..  and lately I&#039;ve been looking into it a lot for physical healing purposes.
+
+As for as chi goes with affecting my energy manipulation in general, I have to say it&#039;s helped multiply my own skills much more than what they were before, especially local sense and empathy.
+For comparison..  before I started Tai Chi,  I could &quot;feel&quot; a slight tingle of other peoples energy when I walked by them,  but after a year or so of dedicated practice, I started physically feeling like I was walking through a.. &quot;Thick Soup&quot; of energy, thoughts, and emotions everywhere I went o_o  
+(That got pretty annoying though, so I had to start shielding from it a lot xD)
+
+
+In the end..It&#039;s helped so much and emphasized the connection between energy manip and other abilities(Like TK), that whenever someone comes to me to learn and asks where they should start to learn this ability.. or that ability..(anything from pyrokinesis, to phasing and AP),  I always tell them to meditate and develop their ability to manipulate and control their energy as much as they possibly can, not just as a jumping off point, but as a fundamental practice that they should continue to practice through their entire path in psi or chi.
+
+It really does seem to have a base connection to everything, and like it shows in the videos above,  your own abilities can become increasingly powerful the more dedicated you are to it.[/quote]
+
+it was somewhat the reverse for me actually...i learnt tai chi for almost three years before i started practising psychic abilities. i also believe that it was quite good for my psychic abilities. i could produce a psiball easily on my first try, and maybe this is due to the energy manipulation that i trained while i was learning tai chi. besides that, it is also easier for me to visualise, because i did that often during my tai chi training.besides that you can use your tai chi skills to ward off baddies effectively if you don&#039;t want to waste your psychic powers dealing with them.;)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by forcemaster245, 4 years, 5 months ago<br />Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Linked</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=19&amp;ref=1203762048" width="89" height="38" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10199" style="width: 100%; overflow: auto; min-height: 125px;">hey Zectra do you live in the USA? i&#039;d like to learn tai chi, but i can&#039;t find any training schools in my area :(<br />
+do they even teach tai chi in the US?</div>
+		<textarea style="display: none;" id="desctxt_10199">hey Zectra do you live in the USA? i&#039;d like to learn tai chi, but i can&#039;t find any training schools in my area :(
+do they even teach tai chi in the US?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Zectra</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=96&amp;ref=1203358450" width="94" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10206" style="width: 100%; overflow: auto; min-height: 125px;">forcemaster~<br />
+Yeah I know =P.  It&#039;s very helpful.  I&#039;ve loved every moment in TaiChi.<br />
+<br />
+Linked~<br />
+Oh yes, there are a TON of TaiChi schools in the USA, and I do live here.<br />
+You should google TaiChi and your home state.. probably KungFu and your state as well, because most KungFu schools do one form of TaiChi or QiGung or another..  They&#039;re just don&#039;t advertise as much as taekwondo, karate, or Aikido does.</div>
+		<textarea style="display: none;" id="desctxt_10206">forcemaster~
+Yeah I know =P.  It&#039;s very helpful.  I&#039;ve loved every moment in TaiChi.
+
+Linked~
+Oh yes, there are a TON of TaiChi schools in the USA, and I do live here.
+You should google TaiChi and your home state.. probably KungFu and your state as well, because most KungFu schools do one form of TaiChi or QiGung or another..  They&#039;re just don&#039;t advertise as much as taekwondo, karate, or Aikido does.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">chillpill</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=635&amp;ref=1215645183" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10209" style="width: 100%; overflow: auto; min-height: 125px;">Hey guys, a great martial art to check out would be Aikido.  Like other martial arts, it focuses on drawing from one&#039;s personal power, but rather than psi or chi, they call it &quot;ki&quot; (hence, aiKIdo).<br />
+<br />
+In Aikido, they say to draw your ki from your &quot;hara&quot;, or your center of gravity, through deep breathing, balance and concentration.  Your hara, for most people, is just above your naval.  <br />
+<br />
+This concept largely interested me because it makes sense that your energy would settle at your center of gravity, whether this be our potential energy as a result of gravity&#039;s effect on you, or a mystical &quot;ki&quot; or psi energy.  Also, I find it interesting that we commonly relate our psionic control to our nerves and our center of gravity is supposed to be just above our naval, which contains the most cluster of nerves you can find in the human body (e.g. it is the most painful place to receive an injury).<br />
+<br />
+Any input on this?</div>
+		<textarea style="display: none;" id="desctxt_10209">Hey guys, a great martial art to check out would be Aikido.  Like other martial arts, it focuses on drawing from one&#039;s personal power, but rather than psi or chi, they call it &quot;ki&quot; (hence, aiKIdo).
+
+In Aikido, they say to draw your ki from your &quot;hara&quot;, or your center of gravity, through deep breathing, balance and concentration.  Your hara, for most people, is just above your naval.  
+
+This concept largely interested me because it makes sense that your energy would settle at your center of gravity, whether this be our potential energy as a result of gravity&#039;s effect on you, or a mystical &quot;ki&quot; or psi energy.  Also, I find it interesting that we commonly relate our psionic control to our nerves and our center of gravity is supposed to be just above our naval, which contains the most cluster of nerves you can find in the human body (e.g. it is the most painful place to receive an injury).
+
+Any input on this?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Zectra</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=96&amp;ref=1203358450" width="94" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10254" style="width: 100%; overflow: auto; min-height: 125px;">I took Aikido for about four years, and I&#039;ll agree with chillpill on this, it is a great Martial Arts to take.<br />
+<br />
+It also depends on what you&#039;re looking for in your training though.<br />
+Aikido is a soft form Martial Art(Don&#039;t mix that up with &quot;internal&quot;) with the intent on manipulating your opponent and their weight in order to throw them off balance with the littlest of energy. They also throw some Kendo into the study to help you become better attuned with handling weapons; receiving or dealing.<br />
+<br />
+Oh-Sensei developed the system a long time ago by studying different martial art&#039;s an their joint manipulation techniques and such, as well as through his own study, then adding to them and expanding on certain qualities.<br />
+<br />
+Like a lot of Martial Arts though, the key points to it&#039;s system can be strung back to origins in China and Kung Fu.<br />
+I&#039;ve seen at least half of the techniques and ideas expressed in Kung Fu and it&#039;s Chi Na(Qinna) areas. <br />
+<br />
+It&#039;d be a good idea to look into both Aikido and Kung fu;<br />
+Kung fu giving a large variety of insight on both hard and soft form, while Aikido specializes in soft form and weapon disarming.<br />
+<br />
+Coupled with Tai Chi, the three make a great combination.<br />
+<br />
+<br />
+===============================================================<br />
+replies:<br />
+Chillpill~<br />
+Yes, both Aikido and Kung fu use this area as.. &#039;energy sources&#039; you could say; Which also happens to be one of the chakras.<br />
+<br />
+In kung fu though, they store their energy slightly lower than that in their dan tien, then when practicing or fighting, allow it to rise up to &quot;hara&quot; as you called it, or slightly higher, then press it back down again once they&#039;ve finished their fight/form to compress and stabilize the energy in their dan tien again.<br />
+<br />
+You can see the difference in their actions in between the changes if you watch their forms.<br />
+<br />
+(Also, Ki is the Japanese interpretation of Chi/Qi, and most people believe those are the same as psi, but it&#039;s controversial.)</div>
+		<textarea style="display: none;" id="desctxt_10254">I took Aikido for about four years, and I&#039;ll agree with chillpill on this, it is a great Martial Arts to take.
+
+It also depends on what you&#039;re looking for in your training though.
+Aikido is a soft form Martial Art(Don&#039;t mix that up with &quot;internal&quot;) with the intent on manipulating your opponent and their weight in order to throw them off balance with the littlest of energy. They also throw some Kendo into the study to help you become better attuned with handling weapons; receiving or dealing.
+
+Oh-Sensei developed the system a long time ago by studying different martial art&#039;s an their joint manipulation techniques and such, as well as through his own study, then adding to them and expanding on certain qualities.
+
+Like a lot of Martial Arts though, the key points to it&#039;s system can be strung back to origins in China and Kung Fu.
+I&#039;ve seen at least half of the techniques and ideas expressed in Kung Fu and it&#039;s Chi Na(Qinna) areas. 
+
+It&#039;d be a good idea to look into both Aikido and Kung fu;
+Kung fu giving a large variety of insight on both hard and soft form, while Aikido specializes in soft form and weapon disarming.
+
+Coupled with Tai Chi, the three make a great combination.
+
+
+===============================================================
+replies:
+Chillpill~
+Yes, both Aikido and Kung fu use this area as.. &#039;energy sources&#039; you could say; Which also happens to be one of the chakras.
+
+In kung fu though, they store their energy slightly lower than that in their dan tien, then when practicing or fighting, allow it to rise up to &quot;hara&quot; as you called it, or slightly higher, then press it back down again once they&#039;ve finished their fight/form to compress and stabilize the energy in their dan tien again.
+
+You can see the difference in their actions in between the changes if you watch their forms.
+
+(Also, Ki is the Japanese interpretation of Chi/Qi, and most people believe those are the same as psi, but it&#039;s controversial.)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Zectra, 4 years, 5 months ago<br />Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=352" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 26 queries. 0.278 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

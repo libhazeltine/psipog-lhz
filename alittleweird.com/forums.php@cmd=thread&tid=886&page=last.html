@@ -1,0 +1,319 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Hypnosis</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Hypnosis</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Hypnosis</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Insectoid</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=1010&amp;ref=1251218696" width="50" height="50" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_16052" style="width: 100%; overflow: auto; min-height: 125px;">The other day at school in psychology class we had the opportunity to be hypnotized via a speaker on a cassette tape. I decided to go ahead and try it, as did the rest of the class.<br />
+<br />
+It was amazing. I don&#039;t even think I can explain what it was like. We started out by sitting or lying down on the floor, and the tape walked us through the procedures of relaxing ourselves until he began telling us what to do. He pretty much just gave us several scenarios in which we had to fill in missing details with our imaginations, but the <em>imagery</em> - it was incredible! I could literally feel everything he was saying and could clearly see everything in my mind&#039;s eye.<br />
+<br />
+Anyways, I think this could be a really good tool for helping some people realize their psychic potential, because of the relaxed state of mind and the power suggestion has on you. Basically, you can focus the entirety of your attention on a single thing or task, which would help a lot of people. Any thoughts? <br />
+<br />
+Has anyone else ever been hypnotized? For anyone who doesn&#039;t know much about it, I suggest they skim over <a href="http://en.wikipedia.org/wiki/Hypnosis" target="_blank" title="http://en.wikipedia.org/wiki/Hypnosis">this</a>, since hypnosis has become one of those things hyped up to the point you don&#039;t know what to believe.</div>
+		<textarea style="display: none;" id="desctxt_16052">The other day at school in psychology class we had the opportunity to be hypnotized via a speaker on a cassette tape. I decided to go ahead and try it, as did the rest of the class.
+
+It was amazing. I don&#039;t even think I can explain what it was like. We started out by sitting or lying down on the floor, and the tape walked us through the procedures of relaxing ourselves until he began telling us what to do. He pretty much just gave us several scenarios in which we had to fill in missing details with our imaginations, but the [i]imagery[/i] - it was incredible! I could literally feel everything he was saying and could clearly see everything in my mind&#039;s eye.
+
+Anyways, I think this could be a really good tool for helping some people realize their psychic potential, because of the relaxed state of mind and the power suggestion has on you. Basically, you can focus the entirety of your attention on a single thing or task, which would help a lot of people. Any thoughts? 
+
+Has anyone else ever been hypnotized? For anyone who doesn&#039;t know much about it, I suggest they skim over [url=http://en.wikipedia.org/wiki/Hypnosis]this[/url], since hypnosis has become one of those things hyped up to the point you don&#039;t know what to believe.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">SL</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_16053" style="width: 100%; overflow: auto; min-height: 125px;">I have no personal experience with it, although my husband has tried for years: are you going to do the dishes now, or later? lol (just kidding).<br />
+<br />
+Milton H. Erickson was an amazing hypnotist:  <a href="http://en.wikipedia.org/wiki/Milton_H._Erickson." target="_blank">http://en.wikipedia.org/wiki/Milton_H._Erickson.</a><br />
+There are a bunch of videos on youtube that you might like.</div>
+		<textarea style="display: none;" id="desctxt_16053">I have no personal experience with it, although my husband has tried for years: are you going to do the dishes now, or later? lol (just kidding).
+
+Milton H. Erickson was an amazing hypnotist: http://en.wikipedia.org/wiki/Milton_H._Erickson.
+There are a bunch of videos on youtube that you might like.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by SL, 3 years ago<br />Posted 3 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">savemydonkey</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=1026&amp;ref=1256280257" width="125" height="118" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_16054" style="width: 100%; overflow: auto; min-height: 125px;">A friend of my mother&#039;s went to a very expensive hypnotist to experiment with hypnotism and recall any possible repressed memories she had.  During the session, she recalled her father molesting her and so after the session, highly agitated, she confronted him about it.  However, he told her it had never happened.  When she explained the situational context in which it had occured, her father and mother both were able to account for it not even being possible, due to the father being at work.  When this evidence was shown to her, she confirmed that her father was indeed at work and that it was indeed impossible, however even though she could confirm such things logically, the &quot;memory&quot; which she had formed while under hypnosis was so vivid that she struggled to emotionally be the same with her father - she couldn&#039;t even hug him anymore because when she did, she thought about the fake memory of her father molesting her.  <br />
+<br />
+Hypnosis is a very powerful, very dangerous thing guys.  You&#039;re going to want to be careful when playing with it.  <br />
+<br />
+(It should be noted that this is only one situation; hypnotism happens all the time safely without these kinds of results.  In fact, there is a hypnotism program to help people stop smoking that actually works; my friend used it and hasn&#039;t had even the desire to smoke a cirgarette since.  Just be careful when you play with it!)</div>
+		<textarea style="display: none;" id="desctxt_16054">A friend of my mother&#039;s went to a very expensive hypnotist to experiment with hypnotism and recall any possible repressed memories she had.  During the session, she recalled her father molesting her and so after the session, highly agitated, she confronted him about it.  However, he told her it had never happened.  When she explained the situational context in which it had occured, her father and mother both were able to account for it not even being possible, due to the father being at work.  When this evidence was shown to her, she confirmed that her father was indeed at work and that it was indeed impossible, however even though she could confirm such things logically, the &quot;memory&quot; which she had formed while under hypnosis was so vivid that she struggled to emotionally be the same with her father - she couldn&#039;t even hug him anymore because when she did, she thought about the fake memory of her father molesting her.  
+
+Hypnosis is a very powerful, very dangerous thing guys.  You&#039;re going to want to be careful when playing with it.  
+
+(It should be noted that this is only one situation; hypnotism happens all the time safely without these kinds of results.  In fact, there is a hypnotism program to help people stop smoking that actually works; my friend used it and hasn&#039;t had even the desire to smoke a cirgarette since.  Just be careful when you play with it!)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Insectoid</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=1010&amp;ref=1251218696" width="50" height="50" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_16056" style="width: 100%; overflow: auto; min-height: 125px;">Hypnotism really relies on the person being hypnotized, too. People can only be hypnotized if they want to be, and even then the effects are only as strong as the person lets them be. <br />
+<br />
+In the situation you described, this could have only really happened if the person thought the situation up on her own (barring the possibility of it being true, which it obviously isn&#039;t) There were probably several psychological factors involved in the falsification of memories, but in any case, it could not have been the hypnotist&#039;s fault either. <br />
+<br />
+It&#039;s not really as dangerous as you&#039;re saying, though. Even though you are very open to suggestion during hypnosis, you still have plenty of self-control. The effects are only as strong as you let them be - this is why hypnosis is effective for smokers who really do want to quit (though this may also invoke the placebo effect to some extent). Anyways, you still retain your consciousness and self-awareness when you&#039;re hypnotized, you just don&#039;t pay as much attention to them.</div>
+		<textarea style="display: none;" id="desctxt_16056">Hypnotism really relies on the person being hypnotized, too. People can only be hypnotized if they want to be, and even then the effects are only as strong as the person lets them be. 
+
+In the situation you described, this could have only really happened if the person thought the situation up on her own (barring the possibility of it being true, which it obviously isn&#039;t) There were probably several psychological factors involved in the falsification of memories, but in any case, it could not have been the hypnotist&#039;s fault either. 
+
+It&#039;s not really as dangerous as you&#039;re saying, though. Even though you are very open to suggestion during hypnosis, you still have plenty of self-control. The effects are only as strong as you let them be - this is why hypnosis is effective for smokers who really do want to quit (though this may also invoke the placebo effect to some extent). Anyways, you still retain your consciousness and self-awareness when you&#039;re hypnotized, you just don&#039;t pay as much attention to them.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">savemydonkey</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=1026&amp;ref=1256280257" width="125" height="118" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_16061" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Insectoid:</em><br />
+     Hypnotism really relies on the person being hypnotized, too. People can only be hypnotized if they want to be, and even then the effects are only as strong as the person lets them be. <br />
+<br />
+     In the situation you described, this could have only really happened if the person thought the situation up on her own (barring the possibility of it being true, which it obviously isn&#039;t) There were probably several psychological factors involved in the falsification of memories, but in any case, it could not have been the hypnotist&#039;s fault either. <br />
+<br />
+     It&#039;s not really as dangerous as you&#039;re saying, though. Even though you are very open to suggestion during hypnosis, you still have plenty of self-control. The effects are only as strong as you let them be - this is why hypnosis is effective for smokers who really do want to quit (though this may also invoke the placebo effect to some extent). Anyways, you still retain your consciousness and self-awareness when you&#039;re hypnotized, you just don&#039;t pay as much attention to them.</div>Hey buddy, you&#039;re completely right, hypnotism doesn&#039;t have to be dangerous at all :D Like I said, it was only one situation out of the many safe hypnotism sessions that have taken place over the years, right?  I must also second your statement &quot;[h]ypnotism really relies on the person being hypnotized,&quot; because I completely agree, however I would also agree that this is where the danger lies, wouldn&#039;t it?  It is similar to the way a scary movie has different effects on people; take &quot;Paranormal Activity&quot; for example. Everyone walks into that movie knowing just what it is: a movie.  Some of those people can get into the movie and become really scared; in some cases, so much so that they might not be able to sleep soundly for days.  Others, however, might not be as scared during or after the movie, and still others might not even have been able to get into the movie enough to get scared at all.  <br />
+     However, you are right about hypnotism, and applying it to this situation, we all walk into the movie with our previously acquired psychological traits and mindsets, and we all have the potential (for the most part) not to get scared of the movie, just as before a hypnotism session we have the potential to have full self-control.  At the same time though, we know there will be people that will be scared despite their ability not to get scared, be it that they come into the movie wanting to get scared, or just because they were forced to.  The main point I want to bring up from that example is that although almost everyone has the self-control potential, not everyone realizes it, right? <br />
+Being that anyone could come upon the information in this forum, although I&#039;m not trying to be adversarial to anything you&#039;re saying, and I&#039;m most certainly not trying to say hypnotism as a whole is unsafe, I just want to make sure that our happy readers are informed :)<br />
+<br />
+Even Advil, a simple anti-inflammatory/headache medicine, has it&#039;s warning label ;)</div>
+		<textarea style="display: none;" id="desctxt_16061">[quote][i]posted by Insectoid:[/i]
+     Hypnotism really relies on the person being hypnotized, too. People can only be hypnotized if they want to be, and even then the effects are only as strong as the person lets them be. 
+
+     In the situation you described, this could have only really happened if the person thought the situation up on her own (barring the possibility of it being true, which it obviously isn&#039;t) There were probably several psychological factors involved in the falsification of memories, but in any case, it could not have been the hypnotist&#039;s fault either. 
+
+     It&#039;s not really as dangerous as you&#039;re saying, though. Even though you are very open to suggestion during hypnosis, you still have plenty of self-control. The effects are only as strong as you let them be - this is why hypnosis is effective for smokers who really do want to quit (though this may also invoke the placebo effect to some extent). Anyways, you still retain your consciousness and self-awareness when you&#039;re hypnotized, you just don&#039;t pay as much attention to them.[/quote]
+
+Hey buddy, you&#039;re completely right, hypnotism doesn&#039;t have to be dangerous at all :D Like I said, it was only one situation out of the many safe hypnotism sessions that have taken place over the years, right?  I must also second your statement &quot;[h]ypnotism really relies on the person being hypnotized,&quot; because I completely agree, however I would also agree that this is where the danger lies, wouldn&#039;t it?  It is similar to the way a scary movie has different effects on people; take &quot;Paranormal Activity&quot; for example. Everyone walks into that movie knowing just what it is: a movie.  Some of those people can get into the movie and become really scared; in some cases, so much so that they might not be able to sleep soundly for days.  Others, however, might not be as scared during or after the movie, and still others might not even have been able to get into the movie enough to get scared at all.  
+     However, you are right about hypnotism, and applying it to this situation, we all walk into the movie with our previously acquired psychological traits and mindsets, and we all have the potential (for the most part) not to get scared of the movie, just as before a hypnotism session we have the potential to have full self-control.  At the same time though, we know there will be people that will be scared despite their ability not to get scared, be it that they come into the movie wanting to get scared, or just because they were forced to.  The main point I want to bring up from that example is that although almost everyone has the self-control potential, not everyone realizes it, right? 
+Being that anyone could come upon the information in this forum, although I&#039;m not trying to be adversarial to anything you&#039;re saying, and I&#039;m most certainly not trying to say hypnotism as a whole is unsafe, I just want to make sure that our happy readers are informed :)
+
+Even Advil, a simple anti-inflammatory/headache medicine, has it&#039;s warning label ;)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Insectoid</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=1010&amp;ref=1251218696" width="50" height="50" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_16433" style="width: 100%; overflow: auto; min-height: 125px;">I don&#039;t mean to revive a dead topic, but I thought that some people may enjoy listening to <a href="http://gawain.membrane.com/hypnosis/freehypnosis2.html" target="_blank" title="http://gawain.membrane.com/hypnosis/freehypnosis2.html">this clip</a> I found online.<br />
+<br />
+When I listened to it, I think I fell asleep or something sometime in the middle (it&#039;s pretty late at night right now), since I lost most of my perception, but then I woke up when I felt a surge of energy go through my whole body, which I assumed was my subconscious reacting to what he had been saying. (When I listened to it again without trying to be hypnotized, this did correlate to something mentioned) For me, someone who isn&#039;t that good at perceiving and manipulating energy, it was pretty cool.<br />
+<br />
+In any case, I&#039;d like to hear what other people have to say about hypnosis. I don&#039;t necessarily agree with the website it was hosted on (they <em>are</em> trying to make money off of this, after all), but I still think hypnosis could be a powerful learning tool. Tell me what you think.</div>
+		<textarea style="display: none;" id="desctxt_16433">I don&#039;t mean to revive a dead topic, but I thought that some people may enjoy listening to [url=
+http://gawain.membrane.com/hypnosis/freehypnosis2.html]this clip[/url] I found online.
+
+When I listened to it, I think I fell asleep or something sometime in the middle (it&#039;s pretty late at night right now), since I lost most of my perception, but then I woke up when I felt a surge of energy go through my whole body, which I assumed was my subconscious reacting to what he had been saying. (When I listened to it again without trying to be hypnotized, this did correlate to something mentioned) For me, someone who isn&#039;t that good at perceiving and manipulating energy, it was pretty cool.
+
+In any case, I&#039;d like to hear what other people have to say about hypnosis. I don&#039;t necessarily agree with the website it was hosted on (they [i]are[/i] trying to make money off of this, after all), but I still think hypnosis could be a powerful learning tool. Tell me what you think.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 2 years, 9 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=886" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 22 queries. 0.271 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

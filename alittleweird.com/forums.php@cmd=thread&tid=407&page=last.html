@@ -1,0 +1,563 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Truth within Lies.</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Truth within Lies.</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Truth within Lies.</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_8993" style="width: 100%; overflow: auto; min-height: 125px;">I am Currently studying Sumerian and enochian ties to psionics today, all in all, I&#039;m trying to figure out how the oldest known language has affected the history of Psionics, and the goals of those trying to publicise this information and bring it back into circulation.<br />
+<br />
+Letely I have focused on the Necronomicon and The John Dee Publication Project, Which is yeilding... interesting results.<br />
+<br />
+I want to know if anyone could help me out in the subject, any experiances with anything. The odd paranormal events that have happened in your life, ecspecially those involving items with a taboo sense to them like the Necronomicon and Ouija Boards.</div>
+		<textarea style="display: none;" id="desctxt_8993">I am Currently studying Sumerian and enochian ties to psionics today, all in all, I&#039;m trying to figure out how the oldest known language has affected the history of Psionics, and the goals of those trying to publicise this information and bring it back into circulation.
+
+Letely I have focused on the Necronomicon and The John Dee Publication Project, Which is yeilding... interesting results.
+
+I want to know if anyone could help me out in the subject, any experiances with anything. The odd paranormal events that have happened in your life, ecspecially those involving items with a taboo sense to them like the Necronomicon and Ouija Boards.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Akio, 4 years, 6 months ago<br />Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Jusseppe</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=247&amp;ref=1212293499" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_8997" style="width: 100%; overflow: auto; min-height: 125px;">I wouldn&#039;t pay much attention on the Necronomicon since it&#039;s a fictional book based on the one described in H. P. Lovecraft&#039;s novels. It does contain some Mesopotamian mythology, but I wouldn&#039;t think of it as a very serious reference book.</div>
+		<textarea style="display: none;" id="desctxt_8997">I wouldn&#039;t pay much attention on the Necronomicon since it&#039;s a fictional book based on the one described in H. P. Lovecraft&#039;s novels. It does contain some Mesopotamian mythology, but I wouldn&#039;t think of it as a very serious reference book.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Jusseppe, 4 years, 6 months ago<br />Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9025" style="width: 100%; overflow: auto; min-height: 125px;">True. The only interesting part about the book is H.P. Lovecraft never wrote the book, neither did he publish it. If you look on the published work, There is a man that is only known as &quot;Simon&quot;. Interestingly enough, This person in question has ties to the church of satan, which has also published books such as &quot;grimoire for the Green Witch&quot; and many other ritualistic books of Magick.<br />
+<br />
+The Title for the book came to Lovecraft in a dream, possibly more too? Anyone who looks at this from a Psions veiw point can understand the possibilities that lie in dreams. The oddest part about it is that The Necronomicon is not only based on Sumerian Mythology (not mesopotamian), but also History. <br />
+<br />
+The Reason why I titled this Truth within lies is because the experiences we encounter with Ouija boards and the necronomicon are just that. They have significant hiden truths which make them entising, but hide it within a torrent of Lies and Deciet in order to turn you. That&#039;s why Ouija boards, the Necronomicon, heck, even the Lord of the Rings series is so popular. <br />
+<br />
+I am not using it as a reference book, rather, I&#039;m using reference books in order to pull out the truth from the book, and therefore get a better Idea of the Intent of The Necronomicon.<br />
+<br />
+In truth, my ultimate goal is to figure out the whole occult side of WWII and then write a book on all of the information I have gathered over time.</div>
+		<textarea style="display: none;" id="desctxt_9025">True. The only interesting part about the book is H.P. Lovecraft never wrote the book, neither did he publish it. If you look on the published work, There is a man that is only known as &quot;Simon&quot;. Interestingly enough, This person in question has ties to the church of satan, which has also published books such as &quot;grimoire for the Green Witch&quot; and many other ritualistic books of Magick.
+
+The Title for the book came to Lovecraft in a dream, possibly more too? Anyone who looks at this from a Psions veiw point can understand the possibilities that lie in dreams. The oddest part about it is that The Necronomicon is not only based on Sumerian Mythology (not mesopotamian), but also History. 
+
+The Reason why I titled this Truth within lies is because the experiences we encounter with Ouija boards and the necronomicon are just that. They have significant hiden truths which make them entising, but hide it within a torrent of Lies and Deciet in order to turn you. That&#039;s why Ouija boards, the Necronomicon, heck, even the Lord of the Rings series is so popular. 
+
+I am not using it as a reference book, rather, I&#039;m using reference books in order to pull out the truth from the book, and therefore get a better Idea of the Intent of The Necronomicon.
+
+In truth, my ultimate goal is to figure out the whole occult side of WWII and then write a book on all of the information I have gathered over time.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">joke-lain</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=517&amp;ref=1210639719" width="103" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9040" style="width: 100%; overflow: auto; min-height: 125px;">&quot;They have significant hiden truths which make them entising, but hide it within a torrent of Lies and Deciet in order to turn you. That&#039;s why Ouija boards, the Necronomicon, heck, even the Lord of the Rings series is so popular.&quot;<br />
+<br />
+Weird. How does hiding truth within lies <br />
+</div>
+		<textarea style="display: none;" id="desctxt_9040">&quot;They have significant hiden truths which make them entising, but hide it within a torrent of Lies and Deciet in order to turn you. That&#039;s why Ouija boards, the Necronomicon, heck, even the Lord of the Rings series is so popular.&quot;
+
+Weird. How does hiding truth within lies</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9045" style="width: 100%; overflow: auto; min-height: 125px;">I&#039;m afraid you&#039;ve lost me Lain... Were you going to ask a question?</div>
+		<textarea style="display: none;" id="desctxt_9045">I&#039;m afraid you&#039;ve lost me Lain... Were you going to ask a question?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Jusseppe</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=247&amp;ref=1212293499" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9060" style="width: 100%; overflow: auto; min-height: 125px;">Well that&#039;s pretty interesting, I hadn&#039;t quite understood what you were up to. Are you going to post some of your findings at some point?<br />
+<br />
+&quot;The oddest part about it is that The Necronomicon is not only based on Sumerian Mythology (not mesopotamian), but also History.&quot;<br />
+<br />
+Both Sumerian and Mesopotamian are correct, since Mesopotamia is a geographical region where Sumer was located, and the book also contains some Akkadian, Assyrian and Babylonian mythology, so I thought I&#039;d use Mesopotamian instead of Sumerian.</div>
+		<textarea style="display: none;" id="desctxt_9060">Well that&#039;s pretty interesting, I hadn&#039;t quite understood what you were up to. Are you going to post some of your findings at some point?
+
+&quot;The oddest part about it is that The Necronomicon is not only based on Sumerian Mythology (not mesopotamian), but also History.&quot;
+
+Both Sumerian and Mesopotamian are correct, since Mesopotamia is a geographical region where Sumer was located, and the book also contains some Akkadian, Assyrian and Babylonian mythology, so I thought I&#039;d use Mesopotamian instead of Sumerian.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9067" style="width: 100%; overflow: auto; min-height: 125px;">Hmm, thanks for the Clarification.<br />
+<br />
+I think the best way to explain my finding so far is to post a few links. I&#039;ll note certain ones for their relevance, what I found on the page, and info of the like. Then I will post the noted I&#039;ve made that discribe connections between texts.<br />
+<br />
+The main thing that has been stopping me is that I am lacking information to make a complete statement. I will try as best as possible however to display the information I have gathered so far.<br />
+<br />
+This is a pretty extensive list, it includes many pages that I use for modern symbolism, alchemy, masonry, etc. There are many of these in order to gain a less biased description of each symbol. This helps me learn the full adaptation of the information from past to future.<br />
+<br />
+Now, for the links;<br />
+<br />
+ <a href="http://www.digital-brilliance.com/necron/necron.htm" target="_blank">http://www.digital-brilliance.com/necron/necron.htm</a> - This is FAQ of the Necronomicon from the standpoint of a believer. There are many lies in the texts, many things that aren’t trustworthy and are noted so. However; I have found key details here that piqued my interest. Remember, in the best lies there are always hidden truths to them, you just have to root them out. In other words, the best liar is the one who tells half truths. In here I got the idea to look for the history that the Necronomicon is referring to.<br />
+<br />
+ <a href="http://jcolavito.tripod.com/lostcivilizations/id25.html" target="_blank">http://jcolavito.tripod.com/lostcivilizations/id25.html</a> - Here is where I found the actual history of the Necronomicon, which seems to be more based around the biography of H.P. Lovecraft. It also points to the first references to “Simon” who published the copy of the Necronomicon we can find in most bookstores. This is the person I’m interested in, I want to know what his purpose for publishing such a book would be. I have some theories, none of them good. The oddest part Simons copy of the Necronomicon is that is doesn’t add up to Lovecraft’s style, which leads me to believe that something just isn’t right about Simons Necronomicon.<br />
+<br />
+ <a href="http://www.jesus-is-savior.com/False%20Religions/Wicca%20&amp;%20Witchcraft/occult_signs_and_symbols.htm" target="_blank">http://www.jesus-is-savior.com/False%20Religions/Wicca%20&amp;%20Witchcraft/occult_signs_and_symbols.htm</a> - This is a Really biased list of occult symbolism that I use to get a cristian grasp of these ideas,  It’s my comic relief...<br />
+<br />
+ <a href="http://www.realmagick.com/" target="_blank">http://www.realmagick.com/</a> - This is a Library of information that I use for the base of most of my studies. If I find something interesting here, I then expand on it by gathering more information from other websites; this is just a small reference for me.<br />
+<br />
+ <a href="http://www.the-night.net/pagan/pagansymbols.htm" target="_blank">http://www.the-night.net/pagan/pagansymbols.htm</a> -  Pagan &amp; Alchemic Symbolism <br />
+<br />
+ <a href="http://www.sacred-texts.com/eso/sta/sta37.htm" target="_blank">http://www.sacred-texts.com/eso/sta/sta37.htm</a> - This is The Theory and Practice of Alchemy, something that has interested me since I was young. This is the Description of both the earthly form of Alchemy (chemistry) and the Spiritual aspects of it.<br />
+<br />
+ <a href="http://www.rsc.org/chemsoc/visualelements//pages/alchemist/alchemy.html" target="_blank">http://www.rsc.org/chemsoc/visualelements//pages/alchemist/alchemy.html</a> - More common Symbols in Alchemy.<br />
+<br />
+ <a href="http://www.goldentreewands.com/symbolmagic.htm" target="_blank">http://www.goldentreewands.com/symbolmagic.htm</a> - Even More Symbols of Alchemy<br />
+<br />
+ <a href="http://www.spelwerx.com/rarebooks.html" target="_blank">http://www.spelwerx.com/rarebooks.html</a> - This is where I started to become interested in Enochian Magicks and the John Dee Publication Project, the only special part about this is that is sells Many Spell books of questionable origins. That and The Sigilum Dei Aemeth used in Enochian Magicks to Align the caster’s energy to the Heptarchic energy that is required.<br />
+<br />
+ <a href="http://www.docstoc.com/docs/24332/Rowe_-Benjamin---Enochian-Magick-Reference" target="_blank">http://www.docstoc.com/docs/24332/Rowe_-Benjamin---Enochian-Magick-Reference</a> - This is the first bit of study I did on the Enochan Magick. It seems enticing, but there is too much room for… corruption.<br />
+<br />
+ <a href="http://www.yoga-age.com/modern/philosophy/phylosophy16.html" target="_blank">http://www.yoga-age.com/modern/philosophy/phylosophy16.html</a> - This is a break I took from my usual studies in which I broke off into Yoga, just something to separate myself from the usual.<br />
+<br />
+ <a href="http://psychicvampirism.com/" target="_blank">http://psychicvampirism.com/</a> - I took the time here to gather some information on Psychic Vampirism, I had this information before, but I needed to put it back in my favorites, It may have some usefulness.<br />
+<br />
+ <a href="http://psychicvampire.org/index.htm" target="_blank">http://psychicvampire.org/index.htm</a><br />
+ <a href="http://en.wikipedia.org/wiki/Energy_vampire" target="_blank">http://en.wikipedia.org/wiki/Energy_vampire</a> - Same as above<br />
+<br />
+ <a href="http://www.pickle-publishing.com/papers/prophecy/seven-heads.htm" target="_blank">http://www.pickle-publishing.com/papers/prophecy/seven-heads.htm</a> - Here I have returned to my studies of Heptarchic magicks, I wanted to learn a little more on the seven kings they were meaning.<br />
+<br />
+ <a href="http://en.wikipedia.org/wiki/Fallen_angel" target="_blank">http://en.wikipedia.org/wiki/Fallen_angel</a>#Fallen_angels_by_rank – continued looking for the Heptarchy (sp?) they were talking about in Enochian Magicks.<br />
+<br />
+ <a href="http://en.wikipedia.org/wiki/Runic_alphabet" target="_blank">http://en.wikipedia.org/wiki/Runic_alphabet</a> - just a side Study I got into, This may be something I start studying more to tie up my study of occult history, but as of now this is just a small section of my studies.<br />
+<br />
+ <a href="http://van.physics.uiuc.edu/qa/listing.php?id=1363" target="_blank">http://van.physics.uiuc.edu/qa/listing.php?id=1363</a> – I was wondering about current theories on how energy becomes matter, since matter becomes energy on a day to day basis (see Black holes)<br />
+<br />
+ <a href="http://www.geocities.com/digital3v14/texts/sumerdic.htm" target="_blank">http://www.geocities.com/digital3v14/texts/sumerdic.htm</a> - this is Recent. I started Delving into the actual Sumerian Language here. I wanted to see what kind of accuracy the Necronomicon had to the Sumerian language. i.e. If certain words seen in the Necronomicon actually meant those words.<br />
+<br />
+ <a href="http://www.ping.de/sites/systemcoder/necro/info/sumerian.htm" target="_blank">http://www.ping.de/sites/systemcoder/necro/info/sumerian.htm</a> - this is Sumerian drawn strait from the Necronomicon… not the best reference, but a required one for me to make.<br />
+<br />
+ <a href="http://home.comcast.net/" target="_blank">http://home.comcast.net/</a>~chris.s/assyrbabyl-faq.html - Something I am currently reading and something that is helping me understand the connection between Sumer and Babylonia, This is very interesting and I need to read further here.<br />
+<br />
+ <a href="http://www.jameswbell.com/geog005sumeriangods.html" target="_blank">http://www.jameswbell.com/geog005sumeriangods.html</a> - This is a list of Gods, Demons, and other Immortals of Sumer, it has some historic references that yield some basis for where “Simon” got his information<br />
+<br />
+ <a href="http://www.maybelogic.org/maybequarterly/06/0609RoyalBookbinding.htm" target="_blank">http://www.maybelogic.org/maybequarterly/06/0609RoyalBookbinding.htm</a> - Here is something I found interesting during my studies, it may yield results but It requires further study. This doesn’t seem to be very connected, but it may yet.<br />
+<br />
+<br />
+I’ll give everyone else a chance to reply before I continue on, I will let people look up these topics freely, as I would encourage the spread of knowledge.<br />
+<br />
+As for conclusions, I have none at this point, I’m still studying, I’m up for any questions, but I have nothing concrete to offer along the whole study. If I find anything useful, I will post it.<br />
+<br />
+One other thing, the thing that made me start this post. If you look in Section M in the Sumerian Mythology, and then look up Marduk (one of the 50 names mentioned in Simons Necronomicon) which shows a historic reference that runs parallel to the story contained within the Necronomicon.<br />
+<br />
+Put Simply, I’m running out of trails, and I was wondering if anyone could help ^_^<br />
+<br />
+</div>
+		<textarea style="display: none;" id="desctxt_9067">Hmm, thanks for the Clarification.
+
+I think the best way to explain my finding so far is to post a few links. I&#039;ll note certain ones for their relevance, what I found on the page, and info of the like. Then I will post the noted I&#039;ve made that discribe connections between texts.
+
+The main thing that has been stopping me is that I am lacking information to make a complete statement. I will try as best as possible however to display the information I have gathered so far.
+
+This is a pretty extensive list, it includes many pages that I use for modern symbolism, alchemy, masonry, etc. There are many of these in order to gain a less biased description of each symbol. This helps me learn the full adaptation of the information from past to future.
+
+Now, for the links;
+
+http://www.digital-brilliance.com/necron/necron.htm - This is FAQ of the Necronomicon from the standpoint of a believer. There are many lies in the texts, many things that aren’t trustworthy and are noted so. However; I have found key details here that piqued my interest. Remember, in the best lies there are always hidden truths to them, you just have to root them out. In other words, the best liar is the one who tells half truths. In here I got the idea to look for the history that the Necronomicon is referring to.
+
+http://jcolavito.tripod.com/lostcivilizations/id25.html - Here is where I found the actual history of the Necronomicon, which seems to be more based around the biography of H.P. Lovecraft. It also points to the first references to “Simon” who published the copy of the Necronomicon we can find in most bookstores. This is the person I’m interested in, I want to know what his purpose for publishing such a book would be. I have some theories, none of them good. The oddest part Simons copy of the Necronomicon is that is doesn’t add up to Lovecraft’s style, which leads me to believe that something just isn’t right about Simons Necronomicon.
+
+http://www.jesus-is-savior.com/False%20Religions/Wicca%20&amp;%20Witchcraft/occult_signs_and_symbols.htm - This is a Really biased list of occult symbolism that I use to get a cristian grasp of these ideas,  It’s my comic relief...
+
+http://www.realmagick.com/ - This is a Library of information that I use for the base of most of my studies. If I find something interesting here, I then expand on it by gathering more information from other websites; this is just a small reference for me.
+
+http://www.the-night.net/pagan/pagansymbols.htm -  Pagan &amp; Alchemic Symbolism 
+
+http://www.sacred-texts.com/eso/sta/sta37.htm - This is The Theory and Practice of Alchemy, something that has interested me since I was young. This is the Description of both the earthly form of Alchemy (chemistry) and the Spiritual aspects of it.
+
+http://www.rsc.org/chemsoc/visualelements//pages/alchemist/alchemy.html - More common Symbols in Alchemy.
+
+http://www.goldentreewands.com/symbolmagic.htm - Even More Symbols of Alchemy
+
+http://www.spelwerx.com/rarebooks.html - This is where I started to become interested in Enochian Magicks and the John Dee Publication Project, the only special part about this is that is sells Many Spell books of questionable origins. That and The Sigilum Dei Aemeth used in Enochian Magicks to Align the caster’s energy to the Heptarchic energy that is required.
+
+http://www.docstoc.com/docs/24332/Rowe_-Benjamin---Enochian-Magick-Reference - This is the first bit of study I did on the Enochan Magick. It seems enticing, but there is too much room for… corruption.
+
+http://www.yoga-age.com/modern/philosophy/phylosophy16.html - This is a break I took from my usual studies in which I broke off into Yoga, just something to separate myself from the usual.
+
+http://psychicvampirism.com/ - I took the time here to gather some information on Psychic Vampirism, I had this information before, but I needed to put it back in my favorites, It may have some usefulness.
+
+http://psychicvampire.org/index.htm
+http://en.wikipedia.org/wiki/Energy_vampire - Same as above
+
+http://www.pickle-publishing.com/papers/prophecy/seven-heads.htm - Here I have returned to my studies of Heptarchic magicks, I wanted to learn a little more on the seven kings they were meaning.
+
+http://en.wikipedia.org/wiki/Fallen_angel#Fallen_angels_by_rank – continued looking for the Heptarchy (sp?) they were talking about in Enochian Magicks.
+
+http://en.wikipedia.org/wiki/Runic_alphabet - just a side Study I got into, This may be something I start studying more to tie up my study of occult history, but as of now this is just a small section of my studies.
+
+http://van.physics.uiuc.edu/qa/listing.php?id=1363 – I was wondering about current theories on how energy becomes matter, since matter becomes energy on a day to day basis (see Black holes)
+
+http://www.geocities.com/digital3v14/texts/sumerdic.htm - this is Recent. I started Delving into the actual Sumerian Language here. I wanted to see what kind of accuracy the Necronomicon had to the Sumerian language. i.e. If certain words seen in the Necronomicon actually meant those words.
+
+http://www.ping.de/sites/systemcoder/necro/info/sumerian.htm - this is Sumerian drawn strait from the Necronomicon… not the best reference, but a required one for me to make.
+
+http://home.comcast.net/~chris.s/assyrbabyl-faq.html - Something I am currently reading and something that is helping me understand the connection between Sumer and Babylonia, This is very interesting and I need to read further here.
+
+http://www.jameswbell.com/geog005sumeriangods.html - This is a list of Gods, Demons, and other Immortals of Sumer, it has some historic references that yield some basis for where “Simon” got his information
+
+http://www.maybelogic.org/maybequarterly/06/0609RoyalBookbinding.htm - Here is something I found interesting during my studies, it may yield results but It requires further study. This doesn’t seem to be very connected, but it may yet.
+
+
+I’ll give everyone else a chance to reply before I continue on, I will let people look up these topics freely, as I would encourage the spread of knowledge.
+
+As for conclusions, I have none at this point, I’m still studying, I’m up for any questions, but I have nothing concrete to offer along the whole study. If I find anything useful, I will post it.
+
+One other thing, the thing that made me start this post. If you look in Section M in the Sumerian Mythology, and then look up Marduk (one of the 50 names mentioned in Simons Necronomicon) which shows a historic reference that runs parallel to the story contained within the Necronomicon.
+
+Put Simply, I’m running out of trails, and I was wondering if anyone could help ^_^</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">daslickest</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=565&amp;ref=1214163153" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9316" style="width: 100%; overflow: auto; min-height: 125px;">joke-lain dude the Lord Of The Rings is true. Did you read the books? The hobbits hide from us when they hear us coming man because were very noisy. tsk tsk tsk you should know the lord of the rings is really a history book that the government is covering up calling it fiction.</div>
+		<textarea style="display: none;" id="desctxt_9316">joke-lain dude the Lord Of The Rings is true. Did you read the books? The hobbits hide from us when they hear us coming man because were very noisy. tsk tsk tsk you should know the lord of the rings is really a history book that the government is covering up calling it fiction.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9340" style="width: 100%; overflow: auto; min-height: 125px;">The Lord of the Rings is based on Nazi Germany and overall, WWII.<br />
+<br />
+They call it a fiction because he used this base story in order to create a word of fiction with an epic plot to it, and the reason why it&#039;s Enticing (sp?) is because we can relate it to WWII history.</div>
+		<textarea style="display: none;" id="desctxt_9340">The Lord of the Rings is based on Nazi Germany and overall, WWII.
+
+They call it a fiction because he used this base story in order to create a word of fiction with an epic plot to it, and the reason why it&#039;s Enticing (sp?) is because we can relate it to WWII history.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Intense</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=547&amp;ref=1213758491" width="100" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9360" style="width: 100%; overflow: auto; min-height: 125px;">i hate the lord of the rings, the third book is the first book i that i got soo bored reading i just gave up. and i love to read. =/</div>
+		<textarea style="display: none;" id="desctxt_9360">i hate the lord of the rings, the third book is the first book i that i got soo bored reading i just gave up. and i love to read. =/</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Jusseppe</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=247&amp;ref=1212293499" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9361" style="width: 100%; overflow: auto; min-height: 125px;">&quot;The Lord of the Rings is based on Nazi Germany and overall, WWII.&quot;<br />
+<br />
+Well, some people compare Sauron to Hitler and Mordor to the Nazi Germany. But I&#039;ve read from quite a few places (although I couldn&#039;t find the actual quote) Tolkien said it was not based on WWII (or WWI, in which he served).</div>
+		<textarea style="display: none;" id="desctxt_9361">&quot;The Lord of the Rings is based on Nazi Germany and overall, WWII.&quot;
+
+Well, some people compare Sauron to Hitler and Mordor to the Nazi Germany. But I&#039;ve read from quite a few places (although I couldn&#039;t find the actual quote) Tolkien said it was not based on WWII (or WWI, in which he served).</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9375" style="width: 100%; overflow: auto; min-height: 125px;">Not really WWII, but WWII as a whole... I&#039;m sorry I forgot to clarify.</div>
+		<textarea style="display: none;" id="desctxt_9375">Not really WWII, but WWII as a whole... I&#039;m sorry I forgot to clarify.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">daslickest</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=565&amp;ref=1214163153" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9465" style="width: 100%; overflow: auto; min-height: 125px;">Man LOTR is the greatest original fantasy world ever! couse its great fantasy not because some stupid WWII. Tom Bombadil!! lol Hey Intense you gave up on LOTR but try out Eragon and Eldest (the second book to Eragon) great fantasy book.</div>
+		<textarea style="display: none;" id="desctxt_9465">Man LOTR is the greatest original fantasy world ever! couse its great fantasy not because some stupid WWII. Tom Bombadil!! lol Hey Intense you gave up on LOTR but try out Eragon and Eldest (the second book to Eragon) great fantasy book.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Jusseppe</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=247&amp;ref=1212293499" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9471" style="width: 100%; overflow: auto; min-height: 125px;">&quot;Not really WWII, but WWII as a whole... I&#039;m sorry I forgot to clarify.&quot;<br />
+I&#039;m sorry, I didn&#039;t really get that =p.<br />
+<br />
+What I meant is: Tolkien said LOTR isn&#039;t based or influenced by any WW (although I&#039;m sure his experience in WWI had some influence in it somehow).</div>
+		<textarea style="display: none;" id="desctxt_9471">&quot;Not really WWII, but WWII as a whole... I&#039;m sorry I forgot to clarify.&quot;
+I&#039;m sorry, I didn&#039;t really get that =p.
+
+What I meant is: Tolkien said LOTR isn&#039;t based or influenced by any WW (although I&#039;m sure his experience in WWI had some influence in it somehow).</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9524" style="width: 100%; overflow: auto; min-height: 125px;">-_-... I fail...<br />
+<br />
+<br />
+I meant that the major influences at the time that J.R.R Tolkien were influenced by WWII, and WWI for that matter. <br />
+<br />
+If you look at the designs of his races, Map designs, Sauron, and many of the battles, you can see relations to WWI and WWII in the text.<br />
+<br />
+Although I wouldn&#039;t say he would write a story that directly relates to a WW, considering WWI was an embodiment of everything he hated, I can say that he was influenced in the making of his story. <br />
+<br />
+Considering his Relation with C.S Lewis, It doesn&#039;t surprise me that he would write such a story either. Even though they don&#039;t agree on certain factors like combining mythological creatures with Biblical references/overtones, I can with certainty say that they had similar outlooks on war, along with justice, virtue, and honor... </div>
+		<textarea style="display: none;" id="desctxt_9524">-_-... I fail...
+
+
+I meant that the major influences at the time that J.R.R Tolkien were influenced by WWII, and WWI for that matter. 
+
+If you look at the designs of his races, Map designs, Sauron, and many of the battles, you can see relations to WWI and WWII in the text.
+
+Although I wouldn&#039;t say he would write a story that directly relates to a WW, considering WWI was an embodiment of everything he hated, I can say that he was influenced in the making of his story. 
+
+Considering his Relation with C.S Lewis, It doesn&#039;t surprise me that he would write such a story either. Even though they don&#039;t agree on certain factors like combining mythological creatures with Biblical references/overtones, I can with certainty say that they had similar outlooks on war, along with justice, virtue, and honor...</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Jeffrey</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=283&amp;ref=1213976987" width="116" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9690" style="width: 100%; overflow: auto; min-height: 125px;">...<br />
+<br />
+<br />
+Well well well. If it isn&#039;t my good friend the Simonicon. I&#039;ve had quite the tales with that book, along with Simon&#039;s other related literature.<br />
+<br />
+<br />
+Let me tell you something, even if the Necro is fake, the spells damn work. :-P</div>
+		<textarea style="display: none;" id="desctxt_9690">...
+
+
+Well well well. If it isn&#039;t my good friend the Simonicon. I&#039;ve had quite the tales with that book, along with Simon&#039;s other related literature.
+
+
+Let me tell you something, even if the Necro is fake, the spells damn work. :-P</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9774" style="width: 100%; overflow: auto; min-height: 125px;">Thank you Jeffrey... It comes from the Sumerian in it I think. Perfectly reasonable to study it for this reason.<br />
+<br />
+I am a firm believer in the idea that the closer you get to the root of something, the more power it will have. I stem this Idea out into anything, including language. I am also a firm believer that knowledge is the key to utilizing the power at the roots. Knowledge increases with time, and language stems further from it&#039;s roots.<br />
+<br />
+Therefore, To truly utilize the power behind language, one must almost to advanced to understand the language.<br />
+<br />
+Could you tell some stories to us Jeffrey? *pulls up a pillow and lays down on it while looking up a Jeffrey* pleeeeeeaaaaaaaaassssee?</div>
+		<textarea style="display: none;" id="desctxt_9774">Thank you Jeffrey... It comes from the Sumerian in it I think. Perfectly reasonable to study it for this reason.
+
+I am a firm believer in the idea that the closer you get to the root of something, the more power it will have. I stem this Idea out into anything, including language. I am also a firm believer that knowledge is the key to utilizing the power at the roots. Knowledge increases with time, and language stems further from it&#039;s roots.
+
+Therefore, To truly utilize the power behind language, one must almost to advanced to understand the language.
+
+Could you tell some stories to us Jeffrey? *pulls up a pillow and lays down on it while looking up a Jeffrey* pleeeeeeaaaaaaaaassssee?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=407" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 33 queries. 0.322 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

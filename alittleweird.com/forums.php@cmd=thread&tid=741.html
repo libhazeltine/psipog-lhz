@@ -1,0 +1,350 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; psi tricks</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; psi tricks</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">psi tricks</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Mr. Tallyman</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=910&amp;ref=1239146679" width="80" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13741" style="width: 100%; overflow: auto; min-height: 125px;">The reason I am here, is I recieved a vision one night, which scared the death outta me.. I was not ready for it at all..<br />
+<br />
+I then began the quest for a source of this experience.<br />
+<br />
+Many sights later, I ran into psipog.com, by way of youtube video lesson on shapeshifting.. that I cant seem to find anymore.. <br />
+<br />
+\/\/\/\/\/\/\/\/\/\/\/Same guy, same idea\/\/\/\/\/\/\/\/\/\/\/\/\/ <br />
+ <a href="http://www.youtube.com/watch?v=1lo3JHWkZuE&amp;feature=player_embedded" target="_blank">http://www.youtube.com/watch?v=1lo3JHWkZuE&amp;feature=player_embedded</a><br />
+<br />
+The meditation I saw focused on making one of your hands larger than the other, and vice versa. He made it seem fairly complex, but when I tried it for myself, I was able to perform this task easily, and very quickly.. I can get up to a centimeter growth on one side, and then the other, four times a minute!<br />
+<br />
+I show some people, and they call it witchcraft..<br />
+<br />
+I dont think I&#039;ll show them the psi wheel..<br />
+<br />
+know of anything else?</div>
+		<textarea style="display: none;" id="desctxt_13741">The reason I am here, is I recieved a vision one night, which scared the death outta me.. I was not ready for it at all..
+
+I then began the quest for a source of this experience.
+
+Many sights later, I ran into psipog.com, by way of youtube video lesson on shapeshifting.. that I cant seem to find anymore.. 
+
+\/\/\/\/\/\/\/\/\/\/\/Same guy, same idea\/\/\/\/\/\/\/\/\/\/\/\/\/ 
+http://www.youtube.com/watch?v=1lo3JHWkZuE&amp;feature=player_embedded
+
+The meditation I saw focused on making one of your hands larger than the other, and vice versa. He made it seem fairly complex, but when I tried it for myself, I was able to perform this task easily, and very quickly.. I can get up to a centimeter growth on one side, and then the other, four times a minute!
+
+I show some people, and they call it witchcraft..
+
+I dont think I&#039;ll show them the psi wheel..
+
+know of anything else?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Mr. Tallyman, 3 years, 6 months ago<br />Posted 3 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Mars</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=553&amp;ref=1239824741" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13744" style="width: 100%; overflow: auto; min-height: 125px;">This has been posted many MANY months ago of that &quot;chi&quot; trick in the video section.<br />
+<br />
+<br />
+I don&#039;t have an answer to your question, but could you tell us more of this &quot;vision&quot; you had once upon a moon?</div>
+		<textarea style="display: none;" id="desctxt_13744">This has been posted many MANY months ago of that &quot;chi&quot; trick in the video section.
+
+
+I don&#039;t have an answer to your question, but could you tell us more of this &quot;vision&quot; you had once upon a moon?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Trick</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=744&amp;ref=1221873234" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13746" style="width: 100%; overflow: auto; min-height: 125px;">Its the blood moving to one of your hands, making it slightly larger. </div>
+		<textarea style="display: none;" id="desctxt_13746">Its the blood moving to one of your hands, making it slightly larger.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Mr. Tallyman</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=910&amp;ref=1239146679" width="80" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13747" style="width: 100%; overflow: auto; min-height: 125px;">Yeah, blood moving was my first thought.. I guess maybe I just have great control over my flow.<br />
+<br />
+I&#039;ll give you an idea of the vision..<br />
+<br />
+I was an omniscient viewer in a sacrificial circle.. there were torches and dark robed figures chanting and brutally torturing people on a slab in the middle of a statue enclosed circle..<br />
+<br />
+After what seemed like two or three hundred years, the hooded men disappeared.. time seemed to move much faster after that, and the pillars turned into sand, and I was alone in a desert.. I had no body, I was just viewing everything..<br />
+<br />
+Desert eventually turned into forest.. forest produced critters which scurried about the underbrush.. and then hunters showed up. Men with scraps of animal fur clothing and sharp sticks began to accumulate, and so, they had to pull together and organize a functioning society.. this order brought pillars.. and pillars brought robes and chanting, and I was in the same circle I started off in!!<br />
+<br />
+I began to loose my mind.. screaming.. <br />
+<br />
+All the while, I was absolutely amazed and terrified, but up until this point, I decided not to cause a fuss, because whatever was in control of this vision, was waaaay outta my league.. and I decided to just be cool.. but I had had enough..<br />
+<br />
+A being of light came to me, and saved me from this evil place..<br />
+<br />
+Im gonna leave it at that.. unless you have any questions..<br />
+<br />
+Thank you for the replies</div>
+		<textarea style="display: none;" id="desctxt_13747">Yeah, blood moving was my first thought.. I guess maybe I just have great control over my flow.
+
+I&#039;ll give you an idea of the vision..
+
+I was an omniscient viewer in a sacrificial circle.. there were torches and dark robed figures chanting and brutally torturing people on a slab in the middle of a statue enclosed circle..
+
+After what seemed like two or three hundred years, the hooded men disappeared.. time seemed to move much faster after that, and the pillars turned into sand, and I was alone in a desert.. I had no body, I was just viewing everything..
+
+Desert eventually turned into forest.. forest produced critters which scurried about the underbrush.. and then hunters showed up. Men with scraps of animal fur clothing and sharp sticks began to accumulate, and so, they had to pull together and organize a functioning society.. this order brought pillars.. and pillars brought robes and chanting, and I was in the same circle I started off in!!
+
+I began to loose my mind.. screaming.. 
+
+All the while, I was absolutely amazed and terrified, but up until this point, I decided not to cause a fuss, because whatever was in control of this vision, was waaaay outta my league.. and I decided to just be cool.. but I had had enough..
+
+A being of light came to me, and saved me from this evil place..
+
+Im gonna leave it at that.. unless you have any questions..
+
+Thank you for the replies</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Mr. Tallyman, 3 years, 6 months ago<br />Posted 3 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">DigGil</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13758" style="width: 100%; overflow: auto; min-height: 125px;">I think we are returning to plain hunters again :S .</div>
+		<textarea style="display: none;" id="desctxt_13758">I think we are returning to plain hunters again :S .</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Mr. Tallyman</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=910&amp;ref=1239146679" width="80" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13769" style="width: 100%; overflow: auto; min-height: 125px;">Well.. the being of bright white light was a female.. we connected thoughts.. and she understood everything that was on my mind, and she knew the other side of my thoughts, our ideas reciprocated each other and after a hundred years, the feedback spiraled out of control.. we shared an embrace, and the light filled all of the darkness.. this force was strong enough to move me into convulsions back in reality.. <br />
+<br />
+The whole episode lasted ten minutes..<br />
+<br />
+The sensation I had afterwards, was comparable to being mentally raped..<br />
+<br />
+At first, I was very upset that someone out there may now know everything about me..<br />
+<br />
+<br />
+I had heard about this 2012 stuff a few months before hand, but it wasnt untill recently that I put them together.. yes.. I am looking into 2012..<br />
+<br />
+Maybe we are reaching a point of understanding which will bring the kumbaya moment everyone is waiting for..</div>
+		<textarea style="display: none;" id="desctxt_13769">Well.. the being of bright white light was a female.. we connected thoughts.. and she understood everything that was on my mind, and she knew the other side of my thoughts, our ideas reciprocated each other and after a hundred years, the feedback spiraled out of control.. we shared an embrace, and the light filled all of the darkness.. this force was strong enough to move me into convulsions back in reality.. 
+
+The whole episode lasted ten minutes..
+
+The sensation I had afterwards, was comparable to being mentally raped..
+
+At first, I was very upset that someone out there may now know everything about me..
+
+
+I had heard about this 2012 stuff a few months before hand, but it wasnt untill recently that I put them together.. yes.. I am looking into 2012..
+
+Maybe we are reaching a point of understanding which will bring the kumbaya moment everyone is waiting for..</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 6 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=741" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 22 queries. 0.318 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

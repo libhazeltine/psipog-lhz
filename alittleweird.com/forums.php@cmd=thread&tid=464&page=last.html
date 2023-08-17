@@ -1,0 +1,329 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; The Purple Bishop</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; The Purple Bishop</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">The Purple Bishop</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Psikillion</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=593&amp;ref=1213954510" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10147" style="width: 100%; overflow: auto; min-height: 125px;">During my work in a Boy Scout camp in Northeastern Pennsylvania this week my friends and  I have heard of this ghost in another Boy Scout camp about an hour away from our camp called the &quot;Purple Bishop&quot;. From the details I have heard so far it apparently is purple in color and shows only from the torso up, kills people who are not Christians, and will only ask if someone is a Christian if they are wearing a crucifix. It lives on the eastern side of the camp, which happens to be across a creek and that section of camp has been abandoned due to &quot;insurance reasons&quot;. This area of camp also tends to have other minor apparitions, and rumor has it there are Satanists that also frequent those parts as well. About 80% of the staff apparently have had some sort of paranormal encounter.<br />
+<br />
+Unfortunately we have not been able to find out more about the &quot;Purple Bishop&quot; and his origin, and google has not been very helpful information wise about it.<br />
+<br />
+Ever since hearing the story we have decided that we want to remove the ghost from the area, so we are making a plan of how to get rid of it.<br />
+<br />
+Just wanted to post about it to see what you guys think about it, what sort of ideas you might have for removing it, and whether you are interested in coming along too when we get around to doing this.</div>
+		<textarea style="display: none;" id="desctxt_10147">During my work in a Boy Scout camp in Northeastern Pennsylvania this week my friends and  I have heard of this ghost in another Boy Scout camp about an hour away from our camp called the &quot;Purple Bishop&quot;. From the details I have heard so far it apparently is purple in color and shows only from the torso up, kills people who are not Christians, and will only ask if someone is a Christian if they are wearing a crucifix. It lives on the eastern side of the camp, which happens to be across a creek and that section of camp has been abandoned due to &quot;insurance reasons&quot;. This area of camp also tends to have other minor apparitions, and rumor has it there are Satanists that also frequent those parts as well. About 80% of the staff apparently have had some sort of paranormal encounter.
+
+Unfortunately we have not been able to find out more about the &quot;Purple Bishop&quot; and his origin, and google has not been very helpful information wise about it.
+
+Ever since hearing the story we have decided that we want to remove the ghost from the area, so we are making a plan of how to get rid of it.
+
+Just wanted to post about it to see what you guys think about it, what sort of ideas you might have for removing it, and whether you are interested in coming along too when we get around to doing this.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Sean</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=2&amp;ref=1214247941" width="117" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10163" style="width: 100%; overflow: auto; min-height: 125px;">Sounds like a camp fire ghost story the staff tells people to spook them out.<br />
+<br />
+~Sean</div>
+		<textarea style="display: none;" id="desctxt_10163">Sounds like a camp fire ghost story the staff tells people to spook them out.
+
+~Sean</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">chillpill</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=635&amp;ref=1215645183" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10170" style="width: 100%; overflow: auto; min-height: 125px;">Well, here&#039;s what I would in this situation:<br />
+<br />
+- In order to kill the ghost, I would stop talking about it.  Fairy tales can only live if they are retold.<br />
+- I would definatley avoid the area of the camp that &quot;has been abandoned due to &#039;insurance reasons&#039;,&quot; for the sole reason of avoiding injuries, and satanists (haha).<br />
+<br />
+&quot;kills people who are not Christians,&quot;<br />
+Is this a religious camp?<br />
+Honestly it sounds like an attempt to scare kids into believing.<br />
+As if a firey eternal hell wasn&#039;t enough, lets&#039; add a purple bishop.  <br />
+</div>
+		<textarea style="display: none;" id="desctxt_10170">Well, here&#039;s what I would in this situation:
+
+- In order to kill the ghost, I would stop talking about it.  Fairy tales can only live if they are retold.
+- I would definatley avoid the area of the camp that &quot;has been abandoned due to &#039;insurance reasons&#039;,&quot; for the sole reason of avoiding injuries, and satanists (haha).
+
+&quot;kills people who are not Christians,&quot;
+Is this a religious camp?
+Honestly it sounds like an attempt to scare kids into believing.
+As if a firey eternal hell wasn&#039;t enough, lets&#039; add a purple bishop.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">zandor117</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=305&amp;ref=1215571805" width="91" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10180" style="width: 100%; overflow: auto; min-height: 125px;">Dont worry, if you ever run into the purple bishop just stand directly in front of him, he will only be able to attack you diagonally lol.</div>
+		<textarea style="display: none;" id="desctxt_10180">Dont worry, if you ever run into the purple bishop just stand directly in front of him, he will only be able to attack you diagonally lol.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">NewAgeAlchemist</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=459&amp;ref=1207160982" width="125" height="20" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10200" style="width: 100%; overflow: auto; min-height: 125px;">The killing of non-christians is a curiously strong characteristic, so you&#039;d expect the legend to be reasonably well known in the area if such an idea had any basis.<br />
+<br />
+*Enters Research Mode*<br />
+It is slightly complicated by the existence of multiple characters.<br />
+-There appears to be a strong oral tradition of a Purple Bishop story in Rowe, MA (Goes back to at least the Students in the 70&#039;s)<br />
+-Story about an 1800&#039;s man who kidnapped kids in a dog drawn carriage (Downers Grove, Il)<br />
+-Purple Bishop is the final story on an audio book called &quot;Tales of an October Moon&quot; (Which actually happens to be obtainable through my public library but I don&#039;t know if I&#039;ve still got a cassette player laying around)</div>
+		<textarea style="display: none;" id="desctxt_10200">The killing of non-christians is a curiously strong characteristic, so you&#039;d expect the legend to be reasonably well known in the area if such an idea had any basis.
+
+*Enters Research Mode*
+It is slightly complicated by the existence of multiple characters.
+-There appears to be a strong oral tradition of a Purple Bishop story in Rowe, MA (Goes back to at least the Students in the 70&#039;s)
+-Story about an 1800&#039;s man who kidnapped kids in a dog drawn carriage (Downers Grove, Il)
+-Purple Bishop is the final story on an audio book called &quot;Tales of an October Moon&quot; (Which actually happens to be obtainable through my public library but I don&#039;t know if I&#039;ve still got a cassette player laying around)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by NewAgeAlchemist, 4 years, 5 months ago<br />Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">chillpill</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=635&amp;ref=1215645183" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10208" style="width: 100%; overflow: auto; min-height: 125px;">hahaha @ Zandor117</div>
+		<textarea style="display: none;" id="desctxt_10208">hahaha @ Zandor117</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Faceless</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=570&amp;ref=1214279440" width="83" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10232" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by zandor117:</em><br />
+Dont worry, if you ever run into the purple bishop just stand directly in front of him, he will only be able to attack you diagonally lol.</div>thats great. lets just be glad its not a purple queen. lol.</div>
+		<textarea style="display: none;" id="desctxt_10232">[quote][i]posted by zandor117:[/i]
+Dont worry, if you ever run into the purple bishop just stand directly in front of him, he will only be able to attack you diagonally lol.[/quote]
+
+thats great. lets just be glad its not a purple queen. lol.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">zandor117</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=305&amp;ref=1215571805" width="91" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10252" style="width: 100%; overflow: auto; min-height: 125px;">lol for some odd reason this thread makes me want to program a survival horror game based around chess.</div>
+		<textarea style="display: none;" id="desctxt_10252">lol for some odd reason this thread makes me want to program a survival horror game based around chess.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Faceless</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=570&amp;ref=1214279440" width="83" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10396" style="width: 100%; overflow: auto; min-height: 125px;">DO IT!!!!!!!!!!!! i would deffinetly play that... i&#039;m sorry... i&#039;m a geek.</div>
+		<textarea style="display: none;" id="desctxt_10396">DO IT!!!!!!!!!!!! i would deffinetly play that... i&#039;m sorry... i&#039;m a geek.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=464" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 25 queries. 0.378 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

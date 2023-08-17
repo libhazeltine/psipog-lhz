@@ -1,0 +1,340 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; oobe is painful</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; oobe is painful</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">oobe is painful</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">asd</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_14476" style="width: 100%; overflow: auto; min-height: 125px;">I tried oobes and twice i calmed enough and was awake but then i started hearing and seing things ,like the first time i just heared a sound like &quot;ooooooooooaaaaaAAAAAAA&quot;<br />
+the sound was getting louder and when i was thinking &quot;now its in its peak it will shut up&quot; it just continued getting stronger and eventually i felt to be in pain!!!The second i saw a light changing with darknes again and again and everytimei heared a sound like the one lighting arcs do and then it got louder and i felt pain.I say felt cause i dont know if its realy true (like in the dreams).<br />
+Sorry but for those who passed this how could you take this pain and anxiety(cause pain makes me think something bad comes).I want to see how oobe is and this shit holds me back.</div>
+		<textarea style="display: none;" id="desctxt_14476">I tried oobes and twice i calmed enough and was awake but then i started hearing and seing things ,like the first time i just heared a sound like &quot;ooooooooooaaaaaAAAAAAA&quot;
+the sound was getting louder and when i was thinking &quot;now its in its peak it will shut up&quot; it just continued getting stronger and eventually i felt to be in pain!!!The second i saw a light changing with darknes again and again and everytimei heared a sound like the one lighting arcs do and then it got louder and i felt pain.I say felt cause i dont know if its realy true (like in the dreams).
+Sorry but for those who passed this how could you take this pain and anxiety(cause pain makes me think something bad comes).I want to see how oobe is and this shit holds me back.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by asd, 3 years, 4 months ago<br />Posted 3 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Sean</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=2&amp;ref=1214247941" width="117" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_14477" style="width: 100%; overflow: auto; min-height: 125px;">Yeah, that happens.<br />
+<br />
+The trick I use is to clear my mind, remain passive, and just sit still.  My experience has been they fade out eventually, but only if you clear everything.<br />
+<br />
+As a side note... when I first started OBE&#039;ing, I used to THINK I was remaining passive.  I used to THINK my mind was clear.  I would get frustrated and think, &quot;wtf? my mind is clear! leave me alone!&quot; etc... completely unaware of those thoughts disqualifying my clear mind.<br />
+<br />
+So I would say, &quot;Watch yourself carefully, make sure your mind is clear!&quot;... but that&#039;s incorrect as well.  If you&#039;re in a state of &quot;watching&quot; then you&#039;re not in a passive state.<br />
+<br />
+It helps to not give a shit. :-)<br />
+<br />
+~Sean</div>
+		<textarea style="display: none;" id="desctxt_14477">Yeah, that happens.
+
+The trick I use is to clear my mind, remain passive, and just sit still.  My experience has been they fade out eventually, but only if you clear everything.
+
+As a side note... when I first started OBE&#039;ing, I used to THINK I was remaining passive.  I used to THINK my mind was clear.  I would get frustrated and think, &quot;wtf? my mind is clear! leave me alone!&quot; etc... completely unaware of those thoughts disqualifying my clear mind.
+
+So I would say, &quot;Watch yourself carefully, make sure your mind is clear!&quot;... but that&#039;s incorrect as well.  If you&#039;re in a state of &quot;watching&quot; then you&#039;re not in a passive state.
+
+It helps to not give a shit. :-)
+
+~Sean</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Sean, 3 years, 4 months ago<br />Posted 3 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Kube</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=952&amp;ref=1249239276" width="102" height="77" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_14478" style="width: 100%; overflow: auto; min-height: 125px;">Wow, my hallucinations have never been this intense! Here&#039;s a question to those who have successfully OBE&#039;ed: Is it supposed to be? Because I only hear sounds, but only like voices and ringing phones. I only once saw something, so I was wondering if I&#039;m doing something wrong? I didn&#039;t want to make another thread just to ask a question on topic with this one ~_^ Thanks!</div>
+		<textarea style="display: none;" id="desctxt_14478">Wow, my hallucinations have never been this intense! Here&#039;s a question to those who have successfully OBE&#039;ed: Is it supposed to be? Because I only hear sounds, but only like voices and ringing phones. I only once saw something, so I was wondering if I&#039;m doing something wrong? I didn&#039;t want to make another thread just to ask a question on topic with this one ~_^ Thanks!</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Kube, 3 years, 4 months ago<br />Posted 3 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Sean</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=2&amp;ref=1214247941" width="117" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_14480" style="width: 100%; overflow: auto; min-height: 125px;">Is it supposed to be... what?  Painful?<br />
+<br />
+I don&#039;t know if it&#039;s SUPPOSED to be painful.  I have no clue what it is.  If it&#039;s the equivalent of shooting yourself in the foot, then yes, it&#039;s supposed to be painful.  If it&#039;s the equivalent of eating some fruit, then no, it&#039;s not supposed to be painful.<br />
+<br />
+~Sean</div>
+		<textarea style="display: none;" id="desctxt_14480">Is it supposed to be... what?  Painful?
+
+I don&#039;t know if it&#039;s SUPPOSED to be painful.  I have no clue what it is.  If it&#039;s the equivalent of shooting yourself in the foot, then yes, it&#039;s supposed to be painful.  If it&#039;s the equivalent of eating some fruit, then no, it&#039;s not supposed to be painful.
+
+~Sean</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Sean, 3 years, 4 months ago<br />Posted 3 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Kube</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=952&amp;ref=1249239276" width="102" height="77" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_14482" style="width: 100%; overflow: auto; min-height: 125px;">No, I meant the hallucinations, are they supposed to be this intense? Mine seem rather... weak compared to asd&#039;s....</div>
+		<textarea style="display: none;" id="desctxt_14482">No, I meant the hallucinations, are they supposed to be this intense? Mine seem rather... weak compared to asd&#039;s....</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">EyeBall</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=277&amp;ref=1223270537" width="125" height="120" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_14484" style="width: 100%; overflow: auto; min-height: 125px;">In my experience (which is not much), the time i&#039;ve been out of my body, i haven&#039;t felt any pain. The only oddity is the ever so loud sounds.. On every out of body experience, just very loud and somewhat disturbing sounds. I&#039;ve just came to the conclusion that that&#039;s just the way it is.</div>
+		<textarea style="display: none;" id="desctxt_14484">In my experience (which is not much), the time i&#039;ve been out of my body, i haven&#039;t felt any pain. The only oddity is the ever so loud sounds.. On every out of body experience, just very loud and somewhat disturbing sounds. I&#039;ve just came to the conclusion that that&#039;s just the way it is.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">sh</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_14486" style="width: 100%; overflow: auto; min-height: 125px;">Well, my OBe experience is this, that I felt the sounds and I temporarily blind myself to them by not doing anything and closing my eyes. Till they disappear, then I explore as I will have the will too. It takes great nerve for me to OBE.</div>
+		<textarea style="display: none;" id="desctxt_14486">Well, my OBe experience is this, that I felt the sounds and I temporarily blind myself to them by not doing anything and closing my eyes. Till they disappear, then I explore as I will have the will too. It takes great nerve for me to OBE.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">asd</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_14490" style="width: 100%; overflow: auto; min-height: 125px;">Actually i believe you are right about my mind and that it was not clear but i was not excpecting such a &quot;real&quot; sound, image and pain.The second time  while i heared this things i could make thoughts and felt quite conscious but when i tryed to move my hands even if i could feel them they didnt move.Thank you for the replies.<br />
+<br />
+Also this state before oobe is the solution for drug user(don&#039;t know after this state).=D</div>
+		<textarea style="display: none;" id="desctxt_14490">Actually i believe you are right about my mind and that it was not clear but i was not excpecting such a &quot;real&quot; sound, image and pain.The second time  while i heared this things i could make thoughts and felt quite conscious but when i tryed to move my hands even if i could feel them they didnt move.Thank you for the replies.
+
+Also this state before oobe is the solution for drug user(don&#039;t know after this state).=D</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by asd, 3 years, 4 months ago<br />Posted 3 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Everchanging</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=973&amp;ref=1244663608" width="118" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_14491" style="width: 100%; overflow: auto; min-height: 125px;">Well hallucinations can be &quot;real&quot; (and in my case at least most time they are). Once when I was in hypnagogia state and trying to OBE at some point I was wondering why on the earth I did not turn my mp3 player off since rock music wont rather help me with OBE. Thinking that with mp3 player turned on I wont OBE I woke up and face palmed myself seeing in mp3 player on desk few meters away ...</div>
+		<textarea style="display: none;" id="desctxt_14491">Well hallucinations can be &quot;real&quot; (and in my case at least most time they are). Once when I was in hypnagogia state and trying to OBE at some point I was wondering why on the earth I did not turn my mp3 player off since rock music wont rather help me with OBE. Thinking that with mp3 player turned on I wont OBE I woke up and face palmed myself seeing in mp3 player on desk few meters away ...</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">sh</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_14499" style="width: 100%; overflow: auto; min-height: 125px;">yes, hallucinations can be real in the effect because you don&#039;t realize that you are doing the damage to yourself while you see it done to you in your mind. Up to the point that you are too damaged or bleeding to survive. Usually though, you wake up from the hallucination on first strike to the body.</div>
+		<textarea style="display: none;" id="desctxt_14499">yes, hallucinations can be real in the effect because you don&#039;t realize that you are doing the damage to yourself while you see it done to you in your mind. Up to the point that you are too damaged or bleeding to survive. Usually though, you wake up from the hallucination on first strike to the body.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">asd</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_14500" style="width: 100%; overflow: auto; min-height: 125px;">What do you mean sh?Sorry i dont get what you say i thought that the pain doesnt come from damage to the body .</div>
+		<textarea style="display: none;" id="desctxt_14500">What do you mean sh?Sorry i dont get what you say i thought that the pain doesnt come from damage to the body .</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">sh</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_14507" style="width: 100%; overflow: auto; min-height: 125px;">Well, the pain comes from both, damage to the body and mental damages as well. As I said, damages are real because you don&#039;t always realize that you are doing them to yourself.</div>
+		<textarea style="display: none;" id="desctxt_14507">Well, the pain comes from both, damage to the body and mental damages as well. As I said, damages are real because you don&#039;t always realize that you are doing them to yourself.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 4 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=802" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 28 queries. 0.273 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

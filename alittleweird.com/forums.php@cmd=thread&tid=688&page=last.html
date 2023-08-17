@@ -1,0 +1,270 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Creating Vibrations</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Creating Vibrations</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Creating Vibrations</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Saiya</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13174" style="width: 100%; overflow: auto; min-height: 125px;">So on Saturday, I was making another attempt to astral project. I was laying in bed for about any hour until my mind started to blank. I somehow felt like I had no need for a body, so I sort of subconsciously imagined my astral body, being light blue, and pulling my astral body out of my bodies arms. Then I started feeling vibrations overcome me. Now these vibrations, though supposedly normal, was totally different than usual for me. I felt like my entire body was violently shaking as if I just been struck by lightning. Normally the vibrations for me are a more soothing falling/floating pressure sensation. But this time is was abrupt, and unlike normal I didn&#039;t see a bright light. This leads me to believe that because the other times, I was trying to reach the astral plane, I saw a bright light, but this time, I was trying to have an OBE, which is why there is a distinct difference. However, I didn&#039;t have time to think logically at that moment. Since the feeling was so new to me, I couldn&#039;t keep a passive mind, so the vibrations began to fade. Then I remembered reading somewhere that this feeling was normal in trying to have an OBE. So I was like &quot;I can&#039;t give up now!&quot;. Somehow, I created vibrations. At first I thought I created the vibration from my throat, or somewhere near  there. I don&#039;t know WHERE exactly my throat is. However, after I explained this to one of my friends, they showed me this image of the chakra map, and he asked &quot;This? The blue one.&quot;<br />
+ <a href="http://www.rickrichards.com/chakras/chakra_man1.jpg" target="_blank">http://www.rickrichards.com/chakras/chakra_man1.jpg</a><br />
+<br />
+That was exactly where I felt the vibrations coming from! So I sort of just &quot;knew&quot; how to create vibrations, like moving my fingers and arms. It was internal, and natural. A natural control over energy I guess. However, after a while the vibrations began to die down again. I guess I became too excited and totally lost my passive state of mind. I felt so close! :[ However, this brought lots of hope back for me, made it seem a lot less &quot;impossible&quot; to have an OBE. Infact, I&#039;m pretty confident I&#039;ll atleast have one within the next three months :). I&#039;ll keep on practicing.</div>
+		<textarea style="display: none;" id="desctxt_13174">So on Saturday, I was making another attempt to astral project. I was laying in bed for about any hour until my mind started to blank. I somehow felt like I had no need for a body, so I sort of subconsciously imagined my astral body, being light blue, and pulling my astral body out of my bodies arms. Then I started feeling vibrations overcome me. Now these vibrations, though supposedly normal, was totally different than usual for me. I felt like my entire body was violently shaking as if I just been struck by lightning. Normally the vibrations for me are a more soothing falling/floating pressure sensation. But this time is was abrupt, and unlike normal I didn&#039;t see a bright light. This leads me to believe that because the other times, I was trying to reach the astral plane, I saw a bright light, but this time, I was trying to have an OBE, which is why there is a distinct difference. However, I didn&#039;t have time to think logically at that moment. Since the feeling was so new to me, I couldn&#039;t keep a passive mind, so the vibrations began to fade. Then I remembered reading somewhere that this feeling was normal in trying to have an OBE. So I was like &quot;I can&#039;t give up now!&quot;. Somehow, I created vibrations. At first I thought I created the vibration from my throat, or somewhere near  there. I don&#039;t know WHERE exactly my throat is. However, after I explained this to one of my friends, they showed me this image of the chakra map, and he asked &quot;This? The blue one.&quot;
+http://www.rickrichards.com/chakras/chakra_man1.jpg
+
+That was exactly where I felt the vibrations coming from! So I sort of just &quot;knew&quot; how to create vibrations, like moving my fingers and arms. It was internal, and natural. A natural control over energy I guess. However, after a while the vibrations began to die down again. I guess I became too excited and totally lost my passive state of mind. I felt so close! :[ However, this brought lots of hope back for me, made it seem a lot less &quot;impossible&quot; to have an OBE. Infact, I&#039;m pretty confident I&#039;ll atleast have one within the next three months :). I&#039;ll keep on practicing.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Saiya, 3 years, 9 months ago<br />Posted 3 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">NaThaNiel</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=871&amp;ref=1248839781" width="104" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13182" style="width: 100%; overflow: auto; min-height: 125px;">Just to let you know, by the traditional view of chakras, that picture is lacking. Try this.  <a href="http://www.treeoflifestore.com/images/ChakraDiagram.jpg" target="_blank">http://www.treeoflifestore.com/images/ChakraDiagram.jpg</a><br />
+<br />
+That is pretty interesting though. I wonder if the throat chakra has something to do with OBEs. Then again, maybe the vibrations coming from your throat were just because your throat chakra is your more active chakra.</div>
+		<textarea style="display: none;" id="desctxt_13182">Just to let you know, by the traditional view of chakras, that picture is lacking. Try this. http://www.treeoflifestore.com/images/ChakraDiagram.jpg
+
+That is pretty interesting though. I wonder if the throat chakra has something to do with OBEs. Then again, maybe the vibrations coming from your throat were just because your throat chakra is your more active chakra.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Linked</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=19&amp;ref=1203762048" width="89" height="38" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13447" style="width: 100%; overflow: auto; min-height: 125px;">Speaking of chakras, When I was younger, I was very physically active person, and my favorite color was red, the color of the base chakra.(The chakra that represents physical balance, courage, strength and that type of stuff.) But not that I&#039;m older, 18 now, I don&#039;t really go outside as much, and I feel emotions like happiness, love, and the like, stronger than when I was little. My favorite color is also green now, the same color as the heart chakra.<br />
+<br />
+This leads me to believe that your favorite color my, in some way, represent your most active chakra. I&#039;m also drawn to the color blue as my 2nd favorite color, and yellow/red tie for my 3rd.</div>
+		<textarea style="display: none;" id="desctxt_13447">Speaking of chakras, When I was younger, I was very physically active person, and my favorite color was red, the color of the base chakra.(The chakra that represents physical balance, courage, strength and that type of stuff.) But not that I&#039;m older, 18 now, I don&#039;t really go outside as much, and I feel emotions like happiness, love, and the like, stronger than when I was little. My favorite color is also green now, the same color as the heart chakra.
+
+This leads me to believe that your favorite color my, in some way, represent your most active chakra. I&#039;m also drawn to the color blue as my 2nd favorite color, and yellow/red tie for my 3rd.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Sussch</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=622&amp;ref=1252769070" width="100" height="92" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13535" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Linked:</em><br />
+This leads me to believe that your favorite color my, in some way, represent your most active chakra. I&#039;m also drawn to the color blue as my 2nd favorite color, and yellow/red tie for my 3rd.</div>Interesting..<br />
+<br />
+I haven&#039;t been able to reproduce the violent shaking of the pre-OBE experience myself. However, I was able to amplify these soothing vibrations once in a half-sleep state. That night it felt like my body cells were already resonating (just like when you drink some mineral water after being somewhat dehydrated) and I just tried to synchronize and amplify it.<br />
+<br />
+It was the second time I experienced this weird vibrations, so it faded quickly when I noticed that I couldn&#039;t hear myself breathing anymore.<br />
+<br />
+But I do think it&#039;s possible to induce OBE with the vibration generation method..</div>
+		<textarea style="display: none;" id="desctxt_13535">[quote][i]posted by Linked:[/i]
+This leads me to believe that your favorite color my, in some way, represent your most active chakra. I&#039;m also drawn to the color blue as my 2nd favorite color, and yellow/red tie for my 3rd.[/quote]
+
+Interesting..
+
+I haven&#039;t been able to reproduce the violent shaking of the pre-OBE experience myself. However, I was able to amplify these soothing vibrations once in a half-sleep state. That night it felt like my body cells were already resonating (just like when you drink some mineral water after being somewhat dehydrated) and I just tried to synchronize and amplify it.
+
+It was the second time I experienced this weird vibrations, so it faded quickly when I noticed that I couldn&#039;t hear myself breathing anymore.
+
+But I do think it&#039;s possible to induce OBE with the vibration generation method..</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 7 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=688" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 20 queries. 0.272 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

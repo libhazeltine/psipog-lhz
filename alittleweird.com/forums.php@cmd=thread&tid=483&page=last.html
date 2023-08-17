@@ -1,0 +1,411 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Fears of the future</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Fears of the future</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Fears of the future</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Corpse</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=553&amp;ref=1239824741" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10364" style="width: 100%; overflow: auto; min-height: 125px;">Okay, so I&#039;m just wondering, has any one else ever pondered this?<br />
+<br />
+I&#039;m thinking that eventually we are going to advance in psionics in maybe lets say<br />
+1000 years or something SO MUCH that we will have universal techniques, and be able to<br />
+do the most ridiculous feats ever (like levitating our selfs, or sending really big<br />
+things flying) and everyone will know about it. There won&#039;t be any &quot;skeptics&quot; because<br />
+everyone will actually believe in it. So anyways, since it will be a skill almost as<br />
+common as walking, aren&#039;t we going to eventually kill each other? I mean seriously, if<br />
+we do manage to advance this far, aren&#039;t we be going to have wars in witch we send <br />
+each other flying across the streets and make our heads smash into someone&#039;s windows,<br />
+people remote viewing on others in their private moments, sucking our energy dry, etc.<br />
+If we end up advancing that far...I swear were going to kill our selfs. This is why <br />
+I&#039;m glad that we most likely will not advance that far anytime soon, I&#039;m also glad we<br />
+do have skeptics because of this too. <br />
+<br />
+<br />
+There&#039;s also another fear I have.<br />
+Since we have skeptics now, what if lets say in the next 50 years,<br />
+we advance enough so that we have universal techniques for things like PK<br />
+and we are easily able to grow and advance in it...there probably still will<br />
+be many skeptics, but there will probably be a lot more believers since we most<br />
+likely will be able to do something beyond spinning a piece of stupid tin foil on<br />
+a thumb tack, and maybe even dangerous. Like what if we could send a pencil flying at<br />
+a fast enough speed to literally stab, and kill someone with it...<br />
+<br />
+The point that I&#039;m trying to get to is, eventually we are going to advance at least<br />
+that far fairly soon, and eventually someone may use PK to deal physical harm to <br />
+someone, so basically it&#039;s going to be the salem witch trails all over again,<br />
+because obviously people are not going to be able to accept this, they will<br />
+assume it as some sort of devils work of some sort...<br />
+</div>
+		<textarea style="display: none;" id="desctxt_10364">Okay, so I&#039;m just wondering, has any one else ever pondered this?
+
+I&#039;m thinking that eventually we are going to advance in psionics in maybe lets say
+1000 years or something SO MUCH that we will have universal techniques, and be able to
+do the most ridiculous feats ever (like levitating our selfs, or sending really big
+things flying) and everyone will know about it. There won&#039;t be any &quot;skeptics&quot; because
+everyone will actually believe in it. So anyways, since it will be a skill almost as
+common as walking, aren&#039;t we going to eventually kill each other? I mean seriously, if
+we do manage to advance this far, aren&#039;t we be going to have wars in witch we send 
+each other flying across the streets and make our heads smash into someone&#039;s windows,
+people remote viewing on others in their private moments, sucking our energy dry, etc.
+If we end up advancing that far...I swear were going to kill our selfs. This is why 
+I&#039;m glad that we most likely will not advance that far anytime soon, I&#039;m also glad we
+do have skeptics because of this too. 
+
+
+There&#039;s also another fear I have.
+Since we have skeptics now, what if lets say in the next 50 years,
+we advance enough so that we have universal techniques for things like PK
+and we are easily able to grow and advance in it...there probably still will
+be many skeptics, but there will probably be a lot more believers since we most
+likely will be able to do something beyond spinning a piece of stupid tin foil on
+a thumb tack, and maybe even dangerous. Like what if we could send a pencil flying at
+a fast enough speed to literally stab, and kill someone with it...
+
+The point that I&#039;m trying to get to is, eventually we are going to advance at least
+that far fairly soon, and eventually someone may use PK to deal physical harm to 
+someone, so basically it&#039;s going to be the salem witch trails all over again,
+because obviously people are not going to be able to accept this, they will
+assume it as some sort of devils work of some sort...</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Hawt Zombie</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=650&amp;ref=1216691714" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10365" style="width: 100%; overflow: auto; min-height: 125px;">There&#039;s a ton of theories and posssibilities as to what will happen, your&#039;s is one of them. <br />
+Perhaps in 1000 years Psi will be proven false, and we are just imagining it, and the future generation will just laugh and spit on us. <br />
+Or maybe if it becomes widely known people will form a clan or something and try to kill all psi studiers. <br />
+Or maybe our numbers will die out slowly, and eventually everyone and everything ever known about psi will be forgotten.<br />
+There are so many possibilities, it&#039;s nearly impossible to know, we&#039;ll just have to wait 100 or too years to find out.<br />
+<br />
+The dealing physical harm thing, will come eventually, it&#039;s basically enevitable. If people master psi (or at least master what we know so far) then there will be some who use it for enjoyment, some for what we consider &quot;good&quot; and &quot;evil&quot;. What&#039;s going to happen will happen, because it&#039;s enevitable, worrying about it is useless.<br />
+<br />
+I ponder over these type of things many times, but my only conclusion is, we&#039;ll just have to wait and find out, because there is basically no way to know what will happen in the future.</div>
+		<textarea style="display: none;" id="desctxt_10365">There&#039;s a ton of theories and posssibilities as to what will happen, your&#039;s is one of them. 
+Perhaps in 1000 years Psi will be proven false, and we are just imagining it, and the future generation will just laugh and spit on us. 
+Or maybe if it becomes widely known people will form a clan or something and try to kill all psi studiers. 
+Or maybe our numbers will die out slowly, and eventually everyone and everything ever known about psi will be forgotten.
+There are so many possibilities, it&#039;s nearly impossible to know, we&#039;ll just have to wait 100 or too years to find out.
+
+The dealing physical harm thing, will come eventually, it&#039;s basically enevitable. If people master psi (or at least master what we know so far) then there will be some who use it for enjoyment, some for what we consider &quot;good&quot; and &quot;evil&quot;. What&#039;s going to happen will happen, because it&#039;s enevitable, worrying about it is useless.
+
+I ponder over these type of things many times, but my only conclusion is, we&#039;ll just have to wait and find out, because there is basically no way to know what will happen in the future.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Hawt Zombie, 4 years, 5 months ago<br />Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Waldo</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=471&amp;ref=1208009607" width="84" height="108" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10373" style="width: 100%; overflow: auto; min-height: 125px;">@Corpse: In the first part of your post, what you seem to forget is that we already have several perfectly adequate means of hurting each other. Guns, bombs. That kind of stuff. And it doesn&#039;t mean we&#039;re all dead just yet. Of course, that might happen eventually, but I don&#039;t think adding psionic means to the equation would make that much difference. People who are capable of killing usually find a means to do it regardless. In addition, if we have advanced far enough in psionics for most people to be able to do some of the things you suggest, I would guess that most people would be capable of defending themselves via particularly strong shields etc.<br />
+<br />
+However, I do worry sometimes about your second point. I don&#039;t really want another Salem witch trials. But again, things have changed since then. I know for a fact that if I could prove beyond reasonable doubt to my friends what I&#039;m doing, they&#039;d jump at the chance to try it. Parapsychology as a whole is a lot more accepted in today&#039;s society, and it&#039;s not uncommon to hear a person confess they believe in telepathy/ghosts/precognition even if they&#039;ve never tried to do it properly themselves.<br />
+<br />
+However, I do feel this is a long way off and we don&#039;t really need to worry about it. Unless we as a group make some serious progress in the next few years. =P =)</div>
+		<textarea style="display: none;" id="desctxt_10373">@Corpse: In the first part of your post, what you seem to forget is that we already have several perfectly adequate means of hurting each other. Guns, bombs. That kind of stuff. And it doesn&#039;t mean we&#039;re all dead just yet. Of course, that might happen eventually, but I don&#039;t think adding psionic means to the equation would make that much difference. People who are capable of killing usually find a means to do it regardless. In addition, if we have advanced far enough in psionics for most people to be able to do some of the things you suggest, I would guess that most people would be capable of defending themselves via particularly strong shields etc.
+
+However, I do worry sometimes about your second point. I don&#039;t really want another Salem witch trials. But again, things have changed since then. I know for a fact that if I could prove beyond reasonable doubt to my friends what I&#039;m doing, they&#039;d jump at the chance to try it. Parapsychology as a whole is a lot more accepted in today&#039;s society, and it&#039;s not uncommon to hear a person confess they believe in telepathy/ghosts/precognition even if they&#039;ve never tried to do it properly themselves.
+
+However, I do feel this is a long way off and we don&#039;t really need to worry about it. Unless we as a group make some serious progress in the next few years. =P =)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Corpse</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=553&amp;ref=1239824741" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10379" style="width: 100%; overflow: auto; min-height: 125px;">Okay I think you guys have given some good points,<br />
+like if we develop attacks that strong, we will develop some sort of defense<br />
+that strong (or even better) or the fact that we can already kill each other<br />
+using modern technology. But this is still a long way off, and I will most likely<br />
+be dead by then anyways, so who really cares?</div>
+		<textarea style="display: none;" id="desctxt_10379">Okay I think you guys have given some good points,
+like if we develop attacks that strong, we will develop some sort of defense
+that strong (or even better) or the fact that we can already kill each other
+using modern technology. But this is still a long way off, and I will most likely
+be dead by then anyways, so who really cares?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">forcemaster245</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=646&amp;ref=1222058247" width="125" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10382" style="width: 100%; overflow: auto; min-height: 125px;">well you wouldn&#039;t need to care if you plan to keep your psychic skills to yourself till the day you die, but if you plan to teach others(possibly the next generation) to use psychic, then that&#039;s a different story altogether.</div>
+		<textarea style="display: none;" id="desctxt_10382">well you wouldn&#039;t need to care if you plan to keep your psychic skills to yourself till the day you die, but if you plan to teach others(possibly the next generation) to use psychic, then that&#039;s a different story altogether.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by forcemaster245, 4 years, 5 months ago<br />Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Corpse</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=553&amp;ref=1239824741" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10383" style="width: 100%; overflow: auto; min-height: 125px;">No I generally like to keep this a secret, <br />
+and I would be worried about exposure,<br />
+or &quot;showing it off&quot; to others<br />
+if I didn&#039;t.</div>
+		<textarea style="display: none;" id="desctxt_10383">No I generally like to keep this a secret, 
+and I would be worried about exposure,
+or &quot;showing it off&quot; to others
+if I didn&#039;t.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10420" style="width: 100%; overflow: auto; min-height: 125px;">^_-... Save all papers or valuable information, because you never no what may happen.<br />
+<br />
+as I have heard time and time again, &quot;You should always hope for the best, but pray for the worst.&quot;</div>
+		<textarea style="display: none;" id="desctxt_10420">^_-... Save all papers or valuable information, because you never no what may happen.
+
+as I have heard time and time again, &quot;You should always hope for the best, but pray for the worst.&quot;</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">delimew</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=108&amp;ref=1205485279" width="39" height="42" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10424" style="width: 100%; overflow: auto; min-height: 125px;">personally, i don&#039;t think that mankind will be around long enough for psionics to reach the point of being common knowledge. &gt;.&gt;</div>
+		<textarea style="display: none;" id="desctxt_10424">personally, i don&#039;t think that mankind will be around long enough for psionics to reach the point of being common knowledge. &gt;.&gt;</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Nin10doFan</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=426&amp;ref=1233878811" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10442" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by delimew:</em><br />
+personally, i don&#039;t think that mankind will be around long enough for psionics to reach the point of being common knowledge. &gt;.&gt;</div>Why?  Do you think mankind will go extinct?  We&#039;re smart enough not to &#039;blow ourselves up.&#039;</div>
+		<textarea style="display: none;" id="desctxt_10442">[quote][i]posted by delimew:[/i]
+personally, i don&#039;t think that mankind will be around long enough for psionics to reach the point of being common knowledge. &gt;.&gt;[/quote]
+
+Why?  Do you think mankind will go extinct?  We&#039;re smart enough not to &#039;blow ourselves up.&#039;</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Corpse</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=553&amp;ref=1239824741" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10443" style="width: 100%; overflow: auto; min-height: 125px;">Actually yes, delimew why do you think man kind will not be around by then?</div>
+		<textarea style="display: none;" id="desctxt_10443">Actually yes, delimew why do you think man kind will not be around by then?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">JakePsi</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10455" style="width: 100%; overflow: auto; min-height: 125px;">I agree with delimew ha ha we already have the sun turning into a black hole, earth getting hit by an asteroid oh and global warming... XD <br />
+plus this topic is just reminding me of stargate sg1 where they find civilizations that have evolutionised so far they have tapped into the greater  power of the mind so yeah... :P</div>
+		<textarea style="display: none;" id="desctxt_10455">I agree with delimew ha ha we already have the sun turning into a black hole, earth getting hit by an asteroid oh and global warming... XD 
+plus this topic is just reminding me of stargate sg1 where they find civilizations that have evolutionised so far they have tapped into the greater  power of the mind so yeah... :P</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Nin10doFan</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=426&amp;ref=1233878811" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10485" style="width: 100%; overflow: auto; min-height: 125px;">Well since neither of those 2 things aren&#039;t going to happen for billions of years, I have nothing to worry about.  As for Global Warming, I think it&#039;s total BS imo.  We have better things to worry about.</div>
+		<textarea style="display: none;" id="desctxt_10485">Well since neither of those 2 things aren&#039;t going to happen for billions of years, I have nothing to worry about.  As for Global Warming, I think it&#039;s total BS imo.  We have better things to worry about.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=483" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 28 queries. 0.280 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

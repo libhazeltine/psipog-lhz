@@ -1,0 +1,534 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; So, How much does it really take?</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; So, How much does it really take?</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">So, How much does it really take?</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">SheepKing</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=211&amp;ref=1222648137" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7717" style="width: 100%; overflow: auto; min-height: 125px;">Just a thought; Normally when visualizing &quot;psi&quot; we see this stream of energy/particles or what have you that is dense and and uniform. But; How much of that interpretation is correct? When you make that psiball I&#039;m sure in your mind you are seeing this uniform solid ball of energy, or perhaps very dense ball that has hardly any gaps to it; But what if it&#039;s only like... 10% correct looking :-P.<br />
+<br />
+I think it&#039;s kind of interesting that maybe it could be just a &quot;few&quot; of whatever unit psi should be measured in, in the affected area.</div>
+		<textarea style="display: none;" id="desctxt_7717">Just a thought; Normally when visualizing &quot;psi&quot; we see this stream of energy/particles or what have you that is dense and and uniform. But; How much of that interpretation is correct? When you make that psiball I&#039;m sure in your mind you are seeing this uniform solid ball of energy, or perhaps very dense ball that has hardly any gaps to it; But what if it&#039;s only like... 10% correct looking :-P.
+
+I think it&#039;s kind of interesting that maybe it could be just a &quot;few&quot; of whatever unit psi should be measured in, in the affected area.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">AndPious</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=321&amp;ref=1203813988" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_7721" style="width: 100%; overflow: auto; min-height: 125px;">I&#039;m guessing it takes a heck of a lot more than I usually give. I seem to have trouble visualizing &quot;dense&quot; energy. For me, it&#039;s usually just a stream of &quot;whatever blue&quot; which has no physical properties at all. Massless (therefore no density), weightless, and as thin as the fluid of space.<br />
+<br />
+I&#039;m guessing since nobody actually *sees* psi (unless flaring is seeing the psi itself) we don&#039;t know exactly what we&#039;re going for. It&#039;s possible that indeed we visualize something very far from what it is in reality, but maybe if we get close enough... BANG goes a psiball. ;)</div>
+		<textarea style="display: none;" id="desctxt_7721">I&#039;m guessing it takes a heck of a lot more than I usually give. I seem to have trouble visualizing &quot;dense&quot; energy. For me, it&#039;s usually just a stream of &quot;whatever blue&quot; which has no physical properties at all. Massless (therefore no density), weightless, and as thin as the fluid of space.
+
+I&#039;m guessing since nobody actually *sees* psi (unless flaring is seeing the psi itself) we don&#039;t know exactly what we&#039;re going for. It&#039;s possible that indeed we visualize something very far from what it is in reality, but maybe if we get close enough... BANG goes a psiball. ;)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Boom</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7723" style="width: 100%; overflow: auto; min-height: 125px;">Its all one energy in different names. How you visualize is how your subconscious is interpreting that energy for you to gain conscious control of.</div>
+		<textarea style="display: none;" id="desctxt_7723">Its all one energy in different names. How you visualize is how your subconscious is interpreting that energy for you to gain conscious control of.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Boom</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_7724" style="width: 100%; overflow: auto; min-height: 125px;">Also should stress then if your subconscious is visualizing it there is no &#039;10% correct&#039; looking because your subconscious is ALWAYS right. As long as you can see it in your minds eye and YOU know what it is, then thats what it is. The subconscious can only talk to you through what you already learned.</div>
+		<textarea style="display: none;" id="desctxt_7724">Also should stress then if your subconscious is visualizing it there is no &#039;10% correct&#039; looking because your subconscious is ALWAYS right. As long as you can see it in your minds eye and YOU know what it is, then thats what it is. The subconscious can only talk to you through what you already learned.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Boom</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7725" style="width: 100%; overflow: auto; min-height: 125px;">A way your subconscious communicates with you is through your curiosity. It will peak your interest in certain things for you to read, listen, watch - whatever. The more you learn the more it can talk to you until you acknowledge it for what, it, is. Learning from yours and others mistakes is one very important of communicating with the subconscious. <br />
+<br />
+Things Of Interest<br />
+<br />
+&#039;The Secret&#039; - yes the movie<br />
+<br />
+Once you get comfortable with that go to the <br />
+<br />
+Twin Flame<br />
+<br />
+Once you get in touch with that go to<br />
+<br />
+Qigong<br />
+<br />
+Please don&#039;t criticize the above subjects of interest. I don&#039;t have time or energy to defend all that. Discrepancies later, read first. Know that everything starts from somewhere and in this world our thoughts are the beginning of a new life. Choose the thoughts that choose your ACTIONS and you either choose a good life or an AMAZING LIFE.<br />
+<br />
+<br />
+Know the astral and KNOW what it TAKES TO RISE IN THE ASTRAL. Its like a nice mcdonalds. Dont eat the fries. </div>
+		<textarea style="display: none;" id="desctxt_7725">A way your subconscious communicates with you is through your curiosity. It will peak your interest in certain things for you to read, listen, watch - whatever. The more you learn the more it can talk to you until you acknowledge it for what, it, is. Learning from yours and others mistakes is one very important of communicating with the subconscious. 
+
+Things Of Interest
+
+&#039;The Secret&#039; - yes the movie
+
+Once you get comfortable with that go to the 
+
+Twin Flame
+
+Once you get in touch with that go to
+
+Qigong
+
+Please don&#039;t criticize the above subjects of interest. I don&#039;t have time or energy to defend all that. Discrepancies later, read first. Know that everything starts from somewhere and in this world our thoughts are the beginning of a new life. Choose the thoughts that choose your ACTIONS and you either choose a good life or an AMAZING LIFE.
+
+
+Know the astral and KNOW what it TAKES TO RISE IN THE ASTRAL. Its like a nice mcdonalds. Dont eat the fries.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">SheepKing</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=211&amp;ref=1222648137" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_7726" style="width: 100%; overflow: auto; min-height: 125px;">You consciously visualizes so your subconscious knows what you&#039;re doing; or trying to do.<br />
+<br />
+I think you&#039;ve missed the point of the post Boom :-P.<br />
+<br />
+</div>
+		<textarea style="display: none;" id="desctxt_7726">You consciously visualizes so your subconscious knows what you&#039;re doing; or trying to do.
+
+I think you&#039;ve missed the point of the post Boom :-P.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Boom</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7727" style="width: 100%; overflow: auto; min-height: 125px;">I know Sheepy, I couldn&#039;t help myself. I apologize for that.<br />
+<br />
+&quot;You consciously visualizes so your subconscious knows what you&#039;re doing; or trying to do&quot; - You<br />
+<br />
+&quot;How you visualize is how your subconscious is interpreting that energy for you to gain conscious control of&quot; - Me<br />
+<br />
+Same meaning different words. The first part of my sentence implies that you must consciously visualize. </div>
+		<textarea style="display: none;" id="desctxt_7727">I know Sheepy, I couldn&#039;t help myself. I apologize for that.
+
+&quot;You consciously visualizes so your subconscious knows what you&#039;re doing; or trying to do&quot; - You
+
+&quot;How you visualize is how your subconscious is interpreting that energy for you to gain conscious control of&quot; - Me
+
+Same meaning different words. The first part of my sentence implies that you must consciously visualize.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">SheepKing</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=211&amp;ref=1222648137" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_7728" style="width: 100%; overflow: auto; min-height: 125px;">It still seems backwards to me. :-P</div>
+		<textarea style="display: none;" id="desctxt_7728">It still seems backwards to me. :-P</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Boom</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7731" style="width: 100%; overflow: auto; min-height: 125px;">I really think its just a harmless misunderstanding. </div>
+		<textarea style="display: none;" id="desctxt_7731">I really think its just a harmless misunderstanding.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">deusxmachina</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=490&amp;ref=1209145387" width="100" height="85" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_7735" style="width: 100%; overflow: auto; min-height: 125px;">For me, it&#039;s just about every single sense I have that goes into processing whatever construct. <br />
+<br />
+Let&#039;s take the infamous psiball: This is what goes through my head:<br />
+<br />
+1) I develop the intention to make the psiball, I place my hands and think about the intentions.<br />
+2) I visualize energy mobilizing and try to &#039;push&#039; it. I&#039;m not sure how else to describe it, it&#039;s an instinct I&#039;ve used since I got into psi, the best I can explain it is when you want to move a muscle, you don&#039;t think about moving it, you just DO. Apply that to energy. <br />
+3) At this point, if I actually am pulling energy, I will get force feedback. I will feel a force counter to my energy-motive force, and (bare with me) my thoughts develop inertia and resistance. I can think the psiball anywhere I want, but it&#039;s not guaranteed to respond perfectly<br />
+4) If my auric vision is working well enough, I can see the energy ripples created by it. Once again, I notice lag when I try to move it quickly or change its shape. <br />
+<br />
+It&#039;s still a quantitative process though. If you are open enough, your mind and the energy should reach an equilibrium in which the amount of energy you perceive is quite close to the amount of energy that is concretely there. <br />
+<br />
+I can usually tell when I &#039;derail,&#039; e.g. what I&#039;m thinking about is no longer having an effect on the construct (I&#039;ve gone from visualization which has intent, to just imagining). However, once I get my focus back in tune, the construct will resume forming itself into my intent. <br />
+<br />
+<br />
+I&#039;ve always thought it would be cool to have an energy unit for psi, but it&#039;d be nearly impossible with the current technology. The closest thing we have are things like Geiger counters, which I feel only measure the effects of psi, not the pure energy. <br />
+<br />
+ </div>
+		<textarea style="display: none;" id="desctxt_7735">For me, it&#039;s just about every single sense I have that goes into processing whatever construct. 
+
+Let&#039;s take the infamous psiball: This is what goes through my head:
+
+1) I develop the intention to make the psiball, I place my hands and think about the intentions.
+2) I visualize energy mobilizing and try to &#039;push&#039; it. I&#039;m not sure how else to describe it, it&#039;s an instinct I&#039;ve used since I got into psi, the best I can explain it is when you want to move a muscle, you don&#039;t think about moving it, you just DO. Apply that to energy. 
+3) At this point, if I actually am pulling energy, I will get force feedback. I will feel a force counter to my energy-motive force, and (bare with me) my thoughts develop inertia and resistance. I can think the psiball anywhere I want, but it&#039;s not guaranteed to respond perfectly
+4) If my auric vision is working well enough, I can see the energy ripples created by it. Once again, I notice lag when I try to move it quickly or change its shape. 
+
+It&#039;s still a quantitative process though. If you are open enough, your mind and the energy should reach an equilibrium in which the amount of energy you perceive is quite close to the amount of energy that is concretely there. 
+
+I can usually tell when I &#039;derail,&#039; e.g. what I&#039;m thinking about is no longer having an effect on the construct (I&#039;ve gone from visualization which has intent, to just imagining). However, once I get my focus back in tune, the construct will resume forming itself into my intent. 
+
+
+I&#039;ve always thought it would be cool to have an energy unit for psi, but it&#039;d be nearly impossible with the current technology. The closest thing we have are things like Geiger counters, which I feel only measure the effects of psi, not the pure energy.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">SheepKing</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=211&amp;ref=1222648137" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7738" style="width: 100%; overflow: auto; min-height: 125px;">Sounds reasonable to me Duesexmachina ; I know what you&#039;re talking about with derailing too.<br />
+<br />
+Agreed on the geiger counters possibly measuring effects of psi; not the psi itself.<br />
+<br />
+</div>
+		<textarea style="display: none;" id="desctxt_7738">Sounds reasonable to me Duesexmachina ; I know what you&#039;re talking about with derailing too.
+
+Agreed on the geiger counters possibly measuring effects of psi; not the psi itself.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">mrj</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_7746" style="width: 100%; overflow: auto; min-height: 125px;">When it comes to moving a somewhat stable psi ball, simply &quot;thinking&quot; it someplace else isnt enough (for me).I have to put in a bit more effort to get it to go someplace. I can tell where one is if it pushes my hands apart, and if I actualy have moved it then my hands wont be forced away. Not only that, but it doesnt seem to instantly move to where I direct it. I think it might take a certain amount of time to travel from , say, point A to point B, but it might be the same amount of time (depending on focus) even if the distance is larger. which might explain a seemingly fast or slow travel speed, becuase of distance.<br />
+<br />
+(But maybe thats just me, but yeah, I think psi related stuff would be easier if we just knew were the energy was to give us a good idea where to improve)</div>
+		<textarea style="display: none;" id="desctxt_7746">When it comes to moving a somewhat stable psi ball, simply &quot;thinking&quot; it someplace else isnt enough (for me).I have to put in a bit more effort to get it to go someplace. I can tell where one is if it pushes my hands apart, and if I actualy have moved it then my hands wont be forced away. Not only that, but it doesnt seem to instantly move to where I direct it. I think it might take a certain amount of time to travel from , say, point A to point B, but it might be the same amount of time (depending on focus) even if the distance is larger. which might explain a seemingly fast or slow travel speed, becuase of distance.
+
+(But maybe thats just me, but yeah, I think psi related stuff would be easier if we just knew were the energy was to give us a good idea where to improve)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by mrj, 4 years, 8 months ago<br />Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Antisankari</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=224&amp;ref=1213032338" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7762" style="width: 100%; overflow: auto; min-height: 125px;">As for the energy.<br />
+<br />
+One hint might be the blood potassium level drop that has been reported as a side-effect. Mostly in attempts with telekinesis.<br />
+<br />
+If somebody moves item that weights X grams and the difference in his blood potassium levels are Y, we can calculate the amount of energy needed to move the object and see the amount of potassium spent.<br />
+<br />
+When making a psiball, one could take a blood test before and after attempt. This way we  could get a hint of the amounts of energy that are in work.<br />
+<br />
+According to this way of thinking, we could calculate the absolute maximum that can be achieved by an individual. Highest possible potassium level measured in blood. Difference between that and the lowest possible potassium level not killing you.<br />
+<br />
+</div>
+		<textarea style="display: none;" id="desctxt_7762">As for the energy.
+
+One hint might be the blood potassium level drop that has been reported as a side-effect. Mostly in attempts with telekinesis.
+
+If somebody moves item that weights X grams and the difference in his blood potassium levels are Y, we can calculate the amount of energy needed to move the object and see the amount of potassium spent.
+
+When making a psiball, one could take a blood test before and after attempt. This way we  could get a hint of the amounts of energy that are in work.
+
+According to this way of thinking, we could calculate the absolute maximum that can be achieved by an individual. Highest possible potassium level measured in blood. Difference between that and the lowest possible potassium level not killing you.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Wandering Wolf</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=492&amp;ref=1209855800" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_7775" style="width: 100%; overflow: auto; min-height: 125px;">Some of the wording that I&#039;ve seen here is a little odd to me, so I&#039;ve decided to provide a similar interpretation in my own words:<br />
+<br />
+&quot;But what if it&#039;s only like... 10% correct looking :-P.&quot; - SheepKing<br />
+<br />
+Boom&#039;s response to this sounded right, but I&#039;d like to provide my own interpretation. I believe that what is &quot;correct&quot; is what you are consciously comfortable with. Your subconscious interprets this and provides the desired effect. I remember reading, back in the days of psipog, one of Sean&#039;s articles about energy use. In one section of the article, he talked about how you can visualize something that you associate with healing to create an actual healing response when applying it to the area of concern. The example he used was bandaids. <br />
+<br />
+All right, it looks like I have digressed slightly. Basically, what you consciously believe to represent a high density psi ball should be interpreted by your subconscious as such, leading to an actual dense psi ball in the physical world. <br />
+<br />
+As mentioned in most psi ball exercises, it is probably best to work with what you consider to be low density energy content up until you reach a high density level of energy content. This may be helpful in providing your subconscious with the material to distinguish between a low density psi ball and a high density psi ball. I believe that this is probably why I have not been able to create an actual psi ball. I never bothered making this distinguishment between dense and not so dense energy. The result was that I would only receive a low density energy sensation that my subconscious provided me as a &quot;default&quot; setting. <br />
+<br />
+&quot;I think it&#039;s kind of interesting that maybe it could be just a &#039;few&#039; of whatever unit psi should be measured in, in the affected area.&quot; - SheepKing<br />
+<br />
+The so-called &quot;unit psi&quot; is probably just a function of how your subconscious interprets what it sees. If you have familiarized it with the difference between what you want low density and high density psi to look like, then your subconscious should be able to adjust the &quot;unit psi&quot; accordingly to that visual representation based off of its &quot;conditioning&quot;.<br />
+<br />
+This is all I have to say for now. I will gladly provide clarification if misunderstanding and/or disagreement arises.</div>
+		<textarea style="display: none;" id="desctxt_7775">Some of the wording that I&#039;ve seen here is a little odd to me, so I&#039;ve decided to provide a similar interpretation in my own words:
+
+&quot;But what if it&#039;s only like... 10% correct looking :-P.&quot; - SheepKing
+
+Boom&#039;s response to this sounded right, but I&#039;d like to provide my own interpretation. I believe that what is &quot;correct&quot; is what you are consciously comfortable with. Your subconscious interprets this and provides the desired effect. I remember reading, back in the days of psipog, one of Sean&#039;s articles about energy use. In one section of the article, he talked about how you can visualize something that you associate with healing to create an actual healing response when applying it to the area of concern. The example he used was bandaids. 
+
+All right, it looks like I have digressed slightly. Basically, what you consciously believe to represent a high density psi ball should be interpreted by your subconscious as such, leading to an actual dense psi ball in the physical world. 
+
+As mentioned in most psi ball exercises, it is probably best to work with what you consider to be low density energy content up until you reach a high density level of energy content. This may be helpful in providing your subconscious with the material to distinguish between a low density psi ball and a high density psi ball. I believe that this is probably why I have not been able to create an actual psi ball. I never bothered making this distinguishment between dense and not so dense energy. The result was that I would only receive a low density energy sensation that my subconscious provided me as a &quot;default&quot; setting. 
+
+&quot;I think it&#039;s kind of interesting that maybe it could be just a &#039;few&#039; of whatever unit psi should be measured in, in the affected area.&quot; - SheepKing
+
+The so-called &quot;unit psi&quot; is probably just a function of how your subconscious interprets what it sees. If you have familiarized it with the difference between what you want low density and high density psi to look like, then your subconscious should be able to adjust the &quot;unit psi&quot; accordingly to that visual representation based off of its &quot;conditioning&quot;.
+
+This is all I have to say for now. I will gladly provide clarification if misunderstanding and/or disagreement arises.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Wandering Wolf, 4 years, 8 months ago<br />Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">SheepKing</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=211&amp;ref=1222648137" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7776" style="width: 100%; overflow: auto; min-height: 125px;">Let me degenerate to the lowest common denominator.<br />
+<br />
+If I imagine psi kamehameha out of my &quot;3rd eye&quot; to blow holes through Piccolo; Is that what it really looks like? OR; ORRRRR, <br />
+<br />
+When I imagine Psi; My subconscious says &quot;Hah, he&#039;s trying to do something psychic. Poor guy; Let me help him out ... *subconscious forms psi into structure necessary to carry out what I am CRUDELY (no matter how detailed your visualizations are; they are crude) trying to interpret to my subconscious to do.*<br />
+<br />
+What I was really getting out with the original post is that the relationship we create with psi in our heads from the get go is probably not right. How often has the relationship that people have created with ANYTHING we can&#039;t see been right off the get go? Even for things we DO see we tend to over simplify and over analyze things to the point that we create an &quot;ideal image&quot; of what is really going on.<br />
+<br />
+Just food for thought; You could be right.</div>
+		<textarea style="display: none;" id="desctxt_7776">Let me degenerate to the lowest common denominator.
+
+If I imagine psi kamehameha out of my &quot;3rd eye&quot; to blow holes through Piccolo; Is that what it really looks like? OR; ORRRRR, 
+
+When I imagine Psi; My subconscious says &quot;Hah, he&#039;s trying to do something psychic. Poor guy; Let me help him out ... *subconscious forms psi into structure necessary to carry out what I am CRUDELY (no matter how detailed your visualizations are; they are crude) trying to interpret to my subconscious to do.*
+
+What I was really getting out with the original post is that the relationship we create with psi in our heads from the get go is probably not right. How often has the relationship that people have created with ANYTHING we can&#039;t see been right off the get go? Even for things we DO see we tend to over simplify and over analyze things to the point that we create an &quot;ideal image&quot; of what is really going on.
+
+Just food for thought; You could be right.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by SheepKing, 4 years, 8 months ago<br />Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Wandering Wolf</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=492&amp;ref=1209855800" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_7778" style="width: 100%; overflow: auto; min-height: 125px;">Ah, I see what you mean. In that case, I will have to agree with you. The actual structure and appearance likely is beyond our comprehension. Trying to get an accurate visualization of a real psi ball would probably be a lot like trying to create your own mental impression of how a substance is atomically structured (without the help of an electron microscope).<br />
+<br />
+Thank you for clarifying your point. This brings to mind how other psionic abilities, such as cryokinesis and pyrokinesis would require a lot of arbitration on the subconscious&#039; part. The way we visualize atoms speeding or slowing down in those exercises must be way off from what it would actually look like. <br />
+<br />
+We are only human afterall, not supercomputers with advanced atomic cognition.</div>
+		<textarea style="display: none;" id="desctxt_7778">Ah, I see what you mean. In that case, I will have to agree with you. The actual structure and appearance likely is beyond our comprehension. Trying to get an accurate visualization of a real psi ball would probably be a lot like trying to create your own mental impression of how a substance is atomically structured (without the help of an electron microscope).
+
+Thank you for clarifying your point. This brings to mind how other psionic abilities, such as cryokinesis and pyrokinesis would require a lot of arbitration on the subconscious&#039; part. The way we visualize atoms speeding or slowing down in those exercises must be way off from what it would actually look like. 
+
+We are only human afterall, not supercomputers with advanced atomic cognition.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Wandering Wolf, 4 years, 8 months ago<br />Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">SheepKing</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=211&amp;ref=1222648137" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7779" style="width: 100%; overflow: auto; min-height: 125px;">No problem; I suppose a lot of things don&#039;t look right through our eyes/minds :-P</div>
+		<textarea style="display: none;" id="desctxt_7779">No problem; I suppose a lot of things don&#039;t look right through our eyes/minds :-P</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">ErikJDurwoodII</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=131&amp;ref=1209413315" width="90" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_7809" style="width: 100%; overflow: auto; min-height: 125px;">When an artist visualizes their work, it is through their talent and skill that they use the tools they have to create what they see in their mind.  Speaking as an artist, most often than not, what you see in your mind is often much more pristine and refined than what comes out on the canvas.  This is a simple metric of skill.  You have mastered your craft when you can create exactly what you visualize in full.<br />
+<br />
+Psionics is no different.  Your visualization is like a blueprint.  You set your intent and craft the design and purpose.  Using your tools, you will create to the best of your ability.  The difference here is you need to be able to perceive your results to see if you have created a masterpiece.<br />
+<br />
+And thus the journey continues. ^__^<br />
+<br />
+- Erik</div>
+		<textarea style="display: none;" id="desctxt_7809">When an artist visualizes their work, it is through their talent and skill that they use the tools they have to create what they see in their mind.  Speaking as an artist, most often than not, what you see in your mind is often much more pristine and refined than what comes out on the canvas.  This is a simple metric of skill.  You have mastered your craft when you can create exactly what you visualize in full.
+
+Psionics is no different.  Your visualization is like a blueprint.  You set your intent and craft the design and purpose.  Using your tools, you will create to the best of your ability.  The difference here is you need to be able to perceive your results to see if you have created a masterpiece.
+
+And thus the journey continues. ^__^
+
+- Erik</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=330" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 34 queries. 0.320 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

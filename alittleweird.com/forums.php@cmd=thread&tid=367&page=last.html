@@ -1,0 +1,292 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; blind OBE</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; blind OBE</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">blind OBE</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">stollz</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_8213" style="width: 100%; overflow: auto; min-height: 125px;">after years of trying i finnally had my first OBE last night.<br />
+<br />
+i could feel myself float outside of my body (this was the most amazing feeling i have ever had in my life) and i could controll myself on where i wanted to move. throughout the whole thing i happened to be blind. i could not see where i was or anything around me but i had a feeling of where i was. <br />
+<br />
+can anyone explain to me why i was blind throughout the experience or how i could fix this?</div>
+		<textarea style="display: none;" id="desctxt_8213">after years of trying i finnally had my first OBE last night.
+
+i could feel myself float outside of my body (this was the most amazing feeling i have ever had in my life) and i could controll myself on where i wanted to move. throughout the whole thing i happened to be blind. i could not see where i was or anything around me but i had a feeling of where i was. 
+
+can anyone explain to me why i was blind throughout the experience or how i could fix this?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">SheepKing</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=211&amp;ref=1222648137" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_8215" style="width: 100%; overflow: auto; min-height: 125px;">I&#039;ve never heard of a blind OBE. I thought perhaps visualness was one of their hallmarks . How in depth was your feeling of your surrounding environment. Could you determine the location of objects and what not through any other sense than sight?<br />
+<br />
+Perhaps you are categorizing this experience wrong? I have been outside of my body with my mind many times, but not in the degree of an OBE.</div>
+		<textarea style="display: none;" id="desctxt_8215">I&#039;ve never heard of a blind OBE. I thought perhaps visualness was one of their hallmarks . How in depth was your feeling of your surrounding environment. Could you determine the location of objects and what not through any other sense than sight?
+
+Perhaps you are categorizing this experience wrong? I have been outside of my body with my mind many times, but not in the degree of an OBE.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">stollz</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_8217" style="width: 100%; overflow: auto; min-height: 125px;">well.<br />
+heres a description of the whole experience :<br />
+<br />
+i layed down and put on my headphones. i began to listen to the i-doser OBE dose (binaural brainwave stimulating music. helps to get into an OBE)<br />
+<br />
+i began the dose and within 5 minutes i went into a deep trance. i started to feel the vibrations and within another 5 minutes or so i started to get CEVs (closed eye visuals) my CEVs were mainly stuff like flashing lights and such.<br />
+<br />
+soon i felt myself start to float upwards out of my body why my body was not actually moving at all. <br />
+i became aware of what was happening so i waited assuming that maybe i would get vision all around me but i never did. so to assure myself that i was in an OBE i tried to force myself to move forward. suddenly i began to float forward and i got to my door. when i went through the door i got the wierd feeling that is described most of the times when in an OBE.<br />
+<br />
+this whole time i could not see my surroundings but i sort of <em>knew</em> what was arround me just because of the surroundings that i were familliar with.<br />
+<br />
+besides. if it WAS an obe my golden teather probably wouldnt had let me gone past where i was fammilliar with.</div>
+		<textarea style="display: none;" id="desctxt_8217">well.
+heres a description of the whole experience :
+
+i layed down and put on my headphones. i began to listen to the i-doser OBE dose (binaural brainwave stimulating music. helps to get into an OBE)
+
+i began the dose and within 5 minutes i went into a deep trance. i started to feel the vibrations and within another 5 minutes or so i started to get CEVs (closed eye visuals) my CEVs were mainly stuff like flashing lights and such.
+
+soon i felt myself start to float upwards out of my body why my body was not actually moving at all. 
+i became aware of what was happening so i waited assuming that maybe i would get vision all around me but i never did. so to assure myself that i was in an OBE i tried to force myself to move forward. suddenly i began to float forward and i got to my door. when i went through the door i got the wierd feeling that is described most of the times when in an OBE.
+
+this whole time i could not see my surroundings but i sort of [i]knew[/i] what was arround me just because of the surroundings that i were familliar with.
+
+besides. if it WAS an obe my golden teather probably wouldnt had let me gone past where i was fammilliar with.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Sean</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=2&amp;ref=1214247941" width="117" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_8330" style="width: 100%; overflow: auto; min-height: 125px;">A lot of my experiences have been blind.<br />
+<br />
+Or even better, when I open my &quot;eyes&quot;, my physical eyes open.  So I feel myself walking around my room, but I&#039;m looking out of my physical eyes!  Very cool :-).<br />
+<br />
+It took me a long time to figure out how to fix this.  Basically, I just had to calm down, and maintain my state until my vision eventually faded in.  In the past, when I got out of body, I would be so excited, and tried to run away from my physical body as fast as I could.  When I slow myself down, calm down, and relax, and focus just on calmly brining my vision into focus, then it slowly begins to work.  It usually takes a good 30 extra seconds to get my vision working now.<br />
+<br />
+As a last ditch effort, if it still isn&#039;t working after that, sometimes squinting worked for me.  I have no idea why.<br />
+<br />
+~Sean</div>
+		<textarea style="display: none;" id="desctxt_8330">A lot of my experiences have been blind.
+
+Or even better, when I open my &quot;eyes&quot;, my physical eyes open.  So I feel myself walking around my room, but I&#039;m looking out of my physical eyes!  Very cool :-).
+
+It took me a long time to figure out how to fix this.  Basically, I just had to calm down, and maintain my state until my vision eventually faded in.  In the past, when I got out of body, I would be so excited, and tried to run away from my physical body as fast as I could.  When I slow myself down, calm down, and relax, and focus just on calmly brining my vision into focus, then it slowly begins to work.  It usually takes a good 30 extra seconds to get my vision working now.
+
+As a last ditch effort, if it still isn&#039;t working after that, sometimes squinting worked for me.  I have no idea why.
+
+~Sean</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Sean, 4 years, 7 months ago<br />Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=367" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 20 queries. 0.272 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

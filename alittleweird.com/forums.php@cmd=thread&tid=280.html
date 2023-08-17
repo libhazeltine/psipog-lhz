@@ -1,0 +1,316 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Subconscious</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Subconscious</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Subconscious</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">mountaingoats</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7198" style="width: 100%; overflow: auto; min-height: 125px;">I&#039;m trying to learn to communicate with my subconscious. Sometimes I feel like I&#039;m getting some results. Occasionally I&#039;ll ask my subconscious a question and get an insightful answer. Inevitably I end up quitting practice because I become too skeptical, so I don&#039;t get anywhere.<br />
+<br />
+For those of you who have had success - wanna give any tips? Also, has your subconscious been a beneficial force in your life (if so, how?) or is it just some mostly-useless voice that gives insights occasionally?</div>
+		<textarea style="display: none;" id="desctxt_7198">I&#039;m trying to learn to communicate with my subconscious. Sometimes I feel like I&#039;m getting some results. Occasionally I&#039;ll ask my subconscious a question and get an insightful answer. Inevitably I end up quitting practice because I become too skeptical, so I don&#039;t get anywhere.
+
+For those of you who have had success - wanna give any tips? Also, has your subconscious been a beneficial force in your life (if so, how?) or is it just some mostly-useless voice that gives insights occasionally?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Jeffrey</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=283&amp;ref=1213976987" width="116" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_7216" style="width: 100%; overflow: auto; min-height: 125px;">Yeah, I&#039;d like to know some about this as well, because I&#039;m not sure if I&#039;m talking to myself, hearing my subconscious, or just making it up.<br />
+<br />
+<br />
+And like, sometimes, I&#039;d get an answer, which I think might be just me, and ignore it. And I have NO IDEA how to tell the difference between the 2.<br />
+<br />
+<br />
+:-/</div>
+		<textarea style="display: none;" id="desctxt_7216">Yeah, I&#039;d like to know some about this as well, because I&#039;m not sure if I&#039;m talking to myself, hearing my subconscious, or just making it up.
+
+
+And like, sometimes, I&#039;d get an answer, which I think might be just me, and ignore it. And I have NO IDEA how to tell the difference between the 2.
+
+
+:-/</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Sean</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=2&amp;ref=1214247941" width="117" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7236" style="width: 100%; overflow: auto; min-height: 125px;">Telling the difference comes from two things:<br />
+<br />
+1. Practice.  As you continue to practice, you can get a feel for it.<br />
+<br />
+2. (Probably more helpful...) You must learn to keep your mind quiet.  You must learn to be able to shut your mind up at will, for a good duration of time (30 seconds - 1 minute).  This is where meditation is helpful.  Keeping a blank mind for that long is challenging.  Once you can do that... THEN ask yourself a question, and keep your mind blank, waiting for a response.  If you get a feeling/thought, then you will have the experience of meditation to tell you whether it is your own mind rambling on, or if it&#039;s coming from an &quot;external&quot; source.<br />
+<br />
+To mountaingoats questions...<br />
+<br />
+My tip for you is not to put a lot of pressure on the situation.  It sounds like you might be expecting a lot, and then don&#039;t get anything amazing, so you become skeptical and quit.  Just have fun.  Be skeptical, but don&#039;t allow that skepticism to turn into cynicism.  Play around and just remain open.<br />
+<br />
+My subconscious has been a beneficial force in my life, for a lot of reasons.  One obvious way is that it&#039;s predicted a lot of things, which end up coming true - so it&#039;s very useful and eases stress when the future seems rocky.  It also gives me new things to try, that I probably wouldn&#039;t have thought of on my own.  It helps me remember things.<br />
+<br />
+Another benefit is that it allows me to think quickly... like having an internal conversation, using a combination of images, emotions, memories, words, movies, etc... all flowing quickly.  When communicating with people in the real world, we have to plan sentence structure, reference things that we all understand, and mostly just use words and some inflection or body language to communicate our point.  With my subconscious, I don&#039;t have to compose sentences - I can just think raw thoughts, and receive raw thoughts in return.  I don&#039;t have to explain anything - the explanation is embedded in the emotion itself.  In one thought, I can start off using words, switch to a memory, which has an embedded emotion, followed by a dream I had, back to words, and perhaps add a movie, with some still frames of importance - in a few seconds.  And get a reply in the same format.<br />
+<br />
+~Sean</div>
+		<textarea style="display: none;" id="desctxt_7236">Telling the difference comes from two things:
+
+1. Practice.  As you continue to practice, you can get a feel for it.
+
+2. (Probably more helpful...) You must learn to keep your mind quiet.  You must learn to be able to shut your mind up at will, for a good duration of time (30 seconds - 1 minute).  This is where meditation is helpful.  Keeping a blank mind for that long is challenging.  Once you can do that... THEN ask yourself a question, and keep your mind blank, waiting for a response.  If you get a feeling/thought, then you will have the experience of meditation to tell you whether it is your own mind rambling on, or if it&#039;s coming from an &quot;external&quot; source.
+
+To mountaingoats questions...
+
+My tip for you is not to put a lot of pressure on the situation.  It sounds like you might be expecting a lot, and then don&#039;t get anything amazing, so you become skeptical and quit.  Just have fun.  Be skeptical, but don&#039;t allow that skepticism to turn into cynicism.  Play around and just remain open.
+
+My subconscious has been a beneficial force in my life, for a lot of reasons.  One obvious way is that it&#039;s predicted a lot of things, which end up coming true - so it&#039;s very useful and eases stress when the future seems rocky.  It also gives me new things to try, that I probably wouldn&#039;t have thought of on my own.  It helps me remember things.
+
+Another benefit is that it allows me to think quickly... like having an internal conversation, using a combination of images, emotions, memories, words, movies, etc... all flowing quickly.  When communicating with people in the real world, we have to plan sentence structure, reference things that we all understand, and mostly just use words and some inflection or body language to communicate our point.  With my subconscious, I don&#039;t have to compose sentences - I can just think raw thoughts, and receive raw thoughts in return.  I don&#039;t have to explain anything - the explanation is embedded in the emotion itself.  In one thought, I can start off using words, switch to a memory, which has an embedded emotion, followed by a dream I had, back to words, and perhaps add a movie, with some still frames of importance - in a few seconds.  And get a reply in the same format.
+
+~Sean</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Nin10doFan</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=426&amp;ref=1233878811" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_7315" style="width: 100%; overflow: auto; min-height: 125px;">I know what you mean Jeffrey, a lot, well pretty much all of the time it feels as if it&#039;s just me and not my subconscious.          </div>
+		<textarea style="display: none;" id="desctxt_7315">I know what you mean Jeffrey, a lot, well pretty much all of the time it feels as if it&#039;s just me and not my subconscious.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">SheepKing</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=211&amp;ref=1222648137" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7368" style="width: 100%; overflow: auto; min-height: 125px;">Sometimes I think my subconscious is being a jerk to me. I don&#039;t think I&#039;d want to listen to him all the time.<br />
+<br />
+But, most of the time it seems like he sends his message with a very subtle feeling associated with that kind of &#039;Ah-ha&#039; moment, when you figure something out. To be honest, I don&#039;t have controllable success with the subc thing; It chimes in whenever it feels like it for me.<br />
+<br />
+Also, as a side note, the input from it is general only predicitions of something coming up within the next minute(peoples actions, things I&#039;ll see, or &quot;What not to do.&quot;), or the unraveling of some type of plot ( don&#039;t know if I&#039;m personally good at it or whatever, but movie plots usually unfold to me way before anyone else I&#039;m with, I don&#039;t even have to try).</div>
+		<textarea style="display: none;" id="desctxt_7368">Sometimes I think my subconscious is being a jerk to me. I don&#039;t think I&#039;d want to listen to him all the time.
+
+But, most of the time it seems like he sends his message with a very subtle feeling associated with that kind of &#039;Ah-ha&#039; moment, when you figure something out. To be honest, I don&#039;t have controllable success with the subc thing; It chimes in whenever it feels like it for me.
+
+Also, as a side note, the input from it is general only predicitions of something coming up within the next minute(peoples actions, things I&#039;ll see, or &quot;What not to do.&quot;), or the unraveling of some type of plot ( don&#039;t know if I&#039;m personally good at it or whatever, but movie plots usually unfold to me way before anyone else I&#039;m with, I don&#039;t even have to try).</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">cinderwild</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_7371" style="width: 100%; overflow: auto; min-height: 125px;">Well maybe you just don&#039;t have a free will and it doesn&#039;t matter anyways. = P</div>
+		<textarea style="display: none;" id="desctxt_7371">Well maybe you just don&#039;t have a free will and it doesn&#039;t matter anyways. = P</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">SheepKing</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=211&amp;ref=1222648137" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7373" style="width: 100%; overflow: auto; min-height: 125px;">Damn fine point there!</div>
+		<textarea style="display: none;" id="desctxt_7373">Damn fine point there!</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 9 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=280" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 23 queries. 0.333 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

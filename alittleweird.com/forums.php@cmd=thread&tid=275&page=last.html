@@ -1,0 +1,392 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Lucid Dream Issues</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Lucid Dream Issues</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Lucid Dream Issues</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Jeffrey</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=283&amp;ref=1213976987" width="116" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7118" style="width: 100%; overflow: auto; min-height: 125px;">Let&#039;s make this short and sweet, shall we?<br />
+<br />
+So sometimes when I go to bed and sleep, I&#039;d have a lucid dream. I&#039;d have them about 1-2 a month. But, I&#039;m having sn issue:<br />
+<br />
+Say, I&#039;m in a dream in my school, and I realize I&#039;m dreaming. Normally when this would happen, I&#039;d yell out, &quot;I&#039;M DREAMING, WOO-HOO!!!&quot;. :-P  But than, my friends would go, &quot;No you&#039;re not you idiot.&quot;. And, I&#039;d prove them wrong by altering the dream world. Here&#039;s the problem. Sometimes, I can&#039;t. I can&#039;t control anything. It&#039;s like... Bah, it&#039;s hard to explain... It&#039;s like, I&#039;m dreaming of HAVING a lucid dream, but I&#039;m still not in control. Sorry if this makes no sense, it&#039;s hard to describe it. Anyone know what&#039;s wrong/thing they could help?</div>
+		<textarea style="display: none;" id="desctxt_7118">Let&#039;s make this short and sweet, shall we?
+
+So sometimes when I go to bed and sleep, I&#039;d have a lucid dream. I&#039;d have them about 1-2 a month. But, I&#039;m having sn issue:
+
+Say, I&#039;m in a dream in my school, and I realize I&#039;m dreaming. Normally when this would happen, I&#039;d yell out, &quot;I&#039;M DREAMING, WOO-HOO!!!&quot;. :-P  But than, my friends would go, &quot;No you&#039;re not you idiot.&quot;. And, I&#039;d prove them wrong by altering the dream world. Here&#039;s the problem. Sometimes, I can&#039;t. I can&#039;t control anything. It&#039;s like... Bah, it&#039;s hard to explain... It&#039;s like, I&#039;m dreaming of HAVING a lucid dream, but I&#039;m still not in control. Sorry if this makes no sense, it&#039;s hard to describe it. Anyone know what&#039;s wrong/thing they could help?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">cinderwild</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_7121" style="width: 100%; overflow: auto; min-height: 125px;">Do you mean that you are dreaming of a lucid dream, but not literally having a lucid dream? I do that most often, such as having conscience thoughts, but not being conscience.<br />
+<br />
+ There really is no way of saying &#039;what&#039;s wrong&#039; as there is no defined &#039;right&#039;. I would suggest you try something new in your lucid dream practices, or, more importantly, if you are getting stressed out, just stop trying all together. It&#039;s all about having fun, and being relaxed makes these things ten times more likely (a figure of speech, of course) to happen.</div>
+		<textarea style="display: none;" id="desctxt_7121">Do you mean that you are dreaming of a lucid dream, but not literally having a lucid dream? I do that most often, such as having conscience thoughts, but not being conscience.
+
+ There really is no way of saying &#039;what&#039;s wrong&#039; as there is no defined &#039;right&#039;. I would suggest you try something new in your lucid dream practices, or, more importantly, if you are getting stressed out, just stop trying all together. It&#039;s all about having fun, and being relaxed makes these things ten times more likely (a figure of speech, of course) to happen.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Jeffrey</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=283&amp;ref=1213976987" width="116" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7125" style="width: 100%; overflow: auto; min-height: 125px;">Well, alright. But, my lucid dreams would happen spontaneously (I totally have a feeling that word is spelled wrong. :-P).  So, is there a way to get out of that whole &#039;dreaming of a lucid dream&#039; concept? Because, wouldn&#039;t your dream be lucid even if you&#039;re dreaming you&#039;re dreaming it?</div>
+		<textarea style="display: none;" id="desctxt_7125">Well, alright. But, my lucid dreams would happen spontaneously (I totally have a feeling that word is spelled wrong. :-P).  So, is there a way to get out of that whole &#039;dreaming of a lucid dream&#039; concept? Because, wouldn&#039;t your dream be lucid even if you&#039;re dreaming you&#039;re dreaming it?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">cinderwild</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_7126" style="width: 100%; overflow: auto; min-height: 125px;">Not technically. (Although technically the technicality can go either way; see, I can do that too!) One thing that recently worked for me was I told myself (my subconscious if you are familiar with that; if not, try checking psipog for subconscious communication articles) what I wanted to do/appear in my dreams, and -all- of it happened. It was my attempt to have a lucid dream. It didn&#039;t work as far as lucidity, but at least I know I was listening.<br />
+<br />
+ With that mind, maybe you could try telling yourself what very obvious dream signs you would like to appear in your dreams, or even more simply just say that you want to be lucid. Then, go to sleep.</div>
+		<textarea style="display: none;" id="desctxt_7126">Not technically. (Although technically the technicality can go either way; see, I can do that too!) One thing that recently worked for me was I told myself (my subconscious if you are familiar with that; if not, try checking psipog for subconscious communication articles) what I wanted to do/appear in my dreams, and -all- of it happened. It was my attempt to have a lucid dream. It didn&#039;t work as far as lucidity, but at least I know I was listening.
+
+ With that mind, maybe you could try telling yourself what very obvious dream signs you would like to appear in your dreams, or even more simply just say that you want to be lucid. Then, go to sleep.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">UltimateBlob</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=345&amp;ref=1203372186" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7127" style="width: 100%; overflow: auto; min-height: 125px;">I too have experienced being conscious but unable to control anything in a lucid dream.  I remember waking up (in my dream) and getting out of bed thinking, &quot;hmm, this feels like I&#039;m dreaming still&quot; so I figured I&#039;d prove it to myself by levitating myself - it didn&#039;t work so I went back to &quot;sleep&quot;.<br />
+<br />
+It&#039;s happened more than once and I think the reason you can&#039;t control anything is because you don&#039;t believe you can.  I was pretty much convinced in my dream that I wasn&#039;t dreaming, but just to check I tried levitating.  However when I&#039;m completely aware that I&#039;m definitely dreaming it&#039;s much easier to affect things.<br />
+<br />
+So take a moment to say &quot;I am definitely dreaming&quot; and find a way to be sure of it before trying to make cool stuff happen, &#039;cause if you try and it doesn&#039;t work, you&#039;ll probably just convince yourself you&#039;re actually awake.</div>
+		<textarea style="display: none;" id="desctxt_7127">I too have experienced being conscious but unable to control anything in a lucid dream.  I remember waking up (in my dream) and getting out of bed thinking, &quot;hmm, this feels like I&#039;m dreaming still&quot; so I figured I&#039;d prove it to myself by levitating myself - it didn&#039;t work so I went back to &quot;sleep&quot;.
+
+It&#039;s happened more than once and I think the reason you can&#039;t control anything is because you don&#039;t believe you can.  I was pretty much convinced in my dream that I wasn&#039;t dreaming, but just to check I tried levitating.  However when I&#039;m completely aware that I&#039;m definitely dreaming it&#039;s much easier to affect things.
+
+So take a moment to say &quot;I am definitely dreaming&quot; and find a way to be sure of it before trying to make cool stuff happen, &#039;cause if you try and it doesn&#039;t work, you&#039;ll probably just convince yourself you&#039;re actually awake.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Sean</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=2&amp;ref=1214247941" width="117" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_7130" style="width: 100%; overflow: auto; min-height: 125px;">I used to have a problem with dream characters convincing me I wasn&#039;t dreaming.  The rule I now have in my head is that: if I have <strong>ANY</strong> doubt to whether I&#039;m dreaming or not, then I <strong>AM</strong> dreaming.  If dream characters try to convince me otherwise, I recognize that the fact there exists doubt means that it is definitely a dream.<br />
+<br />
+From there, I can do just about anything.<br />
+<br />
+~Sean</div>
+		<textarea style="display: none;" id="desctxt_7130">I used to have a problem with dream characters convincing me I wasn&#039;t dreaming.  The rule I now have in my head is that: if I have [b]ANY[/b] doubt to whether I&#039;m dreaming or not, then I [b]AM[/b] dreaming.  If dream characters try to convince me otherwise, I recognize that the fact there exists doubt means that it is definitely a dream.
+
+From there, I can do just about anything.
+
+~Sean</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">AndPious</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=321&amp;ref=1203813988" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7132" style="width: 100%; overflow: auto; min-height: 125px;">I&#039;ve never had a problem with convincing, and I&#039;ve never actually talked to anyone during a lucid dream. What usually happens is either (1) I fall back asleep intending to continue dreaming lucidly, or (2) I simply SNAP into lucidity because I&#039;m close to waking. When I become lucid I don&#039;t feel like changing much around me or talking, but I like to change myself or do other fun things. My favorite of all is flying.<br />
+<br />
+In the last lucid dream I had, my first action was summoning a couch, then a blanket inside of this huge imposing black &quot;gothic&quot; style stone hall. I still have no earthly idea of why I wanted either of those, but shortly thereafter I woke up when I thought of the possibility that I might awaken.<br />
+<br />
+Jeff, try not talking to anyobody when you begin a LD. xD<br />
+<br />
+Just flyyy... and fight with swords.</div>
+		<textarea style="display: none;" id="desctxt_7132">I&#039;ve never had a problem with convincing, and I&#039;ve never actually talked to anyone during a lucid dream. What usually happens is either (1) I fall back asleep intending to continue dreaming lucidly, or (2) I simply SNAP into lucidity because I&#039;m close to waking. When I become lucid I don&#039;t feel like changing much around me or talking, but I like to change myself or do other fun things. My favorite of all is flying.
+
+In the last lucid dream I had, my first action was summoning a couch, then a blanket inside of this huge imposing black &quot;gothic&quot; style stone hall. I still have no earthly idea of why I wanted either of those, but shortly thereafter I woke up when I thought of the possibility that I might awaken.
+
+Jeff, try not talking to anyobody when you begin a LD. xD
+
+Just flyyy... and fight with swords.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">cinderwild</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_7133" style="width: 100%; overflow: auto; min-height: 125px;">Here&#039;s an idea. Fight sword people with swords with swords.</div>
+		<textarea style="display: none;" id="desctxt_7133">Here&#039;s an idea. Fight sword people with swords with swords.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Tiger_shark</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=397&amp;ref=1203483207" width="105" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7134" style="width: 100%; overflow: auto; min-height: 125px;">My main problem is that I instantly fade out of the dream when I acheive lucidity, no matter what I try to do. I never have enough time to try and fly, or blow things up.<br />
+ :(</div>
+		<textarea style="display: none;" id="desctxt_7134">My main problem is that I instantly fade out of the dream when I acheive lucidity, no matter what I try to do. I never have enough time to try and fly, or blow things up.
+ :(</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">SheepKing</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=211&amp;ref=1222648137" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_7145" style="width: 100%; overflow: auto; min-height: 125px;">Hmm, sounds to me that you are just fading in and out of being able to recognized that you are having a dream. That&#039;s the closest I&#039;ve ever gotten to having a lucid dream. <br />
+<br />
+In many of the dreams I have had I realize that I am dreaming and that I am using reasoning to figure things out, but then I quickly fall back into the sway of dream logic and become the spectator.<br />
+<br />
+It&#039;s pretty normal dude. The fact that you have gotten that far is actually a pretty good sign. Don&#039;t give up :-D.</div>
+		<textarea style="display: none;" id="desctxt_7145">Hmm, sounds to me that you are just fading in and out of being able to recognized that you are having a dream. That&#039;s the closest I&#039;ve ever gotten to having a lucid dream. 
+
+In many of the dreams I have had I realize that I am dreaming and that I am using reasoning to figure things out, but then I quickly fall back into the sway of dream logic and become the spectator.
+
+It&#039;s pretty normal dude. The fact that you have gotten that far is actually a pretty good sign. Don&#039;t give up :-D.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">dominator691</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7148" style="width: 100%; overflow: auto; min-height: 125px;">I have had some similar experiences. I have been on and off trying to have a lucid dream for almost 2 years now (I obviously haven&#039;t practiced enough due to lack of time and stupid interruptions), and I have had 3 instances where I have achieved consciousness in a dream. The one time I was able to levitate before I woke up which was very exciting (although the dream was fuzzy and not as vivid as I had hoped), the second consisted of me being conscious during a nightmare which I could not change so I woke up, and the last was very peculiar. I was in my school and I realized this as an improbability because it was summer at the time so I said very vocally &quot;Ok, this is definitely a dream.&quot; and then all of a sudden one of my good friends came up to me and said &quot;No, it&#039;s not lets get to class.&quot; And i was very affirmative and said once more &quot;No, don&#039;t lie to me, I know that I am dreaming!&quot; and then my friend looked at me with  a disappointed look and then said to me &quot;Damn it, alright you win.&quot; and then The whole dream proceeded to change and I woke up very alert. This was probably the strangest experience I have ever had in a dream. *I am sorry if these were too long I just thought it may be of some help to hear other stories and maybe get feedback on my own*</div>
+		<textarea style="display: none;" id="desctxt_7148">I have had some similar experiences. I have been on and off trying to have a lucid dream for almost 2 years now (I obviously haven&#039;t practiced enough due to lack of time and stupid interruptions), and I have had 3 instances where I have achieved consciousness in a dream. The one time I was able to levitate before I woke up which was very exciting (although the dream was fuzzy and not as vivid as I had hoped), the second consisted of me being conscious during a nightmare which I could not change so I woke up, and the last was very peculiar. I was in my school and I realized this as an improbability because it was summer at the time so I said very vocally &quot;Ok, this is definitely a dream.&quot; and then all of a sudden one of my good friends came up to me and said &quot;No, it&#039;s not lets get to class.&quot; And i was very affirmative and said once more &quot;No, don&#039;t lie to me, I know that I am dreaming!&quot; and then my friend looked at me with  a disappointed look and then said to me &quot;Damn it, alright you win.&quot; and then The whole dream proceeded to change and I woke up very alert. This was probably the strangest experience I have ever had in a dream. *I am sorry if these were too long I just thought it may be of some help to hear other stories and maybe get feedback on my own*</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Antisankari</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=224&amp;ref=1213032338" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_7164" style="width: 100%; overflow: auto; min-height: 125px;">Whenever I happen to encounter a lucid dream, I just tend to do as much damage as I can do knowing all too well the limited duration of the experience. <br />
+<br />
+Sometimes I even start to question my dreams &quot;dreaminess&quot; AFTER I have done something horrible. Of course the support cast in my dreams plays along with my doubts, and way too often I end up waking up being grateful that it was just a dream afterall. =P<br />
+<br />
+Such waste.</div>
+		<textarea style="display: none;" id="desctxt_7164">Whenever I happen to encounter a lucid dream, I just tend to do as much damage as I can do knowing all too well the limited duration of the experience. 
+
+Sometimes I even start to question my dreams &quot;dreaminess&quot; AFTER I have done something horrible. Of course the support cast in my dreams plays along with my doubts, and way too often I end up waking up being grateful that it was just a dream afterall. =P
+
+Such waste.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Runtest</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7228" style="width: 100%; overflow: auto; min-height: 125px;">Here is my theory on this. If your mid is the barrier between &quot;supernatural&quot; things in the real world then in your dream world it would also work that way wouldn&#039;t it? If your mid creates a barrier there it would work in much of the same way. Is this reasonable?</div>
+		<textarea style="display: none;" id="desctxt_7228">Here is my theory on this. If your mid is the barrier between &quot;supernatural&quot; things in the real world then in your dream world it would also work that way wouldn&#039;t it? If your mid creates a barrier there it would work in much of the same way. Is this reasonable?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">bright</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=442&amp;ref=1219022178" width="112" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_7378" style="width: 100%; overflow: auto; min-height: 125px;">When I think about lucid dreaming while I’m awake I have a very strong feeling of fear due to a problem I’ve been experiencing during lucid dreams. When I become lucid in a dream that feeling comes back, and I’m then very conscious. <br />
+<br />
+Somehow I feel like my consciousness has something to do with this emotion I have. So maybe, just maybe ( and this is just a theory I’ll be testing out over the next few days) if you try to connect an emotion to your lucid dream, maybe even an emotional event, when you are lucid you may then think of this event (or feel) and this will help you stay lucid, and possibly then in control. To me it seems like an anchor, or a thread connecting me to reality.<br />
+<br />
+This is just a theory, it may be crap, I’ll be trying it, maybe you could. <br />
+<br />
+</div>
+		<textarea style="display: none;" id="desctxt_7378">When I think about lucid dreaming while I’m awake I have a very strong feeling of fear due to a problem I’ve been experiencing during lucid dreams. When I become lucid in a dream that feeling comes back, and I’m then very conscious. 
+
+Somehow I feel like my consciousness has something to do with this emotion I have. So maybe, just maybe ( and this is just a theory I’ll be testing out over the next few days) if you try to connect an emotion to your lucid dream, maybe even an emotional event, when you are lucid you may then think of this event (or feel) and this will help you stay lucid, and possibly then in control. To me it seems like an anchor, or a thread connecting me to reality.
+
+This is just a theory, it may be crap, I’ll be trying it, maybe you could.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 9 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=275" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 30 queries. 0.283 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

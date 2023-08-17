@@ -1,0 +1,498 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Sleep?</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Sleep?</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Sleep?</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Trick</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=744&amp;ref=1221873234" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11306" style="width: 100%; overflow: auto; min-height: 125px;">Has anybody else noticed this? I dont really seem to need to sleep. I get maybe an hour or two a night, and I feel fine. I cant sleep anyways. Its almost 7 AM here wich is when I have to get up. I havent slept more than about two hours in the past few days. I think maybe its from meditating so much? Has anybody else noticed this?</div>
+		<textarea style="display: none;" id="desctxt_11306">Has anybody else noticed this? I dont really seem to need to sleep. I get maybe an hour or two a night, and I feel fine. I cant sleep anyways. Its almost 7 AM here wich is when I have to get up. I havent slept more than about two hours in the past few days. I think maybe its from meditating so much? Has anybody else noticed this?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Trick, 4 years, 3 months ago<br />Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">DigGil</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11310" style="width: 100%; overflow: auto; min-height: 125px;">I rarely feel need to sleep, but when I go to bed I sleep like a rock for precisely 8/9 hours.<br />
+Sometimes, when I get insomnia, I feel very energized. <br />
+I sleep just because I can&#039;t work at night and TV shows at that time are ******.</div>
+		<textarea style="display: none;" id="desctxt_11310">I rarely feel need to sleep, but when I go to bed I sleep like a rock for precisely 8/9 hours.
+Sometimes, when I get insomnia, I feel very energized. 
+I sleep just because I can&#039;t work at night and TV shows at that time are ******.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">jackrivers</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=759&amp;ref=1220326318" width="125" height="105" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11314" style="width: 100%; overflow: auto; min-height: 125px;"><br />
+I heard that people don&#039;t really need to sleep when they reached a certain level with meditations, my mom said that this monk don&#039;t have to eat or sleep at all...</div>
+		<textarea style="display: none;" id="desctxt_11314">I heard that people don&#039;t really need to sleep when they reached a certain level with meditations, my mom said that this monk don&#039;t have to eat or sleep at all...</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Antisankari</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=224&amp;ref=1213032338" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11315" style="width: 100%; overflow: auto; min-height: 125px;">Meh.<br />
+<br />
+Meditation studies have concluded meditation sharing similar superficial characteristics with sleep, while still being a different state. <br />
+<br />
+One might naturally need less sleep due to spending day infront of the computer and meditating the rest of the time.<br />
+<br />
+Some brainiac believed in meditation-substituted sleep deprivation scheme in the reservoir officer school.<br />
+ <a href="http://en.wikipedia.org/wiki/Reserve_Officer_School" target="_blank">http://en.wikipedia.org/wiki/Reserve_Officer_School</a><br />
+Kept the scheme up for some two weeks, after that whenever the column stopped, the guy dropped. Couldn&#039;t keep awake.<br />
+And he only substituted 2-3 hours / night.</div>
+		<textarea style="display: none;" id="desctxt_11315">Meh.
+
+Meditation studies have concluded meditation sharing similar superficial characteristics with sleep, while still being a different state. 
+
+One might naturally need less sleep due to spending day infront of the computer and meditating the rest of the time.
+
+Some brainiac believed in meditation-substituted sleep deprivation scheme in the reservoir officer school.
+http://en.wikipedia.org/wiki/Reserve_Officer_School
+Kept the scheme up for some two weeks, after that whenever the column stopped, the guy dropped. Couldn&#039;t keep awake.
+And he only substituted 2-3 hours / night.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Waldo</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=471&amp;ref=1208009607" width="84" height="108" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11316" style="width: 100%; overflow: auto; min-height: 125px;">Hrm. I can&#039;t really condone such a lack of sleep, whether you&#039;ve been meditating or not. There&#039;s a reason we sleep; I&#039;m not sure it&#039;s a good idea to mess up your body by missing out something that we as human beings so clearly need. I guess it&#039;s not my place to tell anybody what to do, but I just can&#039;t see why doing that is a good idea. If you want to play with it, go with it... but don&#039;t blame me if it goes wrong!<br />
+<br />
+Anyhow, sleep is great fun! I&#039;d really miss dreaming and that great feeling you get when you&#039;re all refreshed. Gives your brain a bit of a break. =)</div>
+		<textarea style="display: none;" id="desctxt_11316">Hrm. I can&#039;t really condone such a lack of sleep, whether you&#039;ve been meditating or not. There&#039;s a reason we sleep; I&#039;m not sure it&#039;s a good idea to mess up your body by missing out something that we as human beings so clearly need. I guess it&#039;s not my place to tell anybody what to do, but I just can&#039;t see why doing that is a good idea. If you want to play with it, go with it... but don&#039;t blame me if it goes wrong!
+
+Anyhow, sleep is great fun! I&#039;d really miss dreaming and that great feeling you get when you&#039;re all refreshed. Gives your brain a bit of a break. =)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Trick</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=744&amp;ref=1221873234" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11317" style="width: 100%; overflow: auto; min-height: 125px;">Well then! I guess I was right. <br />
+<br />
+Waldo: Yeah, I know its not good. But I TRY to sleep, and cant. I&#039;ll go days at a time sometimes not being able to. If my body really starts to need to, it will. Yeah I miss dreaming too. I&#039;m a natural LDer, very fun. </div>
+		<textarea style="display: none;" id="desctxt_11317">Well then! I guess I was right. 
+
+Waldo: Yeah, I know its not good. But I TRY to sleep, and cant. I&#039;ll go days at a time sometimes not being able to. If my body really starts to need to, it will. Yeah I miss dreaming too. I&#039;m a natural LDer, very fun.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">NewAgeAlchemist</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=459&amp;ref=1207160982" width="125" height="20" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11325" style="width: 100%; overflow: auto; min-height: 125px;">You might consider speaking with a spiritual guide about your meditation. I would suggest someone knowledgeable in kundalini/meditation and diet.<br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em> <a href="http://www.spiritualcompetency.com/jhpseart.html" target="_blank">http://www.spiritualcompetency.com/jhpseart.html</a> </em><br />
+<br />
+Kornfield (1993), a psychologist and experienced meditation teacher, described what he termed a spiritual emergency that took place at an intensive meditation retreat he was leading.<br />
+<br />
+    An &quot;overzealous young karate student&quot; decided to meditate and not move for a full day and night. When he got up, he was filled with explosive energy. He strode into the middle of the dining hall filled with 100 silent retreatants and began to yell and practice his karate maneuvers at triple speed. Then he screamed, &quot;When I look at each of you, I see behind you a whole trail of bodies showing your past lives.&quot; As an experienced meditation teacher, Kornfield recognized that the symptoms were related to the meditation practice rather than signs of a manic episode (for which they also meet all the diagnostic criteria except duration). The meditation community handled the situation by stopping his meditation practice and starting him jogging, ten miles in the morning and afternoon. His diet was changed to include red meat, which is thought to have a grounding effect. They got him to take frequent hot baths and showers, and to dig in the garden. One person was with him all the time. After three days, he was able to sleep again and was allowed to started meditating again, slowly and carefully. (adapted from pp. 131-132)</div>There are a number of ways meditation and diet can have an impact on people, yours may be insomnia or something like it. If you function fine, you might just naturally need less sleep but multiple days on 3 hours sounds outside healthy realms.</div>
+		<textarea style="display: none;" id="desctxt_11325">You might consider speaking with a spiritual guide about your meditation. I would suggest someone knowledgeable in kundalini/meditation and diet.
+[quote][i]http://www.spiritualcompetency.com/jhpseart.html [/i]
+
+Kornfield (1993), a psychologist and experienced meditation teacher, described what he termed a spiritual emergency that took place at an intensive meditation retreat he was leading.
+
+    An &quot;overzealous young karate student&quot; decided to meditate and not move for a full day and night. When he got up, he was filled with explosive energy. He strode into the middle of the dining hall filled with 100 silent retreatants and began to yell and practice his karate maneuvers at triple speed. Then he screamed, &quot;When I look at each of you, I see behind you a whole trail of bodies showing your past lives.&quot; As an experienced meditation teacher, Kornfield recognized that the symptoms were related to the meditation practice rather than signs of a manic episode (for which they also meet all the diagnostic criteria except duration). The meditation community handled the situation by stopping his meditation practice and starting him jogging, ten miles in the morning and afternoon. His diet was changed to include red meat, which is thought to have a grounding effect. They got him to take frequent hot baths and showers, and to dig in the garden. One person was with him all the time. After three days, he was able to sleep again and was allowed to started meditating again, slowly and carefully. (adapted from pp. 131-132) [/quote]
+
+There are a number of ways meditation and diet can have an impact on people, yours may be insomnia or something like it. If you function fine, you might just naturally need less sleep but multiple days on 3 hours sounds outside healthy realms.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by NewAgeAlchemist, 4 years, 3 months ago<br />Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">redefine</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=428&amp;ref=1219933762" width="0" height="0" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11331" style="width: 100%; overflow: auto; min-height: 125px;">i wish i did this. i hate sleeping, it seems like such a waste to me, but i still have to get at least 7 hours of sleep, else i feel sleep deprived. alot.<br />
+<br />
+and i hardly ever dream, so its not really a loss in that part.</div>
+		<textarea style="display: none;" id="desctxt_11331">i wish i did this. i hate sleeping, it seems like such a waste to me, but i still have to get at least 7 hours of sleep, else i feel sleep deprived. alot.
+
+and i hardly ever dream, so its not really a loss in that part.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Sean</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=2&amp;ref=1214247941" width="117" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11332" style="width: 100%; overflow: auto; min-height: 125px;">Man, I love to sleep.  I sleep upwards of 12 hours a night.  I don&#039;t think training yourself to miss sleep is something to be proud of.  I just read an article on how the subconscious organizes it&#039;s memories, exercises the mind, and rehearses for future events while sleeping.  Interesting stuff.<br />
+<br />
+~Sean</div>
+		<textarea style="display: none;" id="desctxt_11332">Man, I love to sleep.  I sleep upwards of 12 hours a night.  I don&#039;t think training yourself to miss sleep is something to be proud of.  I just read an article on how the subconscious organizes it&#039;s memories, exercises the mind, and rehearses for future events while sleeping.  Interesting stuff.
+
+~Sean</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">X-Master</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=433&amp;ref=1238933408" width="115" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11333" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Sean:</em><br />
+Man, I love to sleep.  I sleep upwards of 12 hours a night.  I don&#039;t think training yourself to miss sleep is something to be proud of.  I just read an article on how the subconscious organizes it&#039;s memories, exercises the mind, and rehearses for future events while sleeping.  Interesting stuff.<br />
+<br />
+~Sean</div>Not only to organize memories but to shuttle them from short term to long term, which is why staying up all night to cram is of negligible value.<br />
+<br />
+I can also sleep up to 12 hours a night. And being here at the university has made my dreams more frequent and has given me some strange sense of being back at home and then I wake up and relize where I am. So it has made the whole process more interesting, whether or not I actually have a lucid one or not.<br />
+<br />
+So to sum it up, that does not sound very healthy as others have mentioned. To get myself back on track I do not bother to go to bed and just stay up throughout the day until it comes time to go to sleep again, and usually by then I am tired enough to sleep fairly well and get up early enough to keep the cycle going, at least for a while.<br />
+<br />
+Any how hopefully that helps, somehow.<br />
+<br />
+</div>
+		<textarea style="display: none;" id="desctxt_11333">[quote][i]posted by Sean:[/i]
+Man, I love to sleep.  I sleep upwards of 12 hours a night.  I don&#039;t think training yourself to miss sleep is something to be proud of.  I just read an article on how the subconscious organizes it&#039;s memories, exercises the mind, and rehearses for future events while sleeping.  Interesting stuff.
+
+~Sean[/quote]
+
+Not only to organize memories but to shuttle them from short term to long term, which is why staying up all night to cram is of negligible value.
+
+I can also sleep up to 12 hours a night. And being here at the university has made my dreams more frequent and has given me some strange sense of being back at home and then I wake up and relize where I am. So it has made the whole process more interesting, whether or not I actually have a lucid one or not.
+
+So to sum it up, that does not sound very healthy as others have mentioned. To get myself back on track I do not bother to go to bed and just stay up throughout the day until it comes time to go to sleep again, and usually by then I am tired enough to sleep fairly well and get up early enough to keep the cycle going, at least for a while.
+
+Any how hopefully that helps, somehow.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">jackrivers</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=759&amp;ref=1220326318" width="125" height="105" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11337" style="width: 100%; overflow: auto; min-height: 125px;">there are people who&#039;s body doesn&#039;t really need to sleep. It is what I believe at least. But sleep is crucial to almost everyone so yes, try to sleep. When your body need to sleep it should respond, but just to be safe go check at the doctor too see if you are sick...if you want to. <br />
+<br />
+Health is very important to everyone, so I hope everyone do their best to stay healthy. <br />
+<br />
+Still, I believe there are people who don&#039;t NEED to sleep at all...its all about how you feel really, normally everyone would want to sleep when the time comes...(usually at night, noon naps too for some people), sleep when you are tired, when your body needs to, that&#039;s my belief.</div>
+		<textarea style="display: none;" id="desctxt_11337">there are people who&#039;s body doesn&#039;t really need to sleep. It is what I believe at least. But sleep is crucial to almost everyone so yes, try to sleep. When your body need to sleep it should respond, but just to be safe go check at the doctor too see if you are sick...if you want to. 
+
+Health is very important to everyone, so I hope everyone do their best to stay healthy. 
+
+Still, I believe there are people who don&#039;t NEED to sleep at all...its all about how you feel really, normally everyone would want to sleep when the time comes...(usually at night, noon naps too for some people), sleep when you are tired, when your body needs to, that&#039;s my belief.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">SheepKing</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=211&amp;ref=1222648137" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11343" style="width: 100%; overflow: auto; min-height: 125px;">I don&#039;t think I&#039;ve heard of anyone who doesn&#039;t need sleep. Perhaps you&#039;re at a point right now where you don&#039;t feel sleepy, or you feel sleepy but are functional and you are interpreting it at as you don&#039;t need to sleep.<br />
+<br />
+I got on average through the week 5-6 hours of sleep a night and it can be pretty rough sometimes. I&#039;d still be able to work with 2 but I don&#039; think I could sit through a meeting, or in a comfortable place and read without dosing off. I&#039;d probably crash out after a couple days and be forced to sleep.</div>
+		<textarea style="display: none;" id="desctxt_11343">I don&#039;t think I&#039;ve heard of anyone who doesn&#039;t need sleep. Perhaps you&#039;re at a point right now where you don&#039;t feel sleepy, or you feel sleepy but are functional and you are interpreting it at as you don&#039;t need to sleep.
+
+I got on average through the week 5-6 hours of sleep a night and it can be pretty rough sometimes. I&#039;d still be able to work with 2 but I don&#039; think I could sit through a meeting, or in a comfortable place and read without dosing off. I&#039;d probably crash out after a couple days and be forced to sleep.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">DigGil</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11344" style="width: 100%; overflow: auto; min-height: 125px;">I think different people react differently to sleep deprivation: <br />
+<br />
+-I&#039;ve already heard about the monk who didn&#039;t needed to sleep<br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by jackrivers:</em><br />
+I heard that people don&#039;t really need to sleep when they reached a certain level with meditations, my mom said that this monk don&#039;t have to eat or sleep at all...</div>-But I&#039;ve also heard about a man who thought that sleeping was a waste of time<br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by redefine:</em><br />
+i wish i did this. i hate sleeping, it seems like such a waste to me, but i still have to get at least 7 hours of sleep, else i feel sleep deprived. alot.<br />
+<br />
+and i hardly ever dream, so its not really a loss in that part.</div>-I&#039;ve even read about an experiment where a person was forced to don&#039;t sleep and at the end got hallucinations and entered in comma.<br />
+<br />
+I got the same belief as jackrivers:<br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by jackrivers:</em><br />
+there are people who&#039;s body doesn&#039;t really need to sleep. It is what I believe at least. But sleep is crucial to almost everyone so yes, try to sleep. When your body need to sleep it should respond (...) I believe there are people who don&#039;t NEED to sleep at all...its all about how you feel really, normally everyone would want to sleep when the time comes...(usually at night, noon naps too for some people), sleep when you are tired, when your body needs to, that&#039;s my belief.</div>Trust your subconscious, but be aware first of what it is really saying so you don&#039;t make this mistake:<br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by SheepKing:</em><br />
+(...)Perhaps you&#039;re at a point right now where you don&#039;t feel sleepy, or you feel sleepy but are functional and you are interpreting it at as you don&#039;t need to sleep.(...)</div></div>
+		<textarea style="display: none;" id="desctxt_11344">I think different people react differently to sleep deprivation: 
+
+-I&#039;ve already heard about the monk who didn&#039;t needed to sleep
+[quote][i]posted by jackrivers:[/i]
+I heard that people don&#039;t really need to sleep when they reached a certain level with meditations, my mom said that this monk don&#039;t have to eat or sleep at all...[/quote]
+
+-But I&#039;ve also heard about a man who thought that sleeping was a waste of time
+[quote][i]posted by redefine:[/i]
+i wish i did this. i hate sleeping, it seems like such a waste to me, but i still have to get at least 7 hours of sleep, else i feel sleep deprived. alot.
+
+and i hardly ever dream, so its not really a loss in that part.[/quote]
+
+-I&#039;ve even read about an experiment where a person was forced to don&#039;t sleep and at the end got hallucinations and entered in comma.
+
+I got the same belief as jackrivers:
+[quote][i]posted by jackrivers:[/i]
+there are people who&#039;s body doesn&#039;t really need to sleep. It is what I believe at least. But sleep is crucial to almost everyone so yes, try to sleep. When your body need to sleep it should respond (...) I believe there are people who don&#039;t NEED to sleep at all...its all about how you feel really, normally everyone would want to sleep when the time comes...(usually at night, noon naps too for some people), sleep when you are tired, when your body needs to, that&#039;s my belief.[/quote]
+Trust your subconscious, but be aware first of what it is really saying so you don&#039;t make this mistake:
+[quote][i]posted by SheepKing:[/i]
+(...)Perhaps you&#039;re at a point right now where you don&#039;t feel sleepy, or you feel sleepy but are functional and you are interpreting it at as you don&#039;t need to sleep.(...)[/quote]</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Trick</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=744&amp;ref=1221873234" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11346" style="width: 100%; overflow: auto; min-height: 125px;">I wish I could sleep as much as Sean and X Master, but even if I was able to, not enough time. School or not. <br />
+<br />
+NewAgeAlchemist: I dont know anybody like that. But I do meditate and eat healthy.<br />
+<br />
+I DO get that crustyness in my eyes, but I feel fine. At school the next day I run as fast, everything. II&#039;m going to specifically set myself up now so that my body will sleep, so I will be able to. Heres what I&#039;ll do:<br />
+<br />
+-Wake up at 7 AM every morning. This is so on the weekends I dont sleep in, because if you sleep in on the weekends its harder to adjust your schedule back so you can get up early for school again.<br />
+<br />
+-Try to eat a bit before bed.<br />
+<br />
+-No screen time past 8 PM. This is because it supposedly interferes with how you sleep.</div>
+		<textarea style="display: none;" id="desctxt_11346">I wish I could sleep as much as Sean and X Master, but even if I was able to, not enough time. School or not. 
+
+NewAgeAlchemist: I dont know anybody like that. But I do meditate and eat healthy.
+
+I DO get that crustyness in my eyes, but I feel fine. At school the next day I run as fast, everything. II&#039;m going to specifically set myself up now so that my body will sleep, so I will be able to. Heres what I&#039;ll do:
+
+-Wake up at 7 AM every morning. This is so on the weekends I dont sleep in, because if you sleep in on the weekends its harder to adjust your schedule back so you can get up early for school again.
+
+-Try to eat a bit before bed.
+
+-No screen time past 8 PM. This is because it supposedly interferes with how you sleep.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Trick, 4 years, 3 months ago<br />Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">NewAgeAlchemist</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=459&amp;ref=1207160982" width="125" height="20" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11347" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Trick:</em><br />
+NewAgeAlchemist: I dont know anybody like that. But I do meditate and eat healthy.</div>The way I&#039;m speaking, its more along the lines with the effects of food topic. An energetic imbalance, which may seem useful or harmless but might have other effects as well. If you have a local Massage Therapist knowledgeable in Shiatsu it might be a place to start. My stance is leaning on a more eastern understanding of the body, rather than western for this purpose.</div>
+		<textarea style="display: none;" id="desctxt_11347">[quote][i]posted by Trick:[/i]
+NewAgeAlchemist: I dont know anybody like that. But I do meditate and eat healthy.[/quote]
+
+The way I&#039;m speaking, its more along the lines with the effects of food topic. An energetic imbalance, which may seem useful or harmless but might have other effects as well. If you have a local Massage Therapist knowledgeable in Shiatsu it might be a place to start. My stance is leaning on a more eastern understanding of the body, rather than western for this purpose.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Trick</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=744&amp;ref=1221873234" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11348" style="width: 100%; overflow: auto; min-height: 125px;">I see. <br />
+<br />
+P.S I always thought Shiatsu was a dog. </div>
+		<textarea style="display: none;" id="desctxt_11348">I see. 
+
+P.S I always thought Shiatsu was a dog.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">deathsmessenger</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11462" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Trick:</em><br />
+I see. <br />
+<br />
+P.S I always thought Shiatsu was a dog.</div>shih tsu... i have 2 of them(or atleast, my mom does), they are nosiy!!<br />
+</div>
+		<textarea style="display: none;" id="desctxt_11462">[quote][i]posted by Trick:[/i]
+I see. 
+
+P.S I always thought Shiatsu was a dog.[/quote]
+ shih tsu... i have 2 of them(or atleast, my mom does), they are nosiy!!</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=561" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 33 queries. 0.279 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

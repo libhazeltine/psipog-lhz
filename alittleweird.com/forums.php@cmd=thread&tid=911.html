@@ -1,0 +1,370 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; horrible expirience</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; horrible expirience</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">horrible expirience</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Elexiel</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_16354" style="width: 100%; overflow: auto; min-height: 125px;">OK this night i had the worst expierience since i started out in  my psychic developement.<br />
+<br />
+First of all a warning for everybody! DO NOT practice in any magickal/psychic activities while u are on drugs (INCLUDING ALCHOHOL).<br />
+because this is what happenend to me last night.<br />
+<br />
+Last evening i was sitting relaxed with some friends together, having some drinks.<br />
+I was not badass drunk but had some beer of course.<br />
+<br />
+Then i went to bed and started to play a bit around with some Energy Manipulation/ drawing,and storing etc.<br />
+Thinking of nothing bad I went to sleep.<br />
+<br />
+This is where it started. It must have been somewhere on the astral plane. when i had an encounter.<br />
+I was locked in an house and met something. I dont know what it was but it must have been some kind of evil female entity. I dont think it was a Demon because I wouldnt be able to sit here and write this if it would have been one.<br />
+ <br />
+Whatever it was it was, it locked us in this place and was trying to get control over me.I was trying to escape but it was impossible. <br />
+I was fighting against her will of controlling me with all power. but she was already starting to control parts of my body.<br />
+<br />
+Then i suddenly woke up in horror and panic.I felt really cold my heart was beating fast and I had goose-skin all over my body.i wasnt really noticing that i woke up so i fell back into sleep after ca. 1-2min.<br />
+<br />
+And again i found myself in locked in the same place.she was still there but i never could see here directly, she was always hidden and blurred.<br />
+<br />
+She attacked me again with even more agressivity than the first time,but i could refuse her to posess me. she was raging and again I got snapped out of sleep.<br />
+The same feelings appeared,Heart-beating,fear,coldness and waves of goose-skin.<br />
+Then I started to focus and calm myself.<br />
+I knew that these entities gain power through fear because it attracts lots of energies. So i avoided to get scared and started to get a clear mind.<br />
+must have been something around 3am. At that time I wasnt drunk anymore so I meditated and found her.<br />
+I had a another fight with her in my mind but I was starting to get control back.<br />
+The bad thing was that i wasnt able to get rid of her completely and still felt her strange presence.<br />
+<br />
+Finally my subconcious took control and care of me.<br />
+Suddenly I started to radiate incredible nice soothing warmth and heat that i actually started to sweat.<br />
+It was so strong and I knew I will win the fight. And then i felt all panic and coldness leaving my body in a rush and knew she was gone!<br />
+<br />
+She tried to come back 1 or 2 times but this heat was so protective that there wasnt any chance.<br />
+<br />
+After that I decided to &quot;clean&quot; up my mind and also the astral place where i met her, to erase all traces she left behind.<br />
+Then i fell into a deep restorative dreamless sleep.<br />
+<br />
+<br />
+That was one really intense expierience and I wish noone to have it.I learned my lesson. So again DONT practice while drunk or whatever, it will alter and open your mind and body for anything which is waiting on the other side.<br />
+<br />
+Please tell me what you are thinking about this, or if anyone else expierienced something similar. <br />
+<br />
+Thanks</div>
+		<textarea style="display: none;" id="desctxt_16354">OK this night i had the worst expierience since i started out in  my psychic developement.
+
+First of all a warning for everybody! DO NOT practice in any magickal/psychic activities while u are on drugs (INCLUDING ALCHOHOL).
+because this is what happenend to me last night.
+
+Last evening i was sitting relaxed with some friends together, having some drinks.
+I was not badass drunk but had some beer of course.
+
+Then i went to bed and started to play a bit around with some Energy Manipulation/ drawing,and storing etc.
+Thinking of nothing bad I went to sleep.
+
+This is where it started. It must have been somewhere on the astral plane. when i had an encounter.
+I was locked in an house and met something. I dont know what it was but it must have been some kind of evil female entity. I dont think it was a Demon because I wouldnt be able to sit here and write this if it would have been one.
+ 
+Whatever it was it was, it locked us in this place and was trying to get control over me.I was trying to escape but it was impossible. 
+I was fighting against her will of controlling me with all power. but she was already starting to control parts of my body.
+
+Then i suddenly woke up in horror and panic.I felt really cold my heart was beating fast and I had goose-skin all over my body.i wasnt really noticing that i woke up so i fell back into sleep after ca. 1-2min.
+
+And again i found myself in locked in the same place.she was still there but i never could see here directly, she was always hidden and blurred.
+
+She attacked me again with even more agressivity than the first time,but i could refuse her to posess me. she was raging and again I got snapped out of sleep.
+The same feelings appeared,Heart-beating,fear,coldness and waves of goose-skin.
+Then I started to focus and calm myself.
+I knew that these entities gain power through fear because it attracts lots of energies. So i avoided to get scared and started to get a clear mind.
+must have been something around 3am. At that time I wasnt drunk anymore so I meditated and found her.
+I had a another fight with her in my mind but I was starting to get control back.
+The bad thing was that i wasnt able to get rid of her completely and still felt her strange presence.
+
+Finally my subconcious took control and care of me.
+Suddenly I started to radiate incredible nice soothing warmth and heat that i actually started to sweat.
+It was so strong and I knew I will win the fight. And then i felt all panic and coldness leaving my body in a rush and knew she was gone!
+
+She tried to come back 1 or 2 times but this heat was so protective that there wasnt any chance.
+
+After that I decided to &quot;clean&quot; up my mind and also the astral place where i met her, to erase all traces she left behind.
+Then i fell into a deep restorative dreamless sleep.
+
+
+That was one really intense expierience and I wish noone to have it.I learned my lesson. So again DONT practice while drunk or whatever, it will alter and open your mind and body for anything which is waiting on the other side.
+
+Please tell me what you are thinking about this, or if anyone else expierienced something similar. 
+
+Thanks</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Elexiel, 2 years, 9 months ago<br />Posted 2 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">SheepKing</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=211&amp;ref=1222648137" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_16357" style="width: 100%; overflow: auto; min-height: 125px;">Hell of a dream.<br />
+<br />
+I once had a similar experience, but it was not nearly as &#039;intense&#039;. I had a dream that I woke up during the night and something was standing over me. It surrounded me and everything around me grew dark. As it surrounded me more and more I realized that it was stopping me from breathing... After that point I blacked out and woke up in somewhat of a paralyzed state. Couldn&#039;t move fast, like my whole body was numb.<br />
+<br />
+I believe it was a sleep paralysis event that caused me to dream something else was going on.<br />
+<br />
+I hope you do not lose too much sleep over the experience.</div>
+		<textarea style="display: none;" id="desctxt_16357">Hell of a dream.
+
+I once had a similar experience, but it was not nearly as &#039;intense&#039;. I had a dream that I woke up during the night and something was standing over me. It surrounded me and everything around me grew dark. As it surrounded me more and more I realized that it was stopping me from breathing... After that point I blacked out and woke up in somewhat of a paralyzed state. Couldn&#039;t move fast, like my whole body was numb.
+
+I believe it was a sleep paralysis event that caused me to dream something else was going on.
+
+I hope you do not lose too much sleep over the experience.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by SheepKing, 2 years, 9 months ago<br />Posted 2 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">f3licks</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=848&amp;ref=1227833859" width="125" height="78" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_16360" style="width: 100%; overflow: auto; min-height: 125px;">That sounds horrible. . . I&#039;ve never had an experience like that before.</div>
+		<textarea style="display: none;" id="desctxt_16360">That sounds horrible. . . I&#039;ve never had an experience like that before.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 2 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">joke-lain</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=517&amp;ref=1210639719" width="103" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_16372" style="width: 100%; overflow: auto; min-height: 125px;">Wow, crazy dream. I&#039;ve never experienced anything like that at all.</div>
+		<textarea style="display: none;" id="desctxt_16372">Wow, crazy dream. I&#039;ve never experienced anything like that at all.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 2 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Elexiel</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_16373" style="width: 100%; overflow: auto; min-height: 125px;">@ sheepking: yeah first i thought about sleep paralysis too, when i woke up for the first time.<br />
+But actually i never had sleep paralysis before. <br />
+And when i fell back into sleep the dream just continued so vividly and colourful like it was happening in reality. Im sure it wasnt sleep paralysis,because still today i remember every detail of this dream.</div>
+		<textarea style="display: none;" id="desctxt_16373">@ sheepking: yeah first i thought about sleep paralysis too, when i woke up for the first time.
+But actually i never had sleep paralysis before. 
+And when i fell back into sleep the dream just continued so vividly and colourful like it was happening in reality. Im sure it wasnt sleep paralysis,because still today i remember every detail of this dream.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 2 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">joke-lain</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=517&amp;ref=1210639719" width="103" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_16386" style="width: 100%; overflow: auto; min-height: 125px;">That happens to me a lot. I will wake up from a dream and go back to sleep only to continue it again.<br />
+<br />
+Although, I have trouble remember dreams completely and vividly.<br />
+<br />
+Have you ever thought about the dream being and inner demon. Something your mind created and needed you to solve, and this was the only way for it to break free?<br />
+<br />
+joke</div>
+		<textarea style="display: none;" id="desctxt_16386">That happens to me a lot. I will wake up from a dream and go back to sleep only to continue it again.
+
+Although, I have trouble remember dreams completely and vividly.
+
+Have you ever thought about the dream being and inner demon. Something your mind created and needed you to solve, and this was the only way for it to break free?
+
+joke</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 2 years, 9 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=911" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 22 queries. 0.323 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

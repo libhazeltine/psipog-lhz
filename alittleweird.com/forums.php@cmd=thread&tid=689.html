@@ -1,0 +1,397 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; These forums are so dull as of recently; allow me to spark things up</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; These forums are so dull as of recently; allow me to spark things up</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">These forums are so dull as of recently; allow me to spark things up</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Corpse</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=553&amp;ref=1239824741" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13187" style="width: 100%; overflow: auto; min-height: 125px;">What is one of the most coolest &quot;supernatural&quot; things that has ever happened to you? <br />
+<br />
+I&#039;ll start with mine. One time when I was 12 I was out camping. It was night time, and I was observing the fire in the fire pit in front of me. I started to look at the smoke, and just to my surprise...THE BOOGY MAN CAME OUT! Just kidding, what seriously happened though is the smoke all of a sudden took into the shape of what appeared to be a full grown Indian man holding a rifle concentrating on something in the distance. It then vanished back into regular looking smoke.<br />
+<br />
+Your turn.<br />
+:)</div>
+		<textarea style="display: none;" id="desctxt_13187">What is one of the most coolest &quot;supernatural&quot; things that has ever happened to you? 
+
+I&#039;ll start with mine. One time when I was 12 I was out camping. It was night time, and I was observing the fire in the fire pit in front of me. I started to look at the smoke, and just to my surprise...THE BOOGY MAN CAME OUT! Just kidding, what seriously happened though is the smoke all of a sudden took into the shape of what appeared to be a full grown Indian man holding a rifle concentrating on something in the distance. It then vanished back into regular looking smoke.
+
+Your turn.
+:)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Subliminal</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=879&amp;ref=1231742413" width="96" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13188" style="width: 100%; overflow: auto; min-height: 125px;">I used my coolest thing up on the other thread ._.</div>
+		<textarea style="display: none;" id="desctxt_13188">I used my coolest thing up on the other thread ._.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Morcyont</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=867&amp;ref=1262407330" width="125" height="73" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13189" style="width: 100%; overflow: auto; min-height: 125px;">Im not sure what you would classify as &quot;supernatural&quot;, but an interesting thing that happens to me would be: Doors without locks locking on me (Doors hate me *cries*). </div>
+		<textarea style="display: none;" id="desctxt_13189">Im not sure what you would classify as &quot;supernatural&quot;, but an interesting thing that happens to me would be: Doors without locks locking on me (Doors hate me *cries*).</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Falcon</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=521&amp;ref=1241106812" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13190" style="width: 100%; overflow: auto; min-height: 125px;">Morycont, I&#039;ve got the opposite (or something like that):<br />
+Closed doors opening for me, happens a lot, without me even thinking about them.<br />
+You&#039;d think, that&#039;s cool! But it&#039;s not.. especially when I&#039;m on the toilet ^_^<br />
+(Maybe we need a new lock on the toilet though :P)<br />
+<br />
+~F</div>
+		<textarea style="display: none;" id="desctxt_13190">Morycont, I&#039;ve got the opposite (or something like that):
+Closed doors opening for me, happens a lot, without me even thinking about them.
+You&#039;d think, that&#039;s cool! But it&#039;s not.. especially when I&#039;m on the toilet ^_^
+(Maybe we need a new lock on the toilet though :P)
+
+~F</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Sean</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=2&amp;ref=1214247941" width="117" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13191" style="width: 100%; overflow: auto; min-height: 125px;">Video taping myself winning $70 in the lottery was pretty cool for me.  That was a fun adventure.<br />
+<br />
+OBEs have had the biggest impact on me and my thoughts about reality.  One cool experience with them was talking with my subconscious (in my head, the night before), and making a deal that &quot;he&quot; would help me out.  Then, at night, I was grabbed by the wrists and ankles, and yanked out of body.  I couldn&#039;t see &quot;who&quot; did it, but I felt the hands on my wrists and ankles... and while out, I grabbed a hand and shook it, trying to say &quot;thank you&quot;.<br />
+<br />
+Lucid dreaming, if that counts, has been fun.  I just had a lucid dream last night, where I was teaching people how to manifest objects inside of dreams.  The night before, I had a lucid dream where I was helping my uncle.<br />
+<br />
+Another event that had a large impact on me was the original geiger counter experiments.  After seeing the data with my own eyes, that killed my inner skeptic.  That was cool.<br />
+<br />
+~Sean</div>
+		<textarea style="display: none;" id="desctxt_13191">Video taping myself winning $70 in the lottery was pretty cool for me.  That was a fun adventure.
+
+OBEs have had the biggest impact on me and my thoughts about reality.  One cool experience with them was talking with my subconscious (in my head, the night before), and making a deal that &quot;he&quot; would help me out.  Then, at night, I was grabbed by the wrists and ankles, and yanked out of body.  I couldn&#039;t see &quot;who&quot; did it, but I felt the hands on my wrists and ankles... and while out, I grabbed a hand and shook it, trying to say &quot;thank you&quot;.
+
+Lucid dreaming, if that counts, has been fun.  I just had a lucid dream last night, where I was teaching people how to manifest objects inside of dreams.  The night before, I had a lucid dream where I was helping my uncle.
+
+Another event that had a large impact on me was the original geiger counter experiments.  After seeing the data with my own eyes, that killed my inner skeptic.  That was cool.
+
+~Sean</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Sussch</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=622&amp;ref=1252769070" width="100" height="92" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13193" style="width: 100%; overflow: auto; min-height: 125px;">I was exhausted from a busy schoolday, sitting on my bed and just looking at the mirror next to my bed. When I found that I have been staring at it for 5 minutes already, I thought it was time to go to bed.<br />
+<br />
+I had a dream:<br />
+There was the same mirror. Someone appeared next to it and said: &quot;You should already know that having a mirror next to your bed isn&#039;t good for you.&quot;<br />
+I answered: &quot;Okay, lets cover it up then..&quot; and covered it in some kind of blue cloth.<br />
+&quot;I don&#039;t actually even need that mirror there. Actually, I am the best mirror for myself..&quot;<br />
+<br />
+Then it felt like that someone wished to thank me for this.<br />
+<br />
+The dream faded out and I was drawn into the void (there was nothing around me).<br />
+I started hearing some noise. The sound slowly grew louder and it was possible to feel it. At that time the sound reminded me the crunching of snow under my feet. The only difference was that I felt it in my head. The feeling grew stronger and less bearable while moving downwards from the head. It felt like my brain was boiling and my body was shaking. <br />
+I then thought: &quot;What&#039;s going on with my body?&quot; and imagined myself shaking in the bed with white foam coming out of my mouth. Just in case I reoccupied my body, ran a memcheck, performed some simple calculations and verified that my limbs were still moving. Everything seemed to be working.<br />
+<br />
+After that incident I spent a lot of time googling those feelings. That&#039;s how I found PsiPog.</div>
+		<textarea style="display: none;" id="desctxt_13193">I was exhausted from a busy schoolday, sitting on my bed and just looking at the mirror next to my bed. When I found that I have been staring at it for 5 minutes already, I thought it was time to go to bed.
+
+I had a dream:
+There was the same mirror. Someone appeared next to it and said: &quot;You should already know that having a mirror next to your bed isn&#039;t good for you.&quot;
+I answered: &quot;Okay, lets cover it up then..&quot; and covered it in some kind of blue cloth.
+&quot;I don&#039;t actually even need that mirror there. Actually, I am the best mirror for myself..&quot;
+
+Then it felt like that someone wished to thank me for this.
+
+The dream faded out and I was drawn into the void (there was nothing around me).
+I started hearing some noise. The sound slowly grew louder and it was possible to feel it. At that time the sound reminded me the crunching of snow under my feet. The only difference was that I felt it in my head. The feeling grew stronger and less bearable while moving downwards from the head. It felt like my brain was boiling and my body was shaking. 
+I then thought: &quot;What&#039;s going on with my body?&quot; and imagined myself shaking in the bed with white foam coming out of my mouth. Just in case I reoccupied my body, ran a memcheck, performed some simple calculations and verified that my limbs were still moving. Everything seemed to be working.
+
+After that incident I spent a lot of time googling those feelings. That&#039;s how I found PsiPog.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">EyeBall</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=277&amp;ref=1223270537" width="125" height="120" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13194" style="width: 100%; overflow: auto; min-height: 125px;">Some weird stuff has happened, but I guess my weirdest of them all is seeing myself through someone else&#039;s eyes. Even if it was for a second.<br />
+<br />
+So, we were playing basketball and I was going to get the rebound, but my friend stepped in instead and grabbed it. So I just backed away so he could pass it to me or something, but he passed it to someone else instead. Then he looked at me as if saying something, and I saw myself through his eyes. Seeing how I was still backing away. I could even see his blurry eyesight (we both have terrible eyes but I was using contacts). <br />
+<br />
+Then I kinda stood there for a while.</div>
+		<textarea style="display: none;" id="desctxt_13194">Some weird stuff has happened, but I guess my weirdest of them all is seeing myself through someone else&#039;s eyes. Even if it was for a second.
+
+So, we were playing basketball and I was going to get the rebound, but my friend stepped in instead and grabbed it. So I just backed away so he could pass it to me or something, but he passed it to someone else instead. Then he looked at me as if saying something, and I saw myself through his eyes. Seeing how I was still backing away. I could even see his blurry eyesight (we both have terrible eyes but I was using contacts). 
+
+Then I kinda stood there for a while.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">FreedomBud</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=891&amp;ref=1233616312" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13195" style="width: 100%; overflow: auto; min-height: 125px;">I&#039;d have to say the weirdest thing for me was almost slipping into an OBE by accident when I was about 10 or 11. I was dead tired after a long day of traveling, and went to be as soon as I went home. It felt weird to me that I felt completely relaxed like by body was asleep but my mind was still very much awake but I contributed that to the fact that I had spent over 8 hours in a moving vehicle (the vibrations from the car). Slowly as I forced my mind to stfu I started hearing things (I heard someone scream &#039;49&#039;) but this was a normal sign to me that I was about to fall asleep and didn&#039;t let it phase me. The next thing that happened though shook me up literally. My bed started shaking violently, which needless to say scared the everliving s**t out of me and immediately woke up. The only logical thing to me at the time was that the boogey man had come and was trying to attack me so I spent the next few hours hiding under my sheets scared to death.<br />
+<br />
+It wasn&#039;t until many years later that I discovered psipog, that I felt the incident bared a striking similarity to the description of an OBE. And now, in retrospect it&#039;s probably one of the coolest but weirdest things i&#039;ve encountered as far as &quot;supernatural&quot; experiences go. I however, have not been able to reproduce it since then.</div>
+		<textarea style="display: none;" id="desctxt_13195">I&#039;d have to say the weirdest thing for me was almost slipping into an OBE by accident when I was about 10 or 11. I was dead tired after a long day of traveling, and went to be as soon as I went home. It felt weird to me that I felt completely relaxed like by body was asleep but my mind was still very much awake but I contributed that to the fact that I had spent over 8 hours in a moving vehicle (the vibrations from the car). Slowly as I forced my mind to stfu I started hearing things (I heard someone scream &#039;49&#039;) but this was a normal sign to me that I was about to fall asleep and didn&#039;t let it phase me. The next thing that happened though shook me up literally. My bed started shaking violently, which needless to say scared the everliving s**t out of me and immediately woke up. The only logical thing to me at the time was that the boogey man had come and was trying to attack me so I spent the next few hours hiding under my sheets scared to death.
+
+It wasn&#039;t until many years later that I discovered psipog, that I felt the incident bared a striking similarity to the description of an OBE. And now, in retrospect it&#039;s probably one of the coolest but weirdest things i&#039;ve encountered as far as &quot;supernatural&quot; experiences go. I however, have not been able to reproduce it since then.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by FreedomBud, 3 years, 9 months ago<br />Posted 3 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Corpse</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=553&amp;ref=1239824741" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13196" style="width: 100%; overflow: auto; min-height: 125px;">Wow, turns out a lot of people tend to have more cool experiences than I thought. Thanks for sharing everyone!</div>
+		<textarea style="display: none;" id="desctxt_13196">Wow, turns out a lot of people tend to have more cool experiences than I thought. Thanks for sharing everyone!</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Chaps</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13207" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Sean:</em><br />
+<br />
+OBEs have had the biggest impact on me and my thoughts about reality.  One cool experience with them was talking with my subconscious (in my head, the night before), and making a deal that &quot;he&quot; would help me out.  Then, at night, I was grabbed by the wrists and ankles, and yanked out of body.  I couldn&#039;t see &quot;who&quot; did it, but I felt the hands on my wrists and ankles... and while out, I grabbed a hand and shook it, trying to say &quot;thank you&quot;.</div>Awesome! Same thing happend to me a couple of weeks ago, though i didn&#039;t try to shake anybody&#039;s hand :D <br />
+<br />
+The most mind blowing experience I&#039;ve ever had was when I once had an OOBE where I traveled through some &quot;dynamic world&quot;, can&#039;t really describe what it looked like in words, which I tried to explore together with a glowing light entity.  <br />
+Might sound kinda dull but it wasn&#039;t, I kid you not gentlemen I seriously shat a brick when I woke up :P</div>
+		<textarea style="display: none;" id="desctxt_13207">[quote][i]posted by Sean:[/i]
+
+OBEs have had the biggest impact on me and my thoughts about reality.  One cool experience with them was talking with my subconscious (in my head, the night before), and making a deal that &quot;he&quot; would help me out.  Then, at night, I was grabbed by the wrists and ankles, and yanked out of body.  I couldn&#039;t see &quot;who&quot; did it, but I felt the hands on my wrists and ankles... and while out, I grabbed a hand and shook it, trying to say &quot;thank you&quot;.
+[/quote]
+
+Awesome! Same thing happend to me a couple of weeks ago, though i didn&#039;t try to shake anybody&#039;s hand :D 
+
+The most mind blowing experience I&#039;ve ever had was when I once had an OOBE where I traveled through some &quot;dynamic world&quot;, can&#039;t really describe what it looked like in words, which I tried to explore together with a glowing light entity.  
+Might sound kinda dull but it wasn&#039;t, I kid you not gentlemen I seriously shat a brick when I woke up :P</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Chaps, 3 years, 9 months ago<br />Posted 3 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">f3licks</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=848&amp;ref=1227833859" width="125" height="78" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13217" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;">posted by Sean:<br />
+<br />
+OBEs have had the biggest impact on me and my thoughts about reality. One cool experience with them was talking with my subconscious (in my head, the night before), and making a deal that &quot;he&quot; would help me out. Then, at night, I was grabbed by the wrists and ankles, and yanked out of body. I couldn&#039;t see &quot;who&quot; did it, but I felt the hands on my wrists and ankles... and while out, I grabbed a hand and shook it, trying to say &quot;thank you&quot;.</div>That&#039;s amazing!</div>
+		<textarea style="display: none;" id="desctxt_13217">[quote]posted by Sean:
+
+OBEs have had the biggest impact on me and my thoughts about reality. One cool experience with them was talking with my subconscious (in my head, the night before), and making a deal that &quot;he&quot; would help me out. Then, at night, I was grabbed by the wrists and ankles, and yanked out of body. I couldn&#039;t see &quot;who&quot; did it, but I felt the hands on my wrists and ankles... and while out, I grabbed a hand and shook it, trying to say &quot;thank you&quot;.[/quote]
+
+That&#039;s amazing!</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Faceless</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=570&amp;ref=1214279440" width="83" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13218" style="width: 100%; overflow: auto; min-height: 125px;">if any of you have read some of my other posts about my work and the creepy things that happen there and all that fun stuff, well i have an updaate. in another post i mentioned a creepy tall black shadowman that was runnin around subway and stuff. well tonight i saw something simminlar except this one was pure white and shorter. i saw it about seven or eight times in one night. this one didnt exert any pressure in the sense of fear or anything so yup yup. </div>
+		<textarea style="display: none;" id="desctxt_13218">if any of you have read some of my other posts about my work and the creepy things that happen there and all that fun stuff, well i have an updaate. in another post i mentioned a creepy tall black shadowman that was runnin around subway and stuff. well tonight i saw something simminlar except this one was pure white and shorter. i saw it about seven or eight times in one night. this one didnt exert any pressure in the sense of fear or anything so yup yup.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 9 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=689" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 28 queries. 0.347 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

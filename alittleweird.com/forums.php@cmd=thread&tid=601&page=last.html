@@ -1,0 +1,412 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Change Dream?</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Change Dream?</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Change Dream?</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Atrum</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=755&amp;ref=1221862716" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11913" style="width: 100%; overflow: auto; min-height: 125px;">There are alot of dreams that I dont tend to remember. And the dreams I do remember, make sense and are very creepy. <br />
+<br />
+I had this dream that a stranger took me to a temple to get something. When I got to the end of the temple, there was a dead end with the stranger drowning me in sand. I died, and served him as a ghost untill some goddess that I dont think really exists, appeared. Then I woke up. :P<br />
+<br />
+Just a basic summary.<br />
+<br />
+I then go onto google to look up my dream meaning. Looking up various parts of it like &quot;Stranger, Goddess, ghost, drowning, death, temple, etc.&quot;<br />
+<br />
+Pretty wierd, but alot of them have similar meanings.<br />
+<br />
+Drowning:&quot;If you drown to death, then is refers to an emotional rebirth.&quot;<br />
+<br />
+Death:&quot;To dream of your own death, indicates a transitional phase in your life. You are becoming more enlightened or spiritual.&quot;<br />
+<br />
+Temple:&quot;To see a temple in your dream, represents your spiritual thinking, meditation and growth. It is also symbolic of your physical body and the attention you give it.&quot;<br />
+<br />
+Sand:&quot;To see sand in your dream, signifies a shift in perspective or a change in your attitude.&quot;<br />
+<br />
+And stranger meant &quot;a part of yourself that is repressed and hidden.&quot; while the goddess at the end had something to do with being feminine, but I dunno how that fits in with everything.<br />
+<br />
+But do you see the common element here? &quot;Growth, shift, transitional, rebirth&quot; Things are going to change dramatically, I would think...But how?</div>
+		<textarea style="display: none;" id="desctxt_11913">There are alot of dreams that I dont tend to remember. And the dreams I do remember, make sense and are very creepy. 
+
+I had this dream that a stranger took me to a temple to get something. When I got to the end of the temple, there was a dead end with the stranger drowning me in sand. I died, and served him as a ghost untill some goddess that I dont think really exists, appeared. Then I woke up. :P
+
+Just a basic summary.
+
+I then go onto google to look up my dream meaning. Looking up various parts of it like &quot;Stranger, Goddess, ghost, drowning, death, temple, etc.&quot;
+
+Pretty wierd, but alot of them have similar meanings.
+
+Drowning:&quot;If you drown to death, then is refers to an emotional rebirth.&quot;
+
+Death:&quot;To dream of your own death, indicates a transitional phase in your life. You are becoming more enlightened or spiritual.&quot;
+
+Temple:&quot;To see a temple in your dream, represents your spiritual thinking, meditation and growth. It is also symbolic of your physical body and the attention you give it.&quot;
+
+Sand:&quot;To see sand in your dream, signifies a shift in perspective or a change in your attitude.&quot;
+
+And stranger meant &quot;a part of yourself that is repressed and hidden.&quot; while the goddess at the end had something to do with being feminine, but I dunno how that fits in with everything.
+
+But do you see the common element here? &quot;Growth, shift, transitional, rebirth&quot; Things are going to change dramatically, I would think...But how?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Dash</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=69&amp;ref=1224210982" width="113" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11914" style="width: 100%; overflow: auto; min-height: 125px;">hm.. <br />
+<br />
+sounds like you love someone you don&#039;t want to,<br />
+and by getting rid of yourself (ego, reservations etc. )  you can learn who and why..<br />
+<br />
+but only the dreamer can interpret the dream 100%<br />
+id suggest thinking about it before you go to sleep.. that way you might have another dream about it and get some more clues</div>
+		<textarea style="display: none;" id="desctxt_11914">hm.. 
+
+sounds like you love someone you don&#039;t want to,
+and by getting rid of yourself (ego, reservations etc. )  you can learn who and why..
+
+but only the dreamer can interpret the dream 100%
+id suggest thinking about it before you go to sleep.. that way you might have another dream about it and get some more clues</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Atrum</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=755&amp;ref=1221862716" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11915" style="width: 100%; overflow: auto; min-height: 125px;">Wait...I had a thought. Can dreams have footnote meanings?</div>
+		<textarea style="display: none;" id="desctxt_11915">Wait...I had a thought. Can dreams have footnote meanings?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Dash</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=69&amp;ref=1224210982" width="113" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11917" style="width: 100%; overflow: auto; min-height: 125px;">i guess.. each dream is unique to the person.. (or so i hear)<br />
+<br />
+<br />
+hey atrum.. <br />
+<strike>does it seem like people stop posting in a thread when i show up? im not a bully or anything am i? </strike><br />
+<br />
+scratch that.. i know im a bully..<br />
+and im sorry everyone<br />
+<br />
+sorry.. this doesn&#039;t really contribute..<br />
+//<br />
+<br />
+<br />
+back on topic, <br />
+what footnotes are you talking about?<br />
+i take it you have something in mind?</div>
+		<textarea style="display: none;" id="desctxt_11917">i guess.. each dream is unique to the person.. (or so i hear)
+
+
+hey atrum.. 
+[s]does it seem like people stop posting in a thread when i show up? im not a bully or anything am i? [/s]
+
+scratch that.. i know im a bully..
+and im sorry everyone
+
+sorry.. this doesn&#039;t really contribute..
+//
+
+
+back on topic, 
+what footnotes are you talking about?
+i take it you have something in mind?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Dash, 4 years, 1 month ago<br />Posted 4 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Atrum</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=755&amp;ref=1221862716" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11918" style="width: 100%; overflow: auto; min-height: 125px;">Just keep in mind theres a fine line between blunt honesty and being a bully. <br />
+<br />
+When I say &quot;footnote meanings&quot; I mean like...A smaller meaning inside a big meaning. Like,the death and drowning represent change and such. While some other aspects seem to be kind of...unconnected. <br />
+<br />
+This may be me high on halloween candy I mooched off of my sis, but its just and idea. </div>
+		<textarea style="display: none;" id="desctxt_11918">Just keep in mind theres a fine line between blunt honesty and being a bully. 
+
+When I say &quot;footnote meanings&quot; I mean like...A smaller meaning inside a big meaning. Like,the death and drowning represent change and such. While some other aspects seem to be kind of...unconnected. 
+
+This may be me high on halloween candy I mooched off of my sis, but its just and idea.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">joke-lain</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=517&amp;ref=1210639719" width="103" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12321" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Dash:</em><br />
+id suggest thinking about it before you go to sleep.. that way you might have another dream about it and get some more clues</div>I&#039;ve actually tried that before, it doesn&#039;t work very well.<br />
+<br />
+</div>
+		<textarea style="display: none;" id="desctxt_12321">[quote][i]posted by Dash:[/i]
+id suggest thinking about it before you go to sleep.. that way you might have another dream about it and get some more clues[/quote]
+
+I&#039;ve actually tried that before, it doesn&#039;t work very well.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Falcon</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=521&amp;ref=1241106812" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12328" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by joke-lain:</em><br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Dash:</em><br />
+id suggest thinking about it before you go to sleep.. that way you might have another dream about it and get some more clues</div>I&#039;ve actually tried that before, it doesn&#039;t work very well.</div>Might be because most people think that in your dreams, you process everything you believed that day.<br />
+Or, even more, everything you THOUGHT about that day. (In essence, I think it&#039;s the same.)<br />
+So, maybe if you think about it the whole day, you might get another dream about, but I&#039;m not sure if that&#039;s going to work..<br />
+<br />
+As you might have noticed, I don&#039;t believe that much in the &#039;special meanings of dreams&#039;.. <br />
+Maybe someone can give me a link to a good explanation how dreams work, and why they should mean something like this?<br />
+<br />
+;;Falcon<br />
+<br />
+</div>
+		<textarea style="display: none;" id="desctxt_12328">[quote][i]posted by joke-lain:[/i]
+[quote][i]posted by Dash:[/i]
+id suggest thinking about it before you go to sleep.. that way you might have another dream about it and get some more clues[/quote]
+
+I&#039;ve actually tried that before, it doesn&#039;t work very well.[/quote]
+
+Might be because most people think that in your dreams, you process everything you believed that day.
+Or, even more, everything you THOUGHT about that day. (In essence, I think it&#039;s the same.)
+So, maybe if you think about it the whole day, you might get another dream about, but I&#039;m not sure if that&#039;s going to work..
+
+As you might have noticed, I don&#039;t believe that much in the &#039;special meanings of dreams&#039;.. 
+Maybe someone can give me a link to a good explanation how dreams work, and why they should mean something like this?
+
+;;Falcon</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">joke-lain</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=517&amp;ref=1210639719" width="103" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12347" style="width: 100%; overflow: auto; min-height: 125px;">Yeah, it kind of makes you wonder where  they get the meanings for dreams.</div>
+		<textarea style="display: none;" id="desctxt_12347">Yeah, it kind of makes you wonder where  they get the meanings for dreams.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 11 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12351" style="width: 100%; overflow: auto; min-height: 125px;">At some point you get the meaning of dreams by feelings... These feeling are more often then not associated in a dream by a figure that represents the same thing in your culture, it&#039;s based on your upbringing essentially (and that&#039;s why I don&#039;t trust most dream books).<br />
+<br />
+Meh, as I said before, if you really let yourself be open to the dream, most likely you&#039;ll grow to understand it&#039;s meaning.</div>
+		<textarea style="display: none;" id="desctxt_12351">At some point you get the meaning of dreams by feelings... These feeling are more often then not associated in a dream by a figure that represents the same thing in your culture, it&#039;s based on your upbringing essentially (and that&#039;s why I don&#039;t trust most dream books).
+
+Meh, as I said before, if you really let yourself be open to the dream, most likely you&#039;ll grow to understand it&#039;s meaning.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 11 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">joke-lain</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=517&amp;ref=1210639719" width="103" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12366" style="width: 100%; overflow: auto; min-height: 125px;">Yeah. Actually, I had a dream about you last night, something about you helping me out, or just talking to me. Then, I checked my email today, I got a message from you, saying &quot;Your changing, we need to talk.&quot; It was kind of cool, and felt comforting.</div>
+		<textarea style="display: none;" id="desctxt_12366">Yeah. Actually, I had a dream about you last night, something about you helping me out, or just talking to me. Then, I checked my email today, I got a message from you, saying &quot;Your changing, we need to talk.&quot; It was kind of cool, and felt comforting.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 11 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=601" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 26 queries. 0.274 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

@@ -1,0 +1,382 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Telepathic links</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Telepathic links</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Telepathic links</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Vince</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7572" style="width: 100%; overflow: auto; min-height: 125px;">I&#039;d like to create a telepathic link with one person, which doesn&#039;t even know what it is. Does the person have to be aware of it and willing to connect to me aswell?<br />
+<br />
+What IS a link anyways? Do I create a special psi construct, plug it into other person&#039;s  Psi Signature like a pipe, program it to &quot;hang around&quot; and send the thoughts back and forth? Or perhaps it will be created spontanously as I try to communicate telepathically  with the same person a lot?<br />
+<br />
+Do such links dissipate over time or they stay and &quot;work&quot; until someone conscously severes them?</div>
+		<textarea style="display: none;" id="desctxt_7572">I&#039;d like to create a telepathic link with one person, which doesn&#039;t even know what it is. Does the person have to be aware of it and willing to connect to me aswell?
+
+What IS a link anyways? Do I create a special psi construct, plug it into other person&#039;s  Psi Signature like a pipe, program it to &quot;hang around&quot; and send the thoughts back and forth? Or perhaps it will be created spontanously as I try to communicate telepathically  with the same person a lot?
+
+Do such links dissipate over time or they stay and &quot;work&quot; until someone conscously severes them?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Waldo</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=471&amp;ref=1208009607" width="84" height="108" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_7573" style="width: 100%; overflow: auto; min-height: 125px;"> <a href="http://psipog.net/art-tp-linking-scanning.html" target="_blank">http://psipog.net/art-tp-linking-scanning.html</a><br />
+<br />
+This is a pretty good article archived on psipog.net, and it&#039;s the method I always used to good effect. I think it answers most of your questions. But the thing you have to remember is that you need to find a method that works for you, because not everyone is the same and different things work for different people. Use what makes sense to you.<br />
+<br />
+However, I&#039;d not recommend linking with someone without their permission. Because if you manage to do it right, they&#039;re going to realise pretty soon that you have and might be rather pissed with you. It&#039;s a bit impolite. ;)<br />
+<br />
+Hope this helps. =)<br />
+<br />
+Waldo x</div>
+		<textarea style="display: none;" id="desctxt_7573">http://psipog.net/art-tp-linking-scanning.html
+
+This is a pretty good article archived on psipog.net, and it&#039;s the method I always used to good effect. I think it answers most of your questions. But the thing you have to remember is that you need to find a method that works for you, because not everyone is the same and different things work for different people. Use what makes sense to you.
+
+However, I&#039;d not recommend linking with someone without their permission. Because if you manage to do it right, they&#039;re going to realise pretty soon that you have and might be rather pissed with you. It&#039;s a bit impolite. ;)
+
+Hope this helps. =)
+
+Waldo x</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Vimick</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7574" style="width: 100%; overflow: auto; min-height: 125px;">of course if the person doesn&#039;t know what linking is or telepathy for that matter and they don&#039;t believe in psionics or psychic abilities then they wont understand whats going on and wont think much of it . so unless they are familiar with psionics im sure they wouldnt realize that you&#039;ve done it</div>
+		<textarea style="display: none;" id="desctxt_7574">of course if the person doesn&#039;t know what linking is or telepathy for that matter and they don&#039;t believe in psionics or psychic abilities then they wont understand whats going on and wont think much of it . so unless they are familiar with psionics im sure they wouldnt realize that you&#039;ve done it</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">SheepKing</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=211&amp;ref=1222648137" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_7577" style="width: 100%; overflow: auto; min-height: 125px;">It suppose it really depends on how you look at things. Assume that all people are already psychically connected in some cosmic web of consciousness connection. Technically, you don&#039;t NEED a link because you&#039;re already linked.<br />
+<br />
+I personally view it as &quot;strengthening&quot; the road. Going from a dirt road to a paved road, then to a high way, then to an interstate free way, the more you use it :-P.<br />
+<br />
+As for why you want to link with someone who doesn&#039;t even know what a link is... Some people are more prone to &quot;disconnect&quot; themselves from psychic stuff going on in their life; it has a lot to do with how aware they are and how active their latent psi skills are. So, it could possibly help if they are aware and help it come about; However, it&#039;s not necessary as you can strengthen your link to people without them knowing. Hell you can do it without YOU knowing hehe.<br />
+<br />
+<br />
+Now I do not suppose it matters too much how you imagine it to be working, whether or not there is some invisible psi cord tethering you togethor; or whether you imagine the persons &quot;spirit&quot; is always overlapping with yours... Just that you understand what this implies; That psychic information will flow from you to him/him to you with ease. <br />
+<br />
+If you constantly use a &quot;link&quot; they will grow stronger; If you don&#039;t use them they will fade. If someone &quot;breaks it&quot; it will go away too.</div>
+		<textarea style="display: none;" id="desctxt_7577">It suppose it really depends on how you look at things. Assume that all people are already psychically connected in some cosmic web of consciousness connection. Technically, you don&#039;t NEED a link because you&#039;re already linked.
+
+I personally view it as &quot;strengthening&quot; the road. Going from a dirt road to a paved road, then to a high way, then to an interstate free way, the more you use it :-P.
+
+As for why you want to link with someone who doesn&#039;t even know what a link is... Some people are more prone to &quot;disconnect&quot; themselves from psychic stuff going on in their life; it has a lot to do with how aware they are and how active their latent psi skills are. So, it could possibly help if they are aware and help it come about; However, it&#039;s not necessary as you can strengthen your link to people without them knowing. Hell you can do it without YOU knowing hehe.
+
+
+Now I do not suppose it matters too much how you imagine it to be working, whether or not there is some invisible psi cord tethering you togethor; or whether you imagine the persons &quot;spirit&quot; is always overlapping with yours... Just that you understand what this implies; That psychic information will flow from you to him/him to you with ease. 
+
+If you constantly use a &quot;link&quot; they will grow stronger; If you don&#039;t use them they will fade. If someone &quot;breaks it&quot; it will go away too.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by SheepKing, 4 years, 8 months ago<br />Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Vince</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7584" style="width: 100%; overflow: auto; min-height: 125px;">One more question - is it easier to contact subconsciousness or the surface thoughts of the person I connect to? Because I couldn&#039;t send a ping strong enough but I noticed significant shift in the way person was treating me after some hours of channeling positive feelings and &quot;hey, it&#039;s me&quot; thoughts.</div>
+		<textarea style="display: none;" id="desctxt_7584">One more question - is it easier to contact subconsciousness or the surface thoughts of the person I connect to? Because I couldn&#039;t send a ping strong enough but I noticed significant shift in the way person was treating me after some hours of channeling positive feelings and &quot;hey, it&#039;s me&quot; thoughts.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">SheepKing</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=211&amp;ref=1222648137" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_7591" style="width: 100%; overflow: auto; min-height: 125px;">Sounds like you&#039;re trying to brainwash a girl into liking you or something hah.<br />
+<br />
+Anyway, to be honest, I don&#039;t know what&#039;s &#039;easier&#039; when it comes to contact someone. I always tried to get there attention, not implant thoughts.</div>
+		<textarea style="display: none;" id="desctxt_7591">Sounds like you&#039;re trying to brainwash a girl into liking you or something hah.
+
+Anyway, to be honest, I don&#039;t know what&#039;s &#039;easier&#039; when it comes to contact someone. I always tried to get there attention, not implant thoughts.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Antisankari</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=224&amp;ref=1213032338" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7594" style="width: 100%; overflow: auto; min-height: 125px;">Man, thats desperate. XD<br />
+<br />
+Just take her out. In hour and a half you will learn much more about her than during long weeks of pumping her subconsciousnes for info. You will have much better chance of getting noticed. <br />
+<br />
+<br />
+<br />
+</div>
+		<textarea style="display: none;" id="desctxt_7594">Man, thats desperate. XD
+
+Just take her out. In hour and a half you will learn much more about her than during long weeks of pumping her subconsciousnes for info. You will have much better chance of getting noticed.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Vince</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_7608" style="width: 100%; overflow: auto; min-height: 125px;">Haha, I loved the two above<br />
+<br />
+Anyways, I think the link got a bit out of control. Whenever I was near that person, my energy would be drained to the point where I got light-headed. <br />
+I&#039;m gonna thicken my shields and let it dissipate because I can&#039;t really cut it for good, it keeps coming back.</div>
+		<textarea style="display: none;" id="desctxt_7608">Haha, I loved the two above
+
+Anyways, I think the link got a bit out of control. Whenever I was near that person, my energy would be drained to the point where I got light-headed. 
+I&#039;m gonna thicken my shields and let it dissipate because I can&#039;t really cut it for good, it keeps coming back.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">ace_of_spades</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=516&amp;ref=1216191790" width="102" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_8114" style="width: 100%; overflow: auto; min-height: 125px;">@Vince<br />
+<br />
+Try just taking the energy from the link back, at least that&#039;s what i do when i&#039;m done with any construct or whatever...kust a suggestion.</div>
+		<textarea style="display: none;" id="desctxt_8114">@Vince
+
+Try just taking the energy from the link back, at least that&#039;s what i do when i&#039;m done with any construct or whatever...kust a suggestion.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">bd333</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_8115" style="width: 100%; overflow: auto; min-height: 125px;">Definitely read the article from psi-pog... besides, isn&#039;t connecting with people / trying to force thoughts in their head without permission against the rules of a courteous psion <img src="http://greasemonkeys.x10hosting.com/icons/wink.gif" alt="External Image" /></div>
+		<textarea style="display: none;" id="desctxt_8115">Definitely read the article from psi-pog... besides, isn&#039;t connecting with people / trying to force thoughts in their head without permission against the rules of a courteous psion [img]http://greasemonkeys.x10hosting.com/icons/wink.gif[/img]</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by bd333, 4 years, 7 months ago<br />Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Falcon</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=521&amp;ref=1241106812" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_8116" style="width: 100%; overflow: auto; min-height: 125px;">Also, only use visualisation that makes sense to you.<br />
+Don&#039;t just &#039;do the trick&#039;, do something that makes sense.<br />
+<br />
+F.</div>
+		<textarea style="display: none;" id="desctxt_8116">Also, only use visualisation that makes sense to you.
+Don&#039;t just &#039;do the trick&#039;, do something that makes sense.
+
+F.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Linked</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=19&amp;ref=1203762048" width="89" height="38" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_8142" style="width: 100%; overflow: auto; min-height: 125px;">do something that calls up emotions in you. read sean&#039;s latest blog post.</div>
+		<textarea style="display: none;" id="desctxt_8142">do something that calls up emotions in you. read sean&#039;s latest blog post.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_8185" style="width: 100%; overflow: auto; min-height: 125px;">Just talk to the person in real life, youstrengthen natural energy links that way, and read Seanslatest blog post, it&#039;s revolutionary.</div>
+		<textarea style="display: none;" id="desctxt_8185">Just talk to the person in real life, youstrengthen natural energy links that way, and read Seanslatest blog post, it&#039;s revolutionary.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=316" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 29 queries. 0.331 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

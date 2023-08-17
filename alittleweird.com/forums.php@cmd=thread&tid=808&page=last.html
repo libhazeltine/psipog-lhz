@@ -1,0 +1,427 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Universal perception</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Universal perception</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Universal perception</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Kube</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=952&amp;ref=1249239276" width="102" height="77" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_14553" style="width: 100%; overflow: auto; min-height: 125px;">Okay... I&#039;m not sure where to start this so let&#039;s begin from where I got the idea from. (I&#039;m sure it&#039;s been discussed before, but I haven&#039;t seen any topic here or on Veritas about it so might as well...)<br />
+<br />
+I&#039;m really into anything that has to do with conspiracies and computer hacking, so I decided to rewatch the Matrix today.. I hadn&#039;t watched it in a few years and now I see I had understood... well... nothing of the movies the last time I had watched them... Now that I think of it, a simulated reality is a possible way to interpret our world. The concept of reality hacking is this: interpreting our world as a computer and every single object, phenomenon, etc. as programs.<br />
+<br />
+That leads us to the thought that, basically, the way we&#039;ve been viewing our universe (we = me, at least :P) is pretty close to the same idea. They even mention it once in the movie (not sure which one of the 3, though): What we define as reality is nothing but vibrations and electrical impulses of our brains. In the Matrix, this is how they manage to &#039;hack&#039; reality and bend the rules, they just view the world as a series of vibrations and electrical signals.<br />
+<br />
+Now, I&#039;m not suggesting that we&#039;re being played into thinking that we&#039;re in a virtual reality (although it could be possible) but we must admit that what we&#039;ve been talking about here is quite the same thing: We&#039;re bending the rules, the laws of physics, and, also, breaking them when we need to.<br />
+<br />
+So I was wondering this: If someone feels more comfortable with a certain environment, me, for example, I have absolutely no problem visualizing and interpreting how computers, networks and programs work. Shouldn&#039;t interpreting the world as such an environment help someone in their training in the metaphysical?<br />
+<br />
+Example: You levitate and object, or you simply move one with a thought: You&#039;re breaking the rules of physics, just like hackers break the rules established within a program. By levitating, you defy gravity and by moving an object you create movement without any physical force.<br />
+<br />
+I also like to think that it always all comes down to micro-PK, so here&#039;s another example: When doing telepathy, you basically send signals to the other person&#039;s brain. Brain signals are electrical impulses, so in fact, what you&#039;re doing is sending little shocks into the other person&#039;s head, making them &#039;hear&#039; your thoughts. Do I need to explain why sending electricity into someone else&#039;s brain is against the laws of physics? :P<br />
+<br />
+<strong>So long story short (for the lazy ones):</strong> If someone views the world as an environment more understandable to them, do you think it would make it easier for them to perform metaphysical arts? This could come in handy to someone who has a difficult time grasping the concept to psi, etc.<br />
+<br />
+I don&#039;t have too much trouble with it, but it would certainly help if I saw the world as a computer, as I&#039;m much more comfortable with the world of networks and mainframes.<br />
+<br />
+Of course, such a thing would have its disadvantages, such as not understanding the world as it truly is. How do you translate the Astral Sphere into computer language? unless your virtual world is withing a virtual world, etc., but that gets pretty complicated ^_^<br />
+<br />
+Give me your thoughts! And I&#039;m curious, has anyone tried this before? I certainly will as soon as possible.</div>
+		<textarea style="display: none;" id="desctxt_14553">Okay... I&#039;m not sure where to start this so let&#039;s begin from where I got the idea from. (I&#039;m sure it&#039;s been discussed before, but I haven&#039;t seen any topic here or on Veritas about it so might as well...)
+
+I&#039;m really into anything that has to do with conspiracies and computer hacking, so I decided to rewatch the Matrix today.. I hadn&#039;t watched it in a few years and now I see I had understood... well... nothing of the movies the last time I had watched them... Now that I think of it, a simulated reality is a possible way to interpret our world. The concept of reality hacking is this: interpreting our world as a computer and every single object, phenomenon, etc. as programs.
+
+That leads us to the thought that, basically, the way we&#039;ve been viewing our universe (we = me, at least :P) is pretty close to the same idea. They even mention it once in the movie (not sure which one of the 3, though): What we define as reality is nothing but vibrations and electrical impulses of our brains. In the Matrix, this is how they manage to &#039;hack&#039; reality and bend the rules, they just view the world as a series of vibrations and electrical signals.
+
+Now, I&#039;m not suggesting that we&#039;re being played into thinking that we&#039;re in a virtual reality (although it could be possible) but we must admit that what we&#039;ve been talking about here is quite the same thing: We&#039;re bending the rules, the laws of physics, and, also, breaking them when we need to.
+
+So I was wondering this: If someone feels more comfortable with a certain environment, me, for example, I have absolutely no problem visualizing and interpreting how computers, networks and programs work. Shouldn&#039;t interpreting the world as such an environment help someone in their training in the metaphysical?
+
+Example: You levitate and object, or you simply move one with a thought: You&#039;re breaking the rules of physics, just like hackers break the rules established within a program. By levitating, you defy gravity and by moving an object you create movement without any physical force.
+
+I also like to think that it always all comes down to micro-PK, so here&#039;s another example: When doing telepathy, you basically send signals to the other person&#039;s brain. Brain signals are electrical impulses, so in fact, what you&#039;re doing is sending little shocks into the other person&#039;s head, making them &#039;hear&#039; your thoughts. Do I need to explain why sending electricity into someone else&#039;s brain is against the laws of physics? :P
+
+[b]So long story short (for the lazy ones):[/b] If someone views the world as an environment more understandable to them, do you think it would make it easier for them to perform metaphysical arts? This could come in handy to someone who has a difficult time grasping the concept to psi, etc.
+
+I don&#039;t have too much trouble with it, but it would certainly help if I saw the world as a computer, as I&#039;m much more comfortable with the world of networks and mainframes.
+
+Of course, such a thing would have its disadvantages, such as not understanding the world as it truly is. How do you translate the Astral Sphere into computer language? unless your virtual world is withing a virtual world, etc., but that gets pretty complicated ^_^
+
+Give me your thoughts! And I&#039;m curious, has anyone tried this before? I certainly will as soon as possible.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">sh</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_14555" style="width: 100%; overflow: auto; min-height: 125px;">I have, tried and true. If ya happen to notice that there is a sick object projection program, then its a fact it probably won&#039;t work right. Until ya or someone else fixes it.</div>
+		<textarea style="display: none;" id="desctxt_14555">I have, tried and true. If ya happen to notice that there is a sick object projection program, then its a fact it probably won&#039;t work right. Until ya or someone else fixes it.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Trick</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=744&amp;ref=1221873234" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_14556" style="width: 100%; overflow: auto; min-height: 125px;">&quot;Now, I&#039;m not suggesting that we&#039;re being played into thinking that we&#039;re in a virtual reality (although it could be possible) but we must admit that what we&#039;ve been talking about here is quite the same thing: We&#039;re bending the rules, the laws of physics, and, also, breaking them when we need to&quot;<br />
+<br />
+<strong>We&#039;re not breaking any laws of physics by doing psionics.</strong> You ARE making a physical force, to push something when you do PK. (etc) Just because you dont know exactly HOW that force occurs, doesnt mean that its against physics. <br />
+<br />
+<br />
+&quot;So I was wondering this: If someone feels more comfortable with a certain environment, me, for example, I have absolutely no problem visualizing and interpreting how computers, networks and programs work. Shouldn&#039;t interpreting the world as such an environment help someone in their training in the metaphysical?&quot;<br />
+<br />
+I suppose you could try it like that. I&#039;ve never tried that, I dont know if it would work.<br />
+<br />
+<br />
+<br />
+</div>
+		<textarea style="display: none;" id="desctxt_14556">&quot;Now, I&#039;m not suggesting that we&#039;re being played into thinking that we&#039;re in a virtual reality (although it could be possible) but we must admit that what we&#039;ve been talking about here is quite the same thing: We&#039;re bending the rules, the laws of physics, and, also, breaking them when we need to&quot;
+
+[b]We&#039;re not breaking any laws of physics by doing psionics.[/b] You ARE making a physical force, to push something when you do PK. (etc) Just because you dont know exactly HOW that force occurs, doesnt mean that its against physics. 
+
+
+&quot;So I was wondering this: If someone feels more comfortable with a certain environment, me, for example, I have absolutely no problem visualizing and interpreting how computers, networks and programs work. Shouldn&#039;t interpreting the world as such an environment help someone in their training in the metaphysical?&quot;
+
+I suppose you could try it like that. I&#039;ve never tried that, I dont know if it would work.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Kube</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=952&amp;ref=1249239276" width="102" height="77" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_14557" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Trick:</em><br />
+<strong>We&#039;re not breaking any laws of physics by doing psionics.</strong> You ARE making a physical force, to push something when you do PK. (etc) Just because you dont know exactly HOW that force occurs, doesnt mean that its against physics.</div>Yeah, you&#039;re right. A force is still applied. Yet, according to physics, such a force would have to be applied by at least a gust of wind or a machine. Can psi really be viewed as a physical energy, force or movement?</div>
+		<textarea style="display: none;" id="desctxt_14557">[quote][i]posted by Trick:[/i]
+[b]We&#039;re not breaking any laws of physics by doing psionics.[/b] You ARE making a physical force, to push something when you do PK. (etc) Just because you dont know exactly HOW that force occurs, doesnt mean that its against physics. 
+[/quote]
+
+Yeah, you&#039;re right. A force is still applied. Yet, according to physics, such a force would have to be applied by at least a gust of wind or a machine. Can psi really be viewed as a physical energy, force or movement?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Trick</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=744&amp;ref=1221873234" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_14558" style="width: 100%; overflow: auto; min-height: 125px;">Nobody really knows what it is. But there are lots of theories as to how it works. None of wich interfere with the laws of physics. ;)</div>
+		<textarea style="display: none;" id="desctxt_14558">Nobody really knows what it is. But there are lots of theories as to how it works. None of wich interfere with the laws of physics. ;)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Kube</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=952&amp;ref=1249239276" width="102" height="77" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_14560" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Trick:</em><br />
+Nobody really knows what it is. But there are lots of theories as to how it works. None of wich interfere with the laws of physics. ;)</div>Alright you win :P</div>
+		<textarea style="display: none;" id="desctxt_14560">[quote][i]posted by Trick:[/i]
+Nobody really knows what it is. But there are lots of theories as to how it works. None of wich interfere with the laws of physics. ;)[/quote]
+
+Alright you win :P</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Jarmo</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_14561" style="width: 100%; overflow: auto; min-height: 125px;">But really, is everything have to be understood by sight? Even electricity can&#039;t be defined that precise, but still it exists. Yet there still are people who may describe it and even send it to your &quot;tactile visualization&quot; so you may sense how it feels, even if you don&#039;t have any earlier experience in any form of energy inside your body. Visualization is the key to everything related as psychic or unreal matter. Don&#039;t know if this was exactly what original writer was looking for, but just had to bring my thoughts.</div>
+		<textarea style="display: none;" id="desctxt_14561">But really, is everything have to be understood by sight? Even electricity can&#039;t be defined that precise, but still it exists. Yet there still are people who may describe it and even send it to your &quot;tactile visualization&quot; so you may sense how it feels, even if you don&#039;t have any earlier experience in any form of energy inside your body. Visualization is the key to everything related as psychic or unreal matter. Don&#039;t know if this was exactly what original writer was looking for, but just had to bring my thoughts.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Kube</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=952&amp;ref=1249239276" width="102" height="77" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_14563" style="width: 100%; overflow: auto; min-height: 125px;">Wouldn&#039;t understanding something by sight (or just by more detailed concepts) help someone understand how psi works, though? In a way, psi seems to work much like the physical energies in our every day life, am I right?</div>
+		<textarea style="display: none;" id="desctxt_14563">Wouldn&#039;t understanding something by sight (or just by more detailed concepts) help someone understand how psi works, though? In a way, psi seems to work much like the physical energies in our every day life, am I right?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">NaThaNiel</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=871&amp;ref=1248839781" width="104" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_14576" style="width: 100%; overflow: auto; min-height: 125px;">I would suggest that you read the Hermetica and some of the works of Plato. They explain the world in the way that you described. Basically, they view this world as an illusion, if you will, manifested in our minds. And, as you pointed out, it gets more complicated, as there are other, higher planes that may be viewed in a similar way.<br />
+<br />
+As for viewing the world as a computer program to better understand psionics, why not? It is simply the symbolism or allusion you choose to use to explain and understand the workings of this reality.<br />
+<br />
+And to answer your question as to whether I think this view would benefit your psionic practice, absolutely. It would seem that any expansion of our knowledge of reality and of the workings of things would only raise our capabilities and increase the efficiency of our visualizations. In my personal experience, understanding the nature of reality, that all of this is just an illusion manifested in our minds, has greatly increased my perception and understanding of psionics and other such &#039;phenomena.&#039;</div>
+		<textarea style="display: none;" id="desctxt_14576">I would suggest that you read the Hermetica and some of the works of Plato. They explain the world in the way that you described. Basically, they view this world as an illusion, if you will, manifested in our minds. And, as you pointed out, it gets more complicated, as there are other, higher planes that may be viewed in a similar way.
+
+As for viewing the world as a computer program to better understand psionics, why not? It is simply the symbolism or allusion you choose to use to explain and understand the workings of this reality.
+
+And to answer your question as to whether I think this view would benefit your psionic practice, absolutely. It would seem that any expansion of our knowledge of reality and of the workings of things would only raise our capabilities and increase the efficiency of our visualizations. In my personal experience, understanding the nature of reality, that all of this is just an illusion manifested in our minds, has greatly increased my perception and understanding of psionics and other such &#039;phenomena.&#039;</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Kube</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=952&amp;ref=1249239276" width="102" height="77" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_14578" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by NaThaNiel:</em><br />
+I would suggest that you read the Hermetica and some of the works of Plato. They explain the world in the way that you described. Basically, they view this world as an illusion, if you will, manifested in our minds. And, as you pointed out, it gets more complicated, as there are other, higher planes that may be viewed in a similar way.<br />
+<br />
+As for viewing the world as a computer program to better understand psionics, why not? It is simply the symbolism or allusion you choose to use to explain and understand the workings of this reality.<br />
+<br />
+And to answer your question as to whether I think this view would benefit your psionic practice, absolutely. It would seem that any expansion of our knowledge of reality and of the workings of things would only raise our capabilities and increase the efficiency of our visualizations. In my personal experience, understanding the nature of reality, that all of this is just an illusion manifested in our minds, has greatly increased my perception and understanding of psionics and other such &#039;phenomena.&#039;</div>Thanks a lot for the answers, NaThaNiel! And thanks for the suggestions, too! If I remember well from what my older brother&#039;s told me, we&#039;re supposed to study Plato in philosophy nest year, so I have something to look forward to now :D</div>
+		<textarea style="display: none;" id="desctxt_14578">[quote][i]posted by NaThaNiel:[/i]
+I would suggest that you read the Hermetica and some of the works of Plato. They explain the world in the way that you described. Basically, they view this world as an illusion, if you will, manifested in our minds. And, as you pointed out, it gets more complicated, as there are other, higher planes that may be viewed in a similar way.
+
+As for viewing the world as a computer program to better understand psionics, why not? It is simply the symbolism or allusion you choose to use to explain and understand the workings of this reality.
+
+And to answer your question as to whether I think this view would benefit your psionic practice, absolutely. It would seem that any expansion of our knowledge of reality and of the workings of things would only raise our capabilities and increase the efficiency of our visualizations. In my personal experience, understanding the nature of reality, that all of this is just an illusion manifested in our minds, has greatly increased my perception and understanding of psionics and other such &#039;phenomena.&#039;[/quote]
+
+Thanks a lot for the answers, NaThaNiel! And thanks for the suggestions, too! If I remember well from what my older brother&#039;s told me, we&#039;re supposed to study Plato in philosophy nest year, so I have something to look forward to now :D</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">NaThaNiel</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=871&amp;ref=1248839781" width="104" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_14585" style="width: 100%; overflow: auto; min-height: 125px;">No problem, I&#039;m glad that I could help.</div>
+		<textarea style="display: none;" id="desctxt_14585">No problem, I&#039;m glad that I could help.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Mr. Tallyman</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=910&amp;ref=1239146679" width="80" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_14597" style="width: 100%; overflow: auto; min-height: 125px;">I posted a discussion here, called fundamental infinity, in regards to our understanding of nature.. ahh, its kinda haywire, but it may grab ya ;)</div>
+		<textarea style="display: none;" id="desctxt_14597">I posted a discussion here, called fundamental infinity, in regards to our understanding of nature.. ahh, its kinda haywire, but it may grab ya ;)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">deusxmachina</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=490&amp;ref=1209145387" width="100" height="85" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_14598" style="width: 100%; overflow: auto; min-height: 125px;">Lets say someone writes a computer program to run on its own using random number generators to define events over the course of time. You are in a room watching on a computer monitor the course of this program. However, unbeknownst to you, the programmer wrote in a line of code that allows for user input, in place of a random number. <br />
+<br />
+The universe is simply a large system, defined by rules, with a specific set of start parameters, playing out its course influenced by tons of random events along the way (quantum events). However, if those events were not truly random, if a source outside of the &#039;program&#039; such as a non-localized consciousness (a ghost in the machine, if you will), had influence over the random events, it would change the state of things without actually violating any rules whatsoever. You see where I am going with this...<br />
+<br />
+ <a href="http://www.sciencenews.org/view/generic/id/35391/title/Math_Trek__Do_subatomic_particles_have_free_will%3F" target="_blank">http://www.sciencenews.org/view/generic/id/35391/title/Math_Trek__Do_subatomic_particles_have_free_will%3F</a></div>
+		<textarea style="display: none;" id="desctxt_14598">Lets say someone writes a computer program to run on its own using random number generators to define events over the course of time. You are in a room watching on a computer monitor the course of this program. However, unbeknownst to you, the programmer wrote in a line of code that allows for user input, in place of a random number. 
+
+The universe is simply a large system, defined by rules, with a specific set of start parameters, playing out its course influenced by tons of random events along the way (quantum events). However, if those events were not truly random, if a source outside of the &#039;program&#039; such as a non-localized consciousness (a ghost in the machine, if you will), had influence over the random events, it would change the state of things without actually violating any rules whatsoever. You see where I am going with this...
+
+http://www.sciencenews.org/view/generic/id/35391/title/Math_Trek__Do_subatomic_particles_have_free_will%3F</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Mr. Tallyman</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=910&amp;ref=1239146679" width="80" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_14599" style="width: 100%; overflow: auto; min-height: 125px;">deusxmachina:<br />
+<br />
+Wow2<br />
+<br />
+That link lead me to another link about intelligent atoms.. D:<br />
+<br />
+&quot;this isn&#039;t my nose, it&#039;s a false one..&quot;</div>
+		<textarea style="display: none;" id="desctxt_14599">deusxmachina:
+
+Wow2
+
+That link lead me to another link about intelligent atoms.. D:
+
+&quot;this isn&#039;t my nose, it&#039;s a false one..&quot;</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Mr. Tallyman, 3 years, 4 months ago<br />Posted 3 years, 4 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=808" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 30 queries. 0.281 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

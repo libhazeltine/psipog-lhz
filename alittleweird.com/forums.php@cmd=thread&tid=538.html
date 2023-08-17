@@ -1,0 +1,480 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Why do you believe in what you believe in?</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Why do you believe in what you believe in?</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Why do you believe in what you believe in?</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">cinderwild</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11020" style="width: 100%; overflow: auto; min-height: 125px;">After reading Sean&#039;s new blog about pseudoscience I came up with the idea for this topic.<br />
+<br />
+Essentially, why do you believe in what you believe in, in regard to the paranormal/psychic activity.<br />
+<br />
+List any reasons why for anything, and PLEASE don&#039;t be afraid to make a long post. Maybe you believe in telepathy because of an undeniable experience you had? Maybe you were scared out of your wits by a ghost, or maybe you can pick up rubber balls and throw them with your mind. Explain why you believe in something using any and all reasons why.<br />
+<br />
+Please try to do it orderly.<br />
+(EX.<br />
+<br />
+Telepathy: -Information here-<br />
+Psychokinesis: -Information here-<br />
+)</div>
+		<textarea style="display: none;" id="desctxt_11020">After reading Sean&#039;s new blog about pseudoscience I came up with the idea for this topic.
+
+Essentially, why do you believe in what you believe in, in regard to the paranormal/psychic activity.
+
+List any reasons why for anything, and PLEASE don&#039;t be afraid to make a long post. Maybe you believe in telepathy because of an undeniable experience you had? Maybe you were scared out of your wits by a ghost, or maybe you can pick up rubber balls and throw them with your mind. Explain why you believe in something using any and all reasons why.
+
+Please try to do it orderly.
+(EX.
+
+Telepathy: -Information here-
+Psychokinesis: -Information here-
+)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by cinderwild, 4 years, 4 months ago<br />Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11022" style="width: 100%; overflow: auto; min-height: 125px;">Well, I guess the main reason why I believe in all of these abilities is because everything is a pattern. Patters can be exploited, created, and destroyed. All it really takes is... well, consciousness...<br />
+<br />
+I would give you the whole reason, but It would take a book to explain that...</div>
+		<textarea style="display: none;" id="desctxt_11022">Well, I guess the main reason why I believe in all of these abilities is because everything is a pattern. Patters can be exploited, created, and destroyed. All it really takes is... well, consciousness...
+
+I would give you the whole reason, but It would take a book to explain that...</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">cinderwild</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11025" style="width: 100%; overflow: auto; min-height: 125px;">Three sentences compared to an entire books worth of material is kind of a poor comparison, no offense. I&#039;d understand if you were summarizing an actual book.</div>
+		<textarea style="display: none;" id="desctxt_11025">Three sentences compared to an entire books worth of material is kind of a poor comparison, no offense. I&#039;d understand if you were summarizing an actual book.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Trick</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=744&amp;ref=1221873234" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11026" style="width: 100%; overflow: auto; min-height: 125px;">At first, I just believed because I was a little kid and I wanted to believe really bad. But after a while you see it really does exist. Let me give a few examples.<br />
+<br />
+I remember with PK, there were a few instances where I slid fairly large things. I dont see how else I couldve done it. A long time ago I was unable to spin a covered psiwheel. Now I can. I also watched this, wich boosted my belief up a bit:  <a href="http://www.youtube.com/watch?v=qw_O9Qiwqew" target="_blank">http://www.youtube.com/watch?v=qw_O9Qiwqew</a><br />
+<br />
+I&#039;ve gotten proof with micro PK also. I do the dice thing. I roll the dice about 100 times, tally everything it lands on. Making sure nothings too out. Then, I try to force a number. First number to 10 wins. Most of the time, thats the number. I&#039;d say about 4/5 times. Plus theres 6 numbers. Average them together, I&#039;d say its pretty significant. <br />
+<br />
+The geiger counter stuff was also pretty good for my belief. I didnt see it happen, but I trust Sean. <br />
+<br />
+I&#039;ve done more than this. I&#039;ve gotten pretty awesome stuff with energy manipulation, telepathy, clairvoyance, etc that was very convincing and proving. I&#039;ve impressed lots of people with these things too. Thats why I believe. </div>
+		<textarea style="display: none;" id="desctxt_11026">At first, I just believed because I was a little kid and I wanted to believe really bad. But after a while you see it really does exist. Let me give a few examples.
+
+I remember with PK, there were a few instances where I slid fairly large things. I dont see how else I couldve done it. A long time ago I was unable to spin a covered psiwheel. Now I can. I also watched this, wich boosted my belief up a bit: http://www.youtube.com/watch?v=qw_O9Qiwqew
+
+I&#039;ve gotten proof with micro PK also. I do the dice thing. I roll the dice about 100 times, tally everything it lands on. Making sure nothings too out. Then, I try to force a number. First number to 10 wins. Most of the time, thats the number. I&#039;d say about 4/5 times. Plus theres 6 numbers. Average them together, I&#039;d say its pretty significant. 
+
+The geiger counter stuff was also pretty good for my belief. I didnt see it happen, but I trust Sean. 
+
+I&#039;ve done more than this. I&#039;ve gotten pretty awesome stuff with energy manipulation, telepathy, clairvoyance, etc that was very convincing and proving. I&#039;ve impressed lots of people with these things too. Thats why I believe.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">redefine</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=428&amp;ref=1219933762" width="0" height="0" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11027" style="width: 100%; overflow: auto; min-height: 125px;">comparing this to science is really no comparison. the rigourusness done in science is nothing compared to individual beliefs. added to this that there is alot of personal opinion and inductive reasoning in there and thats one shaky belief. i kind of think its the difference between a tank and a small car. or even better, a skyscraper and a treehouse.<br />
+<br />
+science uses inductive reasoning too, but they tend to do it heaps better then the average person.<br />
+<br />
+but anyway, most of the things i believe in, i believe in because they fit AND i havent had the time and resources to falsify it, which make it more of an opinion really. <br />
+<br />
+psionics - pretty much all of it is by personal experience, except RVing which i tallied results for and measured the probability against,, that was quite succesful<br />
+<br />
+that everything is connected and comes from the one conciousness, which experiences everything subjectively through &#039;separate&#039; conciousness&#039; - i dont really know why i believe this one, its one of those ones where it is falsifiable, but probably not practically testable. i think the fact it provides a simple solution to the mechanic of telepathy, but there are probably more testable theories that are just as, or more, simple.<br />
+<br />
+it is my belief that the &#039;random&#039; effect of the quantum collapse of the wavefunction is actually derived from the state of conciousness at that particular point in space and time, thus allowing us to manipulate random number generators and interact with our bodies via the brain (which has quantum osscillators inside the neurons), and maybe small scale effects which cause macropk based on the butterfly effect (the macropk ones probably one of the more shaky ones). -this because its the simplest explaination i can come up with for pk (remember what i said about inductive reasoning. also, i could never get my head around newtons third law with respect to pk)<br />
+<br />
+i believe that the reality we percieve is not &#039;absolute&#039; or &#039;ultimate&#039; in the sense that i believe there is a more fundamental layer of reality then the one we percieve (based on, but not exactly the same as, the life is a simulation arguments).<br />
+<br />
+i also believe from personal experience that &quot;do not try, just do&quot; is much easier said then done.<br />
+<br />
+and that i have been touched by his noodly appendage :P</div>
+		<textarea style="display: none;" id="desctxt_11027">comparing this to science is really no comparison. the rigourusness done in science is nothing compared to individual beliefs. added to this that there is alot of personal opinion and inductive reasoning in there and thats one shaky belief. i kind of think its the difference between a tank and a small car. or even better, a skyscraper and a treehouse.
+
+science uses inductive reasoning too, but they tend to do it heaps better then the average person.
+
+but anyway, most of the things i believe in, i believe in because they fit AND i havent had the time and resources to falsify it, which make it more of an opinion really. 
+
+psionics - pretty much all of it is by personal experience, except RVing which i tallied results for and measured the probability against,, that was quite succesful
+
+that everything is connected and comes from the one conciousness, which experiences everything subjectively through &#039;separate&#039; conciousness&#039; - i dont really know why i believe this one, its one of those ones where it is falsifiable, but probably not practically testable. i think the fact it provides a simple solution to the mechanic of telepathy, but there are probably more testable theories that are just as, or more, simple.
+
+it is my belief that the &#039;random&#039; effect of the quantum collapse of the wavefunction is actually derived from the state of conciousness at that particular point in space and time, thus allowing us to manipulate random number generators and interact with our bodies via the brain (which has quantum osscillators inside the neurons), and maybe small scale effects which cause macropk based on the butterfly effect (the macropk ones probably one of the more shaky ones). -this because its the simplest explaination i can come up with for pk (remember what i said about inductive reasoning. also, i could never get my head around newtons third law with respect to pk)
+
+i believe that the reality we percieve is not &#039;absolute&#039; or &#039;ultimate&#039; in the sense that i believe there is a more fundamental layer of reality then the one we percieve (based on, but not exactly the same as, the life is a simulation arguments).
+
+i also believe from personal experience that &quot;do not try, just do&quot; is much easier said then done.
+
+and that i have been touched by his noodly appendage :P</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by redefine, 4 years, 4 months ago<br />Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Linked</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=19&amp;ref=1203762048" width="89" height="38" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11031" style="width: 100%; overflow: auto; min-height: 125px;">you know what i don&#039;t get. everyone who does these tests, are doing the same tests perfomed in actual research labs and getting the same results. Through all the attempts, there has never been any evidence to prove psionics as being false, but many tests show positive results by the subject greatly beating the odds multiple times. How can science argue with that? Research has been conducted for over 50 years on the subject of psychic ability, and through all this no proof has been found as psionics being false? That, in my eyes, is proof that it does exisit.</div>
+		<textarea style="display: none;" id="desctxt_11031">you know what i don&#039;t get. everyone who does these tests, are doing the same tests perfomed in actual research labs and getting the same results. Through all the attempts, there has never been any evidence to prove psionics as being false, but many tests show positive results by the subject greatly beating the odds multiple times. How can science argue with that? Research has been conducted for over 50 years on the subject of psychic ability, and through all this no proof has been found as psionics being false? That, in my eyes, is proof that it does exisit.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Sean</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=2&amp;ref=1214247941" width="117" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11034" style="width: 100%; overflow: auto; min-height: 125px;">Most things I believe in because I&#039;ve seen it with my own eyes, and confirmed I wasn&#039;t self-deluded.  It can be hard to confirm whether something is real or not... but what is even harder is to take all the things that have been witnessed as real, and start coming up with an explanation for them :-).  That problem is light-years ahead of just witnessing something bizarre :-).<br />
+<br />
+So I&#039;ll go down the list...<br />
+<br />
+Psi Balls/Constructs - exercises produced results.  Confirmed I wasn&#039;t making it up in my head via getting others to feel the construct in my hand, and throwing it over a digital thermometer (and watching the temperature go up).  Advanced constructs produced &quot;unexpected&quot; results, which is evidence that my expectation isn&#039;t what&#039;s driving the constructs... some experiences outlined in:  <a href="http://psipog.net/art-advanced-constructs-log.html" target="_blank">http://psipog.net/art-advanced-constructs-log.html</a><br />
+<br />
+Empathy - lots of experiences where a reading led to interesting predictions, followed by the prediction coming true.  I could name a few, but they are emotional, and personal :-).<br />
+<br />
+Telepathy - not as many experiences, but a few stand out.  Sending images in the PsiPog practice room (  <a href="http://psipog.net/art-images-with-subc.html" target="_blank">http://psipog.net/art-images-with-subc.html</a> ).  &quot;Hearing&quot; a friends voice, followed by them saying exactly what I just heard.  One interesting experience (that convinced my father I wasn&#039;t insane), was one where I was away from home for a week.  During my time away, I connected to my father.  I closed my eyes and saw a silhouette of a person laying down in front of me, and it felt like I wasn&#039;t at my father&#039;s home.  Upon returning home, I asked my dad, &quot;Did you sleep at home on Tuesday night?&quot;  Upon which he replied &quot;.......... Nooo.... why?&quot; :-)  I was correct in my perception, and freaked out my dad in the process, because he was keeping it a secret from me :-).<br />
+<br />
+Clairvoyance/Remote Viewing - overlaps with telepathy.<br />
+<br />
+OBEs - hundreds of experiences.  One in particular is what convinced me that what I was experiencing wasn&#039;t purely a hallucination.   <a href="http://www.psipog.net/blog/2005/11/awesome-obe.html" target="_blank">http://www.psipog.net/blog/2005/11/awesome-obe.html</a>  Since then, I&#039;ve had a few more that have re-enforced that conclusion.<br />
+<br />
+By extension, I believe a lot of what Robert Monroe, Robert Peterson, and to a lesser extent Robert Bruce have written about OBEs - because my experiences align with theirs a lot, so it&#039;s reasonable to assume that as I keep going, I will continue to experience similar things that they write about.<br />
+<br />
+Psychokinesis - not a lot of personal experience, except for the psi-wheel, and a little bit of wobbling of pens.  Not enough to personally convince me of anything.  However, seeing the geiger counter results with JoeT, and just having a relationship with JoeT, NI, and Float, has convinced me of it&#039;s existence.<br />
+<br />
+DMILs - tried it once, and succeeded.  Didn&#039;t really interest me enough to keep going, and my experience made sense (it doesn&#039;t even seem &quot;paranormal&quot; to me), so not a big deal, imho.  Basically used visualization to alter my body (bigger bicep muscles, at the time, without exercise).<br />
+<br />
+Precognition - I have a hard time with this, because it overlaps with my empathy.  I can make some accurate predictions, but to me, it seems like I&#039;m just playing out the emotional landscape of events, and coming to an obvious conclusion.  I&#039;ve read some books claiming that what I&#039;m doing is actually precognition, but my belief system won&#039;t allow me to admit it to myself :-).<br />
+<br />
+Anything I missed?<br />
+<br />
+~Sean</div>
+		<textarea style="display: none;" id="desctxt_11034">Most things I believe in because I&#039;ve seen it with my own eyes, and confirmed I wasn&#039;t self-deluded.  It can be hard to confirm whether something is real or not... but what is even harder is to take all the things that have been witnessed as real, and start coming up with an explanation for them :-).  That problem is light-years ahead of just witnessing something bizarre :-).
+
+So I&#039;ll go down the list...
+
+Psi Balls/Constructs - exercises produced results.  Confirmed I wasn&#039;t making it up in my head via getting others to feel the construct in my hand, and throwing it over a digital thermometer (and watching the temperature go up).  Advanced constructs produced &quot;unexpected&quot; results, which is evidence that my expectation isn&#039;t what&#039;s driving the constructs... some experiences outlined in: http://psipog.net/art-advanced-constructs-log.html
+
+Empathy - lots of experiences where a reading led to interesting predictions, followed by the prediction coming true.  I could name a few, but they are emotional, and personal :-).
+
+Telepathy - not as many experiences, but a few stand out.  Sending images in the PsiPog practice room ( http://psipog.net/art-images-with-subc.html ).  &quot;Hearing&quot; a friends voice, followed by them saying exactly what I just heard.  One interesting experience (that convinced my father I wasn&#039;t insane), was one where I was away from home for a week.  During my time away, I connected to my father.  I closed my eyes and saw a silhouette of a person laying down in front of me, and it felt like I wasn&#039;t at my father&#039;s home.  Upon returning home, I asked my dad, &quot;Did you sleep at home on Tuesday night?&quot;  Upon which he replied &quot;.......... Nooo.... why?&quot; :-)  I was correct in my perception, and freaked out my dad in the process, because he was keeping it a secret from me :-).
+
+Clairvoyance/Remote Viewing - overlaps with telepathy.
+
+OBEs - hundreds of experiences.  One in particular is what convinced me that what I was experiencing wasn&#039;t purely a hallucination.  http://www.psipog.net/blog/2005/11/awesome-obe.html  Since then, I&#039;ve had a few more that have re-enforced that conclusion.
+
+By extension, I believe a lot of what Robert Monroe, Robert Peterson, and to a lesser extent Robert Bruce have written about OBEs - because my experiences align with theirs a lot, so it&#039;s reasonable to assume that as I keep going, I will continue to experience similar things that they write about.
+
+Psychokinesis - not a lot of personal experience, except for the psi-wheel, and a little bit of wobbling of pens.  Not enough to personally convince me of anything.  However, seeing the geiger counter results with JoeT, and just having a relationship with JoeT, NI, and Float, has convinced me of it&#039;s existence.
+
+DMILs - tried it once, and succeeded.  Didn&#039;t really interest me enough to keep going, and my experience made sense (it doesn&#039;t even seem &quot;paranormal&quot; to me), so not a big deal, imho.  Basically used visualization to alter my body (bigger bicep muscles, at the time, without exercise).
+
+Precognition - I have a hard time with this, because it overlaps with my empathy.  I can make some accurate predictions, but to me, it seems like I&#039;m just playing out the emotional landscape of events, and coming to an obvious conclusion.  I&#039;ve read some books claiming that what I&#039;m doing is actually precognition, but my belief system won&#039;t allow me to admit it to myself :-).
+
+Anything I missed?
+
+~Sean</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">3chad</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=555&amp;ref=1221955619" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11043" style="width: 100%; overflow: auto; min-height: 125px;">Precognition-Seems to happen a lot to me.<br />
+<br />
+Psiball/Construct-Lots of experience with them.<br />
+<br />
+OBEs-Happens sometimes to me.<br />
+<br />
+My Experience gives me most of my belief.</div>
+		<textarea style="display: none;" id="desctxt_11043">Precognition-Seems to happen a lot to me.
+
+Psiball/Construct-Lots of experience with them.
+
+OBEs-Happens sometimes to me.
+
+My Experience gives me most of my belief.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Trick</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=744&amp;ref=1221873234" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11051" style="width: 100%; overflow: auto; min-height: 125px;">Linked: Exactly. I&#039;ve been trying to say that to people for a long time. </div>
+		<textarea style="display: none;" id="desctxt_11051">Linked: Exactly. I&#039;ve been trying to say that to people for a long time.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Psikillion</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=593&amp;ref=1213954510" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11070" style="width: 100%; overflow: auto; min-height: 125px;">Psiballs/constructs very little experience, but sometimes I&#039;ve done stuff like thinking there is a cat on my shoulder or babelfish in my ears to translate the messages from my sub-C. During such events I feel pressure in those parts of the body.<br />
+<br />
+Clairvoyance once I wondered where a certain person was and a thought came into my head that he was unable to find the trash bags and the dinning hall kitchen was dark and vacant. He reported back the same findings.<br />
+<br />
+Telepathy the first skill I learned, but unfortunately I have very little practice and no one to practice with.<br />
+<br />
+pre-cog i have had some dreams that tell me of certain events of the following day, but i usually dismiss them as trivial<br />
+<br />
+subconscious once I discovered psipog and read the article about communicating with my subconscious, I have been communicating with my subconscious. In one of the 50-some minute periods at the end of school I decide that I want to ask my subconscious what attributes I have as a person. To my surprise it answered with exactly 50 attributes. In the summer I decided I wanted my subconscious to write a story with whatever words come into its mind first. It makes very little sense and is very disturbing, so chances are it is encoded and I&#039;ll need to ask my subconscious about its true meaning.<br />
+<br />
+other paranormal activity Ever since I was little, whenever I lie down on the ground I feel as if I am just going to fall &quot;up&quot;. i would get very hyper for no reason at times when other people are exhausted. When i come back to school from being sick knowing the material better than those who were not sick. EX: I was sick and missed a Latin test on friday, I came back took the test after finding out that even the top three kids in the class did not get A&#039;s on the test. I got a 100 on it. (very little studying if I ever did study)</div>
+		<textarea style="display: none;" id="desctxt_11070">Psiballs/constructs very little experience, but sometimes I&#039;ve done stuff like thinking there is a cat on my shoulder or babelfish in my ears to translate the messages from my sub-C. During such events I feel pressure in those parts of the body.
+
+Clairvoyance once I wondered where a certain person was and a thought came into my head that he was unable to find the trash bags and the dinning hall kitchen was dark and vacant. He reported back the same findings.
+
+Telepathy the first skill I learned, but unfortunately I have very little practice and no one to practice with.
+
+pre-cog i have had some dreams that tell me of certain events of the following day, but i usually dismiss them as trivial
+
+subconscious once I discovered psipog and read the article about communicating with my subconscious, I have been communicating with my subconscious. In one of the 50-some minute periods at the end of school I decide that I want to ask my subconscious what attributes I have as a person. To my surprise it answered with exactly 50 attributes. In the summer I decided I wanted my subconscious to write a story with whatever words come into its mind first. It makes very little sense and is very disturbing, so chances are it is encoded and I&#039;ll need to ask my subconscious about its true meaning.
+
+other paranormal activity Ever since I was little, whenever I lie down on the ground I feel as if I am just going to fall &quot;up&quot;. i would get very hyper for no reason at times when other people are exhausted. When i come back to school from being sick knowing the material better than those who were not sick. EX: I was sick and missed a Latin test on friday, I came back took the test after finding out that even the top three kids in the class did not get A&#039;s on the test. I got a 100 on it. (very little studying if I ever did study)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Psikillion, 4 years, 4 months ago<br />Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Faceless</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=570&amp;ref=1214279440" width="83" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11071" style="width: 100%; overflow: auto; min-height: 125px;">I guess it is my turn to explain why i belive. Like others when i was younger it was just something i wanted. So in my mind it was therefore real to me. Then in highschool is when it started to really fall into place. I started to have precognitive visions, and really strong empathic stuff and then hated to be around other people because of empathy. After that i really started to get into the whole psychic phenomonon thing. That is when i found Psipog. Then i got good at psi wheel, RV, and such, and then i learned how to sheild so i didnt feel so weird around people. Then during my sophmore year i started to see dead people (Cliché i know). And now i am what i am. so for the most part seeing (or feeling) is beliving.</div>
+		<textarea style="display: none;" id="desctxt_11071">I guess it is my turn to explain why i belive. Like others when i was younger it was just something i wanted. So in my mind it was therefore real to me. Then in highschool is when it started to really fall into place. I started to have precognitive visions, and really strong empathic stuff and then hated to be around other people because of empathy. After that i really started to get into the whole psychic phenomonon thing. That is when i found Psipog. Then i got good at psi wheel, RV, and such, and then i learned how to sheild so i didnt feel so weird around people. Then during my sophmore year i started to see dead people (Cliché i know). And now i am what i am. so for the most part seeing (or feeling) is beliving.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">anisus</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=732&amp;ref=1219047680" width="125" height="123" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11076" style="width: 100%; overflow: auto; min-height: 125px;">The reason I believe is because of personal experience. I don&#039;t know if I can offically say I believe in macro TK, (still trying to actually move something:S), but I do believe in telepathy, possibly precognition, and remote viewing, those kinds of paranormal things that have to do with the mind and thoughts or whatever the terms are:S I&#039;ve had personal experience with telepathy that I can definitely say led to my full belief of the phenomenon, which beforehand, I couldn&#039;t say whether or not I believed. I think with telekinesis, I will have to actually be able to do it myself to believe it or see someone else do it right in front of my eyes, I mean, with something more than a psi wheel. (no offense to the psi wheel, I&#039;m using it myself right now, but it would be something to see someone slide a glass full of water around a table or lift a book a foot into the air) <br />
+<br />
+Telepathy- Was sitting around with 3 people, suddenly asked them all to think of a color, guessed all colors right in first try. &lt;defining experience <br />
+Was writing this letter once with pictures (choose the letter then use a corresponding picture that matches the letter, like if I wanted to write the word AND, I&#039;d use APPLE, NOOSE, DOG., then that same day, my sister sees my letter and freaks out and shows me the letter she wrote that same day with the same exact method.&lt;this seems telepathic to me...right:S<br />
+<br />
+Clairvoyance- About 8 years ago, I was sitting with my sister watching tv then all of a sudden I felt this strange feeling like something huge and life-altering was going to happen. Hit me like a wall (i&#039;m not exagerrating) So I turned to her grabbed her arm and said something like, &quot;Something huge is going to happen soon. I can feel it. Something that will change the course of life here&quot; Something silly like that, and then a few months later, 9/11 happens. &lt;I don&#039;t know if this story counts as anything more than a coincidence, but it happened and I thought it was interesting.<br />
+<br />
+I&#039;ve also had a significant mystical experience, but that probably doesn&#039;t have much to do with the topic.   </div>
+		<textarea style="display: none;" id="desctxt_11076">The reason I believe is because of personal experience. I don&#039;t know if I can offically say I believe in macro TK, (still trying to actually move something:S), but I do believe in telepathy, possibly precognition, and remote viewing, those kinds of paranormal things that have to do with the mind and thoughts or whatever the terms are:S I&#039;ve had personal experience with telepathy that I can definitely say led to my full belief of the phenomenon, which beforehand, I couldn&#039;t say whether or not I believed. I think with telekinesis, I will have to actually be able to do it myself to believe it or see someone else do it right in front of my eyes, I mean, with something more than a psi wheel. (no offense to the psi wheel, I&#039;m using it myself right now, but it would be something to see someone slide a glass full of water around a table or lift a book a foot into the air) 
+
+Telepathy- Was sitting around with 3 people, suddenly asked them all to think of a color, guessed all colors right in first try. &lt;defining experience 
+Was writing this letter once with pictures (choose the letter then use a corresponding picture that matches the letter, like if I wanted to write the word AND, I&#039;d use APPLE, NOOSE, DOG., then that same day, my sister sees my letter and freaks out and shows me the letter she wrote that same day with the same exact method.&lt;this seems telepathic to me...right:S
+
+Clairvoyance- About 8 years ago, I was sitting with my sister watching tv then all of a sudden I felt this strange feeling like something huge and life-altering was going to happen. Hit me like a wall (i&#039;m not exagerrating) So I turned to her grabbed her arm and said something like, &quot;Something huge is going to happen soon. I can feel it. Something that will change the course of life here&quot; Something silly like that, and then a few months later, 9/11 happens. &lt;I don&#039;t know if this story counts as anything more than a coincidence, but it happened and I thought it was interesting.
+
+I&#039;ve also had a significant mystical experience, but that probably doesn&#039;t have much to do with the topic.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Atrum</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=755&amp;ref=1221862716" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11167" style="width: 100%; overflow: auto; min-height: 125px;">When God created the world he had no set laws for physics and stuff like that. (As far as I know) He didnt tell us about gravity and such. So prettymuch anything can go in this wonderful world we live in.</div>
+		<textarea style="display: none;" id="desctxt_11167">When God created the world he had no set laws for physics and stuff like that. (As far as I know) He didnt tell us about gravity and such. So prettymuch anything can go in this wonderful world we live in.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=538" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 29 queries. 0.325 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

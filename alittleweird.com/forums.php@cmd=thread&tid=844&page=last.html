@@ -1,0 +1,403 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; interesting constructs</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; interesting constructs</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">interesting constructs</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">speeddemon92</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_15127" style="width: 100%; overflow: auto; min-height: 125px;">hey everyone<br />
+<br />
+i want everyone that has made an interesting construct that worked to post what it was and how it worked here.<br />
+<br />
+i&#039;ll start of coarse.<br />
+<br />
+mine was what i call psi glass. it was just a rectangular box that acted like glasses magnifying and sharpening what i looked at. i needed my glasses to read but i left them at home on a trip so i made a psi glass and in a couple minutes everything was almost as if i had my glasses on.<br />
+<br />
+ok now everyone,...........GO!!!</div>
+		<textarea style="display: none;" id="desctxt_15127">hey everyone
+
+i want everyone that has made an interesting construct that worked to post what it was and how it worked here.
+
+i&#039;ll start of coarse.
+
+mine was what i call psi glass. it was just a rectangular box that acted like glasses magnifying and sharpening what i looked at. i needed my glasses to read but i left them at home on a trip so i made a psi glass and in a couple minutes everything was almost as if i had my glasses on.
+
+ok now everyone,...........GO!!!</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 2 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">f3licks</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=848&amp;ref=1227833859" width="125" height="78" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_15199" style="width: 100%; overflow: auto; min-height: 125px;">Hmmm, just off the top of my head, I once made a construct that would move to the hottest point in my body and emit cold so I could get to sleep.</div>
+		<textarea style="display: none;" id="desctxt_15199">Hmmm, just off the top of my head, I once made a construct that would move to the hottest point in my body and emit cold so I could get to sleep.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 2 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">sh</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_15213" style="width: 100%; overflow: auto; min-height: 125px;">I made some that emiited particles and caused more sparks in the air. I actually created a light show in the dark with that.</div>
+		<textarea style="display: none;" id="desctxt_15213">I made some that emiited particles and caused more sparks in the air. I actually created a light show in the dark with that.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 2 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_15634" style="width: 100%; overflow: auto; min-height: 125px;">A rose, which blumed when it gathered enough energy.<br />
+<br />
+It made a faint smell in my room when it did blume, was quite pleasant.</div>
+		<textarea style="display: none;" id="desctxt_15634">A rose, which blumed when it gathered enough energy.
+
+It made a faint smell in my room when it did blume, was quite pleasant.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">speeddemon92</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_15721" style="width: 100%; overflow: auto; min-height: 125px;">to f3licks: i should try that soon would b much better than a fan that makes you freeze at night.<br />
+<br />
+to sh: you need to teach me how to make a construct emit particals and sparks. could help when walking in my house at night so i don&#039;t stub my toes.<br />
+<br />
+to akio: seriously teach me how to do that!!!!!! it goes perfect with my origami rose bouquets that i make now and then!<br />
+<br />
+to f3licks, sh, and akio: thanks for posting. it nice to know others make interesting but cool constructs.</div>
+		<textarea style="display: none;" id="desctxt_15721">to f3licks: i should try that soon would b much better than a fan that makes you freeze at night.
+
+to sh: you need to teach me how to make a construct emit particals and sparks. could help when walking in my house at night so i don&#039;t stub my toes.
+
+to akio: seriously teach me how to do that!!!!!! it goes perfect with my origami rose bouquets that i make now and then!
+
+to f3licks, sh, and akio: thanks for posting. it nice to know others make interesting but cool constructs.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Kube</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=952&amp;ref=1249239276" width="102" height="77" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_15722" style="width: 100%; overflow: auto; min-height: 125px;">@speeddemon92: I think the sparks construct could be done using a bit of micro-Pk. But you need combustion to create sparks, so I don&#039;t know what could be used to do that. Obviously, oxygen isn&#039;t lacking; you just need to find something in the air that&#039;ll burn and cause those sparks. (Or maybe get your construct to find it on its own.)</div>
+		<textarea style="display: none;" id="desctxt_15722">@speeddemon92: I think the sparks construct could be done using a bit of micro-Pk. But you need combustion to create sparks, so I don&#039;t know what could be used to do that. Obviously, oxygen isn&#039;t lacking; you just need to find something in the air that&#039;ll burn and cause those sparks. (Or maybe get your construct to find it on its own.)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">speeddemon92</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_15726" style="width: 100%; overflow: auto; min-height: 125px;">to kube: he said he made it emit particals so thats probably the cause of the sparks</div>
+		<textarea style="display: none;" id="desctxt_15726">to kube: he said he made it emit particals so thats probably the cause of the sparks</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Kube</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=952&amp;ref=1249239276" width="102" height="77" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_15731" style="width: 100%; overflow: auto; min-height: 125px;">@speeddemon92: Then you&#039;d need the construct to use micro-PK and produce those particles from the ones already in the air.</div>
+		<textarea style="display: none;" id="desctxt_15731">@speeddemon92: Then you&#039;d need the construct to use micro-PK and produce those particles from the ones already in the air.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">f3licks</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=848&amp;ref=1227833859" width="125" height="78" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_15739" style="width: 100%; overflow: auto; min-height: 125px;">@Speeddemmon:<br />
+I would hesitate before believing everything Sh says at face value.<br />
+Kube can back me up on this.</div>
+		<textarea style="display: none;" id="desctxt_15739">@Speeddemmon:
+I would hesitate before believing everything Sh says at face value.
+Kube can back me up on this.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">speeddemon92</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_15740" style="width: 100%; overflow: auto; min-height: 125px;">ah ok. btw i was wondering (off topic though well sorta) i have a staff that i originally charged for use as a magick staff but i&#039;m getting away from that type of stuff. i was wanting to turn it into a staff that contains a construct that will auto program itself for a task (like a magick staff but only using psi and pk). what would i have to do to auto program to my every desire (at least the ones using psi and pk) and how would i go about removing the energy already in the staff to insert the construct since i don&#039;t want to leave the magick energy in it.</div>
+		<textarea style="display: none;" id="desctxt_15740">ah ok. btw i was wondering (off topic though well sorta) i have a staff that i originally charged for use as a magick staff but i&#039;m getting away from that type of stuff. i was wanting to turn it into a staff that contains a construct that will auto program itself for a task (like a magick staff but only using psi and pk). what would i have to do to auto program to my every desire (at least the ones using psi and pk) and how would i go about removing the energy already in the staff to insert the construct since i don&#039;t want to leave the magick energy in it.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Kube</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=952&amp;ref=1249239276" width="102" height="77" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_15741" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by f3licks:</em><br />
+@Speeddemmon:<br />
+I would hesitate before believing everything Sh says at face value.<br />
+Kube can back me up on this.</div>And I will. Speed, notice how sh hasn&#039;t been posting for a week or two? He most likely won&#039;t come back either.<br />
+<br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by speeddemon92:</em><br />
+ah ok. btw i was wondering (off topic though well sorta) i have a staff that i originally charged for use as a magick staff but i&#039;m getting away from that type of stuff. i was wanting to turn it into a staff that contains a construct that will auto program itself for a task (like a magick staff but only using psi and pk). what would i have to do to auto program to my every desire (at least the ones using psi and pk) and how would i go about removing the energy already in the staff to insert the construct since i don&#039;t want to leave the magick energy in it.</div>As for the staff: If you want to remove the energy first, I&#039;d try and do it via magick if that&#039;s how you got it there first. You could probably do it with psionics but I dunno... To program the staff itself, what I&#039;d do (if I was good enough at making constructs) wouldn&#039;t program the staff itself, but make a construct around the staff (or in it, w/e) that somehow reads your thoughts and does pk when you ask it to. (a telepathic staff in a way)</div>
+		<textarea style="display: none;" id="desctxt_15741">[quote][i]posted by f3licks:[/i]
+@Speeddemmon:
+I would hesitate before believing everything Sh says at face value.
+Kube can back me up on this.[/quote]
+
+And I will. Speed, notice how sh hasn&#039;t been posting for a week or two? He most likely won&#039;t come back either.
+
+[quote][i]posted by speeddemon92:[/i]
+ah ok. btw i was wondering (off topic though well sorta) i have a staff that i originally charged for use as a magick staff but i&#039;m getting away from that type of stuff. i was wanting to turn it into a staff that contains a construct that will auto program itself for a task (like a magick staff but only using psi and pk). what would i have to do to auto program to my every desire (at least the ones using psi and pk) and how would i go about removing the energy already in the staff to insert the construct since i don&#039;t want to leave the magick energy in it.[/quote]
+
+As for the staff: If you want to remove the energy first, I&#039;d try and do it via magick if that&#039;s how you got it there first. You could probably do it with psionics but I dunno... To program the staff itself, what I&#039;d do (if I was good enough at making constructs) wouldn&#039;t program the staff itself, but make a construct around the staff (or in it, w/e) that somehow reads your thoughts and does pk when you ask it to. (a telepathic staff in a way)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">speeddemon92</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_15744" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Kube:</em><br />
+<br />
+As for the staff: If you want to remove the energy first, I&#039;d try and do it via magick if that&#039;s how you got it there first. You could probably do it with psionics but I dunno... To program the staff itself, what I&#039;d do (if I was good enough at making constructs) wouldn&#039;t program the staff itself, but make a construct around the staff (or in it, w/e) that somehow reads your thoughts and does pk when you ask it to. (a telepathic staff in a way)</div>i understand but i don&#039;t want to even touch magick again but i don&#039;t want to have to make another staff either. man i&#039;m stuck between the rock and the hard place</div>
+		<textarea style="display: none;" id="desctxt_15744">[quote][i]posted by Kube:[/i]
+
+As for the staff: If you want to remove the energy first, I&#039;d try and do it via magick if that&#039;s how you got it there first. You could probably do it with psionics but I dunno... To program the staff itself, what I&#039;d do (if I was good enough at making constructs) wouldn&#039;t program the staff itself, but make a construct around the staff (or in it, w/e) that somehow reads your thoughts and does pk when you ask it to. (a telepathic staff in a way)[/quote]
+
+i understand but i don&#039;t want to even touch magick again but i don&#039;t want to have to make another staff either. man i&#039;m stuck between the rock and the hard place</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">f3licks</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=848&amp;ref=1227833859" width="125" height="78" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_15750" style="width: 100%; overflow: auto; min-height: 125px;">@Speed:<br />
+<br />
+First of all, the energy will probably dissipate on it&#039;s own.<br />
+Secondly, what&#039;s your aversion to magick?<br />
+<br />
+You can psionically cleanse the staff, though, just bathe it in cleansing psi a couple times.<br />
+<br />
+Also, what exactly do you want it to do?</div>
+		<textarea style="display: none;" id="desctxt_15750">@Speed:
+
+First of all, the energy will probably dissipate on it&#039;s own.
+Secondly, what&#039;s your aversion to magick?
+
+You can psionically cleanse the staff, though, just bathe it in cleansing psi a couple times.
+
+Also, what exactly do you want it to do?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">speeddemon92</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_15803" style="width: 100%; overflow: auto; min-height: 125px;">1. no i believe when i charged it that its a permanent recharge.<br />
+2. i just have a probelm with the basis. (also it never worked)<br />
+<br />
+how do i bathe it with cleansing psi and how do i get cleaning psi?<br />
+<br />
+i want to put a construct inside it that will do the task i desire using psi ki pk etc. instead of magick.<br />
+</div>
+		<textarea style="display: none;" id="desctxt_15803">1. no i believe when i charged it that its a permanent recharge.
+2. i just have a probelm with the basis. (also it never worked)
+
+how do i bathe it with cleansing psi and how do i get cleaning psi?
+
+i want to put a construct inside it that will do the task i desire using psi ki pk etc. instead of magick.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 1 month ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=844" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 30 queries. 0.273 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

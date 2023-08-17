@@ -1,0 +1,398 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; you are all imaginary</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; you are all imaginary</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">you are all imaginary</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">jack</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=759&amp;ref=1220326318" width="125" height="105" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13371" style="width: 100%; overflow: auto; min-height: 125px;">I found a lot of people saying that recently. It&#039;s always in my mind that the existence of life is really a mistake, because there&#039;s no answer to it. consequently, life and death comes in parallel thus to balance out that mistake there is death. It still does not help, we see ourselves as existent because you can feel that you exist. I came to an idea that we all live in our separate worlds, where everyone else&#039;s fate are already sealed, but not your own. But that idea quickly disappeared, because indeed, it seemed everyone&#039;s lives are mixed together. The fact that we are alive and able to feel others who are alive means that they too, exist. At least, maybe,we already believe that. the origin f life will always be a myth...but everything that starts always have an end...The sun will eventually burn out, a baby&#039;s cry will end sometimes to a laughter. However, how would you think about in a hundred years, where you do not exist, like a rock next to a river, with the willows and the blowing wind... except you are not really a rock, you do not, exist. It does not seem likely, that after all a person go through in life, perhaps hundreds of murder done with malice, or thousands of good deeds that saved millions of people from suffering, end up the same. There is always balance, the suffer we cause to others, in balance, would come back to us, supposedly, since that way it would be fair. But how will that balance happen, the after life? But that would mean that you all exist as much as I do, and in a spiritual form, we are sort of equal, except one might possess more wisdom that others. That still makes us unequal though, that would not make sense as to what caused that imbalance, but if there is after life, it would be caused by the life before, and the first life we ever had...comes back the the question of our origin. Still, there had to be an end, logic shows everything ends, everything, life must be included. That end will either destroy the balance, or create a realm of imagination where, indeed, no one but our mind exists. <br />
+<br />
+Everything is part of mind, but they also indeed do exist, they may exist because our mind saying they exist, in this case, you are all imaginary, or everything exists because they truly exist, our mind is telling us the obvious truth. It would make a huge difference, for the first case, you can try to conqueror the world, and consequently succeed if you believe in it. But, all our beliefs are chained together, if your belief conflicts with my belief, they will cancel out, common sense wins. That would make the second case more plausible. It makes sense that when I try to fly and fail, it seemed that no one believed in that, perhaps not even myself. <br />
+<br />
+The mind would not seem to be able to create everything, for there will be a lot to create. We do not know much about the mind, however.<br />
+<br />
+Perhaps we are really imaginary, the existence of ourselves are not real, but is created by others. We exist for that reason, we act for that reason, and we think for that reason. <br />
+<br />
+trying to figure out whether everyone really exist, is like solving a Rubik&#039;s cube...gotta look for patterns and apply them<br />
+<br />
+<a href="http://img6.imageshack.us/my.php?image=diycube.jpg" target="_blank" title="http://img6.imageshack.us/my.php?image=diycube.jpg"><img src="http://img6.imageshack.us/img6/1707/diycube.th.jpg" alt="External Image" /></a><br />
+<br />
+diy type A cube white</div>
+		<textarea style="display: none;" id="desctxt_13371">I found a lot of people saying that recently. It&#039;s always in my mind that the existence of life is really a mistake, because there&#039;s no answer to it. consequently, life and death comes in parallel thus to balance out that mistake there is death. It still does not help, we see ourselves as existent because you can feel that you exist. I came to an idea that we all live in our separate worlds, where everyone else&#039;s fate are already sealed, but not your own. But that idea quickly disappeared, because indeed, it seemed everyone&#039;s lives are mixed together. The fact that we are alive and able to feel others who are alive means that they too, exist. At least, maybe,we already believe that. the origin f life will always be a myth...but everything that starts always have an end...The sun will eventually burn out, a baby&#039;s cry will end sometimes to a laughter. However, how would you think about in a hundred years, where you do not exist, like a rock next to a river, with the willows and the blowing wind... except you are not really a rock, you do not, exist. It does not seem likely, that after all a person go through in life, perhaps hundreds of murder done with malice, or thousands of good deeds that saved millions of people from suffering, end up the same. There is always balance, the suffer we cause to others, in balance, would come back to us, supposedly, since that way it would be fair. But how will that balance happen, the after life? But that would mean that you all exist as much as I do, and in a spiritual form, we are sort of equal, except one might possess more wisdom that others. That still makes us unequal though, that would not make sense as to what caused that imbalance, but if there is after life, it would be caused by the life before, and the first life we ever had...comes back the the question of our origin. Still, there had to be an end, logic shows everything ends, everything, life must be included. That end will either destroy the balance, or create a realm of imagination where, indeed, no one but our mind exists. 
+
+Everything is part of mind, but they also indeed do exist, they may exist because our mind saying they exist, in this case, you are all imaginary, or everything exists because they truly exist, our mind is telling us the obvious truth. It would make a huge difference, for the first case, you can try to conqueror the world, and consequently succeed if you believe in it. But, all our beliefs are chained together, if your belief conflicts with my belief, they will cancel out, common sense wins. That would make the second case more plausible. It makes sense that when I try to fly and fail, it seemed that no one believed in that, perhaps not even myself. 
+
+The mind would not seem to be able to create everything, for there will be a lot to create. We do not know much about the mind, however.
+
+Perhaps we are really imaginary, the existence of ourselves are not real, but is created by others. We exist for that reason, we act for that reason, and we think for that reason. 
+
+trying to figure out whether everyone really exist, is like solving a Rubik&#039;s cube...gotta look for patterns and apply them
+
+[URL=http://img6.imageshack.us/my.php?image=diycube.jpg][IMG]http://img6.imageshack.us/img6/1707/diycube.th.jpg[/IMG][/URL]
+
+diy type A cube white</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by jack, 3 years, 8 months ago<br />Posted 3 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Psikillion</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=593&amp;ref=1213954510" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13373" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by jack:</em>It&#039;s always in my mind that the existence of life is really a mistake, because there&#039;s no answer to it.</div>If you think that all the world is an illusion, then how do you know that there is a mistake?<br />
+<br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by jack:</em>consequently, life and death comes in parallel thus to balance out that mistake there is death.</div>How do you know that you can die if everything you perceive is an illusion?<br />
+<br />
+<br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by jack:</em>It still does not help, we see ourselves as existent because you can feel that you exist.</div>I can question my existence (cogito ergo sum) and discover that I exist. I can never &quot;feel&quot; that I exist.<br />
+<br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by jack:</em><br />
+I came to an idea that we all live in our separate worlds, where everyone else&#039;s fate are already sealed, but not your own. But that idea quickly disappeared, because indeed, it seemed everyone&#039;s lives are mixed together. The fact that we are alive and able to feel others who are alive means that they too, exist. At least, maybe,we already believe that. the origin f life will always be a myth...but everything that starts always have an end...The sun will eventually burn out, a baby&#039;s cry will end sometimes to a laughter.</div>Interesting idea, but...<br />
+<br />
+Wouldn&#039;t a situation such as this limit our free will? Quite often some of our choices are decided from the choices of others, and if they are limited what does that make our choices?<br />
+<br />
+I can perceive that people are alive, but their true existance I can never be sure of.<br />
+<br />
+Do black holes have an end? Does this universe have an end? Does this &quot;illusion&quot; have an end? Do you have an end?<br />
+<br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by jack:</em><br />
+However, how would you think about in a hundred years, where you do not exist, like a rock next to a river, with the willows and the blowing wind... except you are not really a rock, you do not, exist. It does not seem likely, that after all a person go through in life, perhaps hundreds of murder done with malice, or thousands of good deeds that saved millions of people from suffering, end up the same. There is always balance, the suffer we cause to others, in balance, would come back to us, supposedly, since that way it would be fair.</div>You would be surprised at the impact you have made over the next hundred years by waking up this morning.<br />
+<br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by jack:</em>Everything is part of mind, but they also indeed do exist, they may exist because our mind saying they exist, in this case, you are all imaginary, or everything exists because they truly exist, our mind is telling us the obvious truth.</div>If that is the truth then it is paradoxical and very messy.<br />
+<br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by jack:</em>It would make a huge difference, for the first case, you can try to conqueror the world, and consequently succeed if you believe in it. But, all our beliefs are chained together, if your belief conflicts with my belief, they will cancel out, common sense wins. That would make the second case more plausible. It makes sense that when I try to fly and fail, it seemed that no one believed in that, perhaps not even myself.</div>It seems like you are sort of running into the same things Sean ran into, maybe its because you are following his thought concepts a bit too closely?<br />
+<br />
+<br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by jack:</em>Perhaps we are really imaginary, the existence of ourselves are not real, but is created by others. We exist for that reason, we act for that reason, and we think for that reason. <br />
+<br />
+trying to figure out whether everyone really exist, is like solving a Rubik&#039;s cube...gotta look for patterns and apply them<br />
+<br />
+<a href="http://img6.imageshack.us/my.php?image=diycube.jpg" target="_blank" title="http://img6.imageshack.us/my.php?image=diycube.jpg"><img src="http://img6.imageshack.us/img6/1707/diycube.th.jpg" alt="External Image" /></a><br />
+<br />
+diy type A cube white</div>I highly doubt that I am imaginary, because I already proven my existance to myself. Plus if you were created for someone else&#039;s use wouldn&#039;t that mean that you have a meaning to your life? If so would we be any better than robots?<br />
+<br />
+I personally don&#039;t think that your rubick&#039;s cube analogy works as well as you think it does. What if there was a close friend of yours and you found all sorts of patterns and applied them to your friend, to the point where you have ruled that this person must exist, and then the next day you find out from your doctor that your close friend is a hallucination induced by a government experiment?</div>
+		<textarea style="display: none;" id="desctxt_13373">[quote][i]posted by jack:[/i]It&#039;s always in my mind that the existence of life is really a mistake, because there&#039;s no answer to it.[/quote]
+
+If you think that all the world is an illusion, then how do you know that there is a mistake?
+
+[quote][i]posted by jack:[/i]consequently, life and death comes in parallel thus to balance out that mistake there is death.[/quote]
+
+How do you know that you can die if everything you perceive is an illusion?
+
+
+[quote][i]posted by jack:[/i]It still does not help, we see ourselves as existent because you can feel that you exist.[/quote]
+
+I can question my existence (cogito ergo sum) and discover that I exist. I can never &quot;feel&quot; that I exist.
+
+[quote][i]posted by jack:[/i]
+I came to an idea that we all live in our separate worlds, where everyone else&#039;s fate are already sealed, but not your own. But that idea quickly disappeared, because indeed, it seemed everyone&#039;s lives are mixed together. The fact that we are alive and able to feel others who are alive means that they too, exist. At least, maybe,we already believe that. the origin f life will always be a myth...but everything that starts always have an end...The sun will eventually burn out, a baby&#039;s cry will end sometimes to a laughter.[/quote]
+
+Interesting idea, but...
+
+Wouldn&#039;t a situation such as this limit our free will? Quite often some of our choices are decided from the choices of others, and if they are limited what does that make our choices?
+
+I can perceive that people are alive, but their true existance I can never be sure of.
+
+Do black holes have an end? Does this universe have an end? Does this &quot;illusion&quot; have an end? Do you have an end?
+
+[quote][i]posted by jack:[/i]
+However, how would you think about in a hundred years, where you do not exist, like a rock next to a river, with the willows and the blowing wind... except you are not really a rock, you do not, exist. It does not seem likely, that after all a person go through in life, perhaps hundreds of murder done with malice, or thousands of good deeds that saved millions of people from suffering, end up the same. There is always balance, the suffer we cause to others, in balance, would come back to us, supposedly, since that way it would be fair.[/quote]
+
+You would be surprised at the impact you have made over the next hundred years by waking up this morning.
+
+[quote][i]posted by jack:[/i]Everything is part of mind, but they also indeed do exist, they may exist because our mind saying they exist, in this case, you are all imaginary, or everything exists because they truly exist, our mind is telling us the obvious truth.[/quote]
+
+If that is the truth then it is paradoxical and very messy.
+
+[quote][i]posted by jack:[/i]It would make a huge difference, for the first case, you can try to conqueror the world, and consequently succeed if you believe in it. But, all our beliefs are chained together, if your belief conflicts with my belief, they will cancel out, common sense wins. That would make the second case more plausible. It makes sense that when I try to fly and fail, it seemed that no one believed in that, perhaps not even myself. [/quote]
+
+It seems like you are sort of running into the same things Sean ran into, maybe its because you are following his thought concepts a bit too closely?
+
+
+[quote][i]posted by jack:[/i]Perhaps we are really imaginary, the existence of ourselves are not real, but is created by others. We exist for that reason, we act for that reason, and we think for that reason. 
+
+trying to figure out whether everyone really exist, is like solving a Rubik&#039;s cube...gotta look for patterns and apply them
+
+[URL=http://img6.imageshack.us/my.php?image=diycube.jpg][IMG]http://img6.imageshack.us/img6/1707/diycube.th.jpg[/IMG][/URL]
+
+diy type A cube white[/quote]
+
+I highly doubt that I am imaginary, because I already proven my existance to myself. Plus if you were created for someone else&#039;s use wouldn&#039;t that mean that you have a meaning to your life? If so would we be any better than robots?
+
+I personally don&#039;t think that your rubick&#039;s cube analogy works as well as you think it does. What if there was a close friend of yours and you found all sorts of patterns and applied them to your friend, to the point where you have ruled that this person must exist, and then the next day you find out from your doctor that your close friend is a hallucination induced by a government experiment?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Raathuus</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=764&amp;ref=1259211929" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13379" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Psikillion:</em><br />
+What if there was a close friend of yours and you found all sorts of patterns and applied them to your friend, to the point where you have ruled that this person must exist, and then the next day you find out from your doctor that your close friend is a hallucination induced by a government experiment?</div>What if the day following that you discover that the government is really an experiment devised by <em>scientists</em>, and that life is really a big simulator?</div>
+		<textarea style="display: none;" id="desctxt_13379">[quote][i]posted by Psikillion:[/i]
+What if there was a close friend of yours and you found all sorts of patterns and applied them to your friend, to the point where you have ruled that this person must exist, and then the next day you find out from your doctor that your close friend is a hallucination induced by a government experiment?[/quote]
+
+What if the day following that you discover that the government is really an experiment devised by [i]scientists[/i], and that life is really a big simulator?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Psikillion</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=593&amp;ref=1213954510" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13394" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Raathuus:</em><br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Psikillion:</em><br />
+What if there was a close friend of yours and you found all sorts of patterns and applied them to your friend, to the point where you have ruled that this person must exist, and then the next day you find out from your doctor that your close friend is a hallucination induced by a government experiment?</div>What if the day following that you discover that the government is really an experiment devised by <em>scientists</em>, and that life is really a big simulator?</div>I don&#039;t know, it has to depend on why they are doing the experiment. I see three different scenarios as to why they would do such an experiment.<br />
+<br />
+Scenario #1:<br />
+The scientists care for humanity and how to best serve them. In such a situation I would ask a lot of questions as to their findings, and initially have some doubt as to whether they truly care about humans. I would most likely, as I find out more about them and the situation of the world they live in, I would accept what they did and probably even endorse it because I think a unified human race that cares for one another is a good thing.<br />
+<br />
+Scenario #2:<br />
+The scientists want to know how best to control people to meet their egocentric ideas, or their leader&#039;s (or leaders&#039;) if they have one. This starts to get tricky because there are many other scenarios that can come from this that it makes thinking about what I would do much more difficult. Here are a few:<br />
+<br />
+1. They tell me the truth.<br />
+2. They lie to me.<br />
+3. They know everything. (which can fit into #1 and #2)<br />
+4. They can die. (which can fit into #1 and #2, but not #5)<br />
+5. They cannot die. (which can fit into #1 and #2, but not # 4)<br />
+6. There are natural laws and restrictions just like my &quot;world&quot; has natural laws and restrictions. (which can fit into #1 and #2, but not #7)<br />
+7. There are no natural laws and restrictions therefore making it possible to do anything. (which can fit into #1 and #2, but not #6)<br />
+8. They do not tell me anything, but I see or eventually see that their actions are against what is best for the entire human race. (which can fit into anything from #3-#7)<br />
+9. They do not tell me anything, and I cannot see their actions in any way.<br />
+<br />
+Scenario #3:<br />
+They do it just for the sake of gaining knowledge. I would ask a bunch of questions as to why they wanted that information in the first place. Please note from here on I will be talking about a situation where Scenario #1 and Scenario #2 do not exist, and they are basically like librarians (though both of them can exist under Scenario #3 from before this sentence). Upon finding that they are gathering knowledge like librarians purchase new books for a library, and they have no other ulterior motive, I would most likely help them or do things that I want to do for fun (like pottery). In the odd chance that I do not want to do either of these, I would probably do random things in order to break the monotony.<br />
+<br />
+So why do you ask?</div>
+		<textarea style="display: none;" id="desctxt_13394">[quote][i]posted by Raathuus:[/i]
+[quote][i]posted by Psikillion:[/i]
+What if there was a close friend of yours and you found all sorts of patterns and applied them to your friend, to the point where you have ruled that this person must exist, and then the next day you find out from your doctor that your close friend is a hallucination induced by a government experiment?[/quote]
+
+What if the day following that you discover that the government is really an experiment devised by [i]scientists[/i], and that life is really a big simulator?[/quote]
+
+I don&#039;t know, it has to depend on why they are doing the experiment. I see three different scenarios as to why they would do such an experiment.
+
+Scenario #1:
+The scientists care for humanity and how to best serve them. In such a situation I would ask a lot of questions as to their findings, and initially have some doubt as to whether they truly care about humans. I would most likely, as I find out more about them and the situation of the world they live in, I would accept what they did and probably even endorse it because I think a unified human race that cares for one another is a good thing.
+
+Scenario #2:
+The scientists want to know how best to control people to meet their egocentric ideas, or their leader&#039;s (or leaders&#039;) if they have one. This starts to get tricky because there are many other scenarios that can come from this that it makes thinking about what I would do much more difficult. Here are a few:
+
+1. They tell me the truth.
+2. They lie to me.
+3. They know everything. (which can fit into #1 and #2)
+4. They can die. (which can fit into #1 and #2, but not #5)
+5. They cannot die. (which can fit into #1 and #2, but not # 4)
+6. There are natural laws and restrictions just like my &quot;world&quot; has natural laws and restrictions. (which can fit into #1 and #2, but not #7)
+7. There are no natural laws and restrictions therefore making it possible to do anything. (which can fit into #1 and #2, but not #6)
+8. They do not tell me anything, but I see or eventually see that their actions are against what is best for the entire human race. (which can fit into anything from #3-#7)
+9. They do not tell me anything, and I cannot see their actions in any way.
+
+Scenario #3:
+They do it just for the sake of gaining knowledge. I would ask a bunch of questions as to why they wanted that information in the first place. Please note from here on I will be talking about a situation where Scenario #1 and Scenario #2 do not exist, and they are basically like librarians (though both of them can exist under Scenario #3 from before this sentence). Upon finding that they are gathering knowledge like librarians purchase new books for a library, and they have no other ulterior motive, I would most likely help them or do things that I want to do for fun (like pottery). In the odd chance that I do not want to do either of these, I would probably do random things in order to break the monotony.
+
+So why do you ask?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 8 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=706" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 20 queries. 0.331 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

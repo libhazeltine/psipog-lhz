@@ -1,0 +1,554 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Geiger counter challenge!</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Geiger counter challenge!</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Geiger counter challenge!</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">cinderwild</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11033" style="width: 100%; overflow: auto; min-height: 125px;">I&#039;ve been meaning to practice the geiger counter for awhile now, and today I came up with this idea to make it a group activity, once again inspired by Sean&#039;s newest blog.<br />
+<br />
+I suggest that from today, all the way until NEXT (not this) sunday, you practice the geiger counter daily and independently. Why? Because I want to see what kind of results we can get. I want to see what&#039;s the highest we can achieve.  Then, come here and chronicle your results.<br />
+<br />
+<br />
+Now, to help keep people from lying, if you are going to participate, take a screenshot of the highest score you got FOR THAT DAYS practice. If a new number that comes up is higher than the old one, go ahead and replace the current one ( you&#039;ll understand what I mean when I explain how to take them) with it. Better yet, you can just take multiple ones of you&#039;re fast enough.<br />
+<br />
+Quick How to:<br />
+<br />
+1.) When you have the score you want to take a screenshot of on the screen, hit the &#039;PrtScrn/Sys Rq&#039; key next to &#039;Scroll lock&#039;.<br />
+(If it helps, your results stay on the geiger counter graph for about ten minutes and you can hover your mouse over a bar on the graph to get a little data icon to pop up.)<br />
+<br />
+2.) Open up MSpaint (or Photoshop if you know how) and look on the left side of the screen. There should be a lot of buttons, and the uppermost right of these should be a dotted-line rectangle. Click that, then right-click the blank canvas and click &#039;paste&#039;.<br />
+<br />
+3.) Use the same dotted-line rectangle to surround the portion of the picture you want (Otherwise it will be huge and annoying to deal with), right-click, then hit &#039;cut&#039;.<br />
+<br />
+4.) In the MSpaint toolbar should be the word &#039;Image&#039;. Click that, and then find &#039;Stretch/Skew...&#039;. Click this.<br />
+<br />
+5.) A box should have popped up. Replace the number 100 in both the &#039;Horizontal&#039; and &#039;Vertical&#039; boxes with a smaller number like 5 or 10.<br />
+<br />
+6.) Now when it&#039;s teeny tiny, click the dotted-line rectangle again, right click, then hit &#039;Paste&#039;.<br />
+<br />
+Now you only have the important part! Save the image, of course.<br />
+<br />
+7.) Now you will need to upload the picture to an image hosting site of some sort. I suggest www.photobucket.com. From there on out it should be pretty self-explanatory. Get the image uploaded then copy and past the &#039;IMG&#039; tagged link and whulah!<br />
+<br />
+<br />
+You can organize your own post however you want, but this is how I will organize mine:<br />
+<br />
+Date:<br />
+Screenshot:<br />
+Comments/notes/methods:<br />
+<br />
+<br />
+Because more than one person might be practicing at once, be sure to check and see if anyone else is in the Gabbly chat. If they are, maybe you can take turns.<br />
+<br />
+When it comes to add your daily practices, try to edit your original post and add onto that so the thread doesn&#039;t get cluttered with a bunch of replies and randomly spread out results. It&#039;s understandable if you miss a day, but let&#039;s try and do this.<br />
+<br />
+Now watch no one want to do it. = (<br />
+<br />
+<br />
+First result<br />
+Date: August 22(1 am here), 2008<br />
+Time: 1 am EST<br />
+<img src="http://i209.photobucket.com/albums/bb128/Cinderwild/geigerresult.jpg" alt="External Image" /><br />
+Notes: Zeus and DarkTiger were also in the room. At the beginning Zeus was looking at psi sigs from past attempts. We all worked together for awhile and we got what I felt was good results.<br />
+<br />
+During my turn to do it alone, I asked Zeus if he had helped and he said that he had &#039;pushed a little&#039; and &#039;Well not so much pushing as focusing&#039;.<br />
+So, I&#039;m not sure how much of that was me. I&#039;ll just have to keep trying.<br />
+YES I posted it anyways because I was excited!<br />
+<br />
+Second result<br />
+Date: August 23, 2008<br />
+Time: 5:24am EST<br />
+Notes: Nothing really worth screenshotting here. Maxed out at 20. Sorry, I&#039;m getting anxious for sleep.</div>
+		<textarea style="display: none;" id="desctxt_11033">I&#039;ve been meaning to practice the geiger counter for awhile now, and today I came up with this idea to make it a group activity, once again inspired by Sean&#039;s newest blog.
+
+I suggest that from today, all the way until NEXT (not this) sunday, you practice the geiger counter daily and independently. Why? Because I want to see what kind of results we can get. I want to see what&#039;s the highest we can achieve.  Then, come here and chronicle your results.
+
+
+Now, to help keep people from lying, if you are going to participate, take a screenshot of the highest score you got FOR THAT DAYS practice. If a new number that comes up is higher than the old one, go ahead and replace the current one ( you&#039;ll understand what I mean when I explain how to take them) with it. Better yet, you can just take multiple ones of you&#039;re fast enough.
+
+Quick How to:
+
+1.) When you have the score you want to take a screenshot of on the screen, hit the &#039;PrtScrn/Sys Rq&#039; key next to &#039;Scroll lock&#039;.
+(If it helps, your results stay on the geiger counter graph for about ten minutes and you can hover your mouse over a bar on the graph to get a little data icon to pop up.)
+
+2.) Open up MSpaint (or Photoshop if you know how) and look on the left side of the screen. There should be a lot of buttons, and the uppermost right of these should be a dotted-line rectangle. Click that, then right-click the blank canvas and click &#039;paste&#039;.
+
+3.) Use the same dotted-line rectangle to surround the portion of the picture you want (Otherwise it will be huge and annoying to deal with), right-click, then hit &#039;cut&#039;.
+
+4.) In the MSpaint toolbar should be the word &#039;Image&#039;. Click that, and then find &#039;Stretch/Skew...&#039;. Click this.
+
+5.) A box should have popped up. Replace the number 100 in both the &#039;Horizontal&#039; and &#039;Vertical&#039; boxes with a smaller number like 5 or 10.
+
+6.) Now when it&#039;s teeny tiny, click the dotted-line rectangle again, right click, then hit &#039;Paste&#039;.
+
+Now you only have the important part! Save the image, of course.
+
+7.) Now you will need to upload the picture to an image hosting site of some sort. I suggest www.photobucket.com. From there on out it should be pretty self-explanatory. Get the image uploaded then copy and past the &#039;IMG&#039; tagged link and whulah!
+
+
+You can organize your own post however you want, but this is how I will organize mine:
+
+Date:
+Screenshot:
+Comments/notes/methods:
+
+
+Because more than one person might be practicing at once, be sure to check and see if anyone else is in the Gabbly chat. If they are, maybe you can take turns.
+
+When it comes to add your daily practices, try to edit your original post and add onto that so the thread doesn&#039;t get cluttered with a bunch of replies and randomly spread out results. It&#039;s understandable if you miss a day, but let&#039;s try and do this.
+
+Now watch no one want to do it. = (
+
+
+First result
+Date: August 22(1 am here), 2008
+Time: 1 am EST
+[IMG]http://i209.photobucket.com/albums/bb128/Cinderwild/geigerresult.jpg[/IMG]
+Notes: Zeus and DarkTiger were also in the room. At the beginning Zeus was looking at psi sigs from past attempts. We all worked together for awhile and we got what I felt was good results.
+
+During my turn to do it alone, I asked Zeus if he had helped and he said that he had &#039;pushed a little&#039; and &#039;Well not so much pushing as focusing&#039;.
+So, I&#039;m not sure how much of that was me. I&#039;ll just have to keep trying.
+YES I posted it anyways because I was excited!
+
+Second result
+Date: August 23, 2008
+Time: 5:24am EST
+Notes: Nothing really worth screenshotting here. Maxed out at 20. Sorry, I&#039;m getting anxious for sleep.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by cinderwild, 4 years, 4 months ago<br />Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Sean</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=2&amp;ref=1214247941" width="117" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11039" style="width: 100%; overflow: auto; min-height: 125px;"><img src="geiger-game.php@img=1&amp;sm=0&amp;ts=1219360320" alt="External Image" /><br />
+<br />
+For about an 8 minute stretch of time, I maxed out at 20.  For some reason, the &quot;Accurate Graph&quot; image is screwed up... the graph was active the entire time, but the image above has it as grayed out for most of it.<br />
+<br />
+Either way, Date: 21 Aug 2008, Time: 1912 EST, Comments: Tried to remain mostly disconnected, and not controlling.<br />
+<br />
+~Sean</div>
+		<textarea style="display: none;" id="desctxt_11039">[img]http://alittleweird.com/geiger-game.php?img=1&amp;sm=0&amp;ts=1219360320[/img]
+
+For about an 8 minute stretch of time, I maxed out at 20.  For some reason, the &quot;Accurate Graph&quot; image is screwed up... the graph was active the entire time, but the image above has it as grayed out for most of it.
+
+Either way, Date: 21 Aug 2008, Time: 1912 EST, Comments: Tried to remain mostly disconnected, and not controlling.
+
+~Sean</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Faceless</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=570&amp;ref=1214279440" width="83" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11040" style="width: 100%; overflow: auto; min-height: 125px;">interesting Cinder. is this all part of your &quot;Get it to 100&quot; sceem?<br />
+but still i guess i&#039;ll try it in a little bit<br />
+</div>
+		<textarea style="display: none;" id="desctxt_11040">interesting Cinder. is this all part of your &quot;Get it to 100&quot; sceem?
+but still i guess i&#039;ll try it in a little bit</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">metalforever</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11041" style="width: 100%; overflow: auto; min-height: 125px;">I hit 21 in a pretty short period of time. I will keep working on this to see if i improve. I dont actively practice psionics anymore, and im thinking about getting started again.<br />
+<br />
+<img src="http://i138.photobucket.com/albums/q269/sayspo/Untitled.jpg" alt="External Image" /><br />
+<br />
+<img src="http://i138.photobucket.com/albums/q269/sayspo/geiger-gamephp.png" alt="External Image" /></div>
+		<textarea style="display: none;" id="desctxt_11041">I hit 21 in a pretty short period of time. I will keep working on this to see if i improve. I dont actively practice psionics anymore, and im thinking about getting started again.
+
+[IMG]http://i138.photobucket.com/albums/q269/sayspo/Untitled.jpg[/IMG]
+
+[IMG]http://i138.photobucket.com/albums/q269/sayspo/geiger-gamephp.png[/IMG]</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by metalforever, 4 years, 4 months ago<br />Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">metalforever</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11042" style="width: 100%; overflow: auto; min-height: 125px;">Second Attempt Time: 1 minute<br />
+Hit 24.<br />
+<br />
+<br />
+<img src="http://i138.photobucket.com/albums/q269/sayspo/geiger-gamephp-1.png" alt="External Image" /><br />
+<br />
+<img src="http://s138.photobucket.com/albums/q269/sayspo/th_Screenshot-2-2.png" alt="External Image" /><br />
+<br />
+ <a href="http://i138.photobucket.com/albums/q269/sayspo/Screenshot-2-2.png" target="_blank">http://i138.photobucket.com/albums/q269/sayspo/Screenshot-2-2.png</a></div>
+		<textarea style="display: none;" id="desctxt_11042">Second Attempt Time: 1 minute
+Hit 24.
+
+
+[img]http://i138.photobucket.com/albums/q269/sayspo/geiger-gamephp-1.png[/img]
+
+[img]http://s138.photobucket.com/albums/q269/sayspo/th_Screenshot-2-2.png[/img]
+
+http://i138.photobucket.com/albums/q269/sayspo/Screenshot-2-2.png</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by metalforever, 4 years, 4 months ago<br />Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">cinderwild</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11044" style="width: 100%; overflow: auto; min-height: 125px;">Metalforver, keep in mind you can put your mouse on the blue bars and make that purple box come up so it literally shows the number.</div>
+		<textarea style="display: none;" id="desctxt_11044">Metalforver, keep in mind you can put your mouse on the blue bars and make that purple box come up so it literally shows the number.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by cinderwild, 4 years, 4 months ago<br />Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">metalforever</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11048" style="width: 100%; overflow: auto; min-height: 125px;">ah, well the number is in the second screenshot anyway.</div>
+		<textarea style="display: none;" id="desctxt_11048">ah, well the number is in the second screenshot anyway.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">cinderwild</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11057" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by metalforever:</em><br />
+I dont actively practice psionics anymore, and im thinking about getting started again.</div>Whoa, really? Why not? For some reason I thought you were the creator of Psionicsonline (Maybe you are?)</div>
+		<textarea style="display: none;" id="desctxt_11057">[quote][i]posted by metalforever:[/i]
+I dont actively practice psionics anymore, and im thinking about getting started again.[/quote]
+
+Whoa, really? Why not? For some reason I thought you were the creator of Psionicsonline (Maybe you are?)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">DarkTiger</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11060" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by cinderwild:</em><br />
+<br />
+Whoa, really? Why not? For some reason I thought you were the creator of Psionicsonline (Maybe you are?)</div>She is the creator of Psionicsonline...<br />
+<br />
+<br />
+<img src="http://www.greasemonkeys.x10hosting.com/psimages/geiger31.png" alt="External Image" /><br />
+<br />
+ <a href="http://www.greasemonkeys.x10hosting.com/psimages/geiger3.png" target="_blank">http://www.greasemonkeys.x10hosting.com/psimages/geiger3.png</a><br />
+<br />
+This one I wasn&#039;t really paying attention... it was taken a little while ago so I don&#039;t know the exact date. I just had to put it up, even though it&#039;s a bit older. Oh, and I tried the generate graph button at the bottom, but all I got was grey bars... Nobody else was in the Gabbly.<br />
+<br />
+<br />
+<br />
+<br />
+<img src="http://www.greasemonkeys.x10hosting.com/psimages/Geiger23.png" alt="External Image" /><br />
+<br />
+ <a href="http://www.greasemonkeys.x10hosting.com/psimages/Geiger-23.png" target="_blank">http://www.greasemonkeys.x10hosting.com/psimages/Geiger-23.png</a><br />
+<br />
+This one I was actually trying... Technique, hold the energy back then release it all at once.<br />
+<br />
+<br />
+<br />
+<br />
+LoL... 1 cpm:<br />
+<img src="http://www.greasemonkeys.x10hosting.com/psimages/geiger-1.png" alt="External Image" /></div>
+		<textarea style="display: none;" id="desctxt_11060">[quote][i]posted by cinderwild:[/i]
+
+Whoa, really? Why not? For some reason I thought you were the creator of Psionicsonline (Maybe you are?)[/quote]
+
+She is the creator of Psionicsonline...
+
+
+[img]http://www.greasemonkeys.x10hosting.com/psimages/geiger31.png[/img]
+
+http://www.greasemonkeys.x10hosting.com/psimages/geiger3.png
+
+This one I wasn&#039;t really paying attention... it was taken a little while ago so I don&#039;t know the exact date. I just had to put it up, even though it&#039;s a bit older. Oh, and I tried the generate graph button at the bottom, but all I got was grey bars... Nobody else was in the Gabbly.
+
+
+
+
+[img]http://www.greasemonkeys.x10hosting.com/psimages/Geiger23.png[/img]
+
+http://www.greasemonkeys.x10hosting.com/psimages/Geiger-23.png
+
+This one I was actually trying... Technique, hold the energy back then release it all at once.
+
+
+
+
+LoL... 1 cpm:
+[img]http://www.greasemonkeys.x10hosting.com/psimages/geiger-1.png[/img]</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by DarkTiger, 4 years, 4 months ago<br />Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">cinderwild</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11061" style="width: 100%; overflow: auto; min-height: 125px;">That&#039;s okay, it&#039;s pretty clear what it says. I personally find &#039;Generate graph&#039; annoying.</div>
+		<textarea style="display: none;" id="desctxt_11061">That&#039;s okay, it&#039;s pretty clear what it says. I personally find &#039;Generate graph&#039; annoying.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">metalforever</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11062" style="width: 100%; overflow: auto; min-height: 125px;">Its a temporary measure. I have parents that REALLY REALLY dont like this stuff.  After I move out is when things are going to get interesting.<br />
+</div>
+		<textarea style="display: none;" id="desctxt_11062">Its a temporary measure. I have parents that REALLY REALLY dont like this stuff.  After I move out is when things are going to get interesting.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">cinderwild</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11064" style="width: 100%; overflow: auto; min-height: 125px;">Why don&#039;t they like it?</div>
+		<textarea style="display: none;" id="desctxt_11064">Why don&#039;t they like it?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">metalforever</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11065" style="width: 100%; overflow: auto; min-height: 125px;">Well.. they call it &quot;witchery&quot; and think im damned to hell.<br />
+<br />
+(no exaggeration there)<br />
+<br />
+it was bad.</div>
+		<textarea style="display: none;" id="desctxt_11065">Well.. they call it &quot;witchery&quot; and think im damned to hell.
+
+(no exaggeration there)
+
+it was bad.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">keen31</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=253&amp;ref=1203827935" width="53" height="55" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11067" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by metalforever:</em><br />
+Well.. they call it &quot;witchery&quot; and think im damned to hell.<br />
+<br />
+(no exaggeration there)<br />
+<br />
+it was bad.</div>sorry to hear this. an open mind is something that can be invaluable in family/friends/realtions.<br />
+<br />
+sounds like you havent let it hamper you though, so nice work :)</div>
+		<textarea style="display: none;" id="desctxt_11067">[quote][i]posted by metalforever:[/i]
+Well.. they call it &quot;witchery&quot; and think im damned to hell.
+
+(no exaggeration there)
+
+it was bad.[/quote]
+
+sorry to hear this. an open mind is something that can be invaluable in family/friends/realtions.
+
+sounds like you havent let it hamper you though, so nice work :)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">cinderwild</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11077" style="width: 100%; overflow: auto; min-height: 125px;">I&#039;ve kind of noticed lately that the geiger counter has been randomly going up to 18-22 a lot. Is that usual?</div>
+		<textarea style="display: none;" id="desctxt_11077">I&#039;ve kind of noticed lately that the geiger counter has been randomly going up to 18-22 a lot. Is that usual?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=540" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 31 queries. 0.336 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

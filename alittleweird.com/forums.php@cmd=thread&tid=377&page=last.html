@@ -1,0 +1,474 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; TK on ice</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=2.html">Weird Videos</a> &raquo; TK on ice</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">TK on ice</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">macbethlondon</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=509&amp;ref=1266973398" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_8358" style="width: 100%; overflow: auto; min-height: 125px;">Some of you may have already seen this, so ignore it if you have. <br />
+<br />
+I recently posted two vids on TK and Ice.  <br />
+I know this new site is no longer focused on <br />
+TK/PK, but I thought this might be interesting,<br />
+especially since there are still a lot of experienced<br />
+psions reading these threads. <br />
+<br />
+ <a href="http://www.youtube.com/watch?v=4E5e1DJVDhM" target="_blank">http://www.youtube.com/watch?v=4E5e1DJVDhM</a><br />
+ <a href="http://www.youtube.com/watch?v=Gj8g4ZA0bek" target="_blank">http://www.youtube.com/watch?v=Gj8g4ZA0bek</a><br />
+<br />
+I appreciate feedback. Although it is a bit harder, because of friction, it is also possible<br />
+to move a bar of soap on a wet surface using the same technique.<br />
+Still not anywhere near as impressive as some of Psipog&#039;s sliding vids. <br />
+<br />
+ML</div>
+		<textarea style="display: none;" id="desctxt_8358">Some of you may have already seen this, so ignore it if you have. 
+
+I recently posted two vids on TK and Ice.  
+I know this new site is no longer focused on 
+TK/PK, but I thought this might be interesting,
+especially since there are still a lot of experienced
+psions reading these threads. 
+
+http://www.youtube.com/watch?v=4E5e1DJVDhM
+http://www.youtube.com/watch?v=Gj8g4ZA0bek
+
+I appreciate feedback. Although it is a bit harder, because of friction, it is also possible
+to move a bar of soap on a wet surface using the same technique.
+Still not anywhere near as impressive as some of Psipog&#039;s sliding vids. 
+
+ML</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by macbethlondon, 4 years, 7 months ago<br />Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">SheepKing</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=211&amp;ref=1222648137" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_8359" style="width: 100%; overflow: auto; min-height: 125px;">Pretty cool. I&#039;ve seen PK on ice before but not your videos of it. I like how you put toys on the ice hehe.<br />
+<br />
+A suggestion is to try and make more contrasting movements of the ice. Know what I mean? <br />
+<br />
+Good work and keep it up :).</div>
+		<textarea style="display: none;" id="desctxt_8359">Pretty cool. I&#039;ve seen PK on ice before but not your videos of it. I like how you put toys on the ice hehe.
+
+A suggestion is to try and make more contrasting movements of the ice. Know what I mean? 
+
+Good work and keep it up :).</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">macbethlondon</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=509&amp;ref=1266973398" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_8377" style="width: 100%; overflow: auto; min-height: 125px;">I can affect the ice, <br />
+I can make it move, I can make it spin, but <br />
+I can&#039;t navigate the cubes yet, unfortunately.<br />
+They tend to be Northern bound mostly, for some reason, even when I <br />
+try on other surfaces. <br />
+<br />
+The guy who inspired my vids took his own TK on ice vids off the<br />
+web, unfortunately. He could move them back and forth,<br />
+but was getting hastled about his vids. He had a great<br />
+glass rolling vid too, which he also took down and <br />
+is now lost to the community... It&#039;s a pity.  <br />
+<br />
+I wish skeptics were a bit more respectful.  I think this is a recurring issue <br />
+with psionics.  That&#039;s why I tell people to try these things for themselves. <br />
+Their conclusions are often surprising. Some skeptics realize they are <br />
+psions themselves... It gives them pause and makes them begin to question <br />
+some of their beliefs.  I used to think static electricity was what made psiwheels<br />
+move.  After a lot of testing, I realized that was not the case, since I could also<br />
+move them from a distance and without using my hands at all.  <br />
+<br />
+I think ice should become a TK mainstream tool, like the psiwheel and the <br />
+often-neglected pendulum.</div>
+		<textarea style="display: none;" id="desctxt_8377">I can affect the ice, 
+I can make it move, I can make it spin, but 
+I can&#039;t navigate the cubes yet, unfortunately.
+They tend to be Northern bound mostly, for some reason, even when I 
+try on other surfaces. 
+
+The guy who inspired my vids took his own TK on ice vids off the
+web, unfortunately. He could move them back and forth,
+but was getting hastled about his vids. He had a great
+glass rolling vid too, which he also took down and 
+is now lost to the community... It&#039;s a pity.  
+
+I wish skeptics were a bit more respectful.  I think this is a recurring issue 
+with psionics.  That&#039;s why I tell people to try these things for themselves. 
+Their conclusions are often surprising. Some skeptics realize they are 
+psions themselves... It gives them pause and makes them begin to question 
+some of their beliefs.  I used to think static electricity was what made psiwheels
+move.  After a lot of testing, I realized that was not the case, since I could also
+move them from a distance and without using my hands at all.  
+
+I think ice should become a TK mainstream tool, like the psiwheel and the 
+often-neglected pendulum.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by macbethlondon, 4 years, 7 months ago<br />Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">SheepKing</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=211&amp;ref=1222648137" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_8387" style="width: 100%; overflow: auto; min-height: 125px;">I think ice is an interesting medium however, with the water melting over time and all it&#039;s not something that people would consider &quot;stable&quot;, and &quot;proof&quot;. Though proof is not  the main reason for making videos.<br />
+<br />
+Have you ever tried marbles? I think that would be pretty cool.<br />
+<br />
+It is hard to find respect, that is for sure, but keep up the good work my man.</div>
+		<textarea style="display: none;" id="desctxt_8387">I think ice is an interesting medium however, with the water melting over time and all it&#039;s not something that people would consider &quot;stable&quot;, and &quot;proof&quot;. Though proof is not  the main reason for making videos.
+
+Have you ever tried marbles? I think that would be pretty cool.
+
+It is hard to find respect, that is for sure, but keep up the good work my man.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">macbethlondon</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=509&amp;ref=1266973398" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_8392" style="width: 100%; overflow: auto; min-height: 125px;">I absolutely agree.  There is always doubt in one&#039;s mind, <br />
+especially with the psiwheel. For me, moving a covered<br />
+psiwheel was a bit of a turning point as far as belief goes. <br />
+One must also  constantly be testing for false positives. <br />
+For instance, I&#039;ve given up using plastic straws altogether bc they <br />
+are very susceptible to static electricity and I was getting some false results.  <br />
+<br />
+Ice is better than the psiwheel in that respect, because <br />
+one practically eliminates the wind factor.  Let&#039;s not think <br />
+that the laws of physics stop applying just bc we are doing <br />
+something a bit unusual.  That is definitively not the case. With <br />
+psionics we are able to cause small movements in small objects <br />
+subject to low friction.  We can usually act on the way the object<br />
+responds to the Earth&#039;s magnetic field (the Northern magnetic <br />
+attraction) but rarely are we capable of escaping the main force <br />
+which is Gravity.  Legit levitation vids are extremely rare.  <br />
+<br />
+The geiger experiment was proof, wasn&#039;t it?<br />
+<br />
+Marbles? That&#039;s an interesting idea. I&#039;ll give it a try.</div>
+		<textarea style="display: none;" id="desctxt_8392">I absolutely agree.  There is always doubt in one&#039;s mind, 
+especially with the psiwheel. For me, moving a covered
+psiwheel was a bit of a turning point as far as belief goes. 
+One must also  constantly be testing for false positives. 
+For instance, I&#039;ve given up using plastic straws altogether bc they 
+are very susceptible to static electricity and I was getting some false results.  
+
+Ice is better than the psiwheel in that respect, because 
+one practically eliminates the wind factor.  Let&#039;s not think 
+that the laws of physics stop applying just bc we are doing 
+something a bit unusual.  That is definitively not the case. With 
+psionics we are able to cause small movements in small objects 
+subject to low friction.  We can usually act on the way the object
+responds to the Earth&#039;s magnetic field (the Northern magnetic 
+attraction) but rarely are we capable of escaping the main force 
+which is Gravity.  Legit levitation vids are extremely rare.  
+
+The geiger experiment was proof, wasn&#039;t it?
+
+Marbles? That&#039;s an interesting idea. I&#039;ll give it a try.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by macbethlondon, 4 years, 6 months ago<br />Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">keen31</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=253&amp;ref=1203827935" width="53" height="55" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_8396" style="width: 100%; overflow: auto; min-height: 125px;">looking good man. i like your application of leverage and i can see this as being a great stepping stone to getting away from the wheel. ive noticed i have trouble with things i perceive as being &quot;difficult&quot; and i think this approach could do a lot to &quot;trick&quot; my mind into accepting movement of more &quot;difficult&quot; objects.<br />
+<br />
+thanks for the vids/ideas.</div>
+		<textarea style="display: none;" id="desctxt_8396">looking good man. i like your application of leverage and i can see this as being a great stepping stone to getting away from the wheel. ive noticed i have trouble with things i perceive as being &quot;difficult&quot; and i think this approach could do a lot to &quot;trick&quot; my mind into accepting movement of more &quot;difficult&quot; objects.
+
+thanks for the vids/ideas.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 7 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Jeffrey</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=283&amp;ref=1213976987" width="116" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9015" style="width: 100%; overflow: auto; min-height: 125px;">...<br />
+<br />
+Fun Fact: When I saw this thread, I thought it was about a psychic musical.<br />
+<br />
+That is all. Great videos, though.</div>
+		<textarea style="display: none;" id="desctxt_9015">...
+
+Fun Fact: When I saw this thread, I thought it was about a psychic musical.
+
+That is all. Great videos, though.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">macbethlondon</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=509&amp;ref=1266973398" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9378" style="width: 100%; overflow: auto; min-height: 125px;">Keen, I recommend you give bigger objects a little nudge then try to influence their movement. The rules inertia seem to apply to<br />
+psionics as well. It is easier to keep an object moving than to make it move from an initial static position.</div>
+		<textarea style="display: none;" id="desctxt_9378">Keen, I recommend you give bigger objects a little nudge then try to influence their movement. The rules inertia seem to apply to
+psionics as well. It is easier to keep an object moving than to make it move from an initial static position.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by macbethlondon, 4 years, 6 months ago<br />Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Antisankari</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=224&amp;ref=1213032338" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9381" style="width: 100%; overflow: auto; min-height: 125px;">&quot;TK on ice&quot;... XD<br />
+<br />
+Iceskate show could have a similar name.</div>
+		<textarea style="display: none;" id="desctxt_9381">&quot;TK on ice&quot;... XD
+
+Iceskate show could have a similar name.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">M. Dragon Fang</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=482&amp;ref=1208622720" width="80" height="98" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9754" style="width: 100%; overflow: auto; min-height: 125px;">nice vids. added you as a friend on youtube btw.<br />
+but is this easier then moving a psiwheel?</div>
+		<textarea style="display: none;" id="desctxt_9754">nice vids. added you as a friend on youtube btw.
+but is this easier then moving a psiwheel?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Anonymous Dark</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=354&amp;ref=1203377944" width="100" height="86" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9804" style="width: 100%; overflow: auto; min-height: 125px;">&quot;They tend to be northern bound, mostly...&quot;<br />
+<br />
+It&#039;s following the path of the beam--all things serve the beam! /random Dark Tower reference<br />
+<br />
+Pretty cool video. If I actually practiced TK enoguh to see results, I&#039;d definetly try that. ;-)</div>
+		<textarea style="display: none;" id="desctxt_9804">&quot;They tend to be northern bound, mostly...&quot;
+
+It&#039;s following the path of the beam--all things serve the beam! /random Dark Tower reference
+
+Pretty cool video. If I actually practiced TK enoguh to see results, I&#039;d definetly try that. ;-)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">macbethlondon</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=509&amp;ref=1266973398" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10871" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by M. Dragon Fang:</em><br />
+nice vids. added you as a friend on youtube btw.<br />
+but is this easier then moving a psiwheel?</div>Just as easy as the psiwheel, I&#039;d say. <br />
+Make a tin foil psiwheel and use a pin or <br />
+needle, not a toothpick if you are having <br />
+trouble. <br />
+<br />
+GL</div>
+		<textarea style="display: none;" id="desctxt_10871">[quote][i]posted by M. Dragon Fang:[/i]
+nice vids. added you as a friend on youtube btw.
+but is this easier then moving a psiwheel?[/quote]
+
+Just as easy as the psiwheel, I&#039;d say. 
+Make a tin foil psiwheel and use a pin or 
+needle, not a toothpick if you are having 
+trouble. 
+
+GL</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=377" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 28 queries. 0.283 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

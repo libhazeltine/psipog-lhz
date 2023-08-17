@@ -1,0 +1,406 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Psipog.net reopening?</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Psipog.net reopening?</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Psipog.net reopening?</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">clay</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=701&amp;ref=1233551632" width="70" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10692" style="width: 100%; overflow: auto; min-height: 125px;">I posted this in the site forum, but it didnt get ver many replies, so I thought it was conspiracy enough to put in here :)<br />
+So, here tis:<br />
+<br />
+I found this site by way of psipog, and Ive really learned a lot from psipog. its got a lot more stuff to learn from. To tell the truth, I really like its setup a lot better than this site, other than the fact that it needs a forum like this one, but I really liked how it was learning oriented, instead of doing oriented. People like me who are new to this stuff want more than an archive to look back to, we want to learn with other people and use the media area to show our progress and such. I was thinking about this and wondered how everyone else would feel about psipog opening back up. even if sean werent to take care of it and someone else would, and leaving this site open too. how would people feel about re-opening that site and letting people continue to expand on it?<br />
+Maybe if enough people like the idea, we can convince Mr. Connelly to do that for us :)</div>
+		<textarea style="display: none;" id="desctxt_10692">I posted this in the site forum, but it didnt get ver many replies, so I thought it was conspiracy enough to put in here :)
+So, here tis:
+
+I found this site by way of psipog, and Ive really learned a lot from psipog. its got a lot more stuff to learn from. To tell the truth, I really like its setup a lot better than this site, other than the fact that it needs a forum like this one, but I really liked how it was learning oriented, instead of doing oriented. People like me who are new to this stuff want more than an archive to look back to, we want to learn with other people and use the media area to show our progress and such. I was thinking about this and wondered how everyone else would feel about psipog opening back up. even if sean werent to take care of it and someone else would, and leaving this site open too. how would people feel about re-opening that site and letting people continue to expand on it?
+Maybe if enough people like the idea, we can convince Mr. Connelly to do that for us :)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">ThePizzaBoy</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10694" style="width: 100%; overflow: auto; min-height: 125px;">I think rather than reopening it, the forums should be modified to have a sub board for each of the major topics found on psipog where people may post articles or ask questions.</div>
+		<textarea style="display: none;" id="desctxt_10694">I think rather than reopening it, the forums should be modified to have a sub board for each of the major topics found on psipog where people may post articles or ask questions.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">cinderwild</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10700" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by ThePizzaBoy:</em><br />
+I think rather than reopening it, the forums should be modified to have a sub board for each of the major topics found on psipog where people may post articles or ask questions.</div>Yeah, but this forum community is so small it would be a complete waste of time, no offense. Bringing back Psipog is to also bring back an entirely different community, and a much bigger one at that.</div>
+		<textarea style="display: none;" id="desctxt_10700">[quote][i]posted by ThePizzaBoy:[/i]
+I think rather than reopening it, the forums should be modified to have a sub board for each of the major topics found on psipog where people may post articles or ask questions.[/quote]
+
+Yeah, but this forum community is so small it would be a complete waste of time, no offense. Bringing back Psipog is to also bring back an entirely different community, and a much bigger one at that.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Vimick</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10702" style="width: 100%; overflow: auto; min-height: 125px;">I agree that psipog had a huge community. but the main problem is only the smallest portion was actually dedicated to psionics. You can see that with this community and with how few people from psipog remain. There was a small group of us that really dedicated to training , i&#039;ll say i wasn&#039;t the most active or productive but i was in the irc room evvery day for 5 months discussing and gaining insight.<br />
+About 90% of psipog members were vaguely interested in psionics thought it was cool and interesting, tried it once and forgot about it. Another 7% stuck around but didnt take it seriously giving psipog a childish immaturity. 2% were people like me who practiced seriously but didnt cotribute a huge amount. and 1% were people like sheepking joeT , erik durwood, etc who were deeply involved and contributed much.<br />
+In short psipog lost its purpose and became diluted.<br />
+<br />
+I wont make assumptions but i thinkthis is close to the reason why sean decided to close shop. i think i read it on his blog when he closed it.</div>
+		<textarea style="display: none;" id="desctxt_10702">I agree that psipog had a huge community. but the main problem is only the smallest portion was actually dedicated to psionics. You can see that with this community and with how few people from psipog remain. There was a small group of us that really dedicated to training , i&#039;ll say i wasn&#039;t the most active or productive but i was in the irc room evvery day for 5 months discussing and gaining insight.
+About 90% of psipog members were vaguely interested in psionics thought it was cool and interesting, tried it once and forgot about it. Another 7% stuck around but didnt take it seriously giving psipog a childish immaturity. 2% were people like me who practiced seriously but didnt cotribute a huge amount. and 1% were people like sheepking joeT , erik durwood, etc who were deeply involved and contributed much.
+In short psipog lost its purpose and became diluted.
+
+I wont make assumptions but i thinkthis is close to the reason why sean decided to close shop. i think i read it on his blog when he closed it.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Vimick, 4 years, 4 months ago<br />Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">DigGil</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10706" style="width: 100%; overflow: auto; min-height: 125px;">Sean several times wrote that he closed PsiPog so he could work on new ideas, probably these ideas were this new blog.</div>
+		<textarea style="display: none;" id="desctxt_10706">Sean several times wrote that he closed PsiPog so he could work on new ideas, probably these ideas were this new blog.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Waldo</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=471&amp;ref=1208009607" width="84" height="108" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10709" style="width: 100%; overflow: auto; min-height: 125px;">I&#039;m really not sure how I would feel about this, even were it to happen. I loved Psipog at the time and it was a nasty shock to come back after a break and find it closed, but I&#039;m not sure that trying to bring back something long dead would work. It just wouldn&#039;t be the same to me without the same team back etc. And it would also be difficult to avoid the same problems we had last time. Meh, I don&#039;t know. People could always join other sites as well, there are plenty out there. =)</div>
+		<textarea style="display: none;" id="desctxt_10709">I&#039;m really not sure how I would feel about this, even were it to happen. I loved Psipog at the time and it was a nasty shock to come back after a break and find it closed, but I&#039;m not sure that trying to bring back something long dead would work. It just wouldn&#039;t be the same to me without the same team back etc. And it would also be difficult to avoid the same problems we had last time. Meh, I don&#039;t know. People could always join other sites as well, there are plenty out there. =)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Sean</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=2&amp;ref=1214247941" width="117" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10711" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Vimick:</em><br />
+In short psipog lost its purpose and became diluted.</div>That is part of the reason.  Or at least, part of the reason why I don&#039;t feel bad for closing PsiPog.  I wrote about this idea here:  <a href="2007/11/14/i-dont-miss-psipog/index.html" target="_blank">http://alittleweird.com/2007/11/14/i-dont-miss-psipog/</a><br />
+<br />
+The main reason I closed PsiPog was because it was rooted in disbelief.  But even those reasons I don&#039;t fully agree with now.  Basically: we all grow and change.  I started PsiPog when I was 17 years old, 8 years ago.  PsiPog feels like de-evolution to me, at this point.  It&#039;s moving backwards.<br />
+<br />
+So, I will definitely NOT be re-opening PsiPog.  I think metalforever has done a great job at PsionicsOnline, and her community seems to capture the essence of PsiPog (and improved on it!).  If you want that sort of psionic community, then hang out over there.<br />
+<br />
+I think the community here is cool.  It&#039;s big enough so we have some cool ideas floating around, but not so big that I have to have a team of people moderate everything.<br />
+<br />
+I am at another cross-road in my mind concerning the best way forward with psionics.  I mentioned some of my current thoughts in this thread:  <a href="forums.php@cmd=thread&amp;tid=501.html" target="_blank">http://alittleweird.com/forums.php?cmd=thread&amp;tid=501</a> .  Once I finish pounding out the ideas, I may change ALW around a bit.  The Blog format is getting on my nerves a little :-).<br />
+<br />
+~Sean</div>
+		<textarea style="display: none;" id="desctxt_10711">[quote][i]posted by Vimick:[/i]
+In short psipog lost its purpose and became diluted.[/quote]
+
+That is part of the reason.  Or at least, part of the reason why I don&#039;t feel bad for closing PsiPog.  I wrote about this idea here: http://alittleweird.com/2007/11/14/i-dont-miss-psipog/
+
+The main reason I closed PsiPog was because it was rooted in disbelief.  But even those reasons I don&#039;t fully agree with now.  Basically: we all grow and change.  I started PsiPog when I was 17 years old, 8 years ago.  PsiPog feels like de-evolution to me, at this point.  It&#039;s moving backwards.
+
+So, I will definitely NOT be re-opening PsiPog.  I think metalforever has done a great job at PsionicsOnline, and her community seems to capture the essence of PsiPog (and improved on it!).  If you want that sort of psionic community, then hang out over there.
+
+I think the community here is cool.  It&#039;s big enough so we have some cool ideas floating around, but not so big that I have to have a team of people moderate everything.
+
+I am at another cross-road in my mind concerning the best way forward with psionics.  I mentioned some of my current thoughts in this thread: http://alittleweird.com/forums.php?cmd=thread&amp;tid=501 .  Once I finish pounding out the ideas, I may change ALW around a bit.  The Blog format is getting on my nerves a little :-).
+
+~Sean</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Faceless</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=570&amp;ref=1214279440" width="83" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10712" style="width: 100%; overflow: auto; min-height: 125px;">I do miss psipog, mostly the chat room. I remember practicing telepathy with Sheepking and remoteveiwing. After that closed it was difficult to practice stuff like that because I don’t have any friends near me that practice psionics and stuff. If a chat room were opened for this site I am sure people would eagerly use it.  </div>
+		<textarea style="display: none;" id="desctxt_10712">I do miss psipog, mostly the chat room. I remember practicing telepathy with Sheepking and remoteveiwing. After that closed it was difficult to practice stuff like that because I don’t have any friends near me that practice psionics and stuff. If a chat room were opened for this site I am sure people would eagerly use it.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Linked</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=19&amp;ref=1203762048" width="89" height="38" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10774" style="width: 100%; overflow: auto; min-height: 125px;">theres always the gabbly chat on the geiger game page</div>
+		<textarea style="display: none;" id="desctxt_10774">theres always the gabbly chat on the geiger game page</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Falcon</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=521&amp;ref=1241106812" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10846" style="width: 100%; overflow: auto; min-height: 125px;">Well, yeah, a chat room would be really cool here, I don&#039;t know if Sean already said something about a chat room on ALW, but I would really appreciate it.<br />
+<br />
+F.</div>
+		<textarea style="display: none;" id="desctxt_10846">Well, yeah, a chat room would be really cool here, I don&#039;t know if Sean already said something about a chat room on ALW, but I would really appreciate it.
+
+F.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">cinderwild</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10847" style="width: 100%; overflow: auto; min-height: 125px;">He mentioned making his own chat client when Gabbly Chat was rejecting him during practice the other day.</div>
+		<textarea style="display: none;" id="desctxt_10847">He mentioned making his own chat client when Gabbly Chat was rejecting him during practice the other day.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Antisankari</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=224&amp;ref=1213032338" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10849" style="width: 100%; overflow: auto; min-height: 125px;">Sean got himself banned once from #Psipog by his very own PsiPogBot...<br />
+I was there, and it was hilarious to watch.</div>
+		<textarea style="display: none;" id="desctxt_10849">Sean got himself banned once from #Psipog by his very own PsiPogBot...
+I was there, and it was hilarious to watch.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">cinderwild</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10850" style="width: 100%; overflow: auto; min-height: 125px;">How did that happen?</div>
+		<textarea style="display: none;" id="desctxt_10850">How did that happen?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Antisankari</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=224&amp;ref=1213032338" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10852" style="width: 100%; overflow: auto; min-height: 125px;">Not sure exactly.<br />
+<br />
+We were loitering on the channel, and the bot was programmer to ban everyone on its &quot;black&quot; list. <br />
+<br />
+For some reason, Sean was kicked out of the channel accompanied by bots message: &quot;Sean was banned by PsipogBot&quot;.<br />
+<br />
+<br />
+He came back shortly after, but the whole situation was a bit comic. <br />
+<br />
+It was the golden days of Psicism, or Psionic Fascism as history knows it.<br />
+You had to login to enter the channel, and saying words such as : &quot;ur&quot; + &quot;u&quot; + &quot;dbz&quot; and &quot;r&quot; resulted in a swift automated kick from the channel. Magic, Chi, Ghosts, Spirits, Spells, Charms, Gods, Religions and such were banned. And violators were dealt harshly.<br />
+<br />
+Newcomers were sometimes duped with questions such as : &quot;What letter comes after t in the alphabets?&quot;. Naturally they would say: &quot;u&quot;.<br />
+<br />
+Edit: Oh, And Sean was quite a Peebrain back then.</div>
+		<textarea style="display: none;" id="desctxt_10852">Not sure exactly.
+
+We were loitering on the channel, and the bot was programmer to ban everyone on its &quot;black&quot; list. 
+
+For some reason, Sean was kicked out of the channel accompanied by bots message: &quot;Sean was banned by PsipogBot&quot;.
+
+
+He came back shortly after, but the whole situation was a bit comic. 
+
+It was the golden days of Psicism, or Psionic Fascism as history knows it.
+You had to login to enter the channel, and saying words such as : &quot;ur&quot; + &quot;u&quot; + &quot;dbz&quot; and &quot;r&quot; resulted in a swift automated kick from the channel. Magic, Chi, Ghosts, Spirits, Spells, Charms, Gods, Religions and such were banned. And violators were dealt harshly.
+
+Newcomers were sometimes duped with questions such as : &quot;What letter comes after t in the alphabets?&quot;. Naturally they would say: &quot;u&quot;.
+
+Edit: Oh, And Sean was quite a Peebrain back then.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Antisankari, 4 years, 4 months ago<br />Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Linked</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=19&amp;ref=1203762048" width="89" height="38" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10929" style="width: 100%; overflow: auto; min-height: 125px;">HAHA XD, sounds like fun times. wish i could have been around for the psipog days, everyone always makes them seem so fun. But that might just be exaderation setting in on their memories. :P</div>
+		<textarea style="display: none;" id="desctxt_10929">HAHA XD, sounds like fun times. wish i could have been around for the psipog days, everyone always makes them seem so fun. But that might just be exaderation setting in on their memories. :P</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=508" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 31 queries. 0.396 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

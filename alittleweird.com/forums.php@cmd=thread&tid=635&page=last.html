@@ -1,0 +1,493 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Well it said advertisments so....</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=3.html">Recycle Bin</a> &raquo; Well it said advertisments so....</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Well it said advertisments so....</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">VampiricKody</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=864&amp;ref=1232236676" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12411" style="width: 100%; overflow: auto; min-height: 125px;">HUGE EDIT/REMAKE: I started a new site called psionictwist.co.cc , we have changed hosts a few times but always keep our domain. We currently have about 4 articles on energy manipulation and are looking for staff. We have to be a succesful community in the years to come.<br />
+Psionictwist.co.cc and Psionictwist-forums.co.cc <br />
+Thanks,<br />
+Kody</div>
+		<textarea style="display: none;" id="desctxt_12411">HUGE EDIT/REMAKE: I started a new site called psionictwist.co.cc , we have changed hosts a few times but always keep our domain. We currently have about 4 articles on energy manipulation and are looking for staff. We have to be a succesful community in the years to come.
+Psionictwist.co.cc and Psionictwist-forums.co.cc 
+Thanks,
+Kody</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by VampiricKody, 3 years, 10 months ago<br />Posted 3 years, 11 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Faceless</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=570&amp;ref=1214279440" width="83" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12416" style="width: 100%; overflow: auto; min-height: 125px;">ya sorry but i dont do magick. i prefer mental capabilities...<br />
+</div>
+		<textarea style="display: none;" id="desctxt_12416">ya sorry but i dont do magick. i prefer mental capabilities...</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 11 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">VampiricKody</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=864&amp;ref=1232236676" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12495" style="width: 100%; overflow: auto; min-height: 125px;">To be honest I hardly do magick myself, I was intending it for more of a psionics site really but I&#039;ll probably end up moving it to a less magick suggestive name.</div>
+		<textarea style="display: none;" id="desctxt_12495">To be honest I hardly do magick myself, I was intending it for more of a psionics site really but I&#039;ll probably end up moving it to a less magick suggestive name.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 11 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">VampiricKody</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=864&amp;ref=1232236676" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12722" style="width: 100%; overflow: auto; min-height: 125px;">Remade the post and parts of the site :3 Check it out x3</div>
+		<textarea style="display: none;" id="desctxt_12722">Remade the post and parts of the site :3 Check it out x3</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Trick</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=744&amp;ref=1221873234" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12727" style="width: 100%; overflow: auto; min-height: 125px;">Your site really bugs me.<br />
+<br />
+First, because this has been done a million times. Every noob that comes along, every one of them tries to start thier own site. As if there isnt already enough psi sites out there already. <br />
+<br />
+Second, 9 times out of 10 the noob starting the site has no idea what thier doing, and put a bunch of fluff on it. They also try to teach things on thier site that they have never done before, like flaring. <br />
+<br />
+Lastly, the site never stays. It lasts maybe a few weeks, two months at the most, then its gone. <br />
+<br />
+Really, I dont know how to make you get it. Your just like every other little kid who tries to start his own psi site, thinking he&#039;s so special.</div>
+		<textarea style="display: none;" id="desctxt_12727">Your site really bugs me.
+
+First, because this has been done a million times. Every noob that comes along, every one of them tries to start thier own site. As if there isnt already enough psi sites out there already. 
+
+Second, 9 times out of 10 the noob starting the site has no idea what thier doing, and put a bunch of fluff on it. They also try to teach things on thier site that they have never done before, like flaring. 
+
+Lastly, the site never stays. It lasts maybe a few weeks, two months at the most, then its gone. 
+
+Really, I dont know how to make you get it. Your just like every other little kid who tries to start his own psi site, thinking he&#039;s so special.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Trick, 3 years, 10 months ago<br />Posted 3 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">VampiricKody</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=864&amp;ref=1232236676" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12755" style="width: 100%; overflow: auto; min-height: 125px;">That&#039;s probably because people can&#039;t do it alone Trick. They need help, that&#039;s why I&#039;m recruiting staff. Also, your making a generalization, tell me how this applies to me. Not to mention you have no idea of my age.</div>
+		<textarea style="display: none;" id="desctxt_12755">That&#039;s probably because people can&#039;t do it alone Trick. They need help, that&#039;s why I&#039;m recruiting staff. Also, your making a generalization, tell me how this applies to me. Not to mention you have no idea of my age.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Trick</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=744&amp;ref=1221873234" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12757" style="width: 100%; overflow: auto; min-height: 125px;">Every site like yours tries to recruit staff. It applies to you because you fit the description I gave. Also, your right, I dont know your a little kid. But if your not, that just makes it even worse, because normally its a 12 - 13 year old noob who does it.<br />
+<br />
+Really, what I&#039;m trying to say, is that your just like every new guy, trying to make thier own site, and failing.<br />
+<br />
+None of you know what your talking about, at all, then you go and try to make your own site trying to teach others. Great. <br />
+<br />
+That is the problem.</div>
+		<textarea style="display: none;" id="desctxt_12757">Every site like yours tries to recruit staff. It applies to you because you fit the description I gave. Also, your right, I dont know your a little kid. But if your not, that just makes it even worse, because normally its a 12 - 13 year old noob who does it.
+
+Really, what I&#039;m trying to say, is that your just like every new guy, trying to make thier own site, and failing.
+
+None of you know what your talking about, at all, then you go and try to make your own site trying to teach others. Great. 
+
+That is the problem.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Trick, 3 years, 10 months ago<br />Posted 3 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">VampiricKody</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=864&amp;ref=1232236676" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12758" style="width: 100%; overflow: auto; min-height: 125px;">And I don&#039;t see you coming up with anything better.</div>
+		<textarea style="display: none;" id="desctxt_12758">And I don&#039;t see you coming up with anything better.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Trick</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=744&amp;ref=1221873234" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12759" style="width: 100%; overflow: auto; min-height: 125px;">Is there a need to? There is already perfectly fine psi communities out there, nobody needs to make a new site. Especially you. <br />
+<br />
+Also, as a matter of fact, I am doing something better. I practice psychic abilities, so I can contribute to the ALREADY MADE psi communities. Its a hell of a lot more productive than you making a psi site, trying to teach things you havent learned to do yourself. </div>
+		<textarea style="display: none;" id="desctxt_12759">Is there a need to? There is already perfectly fine psi communities out there, nobody needs to make a new site. Especially you. 
+
+Also, as a matter of fact, I am doing something better. I practice psychic abilities, so I can contribute to the ALREADY MADE psi communities. Its a hell of a lot more productive than you making a psi site, trying to teach things you havent learned to do yourself.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">VampiricKody</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=864&amp;ref=1232236676" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12760" style="width: 100%; overflow: auto; min-height: 125px;">Your just a 10 year old troll full of bowl shit. Your pathetic live leads you to troll and flame people around the psychic community. You deserve to die stupid troll.</div>
+		<textarea style="display: none;" id="desctxt_12760">Your just a 10 year old troll full of bowl shit. Your pathetic live leads you to troll and flame people around the psychic community. You deserve to die stupid troll.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Trick</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=744&amp;ref=1221873234" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12761" style="width: 100%; overflow: auto; min-height: 125px;">What would make you think I&#039;m a 10 year old troll? Maybe your just upset, because you know your wrong. <br />
+<br />
+I&#039;m 16, and I&#039;m the farthest from a troll. I have been practicing for 4 years, and I try to help out new guys when I can. Look, I&#039;m just being logical. Most people think its kinda foolish for somebody with no skill, trying to teach what they cannot do. Wouldnt you agree? <br />
+<br />
+Haha. Thats typical. <br />
+<br />
+1: Two people get in an argument.<br />
+2: One of them wins and proves the other wrong.<br />
+3: The loser cannot handle it, because he knows he&#039;s wrong.<br />
+<br />
+Thats exactly how it goes, every time. <br />
+<br />
+I dont think you understood any of my points, but stick around for a few more years and you will. I think this is over with. Cya.</div>
+		<textarea style="display: none;" id="desctxt_12761">What would make you think I&#039;m a 10 year old troll? Maybe your just upset, because you know your wrong. 
+
+I&#039;m 16, and I&#039;m the farthest from a troll. I have been practicing for 4 years, and I try to help out new guys when I can. Look, I&#039;m just being logical. Most people think its kinda foolish for somebody with no skill, trying to teach what they cannot do. Wouldnt you agree? 
+
+Haha. Thats typical. 
+
+1: Two people get in an argument.
+2: One of them wins and proves the other wrong.
+3: The loser cannot handle it, because he knows he&#039;s wrong.
+
+Thats exactly how it goes, every time. 
+
+I dont think you understood any of my points, but stick around for a few more years and you will. I think this is over with. Cya.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Trick, 3 years, 10 months ago<br />Posted 3 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">VampiricKody</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=864&amp;ref=1232236676" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12768" style="width: 100%; overflow: auto; min-height: 125px;">Lol I&#039;m not wrong at all, your just a random troll I don&#039;t care how old your are you seem like your 10, whom goes around putting down other&#039;s creative methods to build their own custom psionic community the way the want to.Thanks for hijacking my thread &lt;_&lt;<br />
+Cya.</div>
+		<textarea style="display: none;" id="desctxt_12768">Lol I&#039;m not wrong at all, your just a random troll I don&#039;t care how old your are you seem like your 10, whom goes around putting down other&#039;s creative methods to build their own custom psionic community the way the want to.Thanks for hijacking my thread &lt;_&lt;
+Cya.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Subliminal</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=879&amp;ref=1231742413" width="96" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12773" style="width: 100%; overflow: auto; min-height: 125px;">VampiricKody-For reasons unbeknownst to  me, reading back on your past posts, you always gave off a vibe of extreme annoyance. <br />
+<br />
+Now, looking at this, I know why.<br />
+<br />
+First of all, Trick is right. You lack the credibility to strike out on your own and create your own site. <br />
+<br />
+I realize the magnitism of the concept. The way it must feel to have your own site and watch it prosper under your guidance.<br />
+<br />
+However, one cannot follow one who cannot lead. You cannot offer guidance, for you have none to give. You lack the experience. <br />
+<br />
+And to be perfectly blunt...You truly do give off a vibe that screams &quot;Young!&quot;. Now, we all know that age does not equal maturity. Unfortunately, you aren&#039;t exactly mature enough for this either. <br />
+<br />
+Openminded, I went to your site. I was rather disappointed. You have good ideas going, but you have unneccessary sections on your forums. The descriptions of each forum are rather juvenile. Not to mention I find it EXTREMELY difficult to take you seriously when you have spelling errors all over the forums, even in the titles of the different sections. <br />
+<br />
+This brings me to another point. As Trick pointed out, there are more than enough psionic communities. However, most of them are dead. You haven&#039;t succeeded in creating a new site, you&#039;ve succeeded in creating a site that will be just as dead as the rest of them and has further spread out the decay among the sites.<br />
+<br />
+A pebble cannot a temple make.<br />
+<br />
+The obvious way to go about this is to spread awareness about the CURRENT sites. I am focusing on this one in particular. Focus only on those who seem TRULY interested. Idiots are unavoidable, but you can certainly cut down on the amount of them. So once this forum is active once more, the other sites and forums can be introduced. And then the people will trickle into other forums. Soon all the sites will be active once more.<br />
+<br />
+This is not an overnight process. <br />
+<br />
+Another thing. <br />
+<br />
+You are closeminded to the different theories and aspects involved with psionics. I have watched you tell others you reject their ideas for your own. One thing that is absolutely important in psionics is to keep an open mind. You cannot say &quot;I&#039;m right, you&#039;re wrong&quot;. You can DISAGREE but you cannot DISREGARD.<br />
+<br />
+Therefore, you would be teaching others inadequately. <br />
+<br />
+Lack of maturity+Lack of experience+Lack of an open mind+whatever other negative factors are one with you=Bad idea to make a site.<br />
+<br />
+I could not follow you, VampiricKody. <br />
+<br />
+You have a long way to go before you are mature enough for the task you&#039;ve set yourself to.<br />
+<br />
+You don&#039;t have to give up on the idea forever, just put it off for now.<br />
+<br />
+You are not ready.<br />
+<br />
+<br />
+</div>
+		<textarea style="display: none;" id="desctxt_12773">VampiricKody-For reasons unbeknownst to  me, reading back on your past posts, you always gave off a vibe of extreme annoyance. 
+
+Now, looking at this, I know why.
+
+First of all, Trick is right. You lack the credibility to strike out on your own and create your own site. 
+
+I realize the magnitism of the concept. The way it must feel to have your own site and watch it prosper under your guidance.
+
+However, one cannot follow one who cannot lead. You cannot offer guidance, for you have none to give. You lack the experience. 
+
+And to be perfectly blunt...You truly do give off a vibe that screams &quot;Young!&quot;. Now, we all know that age does not equal maturity. Unfortunately, you aren&#039;t exactly mature enough for this either. 
+
+Openminded, I went to your site. I was rather disappointed. You have good ideas going, but you have unneccessary sections on your forums. The descriptions of each forum are rather juvenile. Not to mention I find it EXTREMELY difficult to take you seriously when you have spelling errors all over the forums, even in the titles of the different sections. 
+
+This brings me to another point. As Trick pointed out, there are more than enough psionic communities. However, most of them are dead. You haven&#039;t succeeded in creating a new site, you&#039;ve succeeded in creating a site that will be just as dead as the rest of them and has further spread out the decay among the sites.
+
+A pebble cannot a temple make.
+
+The obvious way to go about this is to spread awareness about the CURRENT sites. I am focusing on this one in particular. Focus only on those who seem TRULY interested. Idiots are unavoidable, but you can certainly cut down on the amount of them. So once this forum is active once more, the other sites and forums can be introduced. And then the people will trickle into other forums. Soon all the sites will be active once more.
+
+This is not an overnight process. 
+
+Another thing. 
+
+You are closeminded to the different theories and aspects involved with psionics. I have watched you tell others you reject their ideas for your own. One thing that is absolutely important in psionics is to keep an open mind. You cannot say &quot;I&#039;m right, you&#039;re wrong&quot;. You can DISAGREE but you cannot DISREGARD.
+
+Therefore, you would be teaching others inadequately. 
+
+Lack of maturity+Lack of experience+Lack of an open mind+whatever other negative factors are one with you=Bad idea to make a site.
+
+I could not follow you, VampiricKody. 
+
+You have a long way to go before you are mature enough for the task you&#039;ve set yourself to.
+
+You don&#039;t have to give up on the idea forever, just put it off for now.
+
+You are not ready.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">VampiricKody</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=864&amp;ref=1232236676" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12777" style="width: 100%; overflow: auto; min-height: 125px;">Ya know, I think you may be right. I am to be honest, fairly new to psionics and just wanted to be a noob helping noobs, however I cannot do this. What I&#039;ve been doing is giving people a reideration of articles from other sites, which is indeed wrong. I think what I&#039;ll do is not shut down the site, but keep it there, for later. I may later on introduce my own ways of energy manipulation, my own beliefs etc. Most of which I&#039;ve made my own threads about here asking if they&#039;re ethical. So I guess I&#039;ll just add to i overtime a little bit every once in a while til I&#039;m fairly experienced.<br />
+Thanks and until next time,<br />
+Kody</div>
+		<textarea style="display: none;" id="desctxt_12777">Ya know, I think you may be right. I am to be honest, fairly new to psionics and just wanted to be a noob helping noobs, however I cannot do this. What I&#039;ve been doing is giving people a reideration of articles from other sites, which is indeed wrong. I think what I&#039;ll do is not shut down the site, but keep it there, for later. I may later on introduce my own ways of energy manipulation, my own beliefs etc. Most of which I&#039;ve made my own threads about here asking if they&#039;re ethical. So I guess I&#039;ll just add to i overtime a little bit every once in a while til I&#039;m fairly experienced.
+Thanks and until next time,
+Kody</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Subliminal</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=879&amp;ref=1231742413" width="96" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12779" style="width: 100%; overflow: auto; min-height: 125px;">The thing about the inexperienced helping the inexperienced is that it&#039;s redundant unless someone experienced is overseeing it.<br />
+<br />
+Oh and...You say you&#039;ve been reiterating articles from other sites.<br />
+<br />
+Well...You may be borderline copy infringement. I&#039;m not going to say 100% on that, just keep in mind that you might want to ask permission before you take information from somebody else&#039;s work.<br />
+<br />
+If you introduce YOUR OWN WAYS, be sure to tell people that it is YOUR way, that it is not the only way, that there are other ways. You want to help people. Not hinder. <br />
+</div>
+		<textarea style="display: none;" id="desctxt_12779">The thing about the inexperienced helping the inexperienced is that it&#039;s redundant unless someone experienced is overseeing it.
+
+Oh and...You say you&#039;ve been reiterating articles from other sites.
+
+Well...You may be borderline copy infringement. I&#039;m not going to say 100% on that, just keep in mind that you might want to ask permission before you take information from somebody else&#039;s work.
+
+If you introduce YOUR OWN WAYS, be sure to tell people that it is YOUR way, that it is not the only way, that there are other ways. You want to help people. Not hinder.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">VampiricKody</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=864&amp;ref=1232236676" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12838" style="width: 100%; overflow: auto; min-height: 125px;">Well the thing is, I didn&#039;t mean to say it like that. I mean, I&#039;ve read tons of articles on psipog, etc, and I think that looking at the similarities of them mine are more of a shortened up re-iteration, which I don&#039;t want. When I&#039;m more experienced I&#039;ll again, probably introduce my own ways, such as the one I introduced and came up all on my own from this thread  <a href="forums.php@cmd=thread&amp;tid=665.html" target="_blank">http://alittleweird.com/forums.php?cmd=thread&amp;tid=665</a> but yea they just look similar. I would never intentionally plagiarize, I was just looking back on them. </div>
+		<textarea style="display: none;" id="desctxt_12838">Well the thing is, I didn&#039;t mean to say it like that. I mean, I&#039;ve read tons of articles on psipog, etc, and I think that looking at the similarities of them mine are more of a shortened up re-iteration, which I don&#039;t want. When I&#039;m more experienced I&#039;ll again, probably introduce my own ways, such as the one I introduced and came up all on my own from this thread http://alittleweird.com/forums.php?cmd=thread&amp;tid=665 but yea they just look similar. I would never intentionally plagiarize, I was just looking back on them.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 10 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=635" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 32 queries. 0.321 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

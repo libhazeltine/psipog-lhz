@@ -1,0 +1,390 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Feelings and Emotions Database</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Feelings and Emotions Database</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Feelings and Emotions Database</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">DigGil</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_14036" style="width: 100%; overflow: auto; min-height: 125px;">I&#039;ve heard about Sean&#039;s project on the development of the Paranormal knowledge on the Blog. I&#039;ll not join personally neither has a staff, but I have some ideas that might interest Sean.<br />
+<br />
+Most of us know that the feelings and emotions cocktails are undocumented, maybe indescribable, but you know that they&#039;re important at a psychic level (own&#039;s psychology and mental practice/use). I think it would be of a great value tag every feeling and associate and name.<br />
+For example: I&#039;ve heard a scientist talking about what she called the &quot;Apollo Feeling&quot;.<br />
+For this I would fill the Database in this way. Some notes first: <br />
+<br />
+Has I&#039;ve not interviewed this person this information may be misleading; <br />
+The different filling boxes are if I used the resources I&#039;ve got at the time I&#039;ve wrote this, there may be many more including for example a fMRI of while remembering and actually feeling the feeling to comparation.<br />
+<br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><strong><em>Emotions and Feelings&#039;s Database Feeling Sheet</em></strong><br />
+Note: For further feelings or emotions referred see the proper sheet.<br />
+<br />
+Name: Apollo Feeling<br />
+Date: 1969<br />
+<br />
+<br />
+Description:<br />
+When the spacecraft reached the Moon, the individual felt the referred associations downwards in the mood that was like men were finally walking on the Moon or doing something beyond chance.<br />
+<br />
+Relation to subject&#039;s past (for deeper understanding view subject&#039;s History Appendix):<br />
+The subject has the notion of how far the moon is from Cape Canaveral. She made part of the research team and felt the pressure of being so. No one has ever spread it&#039;s psychic energy around that place: there is a sense of &quot;unlonelyness&quot;.<br />
+<br />
+Associations: Concretization; Euphory; (uncomplet data)<br />
+<br />
+Subjects that think feeling this: JoeA; JoeB<br />
+<br />
+Subjects that seem to feel this but don&#039;t think so: ZoeA; ZoeB; JackA</div>Of course this takes very much time for interviewing, organizing and refinement. But seems Sean is getting much e-mail :P. I&#039;m I right or an idiot?</div>
+		<textarea style="display: none;" id="desctxt_14036">I&#039;ve heard about Sean&#039;s project on the development of the Paranormal knowledge on the Blog. I&#039;ll not join personally neither has a staff, but I have some ideas that might interest Sean.
+
+Most of us know that the feelings and emotions cocktails are undocumented, maybe indescribable, but you know that they&#039;re important at a psychic level (own&#039;s psychology and mental practice/use). I think it would be of a great value tag every feeling and associate and name.
+For example: I&#039;ve heard a scientist talking about what she called the &quot;Apollo Feeling&quot;.
+For this I would fill the Database in this way. Some notes first: 
+
+Has I&#039;ve not interviewed this person this information may be misleading; 
+The different filling boxes are if I used the resources I&#039;ve got at the time I&#039;ve wrote this, there may be many more including for example a fMRI of while remembering and actually feeling the feeling to comparation.
+
+[quote]
+[i][b]Emotions and Feelings&#039;s Database Feeling Sheet[/b][/i]
+Note: For further feelings or emotions referred see the proper sheet.
+
+Name: Apollo Feeling
+Date: 1969
+
+
+Description:
+When the spacecraft reached the Moon, the individual felt the referred associations downwards in the mood that was like men were finally walking on the Moon or doing something beyond chance.
+
+Relation to subject&#039;s past (for deeper understanding view subject&#039;s History Appendix):
+The subject has the notion of how far the moon is from Cape Canaveral. She made part of the research team and felt the pressure of being so. No one has ever spread it&#039;s psychic energy around that place: there is a sense of &quot;unlonelyness&quot;.
+
+Associations: Concretization; Euphory; (uncomplet data)
+
+Subjects that think feeling this: JoeA; JoeB
+
+Subjects that seem to feel this but don&#039;t think so: ZoeA; ZoeB; JackA
+[/quote]
+
+Of course this takes very much time for interviewing, organizing and refinement. But seems Sean is getting much e-mail :P. I&#039;m I right or an idiot?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by DigGil, 3 years, 6 months ago<br />Posted 3 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">twilight</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=962&amp;ref=1243352463" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_14055" style="width: 100%; overflow: auto; min-height: 125px;">This is would be an amazing idea, yet I found a couple of opportunities. Feelings are retrospective to the individual.<br />
+<br />
+ Why are some people masochists and others fear pain for their lives? Both of the inquired parties have a different opinion on the matter. One feels a sense of euphoric rush while the other is experiencing an overwhelming fear, yet now that I write this down they both experience a euphoric rush in retrospect to their own tastes of pleasure.<br />
+<br />
+ This brings up two more questions in my mind. What about the people who just ignore the feelings and go with the flow,(exp. sociopaths) or how far do we boil down a part of an emotion(or whole) before it becomes a mathematical equation, or a solid theory of emotions? I have friends whom are &quot;sociopaths&quot; that just do not feel. They do whatever they like whenever. This would be that enough of a percentage to flaw the whole plan <br />
+<br />
+Also classifying emotions &quot;by hand&quot; would be like physically taking apart the DNA of an organism and classifying each subdivision of protein. Starting from a very general view would also be like simulating the equitation through the Rubik&#039;s Cube for 5000 years, yet if you try to make the classification as small as possible it would be retrospect to the society that created it because we would have to go through society deemed emotions and what they are suppose to feel.<br />
+<br />
+On the other hand contrary to those beliefs, we still have the fact that they both felt the primal emotion of a euphoric rush so it could be done. With some unexplained exceptions from time to time. </div>
+		<textarea style="display: none;" id="desctxt_14055">This is would be an amazing idea, yet I found a couple of opportunities. Feelings are retrospective to the individual.
+
+ Why are some people masochists and others fear pain for their lives? Both of the inquired parties have a different opinion on the matter. One feels a sense of euphoric rush while the other is experiencing an overwhelming fear, yet now that I write this down they both experience a euphoric rush in retrospect to their own tastes of pleasure.
+
+ This brings up two more questions in my mind. What about the people who just ignore the feelings and go with the flow,(exp. sociopaths) or how far do we boil down a part of an emotion(or whole) before it becomes a mathematical equation, or a solid theory of emotions? I have friends whom are &quot;sociopaths&quot; that just do not feel. They do whatever they like whenever. This would be that enough of a percentage to flaw the whole plan 
+
+Also classifying emotions &quot;by hand&quot; would be like physically taking apart the DNA of an organism and classifying each subdivision of protein. Starting from a very general view would also be like simulating the equitation through the Rubik&#039;s Cube for 5000 years, yet if you try to make the classification as small as possible it would be retrospect to the society that created it because we would have to go through society deemed emotions and what they are suppose to feel.
+
+On the other hand contrary to those beliefs, we still have the fact that they both felt the primal emotion of a euphoric rush so it could be done. With some unexplained exceptions from time to time.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Sussch</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=622&amp;ref=1252769070" width="100" height="92" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_14057" style="width: 100%; overflow: auto; min-height: 125px;">It is a nice idea.<br />
+<br />
+However, I think that many feelings can&#039;t be described with words.<br />
+Maybe even a dozen videos, music compositions and paintings would fail to pass on these feelings..<br />
+<br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by twilight:</em><br />
+Feelings are retrospective to the individual.</div>Maybe different people just get different feelings from the same situation.<br />
+I think that feelings by themselves are constant.<br />
+<br />
+It would be really nice if one would be able to browse for feelings in order to get some help with their visualizations.<br />
+<br />
+</div>
+		<textarea style="display: none;" id="desctxt_14057">It is a nice idea.
+
+However, I think that many feelings can&#039;t be described with words.
+Maybe even a dozen videos, music compositions and paintings would fail to pass on these feelings..
+
+[quote][i]posted by twilight:[/i]
+Feelings are retrospective to the individual.
+[/quote]
+
+Maybe different people just get different feelings from the same situation.
+I think that feelings by themselves are constant.
+
+It would be really nice if one would be able to browse for feelings in order to get some help with their visualizations.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">DigGil</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_14059" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by twilight:</em><br />
+This is would be an amazing idea, yet I found a couple of opportunities. Feelings are retrospective to the individual.</div>Good point! Example for a Feeling Sheet updated. <br />
+It&#039;s true that the way someone reacts to a feeling/emotion or how they feel it depends on a person&#039;s experience and notions. Afterall it may aswell be like that thread where someone said that what it&#039;s red to me it&#039;s green to you but we call it blue.<br />
+<br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Sussch:</em><br />
+However, I think that many feelings can&#039;t be described with words.<br />
+Maybe even a dozen videos, music compositions and paintings would fail to pass on these feelings..</div>That&#039;s just like the thread I made:  <a href="forums.php@cmd=thread&amp;tid=738.html" target="_blank">http://alittleweird.com/forums.php?cmd=thread&amp;tid=738</a><br />
+<br />
+And that you said is directly (I think) related to:<br />
+<br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by twilight:</em><br />
+Also classifying emotions &quot;by hand&quot; would be like physically taking apart the DNA of an organism and classifying each subdivision of protein. Starting from a very general view would also be like simulating the equitation through the Rubik&#039;s Cube for 5000 years(...)</div>And related to a blog post from Sean, that I can&#039;t find now, where he talks about a book he read where was said that the scientific method fails on understanding stuff like creativity; We can listen the music with sound or by seeing the &#039;1&#039;&#039;s and &#039;0&#039;&#039;s on a screen (Which is better :) ?).<br />
+<br />
+Like I said on the first post: <div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by DigGil:</em><br />
+Of course this takes very much time for interviewing, organizing and refinement. But seems Sean is getting much e-mail :P.</div>That said (and quoted) I may now tell you that that&#039;s the hard part and maybe impossible. Maybe you need to be the actual person to feel those collected emotions and feelings, turning the Database just a &quot;reference and landmarking utility&quot; (that&#039;s why I posted also &quot;I&#039;m I right or an idiot?&quot;)</div>
+		<textarea style="display: none;" id="desctxt_14059">[quote][i]posted by twilight:[/i]
+This is would be an amazing idea, yet I found a couple of opportunities. Feelings are retrospective to the individual.[/quote]
+
+Good point! Example for a Feeling Sheet updated. 
+It&#039;s true that the way someone reacts to a feeling/emotion or how they feel it depends on a person&#039;s experience and notions. Afterall it may aswell be like that thread where someone said that what it&#039;s red to me it&#039;s green to you but we call it blue.
+
+[quote][i]posted by Sussch:[/i]
+However, I think that many feelings can&#039;t be described with words.
+Maybe even a dozen videos, music compositions and paintings would fail to pass on these feelings..
+[/quote]
+
+That&#039;s just like the thread I made: http://alittleweird.com/forums.php?cmd=thread&amp;tid=738
+
+And that you said is directly (I think) related to:
+
+[quote][i]posted by twilight:[/i]
+Also classifying emotions &quot;by hand&quot; would be like physically taking apart the DNA of an organism and classifying each subdivision of protein. Starting from a very general view would also be like simulating the equitation through the Rubik&#039;s Cube for 5000 years(...)[/quote]
+
+And related to a blog post from Sean, that I can&#039;t find now, where he talks about a book he read where was said that the scientific method fails on understanding stuff like creativity; We can listen the music with sound or by seeing the &#039;1&#039;&#039;s and &#039;0&#039;&#039;s on a screen (Which is better :) ?).
+
+Like I said on the first post: [quote][i]posted by DigGil:[/i]
+Of course this takes very much time for interviewing, organizing and refinement. But seems Sean is getting much e-mail :P.[/quote]
+
+That said (and quoted) I may now tell you that that&#039;s the hard part and maybe impossible. Maybe you need to be the actual person to feel those collected emotions and feelings, turning the Database just a &quot;reference and landmarking utility&quot; (that&#039;s why I posted also &quot;I&#039;m I right or an idiot?&quot;)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by DigGil, 3 years, 6 months ago<br />Posted 3 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Sussch</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=622&amp;ref=1252769070" width="100" height="92" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_14086" style="width: 100%; overflow: auto; min-height: 125px;">Sorry, I hadn&#039;t read that article..</div>
+		<textarea style="display: none;" id="desctxt_14086">Sorry, I hadn&#039;t read that article..</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">DigGil</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_14101" style="width: 100%; overflow: auto; min-height: 125px;">No problem, great indeed :) .<br />
+It&#039;s like if you found a bond between the topics.</div>
+		<textarea style="display: none;" id="desctxt_14101">No problem, great indeed :) .
+It&#039;s like if you found a bond between the topics.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 6 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=768" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 22 queries. 0.324 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

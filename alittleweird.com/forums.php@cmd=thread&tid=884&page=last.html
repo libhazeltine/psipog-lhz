@@ -1,0 +1,410 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Useful</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Useful</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Useful</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">foobot3000</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_16019" style="width: 100%; overflow: auto; min-height: 125px;">I&#039;ve been pondering the usefulness of psionics lately, I mean, it&#039;s cool to move a pinwheel from across the room but how can I use psi in my everyday life? And then, this morning, I unclogged my toilet with telekinesis. Useful!!</div>
+		<textarea style="display: none;" id="desctxt_16019">I&#039;ve been pondering the usefulness of psionics lately, I mean, it&#039;s cool to move a pinwheel from across the room but how can I use psi in my everyday life? And then, this morning, I unclogged my toilet with telekinesis. Useful!!</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Trick</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=744&amp;ref=1221873234" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_16020" style="width: 100%; overflow: auto; min-height: 125px;">You can use telepathy for many things..You can use telepathic suggestion to, well, telepathically suggest people. Shouldnt be hard to think of a few things there. You can really mess with people, and get into them. Micro PK is another useful one. </div>
+		<textarea style="display: none;" id="desctxt_16020">You can use telepathy for many things..You can use telepathic suggestion to, well, telepathically suggest people. Shouldnt be hard to think of a few things there. You can really mess with people, and get into them. Micro PK is another useful one.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">SL</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_16021" style="width: 100%; overflow: auto; min-height: 125px;">Telepathy can be useful for exams. Sometimes you can pick the answers out of the instructor&#039;s head. Although, it depends on the topic. Sometimes the instructor can go on-and-on about the purpose of the question, the educational value of asking such a question, etc. until you reach a point that you regret trying it. <br />
+<br />
+I was taking an exam once and a friend of mine was in the same class. She and I were connected to someone else during this exam and it was like she and I and this other person were sitting around talking about the questions, discussing what to answer. When I asked her afterwards she had the same impression that we had been working together on the exam with someone else. She and I missed one question, the same question. It was a national exam, and she and I got the highest score. The instructor was suspicious and &quot;knew&quot; we had worked together on it, he just could not figure out how. <br />
+<br />
+In the same course, a few weeks later, I started out giving a book report, and then totally flubbed it. My english turned bad, I got nervous, and closed up. Then, I heard a rip-roaring laughter from an OBEr friend who was sitting on the window ledge. I connected to him, and my memory of the many conversations that I had had with him, and my english changed from stilted british-english to perfect american accent. It noticeably scared the instructor who probably thought I had been possessed.<br />
+<br />
+Don&#039;t know about other areas of psionics though. The only thing I have really tried is to sweet-talk cars (junkers) and computers (who hasn&#039;t), but have no evidence that it worked. It just did. I have never been able to move objects or affect lights, but I&#039;m certain that there might be a useful area for this, even if it is only to pull the fire alarm during the next exam, in case I am unprepared, the teacher refuses to give up the answers, and none of my friends know the answers :)</div>
+		<textarea style="display: none;" id="desctxt_16021">Telepathy can be useful for exams. Sometimes you can pick the answers out of the instructor&#039;s head. Although, it depends on the topic. Sometimes the instructor can go on-and-on about the purpose of the question, the educational value of asking such a question, etc. until you reach a point that you regret trying it. 
+
+I was taking an exam once and a friend of mine was in the same class. She and I were connected to someone else during this exam and it was like she and I and this other person were sitting around talking about the questions, discussing what to answer. When I asked her afterwards she had the same impression that we had been working together on the exam with someone else. She and I missed one question, the same question. It was a national exam, and she and I got the highest score. The instructor was suspicious and &quot;knew&quot; we had worked together on it, he just could not figure out how. 
+
+In the same course, a few weeks later, I started out giving a book report, and then totally flubbed it. My english turned bad, I got nervous, and closed up. Then, I heard a rip-roaring laughter from an OBEr friend who was sitting on the window ledge. I connected to him, and my memory of the many conversations that I had had with him, and my english changed from stilted british-english to perfect american accent. It noticeably scared the instructor who probably thought I had been possessed.
+
+Don&#039;t know about other areas of psionics though. The only thing I have really tried is to sweet-talk cars (junkers) and computers (who hasn&#039;t), but have no evidence that it worked. It just did. I have never been able to move objects or affect lights, but I&#039;m certain that there might be a useful area for this, even if it is only to pull the fire alarm during the next exam, in case I am unprepared, the teacher refuses to give up the answers, and none of my friends know the answers :)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by SL, 3 years ago<br />Posted 3 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">f3licks</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=848&amp;ref=1227833859" width="125" height="78" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_16022" style="width: 100%; overflow: auto; min-height: 125px;">That&#039;s pretty impressive telepathy.<br />
+<br />
+How long have you been practicing?</div>
+		<textarea style="display: none;" id="desctxt_16022">That&#039;s pretty impressive telepathy.
+
+How long have you been practicing?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">SL</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_16024" style="width: 100%; overflow: auto; min-height: 125px;">Huh, me? Uhh.. I would not call it practicing. It&#039;s more like playing, like giving in to a feeling of curiosity. Sometimes it starts with a feeling of being mischievous, sometimes it is out of wanting to help someone out. If I were to guess how long, I would say since six years old. I&#039;m about to turn 33. I&#039;m new to psionics, though, and I have not read anything about this particular topic other than what I found on psipog, and I found those articles only a few weeks ago.<br />
+<br />
+Another example: a guy walked into a room where I was drinking with some friends. He said something about this guitar solo he had performed in front of an audience earlier that day and suddenly asked, &quot;guess which song I played&quot; and I told him (translated:) &quot;the girl with the goldbrown eyes&quot;. He turned pale because it is a relatively unusual song, he had not told anyone about it, and knew that I had not been at the performance. He wanted to know how I knew, and spent the rest of the night puzzling over it. I just knew. <br />
+<br />
+A similar instance that had that same feeling: I was at the pub with a friend and she was bummed out and feeling lonely. We were talking about weirdness in general when the topic of precognition came up. She asked me to tell her her fortune, and I suddenly told her, just for fun, that she would meet a dark stranger that very night. It was meant more as a joke. She looked around perplexed, it was a wednesday night and the place was pretty much empty, it was around 10pm and the likelyhood that anyone else would show up was minimal. Less than ten minutes later a guy with dark hair showed up and started hitting on her. He literally swarmed her. She fell for the guy and went home with him that night. The guy turned out to be a complete ass, and she got angry for not warning her, but then, I was not predicting that she&#039;d meet the love of her life. This was not really some telepathic insight, but it felt similar.<br />
+<br />
+In both of those cases there was no build-up, just an immediate hunch that starts with &quot;wouldn&#039;t it be fun if...&quot; and goes on from there. Usually the answer just pops right out with no apparent cognition. It only happens occasionally and I suspect more seldom now than when I was younger. I have been relatively isolated for the past decade or so, and the only person that I &quot;think with&quot; consistently is my husband, and since he and I have been together for so long, what I experience is difficult to distinguish from knowing him well. I sometimes have conversations in my head with family members, but same thing applies: I know them too well. <br />
+<br />
+I have considered to start taking this stuff seriously and begin practicing. I came across a forum called Open Minds Forum (OMF) and they have a tread about telepathic experiements that I plan to try out:  <a href="http://lucianarchy.proboards.com/index.cgi?board=PSI&amp;action=display&amp;thread=5543" target="_blank">http://lucianarchy.proboards.com/index.cgi?board=PSI&amp;action=display&amp;thread=5543</a><br />
+<br />
+I sent an email about the enneack&#039;s musings blog (that&#039;s you, right?) and asked about suggestions for psi experiments, but have not received a reply yet. I also noticed a thread about RVing here. I think it had something to do with GPS coordinates and uploading images. It seemed confusing. I should probably read that thread again. <br />
+<br />
+<br />
+</div>
+		<textarea style="display: none;" id="desctxt_16024">Huh, me? Uhh.. I would not call it practicing. It&#039;s more like playing, like giving in to a feeling of curiosity. Sometimes it starts with a feeling of being mischievous, sometimes it is out of wanting to help someone out. If I were to guess how long, I would say since six years old. I&#039;m about to turn 33. I&#039;m new to psionics, though, and I have not read anything about this particular topic other than what I found on psipog, and I found those articles only a few weeks ago.
+
+Another example: a guy walked into a room where I was drinking with some friends. He said something about this guitar solo he had performed in front of an audience earlier that day and suddenly asked, &quot;guess which song I played&quot; and I told him (translated:) &quot;the girl with the goldbrown eyes&quot;. He turned pale because it is a relatively unusual song, he had not told anyone about it, and knew that I had not been at the performance. He wanted to know how I knew, and spent the rest of the night puzzling over it. I just knew. 
+
+A similar instance that had that same feeling: I was at the pub with a friend and she was bummed out and feeling lonely. We were talking about weirdness in general when the topic of precognition came up. She asked me to tell her her fortune, and I suddenly told her, just for fun, that she would meet a dark stranger that very night. It was meant more as a joke. She looked around perplexed, it was a wednesday night and the place was pretty much empty, it was around 10pm and the likelyhood that anyone else would show up was minimal. Less than ten minutes later a guy with dark hair showed up and started hitting on her. He literally swarmed her. She fell for the guy and went home with him that night. The guy turned out to be a complete ass, and she got angry for not warning her, but then, I was not predicting that she&#039;d meet the love of her life. This was not really some telepathic insight, but it felt similar.
+
+In both of those cases there was no build-up, just an immediate hunch that starts with &quot;wouldn&#039;t it be fun if...&quot; and goes on from there. Usually the answer just pops right out with no apparent cognition. It only happens occasionally and I suspect more seldom now than when I was younger. I have been relatively isolated for the past decade or so, and the only person that I &quot;think with&quot; consistently is my husband, and since he and I have been together for so long, what I experience is difficult to distinguish from knowing him well. I sometimes have conversations in my head with family members, but same thing applies: I know them too well. 
+
+I have considered to start taking this stuff seriously and begin practicing. I came across a forum called Open Minds Forum (OMF) and they have a tread about telepathic experiements that I plan to try out: http://lucianarchy.proboards.com/index.cgi?board=PSI&amp;action=display&amp;thread=5543
+
+I sent an email about the enneack&#039;s musings blog (that&#039;s you, right?) and asked about suggestions for psi experiments, but have not received a reply yet. I also noticed a thread about RVing here. I think it had something to do with GPS coordinates and uploading images. It seemed confusing. I should probably read that thread again.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Reniiji</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_16025" style="width: 100%; overflow: auto; min-height: 125px;">Haha...I agree with SL :<br />
+I tried to use RV to know the questions in my exam papers from beforehand....didn&#039;t succed though...</div>
+		<textarea style="display: none;" id="desctxt_16025">Haha...I agree with SL :
+I tried to use RV to know the questions in my exam papers from beforehand....didn&#039;t succed though...</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Kube</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=952&amp;ref=1249239276" width="102" height="77" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_16027" style="width: 100%; overflow: auto; min-height: 125px;">I MUST learn to do that XD</div>
+		<textarea style="display: none;" id="desctxt_16027">I MUST learn to do that XD</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Sussch</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=622&amp;ref=1252769070" width="100" height="92" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_16028" style="width: 100%; overflow: auto; min-height: 125px;">Wow, sounds really fun. (=<br />
+<br />
+I guess I have to start practicing telepathy and telekinesis again.</div>
+		<textarea style="display: none;" id="desctxt_16028">Wow, sounds really fun. (=
+
+I guess I have to start practicing telepathy and telekinesis again.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">savemydonkey</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=1026&amp;ref=1256280257" width="125" height="118" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_16045" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by foobot3000:</em><br />
+I&#039;ve been pondering the usefulness of psionics lately, I mean, it&#039;s cool to move a pinwheel from across the room but how can I use psi in my everyday life? And then, this morning, I unclogged my toilet with telekinesis. Useful!!</div>Hey buddy, you have a very valuable point - you don&#039;t really need psionics, because you can live a successful human life without it.  However, the prospective &quot;psi&quot; and the possible psychic abilities that exist would be valuable <strong>short-cuts</strong> (emphasis on the word short-cuts please!) don&#039;t you think so?  </div>
+		<textarea style="display: none;" id="desctxt_16045">[quote][i]posted by foobot3000:[/i]
+I&#039;ve been pondering the usefulness of psionics lately, I mean, it&#039;s cool to move a pinwheel from across the room but how can I use psi in my everyday life? And then, this morning, I unclogged my toilet with telekinesis. Useful!![/quote]
+Hey buddy, you have a very valuable point - you don&#039;t really need psionics, because you can live a successful human life without it.  However, the prospective &quot;psi&quot; and the possible psychic abilities that exist would be valuable [b]short-cuts[/b] (emphasis on the word short-cuts please!) don&#039;t you think so?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">SL</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_16047" style="width: 100%; overflow: auto; min-height: 125px;">@savemydonkey: yes, I agree, not necessary, but a great cure for boredom :)<br />
+<br />
+Hmm.. usefulness. I don&#039;t know if this is related, but I came close to being run over this summer - something I absolutely refused to be a part of - and about the same time this happened, a building appeared out of nowhere. The building seemed to have been there for awhile (cracked foundation, flaky paint). Was I suppose to die that day and somehow changed the outcome? My husband agreed: the building was new. If that building did not exist before, and now it did, what else changed? Because of that event, I suspect that wobbles in reality can be very beneficial to one&#039;s health.<br />
+<br />
+</div>
+		<textarea style="display: none;" id="desctxt_16047">@savemydonkey: yes, I agree, not necessary, but a great cure for boredom :)
+
+Hmm.. usefulness. I don&#039;t know if this is related, but I came close to being run over this summer - something I absolutely refused to be a part of - and about the same time this happened, a building appeared out of nowhere. The building seemed to have been there for awhile (cracked foundation, flaky paint). Was I suppose to die that day and somehow changed the outcome? My husband agreed: the building was new. If that building did not exist before, and now it did, what else changed? Because of that event, I suspect that wobbles in reality can be very beneficial to one&#039;s health.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">f3licks</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=848&amp;ref=1227833859" width="125" height="78" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_16048" style="width: 100%; overflow: auto; min-height: 125px;">@ SL:<br />
+<br />
+Sorry it took so long, I&#039;m just catching up on emails, since I haven&#039;t had internet for a bit.</div>
+		<textarea style="display: none;" id="desctxt_16048">@ SL:
+
+Sorry it took so long, I&#039;m just catching up on emails, since I haven&#039;t had internet for a bit.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Insectoid</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=1010&amp;ref=1251218696" width="50" height="50" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_16051" style="width: 100%; overflow: auto; min-height: 125px;">You raise a valid point. What&#039;s the use of psionics? Not just in everyday life, but in general, it doesn&#039;t seem like that big of a thing. Our striving to learn and hone these skills probably has some psychological factor associated with it, and that&#039;s why we do it, anyways.<br />
+<br />
+But if you think about it, psi could turn out to be a big thing. As you know, we&#039;re just the few people exploring this new area of &quot;science,&quot; and the world at large knows nothing about it. Aside from the fact that psions can do things other people can&#039;t (human nature), we could potentially rattle the entire scientific community, and if we did, then just imagine the kinds of things that would start happening...<br />
+<br />
+At least that&#039;s what I feel - that this will end up spurring some sort of revolution. As you seem to have discovered yourself, though, some psionic abilities can be obviously useful, like moving things with telekinesis. Others, like empathy and telepathy, can help you relate to other people. It&#039;s all in how you use them.</div>
+		<textarea style="display: none;" id="desctxt_16051">You raise a valid point. What&#039;s the use of psionics? Not just in everyday life, but in general, it doesn&#039;t seem like that big of a thing. Our striving to learn and hone these skills probably has some psychological factor associated with it, and that&#039;s why we do it, anyways.
+
+But if you think about it, psi could turn out to be a big thing. As you know, we&#039;re just the few people exploring this new area of &quot;science,&quot; and the world at large knows nothing about it. Aside from the fact that psions can do things other people can&#039;t (human nature), we could potentially rattle the entire scientific community, and if we did, then just imagine the kinds of things that would start happening...
+
+At least that&#039;s what I feel - that this will end up spurring some sort of revolution. As you seem to have discovered yourself, though, some psionic abilities can be obviously useful, like moving things with telekinesis. Others, like empathy and telepathy, can help you relate to other people. It&#039;s all in how you use them.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">speeddemon92</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_16055" style="width: 100%; overflow: auto; min-height: 125px;">well psionics does help me now and then. like just a few days ago i used psi in the energy form of fire to warm myself on the freezing cold bus and this summer i was at silver dollar city in line for thunderation and i used it in the form of ice since i was about to pass out from the heat just like the operater then all of a sudden i was shivering in 100+ degree weather!!! now tell me thats not usefull!!!!!</div>
+		<textarea style="display: none;" id="desctxt_16055">well psionics does help me now and then. like just a few days ago i used psi in the energy form of fire to warm myself on the freezing cold bus and this summer i was at silver dollar city in line for thunderation and i used it in the form of ice since i was about to pass out from the heat just like the operater then all of a sudden i was shivering in 100+ degree weather!!! now tell me thats not usefull!!!!!</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">X-Master</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=433&amp;ref=1238933408" width="115" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_16073" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by SL:</em><br />
+Huh, me? Uhh.. I would not call it practicing. It&#039;s more like playing, like giving in to a feeling of curiosity. Sometimes it starts with a feeling of being mischievous, sometimes it is out of wanting to help someone out. If I were to guess how long, I would say since six years old. I&#039;m about to turn 33. I&#039;m new to psionics, though, and I have not read anything about this particular topic other than what I found on psipog, and I found those articles only a few weeks ago.<br />
+<br />
+Another example: a guy walked into a room where I was drinking with some friends. He said something about this guitar solo he had performed in front of an audience earlier that day and suddenly asked, &quot;guess which song I played&quot; and I told him (translated:) &quot;the girl with the goldbrown eyes&quot;. He turned pale because it is a relatively unusual song, he had not told anyone about it, and knew that I had not been at the performance. He wanted to know how I knew, and spent the rest of the night puzzling over it. I just knew. <br />
+<br />
+A similar instance that had that same feeling: I was at the pub with a friend and she was bummed out and feeling lonely. We were talking about weirdness in general when the topic of precognition came up. She asked me to tell her her fortune, and I suddenly told her, just for fun, that she would meet a dark stranger that very night. It was meant more as a joke. She looked around perplexed, it was a wednesday night and the place was pretty much empty, it was around 10pm and the likelyhood that anyone else would show up was minimal. Less than ten minutes later a guy with dark hair showed up and started hitting on her. He literally swarmed her. She fell for the guy and went home with him that night. The guy turned out to be a complete ass, and she got angry for not warning her, but then, I was not predicting that she&#039;d meet the love of her life. This was not really some telepathic insight, but it felt similar.<br />
+<br />
+In both of those cases there was no build-up, just an immediate hunch that starts with &quot;wouldn&#039;t it be fun if...&quot; and goes on from there. Usually the answer just pops right out with no apparent cognition. It only happens occasionally and I suspect more seldom now than when I was younger. I have been relatively isolated for the past decade or so, and the only person that I &quot;think with&quot; consistently is my husband, and since he and I have been together for so long, what I experience is difficult to distinguish from knowing him well. I sometimes have conversations in my head with family members, but same thing applies: I know them too well. <br />
+<br />
+I have considered to start taking this stuff seriously and begin practicing. I came across a forum called Open Minds Forum (OMF) and they have a tread about telepathic experiements that I plan to try out:  <a href="http://lucianarchy.proboards.com/index.cgi?board=PSI&amp;action=display&amp;thread=5543" target="_blank">http://lucianarchy.proboards.com/index.cgi?board=PSI&amp;action=display&amp;thread=5543</a><br />
+<br />
+I sent an email about the enneack&#039;s musings blog (that&#039;s you, right?) and asked about suggestions for psi experiments, but have not received a reply yet. I also noticed a thread about RVing here. I think it had something to do with GPS coordinates and uploading images. It seemed confusing. I should probably read that thread again.</div>I am able to do that every once in a while, such as just coming up with random facts about a person&#039;s life that it would not have been possible to know unless that person told me. Somewhat helpful every once in a while on exams, though.</div>
+		<textarea style="display: none;" id="desctxt_16073">[quote][i]posted by SL:[/i]
+Huh, me? Uhh.. I would not call it practicing. It&#039;s more like playing, like giving in to a feeling of curiosity. Sometimes it starts with a feeling of being mischievous, sometimes it is out of wanting to help someone out. If I were to guess how long, I would say since six years old. I&#039;m about to turn 33. I&#039;m new to psionics, though, and I have not read anything about this particular topic other than what I found on psipog, and I found those articles only a few weeks ago.
+
+Another example: a guy walked into a room where I was drinking with some friends. He said something about this guitar solo he had performed in front of an audience earlier that day and suddenly asked, &quot;guess which song I played&quot; and I told him (translated:) &quot;the girl with the goldbrown eyes&quot;. He turned pale because it is a relatively unusual song, he had not told anyone about it, and knew that I had not been at the performance. He wanted to know how I knew, and spent the rest of the night puzzling over it. I just knew. 
+
+A similar instance that had that same feeling: I was at the pub with a friend and she was bummed out and feeling lonely. We were talking about weirdness in general when the topic of precognition came up. She asked me to tell her her fortune, and I suddenly told her, just for fun, that she would meet a dark stranger that very night. It was meant more as a joke. She looked around perplexed, it was a wednesday night and the place was pretty much empty, it was around 10pm and the likelyhood that anyone else would show up was minimal. Less than ten minutes later a guy with dark hair showed up and started hitting on her. He literally swarmed her. She fell for the guy and went home with him that night. The guy turned out to be a complete ass, and she got angry for not warning her, but then, I was not predicting that she&#039;d meet the love of her life. This was not really some telepathic insight, but it felt similar.
+
+In both of those cases there was no build-up, just an immediate hunch that starts with &quot;wouldn&#039;t it be fun if...&quot; and goes on from there. Usually the answer just pops right out with no apparent cognition. It only happens occasionally and I suspect more seldom now than when I was younger. I have been relatively isolated for the past decade or so, and the only person that I &quot;think with&quot; consistently is my husband, and since he and I have been together for so long, what I experience is difficult to distinguish from knowing him well. I sometimes have conversations in my head with family members, but same thing applies: I know them too well. 
+
+I have considered to start taking this stuff seriously and begin practicing. I came across a forum called Open Minds Forum (OMF) and they have a tread about telepathic experiements that I plan to try out: http://lucianarchy.proboards.com/index.cgi?board=PSI&amp;action=display&amp;thread=5543
+
+I sent an email about the enneack&#039;s musings blog (that&#039;s you, right?) and asked about suggestions for psi experiments, but have not received a reply yet. I also noticed a thread about RVing here. I think it had something to do with GPS coordinates and uploading images. It seemed confusing. I should probably read that thread again.[/quote]
+
+I am able to do that every once in a while, such as just coming up with random facts about a person&#039;s life that it would not have been possible to know unless that person told me. Somewhat helpful every once in a while on exams, though.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by X-Master, 3 years ago<br />Posted 3 years ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=884" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 30 queries. 0.309 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

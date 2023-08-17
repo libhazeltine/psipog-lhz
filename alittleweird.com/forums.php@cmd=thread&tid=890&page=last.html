@@ -1,0 +1,621 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Shaping shape shifters?</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Shaping shape shifters?</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Shaping shape shifters?</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">SL</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_16071" style="width: 100%; overflow: auto; min-height: 125px;">OK, this is going to sound a bit odd. But, have you come across people who are ...let&#039;s say &quot;more variable&quot; than others in terms of their looks? <br />
+<br />
+Occasionally, I try pinging when I am at the store, or wherever, to see what crops up. Sometimes I notice people who are &#039;different&#039; somehow. When I find these people, of course, I do not stare directly at them, but I do pay attention to them with my eyes slightly out of focus, so that I can see them without acting like a complete weirdo. <br />
+<br />
+During these observations, of those who seem unusual somehow, I have found that some are more &quot;fluid&quot; than others. For example, I can think &quot;that guy has really long, thin fingers&quot; and the result will be that the fingers appear longer/thinner. The change is often noticeable, but not extreme. The result is still within the realm of normal. Not before long, the guy will rub his hands or put them in his pockets and start looking around. <br />
+<br />
+I tried this once with a classmate. I thought &quot;That is some really blue eyeshadow. I have never seen such a color on a human before. That is downright hideous.&quot; Everytime I looked at her, the color would become more intense. I was not looking at her, just a few side glances around the room. She immediately took up a makeup mirror and started looking nervous. These are just two examples of it, but I suppose you get my drift.<br />
+<br />
+It could be that our perceptions are not that accurate and the minor adjustments are internal. It is curious, though, that the people I observe should respond the way they do. Perhaps my body language is too noticeable? But, I don&#039;t think so. Also, it only happens with a few people, the ones who have that odd noticeability about them. I have tried this on people that do not stand out, and then nothing happens at all. <br />
+<br />
+Disclaimer: If you feel a bit unstable, please do not try this! Chill out and wait until you feel like your feet are solidly planted.</div>
+		<textarea style="display: none;" id="desctxt_16071">OK, this is going to sound a bit odd. But, have you come across people who are ...let&#039;s say &quot;more variable&quot; than others in terms of their looks? 
+
+Occasionally, I try pinging when I am at the store, or wherever, to see what crops up. Sometimes I notice people who are &#039;different&#039; somehow. When I find these people, of course, I do not stare directly at them, but I do pay attention to them with my eyes slightly out of focus, so that I can see them without acting like a complete weirdo. 
+
+During these observations, of those who seem unusual somehow, I have found that some are more &quot;fluid&quot; than others. For example, I can think &quot;that guy has really long, thin fingers&quot; and the result will be that the fingers appear longer/thinner. The change is often noticeable, but not extreme. The result is still within the realm of normal. Not before long, the guy will rub his hands or put them in his pockets and start looking around. 
+
+I tried this once with a classmate. I thought &quot;That is some really blue eyeshadow. I have never seen such a color on a human before. That is downright hideous.&quot; Everytime I looked at her, the color would become more intense. I was not looking at her, just a few side glances around the room. She immediately took up a makeup mirror and started looking nervous. These are just two examples of it, but I suppose you get my drift.
+
+It could be that our perceptions are not that accurate and the minor adjustments are internal. It is curious, though, that the people I observe should respond the way they do. Perhaps my body language is too noticeable? But, I don&#039;t think so. Also, it only happens with a few people, the ones who have that odd noticeability about them. I have tried this on people that do not stand out, and then nothing happens at all. 
+
+Disclaimer: If you feel a bit unstable, please do not try this! Chill out and wait until you feel like your feet are solidly planted.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">X-Master</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=433&amp;ref=1238933408" width="115" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_16074" style="width: 100%; overflow: auto; min-height: 125px;">I would opt with that the changes are most likely internal and that when you preceive them, it creates that effect where if you stare at the back of someone&#039;s head they will turn around and look right at you. So those people get a sense someone is looking at those subtle differences and they go about hiding them. Mostly just conjecture at this point.</div>
+		<textarea style="display: none;" id="desctxt_16074">I would opt with that the changes are most likely internal and that when you preceive them, it creates that effect where if you stare at the back of someone&#039;s head they will turn around and look right at you. So those people get a sense someone is looking at those subtle differences and they go about hiding them. Mostly just conjecture at this point.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">SL</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_16076" style="width: 100%; overflow: auto; min-height: 125px;">Yes, you&#039;re probably right X-Master. The responses (fidgeting, nervousness) could just be that they are just sensitive to telepathy/thoughts. The other perceptions are probably just internal. Perceptions are rarely 100% accurate so there should be some on-going modification process that is influenced by what we see and what we think that we should see. </div>
+		<textarea style="display: none;" id="desctxt_16076">Yes, you&#039;re probably right X-Master. The responses (fidgeting, nervousness) could just be that they are just sensitive to telepathy/thoughts. The other perceptions are probably just internal. Perceptions are rarely 100% accurate so there should be some on-going modification process that is influenced by what we see and what we think that we should see.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">SL</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_16077" style="width: 100%; overflow: auto; min-height: 125px;">I&#039;m curious: <br />
+<br />
+- Has anyone here perceived this &quot;variability&quot;?<br />
+- Has anyone here found that some people are more able than others to receive and send information? If so, have you found anything to be &quot;different&quot; about these people?<br />
+- During pinging (searching) do you protect your anonymity?<br />
+- If someone does react, what do you do then? Any advice? <br />
+<br />
+<br />
+</div>
+		<textarea style="display: none;" id="desctxt_16077">I&#039;m curious: 
+
+- Has anyone here perceived this &quot;variability&quot;?
+- Has anyone here found that some people are more able than others to receive and send information? If so, have you found anything to be &quot;different&quot; about these people?
+- During pinging (searching) do you protect your anonymity?
+- If someone does react, what do you do then? Any advice?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">f3licks</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=848&amp;ref=1227833859" width="125" height="78" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_16078" style="width: 100%; overflow: auto; min-height: 125px;">I really want to try this.<br />
+Hopefully I&#039;ll have results tomorrow.</div>
+		<textarea style="display: none;" id="desctxt_16078">I really want to try this.
+Hopefully I&#039;ll have results tomorrow.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">SL</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_16079" style="width: 100%; overflow: auto; min-height: 125px;">I should probably be a little more responsible and provide this info, just in case. I do not have a psionics background, so bear with me.  <br />
+<br />
+When I &quot;reach&quot; out, I do so in different ways. If I just need to get my husband&#039;s attention at the store, or wherever, it is a direct line from me to him. If I am searching for unknowns, whose &quot;ident&quot; is unfamiliar, to not attract unwanted attention, I use another method. It is a bit like a radar (line) that strobes around the surroundings or its like a burst (more diffuse) so that it is not that obvious that I am the one doing it. <br />
+<br />
+If I do find someone who is capable, and I am not interested in communication, I use the inner voice chatter as a form of shield. I think about what to make for dinner, just stupid everyday stuff. Thinking about a song works well too. The trick is to keep the surface mind occupied and use the other part of your mind for observation, like two threads running at the same time. You can get more sophisticated than that and keep layers of thought going simultaneously. Be careful.<br />
+</div>
+		<textarea style="display: none;" id="desctxt_16079">I should probably be a little more responsible and provide this info, just in case. I do not have a psionics background, so bear with me.  
+
+When I &quot;reach&quot; out, I do so in different ways. If I just need to get my husband&#039;s attention at the store, or wherever, it is a direct line from me to him. If I am searching for unknowns, whose &quot;ident&quot; is unfamiliar, to not attract unwanted attention, I use another method. It is a bit like a radar (line) that strobes around the surroundings or its like a burst (more diffuse) so that it is not that obvious that I am the one doing it. 
+
+If I do find someone who is capable, and I am not interested in communication, I use the inner voice chatter as a form of shield. I think about what to make for dinner, just stupid everyday stuff. Thinking about a song works well too. The trick is to keep the surface mind occupied and use the other part of your mind for observation, like two threads running at the same time. You can get more sophisticated than that and keep layers of thought going simultaneously. Be careful.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Jarmo</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_16080" style="width: 100%; overflow: auto; min-height: 125px;">Well, at first, everything what comes to ones supernatural powers are related a) lives prior to this one or b) spiritual evolution and development of him/her. If chakra system is more or less familiar to you, everything that is related to clairvoyance and telepathy etc. are on level of third eye (Ajna Cákra), and if it is balanced and opened, then one might easily &quot;hear&quot; others thoughts and like you said, may easily &quot;ping&quot; them. Couple of years (and once again couple of months ago) I was pretty much interested in Ajna, and I wanted to develop it pretty much. I found out, that I&#039;m not ready for energy on that level before I have mastered on levels below this one. One may get some paranormal powers just accidentally, but to master in it you have to be very conscious. If this Ajna is enough powerful one may even tell or command others to do what ever he/she likes, but hey, that&#039;s nasty and that isn&#039;t something one should learn. Why? Because you get tons of Karma from every bad similar thing you do, and it will lead to your own destiny.</div>
+		<textarea style="display: none;" id="desctxt_16080">Well, at first, everything what comes to ones supernatural powers are related a) lives prior to this one or b) spiritual evolution and development of him/her. If chakra system is more or less familiar to you, everything that is related to clairvoyance and telepathy etc. are on level of third eye (Ajna Cákra), and if it is balanced and opened, then one might easily &quot;hear&quot; others thoughts and like you said, may easily &quot;ping&quot; them. Couple of years (and once again couple of months ago) I was pretty much interested in Ajna, and I wanted to develop it pretty much. I found out, that I&#039;m not ready for energy on that level before I have mastered on levels below this one. One may get some paranormal powers just accidentally, but to master in it you have to be very conscious. If this Ajna is enough powerful one may even tell or command others to do what ever he/she likes, but hey, that&#039;s nasty and that isn&#039;t something one should learn. Why? Because you get tons of Karma from every bad similar thing you do, and it will lead to your own destiny.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Trick</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=744&amp;ref=1221873234" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_16081" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Jarmo:</em><br />
+Well, at first, everything what comes to ones supernatural powers are related a) lives prior to this one or b) spiritual evolution and development of him/her. If chakra system is more or less familiar to you, everything that is related to clairvoyance and telepathy etc. are on level of third eye (Ajna Cákra), and if it is balanced and opened, then one might easily &quot;hear&quot; others thoughts and like you said, may easily &quot;ping&quot; them. Couple of years (and once again couple of months ago) I was pretty much interested in Ajna, and I wanted to develop it pretty much. I found out, that I&#039;m not ready for energy on that level before I have mastered on levels below this one. One may get some paranormal powers just accidentally, but to master in it you have to be very conscious. If this Ajna is enough powerful one may even tell or command others to do what ever he/she likes, but hey, that&#039;s nasty and that isn&#039;t something one should learn. Why? Because you get tons of Karma from every bad similar thing you do, and it will lead to your own destiny.</div>Thats a lot to claim as a fact..What led you to believe that?<br />
+<br />
+</div>
+		<textarea style="display: none;" id="desctxt_16081">[quote][i]posted by Jarmo:[/i]
+Well, at first, everything what comes to ones supernatural powers are related a) lives prior to this one or b) spiritual evolution and development of him/her. If chakra system is more or less familiar to you, everything that is related to clairvoyance and telepathy etc. are on level of third eye (Ajna Cákra), and if it is balanced and opened, then one might easily &quot;hear&quot; others thoughts and like you said, may easily &quot;ping&quot; them. Couple of years (and once again couple of months ago) I was pretty much interested in Ajna, and I wanted to develop it pretty much. I found out, that I&#039;m not ready for energy on that level before I have mastered on levels below this one. One may get some paranormal powers just accidentally, but to master in it you have to be very conscious. If this Ajna is enough powerful one may even tell or command others to do what ever he/she likes, but hey, that&#039;s nasty and that isn&#039;t something one should learn. Why? Because you get tons of Karma from every bad similar thing you do, and it will lead to your own destiny.[/quote]
+
+Thats a lot to claim as a fact..What led you to believe that?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">SL</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_16083" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Jarmo:</em><br />
+Well, at first, everything what comes to ones supernatural powers are related a) lives prior to this one or b) spiritual evolution and development of him/her.</div>First, a) not necessarily, and b) not really. I don&#039;t buy into the christian work ethic, fair world hypothesis. Some people just &quot;get it&quot;, and it&#039;s easy. It is more a process of accepting a separate set of perceptions as valid and functional. I would go so far as to say that everyone can activate them, and sometimes it is not even a choice. <br />
+<br />
+I think Robert Bruce&#039;s concept of parallel memory streams comes close to explain the phenomenon of telepathy and clairvoyance. We strive to be consistent to a flaw and ignore the perceptions that seem weaker, less reliable in favor of our regular senses. The part that controls the flow of perceptions are mostly subconscious, but can be influenced. The trick is to be able to observe and accept simultaneous perceptions at the same time and to get used to using these &#039;other&#039; senses. <br />
+<br />
+The other point is that most people expect to &quot;see, hear, feel&quot; something just as you would with your normal senses. Sometimes this does happen, that an impression is so increadibly strong that the esp flood into your normal perceptions and you actually see an apparition, for example. More often it is a sense of knowing than actually perceiving. Rather than &quot;hearing&quot; someone&#039;s thoughts, a more accurate description would be &quot;knowing&quot; someone&#039;s thoughts.<br />
+<br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;">If chakra system is more or less familiar to you, everything that is related to clairvoyance and telepathy etc. are on level of third eye (Ajna Cákra), and if it is balanced and opened, then one might easily &quot;hear&quot; others thoughts and like you said, may easily &quot;ping&quot; them.</div>I don&#039;t really know what to make out of chakras; I have not found the idea to be that useful. To me the &quot;source&quot; of perception changes. The few times I have been out of my body, for example, I perceive with all that is me at the time, like a cloud. There is no sense of a particular perception center. I have experienced bi-location (duality), tri-location, 360 degree/sphere view, and vision screen - not much of this had to do with a third eye as much as it was me perceiving something outside the boundaries of the physical body.<br />
+<br />
+I think if someone tends to focus on a particular area of the body, it is more a sense of convenience and habit than anything else. I believe these other senses have no direct corresponding source of anything within our physical bodies.<br />
+<br />
+I am still trying to figure out why some are more able than others. I doubt that it is spiritual development. I would put my money on natural ability. By natural ability, I don&#039;t mean someone who started out as a toddler, but someone who has that inside and this something can be triggered should it be necessary. Just like feeling a hunch and avoiding that plane trip, and the plane crashes.<br />
+<br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;">Couple of years (and once again couple of months ago) I was pretty much interested in Ajna, and I wanted to develop it pretty much. I found out, that I&#039;m not ready for energy on that level before I have mastered on levels below this one.</div>Sounds like someone gave you a B.S. trip. If you are interested, and want to do it, you should be able to. I have read tons about Kundalini gone wrong and people loosing it in response to increased number of perceptions. I think the only real roadblock is to be able to cope with the weirdness. It takes a certain personality to be able to deal with the real world and the world in which telepathy and psi is possible. Once those doors open, it takes a stupendous amount of self-delusion to close them again. <br />
+<br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;">One may get some paranormal powers just accidentally, but to master in it you have to be very conscious. If this Ajna is enough powerful one may even tell or command others to do what ever he/she likes, but hey, that&#039;s nasty and that isn&#039;t something one should learn. Why? Because you get tons of Karma from every bad similar thing you do, and it will lead to your own destiny.</div>I agree on the first part here, I would say that to master it, you need to master yourself first. If you don&#039;t control your mind, someone else would be very willing to do it for you. There are tons of things I could say about control, but think I will leave those odd tidbits for other posts. <br />
+<br />
+What I will say though, is that it is no more bad ju-ju to control someone through esp than it is through any other means of persuasion. Let&#039;s say that you manage to get someone to jump off a cliff, through normal means of cruelty. Does that make it any less bad than if you used other means? Nope. Bad is bad. It is that simple. The scary part is that most people don&#039;t do bad things out of lack of opportunity and/or fear of punishment - in other words, people do the right thing but for all of the wrong reasons.<br />
+<br />
+My post was not about controlling someone&#039;s mind, but the perception that you have of someone&#039;s appearance. You think, &quot;that is a very tall person,&quot; and the person appears to become taller - as you are observing him/her. <br />
+<br />
+I have only had one experience where I have done this, and someone else saw the same thing, as it was happening, and became aware of what I was doing. I don&#039;t know if this other person was seeing what I was seeing through some form of telepathy. Was I controlling anyone? Was I controlling both of them? If so, how? If I can make someone see what I see, that is in itself a form of manipulation. <br />
+<br />
+Is this form of manipulation the wrong thing to do? Perhaps. I don&#039;t know. I see it as a learning experience. I don&#039;t like to cause anyone discomfort and if I notice that someone is affected emotionally, I stop. I still don&#039;t know if this is in any way harmful, to anyone involved. <br />
+<br />
+I don&#039;t believe in Karma.<br />
+</div>
+		<textarea style="display: none;" id="desctxt_16083">[quote][i]posted by Jarmo:[/i]
+Well, at first, everything what comes to ones supernatural powers are related a) lives prior to this one or b) spiritual evolution and development of him/her.[/quote]
+
+First, a) not necessarily, and b) not really. I don&#039;t buy into the christian work ethic, fair world hypothesis. Some people just &quot;get it&quot;, and it&#039;s easy. It is more a process of accepting a separate set of perceptions as valid and functional. I would go so far as to say that everyone can activate them, and sometimes it is not even a choice. 
+
+I think Robert Bruce&#039;s concept of parallel memory streams comes close to explain the phenomenon of telepathy and clairvoyance. We strive to be consistent to a flaw and ignore the perceptions that seem weaker, less reliable in favor of our regular senses. The part that controls the flow of perceptions are mostly subconscious, but can be influenced. The trick is to be able to observe and accept simultaneous perceptions at the same time and to get used to using these &#039;other&#039; senses. 
+
+The other point is that most people expect to &quot;see, hear, feel&quot; something just as you would with your normal senses. Sometimes this does happen, that an impression is so increadibly strong that the esp flood into your normal perceptions and you actually see an apparition, for example. More often it is a sense of knowing than actually perceiving. Rather than &quot;hearing&quot; someone&#039;s thoughts, a more accurate description would be &quot;knowing&quot; someone&#039;s thoughts.
+
+[quote]If chakra system is more or less familiar to you, everything that is related to clairvoyance and telepathy etc. are on level of third eye (Ajna Cákra), and if it is balanced and opened, then one might easily &quot;hear&quot; others thoughts and like you said, may easily &quot;ping&quot; them.[/quote]
+
+I don&#039;t really know what to make out of chakras; I have not found the idea to be that useful. To me the &quot;source&quot; of perception changes. The few times I have been out of my body, for example, I perceive with all that is me at the time, like a cloud. There is no sense of a particular perception center. I have experienced bi-location (duality), tri-location, 360 degree/sphere view, and vision screen - not much of this had to do with a third eye as much as it was me perceiving something outside the boundaries of the physical body.
+
+I think if someone tends to focus on a particular area of the body, it is more a sense of convenience and habit than anything else. I believe these other senses have no direct corresponding source of anything within our physical bodies.
+
+I am still trying to figure out why some are more able than others. I doubt that it is spiritual development. I would put my money on natural ability. By natural ability, I don&#039;t mean someone who started out as a toddler, but someone who has that inside and this something can be triggered should it be necessary. Just like feeling a hunch and avoiding that plane trip, and the plane crashes.
+
+[quote] Couple of years (and once again couple of months ago) I was pretty much interested in Ajna, and I wanted to develop it pretty much. I found out, that I&#039;m not ready for energy on that level before I have mastered on levels below this one.[/quote]
+
+Sounds like someone gave you a B.S. trip. If you are interested, and want to do it, you should be able to. I have read tons about Kundalini gone wrong and people loosing it in response to increased number of perceptions. I think the only real roadblock is to be able to cope with the weirdness. It takes a certain personality to be able to deal with the real world and the world in which telepathy and psi is possible. Once those doors open, it takes a stupendous amount of self-delusion to close them again. 
+
+[quote]One may get some paranormal powers just accidentally, but to master in it you have to be very conscious. If this Ajna is enough powerful one may even tell or command others to do what ever he/she likes, but hey, that&#039;s nasty and that isn&#039;t something one should learn. Why? Because you get tons of Karma from every bad similar thing you do, and it will lead to your own destiny.[/quote]
+
+I agree on the first part here, I would say that to master it, you need to master yourself first. If you don&#039;t control your mind, someone else would be very willing to do it for you. There are tons of things I could say about control, but think I will leave those odd tidbits for other posts. 
+
+What I will say though, is that it is no more bad ju-ju to control someone through esp than it is through any other means of persuasion. Let&#039;s say that you manage to get someone to jump off a cliff, through normal means of cruelty. Does that make it any less bad than if you used other means? Nope. Bad is bad. It is that simple. The scary part is that most people don&#039;t do bad things out of lack of opportunity and/or fear of punishment - in other words, people do the right thing but for all of the wrong reasons.
+
+My post was not about controlling someone&#039;s mind, but the perception that you have of someone&#039;s appearance. You think, &quot;that is a very tall person,&quot; and the person appears to become taller - as you are observing him/her. 
+
+I have only had one experience where I have done this, and someone else saw the same thing, as it was happening, and became aware of what I was doing. I don&#039;t know if this other person was seeing what I was seeing through some form of telepathy. Was I controlling anyone? Was I controlling both of them? If so, how? If I can make someone see what I see, that is in itself a form of manipulation. 
+
+Is this form of manipulation the wrong thing to do? Perhaps. I don&#039;t know. I see it as a learning experience. I don&#039;t like to cause anyone discomfort and if I notice that someone is affected emotionally, I stop. I still don&#039;t know if this is in any way harmful, to anyone involved. 
+
+I don&#039;t believe in Karma.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">f3licks</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=848&amp;ref=1227833859" width="125" height="78" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_16092" style="width: 100%; overflow: auto; min-height: 125px;">Now that I think about it, I seem to do this to other people&#039;s perceptions of me.<br />
+<br />
+I used to be very short for my age. Now, I&#039;m above average height, but I still think of myself as short, and people pick up on this. Many people are surprised to find that I&#039;m as tall or taller than them.</div>
+		<textarea style="display: none;" id="desctxt_16092">Now that I think about it, I seem to do this to other people&#039;s perceptions of me.
+
+I used to be very short for my age. Now, I&#039;m above average height, but I still think of myself as short, and people pick up on this. Many people are surprised to find that I&#039;m as tall or taller than them.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">SL</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_16094" style="width: 100%; overflow: auto; min-height: 125px;">@felicks: It is possible that we all do this to some extent. <br />
+<br />
+Some days I feel self-confident and it shows, I look like a million bucks; other days I feel like I crawled out from under a rock, and people react accordingly (eeek!).<br />
+<br />
+I wonder just how much of that perception of ourselves and of others are influenced by thoughts. There are tons of studies about memory, recall, and eyewitness reports that outline just how messed up and unreliable perceptions really are. But, I have not seen anything yet (academic anyway) about immediate adjustment in which a person would seem to actually be changing his/her appearance. <br />
+<br />
+It would seem easier to manipulate someone&#039;s appearance (even if it is just my perceptions of their appearance) than to manipulate a static object (or my perceptions of an object). I have not really studied this in detail, mostly because it makes me nervous (if I take it too far, would my mind be able to cope?). <br />
+<br />
+I wonder, though, if I can change my perceptions of certain individuals, to some extent, what are the limits? Could I imagine that this person levitates, and then see the person float up into the air? Would the person experience a feeling of floating and get dizzy? Or, actually perceive him/herself levitate? Would other people see the person levitate? Btw, are there any psi articles on this topic?<br />
+<br />
+I just started reading some books by, and edited by, Charles T. Tart: States of Consciousness, and Altered States of Consciousness, perhaps I can find something mentioned about this there. (Dr. Tart and his peers did a lot of experimentation with drugs. - I don&#039;t do drugs, btw. I don&#039;t even smoke cigarettes. An occasional glass of wine, continually over-caffinated, but no drugs.) I have also been reading a lot of Castaneda lately, and in his books, shape shifting is mentioned quite often. I don&#039;t know what to make of Castaneda though. <br />
+</div>
+		<textarea style="display: none;" id="desctxt_16094">@felicks: It is possible that we all do this to some extent. 
+
+Some days I feel self-confident and it shows, I look like a million bucks; other days I feel like I crawled out from under a rock, and people react accordingly (eeek!).
+
+I wonder just how much of that perception of ourselves and of others are influenced by thoughts. There are tons of studies about memory, recall, and eyewitness reports that outline just how messed up and unreliable perceptions really are. But, I have not seen anything yet (academic anyway) about immediate adjustment in which a person would seem to actually be changing his/her appearance. 
+
+It would seem easier to manipulate someone&#039;s appearance (even if it is just my perceptions of their appearance) than to manipulate a static object (or my perceptions of an object). I have not really studied this in detail, mostly because it makes me nervous (if I take it too far, would my mind be able to cope?). 
+
+I wonder, though, if I can change my perceptions of certain individuals, to some extent, what are the limits? Could I imagine that this person levitates, and then see the person float up into the air? Would the person experience a feeling of floating and get dizzy? Or, actually perceive him/herself levitate? Would other people see the person levitate? Btw, are there any psi articles on this topic?
+
+I just started reading some books by, and edited by, Charles T. Tart: States of Consciousness, and Altered States of Consciousness, perhaps I can find something mentioned about this there. (Dr. Tart and his peers did a lot of experimentation with drugs. - I don&#039;t do drugs, btw. I don&#039;t even smoke cigarettes. An occasional glass of wine, continually over-caffinated, but no drugs.) I have also been reading a lot of Castaneda lately, and in his books, shape shifting is mentioned quite often. I don&#039;t know what to make of Castaneda though.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Jarmo</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_16108" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Trick:</em><br />
+Thats a lot to claim as a fact..What led you to believe that?</div>Nothing made me &quot;believe&quot;, I&#039;ve just gotten experiences in those fields and the more you experience the more you may say what is right and what isn&#039;t. There are few very great spiritual masters around the globe which may when ever prove those things for the one who is ready for such a information. Until then one&#039;s ego just refuses to believe in these things. Just be open to everything, and one day you may notice that things just start to &quot;click&quot; on their places.<br />
+<br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by SL:</em><br />
+Sounds like someone gave you a B.S. trip.</div>And where exactly I said someone told me this? I&#039;ve experienced everything by myself which I&#039;ve told here and that&#039;s the end of the discussion. :) Most of ppl here just claim to have experiences and when you ask from them about their experiences they suddenly don&#039;t have any. <br />
+<br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;">..Once those doors open, it takes a stupendous amount of self-delusion to close them again.</div>Well actually, it doesn&#039;t take more than 1 month of non-practice and you&#039;re back in the basics. It&#039;s like in everything else too, if you don&#039;t do things, you wont succeed in them. And when it comes to case of mind/brain (which is usually in about 5-7 usage of ordinary human being) it needs a LOT more attention than for example your muscles. So, to close them, you don&#039;t have to do anything. To open them, you have to do a lot.<br />
+<br />
+It&#039;s not easy area to discuss, because likewise said almost no-one has real experiences in it, and those who have just keep their mouth shut. The others who keep loud noise about their skills are nothing more than expressing their ego. And this is easy way to start wars ;)</div>
+		<textarea style="display: none;" id="desctxt_16108">[quote][i]posted by Trick:[/i]
+Thats a lot to claim as a fact..What led you to believe that?[/quote]
+Nothing made me &quot;believe&quot;, I&#039;ve just gotten experiences in those fields and the more you experience the more you may say what is right and what isn&#039;t. There are few very great spiritual masters around the globe which may when ever prove those things for the one who is ready for such a information. Until then one&#039;s ego just refuses to believe in these things. Just be open to everything, and one day you may notice that things just start to &quot;click&quot; on their places.
+
+[quote][i]posted by SL:[/i]
+Sounds like someone gave you a B.S. trip.
+[/quote]
+And where exactly I said someone told me this? I&#039;ve experienced everything by myself which I&#039;ve told here and that&#039;s the end of the discussion. :) Most of ppl here just claim to have experiences and when you ask from them about their experiences they suddenly don&#039;t have any. 
+
+[quote]..Once those doors open, it takes a stupendous amount of self-delusion to close them again. [/quote]
+Well actually, it doesn&#039;t take more than 1 month of non-practice and you&#039;re back in the basics. It&#039;s like in everything else too, if you don&#039;t do things, you wont succeed in them. And when it comes to case of mind/brain (which is usually in about 5-7 usage of ordinary human being) it needs a LOT more attention than for example your muscles. So, to close them, you don&#039;t have to do anything. To open them, you have to do a lot.
+
+It&#039;s not easy area to discuss, because likewise said almost no-one has real experiences in it, and those who have just keep their mouth shut. The others who keep loud noise about their skills are nothing more than expressing their ego. And this is easy way to start wars ;)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Jarmo, 3 years ago<br />Posted 3 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">SL</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_16112" style="width: 100%; overflow: auto; min-height: 125px;">@Jarmo: what I meant by B.S. was that it sounded as if someone tried to impose limitations on what you can or cannot do. Was that comment about experiences directed at me? The non-practice does not seem to affect me. What does 5-7 usage refer to? Just curious.<br />
+</div>
+		<textarea style="display: none;" id="desctxt_16112">@Jarmo: what I meant by B.S. was that it sounded as if someone tried to impose limitations on what you can or cannot do. Was that comment about experiences directed at me? The non-practice does not seem to affect me. What does 5-7 usage refer to? Just curious.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">SL</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_16113" style="width: 100%; overflow: auto; min-height: 125px;">That last post I wrote was not very thoughtful. I was heading out the door to watch that new movie, the men who stares at goats (which was good, btw). <br />
+<br />
+@Jermo: <br />
+<br />
+I think that a time limit, or the notion that it is necessary to have to do something x times, or x years, is a typical mental hangup that a lot of people have. I used to think the same way. It is a common trick in hypnosis and self-hypnosis and has something to do with subconscious agreement of personal change. <br />
+<br />
+A time limit, in terms of psi/spiritual development, is probably not necessary. The whole concept is an artificial construct, you set a duration for yourself that you figure would be normal until you can do something that is, well, not so normal. [I&#039;m not trying to be snotty here, but to relay information].<br />
+<br />
+I changed my mind about the &quot;practice makes perfect&quot; concept when, out of desperation, I had to try something different: I knew that I would know a topic in the future that would solve a problem I had in the present. I formulated questions in my head, and received answers - from myself. What I came to realize, afterwards, was that the part of me that &quot;knows&quot; is not limited by time to the same extent as the me-here-writing might be. <br />
+<br />
+True, this is not easy topic to discuss. I really have to fight with myself everytime I post here. Then, I have to make sure I don&#039;t go back and delete everything I have written. I keep thinking whatever piece of the puzzle I have seen might be useful to someone else and that I might learn something new, so, I return. Not all loud-mouths are fakers (I hope). <br />
+<br />
+Besides, I&#039;m a newbie in psionics. I have not made any wild claims, have I? The stuff I have written so far is relatively mild. Right?<br />
+<br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;">And this is easy way to start wars ;)</div>There will always be war.<br />
+<br />
+About egos, I think I have learned more about this concept lately through a great book that you might like: The art of stalking parallel perception by Lujan Matus. It has a different view of the egos (and inorganic beings) than Castaneda provided.<br />
+<br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;">Most of ppl here just claim to have experiences and when you ask from them about their experiences they suddenly don&#039;t have any.</div>If you are curious, ask away. I am certain that there are a lot of people here who would like to share their experiences. I think in the case of telepathy, though, the reason why most people don&#039;t share (and, I&#039;m only guessing) is because telepathy often involves another person. It is one thing to share personal experience, and another to share an experience that you had with someone else.<br />
+<br />
+So, back to the original questions: <br />
+<br />
+- Has anyone here perceived this &quot;variability&quot;? <br />
+- Has anyone here found that some people are more able than others to receive and send information? If so, have you found anything to be &quot;different&quot; about these people?<br />
+- During pinging (searching) do you protect your anonymity?<br />
+- If someone does react, what do you do then? Any advice? <br />
+<br />
+Why should anyone care about this? Because IF this can be done, perhaps regular shielding has a flaw, and it might make it easier to detect telepaths this way. I thought it would be relevant to bring it up. <br />
+</div>
+		<textarea style="display: none;" id="desctxt_16113">That last post I wrote was not very thoughtful. I was heading out the door to watch that new movie, the men who stares at goats (which was good, btw). 
+
+@Jermo: 
+
+I think that a time limit, or the notion that it is necessary to have to do something x times, or x years, is a typical mental hangup that a lot of people have. I used to think the same way. It is a common trick in hypnosis and self-hypnosis and has something to do with subconscious agreement of personal change. 
+
+A time limit, in terms of psi/spiritual development, is probably not necessary. The whole concept is an artificial construct, you set a duration for yourself that you figure would be normal until you can do something that is, well, not so normal. [I&#039;m not trying to be snotty here, but to relay information].
+
+I changed my mind about the &quot;practice makes perfect&quot; concept when, out of desperation, I had to try something different: I knew that I would know a topic in the future that would solve a problem I had in the present. I formulated questions in my head, and received answers - from myself. What I came to realize, afterwards, was that the part of me that &quot;knows&quot; is not limited by time to the same extent as the me-here-writing might be. 
+
+True, this is not easy topic to discuss. I really have to fight with myself everytime I post here. Then, I have to make sure I don&#039;t go back and delete everything I have written. I keep thinking whatever piece of the puzzle I have seen might be useful to someone else and that I might learn something new, so, I return. Not all loud-mouths are fakers (I hope). 
+
+Besides, I&#039;m a newbie in psionics. I have not made any wild claims, have I? The stuff I have written so far is relatively mild. Right?
+
+[quote]And this is easy way to start wars ;)[/quote]
+There will always be war.
+
+About egos, I think I have learned more about this concept lately through a great book that you might like: The art of stalking parallel perception by Lujan Matus. It has a different view of the egos (and inorganic beings) than Castaneda provided.
+
+[quote]Most of ppl here just claim to have experiences and when you ask from them about their experiences they suddenly don&#039;t have any. [/quote]
+
+If you are curious, ask away. I am certain that there are a lot of people here who would like to share their experiences. I think in the case of telepathy, though, the reason why most people don&#039;t share (and, I&#039;m only guessing) is because telepathy often involves another person. It is one thing to share personal experience, and another to share an experience that you had with someone else.
+
+So, back to the original questions: 
+
+- Has anyone here perceived this &quot;variability&quot;? 
+- Has anyone here found that some people are more able than others to receive and send information? If so, have you found anything to be &quot;different&quot; about these people?
+- During pinging (searching) do you protect your anonymity?
+- If someone does react, what do you do then? Any advice? 
+
+Why should anyone care about this? Because IF this can be done, perhaps regular shielding has a flaw, and it might make it easier to detect telepaths this way. I thought it would be relevant to bring it up.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Jarmo</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_16115" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by SL:</em><br />
+@Jarmo: what I meant by B.S. was that it sounded as if someone tried to impose limitations on what you can or cannot do. Was that comment about experiences directed at me? The non-practice does not seem to affect me. What does 5-7 usage refer to? Just curious.</div>5-7% means the capability to use human beings brains, it&#039;s the usual rate of usage.<br />
+<br />
+Well, okay. The physical body which &quot;I&quot; (meaning soul) has, has it&#039;s limitations and it needs it time to heal and reconstruct after a damage or practical session. That what is behind physical body actually doesn&#039;t have any limitations, and this might be the thing you&#039;ve found out.<br />
+<br />
+What comes to ego, I suggest personally some spiritual (real spiritual I mean) path, like classical yoga (not that BS they teach in every corner, but something that has been studied for thousands of years). Those schools are not easy to find, but if one is ready for such a information then he will be guided to perfect place :)<br />
+</div>
+		<textarea style="display: none;" id="desctxt_16115">[quote][i]posted by SL:[/i]
+@Jarmo: what I meant by B.S. was that it sounded as if someone tried to impose limitations on what you can or cannot do. Was that comment about experiences directed at me? The non-practice does not seem to affect me. What does 5-7 usage refer to? Just curious.[/quote]
+5-7% means the capability to use human beings brains, it&#039;s the usual rate of usage.
+
+Well, okay. The physical body which &quot;I&quot; (meaning soul) has, has it&#039;s limitations and it needs it time to heal and reconstruct after a damage or practical session. That what is behind physical body actually doesn&#039;t have any limitations, and this might be the thing you&#039;ve found out.
+
+What comes to ego, I suggest personally some spiritual (real spiritual I mean) path, like classical yoga (not that BS they teach in every corner, but something that has been studied for thousands of years). Those schools are not easy to find, but if one is ready for such a information then he will be guided to perfect place :)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">SL</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_16116" style="width: 100%; overflow: auto; min-height: 125px;">@Jarmo: Thanks for the clarification, Jarmo. I will look into yoga and see what I can find.</div>
+		<textarea style="display: none;" id="desctxt_16116">@Jarmo: Thanks for the clarification, Jarmo. I will look into yoga and see what I can find.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">f3licks</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=848&amp;ref=1227833859" width="125" height="78" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_16117" style="width: 100%; overflow: auto; min-height: 125px;">@Jarmo<br />
+<br />
+OK, just to be clear, humans use ALL of their brains.</div>
+		<textarea style="display: none;" id="desctxt_16117">@Jarmo
+
+OK, just to be clear, humans use ALL of their brains.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">SL</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_16118" style="width: 100%; overflow: auto; min-height: 125px;">@Felicks: By thanking Jarmo for the clarification, I meant his answer that told me what the 5-7% meant to him. <br />
+<br />
+The % use of total brain capacity is supposedly a myth, but it is one of those concepts that just seem right. I definitely do not pay attention or think as clearly as I wish I would, and think I could. <br />
+<br />
+Just because there is no scientific evidence for how much of an individual&#039;s intellectual potential is being exercised/used at any given moment that does not mean that such a measurement might become available one day. <br />
+<br />
+Perhaps, some day I will have a personal implant that kept track of productive thought, emotions of successful outcomes, and was able to stimulate the brain in just the right way to produce suffucient motivation to continue being productive (good human, pat, pat).<br />
+<br />
+@Jarmo: When I mentioned the rate of thinking I was referring to the speed of thought. One explanation (there are several) I have received as to how telepaths establish connections with one another is that they mutually adjust the rate of thought until they match. <br />
+<br />
+For example, if you have three cups of coffee and are discussing an interesting topic you are likely to think differently, and in a different rate, than if you were standing in line at the local grocery store after a long day at work.</div>
+		<textarea style="display: none;" id="desctxt_16118">@Felicks: By thanking Jarmo for the clarification, I meant his answer that told me what the 5-7% meant to him. 
+
+The % use of total brain capacity is supposedly a myth, but it is one of those concepts that just seem right. I definitely do not pay attention or think as clearly as I wish I would, and think I could. 
+
+Just because there is no scientific evidence for how much of an individual&#039;s intellectual potential is being exercised/used at any given moment that does not mean that such a measurement might become available one day. 
+
+Perhaps, some day I will have a personal implant that kept track of productive thought, emotions of successful outcomes, and was able to stimulate the brain in just the right way to produce suffucient motivation to continue being productive (good human, pat, pat).
+
+@Jarmo: When I mentioned the rate of thinking I was referring to the speed of thought. One explanation (there are several) I have received as to how telepaths establish connections with one another is that they mutually adjust the rate of thought until they match. 
+
+For example, if you have three cups of coffee and are discussing an interesting topic you are likely to think differently, and in a different rate, than if you were standing in line at the local grocery store after a long day at work.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by SL, 3 years ago<br />Posted 3 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Jarmo</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_16126" style="width: 100%; overflow: auto; min-height: 125px;">Human beings are not using more than 10% of their brain capacity, that&#039;s easy to prove by simple measurement of brain activity. Only certain parts of brains are activated in certain situations. Autist people are using their brains on level of 80-90%, and they&#039;re not even having a possibility to wear shoes or tie their racks.<br />
+<br />
+What comes to yoga, you won&#039;t find anything from internet that would be valid info (or even if it is, you may not be the one to tell which is right and which isn&#039;t). I could find some info for you if more interested when I have some sparetime.</div>
+		<textarea style="display: none;" id="desctxt_16126">Human beings are not using more than 10% of their brain capacity, that&#039;s easy to prove by simple measurement of brain activity. Only certain parts of brains are activated in certain situations. Autist people are using their brains on level of 80-90%, and they&#039;re not even having a possibility to wear shoes or tie their racks.
+
+What comes to yoga, you won&#039;t find anything from internet that would be valid info (or even if it is, you may not be the one to tell which is right and which isn&#039;t). I could find some info for you if more interested when I have some sparetime.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">SL</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_16128" style="width: 100%; overflow: auto; min-height: 125px;">@Jarmo: Yes please :) I am a bit of an omnivore when it comes to information. There seems to be pieces of usefulness in most practices. If you&#039;d like, you can send it to one of my email addresses: dustdevildervish &#039;at&#039; gmail.com.</div>
+		<textarea style="display: none;" id="desctxt_16128">@Jarmo: Yes please :) I am a bit of an omnivore when it comes to information. There seems to be pieces of usefulness in most practices. If you&#039;d like, you can send it to one of my email addresses: dustdevildervish &#039;at&#039; gmail.com.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=890" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 36 queries. 0.325 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

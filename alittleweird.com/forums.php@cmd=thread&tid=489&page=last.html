@@ -1,0 +1,396 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Black Ball</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Black Ball</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Black Ball</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Jeffrey Awesome!</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=283&amp;ref=1213976987" width="116" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10434" style="width: 100%; overflow: auto; min-height: 125px;">So, my friend had sent me a picture which my other friend had taken while he stay&#039;d at some place... I forget the name. It was on Ghost Hunters. The East Penn-something. I&#039;m not sure...<br />
+<br />
+Well, the point is, he showed me this picture, and I will as well. <br />
+<br />
+<img src="http://img77.imageshack.us/img77/1359/copyofp1071376gl8.jpg" alt="External Image" /><br />
+<br />
+Do you see anything odd or out of place?<br />
+<br />
+Well, if you&#039;re like me and didn&#039;t see anything besides a creepy picture, I&#039;ll tell you.<br />
+<br />
+<br />
+...Look at right. On the floor. You see that black ball?<br />
+<br />
+Good. Because you shouldn&#039;t.<br />
+<br />
+<br />
+<br />
+That wasn&#039;t there originally. My friend said he went back when he saw that in the picture and it wasn&#039;t there.<br />
+<br />
+So, any thoughts?</div>
+		<textarea style="display: none;" id="desctxt_10434">So, my friend had sent me a picture which my other friend had taken while he stay&#039;d at some place... I forget the name. It was on Ghost Hunters. The East Penn-something. I&#039;m not sure...
+
+Well, the point is, he showed me this picture, and I will as well. 
+
+[IMG]http://img77.imageshack.us/img77/1359/copyofp1071376gl8.jpg[/IMG]
+
+Do you see anything odd or out of place?
+
+Well, if you&#039;re like me and didn&#039;t see anything besides a creepy picture, I&#039;ll tell you.
+
+
+...Look at right. On the floor. You see that black ball?
+
+Good. Because you shouldn&#039;t.
+
+
+
+That wasn&#039;t there originally. My friend said he went back when he saw that in the picture and it wasn&#039;t there.
+
+So, any thoughts?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Jeffrey Awesome!, 4 years, 5 months ago<br />Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">forcemaster245</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=646&amp;ref=1222058247" width="125" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10437" style="width: 100%; overflow: auto; min-height: 125px;">sounds strange, maybe your friend should try taking a picture of that place with an infrared camera.<br />
+<br />
+anyway the place in the picture doesn&#039;t seem creepy to me, just worn out. Or maybe it&#039;s the lighting?</div>
+		<textarea style="display: none;" id="desctxt_10437">sounds strange, maybe your friend should try taking a picture of that place with an infrared camera.
+
+anyway the place in the picture doesn&#039;t seem creepy to me, just worn out. Or maybe it&#039;s the lighting?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Waldo</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=471&amp;ref=1208009607" width="84" height="108" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10438" style="width: 100%; overflow: auto; min-height: 125px;">I know this is probably an obvious question, but what sort of camera did he take the photo with? Don&#039;t mean to sound sceptical (I&#039;m not, really), but it&#039;s always a good idea to look for other explanations before you jump in at the deep end. Could it have been some sort of fault in the camera that caused it?</div>
+		<textarea style="display: none;" id="desctxt_10438">I know this is probably an obvious question, but what sort of camera did he take the photo with? Don&#039;t mean to sound sceptical (I&#039;m not, really), but it&#039;s always a good idea to look for other explanations before you jump in at the deep end. Could it have been some sort of fault in the camera that caused it?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Sean</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=2&amp;ref=1214247941" width="117" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10439" style="width: 100%; overflow: auto; min-height: 125px;">Perhaps a speck of dust on the lens of the camera.<br />
+<br />
+<img src="http://farm3.static.flickr.com/2139/2512581377_0662b29c95.jpg?v=0" alt="External Image" /></div>
+		<textarea style="display: none;" id="desctxt_10439">Perhaps a speck of dust on the lens of the camera.
+
+[img]http://farm3.static.flickr.com/2139/2512581377_0662b29c95.jpg?v=0[/img]</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Sean, 4 years, 5 months ago<br />Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">W</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10444" style="width: 100%; overflow: auto; min-height: 125px;">Is it physical or digital photo? Could be grease(?)(used dictionary, could be wrong :P) stain(?)... I&#039;m just saying because I see the same on my shirt :D </div>
+		<textarea style="display: none;" id="desctxt_10444">Is it physical or digital photo? Could be grease(?)(used dictionary, could be wrong :P) stain(?)... I&#039;m just saying because I see the same on my shirt :D</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">NewAgeAlchemist</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=459&amp;ref=1207160982" width="125" height="20" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10446" style="width: 100%; overflow: auto; min-height: 125px;">Perhaps I&#039;m being too literal but I don&#039;t see a black ball.. theres a sphere that matches a tone of the wood. Might be the monitor everyone else uses is darker than mine i suppose.<br />
+<br />
+Well the border is too defined on 3/4s of the sphere to be dust in my opinion. I can&#039;t completely write off water, but if it were a myst type condition it wouldn&#039;t be that round. I&#039;m leaning towards reflection off an object because the color is near that of some of the wood, and its weak border is in the direction of the brightest light source (bottom right of the picture).</div>
+		<textarea style="display: none;" id="desctxt_10446">Perhaps I&#039;m being too literal but I don&#039;t see a black ball.. theres a sphere that matches a tone of the wood. Might be the monitor everyone else uses is darker than mine i suppose.
+
+Well the border is too defined on 3/4s of the sphere to be dust in my opinion. I can&#039;t completely write off water, but if it were a myst type condition it wouldn&#039;t be that round. I&#039;m leaning towards reflection off an object because the color is near that of some of the wood, and its weak border is in the direction of the brightest light source (bottom right of the picture).</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Jeffrey Awesome!</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=283&amp;ref=1213976987" width="116" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10453" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Waldo:</em><br />
+I know this is probably an obvious question, but what sort of camera did he take the photo with? Don&#039;t mean to sound sceptical (I&#039;m not, really), but it&#039;s always a good idea to look for other explanations before you jump in at the deep end. Could it have been some sort of fault in the camera that caused it?</div>Just asked him about it. He recently got the camera for a birthday, so I don&#039;t think that it could be a camera issue.<br />
+<br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Sean:</em><br />
+Perhaps a speck of dust on the lens of the camera.</div>Those things don&#039;t exactly look black and that solid to me. And it appears to be on the ground and that it&#039;s spherical, since one side is being effected by the flash&#039;s light.<br />
+<br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by W:</em><br />
+Is it physical or digital photo? Could be grease(?)(used dictionary, could be wrong :P) stain(?)... I&#039;m just saying because I see the same on my shirt :D</div>I believe it&#039;s digital, because when I received it, I got the name like &quot;PIC72934&quot; or whatever like they get on cameras.</div>
+		<textarea style="display: none;" id="desctxt_10453">[quote][i]posted by Waldo:[/i]
+I know this is probably an obvious question, but what sort of camera did he take the photo with? Don&#039;t mean to sound sceptical (I&#039;m not, really), but it&#039;s always a good idea to look for other explanations before you jump in at the deep end. Could it have been some sort of fault in the camera that caused it?[/quote]
+
+Just asked him about it. He recently got the camera for a birthday, so I don&#039;t think that it could be a camera issue.
+
+[quote][i]posted by Sean:[/i]
+Perhaps a speck of dust on the lens of the camera. [/quote]
+
+Those things don&#039;t exactly look black and that solid to me. And it appears to be on the ground and that it&#039;s spherical, since one side is being effected by the flash&#039;s light.
+
+[quote][i]posted by W:[/i]
+Is it physical or digital photo? Could be grease(?)(used dictionary, could be wrong :P) stain(?)... I&#039;m just saying because I see the same on my shirt :D[/quote]
+
+I believe it&#039;s digital, because when I received it, I got the name like &quot;PIC72934&quot; or whatever like they get on cameras.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">W</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10463" style="width: 100%; overflow: auto; min-height: 125px;">My sister just came back from beach party. Look what I got :P : <br />
+<img src="http://img301.imageshack.us/img301/8442/p7250423nu7.jpg" alt="External Image" /><br />
+I have more of these, this had most bubbles. IMO it&#039;s nothing supernatural.</div>
+		<textarea style="display: none;" id="desctxt_10463">My sister just came back from beach party. Look what I got :P : 
+[img]http://img301.imageshack.us/img301/8442/p7250423nu7.jpg[/img]
+I have more of these, this had most bubbles. IMO it&#039;s nothing supernatural.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">DigGil</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10472" style="width: 100%; overflow: auto; min-height: 125px;">Cool effect!</div>
+		<textarea style="display: none;" id="desctxt_10472">Cool effect!</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">W</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10473" style="width: 100%; overflow: auto; min-height: 125px;">It&#039;s not effect &gt;.&lt; . There were only 4 pictures like this. Light probably.</div>
+		<textarea style="display: none;" id="desctxt_10473">It&#039;s not effect &gt;.&lt; . There were only 4 pictures like this. Light probably.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Waldo</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=471&amp;ref=1208009607" width="84" height="108" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10475" style="width: 100%; overflow: auto; min-height: 125px;">I don&#039;t think he meant effect as in digital effect. I think he meant effect in that it looks awesome when it came out.<br />
+<br />
+I&#039;d go with spray from the sea on the camera. =) It&#039;s pretty though. =)</div>
+		<textarea style="display: none;" id="desctxt_10475">I don&#039;t think he meant effect as in digital effect. I think he meant effect in that it looks awesome when it came out.
+
+I&#039;d go with spray from the sea on the camera. =) It&#039;s pretty though. =)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Antisankari</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=224&amp;ref=1213032338" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10486" style="width: 100%; overflow: auto; min-height: 125px;">Sounds like the &quot;Eastern state penitentiary&quot;?<br />
+<br />
+<br />
+Dat there effect is most likely a mixture of dust, moist and other tiny airborne particles reflecting the light eminated from the camera flash.</div>
+		<textarea style="display: none;" id="desctxt_10486">Sounds like the &quot;Eastern state penitentiary&quot;?
+
+
+Dat there effect is most likely a mixture of dust, moist and other tiny airborne particles reflecting the light eminated from the camera flash.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Antisankari, 4 years, 4 months ago<br />Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">W</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10489" style="width: 100%; overflow: auto; min-height: 125px;">EDIT: Nevermind + did anyone else notice psipog has new skin?</div>
+		<textarea style="display: none;" id="desctxt_10489">EDIT: Nevermind + did anyone else notice psipog has new skin?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by W, 4 years, 4 months ago<br />Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=489" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 29 queries. 0.277 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

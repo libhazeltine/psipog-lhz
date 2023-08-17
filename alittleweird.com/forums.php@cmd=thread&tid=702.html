@@ -1,0 +1,369 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Mindsets</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Mindsets</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Mindsets</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Riven</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=656&amp;ref=1217444530" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13320" style="width: 100%; overflow: auto; min-height: 125px;">I&#039;m interested in what mindsets everyone puts themselves in when they try to do psionics. In particular, I&#039;m interested in predicting stuff, clarivoyance, and minor pk, and any feelings you get when you do those things.<br />
+<br />
+For example, when I occasionally spontaiously predict stuff (I think something and know it will happen), I usually get this warm &quot;whoosh&quot; feeling in my chest to shoulders.<br />
+<br />
+As a side note, when you are trying to predict something in particular, what do you do? All I&#039;ve had real success with is random stuff I&#039;m thinking about.<br />
+<br />
+And last thing- How do you know if you just predicted the future, or influenced it?</div>
+		<textarea style="display: none;" id="desctxt_13320">I&#039;m interested in what mindsets everyone puts themselves in when they try to do psionics. In particular, I&#039;m interested in predicting stuff, clarivoyance, and minor pk, and any feelings you get when you do those things.
+
+For example, when I occasionally spontaiously predict stuff (I think something and know it will happen), I usually get this warm &quot;whoosh&quot; feeling in my chest to shoulders.
+
+As a side note, when you are trying to predict something in particular, what do you do? All I&#039;ve had real success with is random stuff I&#039;m thinking about.
+
+And last thing- How do you know if you just predicted the future, or influenced it?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Psikillion</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=593&amp;ref=1213954510" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13321" style="width: 100%; overflow: auto; min-height: 125px;">Usually I know that I might have predicted the future when I physically see it happening some time later.<br />
+<br />
+Example:<br />
+<br />
+One time I predicted a co-worker of mine was going to go into the kitchen, find out that it is dark and no one is there, and come back saying these things and that he was unable to retrieve something (I don&#039;t remember what). He came back and said everything I predicted he would say. I told him and he was shocked.<br />
+<br />
+I am still a little bit skeptical of it, because I knew where he was going and why because my boss told him what to do, and I just happened to be around.</div>
+		<textarea style="display: none;" id="desctxt_13321">Usually I know that I might have predicted the future when I physically see it happening some time later.
+
+Example:
+
+One time I predicted a co-worker of mine was going to go into the kitchen, find out that it is dark and no one is there, and come back saying these things and that he was unable to retrieve something (I don&#039;t remember what). He came back and said everything I predicted he would say. I told him and he was shocked.
+
+I am still a little bit skeptical of it, because I knew where he was going and why because my boss told him what to do, and I just happened to be around.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Corpse</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=553&amp;ref=1239824741" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13322" style="width: 100%; overflow: auto; min-height: 125px;">I know what you mean, sometimes I just randomly get an odd thought in my head along with this...weird feeling in my chest like I just KNOW what I am thinking WILL happen and then boom a couple of seconds later it does. It kind of feels like...a cool pressure but it almost seems like excitement...<br />
+<br />
+When I am trying to predict something I ask my subconscious. Since it communicates to me in images I try my best to interpret those, usually I go with the first thing they remind me of. <br />
+<br />
+I know if I predicted the future if the images are more vivid than usual. Either that, or I remote viewed something but not necessarily the future. Maybe the past, or the present?<br />
+<br />
+<br />
+<br />
+Anyways, since your interested in perception of the future (I am too) then I would really suggest communicating with your subconscious. I have a current method that&#039;s much different that most people&#039;s and it&#039;s also got a theory behind it. I would say what both are but I feel they are outside the scope of this thread. If you really wish to know, ask away. ;)</div>
+		<textarea style="display: none;" id="desctxt_13322">I know what you mean, sometimes I just randomly get an odd thought in my head along with this...weird feeling in my chest like I just KNOW what I am thinking WILL happen and then boom a couple of seconds later it does. It kind of feels like...a cool pressure but it almost seems like excitement...
+
+When I am trying to predict something I ask my subconscious. Since it communicates to me in images I try my best to interpret those, usually I go with the first thing they remind me of. 
+
+I know if I predicted the future if the images are more vivid than usual. Either that, or I remote viewed something but not necessarily the future. Maybe the past, or the present?
+
+
+
+Anyways, since your interested in perception of the future (I am too) then I would really suggest communicating with your subconscious. I have a current method that&#039;s much different that most people&#039;s and it&#039;s also got a theory behind it. I would say what both are but I feel they are outside the scope of this thread. If you really wish to know, ask away. ;)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Raathuus</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=764&amp;ref=1259211929" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13325" style="width: 100%; overflow: auto; min-height: 125px;">Whenever a bit of precog comes to me, I tend to get a feeling like I&#039;m losing focus through my eyes, followed by the sense of knowing what will happen going through my mind and sometimes strong visualizations.  Yeah, it&#039;s weird.  I feel like I can see everything around me in a sense that I can move past it if I&#039;m moving, but can&#039;t consciously recall what I saw physically, only what I saw in my mind.  It&#039;s like a subconscious auto-pilot so it can tell me something.  I&#039;ve found that I can force it rather than it be spontaneous, but they aren&#039;t as strong when I try to do it myself.</div>
+		<textarea style="display: none;" id="desctxt_13325">Whenever a bit of precog comes to me, I tend to get a feeling like I&#039;m losing focus through my eyes, followed by the sense of knowing what will happen going through my mind and sometimes strong visualizations.  Yeah, it&#039;s weird.  I feel like I can see everything around me in a sense that I can move past it if I&#039;m moving, but can&#039;t consciously recall what I saw physically, only what I saw in my mind.  It&#039;s like a subconscious auto-pilot so it can tell me something.  I&#039;ve found that I can force it rather than it be spontaneous, but they aren&#039;t as strong when I try to do it myself.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Riven</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=656&amp;ref=1217444530" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13327" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Corpse:</em><br />
+Anyways, since your interested in perception of the future (I am too) then I would really suggest communicating with your subconscious. I have a current method that&#039;s much different that most people&#039;s and it&#039;s also got a theory behind it. I would say what both are but I feel they are outside the scope of this thread. If you really wish to know, ask away. ;)</div>K, I&#039;m asking =]<br />
+<br />
+Well, on Friday I got the feeling that in the upcoming bball game, this one girl would get hurt and bust her knee before the first half was over. She did, which is what got me thinking. I don&#039;t really get any pictures other than my imagination (I think). Lucky for me I told someone what I thought, and she thought I was pessimistic and funny.<br />
+<br />
+Do you all usually get more random premonitions for bad stuff? That seems to be the way it is for me.<br />
+<br />
+And to further increase the scope of this thread, what are some theories on the future you all have? Like multiple futures and we pick one, one future and we have to go by it, and of course the loop or whatever that must occur when predicting it.<br />
+<br />
+</div>
+		<textarea style="display: none;" id="desctxt_13327">[quote][i]posted by Corpse:[/i]
+Anyways, since your interested in perception of the future (I am too) then I would really suggest communicating with your subconscious. I have a current method that&#039;s much different that most people&#039;s and it&#039;s also got a theory behind it. I would say what both are but I feel they are outside the scope of this thread. If you really wish to know, ask away. ;)[/quote]
+
+K, I&#039;m asking =]
+
+Well, on Friday I got the feeling that in the upcoming bball game, this one girl would get hurt and bust her knee before the first half was over. She did, which is what got me thinking. I don&#039;t really get any pictures other than my imagination (I think). Lucky for me I told someone what I thought, and she thought I was pessimistic and funny.
+
+Do you all usually get more random premonitions for bad stuff? That seems to be the way it is for me.
+
+And to further increase the scope of this thread, what are some theories on the future you all have? Like multiple futures and we pick one, one future and we have to go by it, and of course the loop or whatever that must occur when predicting it.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Psikillion</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=593&amp;ref=1213954510" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13332" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Riven:</em>Do you all usually get more random premonitions for bad stuff?</div>Not really, unless I am subconsciously glossing them over as something that should be expected.<br />
+<br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Riven:</em>And to further increase the scope of this thread, what are some theories on the future you all have? Like multiple futures and we pick one, one future and we have to go by it, and of course the loop or whatever that must occur when predicting it.</div>The future can be known, if you know everything. Humans by design cannot comprehend everything, but they can comprehend a lot of things so they can predict the future to some degree (even if it is so close to absolute future that it is thought to be absolute future). Your subconscious, being in charge of your bodily functions and absorbing information, is your best source to predict the future.<br />
+<br />
+I have another idea that more based on my perceptions and personal beliefs than the one above, but I think it would not go so well on these forums considering that God plays a central part in it.<br />
+<br />
+pleh...<br />
+</div>
+		<textarea style="display: none;" id="desctxt_13332">[quote][i]posted by Riven:[/i]Do you all usually get more random premonitions for bad stuff?[/quote]
+
+Not really, unless I am subconsciously glossing them over as something that should be expected.
+
+[quote][i]posted by Riven:[/i]And to further increase the scope of this thread, what are some theories on the future you all have? Like multiple futures and we pick one, one future and we have to go by it, and of course the loop or whatever that must occur when predicting it.[/quote]
+
+The future can be known, if you know everything. Humans by design cannot comprehend everything, but they can comprehend a lot of things so they can predict the future to some degree (even if it is so close to absolute future that it is thought to be absolute future). Your subconscious, being in charge of your bodily functions and absorbing information, is your best source to predict the future.
+
+I have another idea that more based on my perceptions and personal beliefs than the one above, but I think it would not go so well on these forums considering that God plays a central part in it.
+
+pleh...</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Riven</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=656&amp;ref=1217444530" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_13333" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Psikillion:</em><br />
+I have another idea that more based on my perceptions and personal beliefs than the one above, but I think it would not go so well on these forums considering that God plays a central part in it.<br />
+<br />
+pleh...</div>Well, religion can be talked about here, and if you still don&#039;t want to talk about it, feel free to email me. <a href="mailto:tekugena667@yahoo">tekugena667@yahoo</a> (add the dot com part)<br />
+<br />
+Same goes for anyone else.</div>
+		<textarea style="display: none;" id="desctxt_13333">[quote][i]posted by Psikillion:[/i]
+I have another idea that more based on my perceptions and personal beliefs than the one above, but I think it would not go so well on these forums considering that God plays a central part in it.
+
+pleh...[/quote]
+
+Well, religion can be talked about here, and if you still don&#039;t want to talk about it, feel free to email me. tekugena667@yahoo (add the dot com part)
+
+Same goes for anyone else.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Riven, 3 years, 8 months ago<br />Posted 3 years, 8 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Lee</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=870&amp;ref=1256962743" width="98" height="98" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_13336" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Riven:</em><br />
+For example, when I occasionally spontaiously predict stuff (I think something and know it will happen), I usually get this warm &quot;whoosh&quot; feeling in my chest to shoulders.</div>That happens to me during telepathy games with friends. While trying to interpret what they&#039;re sending me(I&#039;m usually the receiver; I have a &quot;knack&quot; for it, according to them), I will start getting that &quot;whoosh&quot; feeling when I&#039;m on the right track. Let&#039;s say they&#039;re sending me the thought of an apple. &quot;Round&quot; is usually the first thing that comes to mind: Slight &quot;whoosh&quot;. Next, I notice that it&#039;s red: Another &quot;whoosh&quot;. I follow that pattern until I fully understand the thought. It&#039;s like I&#039;m reassuring myself, haha.<br />
+<br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Riven:</em><br />
+And last thing- How do you know if you just predicted the future, or influenced it?</div>Good question. Honestly, I have no idea. There was only one time I know that I predicted rather than influenced, and that&#039;s just because I prevented it from happening. And also, my mother predicted the same thing at the same moment I did. Most of my predictions come in dreams, and I don&#039;t realize that they were more than dreams until I get major deja vu. </div>
+		<textarea style="display: none;" id="desctxt_13336">[quote][i]posted by Riven:[/i]
+For example, when I occasionally spontaiously predict stuff (I think something and know it will happen), I usually get this warm &quot;whoosh&quot; feeling in my chest to shoulders.[/quote]
+That happens to me during telepathy games with friends. While trying to interpret what they&#039;re sending me(I&#039;m usually the receiver; I have a &quot;knack&quot; for it, according to them), I will start getting that &quot;whoosh&quot; feeling when I&#039;m on the right track. Let&#039;s say they&#039;re sending me the thought of an apple. &quot;Round&quot; is usually the first thing that comes to mind: Slight &quot;whoosh&quot;. Next, I notice that it&#039;s red: Another &quot;whoosh&quot;. I follow that pattern until I fully understand the thought. It&#039;s like I&#039;m reassuring myself, haha.
+
+[quote][i]posted by Riven:[/i]
+And last thing- How do you know if you just predicted the future, or influenced it?[/quote]
+Good question. Honestly, I have no idea. There was only one time I know that I predicted rather than influenced, and that&#039;s just because I prevented it from happening. And also, my mother predicted the same thing at the same moment I did. Most of my predictions come in dreams, and I don&#039;t realize that they were more than dreams until I get major deja vu.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 8 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=702" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 24 queries. 0.332 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

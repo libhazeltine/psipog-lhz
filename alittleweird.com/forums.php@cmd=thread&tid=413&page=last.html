@@ -1,0 +1,302 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Kundalini</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Kundalini</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Kundalini</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Falcon</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=521&amp;ref=1241106812" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9114" style="width: 100%; overflow: auto; min-height: 125px;">People who don&#039;t know what Kundalini is, I suggest you just Google it..<br />
+I was wondering, what do you think about all the Kundalini stuff? Do you think it&#039;s real?<br />
+<br />
+F.</div>
+		<textarea style="display: none;" id="desctxt_9114">People who don&#039;t know what Kundalini is, I suggest you just Google it..
+I was wondering, what do you think about all the Kundalini stuff? Do you think it&#039;s real?
+
+F.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Ether</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=578&amp;ref=1213490800" width="125" height="105" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9115" style="width: 100%; overflow: auto; min-height: 125px;">I have studied the Kundalini in depth. It is mainly a Hindu belief. I personally take it to be stictly allegorical rather than a physical being. I think that when it is viewed in this way it is very much so real. It is simply an explaination for enlightenment. I think that with careful medtitation anyone can release the Kundalini. That&#039;s just my opinion. </div>
+		<textarea style="display: none;" id="desctxt_9115">I have studied the Kundalini in depth. It is mainly a Hindu belief. I personally take it to be stictly allegorical rather than a physical being. I think that when it is viewed in this way it is very much so real. It is simply an explaination for enlightenment. I think that with careful medtitation anyone can release the Kundalini. That&#039;s just my opinion.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">NewAgeAlchemist</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=459&amp;ref=1207160982" width="125" height="20" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9116" style="width: 100%; overflow: auto; min-height: 125px;">Haha first listed side effect on wikipedia for Kundalini Syndrome: Death. Second favorite would be a toss between Pseudo Death or Inability to hold a job.<br />
+<br />
+Whats interesting is that Kundalini Syndrome appears to be an attempt at categorizing the sensations of a spiritual experience and its side effects. I would by no means disagree with much of the listed symptoms and side effects as possible, but it doesn&#039;t go into positive effects.</div>
+		<textarea style="display: none;" id="desctxt_9116">Haha first listed side effect on wikipedia for Kundalini Syndrome: Death. Second favorite would be a toss between Pseudo Death or Inability to hold a job.
+
+Whats interesting is that Kundalini Syndrome appears to be an attempt at categorizing the sensations of a spiritual experience and its side effects. I would by no means disagree with much of the listed symptoms and side effects as possible, but it doesn&#039;t go into positive effects.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Falcon</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=521&amp;ref=1241106812" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9139" style="width: 100%; overflow: auto; min-height: 125px;">@Ether: That seems interesting, can you tell me something more about this?<br />
+(If you studied this in depth, maybe you can tell something more about it :P)<br />
+@NAA: Hmm, yeah, that&#039;s also why I ask people about it before trying things like this out on my own.<br />
+I don&#039;t think Death suits me today.<br />
+(Maybe it does, but I hope not :P)<br />
+<br />
+Anyway, everyone into this can easily tell you what will happen to you when Kundulini awakens the wrong way and blah blah..<br />
+But there aren&#039;t a lot of people who can tell me about the positive things of Kundalini xD<br />
+Anyone got some articles about this?<br />
+<br />
+F.</div>
+		<textarea style="display: none;" id="desctxt_9139">@Ether: That seems interesting, can you tell me something more about this?
+(If you studied this in depth, maybe you can tell something more about it :P)
+@NAA: Hmm, yeah, that&#039;s also why I ask people about it before trying things like this out on my own.
+I don&#039;t think Death suits me today.
+(Maybe it does, but I hope not :P)
+
+Anyway, everyone into this can easily tell you what will happen to you when Kundulini awakens the wrong way and blah blah..
+But there aren&#039;t a lot of people who can tell me about the positive things of Kundalini xD
+Anyone got some articles about this?
+
+F.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Ether</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=578&amp;ref=1213490800" width="125" height="105" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9152" style="width: 100%; overflow: auto; min-height: 125px;">I think that one&#039;s perspective has to do with how one approaches the Kundalini. Some people almost treat it like a religion and seem to box it in. This is where the &quot;right&quot; and &quot;wrong&quot; ways to awaken it stem from. I have a friend who is Hindu and knows quite a bit about the Kundalini. She holds the similar belief that I do in that the Kundalini is not a thing, and that there is no right or wrong way. However, it is simply a metaphor or tool to help one understand and ultimately reach enlightenment. In my studies I have heard and read of the proper way to awaken the Kundalini through systematic steps, meditation, exercises etc. I think this is where perspectives divide. I don&#039;t think that is necessary. By saying there is a &quot;proper&quot; way you are restricting a great power. Many Qi Gong masters have become enlightened to this extent, but do not strictly believe in the Kundalini per say. Take it to be a cultural difference for describing a similar abstract concept if you will. I don&#039;t believe that the Kundalini is dangerous and defiantly not something you can die from, however, I do believe that it is (like any power) something that should be treated with honor and upmost respect. If you want to learn about the Kundalini there are many books on the subject, but remember you own beliefs and interpret it accordingly.</div>
+		<textarea style="display: none;" id="desctxt_9152">I think that one&#039;s perspective has to do with how one approaches the Kundalini. Some people almost treat it like a religion and seem to box it in. This is where the &quot;right&quot; and &quot;wrong&quot; ways to awaken it stem from. I have a friend who is Hindu and knows quite a bit about the Kundalini. She holds the similar belief that I do in that the Kundalini is not a thing, and that there is no right or wrong way. However, it is simply a metaphor or tool to help one understand and ultimately reach enlightenment. In my studies I have heard and read of the proper way to awaken the Kundalini through systematic steps, meditation, exercises etc. I think this is where perspectives divide. I don&#039;t think that is necessary. By saying there is a &quot;proper&quot; way you are restricting a great power. Many Qi Gong masters have become enlightened to this extent, but do not strictly believe in the Kundalini per say. Take it to be a cultural difference for describing a similar abstract concept if you will. I don&#039;t believe that the Kundalini is dangerous and defiantly not something you can die from, however, I do believe that it is (like any power) something that should be treated with honor and upmost respect. If you want to learn about the Kundalini there are many books on the subject, but remember you own beliefs and interpret it accordingly.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Ether, 4 years, 6 months ago<br />Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">NewAgeAlchemist</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=459&amp;ref=1207160982" width="125" height="20" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9160" style="width: 100%; overflow: auto; min-height: 125px;">Like I said, they seem to be using the phrase to describe spiritual experiences, so it wouldn&#039;t be inappropriate to prepare for it like you&#039;d prepare for taking LSD or another psychedelic, which you&#039;ll find ample literature on.<br />
+<br />
+The theory is that there is no awakening improperly, difficult experiences are just attempting to teach you something to help you move to the next step, even though it may seem beyond your capability to handle. The psychedelic areas a baby sitter is advised in the off chance you do have a difficult trip, they don&#039;t guide you but can serve as reassurance if you need it, a spiritual guide would work similarly. As far as the yoga goes, depending how complicated it gets a teacher is advisable so you don&#039;t hurt yourself physically.</div>
+		<textarea style="display: none;" id="desctxt_9160">Like I said, they seem to be using the phrase to describe spiritual experiences, so it wouldn&#039;t be inappropriate to prepare for it like you&#039;d prepare for taking LSD or another psychedelic, which you&#039;ll find ample literature on.
+
+The theory is that there is no awakening improperly, difficult experiences are just attempting to teach you something to help you move to the next step, even though it may seem beyond your capability to handle. The psychedelic areas a baby sitter is advised in the off chance you do have a difficult trip, they don&#039;t guide you but can serve as reassurance if you need it, a spiritual guide would work similarly. As far as the yoga goes, depending how complicated it gets a teacher is advisable so you don&#039;t hurt yourself physically.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">forcemaster245</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=646&amp;ref=1222058247" width="125" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10158" style="width: 100%; overflow: auto; min-height: 125px;">I read from a website about Kundalini some time ago...its suppoosed to grant great powers when it is awakened. bt then u need to have a strong will to control this power. if u lose control of this power, it will produce unwanted side effects, eg ambition swells to an incredible degree,and will rule over you eventually. Definitely not a good thing.<br />
+<br />
+As mentioned before, u need a master to guide you and watch over you when you awaken Kundalini.</div>
+		<textarea style="display: none;" id="desctxt_10158">I read from a website about Kundalini some time ago...its suppoosed to grant great powers when it is awakened. bt then u need to have a strong will to control this power. if u lose control of this power, it will produce unwanted side effects, eg ambition swells to an incredible degree,and will rule over you eventually. Definitely not a good thing.
+
+As mentioned before, u need a master to guide you and watch over you when you awaken Kundalini.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by forcemaster245, 4 years, 5 months ago<br />Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=413" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 23 queries. 0.278 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

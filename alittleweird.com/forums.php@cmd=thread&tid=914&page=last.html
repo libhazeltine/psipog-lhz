@@ -1,0 +1,390 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Drawn where needed?</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Drawn where needed?</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Drawn where needed?</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Linked</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=19&amp;ref=1203762048" width="89" height="38" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_16387" style="width: 100%; overflow: auto; min-height: 125px;">Okay so, I&#039;ve had this happen 3 times in the last half-a-year.<br />
+<br />
+My girlfriend, a girl who&#039;s like a sister to me, and now a boy who&#039;s like a brother to me, all who have &#039;problems&#039;, have come into my life and with each of the three I felt an instant &#039;connection&#039;. In each case I have become someone of a great importance in all their lives. Two have credited me as being the reason they haven&#039;t committed suicide, and the third said something near that effect but I couldn&#039;t tell if that&#039;s what he meant.<br />
+<br />
+Each of them often have episodes of depressive attacks and suicidal thoughts. Each one is suffering from some form of mental disorder. (As am I. I think I have depression as well.) And every time they have an attack I&#039;m the one who is there for them.<br />
+<br />
+Could this be some form of attraction or something where I&#039;m drawn to the people who need me?<br />
+<br />
+With each person I felt some form of bond as soon as we met.</div>
+		<textarea style="display: none;" id="desctxt_16387">Okay so, I&#039;ve had this happen 3 times in the last half-a-year.
+
+My girlfriend, a girl who&#039;s like a sister to me, and now a boy who&#039;s like a brother to me, all who have &#039;problems&#039;, have come into my life and with each of the three I felt an instant &#039;connection&#039;. In each case I have become someone of a great importance in all their lives. Two have credited me as being the reason they haven&#039;t committed suicide, and the third said something near that effect but I couldn&#039;t tell if that&#039;s what he meant.
+
+Each of them often have episodes of depressive attacks and suicidal thoughts. Each one is suffering from some form of mental disorder. (As am I. I think I have depression as well.) And every time they have an attack I&#039;m the one who is there for them.
+
+Could this be some form of attraction or something where I&#039;m drawn to the people who need me?
+
+With each person I felt some form of bond as soon as we met.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 2 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Sussch</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=622&amp;ref=1252769070" width="100" height="92" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_16388" style="width: 100%; overflow: auto; min-height: 125px;">Weird.<br />
+<br />
+I have met 2 people in the last 3 years, whom I have recognized like I had known them before we even met for the first time. Actually, it felt like they were old forgotten friends of mine. I think at least one of them felt the same for me. We kept meeting by random coincidences, but he always disappears shortly after meeting him again (has problems with drinking and keeps falling out of school). I can&#039;t tell about the other such friend - seemed like a normal guy with no problems.<br />
+<br />
+Haven&#039;t had the chance to speak with them enough though..</div>
+		<textarea style="display: none;" id="desctxt_16388">Weird.
+
+I have met 2 people in the last 3 years, whom I have recognized like I had known them before we even met for the first time. Actually, it felt like they were old forgotten friends of mine. I think at least one of them felt the same for me. We kept meeting by random coincidences, but he always disappears shortly after meeting him again (has problems with drinking and keeps falling out of school). I can&#039;t tell about the other such friend - seemed like a normal guy with no problems.
+
+Haven&#039;t had the chance to speak with them enough though..</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 2 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Elexiel</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_16390" style="width: 100%; overflow: auto; min-height: 125px;">Strange... your not the only one who expierienced something like this :)<br />
+<br />
+last year i have met a girl, who was different from all the others to me. but i was curious about her because i felt that shes one of these persons who seems to attract a lot of problems.( she has also alcohol problems, drugs, school failure, problems with ex boyfriends,violence etc...) <br />
+but on the other side there is this strong feeling that i need her and she needs me so much.<br />
+<br />
+Then i ve made a terrible mistake. I sent her away.<br />
+As Time was passing by, i recognized my mistake and started to search for her.<br />
+<br />
+After 6 month i found her. And we were so glad. the interesting thing was, that she told me, she was looking for me aswell in this time.<br />
+Like we are bond together.<br />
+<br />
+And so we found each other one more time. I move now to her city where she lives.<br />
+but the closer i come  the stronger this &quot;feeling of Danger&quot; starts to rise up again even more stronger and i really dont know what to do!<br />
+<br />
+if someone of you knows A answer please help me!<br />
+<br />
+</div>
+		<textarea style="display: none;" id="desctxt_16390">Strange... your not the only one who expierienced something like this :)
+
+last year i have met a girl, who was different from all the others to me. but i was curious about her because i felt that shes one of these persons who seems to attract a lot of problems.( she has also alcohol problems, drugs, school failure, problems with ex boyfriends,violence etc...) 
+but on the other side there is this strong feeling that i need her and she needs me so much.
+
+Then i ve made a terrible mistake. I sent her away.
+As Time was passing by, i recognized my mistake and started to search for her.
+
+After 6 month i found her. And we were so glad. the interesting thing was, that she told me, she was looking for me aswell in this time.
+Like we are bond together.
+
+And so we found each other one more time. I move now to her city where she lives.
+but the closer i come  the stronger this &quot;feeling of Danger&quot; starts to rise up again even more stronger and i really dont know what to do!
+
+if someone of you knows A answer please help me!</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 2 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">joke-lain</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=517&amp;ref=1210639719" width="103" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_16395" style="width: 100%; overflow: auto; min-height: 125px;">I have no idea whether I have experienced anything like this because I have trouble notices differences in myself.<br />
+<br />
+I don&#039;t have anything to say for the first two, but for Elexiel, have you thought about it being her &quot;feeling of Danger&quot;? As in, she feels in danger, and you are picking up her feelings. The closer you get to her, the stronger they get. I should start by asking her about it. And even if she doesn&#039;t have a &quot;feeling of danger&quot;, her subconscouse could. I hope this helps or points you in the right direction. Let me know how it goes.<br />
+<br />
+For you other two, I&#039;ll look into some things and get back to you both. <br />
+<br />
+joke</div>
+		<textarea style="display: none;" id="desctxt_16395">I have no idea whether I have experienced anything like this because I have trouble notices differences in myself.
+
+I don&#039;t have anything to say for the first two, but for Elexiel, have you thought about it being her &quot;feeling of Danger&quot;? As in, she feels in danger, and you are picking up her feelings. The closer you get to her, the stronger they get. I should start by asking her about it. And even if she doesn&#039;t have a &quot;feeling of danger&quot;, her subconscouse could. I hope this helps or points you in the right direction. Let me know how it goes.
+
+For you other two, I&#039;ll look into some things and get back to you both. 
+
+joke</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 2 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Elexiel</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_16397" style="width: 100%; overflow: auto; min-height: 125px;">@ joke : hmmm really interesting idea. i will ask her when i see her.<br />
+I keep you up to date if there is something new :)<br />
+<br />
+*but even if its her feeling i dont know the reason for it. and i dont how i could be dangerous for her. but lets see..</div>
+		<textarea style="display: none;" id="desctxt_16397">@ joke : hmmm really interesting idea. i will ask her when i see her.
+I keep you up to date if there is something new :)
+
+*but even if its her feeling i dont know the reason for it. and i dont how i could be dangerous for her. but lets see..</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Elexiel, 2 years, 9 months ago<br />Posted 2 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Jarmo</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_16400" style="width: 100%; overflow: auto; min-height: 125px;">It&#039;s nothing more rare than just normal resonance phenomena, similar energies attract each other. And that&#039;s valid for everything. If you are love, you attract more love to you; like you work a channel of Gods&#039; love to manifest to physical level, and when giving more love out, you get more yourself. Strange, but it just works like that. The more you are depressed, the more you attract similar people to you. So, according to that, when we are madly in love with our partner, we easily attract human beings which we could easily fall in love (usually it just needs more consciousness, but that&#039;s the way it goes).<br />
+<br />
+So, it could be your possibility to get further in your path in this incarnation, you just have to start learning from it and start following it. Become love, and everything&#039;s possible :) Well, that&#039;s a pretty hard thing to attain :) It might be your meaning of life, help those people who need you most at the moment.</div>
+		<textarea style="display: none;" id="desctxt_16400">It&#039;s nothing more rare than just normal resonance phenomena, similar energies attract each other. And that&#039;s valid for everything. If you are love, you attract more love to you; like you work a channel of Gods&#039; love to manifest to physical level, and when giving more love out, you get more yourself. Strange, but it just works like that. The more you are depressed, the more you attract similar people to you. So, according to that, when we are madly in love with our partner, we easily attract human beings which we could easily fall in love (usually it just needs more consciousness, but that&#039;s the way it goes).
+
+So, it could be your possibility to get further in your path in this incarnation, you just have to start learning from it and start following it. Become love, and everything&#039;s possible :) Well, that&#039;s a pretty hard thing to attain :) It might be your meaning of life, help those people who need you most at the moment.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 2 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Linked</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=19&amp;ref=1203762048" width="89" height="38" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_16402" style="width: 100%; overflow: auto; min-height: 125px;">Thank you all for your responses.</div>
+		<textarea style="display: none;" id="desctxt_16402">Thank you all for your responses.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 2 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">joke-lain</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=517&amp;ref=1210639719" width="103" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_16403" style="width: 100%; overflow: auto; min-height: 125px;">@Elexiel<br />
+No, I mean she feels in danger, not that she feels you are dangerous.....Although she could feel that as well....<br />
+<br />
+@Jarmo<br />
+Okay, what?</div>
+		<textarea style="display: none;" id="desctxt_16403">@Elexiel
+No, I mean she feels in danger, not that she feels you are dangerous.....Although she could feel that as well....
+
+@Jarmo
+Okay, what?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 2 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Jarmo</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_16410" style="width: 100%; overflow: auto; min-height: 125px;">Dunno what you asked about Joke.. There&#039;s just a thing or two about resonance, and about what some people call &quot;law of resonance&quot;.</div>
+		<textarea style="display: none;" id="desctxt_16410">Dunno what you asked about Joke.. There&#039;s just a thing or two about resonance, and about what some people call &quot;law of resonance&quot;.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 2 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">joke-lain</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=517&amp;ref=1210639719" width="103" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_16411" style="width: 100%; overflow: auto; min-height: 125px;">@Jarmo<br />
+I want to know what exactly you mean in the first post you put up. I didn&#039;t understand.</div>
+		<textarea style="display: none;" id="desctxt_16411">@Jarmo
+I want to know what exactly you mean in the first post you put up. I didn&#039;t understand.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 2 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Riven</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=656&amp;ref=1217444530" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_16432" style="width: 100%; overflow: auto; min-height: 125px;">@Jarmo<br />
+<br />
+Seems to make sense, but I&#039;m not so sure how that would work... diff brainwaves or what?<br />
+-<br />
+Yeah, I&#039;ve felt that way too. I feel like I click with people, and I get this feeling about some of them (not sure how to describe it), but later I find out they&#039;ve been through some sort of abuse or they SI or something of that nature, even if they look nothing like it. Like attracts like, I guess. I mean, what are the odds?</div>
+		<textarea style="display: none;" id="desctxt_16432">@Jarmo
+
+Seems to make sense, but I&#039;m not so sure how that would work... diff brainwaves or what?
+-
+Yeah, I&#039;ve felt that way too. I feel like I click with people, and I get this feeling about some of them (not sure how to describe it), but later I find out they&#039;ve been through some sort of abuse or they SI or something of that nature, even if they look nothing like it. Like attracts like, I guess. I mean, what are the odds?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 2 years, 9 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=914" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 27 queries. 0.276 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

@@ -1,0 +1,336 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Need help with psiballs</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Need help with psiballs</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Need help with psiballs</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Insectoid3</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=1010&amp;ref=1251218696" width="50" height="50" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_15160" style="width: 100%; overflow: auto; min-height: 125px;">Before I actually ask my question, I&#039;d like to point out I&#039;ve read all of the guides on Psipog about <em>forming</em> a psiball, the general gist being to find a source of energy, and channel it into a ball through visualization. I figured I&#039;d start out with the method described in <a href="http://psipog.net/art-psiball-log.html" target="_blank" title="http://psipog.net/art-psiball-log.html">Peebrain&#039;s seminar</a>.<br />
+<br />
+I haven&#039;t had much success so far. I have no problem with visualization (actually sometimes I can&#039;t make up my mind about how to visualize energy, which might be a problem in itself), and I successfully &quot;felt&quot; the energy in my stomach twice. <br />
+<br />
+I haven&#039;t been able to go past this first step, though. The first time, I tried moving it up through my body like the guide said, but the energy seemed to dissipate as it moved up through my chest. The second time, I think I got too excited (my heart rate went up) and, again, I lost track of the energy. Ever since then, I haven&#039;t been able to feel the energy again.<br />
+<br />
+From what I already know, I figured that either I wasn&#039;t concentrating enough, or that something was off with my energy. If so, does anyone know any tips about how to concentrate more, or anything that might be affecting my energy? (I hear orange juice helps increase it?) Or could there possibly be any other problems?<br />
+<br />
+I&#039;m sorry if the answer to my question is an obvious one. Thanks to whoever takes the time to read this. I hope someone can help.</div>
+		<textarea style="display: none;" id="desctxt_15160">Before I actually ask my question, I&#039;d like to point out I&#039;ve read all of the guides on Psipog about [i]forming[/i] a psiball, the general gist being to find a source of energy, and channel it into a ball through visualization. I figured I&#039;d start out with the method described in [url=http://psipog.net/art-psiball-log.html]Peebrain&#039;s seminar[/url].
+
+I haven&#039;t had much success so far. I have no problem with visualization (actually sometimes I can&#039;t make up my mind about how to visualize energy, which might be a problem in itself), and I successfully &quot;felt&quot; the energy in my stomach twice. 
+
+I haven&#039;t been able to go past this first step, though. The first time, I tried moving it up through my body like the guide said, but the energy seemed to dissipate as it moved up through my chest. The second time, I think I got too excited (my heart rate went up) and, again, I lost track of the energy. Ever since then, I haven&#039;t been able to feel the energy again.
+
+From what I already know, I figured that either I wasn&#039;t concentrating enough, or that something was off with my energy. If so, does anyone know any tips about how to concentrate more, or anything that might be affecting my energy? (I hear orange juice helps increase it?) Or could there possibly be any other problems?
+
+I&#039;m sorry if the answer to my question is an obvious one. Thanks to whoever takes the time to read this. I hope someone can help.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 2 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Falcon</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=521&amp;ref=1241106812" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_15162" style="width: 100%; overflow: auto; min-height: 125px;">I am no expert on Psi, but let me give you some answers that have helped most of my students in the past when it came to the basics of Energy Manipulation.<br />
+<br />
+First of all, learning a new skill takes time(!) and practice(!), no matter what path you follow, you are going to need to practice a lot. Don&#039;t expect results when you&#039;ve just practiced for a few minutes.<br />
+<br />
+The thing is, most people start practicing Psionics and think they can immediately jump into Energy Manipulation, Psychokinesis and all sorts of fancy stuff. Though these people get sóme results most of the time, the results are questionable. (I am NOT saying that there everyone&#039;s skill here is, I am talking about the majority of teens who want to practice Psionics.)<br />
+<br />
+Now that we&#039;ve got that cleared up, I recommend most people to not dive directly into these things, practice thought discipline and your imagination first. Most people have just.. crappy minds, their mind is filled with thousand thoughts at a time, and they are building castles in the air the whole day. If you want to get real results, you need to get out of this bad habit.<br />
+<br />
+So, what do you need to do? First, start with thought discipline, this involves keeping a single thought in your mind for as long as possible. At first, you will only succeed in a few seconds, later for minutes, just don&#039;t give up! Persistence is the key! Don&#039;t expect to have this down in a few days, start with about 5 minutes, and build it up to 20. If you can do 20 minutes of thought discipline, you can call congratulate yourself, because this is more than most people will ever achieve in this world. If you think this is too hard, aim low, you don&#039;t have to aim high, just keep improving.<br />
+<br />
+After the mind has been adequately trained, (let&#039;s say you can keep a single thought in your mind for a consistent 5 minutes,) it is time to turn to training the imaginative faculty. Training this is like training visualization, though you try to employ all the senses. Start with the visual sense, put, for example, a pencil on your desk and stare at it for a minute. When the minute is over, close your eyes, and try to recreate it as minutely as possible. (Don&#039;t worry about the small details now, I am talking about the basic shape and color.) Try to increase the amount of time you can hold this visualization. After a time, try more complex objects, and after these have been masterd, try moving objects. Same goes for training the imaginative ear, and training yourself in tacticle visualizations. (technically you could also practice smelling and tasting, but for our purposes, this will suffice.) For the imaginative ear, listen to the ticking of a click, and try to replicate it, etc. etc. I am sure you can think of a few things yourself.<br />
+<br />
+Now, reading through all this, you might think &quot;Whatever! I don&#039;t care about all this junk, I want to learn Psionics!&quot;, there is nothing I can do to help you with that, you have to develop the virtue of patience for yourself. If you don&#039;t want to start small, then follow your own path, if you start with these small exercises however, I promise you that you will not only see an improvement in your Psionic skills, but in your concentration and mental state in general.<br />
+<br />
+~Falcon</div>
+		<textarea style="display: none;" id="desctxt_15162">I am no expert on Psi, but let me give you some answers that have helped most of my students in the past when it came to the basics of Energy Manipulation.
+
+First of all, learning a new skill takes time(!) and practice(!), no matter what path you follow, you are going to need to practice a lot. Don&#039;t expect results when you&#039;ve just practiced for a few minutes.
+
+The thing is, most people start practicing Psionics and think they can immediately jump into Energy Manipulation, Psychokinesis and all sorts of fancy stuff. Though these people get sóme results most of the time, the results are questionable. (I am NOT saying that there everyone&#039;s skill here is, I am talking about the majority of teens who want to practice Psionics.)
+
+Now that we&#039;ve got that cleared up, I recommend most people to not dive directly into these things, practice thought discipline and your imagination first. Most people have just.. crappy minds, their mind is filled with thousand thoughts at a time, and they are building castles in the air the whole day. If you want to get real results, you need to get out of this bad habit.
+
+So, what do you need to do? First, start with thought discipline, this involves keeping a single thought in your mind for as long as possible. At first, you will only succeed in a few seconds, later for minutes, just don&#039;t give up! Persistence is the key! Don&#039;t expect to have this down in a few days, start with about 5 minutes, and build it up to 20. If you can do 20 minutes of thought discipline, you can call congratulate yourself, because this is more than most people will ever achieve in this world. If you think this is too hard, aim low, you don&#039;t have to aim high, just keep improving.
+
+After the mind has been adequately trained, (let&#039;s say you can keep a single thought in your mind for a consistent 5 minutes,) it is time to turn to training the imaginative faculty. Training this is like training visualization, though you try to employ all the senses. Start with the visual sense, put, for example, a pencil on your desk and stare at it for a minute. When the minute is over, close your eyes, and try to recreate it as minutely as possible. (Don&#039;t worry about the small details now, I am talking about the basic shape and color.) Try to increase the amount of time you can hold this visualization. After a time, try more complex objects, and after these have been masterd, try moving objects. Same goes for training the imaginative ear, and training yourself in tacticle visualizations. (technically you could also practice smelling and tasting, but for our purposes, this will suffice.) For the imaginative ear, listen to the ticking of a click, and try to replicate it, etc. etc. I am sure you can think of a few things yourself.
+
+Now, reading through all this, you might think &quot;Whatever! I don&#039;t care about all this junk, I want to learn Psionics!&quot;, there is nothing I can do to help you with that, you have to develop the virtue of patience for yourself. If you don&#039;t want to start small, then follow your own path, if you start with these small exercises however, I promise you that you will not only see an improvement in your Psionic skills, but in your concentration and mental state in general.
+
+~Falcon</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 2 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Kube</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=952&amp;ref=1249239276" width="102" height="77" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_15164" style="width: 100%; overflow: auto; min-height: 125px;">What Falcon says is true, I started out thinking &quot;Hey why not begin with psychokinesis?&quot; Now, it did work, I moved a few things on my first try, but the results were still poor. If you wanna use your mind, you&#039;ve got to train it first. It&#039;s like martial arts, you can&#039;t start at black belt, it takes some time to get there.</div>
+		<textarea style="display: none;" id="desctxt_15164">What Falcon says is true, I started out thinking &quot;Hey why not begin with psychokinesis?&quot; Now, it did work, I moved a few things on my first try, but the results were still poor. If you wanna use your mind, you&#039;ve got to train it first. It&#039;s like martial arts, you can&#039;t start at black belt, it takes some time to get there.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 2 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Insectoid3</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=1010&amp;ref=1251218696" width="50" height="50" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_15165" style="width: 100%; overflow: auto; min-height: 125px;">Thanks a bunch, Falcon, this is exactly the kind of advice I wanted. I guess my main problem really is concentration, so I&#039;ll start practicing thought exercises like these before I start messing around with psionics.<br />
+<br />
+Update: I meditated (pretty badly) for a good chunk of the afternoon, then I went on a walk to get away from the house. I&#039;m pretty sure I created one or two psiballs. I tried making one using my own energy a couple times, then I tried using energy from the sun, which surprisingly worked. The second one I made using the same method, but I&#039;m unsure if it was real or not.</div>
+		<textarea style="display: none;" id="desctxt_15165">Thanks a bunch, Falcon, this is exactly the kind of advice I wanted. I guess my main problem really is concentration, so I&#039;ll start practicing thought exercises like these before I start messing around with psionics.
+
+Update: I meditated (pretty badly) for a good chunk of the afternoon, then I went on a walk to get away from the house. I&#039;m pretty sure I created one or two psiballs. I tried making one using my own energy a couple times, then I tried using energy from the sun, which surprisingly worked. The second one I made using the same method, but I&#039;m unsure if it was real or not.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Insectoid3, 3 years, 2 months ago<br />Posted 3 years, 2 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Cerberus</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_15180" style="width: 100%; overflow: auto; min-height: 125px;">Learning psionic is like learning a foreign language...Needs some time though.<br />
+We can&#039;t master a foreign language in just a few days or months!<br />
+Well,a little comforting and motivating words for beginners like me lol!(And it&#039;s quite true)</div>
+		<textarea style="display: none;" id="desctxt_15180">Learning psionic is like learning a foreign language...Needs some time though.
+We can&#039;t master a foreign language in just a few days or months!
+Well,a little comforting and motivating words for beginners like me lol!(And it&#039;s quite true)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Cerberus, 3 years, 2 months ago<br />Posted 3 years, 2 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Insectoid3</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=1010&amp;ref=1251218696" width="50" height="50" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_15182" style="width: 100%; overflow: auto; min-height: 125px;">Yeah, the problem for me though is that I&#039;m impatient and get frustrated easily. To counteract this, I decided I might as well start learning other skills as well, so that I never run out of productive things to be doing. It would be nice if there was an IRC or some other way of talking to people off the forum though - it seems like there&#039;s no actual place for me to ask all of my questions...<br />
+<br />
+Actually, now that I think about it, maybe it would be a good idea to have a Q&amp;A thread? </div>
+		<textarea style="display: none;" id="desctxt_15182">Yeah, the problem for me though is that I&#039;m impatient and get frustrated easily. To counteract this, I decided I might as well start learning other skills as well, so that I never run out of productive things to be doing. It would be nice if there was an IRC or some other way of talking to people off the forum though - it seems like there&#039;s no actual place for me to ask all of my questions...
+
+Actually, now that I think about it, maybe it would be a good idea to have a Q&amp;A thread?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 2 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">f3licks</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=848&amp;ref=1227833859" width="125" height="78" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_15183" style="width: 100%; overflow: auto; min-height: 125px;">@Falcon<br />
+<br />
+Sorry if this is invasive, but how old are you?<br />
+And what students are you talking about?<br />
+<br />
+@Insectoid<br />
+I think a Q&amp;A thread is a good idea. You should make one.<br />
+<br />
+For you psiball problem, if energy dissipation is a big problem for you, try pooling the psi directing into your hands. If that fails, try altering your visualization.</div>
+		<textarea style="display: none;" id="desctxt_15183">@Falcon
+
+Sorry if this is invasive, but how old are you?
+And what students are you talking about?
+
+@Insectoid
+I think a Q&amp;A thread is a good idea. You should make one.
+
+For you psiball problem, if energy dissipation is a big problem for you, try pooling the psi directing into your hands. If that fails, try altering your visualization.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 2 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=846" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 23 queries. 0.277 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

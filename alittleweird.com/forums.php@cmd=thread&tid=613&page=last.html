@@ -1,0 +1,546 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Getting Started!</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Getting Started!</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Getting Started!</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Wizzy</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12062" style="width: 100%; overflow: auto; min-height: 125px;">Hi to everyone!<br />
+<br />
+I&#039;m going straight to the source: my problem in training psionic skills is keep practicing for a long time.<br />
+<br />
+I&#039;ve been starting psionics for almost 2 years, but I never get to the level of results, I&#039;ve always found myself quiting from it, due to loss of motivation and coming of new ideas to my mind that made me forget psionics and the training that&#039;s necessary to achieve results.<br />
+<br />
+This really angers me because I really want to learn psionics and I know perfectly what my problem is, I just can&#039;t fix it, I just can&#039;t find a solution.<br />
+<br />
+From your experience, can you help me?<br />
+Don&#039;t blame me for not being able to reach it, this is a big big problem, and I don&#039;t recommend for those who never experienced this.<br />
+<br />
+By the way, is this website dead? because the last posts of the other threads were made weeks and months ago, and that troubles me.<br />
+<br />
+-Wiz-</div>
+		<textarea style="display: none;" id="desctxt_12062">Hi to everyone!
+
+I&#039;m going straight to the source: my problem in training psionic skills is keep practicing for a long time.
+
+I&#039;ve been starting psionics for almost 2 years, but I never get to the level of results, I&#039;ve always found myself quiting from it, due to loss of motivation and coming of new ideas to my mind that made me forget psionics and the training that&#039;s necessary to achieve results.
+
+This really angers me because I really want to learn psionics and I know perfectly what my problem is, I just can&#039;t fix it, I just can&#039;t find a solution.
+
+From your experience, can you help me?
+Don&#039;t blame me for not being able to reach it, this is a big big problem, and I don&#039;t recommend for those who never experienced this.
+
+By the way, is this website dead? because the last posts of the other threads were made weeks and months ago, and that troubles me.
+
+-Wiz-</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Psikillion</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=593&amp;ref=1213954510" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12064" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Wizzy:</em><br />
+Hi to everyone!<br />
+<br />
+I&#039;m going straight to the source: my problem in training psionic skills is keep practicing for a long time.<br />
+<br />
+I&#039;ve been starting psionics for almost 2 years, but I never get to the level of results, I&#039;ve always found myself quiting from it, due to loss of motivation and coming of new ideas to my mind that made me forget psionics and the training that&#039;s necessary to achieve results.<br />
+<br />
+This really angers me because I really want to learn psionics and I know perfectly what my problem is, I just can&#039;t fix it, I just can&#039;t find a solution.<br />
+<br />
+From your experience, can you help me?<br />
+Don&#039;t blame me for not being able to reach it, this is a big big problem, and I don&#039;t recommend for those who never experienced this.</div>My recommendation is to get a friend or someone else online who has the same interest in psionics as you that way you can practice together.<br />
+<br />
+This website has a geiger counter game,  <a href="http://alittleweird.com/geiger-game.php," target="_blank">http://alittleweird.com/geiger-game.php,</a> that we practice on at 7PM EST (or GMT-5) on Sunday.<br />
+<br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Wizzy:</em><br />
+By the way, is this website dead? because the last posts of the other threads were made weeks and months ago, and that troubles me.<br />
+<br />
+-Wiz-</div>Pardon me for being a bit rude, but we are presently not dead. Before this post the last post was 20 minutes ago. However some threads can take a longer time to post on because everybody here has a life they have to live (I hope), and often times we come from different time zones so obviously such communication is delayed.<br />
+<br />
+Once again pardon me for being rude...<br />
+<br />
+-Psikillion</div>
+		<textarea style="display: none;" id="desctxt_12064">[quote][i]posted by Wizzy:[/i]
+Hi to everyone!
+
+I&#039;m going straight to the source: my problem in training psionic skills is keep practicing for a long time.
+
+I&#039;ve been starting psionics for almost 2 years, but I never get to the level of results, I&#039;ve always found myself quiting from it, due to loss of motivation and coming of new ideas to my mind that made me forget psionics and the training that&#039;s necessary to achieve results.
+
+This really angers me because I really want to learn psionics and I know perfectly what my problem is, I just can&#039;t fix it, I just can&#039;t find a solution.
+
+From your experience, can you help me?
+Don&#039;t blame me for not being able to reach it, this is a big big problem, and I don&#039;t recommend for those who never experienced this.[/quote]
+
+My recommendation is to get a friend or someone else online who has the same interest in psionics as you that way you can practice together.
+
+This website has a geiger counter game, http://alittleweird.com/geiger-game.php, that we practice on at 7PM EST (or GMT-5) on Sunday.
+
+[quote][i]posted by Wizzy:[/i]
+By the way, is this website dead? because the last posts of the other threads were made weeks and months ago, and that troubles me.
+
+-Wiz-[/quote]
+
+Pardon me for being a bit rude, but we are presently not dead. Before this post the last post was 20 minutes ago. However some threads can take a longer time to post on because everybody here has a life they have to live (I hope), and often times we come from different time zones so obviously such communication is delayed.
+
+Once again pardon me for being rude...
+
+-Psikillion</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Wizzy</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12065" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Psikillion:</em><br />
+My recommendation is to get a friend or someone else online who has the same interest in psionics as you that way you can practice together.<br />
+<br />
+This website has a geiger counter game,  <a href="http://alittleweird.com/geiger-game.php," target="_blank">http://alittleweird.com/geiger-game.php,</a> that we practice on at 7PM EST (or GMT-5) on Sunday.</div>Well I don&#039;t know where would I get someone, any ideas?<br />
+<br />
+What skill does the geiger counter game train?<br />
+<br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Psikillion:</em><br />
+Pardon me for being a bit rude, but we are presently not dead. Before this post the last post was 20 minutes ago. However some threads can take a longer time to post on because everybody here has a life they have to live (I hope), and often times we come from different time zones so obviously such communication is delayed.<br />
+<br />
+Once again pardon me for being rude...</div>You weren&#039;t rude, so no problem. I&#039;m just used to forums where people answer faster. Anyway that&#039;s not a problem, I do also have a life too.<br />
+<br />
+</div>
+		<textarea style="display: none;" id="desctxt_12065">[quote][i]posted by Psikillion:[/i]
+My recommendation is to get a friend or someone else online who has the same interest in psionics as you that way you can practice together.
+
+This website has a geiger counter game, http://alittleweird.com/geiger-game.php, that we practice on at 7PM EST (or GMT-5) on Sunday.[/quote]
+Well I don&#039;t know where would I get someone, any ideas?
+
+What skill does the geiger counter game train?
+
+[quote][i]posted by Psikillion:[/i]
+Pardon me for being a bit rude, but we are presently not dead. Before this post the last post was 20 minutes ago. However some threads can take a longer time to post on because everybody here has a life they have to live (I hope), and often times we come from different time zones so obviously such communication is delayed.
+
+Once again pardon me for being rude...[/quote]
+You weren&#039;t rude, so no problem. I&#039;m just used to forums where people answer faster. Anyway that&#039;s not a problem, I do also have a life too.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">ShadowmanX</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12066" style="width: 100%; overflow: auto; min-height: 125px;">Finding someone who you can practice wit is probably the best idea, maybe ask your friends if they are interested.<br />
+<br />
+Other aids would be meditation for example, this video might help:  <a href="http://www.youtube.com/watch?v=e0rSmxsVHPE" target="_blank">http://www.youtube.com/watch?v=e0rSmxsVHPE</a><br />
+<br />
+Another thing that just recently hit us(or just me, not sure) is practicing before going to bed. When sleeping, your subconcious goes through your whole day to process the happened and the last thing that happened will be processed most effectivly. So it might happen, that you try to, for example, move the psiwheel before going to bed and cant do it. And when you get up you are able to</div>
+		<textarea style="display: none;" id="desctxt_12066">Finding someone who you can practice wit is probably the best idea, maybe ask your friends if they are interested.
+
+Other aids would be meditation for example, this video might help: http://www.youtube.com/watch?v=e0rSmxsVHPE
+
+Another thing that just recently hit us(or just me, not sure) is practicing before going to bed. When sleeping, your subconcious goes through your whole day to process the happened and the last thing that happened will be processed most effectivly. So it might happen, that you try to, for example, move the psiwheel before going to bed and cant do it. And when you get up you are able to</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Eldibs</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=77&amp;ref=1223740672" width="19" height="36" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12067" style="width: 100%; overflow: auto; min-height: 125px;">You could take a close friend, and introduce them to psionics. Then you&#039;d have a practice partner. Just make sure it&#039;s someone you feel comfortable with. <br />
+<br />
+I myself have the same problem. I get distracted easily. There are two methods I use. The first is meditation. Simple and to the point. If you can clear your mind and keep it that way for extended periods, focusing on your practice is cake. The other one is to only practice for like five minutes at a time, but a lot more often. This works great for me, because it fits my daily activities a lot better, plus it keeps me from getting bored. I can&#039;t guarantee that it&#039;ll work for you, and I recommend the meditation over the split practices, but that&#039;s just because meditation is useful on its own.</div>
+		<textarea style="display: none;" id="desctxt_12067">You could take a close friend, and introduce them to psionics. Then you&#039;d have a practice partner. Just make sure it&#039;s someone you feel comfortable with. 
+
+I myself have the same problem. I get distracted easily. There are two methods I use. The first is meditation. Simple and to the point. If you can clear your mind and keep it that way for extended periods, focusing on your practice is cake. The other one is to only practice for like five minutes at a time, but a lot more often. This works great for me, because it fits my daily activities a lot better, plus it keeps me from getting bored. I can&#039;t guarantee that it&#039;ll work for you, and I recommend the meditation over the split practices, but that&#039;s just because meditation is useful on its own.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Wizzy</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12071" style="width: 100%; overflow: auto; min-height: 125px;">The partner idea was the first that came to me, 2 years ago, and I told to friends that I trusted and I thought that they would be with me to the end. At start they were as excited as I was, but suddenly they just left me alone and I stopped practicing it.<br />
+So an online friend would be perfect, the problem is I don&#039;t wanna bore someone.<br />
+<br />
+I&#039;ll give your suggestions a thought, and try them to see which one suits me.<br />
+Really thanks guys!</div>
+		<textarea style="display: none;" id="desctxt_12071">The partner idea was the first that came to me, 2 years ago, and I told to friends that I trusted and I thought that they would be with me to the end. At start they were as excited as I was, but suddenly they just left me alone and I stopped practicing it.
+So an online friend would be perfect, the problem is I don&#039;t wanna bore someone.
+
+I&#039;ll give your suggestions a thought, and try them to see which one suits me.
+Really thanks guys!</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Corpse</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=553&amp;ref=1239824741" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12079" style="width: 100%; overflow: auto; min-height: 125px;">Hmmm, well if your lacking motivation, try watching movies of people with superpowers, that might inspire you? I would have said getting a partner, but that one was already used up.</div>
+		<textarea style="display: none;" id="desctxt_12079">Hmmm, well if your lacking motivation, try watching movies of people with superpowers, that might inspire you? I would have said getting a partner, but that one was already used up.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Wizzy</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12080" style="width: 100%; overflow: auto; min-height: 125px;">and I do, but then my stupid brain send thoughts like:<br />
+&quot;You&#039;ll never reach that far, it&#039;s impossible&quot; you can imagine the end of the story.</div>
+		<textarea style="display: none;" id="desctxt_12080">and I do, but then my stupid brain send thoughts like:
+&quot;You&#039;ll never reach that far, it&#039;s impossible&quot; you can imagine the end of the story.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Wizzy, 4 years, 1 month ago<br />Posted 4 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">ShadowmanX</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12081" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Wizzy:</em><br />
+and I do, but then my stupid brain send thoughts like:<br />
+&quot;You&#039;ll never reach that far, it&#039;s impossible&quot; you can imagine the end of the story.</div>Well, just send back: &quot;Shut up! I&#039;m tryin to concentrate&quot;</div>
+		<textarea style="display: none;" id="desctxt_12081">[quote][i]posted by Wizzy:[/i]
+and I do, but then my stupid brain send thoughts like:
+&quot;You&#039;ll never reach that far, it&#039;s impossible&quot; you can imagine the end of the story.[/quote]
+
+Well, just send back: &quot;Shut up! I&#039;m tryin to concentrate&quot;</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Wizzy</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12082" style="width: 100%; overflow: auto; min-height: 125px;">well thought, but my brain always wins when I fight against his will!<br />
+Anyway I won&#039;t give up.<br />
+The link to the video how to meditate really helped me understand how meditation works and its real goal, so tonight, I&#039;ll start my training.<br />
+<br />
+I might post here feeling and other stuff that I will probably sense while training.<br />
+<br />
+By the way, when I trained before, I always felt my mind a bit tired, not too much. However when I tried to think that I was leveling up, my mind sent thoughts like &quot;It&#039;s your imagination&quot; and that desencouraged me.<br />
+Comparing to your personal experiences, do you think that when I felt my mind tired was it really an improvement?</div>
+		<textarea style="display: none;" id="desctxt_12082">well thought, but my brain always wins when I fight against his will!
+Anyway I won&#039;t give up.
+The link to the video how to meditate really helped me understand how meditation works and its real goal, so tonight, I&#039;ll start my training.
+
+I might post here feeling and other stuff that I will probably sense while training.
+
+By the way, when I trained before, I always felt my mind a bit tired, not too much. However when I tried to think that I was leveling up, my mind sent thoughts like &quot;It&#039;s your imagination&quot; and that desencouraged me.
+Comparing to your personal experiences, do you think that when I felt my mind tired was it really an improvement?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 1 month ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Nin10doFan</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=426&amp;ref=1233878811" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12230" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Wizzy:</em><br />
+Hi to everyone!<br />
+<br />
+I&#039;m going straight to the source: my problem in training psionic skills is keep practicing for a long time.<br />
+<br />
+I&#039;ve been starting psionics for almost 2 years, but I never get to the level of results, I&#039;ve always found myself quiting from it, due to loss of motivation and coming of new ideas to my mind that made me forget psionics and the training that&#039;s necessary to achieve results.<br />
+<br />
+This really angers me because I really want to learn psionics and I know perfectly what my problem is, I just can&#039;t fix it, I just can&#039;t find a solution.<br />
+<br />
+From your experience, can you help me?<br />
+Don&#039;t blame me for not being able to reach it, this is a big big problem, and I don&#039;t recommend for those who never experienced this.<br />
+<br />
+By the way, is this website dead? because the last posts of the other threads were made weeks and months ago, and that troubles me.<br />
+<br />
+-Wiz-</div>Don&#039;t worry Wiz, you and I are in the exact same boat.<br />
+<br />
+</div>
+		<textarea style="display: none;" id="desctxt_12230">[quote][i]posted by Wizzy:[/i]
+Hi to everyone!
+
+I&#039;m going straight to the source: my problem in training psionic skills is keep practicing for a long time.
+
+I&#039;ve been starting psionics for almost 2 years, but I never get to the level of results, I&#039;ve always found myself quiting from it, due to loss of motivation and coming of new ideas to my mind that made me forget psionics and the training that&#039;s necessary to achieve results.
+
+This really angers me because I really want to learn psionics and I know perfectly what my problem is, I just can&#039;t fix it, I just can&#039;t find a solution.
+
+From your experience, can you help me?
+Don&#039;t blame me for not being able to reach it, this is a big big problem, and I don&#039;t recommend for those who never experienced this.
+
+By the way, is this website dead? because the last posts of the other threads were made weeks and months ago, and that troubles me.
+
+-Wiz-[/quote]
+
+Don&#039;t worry Wiz, you and I are in the exact same boat.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">ed.</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=446&amp;ref=1213317482" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12231" style="width: 100%; overflow: auto; min-height: 125px;">Sorry to but in, but I don&#039;t see the need for me to start my own topic when I will fit in right here.<br />
+<br />
+I share a similar problem, and I&#039;m really starting to lose motivation. I&#039;ve been practicing on and off for years with absolutely no result to the point where it is depressing. I think my main problem is that I cannot meditate properly; I&#039;ve seen the videos and read millions of guides, but I can&#039;t shut my mind up. I also have trouble doing something without a tangible, definite way to practice. Everything about psionics is indefinite, other than the fact that it exists. I&#039;m beginning to think I&#039;ll never see a result. But I&#039;m a determined individual, so I won&#039;t stop trying.<br />
+<br />
+My main goal is the whole communicating with your subconscious thing as well as any form of perception (I&#039;m not that interested in manipulation). What do you all recommend I do to develop these types of things?<br />
+<br />
+In addition, do any you think that it is possible for a human being to be completely unable to develop psionic skills? Cause I&#039;m starting to believe I am one of those people.<br />
+<br />
+Thanks to everyone here.<br />
+<br />
+ed</div>
+		<textarea style="display: none;" id="desctxt_12231">Sorry to but in, but I don&#039;t see the need for me to start my own topic when I will fit in right here.
+
+I share a similar problem, and I&#039;m really starting to lose motivation. I&#039;ve been practicing on and off for years with absolutely no result to the point where it is depressing. I think my main problem is that I cannot meditate properly; I&#039;ve seen the videos and read millions of guides, but I can&#039;t shut my mind up. I also have trouble doing something without a tangible, definite way to practice. Everything about psionics is indefinite, other than the fact that it exists. I&#039;m beginning to think I&#039;ll never see a result. But I&#039;m a determined individual, so I won&#039;t stop trying.
+
+My main goal is the whole communicating with your subconscious thing as well as any form of perception (I&#039;m not that interested in manipulation). What do you all recommend I do to develop these types of things?
+
+In addition, do any you think that it is possible for a human being to be completely unable to develop psionic skills? Cause I&#039;m starting to believe I am one of those people.
+
+Thanks to everyone here.
+
+ed</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">MagicDick</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=736&amp;ref=1223932595" width="121" height="122" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12235" style="width: 100%; overflow: auto; min-height: 125px;">Lack of motivation. Too many distractions. Not enough time to practice.<br />
+I have the same problems, but I don&#039;t have any reasonable solutions. Pretty sad.</div>
+		<textarea style="display: none;" id="desctxt_12235">Lack of motivation. Too many distractions. Not enough time to practice.
+I have the same problems, but I don&#039;t have any reasonable solutions. Pretty sad.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Antisankari</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=224&amp;ref=1213032338" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12236" style="width: 100%; overflow: auto; min-height: 125px;">That may well be the most defining feature of everyone who practising psionics.<br />
+<br />
+Admit it or not :P</div>
+		<textarea style="display: none;" id="desctxt_12236">That may well be the most defining feature of everyone who practising psionics.
+
+Admit it or not :P</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Antisankari, 4 years ago<br />Posted 4 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">DigGil</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12291" style="width: 100%; overflow: auto; min-height: 125px;">Well in my opinion the &quot;nemesis&quot; of lack of motivation and constant distraction is Discipline; Your mind is in you then you should, or better, you MUST be able to control it. When you get the feeling and notion (fully understand) of what I wrote before, then you can accomplish one important concept (in my opinion). <br />
+You might start thinking: &quot;And what about my body!?? Yes I can control it it is ME. Then and what&#039;s around me? Am not I a waterdrop in this big lake which is the world? (Not_Important&#039;s Manual)?!! Yes &quot;we&quot; are only one, so I may be also be able to control it, or some of the stuff (telekinesis or telepathy)...&quot; This thought has caught me once, and what supports my belief in the practice mostly is concepts (and some superpower people :p).<br />
+But seriously if you really want this and believe this, treat psychic powers has a course at school.</div>
+		<textarea style="display: none;" id="desctxt_12291">Well in my opinion the &quot;nemesis&quot; of lack of motivation and constant distraction is Discipline; Your mind is in you then you should, or better, you MUST be able to control it. When you get the feeling and notion (fully understand) of what I wrote before, then you can accomplish one important concept (in my opinion). 
+You might start thinking: &quot;And what about my body!?? Yes I can control it it is ME. Then and what&#039;s around me? Am not I a waterdrop in this big lake which is the world? (Not_Important&#039;s Manual)?!! Yes &quot;we&quot; are only one, so I may be also be able to control it, or some of the stuff (telekinesis or telepathy)...&quot; This thought has caught me once, and what supports my belief in the practice mostly is concepts (and some superpower people :p).
+But seriously if you really want this and believe this, treat psychic powers has a course at school.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Wizzy</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12311" style="width: 100%; overflow: auto; min-height: 125px;">Thanks DigGil! That&#039;s a good point of view.<br />
+Nin10doFan do you have a messenger? like msn</div>
+		<textarea style="display: none;" id="desctxt_12311">Thanks DigGil! That&#039;s a good point of view.
+Nin10doFan do you have a messenger? like msn</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">DigGil</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12313" style="width: 100%; overflow: auto; min-height: 125px;">Yeah, I&#039;ve got large experience in mind block :p, and still not enough :(.</div>
+		<textarea style="display: none;" id="desctxt_12313">Yeah, I&#039;ve got large experience in mind block :p, and still not enough :(.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=613" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 33 queries. 0.302 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

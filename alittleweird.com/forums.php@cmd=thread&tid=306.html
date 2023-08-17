@@ -1,0 +1,307 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Auras</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Auras</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Auras</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">mrj</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7481" style="width: 100%; overflow: auto; min-height: 125px;">Auras are something that have interested me for a long time. I think they can be important when learning more about human emotion too. It has been debated about over the past few decades (what it is). It is mentioned in one of the videos below that giving something a scientific name (like &quot;biofeedback&quot;) and giving it a system of measurement becomes more acceptable by people like scientists. Is it the life force?(psi, whatever). It seems that concentrating will increase the size and intensity of the aura, and different emotions will give different colors. If there was a more advanced camera, (say, one that could read arua without human touch) then you could make a construct in front of it, and see if anything shows. If nothing were to show, then could it mean that an alternate &quot;energy&quot;(in application to psionics) besides psi exists? Some psionics websites have said that only one energy exists, but if two existed, (similar to the story of Dynamo jack in the videos section) maybe it could be manipulated to different effects. <br />
+<br />
+But we dont have a camera like that, (as far as I know) so it seems we can only speculate.<br />
+<br />
+Here is some stuff I found on that topic:<br />
+<br />
+An interesting article that relates the placebo effect and auras together<br />
+ <a href="http://serendip.brynmawr.edu/bb/neuro/neuro00/web2/Kim.html" target="_blank">http://serendip.brynmawr.edu/bb/neuro/neuro00/web2/Kim.html</a><br />
+<br />
+Sci-fi channels program &quot;Proof Positive&quot; recognizes the aura as a &quot;positive proof&quot;.<br />
+ <a href="http://youtube.com/watch?v=1yx6PaLTKTk" target="_blank">http://youtube.com/watch?v=1yx6PaLTKTk</a><br />
+<br />
+Typical skeptic wikipedia article talks about debunking aura vision and seems to disprove the effect of the leaf being cut off and the aura still being there.<br />
+ <a href="http://en.wikipedia.org/wiki/Aura_%28paranormal%29" target="_blank">http://en.wikipedia.org/wiki/Aura_%28paranormal%29</a><br />
+<br />
+Auras mentioned at the end of this video with Guy Coggins again.<br />
+ <a href="http://youtube.com/watch?v=llM3JmGIESI" target="_blank">http://youtube.com/watch?v=llM3JmGIESI</a><br />
+<br />
+&quot;Who knows? maybe if we had eyes like the mantis shrimp, maybe we could all see our auras!&quot;<br />
+</div>
+		<textarea style="display: none;" id="desctxt_7481">Auras are something that have interested me for a long time. I think they can be important when learning more about human emotion too. It has been debated about over the past few decades (what it is). It is mentioned in one of the videos below that giving something a scientific name (like &quot;biofeedback&quot;) and giving it a system of measurement becomes more acceptable by people like scientists. Is it the life force?(psi, whatever). It seems that concentrating will increase the size and intensity of the aura, and different emotions will give different colors. If there was a more advanced camera, (say, one that could read arua without human touch) then you could make a construct in front of it, and see if anything shows. If nothing were to show, then could it mean that an alternate &quot;energy&quot;(in application to psionics) besides psi exists? Some psionics websites have said that only one energy exists, but if two existed, (similar to the story of Dynamo jack in the videos section) maybe it could be manipulated to different effects. 
+
+But we dont have a camera like that, (as far as I know) so it seems we can only speculate.
+
+Here is some stuff I found on that topic:
+
+An interesting article that relates the placebo effect and auras together
+http://serendip.brynmawr.edu/bb/neuro/neuro00/web2/Kim.html
+
+Sci-fi channels program &quot;Proof Positive&quot; recognizes the aura as a &quot;positive proof&quot;.
+http://youtube.com/watch?v=1yx6PaLTKTk
+
+Typical skeptic wikipedia article talks about debunking aura vision and seems to disprove the effect of the leaf being cut off and the aura still being there.
+http://en.wikipedia.org/wiki/Aura_%28paranormal%29
+
+Auras mentioned at the end of this video with Guy Coggins again.
+http://youtube.com/watch?v=llM3JmGIESI
+
+&quot;Who knows? maybe if we had eyes like the mantis shrimp, maybe we could all see our auras!&quot;</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">vondur</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=457&amp;ref=1206950893" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_7486" style="width: 100%; overflow: auto; min-height: 125px;">I haven&#039;t read those links because I don&#039;t have the time.  I will read them when I can, but I just wanted to quickly give some info. about my own experiences with auras.<br />
+<br />
+There have been times I have tried to read auras, and some of those times I think I was successful. I tried to get my mind to look at the person (I only tried it on people) and try to really look at them, not just normal looking at them.  Then, a coulered sort of &quot;bubble&quot; would appear around them.<br />
+<br />
+Someone I know had a program on his computer that is supposedly able to read different meridian points in the body, to show if there could be health problems.  It worked by having a thing that looks like a pen put into the USP port, and it is then touched to different parts of the hands and feet, and it registers as a number on the computer.  I do not know if it is accurate or not, but it did show consistent results with the same people.  I would like to get someone who has a known medical problem to try it out, and see if it is accurate in detecting it.  <br />
+<br />
+I tried to find a link to a website about the &quot;aura reading machine&quot;. I was unable to find it, but I did find something similair:<br />
+ <a href="http://www.divinespiritchurch.com/aura_imaging" target="_blank">http://www.divinespiritchurch.com/aura_imaging</a><br />
+<br />
+To me, however, the one that the person I know had seemed to be more believable than that one.<br />
+<br />
+I just try to keep an open mind about everything.  Until I am able to know for sure rather or not auras are real, I will not say either &quot;yes they are&quot; or &quot;no they are not&quot;.  Even though I have seen them before, I am still not going to form a conclusion.  Sometimes even seeing is not believing, at least for me.</div>
+		<textarea style="display: none;" id="desctxt_7486">I haven&#039;t read those links because I don&#039;t have the time.  I will read them when I can, but I just wanted to quickly give some info. about my own experiences with auras.
+
+There have been times I have tried to read auras, and some of those times I think I was successful. I tried to get my mind to look at the person (I only tried it on people) and try to really look at them, not just normal looking at them.  Then, a coulered sort of &quot;bubble&quot; would appear around them.
+
+Someone I know had a program on his computer that is supposedly able to read different meridian points in the body, to show if there could be health problems.  It worked by having a thing that looks like a pen put into the USP port, and it is then touched to different parts of the hands and feet, and it registers as a number on the computer.  I do not know if it is accurate or not, but it did show consistent results with the same people.  I would like to get someone who has a known medical problem to try it out, and see if it is accurate in detecting it.  
+
+I tried to find a link to a website about the &quot;aura reading machine&quot;. I was unable to find it, but I did find something similair:
+http://www.divinespiritchurch.com/aura_imaging
+
+To me, however, the one that the person I know had seemed to be more believable than that one.
+
+I just try to keep an open mind about everything.  Until I am able to know for sure rather or not auras are real, I will not say either &quot;yes they are&quot; or &quot;no they are not&quot;.  Even though I have seen them before, I am still not going to form a conclusion.  Sometimes even seeing is not believing, at least for me.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">vondur</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=457&amp;ref=1206950893" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7507" style="width: 100%; overflow: auto; min-height: 125px;">I have finally taken the time to look over those links.  <br />
+<br />
+Something I find very interesting is another Wikipedia article that is linked from on the Wikipedia article you listed.   <a href="http://en.wikipedia.org/wiki/Aura_%28symptom%29" target="_blank">http://en.wikipedia.org/wiki/Aura_%28symptom%29</a><br />
+<br />
+Especially note one of the symptoms listed: Feeling separated from one&#039;s body.<br />
+<br />
+Makes me wonder if perhaps Epilepsy and Migraines could be connected with parts of the brain used to perceive auras.  This is simply a hypothesis I just thought of, don&#039;t take it as anything more or anything less.<br />
+<br />
+Thanks for sharing these articles, mrj.</div>
+		<textarea style="display: none;" id="desctxt_7507">I have finally taken the time to look over those links.  
+
+Something I find very interesting is another Wikipedia article that is linked from on the Wikipedia article you listed.  http://en.wikipedia.org/wiki/Aura_%28symptom%29
+
+Especially note one of the symptoms listed: Feeling separated from one&#039;s body.
+
+Makes me wonder if perhaps Epilepsy and Migraines could be connected with parts of the brain used to perceive auras.  This is simply a hypothesis I just thought of, don&#039;t take it as anything more or anything less.
+
+Thanks for sharing these articles, mrj.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 9 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=306" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 19 queries. 0.329 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

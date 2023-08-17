@@ -1,0 +1,372 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Experiment: Shared Dreaming, Dreamwalking</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Experiment: Shared Dreaming, Dreamwalking</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Experiment: Shared Dreaming, Dreamwalking</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">ShadowmanX</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12546" style="width: 100%; overflow: auto; min-height: 125px;">This experiment should show if shared dreaming is possible and how we can do it.<br />
+<br />
+What is Shared Dreaming or Dreamwalking?<br />
+<br />
+Shared dreaming is when you and at least one other person have the same dream, but not only coincidently have the same dream, they are in the same dream and they could talk about anything they want and the other person should know if the dream memory is not to bad.<br />
+Dreamwalking is easy said if you &quot;walk&quot; into anotherones dream.<br />
+<br />
+<br />
+How can we conciously &quot;walk&quot; into anotherones dream?<br />
+<br />
+Lucid dreaming is the answer. It is when you know that you are dreaming. I think most of you already heard that. For everybody who is new to that stuff, here&#039;s a little link: <a href="http://www.dreamviews.com/community/index.php" target="_blank" title="http://www.dreamviews.com/community/index.php">http://www.dreamviews.com/community/index.php</a><br />
+<br />
+How do we test Shared Dreaming?<br />
+<br />
+We&#039;re looking for  location to meet in our dreams. It should be easy to meet as long as we know where to meet.<br />
+<br />
+<br />
+Okay here we go:<br />
+<br />
+Location: Lucid Crossroads (<a href="http://lucidcrossroads.co.uk/index.html" target="_blank" title="http://lucidcrossroads.co.uk/index.html">http://lucidcrossroads.co.uk/index.html</a>)<br />
+Time: Noon (only noon in your dreams, you don&#039;t have to go to sleep at noon^^, its just for trying if time matters)<br />
+<br />
+What to do when you&#039;re there?<br />
+<br />
+Look around for any other dreamers or anything eyecatching, if there is nothing, then create something eyecatching, maybe someone else sees it. For example cast a huge fireball in the sky.<br />
+<br />
+What to do when I meet someone?<br />
+<br />
+Ask them for their screennames and then just talk about something, then as soon as you wake up write down what you talked and then post your experience without telling the screenname or anything specific and wait for the right person to react. Since there is no PM System here, we can only stick to that<br />
+<br />
+If I can think of anything else, I will add it.</div>
+		<textarea style="display: none;" id="desctxt_12546">This experiment should show if shared dreaming is possible and how we can do it.
+
+What is Shared Dreaming or Dreamwalking?
+
+Shared dreaming is when you and at least one other person have the same dream, but not only coincidently have the same dream, they are in the same dream and they could talk about anything they want and the other person should know if the dream memory is not to bad.
+Dreamwalking is easy said if you &quot;walk&quot; into anotherones dream.
+
+
+How can we conciously &quot;walk&quot; into anotherones dream?
+
+Lucid dreaming is the answer. It is when you know that you are dreaming. I think most of you already heard that. For everybody who is new to that stuff, here&#039;s a little link: [url]http://www.dreamviews.com/community/index.php[/url]
+
+How do we test Shared Dreaming?
+
+We&#039;re looking for  location to meet in our dreams. It should be easy to meet as long as we know where to meet.
+
+
+Okay here we go:
+
+Location: Lucid Crossroads ([url]http://lucidcrossroads.co.uk/index.html[/url])
+Time: Noon (only noon in your dreams, you don&#039;t have to go to sleep at noon^^, its just for trying if time matters)
+
+What to do when you&#039;re there?
+
+Look around for any other dreamers or anything eyecatching, if there is nothing, then create something eyecatching, maybe someone else sees it. For example cast a huge fireball in the sky.
+
+What to do when I meet someone?
+
+Ask them for their screennames and then just talk about something, then as soon as you wake up write down what you talked and then post your experience without telling the screenname or anything specific and wait for the right person to react. Since there is no PM System here, we can only stick to that
+
+If I can think of anything else, I will add it.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 11 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">likan7</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=861&amp;ref=1229451338" width="96" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12557" style="width: 100%; overflow: auto; min-height: 125px;">great I&#039;ll try it out, I&#039;ll let yo know when I have any results</div>
+		<textarea style="display: none;" id="desctxt_12557">great I&#039;ll try it out, I&#039;ll let yo know when I have any results</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 11 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Psikillion</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=593&amp;ref=1213954510" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12559" style="width: 100%; overflow: auto; min-height: 125px;">They talk about a martial arts dojo as well on Lucid Crossroads, so I was thinking would it be possible to create such a place to practice psionics?<br />
+<br />
+If so how will we create this place?</div>
+		<textarea style="display: none;" id="desctxt_12559">They talk about a martial arts dojo as well on Lucid Crossroads, so I was thinking would it be possible to create such a place to practice psionics?
+
+If so how will we create this place?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 11 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">anisus</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=732&amp;ref=1219047680" width="125" height="123" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12560" style="width: 100%; overflow: auto; min-height: 125px;">I remember someone telling me once about doing this experiment with a friend in real time. They both decided where to meet, then both took a nap and met and had a conversation in their dream. I was skeptical but she kept insisting it happened so it always intrigued me. I even tried it myself a few times with a few people, without results, but my mind is still open to the idea that we can meet in dreams. I&#039;ll try this experiment too if I can. The two blue people are a little scary looking though, so I hope I don&#039;t end up just having nightmares of them trying to infiltrate my mind.</div>
+		<textarea style="display: none;" id="desctxt_12560">I remember someone telling me once about doing this experiment with a friend in real time. They both decided where to meet, then both took a nap and met and had a conversation in their dream. I was skeptical but she kept insisting it happened so it always intrigued me. I even tried it myself a few times with a few people, without results, but my mind is still open to the idea that we can meet in dreams. I&#039;ll try this experiment too if I can. The two blue people are a little scary looking though, so I hope I don&#039;t end up just having nightmares of them trying to infiltrate my mind.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by anisus, 3 years, 11 months ago<br />Posted 3 years, 11 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Riven</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=656&amp;ref=1217444530" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12568" style="width: 100%; overflow: auto; min-height: 125px;">I&#039;ll try it too :)<br />
+<br />
+Slightly off topic, I had a dream a while back that I met a bunch of you all in a DQ, but I think it was just a dream...<br />
+<br />
+Even more slightly off topic: My best friend and I tend to wake up about the same time in the middle of the night. We don&#039;t meet in dreams or anything, but I think us waking up at the same time several nights in a row means somethings up, right?</div>
+		<textarea style="display: none;" id="desctxt_12568">I&#039;ll try it too :)
+
+Slightly off topic, I had a dream a while back that I met a bunch of you all in a DQ, but I think it was just a dream...
+
+Even more slightly off topic: My best friend and I tend to wake up about the same time in the middle of the night. We don&#039;t meet in dreams or anything, but I think us waking up at the same time several nights in a row means somethings up, right?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 11 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">ShadowmanX</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12575" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Psikillion:</em><br />
+They talk about a martial arts dojo as well on Lucid Crossroads, so I was thinking would it be possible to create such a place to practice psionics?<br />
+<br />
+If so how will we create this place?</div>Creating such a place should be easy. The only thing we need is believe and a bit experience will also be good. the first one of us who gets to the lucid crossroads could start creating that place, just like that Dojo. in a dream you can do what you want, you can create what you want, you just need to believe that you can and have a little bit experience in dream control. But if you believe you are able to do what you want as soon as you are lucid, the only thing that holds you back is you. <br />
+<br />
+Don&#039;t let you hold yourself back ;)</div>
+		<textarea style="display: none;" id="desctxt_12575">[quote][i]posted by Psikillion:[/i]
+They talk about a martial arts dojo as well on Lucid Crossroads, so I was thinking would it be possible to create such a place to practice psionics?
+
+If so how will we create this place?[/quote]
+
+Creating such a place should be easy. The only thing we need is believe and a bit experience will also be good. the first one of us who gets to the lucid crossroads could start creating that place, just like that Dojo. in a dream you can do what you want, you can create what you want, you just need to believe that you can and have a little bit experience in dream control. But if you believe you are able to do what you want as soon as you are lucid, the only thing that holds you back is you. 
+
+Don&#039;t let you hold yourself back ;)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 11 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Riven</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=656&amp;ref=1217444530" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_12577" style="width: 100%; overflow: auto; min-height: 125px;">I keep getting lucid but then something always wakes me up. I was thinking though, everyone pretty much lives in different time zones. How would we know how long to wait and when everyone would be there? Or how long the dream actually is... I once had a dream that seemed to last for several months, but was only ten minutes :/<br />
+<br />
+I guess I&#039;ll just bounce around and wait the whole time...</div>
+		<textarea style="display: none;" id="desctxt_12577">I keep getting lucid but then something always wakes me up. I was thinking though, everyone pretty much lives in different time zones. How would we know how long to wait and when everyone would be there? Or how long the dream actually is... I once had a dream that seemed to last for several months, but was only ten minutes :/
+
+I guess I&#039;ll just bounce around and wait the whole time...</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 11 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">ShadowmanX</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12579" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Riven:</em><br />
+I keep getting lucid but then something always wakes me up. I was thinking though, everyone pretty much lives in different time zones. How would we know how long to wait and when everyone would be there? Or how long the dream actually is... I once had a dream that seemed to last for several months, but was only ten minutes :/<br />
+<br />
+I guess I&#039;ll just bounce around and wait the whole time...</div>Thats why I said we meet at noon in dream time. It might be possible to meet even if we don&#039;t sleep at the same time. Thats one thing I want to try out.<br />
+<br />
+With the waking I have a tip for you. First one, most obvious one -&gt; The more often you have a lucid the longer it will last. Now the real hint -&gt; when you think you are waking up, then you can rub your hands together this will stabilise your dream. You know that you will wake up soon if your sight turns black or white slowly or if your senses become weaker, for example you don&#039;t hear anything or you feel nothing, this can also mean that you are just not lucid enough to use this senses. In thios case you can also rub your hands together to become more lucid</div>
+		<textarea style="display: none;" id="desctxt_12579">[quote][i]posted by Riven:[/i]
+I keep getting lucid but then something always wakes me up. I was thinking though, everyone pretty much lives in different time zones. How would we know how long to wait and when everyone would be there? Or how long the dream actually is... I once had a dream that seemed to last for several months, but was only ten minutes :/
+
+I guess I&#039;ll just bounce around and wait the whole time...[/quote]
+
+Thats why I said we meet at noon in dream time. It might be possible to meet even if we don&#039;t sleep at the same time. Thats one thing I want to try out.
+
+With the waking I have a tip for you. First one, most obvious one -&gt; The more often you have a lucid the longer it will last. Now the real hint -&gt; when you think you are waking up, then you can rub your hands together this will stabilise your dream. You know that you will wake up soon if your sight turns black or white slowly or if your senses become weaker, for example you don&#039;t hear anything or you feel nothing, this can also mean that you are just not lucid enough to use this senses. In thios case you can also rub your hands together to become more lucid</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 3 years, 11 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=649" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 24 queries. 0.283 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

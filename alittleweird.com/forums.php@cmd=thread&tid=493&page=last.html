@@ -1,0 +1,373 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Weird dream</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Weird dream</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Weird dream</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">JakePsi</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10456" style="width: 100%; overflow: auto; min-height: 125px;">Right now this isn&#039;t a paranormal dream of anything just really freaky and worrying i basically had a dream i stabbed someone in my garden then stabbed another in my kitchen, i then hid and as the 3rd person looked at the body on the floor i ran out and hit him with this machete but i had it the wrong way round so rather then killing them instantly they cowered down at which point i repeatedly laid into them with this machete. then i thought oh shit i&#039;m gunna get put in prison for this stuff so i started cutting up the bodies and putting them in bin bags and what was even more weird was, as i was chopping them up they didn&#039;t have any blood at all anyway... woke up like wtf then went to the beach but i really have no idea what this dream has to do with anything so just thought id ask the opinion of some people oh and please don&#039;t post saying i&#039;m crazy etc ^^ </div>
+		<textarea style="display: none;" id="desctxt_10456">Right now this isn&#039;t a paranormal dream of anything just really freaky and worrying i basically had a dream i stabbed someone in my garden then stabbed another in my kitchen, i then hid and as the 3rd person looked at the body on the floor i ran out and hit him with this machete but i had it the wrong way round so rather then killing them instantly they cowered down at which point i repeatedly laid into them with this machete. then i thought oh shit i&#039;m gunna get put in prison for this stuff so i started cutting up the bodies and putting them in bin bags and what was even more weird was, as i was chopping them up they didn&#039;t have any blood at all anyway... woke up like wtf then went to the beach but i really have no idea what this dream has to do with anything so just thought id ask the opinion of some people oh and please don&#039;t post saying i&#039;m crazy etc ^^</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10459" style="width: 100%; overflow: auto; min-height: 125px;">eh... sounds to me like you have a fear that your pursuits (possibly in psionics maybe?) are causing destruction in some form. It really depends on who you killed as to how the exact interpretation would go...<br />
+<br />
+Anyway, good luck! any more info is much appreciated ^_-</div>
+		<textarea style="display: none;" id="desctxt_10459">eh... sounds to me like you have a fear that your pursuits (possibly in psionics maybe?) are causing destruction in some form. It really depends on who you killed as to how the exact interpretation would go...
+
+Anyway, good luck! any more info is much appreciated ^_-</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">JakePsi</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10468" style="width: 100%; overflow: auto; min-height: 125px;">good interpretation ^^ see thats the weird thing though the people i killed were people i did not recognize lol</div>
+		<textarea style="display: none;" id="desctxt_10468">good interpretation ^^ see thats the weird thing though the people i killed were people i did not recognize lol</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">W</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10471" style="width: 100%; overflow: auto; min-height: 125px;">Maybe computer games or movies? Well dream translator(though I don&#039;t believe in this stuff) says:     <em>to kill - to overcome difficulties, to stab with knife - inheritance, if it&#039;s sharp - fear, if it&#039;s big - danger</em> . But usually things like violence(according to dream translator) in dreams means opposite. So don&#039;t worry. I&#039;m pretty sure you won&#039;t become maniacal killer anytime soon :D .</div>
+		<textarea style="display: none;" id="desctxt_10471">Maybe computer games or movies? Well dream translator(though I don&#039;t believe in this stuff) says:     [i]to kill - to overcome difficulties, to stab with knife - inheritance, if it&#039;s sharp - fear, if it&#039;s big - danger[/i] . But usually things like violence(according to dream translator) in dreams means opposite. So don&#039;t worry. I&#039;m pretty sure you won&#039;t become maniacal killer anytime soon :D .</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by W, 4 years, 5 months ago<br />Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">JakePsi</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10476" style="width: 100%; overflow: auto; min-height: 125px;">could very well be tbh :) and ah good its a relief to know that i&#039;m not going to become a danger to society :P</div>
+		<textarea style="display: none;" id="desctxt_10476">could very well be tbh :) and ah good its a relief to know that i&#039;m not going to become a danger to society :P</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10477" style="width: 100%; overflow: auto; min-height: 125px;">maybe you just have a sense of danger that you can&#039;t overcome the difficulties other people are putting onto you... or possibly that you are afraid that when you do overcome these difficulties that you yourself are setting yourself up to only be in fear of what&#039; next...<br />
+<br />
+a little watered down comes to a sense of angst towards the goals yet to come, and a fear that, once accomplished, may lead you down a wrong path.<br />
+<br />
+Idk though, could be anything...</div>
+		<textarea style="display: none;" id="desctxt_10477">maybe you just have a sense of danger that you can&#039;t overcome the difficulties other people are putting onto you... or possibly that you are afraid that when you do overcome these difficulties that you yourself are setting yourself up to only be in fear of what&#039; next...
+
+a little watered down comes to a sense of angst towards the goals yet to come, and a fear that, once accomplished, may lead you down a wrong path.
+
+Idk though, could be anything...</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">daslickest</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=565&amp;ref=1214163153" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10484" style="width: 100%; overflow: auto; min-height: 125px;">dam your violent. sounds like a fun way to relieve stress lol</div>
+		<textarea style="display: none;" id="desctxt_10484">dam your violent. sounds like a fun way to relieve stress lol</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Riven</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=656&amp;ref=1217444530" width="100" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10488" style="width: 100%; overflow: auto; min-height: 125px;">I wouldn&#039;t really worry about it... I mean, did you like the killings? Were the people in the way of something you needed? (Or wanted)If so, I&#039;d say its a pretty big ambition, and you&#039;d do anything to accomplish it.<br />
+<br />
+Or it could have just been a crazy dream =P </div>
+		<textarea style="display: none;" id="desctxt_10488">I wouldn&#039;t really worry about it... I mean, did you like the killings? Were the people in the way of something you needed? (Or wanted)If so, I&#039;d say its a pretty big ambition, and you&#039;d do anything to accomplish it.
+
+Or it could have just been a crazy dream =P</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10492" style="width: 100%; overflow: auto; min-height: 125px;">truth be told, you already know what it&#039;s about ^_-, at;east subconsciously...</div>
+		<textarea style="display: none;" id="desctxt_10492">truth be told, you already know what it&#039;s about ^_-, at;east subconsciously...</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">bright</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=442&amp;ref=1219022178" width="112" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10502" style="width: 100%; overflow: auto; min-height: 125px;">I misread &quot;Wierd dream&quot; at first oO<br />
+                                  ¬</div>
+		<textarea style="display: none;" id="desctxt_10502">I misread &quot;Wierd dream&quot; at first oO
+                                  ¬</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">JakePsi</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10507" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Akio:</em><br />
+maybe you just have a sense of danger that you can&#039;t overcome the difficulties other people are putting onto you... or possibly that you are afraid that when you do overcome these difficulties that you yourself are setting yourself up to only be in fear of what&#039; next...<br />
+<br />
+a little watered down comes to a sense of angst towards the goals yet to come, and a fear that, once accomplished, may lead you down a wrong path.<br />
+<br />
+Idk though, could be anything...</div>Good idea of going down the wrong path and what next funnily enough that actually does relate to current situations of mine :P<br />
+<br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by daslickest:</em><br />
+dam your violent. sounds like a fun way to relieve stress lol</div><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Riven:</em><br />
+I wouldn&#039;t really worry about it... I mean, did you like the killings? Were the people in the way of something you needed? (Or wanted)If so, I&#039;d say its a pretty big ambition, and you&#039;d do anything to accomplish it.<br />
+<br />
+Or it could have just been a crazy dream =P</div>No i didn&#039;t really enjoy the killings :P although i didn&#039;t really dislike them either lol and because they were sort of in a place that resembled my garden and kitchen it seemed i was sort of stopping them from something sort of like protection i guess...<br />
+<br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Akio:</em><br />
+truth be told, you already know what it&#039;s about ^_-, at;east subconsciously...</div>ha ha yeah i really need to start communicating with my subconscious :P get to the bottom of it ha ha although i don&#039;t really know whether i want to communicate with another consciousness inside of me that thinks about stabbing and cutting up 3 people &gt;.&gt; ha ha :P<br />
+<br />
+</div>
+		<textarea style="display: none;" id="desctxt_10507">[quote][i]posted by Akio:[/i]
+maybe you just have a sense of danger that you can&#039;t overcome the difficulties other people are putting onto you... or possibly that you are afraid that when you do overcome these difficulties that you yourself are setting yourself up to only be in fear of what&#039; next...
+
+a little watered down comes to a sense of angst towards the goals yet to come, and a fear that, once accomplished, may lead you down a wrong path.
+
+Idk though, could be anything...[/quote]
+Good idea of going down the wrong path and what next funnily enough that actually does relate to current situations of mine :P
+
+[quote][i]posted by daslickest:[/i]
+dam your violent. sounds like a fun way to relieve stress lol[/quote]
+
+[quote][i]posted by Riven:[/i]
+I wouldn&#039;t really worry about it... I mean, did you like the killings? Were the people in the way of something you needed? (Or wanted)If so, I&#039;d say its a pretty big ambition, and you&#039;d do anything to accomplish it.
+
+Or it could have just been a crazy dream =P[/quote]
+No i didn&#039;t really enjoy the killings :P although i didn&#039;t really dislike them either lol and because they were sort of in a place that resembled my garden and kitchen it seemed i was sort of stopping them from something sort of like protection i guess...
+
+[quote][i]posted by Akio:[/i]
+truth be told, you already know what it&#039;s about ^_-, at;east subconsciously...[/quote]
+ha ha yeah i really need to start communicating with my subconscious :P get to the bottom of it ha ha although i don&#039;t really know whether i want to communicate with another consciousness inside of me that thinks about stabbing and cutting up 3 people &gt;.&gt; ha ha :P</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10545" style="width: 100%; overflow: auto; min-height: 125px;">Honestly, I&#039;ve been working on breaking through mental barriers. My Subconsciousness and my Consciousness have no barrier other than name. Granted, I Haven&#039;t gotten down into the deeper parts of my mind, but I have unlocked my subconscious mind to the degree in which I have extremely heightened muscle control. (i.e. I can control heartbeat, eye dilation, muscles in my digestive tract to a degree, and muscles found within the skin that control the dilation of arteries and veins).<br />
+<br />
+If I&#039;m not mistaken there are certain mental gates. These gates can be opened in order to increase control of the human body, however; if you venture to far, you risk hitting the &quot;final&quot; gate, which is named so because it causes a system overload and death. The Final gate is probably not the true last that you can break, but it is the one that will kill you, It is the mental gate that makes heartbeat and other vital processes open to the conscience mind. This causes your mind to risk overload possibly because you consciously cipher through too much information at one time (like an overloaded processor on a computer) and cause a system shutdown.<br />
+<br />
+This came to me after trying to figure out what was causing my computer to shut down randomly during the day... As soon as I figured out the reason, It hit me...<br />
+<br />
+_______________________________________________________________________________________<br />
+<br />
+So truth be told, I haven&#039;t had to deal with limits like that for quite a while. Although I can say that If you know yourself, truthfully, you would understand the meaning of your dreams without much difficulty. Of you know that YOU wouldn&#039;t stab and cut people, then your subconscious wouldn&#039;t either. Your subconscious mind is just an acute extension of yourself. Basically you without any filtered information. Not affected by more then concept and desire ^_-. So just let yourself relax, and it will come to you in time... everything eventually does, so there&#039;s no reason to fret.</div>
+		<textarea style="display: none;" id="desctxt_10545">Honestly, I&#039;ve been working on breaking through mental barriers. My Subconsciousness and my Consciousness have no barrier other than name. Granted, I Haven&#039;t gotten down into the deeper parts of my mind, but I have unlocked my subconscious mind to the degree in which I have extremely heightened muscle control. (i.e. I can control heartbeat, eye dilation, muscles in my digestive tract to a degree, and muscles found within the skin that control the dilation of arteries and veins).
+
+If I&#039;m not mistaken there are certain mental gates. These gates can be opened in order to increase control of the human body, however; if you venture to far, you risk hitting the &quot;final&quot; gate, which is named so because it causes a system overload and death. The Final gate is probably not the true last that you can break, but it is the one that will kill you, It is the mental gate that makes heartbeat and other vital processes open to the conscience mind. This causes your mind to risk overload possibly because you consciously cipher through too much information at one time (like an overloaded processor on a computer) and cause a system shutdown.
+
+This came to me after trying to figure out what was causing my computer to shut down randomly during the day... As soon as I figured out the reason, It hit me...
+
+_______________________________________________________________________________________
+
+So truth be told, I haven&#039;t had to deal with limits like that for quite a while. Although I can say that If you know yourself, truthfully, you would understand the meaning of your dreams without much difficulty. Of you know that YOU wouldn&#039;t stab and cut people, then your subconscious wouldn&#039;t either. Your subconscious mind is just an acute extension of yourself. Basically you without any filtered information. Not affected by more then concept and desire ^_-. So just let yourself relax, and it will come to you in time... everything eventually does, so there&#039;s no reason to fret.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 4 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=493" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 28 queries. 0.274 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

@@ -1,0 +1,328 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; weird videos - need help</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; weird videos - need help</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">weird videos - need help</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">speeddemon92</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_16280" style="width: 100%; overflow: auto; min-height: 125px;">hey guys i need some help. the videos on the following urls were supposed to be part of an arg (alternate reality game) but something happend and now they are the olny clues to find this missing guy. (the urls were put into linkbucks since i need money because i now hav a car :/ . please just wait for the time to run out and you will be redirected to the real url).<br />
+<br />
+ok the first url is the original videos and the second is the responses. inside the responses is a secret message that can help find this guy.<br />
+<br />
+<a href="http://8db893ef.linkbucks.com" target="_blank" title="http://8db893ef.linkbucks.com">http://8db893ef.linkbucks.com</a><br />
+<a href="http://d5224e35.linkbucks.com" target="_blank" title="http://d5224e35.linkbucks.com">http://d5224e35.linkbucks.com</a><br />
+<br />
+ok now lets solve this and help find this guy.</div>
+		<textarea style="display: none;" id="desctxt_16280">hey guys i need some help. the videos on the following urls were supposed to be part of an arg (alternate reality game) but something happend and now they are the olny clues to find this missing guy. (the urls were put into linkbucks since i need money because i now hav a car :/ . please just wait for the time to run out and you will be redirected to the real url).
+
+ok the first url is the original videos and the second is the responses. inside the responses is a secret message that can help find this guy.
+
+[url=http://8db893ef.linkbucks.com]http://8db893ef.linkbucks.com[/url]
+[url=http://d5224e35.linkbucks.com]http://d5224e35.linkbucks.com[/url]
+
+ok now lets solve this and help find this guy.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 2 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">speeddemon92</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_16281" style="width: 100%; overflow: auto; min-height: 125px;">ok first link messed up so i will repost in a few minutes</div>
+		<textarea style="display: none;" id="desctxt_16281">ok first link messed up so i will repost in a few minutes</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 2 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">speeddemon92</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_16282" style="width: 100%; overflow: auto; min-height: 125px;">ok link is fixed just had to add missing character</div>
+		<textarea style="display: none;" id="desctxt_16282">ok link is fixed just had to add missing character</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 2 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Kube</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=952&amp;ref=1249239276" width="102" height="77" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_16283" style="width: 100%; overflow: auto; min-height: 125px;">Haha... I thought this would find its way here eventually... Highlight the following white text if you don&#039;t mind spoilers. If you want this to remain just a series of mysterious and creepy videos, don&#039;t read what I wrote...<br />
+<br />
+<span style="color: #ffffff;">Marble Hornets is fake, guys... It&#039;s a series of videos relating to &quot;Slenderman&quot;. Slenderman is a monster created as a contest entry on Something Awful in which you had to create a creepy image or something like that... At about half the thread, the entry for Slenderman was posted and then he slowly took over the entire thread, becoming a full-blown urban legend.<br />
+<br />
+It started with regular images and somewhere in the image someone would use image editing programs to add in an extremely tall man with several appendages wearing a suit. Sometimes he stood on two long legs, sometimes he was supported by the appendages. Kinda like Where&#039;s Waldo...<br />
+<br />
+He&#039;s said to lure people to him by hypnotizing them somehow (&lt;--- I think that&#039;s what I remember reading...) and also to be responsible for many disappearances (Let the <em>&quot;The mutilated bodies of [insert number] children who were said to have disappeared last month were found in the forest near [insert location].&quot;</em> flow; that&#039;s what usually happens in the stories...)<br />
+<br />
+Marble Hornets was created as a creepypasta (Creepypastas are creepy stories, videos, etc. for those who don&#039;t know...) relating to Slenderman.<br />
+<br />
+All this can be confirmed by looking at entry #4... At one point, you see a man with no face (Like Slenderman) wearing a black suit, walking just out of sight when the cameraman jumps at a movement behind him. You can also see it on his balcony in Entry #1... (They&#039;re the only 2 that don&#039;t have any sound...)<br />
+<br />
+Those who decide to actively look into Marble Hornets either don&#039;t know this or are just in it because it can get pretty creepy.<br />
+<br />
+EDIT: Here&#039;s a fun fact about Slenderman. Slenderman was the nickname of William Clark, some kind of threshing contractor from the UK. In March 1877, he murdered a man named Henry Walker and was then hanged at Lincoln Castle, Lincolnshire. <br />
+<br />
+I found a biography by the 3xgreat-grand-son of a man named William Clark, born in Lissington, Lincolnshire, but the dates (Put in psychiatric hospital in 1866 and dying in 1886.) and cause of death (<strong>Suicide</strong> by hanging himself at Lincoln Castle.) aren&#039;t the same... Maybe one of the sources got the dates wrong, but 2 on 3 say March 1877.</span></div>
+		<textarea style="display: none;" id="desctxt_16283">Haha... I thought this would find its way here eventually... Highlight the following white text if you don&#039;t mind spoilers. If you want this to remain just a series of mysterious and creepy videos, don&#039;t read what I wrote...
+
+[white]Marble Hornets is fake, guys... It&#039;s a series of videos relating to &quot;Slenderman&quot;. Slenderman is a monster created as a contest entry on Something Awful in which you had to create a creepy image or something like that... At about half the thread, the entry for Slenderman was posted and then he slowly took over the entire thread, becoming a full-blown urban legend.
+
+It started with regular images and somewhere in the image someone would use image editing programs to add in an extremely tall man with several appendages wearing a suit. Sometimes he stood on two long legs, sometimes he was supported by the appendages. Kinda like Where&#039;s Waldo...
+
+He&#039;s said to lure people to him by hypnotizing them somehow (&lt;--- I think that&#039;s what I remember reading...) and also to be responsible for many disappearances (Let the [i]&quot;The mutilated bodies of [insert number] children who were said to have disappeared last month were found in the forest near [insert location].&quot;[/i] flow; that&#039;s what usually happens in the stories...)
+
+Marble Hornets was created as a creepypasta (Creepypastas are creepy stories, videos, etc. for those who don&#039;t know...) relating to Slenderman.
+
+All this can be confirmed by looking at entry #4... At one point, you see a man with no face (Like Slenderman) wearing a black suit, walking just out of sight when the cameraman jumps at a movement behind him. You can also see it on his balcony in Entry #1... (They&#039;re the only 2 that don&#039;t have any sound...)
+
+Those who decide to actively look into Marble Hornets either don&#039;t know this or are just in it because it can get pretty creepy.
+
+EDIT: Here&#039;s a fun fact about Slenderman. Slenderman was the nickname of William Clark, some kind of threshing contractor from the UK. In March 1877, he murdered a man named Henry Walker and was then hanged at Lincoln Castle, Lincolnshire. 
+
+I found a biography by the 3xgreat-grand-son of a man named William Clark, born in Lissington, Lincolnshire, but the dates (Put in psychiatric hospital in 1866 and dying in 1886.) and cause of death ([b]Suicide[/b] by hanging himself at Lincoln Castle.) aren&#039;t the same... Maybe one of the sources got the dates wrong, but 2 on 3 say March 1877.[/white]</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Kube, 2 years, 10 months ago<br />Posted 2 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">speeddemon92</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_16284" style="width: 100%; overflow: auto; min-height: 125px;">well we&#039;ve had theories of &quot;slenderman&quot; but there is something more this guy isn&#039;t trying to be like &quot;slenderman&quot; but rather like a stalker. yeah it looks like another &quot;slenderman&quot; joke but its too sloppy to be a &quot;slenderman&quot; impersonation for a joke. 1. he&#039;s too short. he is ~5ft. 4in. 2. he is wearing a white mask and black cape NOT a black suit like &quot;slenderman&quot;. the last videos mention an &quot;ark&quot; in which people think its a &quot;slenderman space ship&quot; but rather its like a meeting place. these are my observations </div>
+		<textarea style="display: none;" id="desctxt_16284">well we&#039;ve had theories of &quot;slenderman&quot; but there is something more this guy isn&#039;t trying to be like &quot;slenderman&quot; but rather like a stalker. yeah it looks like another &quot;slenderman&quot; joke but its too sloppy to be a &quot;slenderman&quot; impersonation for a joke. 1. he&#039;s too short. he is ~5ft. 4in. 2. he is wearing a white mask and black cape NOT a black suit like &quot;slenderman&quot;. the last videos mention an &quot;ark&quot; in which people think its a &quot;slenderman space ship&quot; but rather its like a meeting place. these are my observations</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 2 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Kube</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=952&amp;ref=1249239276" width="102" height="77" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_16286" style="width: 100%; overflow: auto; min-height: 125px;">Just pointing out: Up &#039;til now, the general opinion is Slenderman. Anywhere other than this guy&#039;s twitter, IRC, Youtube channel, whatever, that mentions Marble Hornets clearly state it&#039;s Slenderman... Personally, I think that&#039;s the most plausible explanation, with the man in the vids fitting the images (Blank face, black silhouette.) By the way, that&#039;s not a cape... Pause Entry 1 and go to the frame where you see him; you can see a white collar. And of course he doesn&#039;t stand 10&#039; tall; it&#039;s a home-made video... I&#039;m pretty sure it&#039;s hard finding a 10 foot tall man with a completely blank face and tentacles sticking out of his shoulders and hips... But have you ever read Slenderman stories? That stalker approach is usually the one taken; the person walks around and sees a weird silhouette behind them and soon notice it&#039;s following them. (One of the original series of pictures, notably...) Or they just see it through the window.<br />
+<br />
+Quite frankly; it&#039;s not that sloppy. The guy&#039;s slowly updating with more footage, building up the suspense, etc. The thing about no volume shows that he wanted to hide the footsteps; Slenderman walks on his appendages, usually.<br />
+<br />
+But I&#039;m curious too, so just in case this isn&#039;t fake and if it is, just for fun, I&#039;ll try finding clues if I can... I would be excited if it wasn&#039;t just another Slenderman story, but as of now, that&#039;s what the footage indicates, sadly...</div>
+		<textarea style="display: none;" id="desctxt_16286">Just pointing out: Up &#039;til now, the general opinion is Slenderman. Anywhere other than this guy&#039;s twitter, IRC, Youtube channel, whatever, that mentions Marble Hornets clearly state it&#039;s Slenderman... Personally, I think that&#039;s the most plausible explanation, with the man in the vids fitting the images (Blank face, black silhouette.) By the way, that&#039;s not a cape... Pause Entry 1 and go to the frame where you see him; you can see a white collar. And of course he doesn&#039;t stand 10&#039; tall; it&#039;s a home-made video... I&#039;m pretty sure it&#039;s hard finding a 10 foot tall man with a completely blank face and tentacles sticking out of his shoulders and hips... But have you ever read Slenderman stories? That stalker approach is usually the one taken; the person walks around and sees a weird silhouette behind them and soon notice it&#039;s following them. (One of the original series of pictures, notably...) Or they just see it through the window.
+
+Quite frankly; it&#039;s not that sloppy. The guy&#039;s slowly updating with more footage, building up the suspense, etc. The thing about no volume shows that he wanted to hide the footsteps; Slenderman walks on his appendages, usually.
+
+But I&#039;m curious too, so just in case this isn&#039;t fake and if it is, just for fun, I&#039;ll try finding clues if I can... I would be excited if it wasn&#039;t just another Slenderman story, but as of now, that&#039;s what the footage indicates, sadly...</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 2 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">speeddemon92</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_16287" style="width: 100%; overflow: auto; min-height: 125px;">well i now have to say i do agree with some of what you said now that i think back on it.<br />
+though i didn&#039;t mean to say cape but rather something like a cloak. also look at the latter videos where he goes back to the house and in his own house. only thing white is the mask. only way i&#039;d misd white in those would be if well nothing. also you have to edit the sound in one of thhe videos and it then says alex, brian over and over. and in &#039;messages&#039; the sound is from a move thats a tribute to pearl harbor and there is even an image overlay but its hard to tell who it is due to the black and white video and smoke where the eyes are, that sorta sounds like they are hidding the identity and took the time to overlay the video perfectly. </div>
+		<textarea style="display: none;" id="desctxt_16287">well i now have to say i do agree with some of what you said now that i think back on it.
+though i didn&#039;t mean to say cape but rather something like a cloak. also look at the latter videos where he goes back to the house and in his own house. only thing white is the mask. only way i&#039;d misd white in those would be if well nothing. also you have to edit the sound in one of thhe videos and it then says alex, brian over and over. and in &#039;messages&#039; the sound is from a move thats a tribute to pearl harbor and there is even an image overlay but its hard to tell who it is due to the black and white video and smoke where the eyes are, that sorta sounds like they are hidding the identity and took the time to overlay the video perfectly.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 2 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Kube</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=952&amp;ref=1249239276" width="102" height="77" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_16289" style="width: 100%; overflow: auto; min-height: 125px;">Interesting... I haven&#039;t watched all of them yet; I probably will soon, maybe tomorrow.</div>
+		<textarea style="display: none;" id="desctxt_16289">Interesting... I haven&#039;t watched all of them yet; I probably will soon, maybe tomorrow.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 2 years, 10 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=903" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 24 queries. 0.269 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

@@ -1,0 +1,464 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Alchemy... The Chemestry of the matter</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Alchemy... The Chemestry of the matter</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Alchemy... The Chemestry of the matter</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11328" style="width: 100%; overflow: auto; min-height: 125px;">This area I&#039;m setting up after I have noticed a few effects on my body.<br />
+<br />
+Twice today I&#039;ve felt huge pains throughout my body... I figured out later that this was due to severe dehydration. on the three days before (in which I drank next to nothing other that 3 energy drinks which dehydrate you even faster -_-), I found that my aura reached a bright white, with an an outward tinge of bright purple. As anyone who has studied aura&#039;s would, I immediately freaked out. An aura like that is a classic sign of death...<br />
+<br />
+I ended up getting sharp pains all over my body, coupled with small spasms, almost like my body was overheating and short-circuiting. I couldn&#039;t do anything about it at school, so when I went home a drank a glass of Apple Juice (I don&#039;t trust the city water supply and we didn&#039;t have any bottled water stored). I started to feel a little better. The funny thing is that I lost nearly all sense of the energy around me... With that being said, tomorrow I&#039;m going to be buying a surplus of bottled water and begin a new experiment.<br />
+<br />
+What I want to do if conduct an experiment to see how certain chemicals affect my body in the spiritual (as well as water, considering what happened to me over the past couple of days). <br />
+<br />
+I need suggestions, any that you could give before I start would be greatly appreciated... Any comments or questions are also allowed and accepted greatly, I&#039;m not sure what I can answer, but I will try as much as I can.<br />
+<br />
+I will post a plan, and a log of my experiment as it happens, which should be next week.<br />
+<br />
+Things that I will need:<br />
+<br />
+-Food lists, I want to stick to a relatively controlled diet as I do this, otherwise I may end up with a corrupt experiment. I am going to use this diet as both my controlled variable and a constant.<br />
+<br />
+-An independent variable, that should I change each day before the practice? I have a few Ideas, but I want to hear what you have first!<br />
+<br />
+-A few volunteers to follow the same tests who can log their results as well. If I did this on my own, It could easily be claimed as a corrupt test and considered useless to the scientific community.<br />
+<br />
+___________________________________________________________<br />
+<br />
+If this goes well, we should make some decent advancements in our understanding of our bodies, as well as Psionics.<br />
+___________________________________<br />
+___________________________________<br />
+| |_________________________________| |<br />
+| |ALL YOUR BASE ARE BELONG TO US! __| |<br />
+| |_________________________________| |<br />
+| |_________________________________| |</div>
+		<textarea style="display: none;" id="desctxt_11328">This area I&#039;m setting up after I have noticed a few effects on my body.
+
+Twice today I&#039;ve felt huge pains throughout my body... I figured out later that this was due to severe dehydration. on the three days before (in which I drank next to nothing other that 3 energy drinks which dehydrate you even faster -_-), I found that my aura reached a bright white, with an an outward tinge of bright purple. As anyone who has studied aura&#039;s would, I immediately freaked out. An aura like that is a classic sign of death...
+
+I ended up getting sharp pains all over my body, coupled with small spasms, almost like my body was overheating and short-circuiting. I couldn&#039;t do anything about it at school, so when I went home a drank a glass of Apple Juice (I don&#039;t trust the city water supply and we didn&#039;t have any bottled water stored). I started to feel a little better. The funny thing is that I lost nearly all sense of the energy around me... With that being said, tomorrow I&#039;m going to be buying a surplus of bottled water and begin a new experiment.
+
+What I want to do if conduct an experiment to see how certain chemicals affect my body in the spiritual (as well as water, considering what happened to me over the past couple of days). 
+
+I need suggestions, any that you could give before I start would be greatly appreciated... Any comments or questions are also allowed and accepted greatly, I&#039;m not sure what I can answer, but I will try as much as I can.
+
+I will post a plan, and a log of my experiment as it happens, which should be next week.
+
+Things that I will need:
+
+-Food lists, I want to stick to a relatively controlled diet as I do this, otherwise I may end up with a corrupt experiment. I am going to use this diet as both my controlled variable and a constant.
+
+-An independent variable, that should I change each day before the practice? I have a few Ideas, but I want to hear what you have first!
+
+-A few volunteers to follow the same tests who can log their results as well. If I did this on my own, It could easily be claimed as a corrupt test and considered useless to the scientific community.
+
+___________________________________________________________
+
+If this goes well, we should make some decent advancements in our understanding of our bodies, as well as Psionics.
+___________________________________
+___________________________________
+| |_________________________________| |
+| |ALL YOUR BASE ARE BELONG TO US! __| |
+| |_________________________________| |
+| |_________________________________| |</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Akio, 4 years, 3 months ago<br />Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">NewAgeAlchemist</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=459&amp;ref=1207160982" width="125" height="20" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11340" style="width: 100%; overflow: auto; min-height: 125px;">Well generally speaking short term is pretty sketchy. You&#039;d want to keep track of your diet(what/how much/maybe even when) and feelings/moods/health over a period of a year or more. Other people would certainly be more data but not necessarily useful in comparing against one another; because of differences in biology, constants would be limited to yourself and your diet.<br />
+<br />
+If you were to have everyone get full medical testing before hand, then you might be able to consider some things as constants between people but again it would be complicating matters more than it would yield reliable results.</div>
+		<textarea style="display: none;" id="desctxt_11340">Well generally speaking short term is pretty sketchy. You&#039;d want to keep track of your diet(what/how much/maybe even when) and feelings/moods/health over a period of a year or more. Other people would certainly be more data but not necessarily useful in comparing against one another; because of differences in biology, constants would be limited to yourself and your diet.
+
+If you were to have everyone get full medical testing before hand, then you might be able to consider some things as constants between people but again it would be complicating matters more than it would yield reliable results.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Faceless</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=570&amp;ref=1214279440" width="83" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11349" style="width: 100%; overflow: auto; min-height: 125px;">I suggest going a week on each diet. <br />
+Suggestions:<br />
+HIGH SUGAR DRINKS<br />
+  Soda (nothing but, almost)<br />
+  energy drinks<br />
+  Fruit Punch (not the real stuff)<br />
+NATRAL<br />
+  100% juice<br />
+  Vegitable juice<br />
+  Purified water<br />
+MILK<br />
+  2%<br />
+  1%<br />
+  skim<br />
+FOOD<br />
+  go vegitarian for a week<br />
+  eat no vegitable for a week<br />
+  eat lots of fruit in a week<br />
+  Eat mostly fish<br />
+  eat mostly red meat<br />
+  eat mostly white meat<br />
+_____________________<br />
+This may be somewhat tedious but still.<br />
+My theory is that lots of Fish, vegitables and natural drinks will increase your psionic capabilities. I have noticed my self that soda make capacity go down. last week i ate no meat and my telepathic capabilities increased. but when i drink a lot  of soda in a week i have trouble with everything. so have fun. maybe i will try some of this too.</div>
+		<textarea style="display: none;" id="desctxt_11349">I suggest going a week on each diet. 
+Suggestions:
+HIGH SUGAR DRINKS
+  Soda (nothing but, almost)
+  energy drinks
+  Fruit Punch (not the real stuff)
+NATRAL
+  100% juice
+  Vegitable juice
+  Purified water
+MILK
+  2%
+  1%
+  skim
+FOOD
+  go vegitarian for a week
+  eat no vegitable for a week
+  eat lots of fruit in a week
+  Eat mostly fish
+  eat mostly red meat
+  eat mostly white meat
+_____________________
+This may be somewhat tedious but still.
+My theory is that lots of Fish, vegitables and natural drinks will increase your psionic capabilities. I have noticed my self that soda make capacity go down. last week i ate no meat and my telepathic capabilities increased. but when i drink a lot  of soda in a week i have trouble with everything. so have fun. maybe i will try some of this too.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Faceless, 4 years, 3 months ago<br />Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">jackrivers</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=759&amp;ref=1220326318" width="125" height="105" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11362" style="width: 100%; overflow: auto; min-height: 125px;">I&#039;ll volunteer to be the first sacrifice! jking, but I will volunteer seriously.<br />
+<br />
+Give me a list of edible food that probably wont kill me and let&#039;s see what will happen ^_^, of course I prefer the type of food that are expected to enhance your spiritual performance, I mean that&#039;s what we are aiming for right? Not the ones that can harm our bodies, since it would be bad to test those food out...<br />
+<br />
+<br />
+suggestions: Apple, Fried chicken, beef burgers, pizzas, water, potato chips(barbecue flavor preferred), weed, cereal, banana, very spicy stuff (pepper would be nice), rice, and peach.<br />
+I will be more than happy to keep a consistent diet of whatever I listed above ^_^, And to my test results, apple seems to help me boost my concentration(I tested on eating it everyday).<br />
+I am testing friend chicken atm( 2 pounds of chicken a day, 0.0, all I need to eat LOL), I&#039;m testing pizzas with chicken, I&#039;ll do it separately after I get some results ^^.<br />
+<br />
+PS: I&#039;m not fat yet...<br />
+<br />
+Well, just give me a specific food I need to eat daily and let&#039;s see what happens.</div>
+		<textarea style="display: none;" id="desctxt_11362">I&#039;ll volunteer to be the first sacrifice! jking, but I will volunteer seriously.
+
+Give me a list of edible food that probably wont kill me and let&#039;s see what will happen ^_^, of course I prefer the type of food that are expected to enhance your spiritual performance, I mean that&#039;s what we are aiming for right? Not the ones that can harm our bodies, since it would be bad to test those food out...
+
+
+suggestions: Apple, Fried chicken, beef burgers, pizzas, water, potato chips(barbecue flavor preferred), weed, cereal, banana, very spicy stuff (pepper would be nice), rice, and peach.
+I will be more than happy to keep a consistent diet of whatever I listed above ^_^, And to my test results, apple seems to help me boost my concentration(I tested on eating it everyday).
+I am testing friend chicken atm( 2 pounds of chicken a day, 0.0, all I need to eat LOL), I&#039;m testing pizzas with chicken, I&#039;ll do it separately after I get some results ^^.
+
+PS: I&#039;m not fat yet...
+
+Well, just give me a specific food I need to eat daily and let&#039;s see what happens.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">NewAgeAlchemist</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=459&amp;ref=1207160982" width="125" height="20" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11363" style="width: 100%; overflow: auto; min-height: 125px;">I don&#039;t believe weed is a food.</div>
+		<textarea style="display: none;" id="desctxt_11363">I don&#039;t believe weed is a food.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Claudius</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=619&amp;ref=1214926797" width="125" height="86" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11370" style="width: 100%; overflow: auto; min-height: 125px;">Kiwi is often referred to as a super fruit. <br />
+It provides nearly twice as much vitamin C then an orange, and other nutrients.<br />
+Try it sometime.</div>
+		<textarea style="display: none;" id="desctxt_11370">Kiwi is often referred to as a super fruit. 
+It provides nearly twice as much vitamin C then an orange, and other nutrients.
+Try it sometime.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Atrum</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=755&amp;ref=1221862716" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11416" style="width: 100%; overflow: auto; min-height: 125px;">There are several &quot;Perfect Foods&quot; That you can try out. Like the egg. (scrambled or boiled) High in proetin. Fish. Omega fatty acids. Same with almonds.</div>
+		<textarea style="display: none;" id="desctxt_11416">There are several &quot;Perfect Foods&quot; That you can try out. Like the egg. (scrambled or boiled) High in proetin. Fish. Omega fatty acids. Same with almonds.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Anonymous Dark</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=354&amp;ref=1203377944" width="100" height="86" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11427" style="width: 100%; overflow: auto; min-height: 125px;">Binge on vitamin water until you piss rainbows.<br />
+<br />
+*Nibbles on kitten*</div>
+		<textarea style="display: none;" id="desctxt_11427">Binge on vitamin water until you piss rainbows.
+
+*Nibbles on kitten*</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Anonymous Dark, 4 years, 3 months ago<br />Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Atrum</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=755&amp;ref=1221862716" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11434" style="width: 100%; overflow: auto; min-height: 125px;">Like katie in Horton hears a who? Where we eat rainbows and poop butterflies? </div>
+		<textarea style="display: none;" id="desctxt_11434">Like katie in Horton hears a who? Where we eat rainbows and poop butterflies?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11452" style="width: 100%; overflow: auto; min-height: 125px;">Atrum... I&#039;m allergic to eggs O.O<br />
+</div>
+		<textarea style="display: none;" id="desctxt_11452">Atrum... I&#039;m allergic to eggs O.O</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Antisankari</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=224&amp;ref=1213032338" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11456" style="width: 100%; overflow: auto; min-height: 125px;">Then we are going to receive an interesting reaction, aren&#039;t we?</div>
+		<textarea style="display: none;" id="desctxt_11456">Then we are going to receive an interesting reaction, aren&#039;t we?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Atrum</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=755&amp;ref=1221862716" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11487" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Antisankari:</em><br />
+Then we are going to receive an interesting reaction, aren&#039;t we?</div>I guess. O_O But there are others. Like almonds...<br />
+</div>
+		<textarea style="display: none;" id="desctxt_11487">[quote][i]posted by Antisankari:[/i]
+Then we are going to receive an interesting reaction, aren&#039;t we?[/quote]
+
+
+I guess. O_O But there are others. Like almonds...</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11502" style="width: 100%; overflow: auto; min-height: 125px;">...<br />
+</div>
+		<textarea style="display: none;" id="desctxt_11502">...</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Atrum</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=755&amp;ref=1221862716" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11523" style="width: 100%; overflow: auto; min-height: 125px;">Hehe. Sorry. Ignore the insane person. </div>
+		<textarea style="display: none;" id="desctxt_11523">Hehe. Sorry. Ignore the insane person.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=562" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 30 queries. 0.280 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

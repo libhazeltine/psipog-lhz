@@ -1,0 +1,369 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; My rant about fork conditions...</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=3.html">Recycle Bin</a> &raquo; My rant about fork conditions...</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">My rant about fork conditions...</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">ARandomKid</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=34&amp;ref=1273828509" width="114" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10257" style="width: 100%; overflow: auto; min-height: 125px;">...I hate them. With a burning fiery passion. Yes, I used redundancy. Deal with it.<br />
+<br />
+And it wouldn&#039;t be so bad, I don&#039;t think, if I could type it out. Maybe that&#039;d just make it worse. Then again, there is that little word replacement tool which would be a lifesaver right now.<br />
+<br />
+But I have to point, click, point, click, click, point, click, click, point, point, point, and click and etc. all to change one stupid condition to fit another variable. And I&#039;ve got thirty variables to do this for. It takes around 15 minutes to finish one.<br />
+<br />
+<br />
+Conclusion: I&#039;m going to be here for a very long time.<br />
+<br />
+The bright side: I found a way to cut the time in half. It used to take an hour. Now it only takes 15 minutes. (Okay, so it&#039;s more than half. Sue me.) ;^_^ (And yes, I approximately timed it. There&#039;s no exaggeration here.)<br />
+<br />
+And now, the complimentary image. A certain kitten was <em>mew</em>ing at me for a screenshot, and here it is. :P (Also, a free horrible pun over there in italics!)<br />
+<br />
+<br />
+ <a href="http://img515.imageshack.us/img515/7136/alwforkrantna1.bmp" target="_blank">http://img515.imageshack.us/img515/7136/alwforkrantna1.bmp</a><br />
+<br />
+<br />
+(Don&#039;t worry delimew, I&#039;ll get on some actual screenshots later on today hopefully. If not then, certainly by Monday.)<br />
+<br />
+All in all, I think it&#039;ll be worth it.<br />
+<br />
+-Alex<br />
+<br />
+EDIT: The image broke it. Whoops. &gt;_&gt;<br />
+<br />
+<br />
+tl;dr (too long, didn&#039;t read) version: I&#039;ve got thirty variables. I need to make sure each variable is unique (Variable 1 can&#039;t be the same as any of the variables 2, 3, 4, 5...30. Variable 2 can&#039;t be the same as any of the variables 1, 3, etc. They all have to be different) With a point and click interface.<br />
+<br />
+The horror. The time consuming horror. ;e_e<br />
+<br />
+EDIT (part deux): My friend also pointed out that this was proof that I am actually working on Project 51. Hee. Sometimes I love it when she decides to point out the blatantly obvious.</div>
+		<textarea style="display: none;" id="desctxt_10257">...I hate them. With a burning fiery passion. Yes, I used redundancy. Deal with it.
+
+And it wouldn&#039;t be so bad, I don&#039;t think, if I could type it out. Maybe that&#039;d just make it worse. Then again, there is that little word replacement tool which would be a lifesaver right now.
+
+But I have to point, click, point, click, click, point, click, click, point, point, point, and click and etc. all to change one stupid condition to fit another variable. And I&#039;ve got thirty variables to do this for. It takes around 15 minutes to finish one.
+
+
+Conclusion: I&#039;m going to be here for a very long time.
+
+The bright side: I found a way to cut the time in half. It used to take an hour. Now it only takes 15 minutes. (Okay, so it&#039;s more than half. Sue me.) ;^_^ (And yes, I approximately timed it. There&#039;s no exaggeration here.)
+
+And now, the complimentary image. A certain kitten was [i]mew[/i]ing at me for a screenshot, and here it is. :P (Also, a free horrible pun over there in italics!)
+
+
+http://img515.imageshack.us/img515/7136/alwforkrantna1.bmp
+
+
+(Don&#039;t worry delimew, I&#039;ll get on some actual screenshots later on today hopefully. If not then, certainly by Monday.)
+
+All in all, I think it&#039;ll be worth it.
+
+-Alex
+
+EDIT: The image broke it. Whoops. &gt;_&gt;
+
+
+tl;dr (too long, didn&#039;t read) version: I&#039;ve got thirty variables. I need to make sure each variable is unique (Variable 1 can&#039;t be the same as any of the variables 2, 3, 4, 5...30. Variable 2 can&#039;t be the same as any of the variables 1, 3, etc. They all have to be different) With a point and click interface.
+
+The horror. The time consuming horror. ;e_e
+
+EDIT (part deux): My friend also pointed out that this was proof that I am actually working on Project 51. Hee. Sometimes I love it when she decides to point out the blatantly obvious.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by ARandomKid, 4 years, 5 months ago<br />Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Antisankari</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=224&amp;ref=1213032338" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10258" style="width: 100%; overflow: auto; min-height: 125px;">Please, there are little children reading these forums!<br />
+There is a &quot;GOTO&quot; in your image. <br />
+<br />
+I think they learn enough swear words without us helping... =/</div>
+		<textarea style="display: none;" id="desctxt_10258">Please, there are little children reading these forums!
+There is a &quot;GOTO&quot; in your image. 
+
+I think they learn enough swear words without us helping... =/</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">ARandomKid</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=34&amp;ref=1273828509" width="114" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10259" style="width: 100%; overflow: auto; min-height: 125px;">Fine. (At first I couldn&#039;t figure out what you were talking about. Then I went and deleted the only thing that made sense. :P)<br />
+<br />
+And the &quot;LABEL:   No1&quot; is way up at the top of the large white box.</div>
+		<textarea style="display: none;" id="desctxt_10259">Fine. (At first I couldn&#039;t figure out what you were talking about. Then I went and deleted the only thing that made sense. :P)
+
+And the &quot;LABEL:   No1&quot; is way up at the top of the large white box.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Antisankari</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=224&amp;ref=1213032338" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10260" style="width: 100%; overflow: auto; min-height: 125px;">Umm.. What is that thing actually?<br />
+<br />
+Is it GameMaker script editor or similar thingy?</div>
+		<textarea style="display: none;" id="desctxt_10260">Umm.. What is that thing actually?
+
+Is it GameMaker script editor or similar thingy?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">ARandomKid</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=34&amp;ref=1273828509" width="114" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10262" style="width: 100%; overflow: auto; min-height: 125px;">RPG Maker 2000.</div>
+		<textarea style="display: none;" id="desctxt_10262">RPG Maker 2000.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">delimew</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=108&amp;ref=1205485279" width="39" height="42" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10273" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;">(Don&#039;t worry delimew, I&#039;ll get on some actual screenshots later on today hopefully. If not then, certainly by Monday.)</div>i don&#039;t care. i&#039;m not hoping for a new one or anything, i just thought it was about time you did :P</div>
+		<textarea style="display: none;" id="desctxt_10273">[quote](Don&#039;t worry delimew, I&#039;ll get on some actual screenshots later on today hopefully. If not then, certainly by Monday.)[/quote]
+
+i don&#039;t care. i&#039;m not hoping for a new one or anything, i just thought it was about time you did :P</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">ARandomKid</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=34&amp;ref=1273828509" width="114" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10324" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by delimew:</em><br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;">(Don&#039;t worry delimew, I&#039;ll get on some actual screenshots later on today hopefully. If not then, certainly by Monday.)</div>i don&#039;t care. i&#039;m not hoping for a new one or anything, i just thought it was about time you did :P</div>You can try to hide your hope all you want. I see right through you.<br />
+<br />
+Seriously, stop being invisible. It makes it really annoying to talk to you. :P<br />
+<br />
+And you would be correct about the screenshots.<br />
+<br />
+EDIT: As a side note, this was really weird to look at:<br />
+<br />
+&quot;&quot;So, almost 5 months after the archive system has been set in place, how much space is it all taking up?&quot; -delimew<br />
+&quot;<br />
+<br />
+;o_o Yea. (Seeing as how I usually associate usernames with certain places and seeing them anywhere esle is just weird. Kind of like schoolteachers in a way. Seeing your teacher anywhere that isn&#039;t school-related (grocery store for instance) is a bit weird. At least, it is for me.)</div>
+		<textarea style="display: none;" id="desctxt_10324">[quote][i]posted by delimew:[/i]
+[quote](Don&#039;t worry delimew, I&#039;ll get on some actual screenshots later on today hopefully. If not then, certainly by Monday.)[/quote]
+
+i don&#039;t care. i&#039;m not hoping for a new one or anything, i just thought it was about time you did :P[/quote]
+
+
+You can try to hide your hope all you want. I see right through you.
+
+Seriously, stop being invisible. It makes it really annoying to talk to you. :P
+
+And you would be correct about the screenshots.
+
+EDIT: As a side note, this was really weird to look at:
+
+&quot;&quot;So, almost 5 months after the archive system has been set in place, how much space is it all taking up?&quot; -delimew
+&quot;
+
+;o_o Yea. (Seeing as how I usually associate usernames with certain places and seeing them anywhere esle is just weird. Kind of like schoolteachers in a way. Seeing your teacher anywhere that isn&#039;t school-related (grocery store for instance) is a bit weird. At least, it is for me.)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by ARandomKid, 4 years, 5 months ago<br />Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=473" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 23 queries. 0.280 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

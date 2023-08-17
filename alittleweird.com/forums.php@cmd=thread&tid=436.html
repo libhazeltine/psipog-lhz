@@ -1,0 +1,592 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Psionics and Religion</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Psionics and Religion</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Psionics and Religion</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Amaroq</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=606&amp;ref=1214436810" width="95" height="95" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9616" style="width: 100%; overflow: auto; min-height: 125px;">This particular theory of mine was once expressed on Psipog, but my posting of it quickly got the topic locked. Since religious discussion is allowed here, I&#039;m gonna post it here for consideration.<br />
+<br />
+What do most religions seem to have that psionics does not? Deities! In almost every religion you look at, there is always an all powerful being, or in some cases, a central source of power.<br />
+<br />
+Meanwhile, believers in Psionics practice that power is everywhere and that you can manipulate it with power of will.<br />
+<br />
+Are these two really so separate from each other?<br />
+<br />
+When a child is laying in the hospital with a terminal illness, chances are her family is there with her, praying to God to save her.<br />
+<br />
+What if this child was dying in a hospital, and her family is instead trying to heal her?<br />
+<br />
+What&#039;s the difference? Does praying to God make you any more or less likely to be successful than drawing upon your own power?<br />
+<br />
+What if the family praying to God is actually using psionics without knowing it?<br />
+<br />
+Why do we have gods? They are someone we can look up to. Someone we can look to for answers. Throughout the entire course of intelligent civilization, we have always had deities.<br />
+<br />
+How did they get there? How did they come to be? Why does every culture have a different one? Why do they all believe in their particular deity? Is theirs the right one? No, that can&#039;t be. Else there would be no others.<br />
+<br />
+What if our early ancestors created the idea of a higher power to try to explain the magical unknown of the world to them. The deity made this happen. The deity watches out for us.<br />
+<br />
+What if they unwittingly created a psionic entity from their collective belief. An entity that really does watch out for them and take care of them, provided they believe strongly enough in it to fuel its power.<br />
+<br />
+What if there really is no difference between the family praying to god and the family gathering their own power? What if God is a psionic entity that christians created with their belief in him, and who tries to grant us what we need with the power given him by our collective belief in him?<br />
+<br />
+If this is true, then there is no such thing as a right or a wrong god. No true and no false god. Every culture really does have their own personal god, in the form of an individual psionic entity that their collective belief created.<br />
+<br />
+If these god entities rely on our belief in them to survive, then surely they must be weakening as more and more people lose faith in them, only praying to them when they need to use their power towards their own personal ends. And with the rise of devil worshippers (Actual people who actually worship satan. Not to be confused with pagans.), is the christian god being weakened even more? Is there now a competing Satan entity whose power is used for evil influence rather than to grant us what we need?<br />
+<br />
+So many questions arise out of simply stating this theory.</div>
+		<textarea style="display: none;" id="desctxt_9616">This particular theory of mine was once expressed on Psipog, but my posting of it quickly got the topic locked. Since religious discussion is allowed here, I&#039;m gonna post it here for consideration.
+
+What do most religions seem to have that psionics does not? Deities! In almost every religion you look at, there is always an all powerful being, or in some cases, a central source of power.
+
+Meanwhile, believers in Psionics practice that power is everywhere and that you can manipulate it with power of will.
+
+Are these two really so separate from each other?
+
+When a child is laying in the hospital with a terminal illness, chances are her family is there with her, praying to God to save her.
+
+What if this child was dying in a hospital, and her family is instead trying to heal her?
+
+What&#039;s the difference? Does praying to God make you any more or less likely to be successful than drawing upon your own power?
+
+What if the family praying to God is actually using psionics without knowing it?
+
+Why do we have gods? They are someone we can look up to. Someone we can look to for answers. Throughout the entire course of intelligent civilization, we have always had deities.
+
+How did they get there? How did they come to be? Why does every culture have a different one? Why do they all believe in their particular deity? Is theirs the right one? No, that can&#039;t be. Else there would be no others.
+
+What if our early ancestors created the idea of a higher power to try to explain the magical unknown of the world to them. The deity made this happen. The deity watches out for us.
+
+What if they unwittingly created a psionic entity from their collective belief. An entity that really does watch out for them and take care of them, provided they believe strongly enough in it to fuel its power.
+
+What if there really is no difference between the family praying to god and the family gathering their own power? What if God is a psionic entity that christians created with their belief in him, and who tries to grant us what we need with the power given him by our collective belief in him?
+
+If this is true, then there is no such thing as a right or a wrong god. No true and no false god. Every culture really does have their own personal god, in the form of an individual psionic entity that their collective belief created.
+
+If these god entities rely on our belief in them to survive, then surely they must be weakening as more and more people lose faith in them, only praying to them when they need to use their power towards their own personal ends. And with the rise of devil worshippers (Actual people who actually worship satan. Not to be confused with pagans.), is the christian god being weakened even more? Is there now a competing Satan entity whose power is used for evil influence rather than to grant us what we need?
+
+So many questions arise out of simply stating this theory.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Amaroq, 4 years, 5 months ago<br />Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Sean</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=2&amp;ref=1214247941" width="117" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9618" style="width: 100%; overflow: auto; min-height: 125px;">Those are some BIG &quot;What ifs&quot; :-P.<br />
+<br />
+How would you go about testing such a theory?  Or is it just something fun to think about :-P?<br />
+<br />
+~Sean</div>
+		<textarea style="display: none;" id="desctxt_9618">Those are some BIG &quot;What ifs&quot; :-P.
+
+How would you go about testing such a theory?  Or is it just something fun to think about :-P?
+
+~Sean</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9663" style="width: 100%; overflow: auto; min-height: 125px;">On the question &quot;why do we have gods&quot; I have a belief about that. Man created god in order to explain himself. In other words, The only reason humanity believed in god was because they wanted to believe they were real. No god, and people start to question reality. I&#039;m a living example of that...<br />
+<br />
+They came to be because human nature desires integrity, in it&#039;s whole, we have to have an explanation for something or we&#039;ll question everything else. Every culture has different Deities because of imagination, and no explanation is any better than any others because of the root fact that without an explanation, we would have nothing to fill the gap in our reality with.<br />
+<br />
+Granted, I took another path, the path of enlightenment. I feel that there is an explanation out there, however; it should not be clouded with the guise of any religion. With religion, these questions always arise...<br />
+<br />
+I always pondered about what god is... is it a being in space? an actual embodiment of something? or just something to explain something completely different.<br />
+<br />
+I wondered and wondered, untill I came to the study of energy...<br />
+<br />
+definitions of god:<br />
+<br />
+# the supernatural being conceived as the perfect and omnipotent and omniscient originator and ruler of the universe; the object of worship in ...<br />
+<br />
+# deity: any supernatural being worshipped as controlling some part of the world or some aspect of life or who is the personification of a force<br />
+<br />
+# a man of such superior qualities that he seems like a deity to other people; &quot;he was a god among men&quot;<br />
+<br />
+# idol: a material effigy that is worshipped; &quot;thou shalt not make unto thee any graven image&quot;; &quot;money was his god&quot; <br />
+<br />
+_____________________________________________________________________________________<br />
+<br />
+The third and forth specifically deal with religion and worship, something to be examined, but irrelevant to what God really is.<br />
+<br />
+The First deals with omniscience and omnipotence... One thing that we can relate that to is energy, which is also omnipotent and omniscient in a sense. The second confirmed it for me...<br />
+<br />
+&quot;deity: any supernatural being worshipped as controlling some part of the world or some aspect of life or who is the personification of a force&quot;<br />
+<br />
+In essence, God is the personification of a force... One that is omniscient and omnipotent. <br />
+<br />
+I think that the best definition would be energy, specifically, the Ideal that energy has divine will. The description of Satan is to say that energy also has evil will. These to statement if effect cancel each other out. So, in conclusion, the Idea behind God is that energy has will.<br />
+<br />
+But, is that will our will? Now that&#039;s something to think about...</div>
+		<textarea style="display: none;" id="desctxt_9663">On the question &quot;why do we have gods&quot; I have a belief about that. Man created god in order to explain himself. In other words, The only reason humanity believed in god was because they wanted to believe they were real. No god, and people start to question reality. I&#039;m a living example of that...
+
+They came to be because human nature desires integrity, in it&#039;s whole, we have to have an explanation for something or we&#039;ll question everything else. Every culture has different Deities because of imagination, and no explanation is any better than any others because of the root fact that without an explanation, we would have nothing to fill the gap in our reality with.
+
+Granted, I took another path, the path of enlightenment. I feel that there is an explanation out there, however; it should not be clouded with the guise of any religion. With religion, these questions always arise...
+
+I always pondered about what god is... is it a being in space? an actual embodiment of something? or just something to explain something completely different.
+
+I wondered and wondered, untill I came to the study of energy...
+
+definitions of god:
+
+# the supernatural being conceived as the perfect and omnipotent and omniscient originator and ruler of the universe; the object of worship in ...
+
+# deity: any supernatural being worshipped as controlling some part of the world or some aspect of life or who is the personification of a force
+
+# a man of such superior qualities that he seems like a deity to other people; &quot;he was a god among men&quot;
+
+# idol: a material effigy that is worshipped; &quot;thou shalt not make unto thee any graven image&quot;; &quot;money was his god&quot; 
+
+_____________________________________________________________________________________
+
+The third and forth specifically deal with religion and worship, something to be examined, but irrelevant to what God really is.
+
+The First deals with omniscience and omnipotence... One thing that we can relate that to is energy, which is also omnipotent and omniscient in a sense. The second confirmed it for me...
+
+&quot;deity: any supernatural being worshipped as controlling some part of the world or some aspect of life or who is the personification of a force&quot;
+
+In essence, God is the personification of a force... One that is omniscient and omnipotent. 
+
+I think that the best definition would be energy, specifically, the Ideal that energy has divine will. The description of Satan is to say that energy also has evil will. These to statement if effect cancel each other out. So, in conclusion, the Idea behind God is that energy has will.
+
+But, is that will our will? Now that&#039;s something to think about...</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Amaroq</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=606&amp;ref=1214436810" width="95" height="95" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9667" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Sean:</em><br />
+Those are some BIG &quot;What ifs&quot; :-P.<br />
+<br />
+How would you go about testing such a theory?  Or is it just something fun to think about :-P?<br />
+<br />
+~Sean</div>Ah, it&#039;s just something fun to think about.<br />
+<br />
+One interesting thing to consider, is that if we did create these deities, then they would perhaps have a pseudo-will, to help us when we need it most.<br />
+<br />
+If they have a will of their own, then they will truly help those who need it. But if their will is tied to our own, would they try to help us in ways that we think we need, even if they are evil or for personal gain?<br />
+<br />
+I don&#039;t think the idea of energy having at least pseudo-will is a new one. I think this idea came to me not long after reading threads on Psipog about &quot;psipets&quot;.<br />
+</div>
+		<textarea style="display: none;" id="desctxt_9667">[quote][i]posted by Sean:[/i]
+Those are some BIG &quot;What ifs&quot; :-P.
+
+How would you go about testing such a theory?  Or is it just something fun to think about :-P?
+
+~Sean[/quote]
+Ah, it&#039;s just something fun to think about.
+
+One interesting thing to consider, is that if we did create these deities, then they would perhaps have a pseudo-will, to help us when we need it most.
+
+If they have a will of their own, then they will truly help those who need it. But if their will is tied to our own, would they try to help us in ways that we think we need, even if they are evil or for personal gain?
+
+I don&#039;t think the idea of energy having at least pseudo-will is a new one. I think this idea came to me not long after reading threads on Psipog about &quot;psipets&quot;.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Jusseppe</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=247&amp;ref=1212293499" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9668" style="width: 100%; overflow: auto; min-height: 125px;">Amaroq, the idea you describe can also be found in tibetan mysticism, they call these entities Tulpas, I tried to find an interesting article on them to post but couldn&#039;t find one good enough.</div>
+		<textarea style="display: none;" id="desctxt_9668">Amaroq, the idea you describe can also be found in tibetan mysticism, they call these entities Tulpas, I tried to find an interesting article on them to post but couldn&#039;t find one good enough.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">silverandcold298</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9671" style="width: 100%; overflow: auto; min-height: 125px;">Anyone ever read &quot;God&#039;s Debris&quot;?<br />
+<br />
+It suggests that an omnipotent being would have absolutely no human emotion. It would not feel fear, love, anger, or hate. It would be perfect in every way. Anything it wanted, it obtained instantaneously. The only challenge for a being like this would be self destruction.<br />
+<br />
+&quot;God&#039;s Debris&quot; is saying that we quite literally are God&#039;s debris. We&#039;re all just floating pieces of the destroyed embodiment of perfection. Maybe we have the ability to manipulate reality because we are indeeds the ones who created reality?</div>
+		<textarea style="display: none;" id="desctxt_9671">Anyone ever read &quot;God&#039;s Debris&quot;?
+
+It suggests that an omnipotent being would have absolutely no human emotion. It would not feel fear, love, anger, or hate. It would be perfect in every way. Anything it wanted, it obtained instantaneously. The only challenge for a being like this would be self destruction.
+
+&quot;God&#039;s Debris&quot; is saying that we quite literally are God&#039;s debris. We&#039;re all just floating pieces of the destroyed embodiment of perfection. Maybe we have the ability to manipulate reality because we are indeeds the ones who created reality?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9674" style="width: 100%; overflow: auto; min-height: 125px;">I&#039;ve never read the Book, who&#039;s the author silverandcold298?</div>
+		<textarea style="display: none;" id="desctxt_9674">I&#039;ve never read the Book, who&#039;s the author silverandcold298?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Akio, 4 years, 5 months ago<br />Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">silverandcold298</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9716" style="width: 100%; overflow: auto; min-height: 125px;">Scott Adams. Yes, the creator of &quot;Dilbert.&quot;</div>
+		<textarea style="display: none;" id="desctxt_9716">Scott Adams. Yes, the creator of &quot;Dilbert.&quot;</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Linked</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=19&amp;ref=1203762048" width="89" height="38" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9717" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;"><em>posted by Amaroq:</em><br />
+I don&#039;t think the idea of energy having at least pseudo-will is a new one. I think this idea came to me not long after reading threads on Psipog about &quot;psipets&quot;.</div>Psipets? now theres something i want to read about :)</div>
+		<textarea style="display: none;" id="desctxt_9717">[quote][i]posted by Amaroq:[/i]
+I don&#039;t think the idea of energy having at least pseudo-will is a new one. I think this idea came to me not long after reading threads on Psipog about &quot;psipets&quot;.[/quote]
+
+Psipets? now theres something i want to read about :)</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9718" style="width: 100%; overflow: auto; min-height: 125px;">Thanks... ^_^</div>
+		<textarea style="display: none;" id="desctxt_9718">Thanks... ^_^</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Linked</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=19&amp;ref=1203762048" width="89" height="38" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9720" style="width: 100%; overflow: auto; min-height: 125px;">~erased~</div>
+		<textarea style="display: none;" id="desctxt_9720">~erased~</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Linked, 4 years, 5 months ago<br />Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9912" style="width: 100%; overflow: auto; min-height: 125px;">I see eraser shavings...</div>
+		<textarea style="display: none;" id="desctxt_9912">I see eraser shavings...</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">chillpill</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=635&amp;ref=1215645183" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9951" style="width: 100%; overflow: auto; min-height: 125px;">Interesting to think about.<br />
+<br />
+If people can psionically create their own deities, then if several people create 1 deity that wants to destroy the world and the same amount of people create another deity that wants to protect the world (make sure its not destroyed), which one wins?<br />
+Is it the one that is created by whatever psions amoung the group are stronger?<br />
+Is it the one that is created by the psions that want their goal more?<br />
+Or is there a special force out there that governs such decisions?<br />
+<br />
+Who knows?<br />
+<br />
+Akio: If God is energy, and energy has a will, then we can assume that energy simply wants to move towards a more completed state of entropy.  What a will.<br />
+<br />
+Now if there is some divine will associated with energy, that would be something to think about, right? <br />
+However, if there is no divine God and God is merely a personification of energy, created by humans, then why would there be a divine will? <br />
+There wouldn&#039;t, right?  <br />
+<br />
+Humans created the personification, so it would be up to humans to create the will as well.<br />
+<br />
+So here I go, I&#039;ll take the first step:<br />
+<br />
+***The divine will of energy is to party***<br />
+<br />
+<br />
+<br />
+</div>
+		<textarea style="display: none;" id="desctxt_9951">Interesting to think about.
+
+If people can psionically create their own deities, then if several people create 1 deity that wants to destroy the world and the same amount of people create another deity that wants to protect the world (make sure its not destroyed), which one wins?
+Is it the one that is created by whatever psions amoung the group are stronger?
+Is it the one that is created by the psions that want their goal more?
+Or is there a special force out there that governs such decisions?
+
+Who knows?
+
+Akio: If God is energy, and energy has a will, then we can assume that energy simply wants to move towards a more completed state of entropy.  What a will.
+
+Now if there is some divine will associated with energy, that would be something to think about, right? 
+However, if there is no divine God and God is merely a personification of energy, created by humans, then why would there be a divine will? 
+There wouldn&#039;t, right?  
+
+Humans created the personification, so it would be up to humans to create the will as well.
+
+So here I go, I&#039;ll take the first step:
+
+***The divine will of energy is to party***</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Amaroq</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=606&amp;ref=1214436810" width="95" height="95" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_10002" style="width: 100%; overflow: auto; min-height: 125px;">xD To party.<br />
+<br />
+Who knows, when satan worshipers do things such as hang crosses upside-down, or whatever the heck it is they do, they might be unknowingly feeding power to a satan-entity, or even attacking a god-entity.<br />
+<br />
+There could be several things that govern what a deity construct is like, how strong it is, and what it does. The strength of its followers&#039; beliefs, the overall intention of its followers, etc.<br />
+<br />
+Who knows if these deities have wills or not. Energy does what we want it to. These deity constructs could simply be programmed with pseudo-wills that reflect the overall wishes of their followers.<br />
+<br />
+What if the desire to spread one&#039;s religion isn&#039;t a thing of intelligence, but rather a thing of instinct? Take the crusades for example. Why would people wage war against other religions in the name of their own deity? What would they gain from it?<br />
+Maybe some deep-seated part of our animalistic self knows that doing so will weaken enemy deities. Maybe we instinctively know that the more followers our own has, the stronger our deity will be, and the better it will be able to protect and serve us as a whole.<br />
+<br />
+Maybe that&#039;s also why anybody who is religious will encourage devout, unyielding faith in their deity. You HAVE to think that yours is the one and only God, otherwise, your doubts will mean that you are not giving him any strength at all.<br />
+<br />
+EDIT: I think that you can also take power from these entities, much like a psychic vampire can take power from people. There have been a few occasions where I felt I desperately needed help, but wanted to be the kind of person who helps myself rather than needs God&#039;s help. I didn&#039;t do this often, but I have thought of God on occasion, raised my hand into the air, and drew energy into myself from nowhere.</div>
+		<textarea style="display: none;" id="desctxt_10002">xD To party.
+
+Who knows, when satan worshipers do things such as hang crosses upside-down, or whatever the heck it is they do, they might be unknowingly feeding power to a satan-entity, or even attacking a god-entity.
+
+There could be several things that govern what a deity construct is like, how strong it is, and what it does. The strength of its followers&#039; beliefs, the overall intention of its followers, etc.
+
+Who knows if these deities have wills or not. Energy does what we want it to. These deity constructs could simply be programmed with pseudo-wills that reflect the overall wishes of their followers.
+
+What if the desire to spread one&#039;s religion isn&#039;t a thing of intelligence, but rather a thing of instinct? Take the crusades for example. Why would people wage war against other religions in the name of their own deity? What would they gain from it?
+Maybe some deep-seated part of our animalistic self knows that doing so will weaken enemy deities. Maybe we instinctively know that the more followers our own has, the stronger our deity will be, and the better it will be able to protect and serve us as a whole.
+
+Maybe that&#039;s also why anybody who is religious will encourage devout, unyielding faith in their deity. You HAVE to think that yours is the one and only God, otherwise, your doubts will mean that you are not giving him any strength at all.
+
+EDIT: I think that you can also take power from these entities, much like a psychic vampire can take power from people. There have been a few occasions where I felt I desperately needed help, but wanted to be the kind of person who helps myself rather than needs God&#039;s help. I didn&#039;t do this often, but I have thought of God on occasion, raised my hand into the air, and drew energy into myself from nowhere.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Amaroq, 4 years, 5 months ago<br />Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">chillpill</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=635&amp;ref=1215645183" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_10015" style="width: 100%; overflow: auto; min-height: 125px;">I read something yesterday, here&#039;s the part of it I&#039;d like to share with you<br />
+<br />
+&quot;The human species may be seen as having evolved in the service of entropy, and it cannot be expected to outlast the dense accumulations of energy that have helped define its niche. Human beings like to believe they are in control of their destiny, but when the history of life on Earth is seen in perspective, the evolution of Homo sapiens is merely a transient episode that acts to redress the planet&#039;s energy balance&quot;<br />
+Energy and Human Evolution<br />
+by David Price<br />
+<a href="index.html" target="_blank" title="http://alittleweird.com">http://dieoff.org/page137.htm</a><br />
+<br />
+<br />
+Most of the article seems support malthusianism, for those of you who don&#039;t know what that is:<br />
+<a href="index.html" target="_blank" title="http://alittleweird.com">http://en.wikipedia.org/wiki/Malthusianism</a><br />
+(I&#039;d give a summary, however it would probably be negatively biased).<br />
+<br />
+However, the idea that &quot;The human species may be seen as having evolved in the service of entropy&quot; seems to fit with the idea that energy has a will.  Basically the concept is that humans beings have evolved to break down the tightly packed energy within the planet (fossil fuels, various resources, etc), helping energy spread out as it is either released as heat, movement, etc, helping that energy to reach a state of entropy.  <br />
+<br />
+Now, one could argue that much of the time that&#039;s not the case, and that we often times make energy more dense, can&#039;t think of any good examples at the moment, however it&#039;s interesting to think about.</div>
+		<textarea style="display: none;" id="desctxt_10015">I read something yesterday, here&#039;s the part of it I&#039;d like to share with you
+
+&quot;The human species may be seen as having evolved in the service of entropy, and it cannot be expected to outlast the dense accumulations of energy that have helped define its niche. Human beings like to believe they are in control of their destiny, but when the history of life on Earth is seen in perspective, the evolution of Homo sapiens is merely a transient episode that acts to redress the planet&#039;s energy balance&quot;
+Energy and Human Evolution
+by David Price
+[url=http://alittleweird.com]http://dieoff.org/page137.htm[/url]
+
+
+Most of the article seems support malthusianism, for those of you who don&#039;t know what that is:
+[url=http://alittleweird.com]http://en.wikipedia.org/wiki/Malthusianism[/url]
+(I&#039;d give a summary, however it would probably be negatively biased).
+
+However, the idea that &quot;The human species may be seen as having evolved in the service of entropy&quot; seems to fit with the idea that energy has a will.  Basically the concept is that humans beings have evolved to break down the tightly packed energy within the planet (fossil fuels, various resources, etc), helping energy spread out as it is either released as heat, movement, etc, helping that energy to reach a state of entropy.  
+
+Now, one could argue that much of the time that&#039;s not the case, and that we often times make energy more dense, can&#039;t think of any good examples at the moment, however it&#039;s interesting to think about.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by chillpill, 4 years, 5 months ago<br />Posted 4 years, 5 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=436" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 31 queries. 0.329 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

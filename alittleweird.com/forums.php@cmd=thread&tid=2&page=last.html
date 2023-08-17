@@ -1,0 +1,465 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; The Sewer Zombie</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; The Sewer Zombie</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">The Sewer Zombie</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Antisankari</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=224&amp;ref=1213032338" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_3" style="width: 100%; overflow: auto; min-height: 125px;">Guess this is the first real post around here then...<br />
+<br />
+Lets begin with a standard weirdo-headline:<br />
+ <a href="http://www.dailymail.co.uk/pages/live/articles/news/news.html?in_article_id=514685&amp;in_page_id=1770" target="_blank">http://www.dailymail.co.uk/pages/live/articles/news/news.html?in_article_id=514685&amp;in_page_id=1770</a><br />
+<br />
+What do you guys think about this thing then?<br />
+Its kinda rare to actually have the word &quot;zombie&quot; in any official statement these days.</div>
+		<textarea style="display: none;" id="desctxt_3">Guess this is the first real post around here then...
+
+Lets begin with a standard weirdo-headline:
+http://www.dailymail.co.uk/pages/live/articles/news/news.html?in_article_id=514685&amp;in_page_id=1770
+
+What do you guys think about this thing then?
+Its kinda rare to actually have the word &quot;zombie&quot; in any official statement these days.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">AndPious</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=321&amp;ref=1203813988" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_12" style="width: 100%; overflow: auto; min-height: 125px;">First thing I thought of was, as the only comment on the story says, a homeless guy. However; it does seem rather unlikely for that, too. I&#039;ve always been immensely fascinated by the idea of the &quot;undead&quot;, and I wonder what the grain of truth was in all those legends. Separate cultures all around the globe have stories about the dead walking (and usually killing people). We&#039;ve got the vampires, zombies, skeletons, asian (Chinese?) &quot;hopping corpses&quot;, wights, and all sorts of other stuff. I&#039;d like to explore it myself one day.</div>
+		<textarea style="display: none;" id="desctxt_12">First thing I thought of was, as the only comment on the story says, a homeless guy. However; it does seem rather unlikely for that, too. I&#039;ve always been immensely fascinated by the idea of the &quot;undead&quot;, and I wonder what the grain of truth was in all those legends. Separate cultures all around the globe have stories about the dead walking (and usually killing people). We&#039;ve got the vampires, zombies, skeletons, asian (Chinese?) &quot;hopping corpses&quot;, wights, and all sorts of other stuff. I&#039;d like to explore it myself one day.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Anonymous Dark</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=354&amp;ref=1203377944" width="100" height="86" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_39" style="width: 100%; overflow: auto; min-height: 125px;">Eh...not sure about a zombie. The explanation of EM fields seems more likely.</div>
+		<textarea style="display: none;" id="desctxt_39">Eh...not sure about a zombie. The explanation of EM fields seems more likely.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Sean</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=2&amp;ref=1214247941" width="117" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_6996" style="width: 100%; overflow: auto; min-height: 125px;">The thing I hate about these types of stories is that: if I were there, I would go down there and find out!  I mean, c&#039;mon.  Someone has to have some balls.  Get a weapon, a flashlight, and check it out.<br />
+<br />
+~Sean</div>
+		<textarea style="display: none;" id="desctxt_6996">The thing I hate about these types of stories is that: if I were there, I would go down there and find out!  I mean, c&#039;mon.  Someone has to have some balls.  Get a weapon, a flashlight, and check it out.
+
+~Sean</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Lochinvar</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_6998" style="width: 100%; overflow: auto; min-height: 125px;">If only Gordon Freeman was there....</div>
+		<textarea style="display: none;" id="desctxt_6998">If only Gordon Freeman was there....</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">dominator691</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_6999" style="width: 100%; overflow: auto; min-height: 125px;">I agree with Sean. Somebody will eventually get enough gutsy people to go down and search in and out for any signs &quot;life&quot; (or lack there of). Also on a side note about &quot;zombies&quot;, I don&#039;t believe them to be a reality in the way that the movies portray them, but I came across an interesting article a while ago about a more plausible &quot;zombie&quot; type individual, and while I couldn&#039;t find the specific news article about a teenage girl, I did find these two sites which explain the phenomenon: <br />
+<br />
+ <a href="http://www.paranormality.com/zombies.shtml" target="_blank">http://www.paranormality.com/zombies.shtml</a><br />
+<br />
+ <a href="http://horrorscififilms.suite101.com/article.cfm/real_life_zombies" target="_blank">http://horrorscififilms.suite101.com/article.cfm/real_life_zombies</a> </div>
+		<textarea style="display: none;" id="desctxt_6999">I agree with Sean. Somebody will eventually get enough gutsy people to go down and search in and out for any signs &quot;life&quot; (or lack there of). Also on a side note about &quot;zombies&quot;, I don&#039;t believe them to be a reality in the way that the movies portray them, but I came across an interesting article a while ago about a more plausible &quot;zombie&quot; type individual, and while I couldn&#039;t find the specific news article about a teenage girl, I did find these two sites which explain the phenomenon: 
+
+http://www.paranormality.com/zombies.shtml
+
+http://horrorscififilms.suite101.com/article.cfm/real_life_zombies</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Zectra</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=96&amp;ref=1203358450" width="94" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7001" style="width: 100%; overflow: auto; min-height: 125px;">(Sounds fun =P!)<br />
+<br />
+I agree with Sean too.  I hate it when everyone freaks out and runs away, then makes a huge story about some &#039;unknown&#039; noises and such. How hard is it to just check it out. <br />
+<br />
+On the story&#039;s faction/fiction.. I think it could go either way.<br />
+There&#039;s no reason workers who go there every day would be unintentionally making it up, since if they work there, they should probably be used to the environment.<br />
+<br />
+So that ruled out, they could be looking for attention out of boredom--that happens a lot. But the same could be said if it were real. I know if I were a ghost/poltergeist/zombie(w/e you want to say), and bored out of my mind, I&#039;d sure as hell play a few tricks on people to pass the time (Maybe that&#039;s what the &quot;laughing&quot; is about =P)<br />
+<br />
+On my beliefs in &quot;zombies&quot;, I don&#039;t really have an opinion, because I haven&#039;t done much research on them at all. But there&#039;s always a possibility, despite the probability.<br />
+</div>
+		<textarea style="display: none;" id="desctxt_7001">(Sounds fun =P!)
+
+I agree with Sean too.  I hate it when everyone freaks out and runs away, then makes a huge story about some &#039;unknown&#039; noises and such. How hard is it to just check it out. 
+
+On the story&#039;s faction/fiction.. I think it could go either way.
+There&#039;s no reason workers who go there every day would be unintentionally making it up, since if they work there, they should probably be used to the environment.
+
+So that ruled out, they could be looking for attention out of boredom--that happens a lot. But the same could be said if it were real. I know if I were a ghost/poltergeist/zombie(w/e you want to say), and bored out of my mind, I&#039;d sure as hell play a few tricks on people to pass the time (Maybe that&#039;s what the &quot;laughing&quot; is about =P)
+
+On my beliefs in &quot;zombies&quot;, I don&#039;t really have an opinion, because I haven&#039;t done much research on them at all. But there&#039;s always a possibility, despite the probability.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Tiger_shark</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=397&amp;ref=1203483207" width="105" height="100" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_7016" style="width: 100%; overflow: auto; min-height: 125px;">Im wondering what makes them think it&#039;s a zombie and not a ghost, I mean has he eaten anyone?(I know a bit cleche and I honestly don&#039;t think any living dead thing would instantly develop a thirst for brain juice) Or has anyone touched him thus proving he is corporeal? I wager he/she is a ghost if anything. I guess they are thinking that a zombie story would attract more media attention than an average ghost tale.</div>
+		<textarea style="display: none;" id="desctxt_7016">Im wondering what makes them think it&#039;s a zombie and not a ghost, I mean has he eaten anyone?(I know a bit cleche and I honestly don&#039;t think any living dead thing would instantly develop a thirst for brain juice) Or has anyone touched him thus proving he is corporeal? I wager he/she is a ghost if anything. I guess they are thinking that a zombie story would attract more media attention than an average ghost tale.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">AndPious</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=321&amp;ref=1203813988" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7024" style="width: 100%; overflow: auto; min-height: 125px;">Good question, Tiger. And yeah, I do also think they should go explore the place and make sure he&#039;s not just some nut or homeless guy... or a homeless nut.<br />
+<br />
+So it gets media coverage, but how long has it been since then? Has another report been published on findings? If not, why hasn&#039;t anyone looked into it and/or why is it unworthy of the media this time? Maybe I said that too soon, or wrongly. Bah, judge it yourselves.<br />
+<br />
+Here&#039;s a couple comments on the story itself:<br />
+<br />
+This is a crazy idea, but could it be possible that there is a vagrant or a homeless person hiding in the tunnels? That seems more likely than a &quot;zombie&quot; hiding down in a sewage plant. Instead of hiring a medium they should ask their bosses to have security carefully search the tunnels and make sure that a real person isn&#039;t actually living in their plant.<br />
+<br />
+- Richard Dawkins, Dallas, Texas, USA<br />
+<br />
+<br />
+Richard - exactly. That or maybe even a prankster/performance artist. The abilities of tiny digital devices these days makes pulling off stunts like that not only easy but very tempting (at least to devious minds).<br />
+<br />
+- David Holtek, Kent, UK</div>
+		<textarea style="display: none;" id="desctxt_7024">Good question, Tiger. And yeah, I do also think they should go explore the place and make sure he&#039;s not just some nut or homeless guy... or a homeless nut.
+
+So it gets media coverage, but how long has it been since then? Has another report been published on findings? If not, why hasn&#039;t anyone looked into it and/or why is it unworthy of the media this time? Maybe I said that too soon, or wrongly. Bah, judge it yourselves.
+
+Here&#039;s a couple comments on the story itself:
+
+This is a crazy idea, but could it be possible that there is a vagrant or a homeless person hiding in the tunnels? That seems more likely than a &quot;zombie&quot; hiding down in a sewage plant. Instead of hiring a medium they should ask their bosses to have security carefully search the tunnels and make sure that a real person isn&#039;t actually living in their plant.
+
+- Richard Dawkins, Dallas, Texas, USA
+
+
+Richard - exactly. That or maybe even a prankster/performance artist. The abilities of tiny digital devices these days makes pulling off stunts like that not only easy but very tempting (at least to devious minds).
+
+- David Holtek, Kent, UK</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Veb</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=183&amp;ref=1205442692" width="93" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_7155" style="width: 100%; overflow: auto; min-height: 125px;">Interesting that I should stumble upon this right now, I just found another article a few days ago about zombies in ancient Egypt.<br />
+ <a href="http://www.archaeology.org/online/features/hierakonpolis/zombies.html" target="_blank">http://www.archaeology.org/online/features/hierakonpolis/zombies.html</a> That&#039;s the link, if anyone&#039;s interested.<br />
+And I think it&#039;s more plausible that it&#039;s a ghost than a zombie. Probably a ghost who looks like a zombie. If I were a ghost and wanted to scare people, I definitely would choose to look as scary as possible, either like a zombie or something similar.</div>
+		<textarea style="display: none;" id="desctxt_7155">Interesting that I should stumble upon this right now, I just found another article a few days ago about zombies in ancient Egypt.
+http://www.archaeology.org/online/features/hierakonpolis/zombies.html That&#039;s the link, if anyone&#039;s interested.
+And I think it&#039;s more plausible that it&#039;s a ghost than a zombie. Probably a ghost who looks like a zombie. If I were a ghost and wanted to scare people, I definitely would choose to look as scary as possible, either like a zombie or something similar.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Antisankari</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=224&amp;ref=1213032338" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7156" style="width: 100%; overflow: auto; min-height: 125px;">Telepathy is more plausible than Telekinesis, which is more plausible than &quot;energy balls&quot;. <br />
+<br />
+I dont feel like I know enough to make judgements anymore =P</div>
+		<textarea style="display: none;" id="desctxt_7156">Telepathy is more plausible than Telekinesis, which is more plausible than &quot;energy balls&quot;. 
+
+I dont feel like I know enough to make judgements anymore =P</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">SheepKing</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=211&amp;ref=1222648137" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_7160" style="width: 100%; overflow: auto; min-height: 125px;">Veb: &quot;Solanum&quot; is cited as the virus that caused the zombiesism(ness) of whoever was infected by it in the book &quot;Zombie Survival Guide&quot;. But it is a fictional disease :-D.<br />
+<br />
+The whole sewer zombie thing is kind of cool, but I think the name of it is misleading. There are other explanations that appear more reasonable like maybe someone lives down there, or seeks shelter down there. <br />
+<br />
+But hey, if you search all the tunnels and don&#039;t find evidence that anyone lives down there, or uses them for some reason... Shoot, throw up a couple cameras or something, maybe you do have a ghost.<br />
+<br />
+Eh, slight note too. Newspaper headlines aren&#039;t &quot;Official&quot;. hah</div>
+		<textarea style="display: none;" id="desctxt_7160">Veb: &quot;Solanum&quot; is cited as the virus that caused the zombiesism(ness) of whoever was infected by it in the book &quot;Zombie Survival Guide&quot;. But it is a fictional disease :-D.
+
+The whole sewer zombie thing is kind of cool, but I think the name of it is misleading. There are other explanations that appear more reasonable like maybe someone lives down there, or seeks shelter down there. 
+
+But hey, if you search all the tunnels and don&#039;t find evidence that anyone lives down there, or uses them for some reason... Shoot, throw up a couple cameras or something, maybe you do have a ghost.
+
+Eh, slight note too. Newspaper headlines aren&#039;t &quot;Official&quot;. hah</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 10 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">kiepmad</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_7267" style="width: 100%; overflow: auto; min-height: 125px;">People do all kind of things while sleeping. <br />
+<br />
+ <a href="http://news.bbc.co.uk/1/hi/england/manchester/4871858.stm" target="_blank">http://news.bbc.co.uk/1/hi/england/manchester/4871858.stm</a><br />
+<br />
+There could be someone who likes wandering around in the there, while sleeping or whatever. Talking about zombies is very far fetched.</div>
+		<textarea style="display: none;" id="desctxt_7267">People do all kind of things while sleeping. 
+
+http://news.bbc.co.uk/1/hi/england/manchester/4871858.stm
+
+There could be someone who likes wandering around in the there, while sleeping or whatever. Talking about zombies is very far fetched.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 9 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Raathuus</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=764&amp;ref=1259211929" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11354" style="width: 100%; overflow: auto; min-height: 125px;">Y&#039;never know... could&#039;ve been Solanum...</div>
+		<textarea style="display: none;" id="desctxt_11354">Y&#039;never know... could&#039;ve been Solanum...</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Atrum</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=755&amp;ref=1221862716" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11357" style="width: 100%; overflow: auto; min-height: 125px;">That sounds more liek a ghost...but still...Those people have been watching too many scary movies. What can a ghost do to YOU?<br />
+<br />
+Ghost: I want to kill you! *punches*<br />
+<br />
+*punch goes through you*</div>
+		<textarea style="display: none;" id="desctxt_11357">That sounds more liek a ghost...but still...Those people have been watching too many scary movies. What can a ghost do to YOU?
+
+Ghost: I want to kill you! *punches*
+
+*punch goes through you*</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Faceless</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=570&amp;ref=1214279440" width="83" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11437" style="width: 100%; overflow: auto; min-height: 125px;">Um... FYI Atrum, ghosts can hurt you. Especially when they move through you and you are sensitive to energy changes. so ya.  </div>
+		<textarea style="display: none;" id="desctxt_11437">Um... FYI Atrum, ghosts can hurt you. Especially when they move through you and you are sensitive to energy changes. so ya.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Atrum</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=755&amp;ref=1221862716" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11443" style="width: 100%; overflow: auto; min-height: 125px;">But does the ghost know that? But the energy thing I didnt know.</div>
+		<textarea style="display: none;" id="desctxt_11443">But does the ghost know that? But the energy thing I didnt know.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Antisankari</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=224&amp;ref=1213032338" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_11447" style="width: 100%; overflow: auto; min-height: 125px;">If ghost is a deceased human, ity is likely to at least try it?</div>
+		<textarea style="display: none;" id="desctxt_11447">If ghost is a deceased human, ity is likely to at least try it?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Atrum</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=755&amp;ref=1221862716" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_11448" style="width: 100%; overflow: auto; min-height: 125px;">I dunno...I&#039;ve seen a few ghosts, but I&#039;ve never gotton close to one. -.-;</div>
+		<textarea style="display: none;" id="desctxt_11448">I dunno...I&#039;ve seen a few ghosts, but I&#039;ve never gotton close to one. -.-;</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 3 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=2" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 35 queries. 0.294 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

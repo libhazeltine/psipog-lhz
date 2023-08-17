@@ -1,0 +1,564 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>A Little Weird &raquo; Forums &raquo; Life is a Simulation</title>
+
+<meta name="generator" content="WordPress 2.2.3" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="wp-content/themes/weird2/style.css" type="text/css" media="screen" />
+<!--[if IE]>
+<link rel="stylesheet" href="http://alittleweird.com/wp-content/themes/weird2/style_ie.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="A Little Weird RSS Feed" href="feed/index.html" />
+<link rel="pingback" href="xmlrpc.php.html" />
+<script type="text/javascript" src="wp-content/themes/weird2/mootools.v1.00.js"></script>
+
+<style type="text/css" media="screen">
+
+	#page { background: url("http://alittleweird.com/wp-content/themes/weird2/images/kubrickbg.jpg") repeat-y top; border: none; }
+
+</style>
+
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php@rsd" />
+<script type='text/javascript' src='wp-content/plugins/vipers-video-quicktags/vipers-video-quicktags.js@ver=5.3.0'></script>
+	<!-- Quicktime hacks for Viper's Video Quicktags plugin -->
+	<style type="text/css">
+		.vvqbox {
+			margin: 5px auto 0 auto;
+			text-align: center;
+		}
+
+		/* hides the second object from all versions of IE */
+		* html object.mov {
+			display: none;
+		}
+
+		/* displays the second object in all versions of IE apart from 5 on PC */
+		* html object.mov/**/ {
+			display: inline;
+		}
+
+		/* hides the second object from all versions of IE >= 5.5 */
+		* html object.mov {
+			display/**/: none;
+		}
+	</style>
+<style type='text/css'>
+<!--#header { background: url('http://alittleweird.com/wp-content/themes/weird2/images/header-img.php?upper=f9a307&lower=faca23') no-repeat bottom center; }
+#headerimg h1 a, #headerimg h1 a:visited, #headerimg .description { color: black; }
+--></style>
+</head>
+<body>
+<div id="globalWrapper">
+<div id="alwHeader">
+<div id="alwHeaderLinks">
+<a href="index.php.html" title="Home"><img src="wp-content/themes/weird2/images/blank.gif" alt="Home" width="128" height="49" border="0" /></a>
+<a href="blog/index.html" title="Blog"><img src="wp-content/themes/weird2/images/blank.gif" alt="Blog" width="111" height="49" border="0" /></a>
+<a href="forums.php.html" title="Forums"><img src="wp-content/themes/weird2/images/blank.gif" alt="Forums" width="153" height="49" border="0" /></a>
+<a href="games/index.html" title="Games"><img src="wp-content/themes/weird2/images/blank.gif" alt="Games" width="144" height="49" border="0" /></a>
+<a href="contact/index.html" title="Contact"><img src="wp-content/themes/weird2/images/blank.gif" alt="Contact" width="151" height="49" border="0" /></a>
+</div>
+<p class="hiddenText">A Little Weird</p>
+<p class="hiddenText">reality bizarres the standard</p>
+</div>
+<div id="alwMain">
+<div id="alwContentNGA" style="width: 95%;">
+<script type="text/javascript">
+//<![CDATA[
+
+String.prototype.trim = function()
+{
+	return this.replace(/^\s*|\s*$/g,'');
+}
+
+function do_preview(with_subject, txt, subj)
+{
+	var w = Math.floor(screen.width * 0.7);
+	var h = Math.floor(screen.height * 0.7);
+	var x = Math.floor((screen.width - w) / 2);
+	var y = Math.floor((screen.height - h) / 2);
+	
+	wnd = window.open("", "alwPreview",
+		"status=0,toolbar=0,location=0,menubar=0,directories=0," + 
+		"resizable=1,scrollbars=1,width=" + w + ",height=" + h + "," +
+		"left=" + x + ",top=" + y + ",screenX=" + x + ",screenY=" + y);
+	
+	wnd.document.write(
+		"<" + "form method=\"post\" action=\"/forums.php?cmd=preview\" name=\"frm\">" +
+		"<" + "input type=\"hidden\" name=\"text\" value=\"\" />" +
+		(with_subject ? "<" + "input type=\"hidden\" name=\"subject\" value=\"\" />" : "") +
+		"<" + "/form>" +
+		"<" + "p>Loading...<" + "/p>");
+		
+	wnd.document.frm.text.value = txt;
+	if (with_subject)
+		wnd.document.frm.subject.value = subj;
+		
+	wnd.document.frm.submit();
+}
+
+//]]>
+</script>
+<div id="forum">
+<div id="forumHeader">
+<span style="float: right; margin-right: 10px;">You are not logged in - <a href="wp-login.php@registration=disabled.html">Join for Free</a> - <a href="wp-login.php.html">Login</a></span><a href="forums.php.html">Forum Home</a> &raquo; <a href="forums.php@cmd=forum&amp;fid=1.html">Weird Discussions</a> &raquo; Life is a Simulation</div>
+<script type="text/javascript">
+//<![CDATA[
+
+var edit_enabled = [];
+
+function edit_post(pid)
+{
+	var pst = document.getElementById('post_' + pid);
+	var txt = document.getElementById('edit_' + pid);
+	var but = document.getElementById('editbut_' + pid);
+	var inp = document.getElementById('text_' + pid);
+	
+	if (edit_enabled[pid] == 1)
+	{
+		pst.style.display = '';
+		txt.style.display = 'none';
+		but.value = 'Edit Post';
+		edit_enabled[pid] = 0;
+	}
+	else
+	{
+		inp.value = document.getElementById('desctxt_' + pid).value;
+		pst.style.display = 'none';
+		txt.style.display = '';
+		but.value = 'Cancel Edit';
+		document.getElementById('text_' + pid).focus();
+		edit_enabled[pid] = 1;
+	}
+}
+
+function submit_edit(pid)
+{
+	if (document.getElementById('text_' + pid).value.trim().length == 0)
+	{
+		alert('The post is empty - you must type something');
+		return;
+	}
+	document.frm_edit.pid.value = pid;
+	document.frm_edit.text.value = document.getElementById('text_' + pid).value;
+	document.frm_edit.submit();
+}
+
+function quote_post(pid, usr)
+{
+	document.frm.text.value += '[quote][i]posted by ' + usr + ':[/i]\r\n' + document.getElementById('desctxt_' + pid).value + '[/quote]\r\n\r\n';
+}
+
+//]]>
+</script>
+<form name="frm_edit" method="post" action="http://alittleweird.com/forums.php?cmd=editpost">
+<input type="hidden" name="pid" value="0" />
+<input type="hidden" name="text" value="" />
+</form>
+<div class="forumWindow">
+<span class="forumWindowHeading">Life is a Simulation</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th>Author</th>
+	<th>Message</th>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">SheepKing</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=211&amp;ref=1222648137" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_8645" style="width: 100%; overflow: auto; min-height: 125px;">I was perusing the web and thanks to googles awesome link recommendation on Gmail I stumbled upon this:<br />
+<br />
+ <a href="http://www.theuniversesolved.com/book.htm" target="_blank">http://www.theuniversesolved.com/book.htm</a><br />
+<br />
+Which in turn led me to find this:<br />
+<br />
+ <a href="http://www.simulation-argument.com/" target="_blank">http://www.simulation-argument.com/</a><br />
+Which led to:<br />
+ <a href="http://www.simulation-argument.com/matrix.html" target="_blank">http://www.simulation-argument.com/matrix.html</a><br />
+<br />
+Along the parallel path of search I found this: (PDF File)<br />
+ <a href="http://arxiv.org/ftp/arxiv/papers/0801/0801.0337.pdf" target="_blank">http://arxiv.org/ftp/arxiv/papers/0801/0801.0337.pdf</a><br />
+<br />
+---<br />
+<br />
+Is it completely undeniable that we could be living in a computer simulation from the &#039;future&#039;? <br />
+<br />
+I don&#039;t know. But it&#039;s definitely an interesting thought. If you have the time, read about it a bit. It might get those cogs in your head turning and lead you to something. Who knows.<br />
+</div>
+		<textarea style="display: none;" id="desctxt_8645">I was perusing the web and thanks to googles awesome link recommendation on Gmail I stumbled upon this:
+
+http://www.theuniversesolved.com/book.htm
+
+Which in turn led me to find this:
+
+http://www.simulation-argument.com/
+Which led to:
+http://www.simulation-argument.com/matrix.html
+
+Along the parallel path of search I found this: (PDF File)
+http://arxiv.org/ftp/arxiv/papers/0801/0801.0337.pdf
+
+---
+
+Is it completely undeniable that we could be living in a computer simulation from the &#039;future&#039;? 
+
+I don&#039;t know. But it&#039;s definitely an interesting thought. If you have the time, read about it a bit. It might get those cogs in your head turning and lead you to something. Who knows.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">redefine</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=428&amp;ref=1219933762" width="0" height="0" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_8650" style="width: 100%; overflow: auto; min-height: 125px;">its an interesting idea, though i&#039;m not sure the &#039;equations are simple&#039; idea fits, the equations are not always simple. i think it would be a better argument to say alot of the equasions seem to contain functions, like in a computer program. for example, omega (2*pi*f) is common to both capacitive and inductive reactance, and the lorentz (sp?) factor ((1-v^2/c^2)^1/2) is common to alot of relativistic formulas. the same can be said of p=e/t (power=energy transfer/time). it definately after reading the last one, it definately fits better then anything i can think of, i&#039;d like to see some counter arguments.</div>
+		<textarea style="display: none;" id="desctxt_8650">its an interesting idea, though i&#039;m not sure the &#039;equations are simple&#039; idea fits, the equations are not always simple. i think it would be a better argument to say alot of the equasions seem to contain functions, like in a computer program. for example, omega (2*pi*f) is common to both capacitive and inductive reactance, and the lorentz (sp?) factor ((1-v^2/c^2)^1/2) is common to alot of relativistic formulas. the same can be said of p=e/t (power=energy transfer/time). it definately after reading the last one, it definately fits better then anything i can think of, i&#039;d like to see some counter arguments.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Dash</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=69&amp;ref=1224210982" width="113" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_8651" style="width: 100%; overflow: auto; min-height: 125px;">&quot;whoa&quot;<br />
+<br />
+well.. it&#039;s possible.. but.. i don&#039;t know.. if we were living in a simulation, wouldn&#039;t there be some type of control?<br />
+<br />
+like.. a way to keep the population down?<br />
+or a way to prevent people from getting the idea that its a simulation?<br />
+<br />
+its also not completely deniable that your were knocked out last night and the past 10 years were implanted memories from &quot;them&quot;<br />
+<br />
+i mean, sometimes you need to take a step back man..<br />
+honestly listen to that statement..<br />
+<br />
+im not trying to disrespect you, i actually like your style, <br />
+but.. thats kind of crazy, <br />
+i wouldn&#039;t believe everything you read online.. at least not right away..</div>
+		<textarea style="display: none;" id="desctxt_8651">&quot;whoa&quot;
+
+well.. it&#039;s possible.. but.. i don&#039;t know.. if we were living in a simulation, wouldn&#039;t there be some type of control?
+
+like.. a way to keep the population down?
+or a way to prevent people from getting the idea that its a simulation?
+
+its also not completely deniable that your were knocked out last night and the past 10 years were implanted memories from &quot;them&quot;
+
+i mean, sometimes you need to take a step back man..
+honestly listen to that statement..
+
+im not trying to disrespect you, i actually like your style, 
+but.. thats kind of crazy, 
+i wouldn&#039;t believe everything you read online.. at least not right away..</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">redefine</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=428&amp;ref=1219933762" width="0" height="0" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_8654" style="width: 100%; overflow: auto; min-height: 125px;">why would there have to be. in programming, the only thing keeping an array from overflowing is errors, but thats not much of a guard, is it, that is, unless you program in a guard.<br />
+<br />
+and besides, is there anything wrong with the inhabitants of a vr working it out, it wouldnt be a truthful reality simulation if there was.<br />
+<br />
+in the last one, there are alot of reasons and parralells from this reality to a hypothetical vr</div>
+		<textarea style="display: none;" id="desctxt_8654">why would there have to be. in programming, the only thing keeping an array from overflowing is errors, but thats not much of a guard, is it, that is, unless you program in a guard.
+
+and besides, is there anything wrong with the inhabitants of a vr working it out, it wouldnt be a truthful reality simulation if there was.
+
+in the last one, there are alot of reasons and parralells from this reality to a hypothetical vr</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">SheepKing</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=211&amp;ref=1222648137" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_8655" style="width: 100%; overflow: auto; min-height: 125px;">If the simulation was voluntary then there would be no reason to stop people from knowing it was a simulation, or to keep the population down.<br />
+<br />
+Hey we could be computer programs :-P<br />
+<br />
+Just something interesting to think about; anyway.</div>
+		<textarea style="display: none;" id="desctxt_8655">If the simulation was voluntary then there would be no reason to stop people from knowing it was a simulation, or to keep the population down.
+
+Hey we could be computer programs :-P
+
+Just something interesting to think about; anyway.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Sean</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=2&amp;ref=1214247941" width="117" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_8681" style="width: 100%; overflow: auto; min-height: 125px;">Well... I nearly agree with the idea.<br />
+<br />
+If you believe we have souls, and our bodies just temporarily house our souls, and upon death we go back to some supernatural realm... then isn&#039;t that the same thing?<br />
+<br />
+The only part that it disagrees with his theory is that he&#039;s stating we don&#039;t have a soul, and our consciousness arises from the information encoded into our brain.<br />
+<br />
+It is interesting to think about though :-).<br />
+<br />
+~Sean</div>
+		<textarea style="display: none;" id="desctxt_8681">Well... I nearly agree with the idea.
+
+If you believe we have souls, and our bodies just temporarily house our souls, and upon death we go back to some supernatural realm... then isn&#039;t that the same thing?
+
+The only part that it disagrees with his theory is that he&#039;s stating we don&#039;t have a soul, and our consciousness arises from the information encoded into our brain.
+
+It is interesting to think about though :-).
+
+~Sean</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">INTENSE</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=547&amp;ref=1213758491" width="100" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_8696" style="width: 100%; overflow: auto; min-height: 125px;">what about the idea that this is all a dream? maybe i&#039;m in a coma right now, and you are all figments of my imagination, my mind trying to cope with the crushing lonelyness that  is itself?<br />
+<br />
+heh, idk if that makes any sense at all</div>
+		<textarea style="display: none;" id="desctxt_8696">what about the idea that this is all a dream? maybe i&#039;m in a coma right now, and you are all figments of my imagination, my mind trying to cope with the crushing lonelyness that  is itself?
+
+heh, idk if that makes any sense at all</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">joke-lain</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=517&amp;ref=1210639719" width="103" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_8741" style="width: 100%; overflow: auto; min-height: 125px;">@sheepking&#039;s first post<br />
+<br />
+Actually, when I was little, I thought that all the time. I hadn&#039;t (haven&#039;t yet) grasp and understood the concept of religion and god and I always wondered what my life was like if I was living in a stimulation. Actually, I always thought up different ways that I existed that always included a &quot;higher power&quot;. The thought of everything coming from nothing never crossed my mind. Weird...</div>
+		<textarea style="display: none;" id="desctxt_8741">@sheepking&#039;s first post
+
+Actually, when I was little, I thought that all the time. I hadn&#039;t (haven&#039;t yet) grasp and understood the concept of religion and god and I always wondered what my life was like if I was living in a stimulation. Actually, I always thought up different ways that I existed that always included a &quot;higher power&quot;. The thought of everything coming from nothing never crossed my mind. Weird...</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">INTENSE</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=547&amp;ref=1213758491" width="100" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_8761" style="width: 100%; overflow: auto; min-height: 125px;">@ dash, maybe it&#039;s a continuous game that someone got bored with? like, they don&#039;t care if the population gets out of control :/</div>
+		<textarea style="display: none;" id="desctxt_8761">@ dash, maybe it&#039;s a continuous game that someone got bored with? like, they don&#039;t care if the population gets out of control :/</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">bd333</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_8763" style="width: 100%; overflow: auto; min-height: 125px;">Hmmm, interesting idea... When I think of this it reminds me of the movie where the guy grows up in this town and then realizes that his life was made into a tv show (or something like that :p) I can&#039;t remember what it was called though.<br />
+<br />
+Maybe we are some test for some other race, like our lab mice?<br />
+I don&#039;t know... Its a large thing to comprehend.<br />
+<br />
+<div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;">Sheepking: If the simulation was voluntary then there would be no reason to stop people from knowing it was a simulation...</div>My idea on this is that it could be voluntary, but once put in the simulation, the person has no way to know that it is a simulation. A possibility is that we were put into this simulation in another life and went through birth and everything and that we  go through up until now, possibly after death we go back to the first life? (not to go against any religion or anything)<br />
+<br />
+I remember when I was really young having some dream of being put into some sort of futuristic virtual reality type thing, then after that I would always look for &quot;errors&quot; in the things around me :P like the sky suddenly brightening for a second somewhere where it shouldn&#039;t or something;). No simulation can be perfect.<br />
+<br />
+It has always been a thought of mine, and I think it is quite possible.<br />
+<br />
+--BD</div>
+		<textarea style="display: none;" id="desctxt_8763">Hmmm, interesting idea... When I think of this it reminds me of the movie where the guy grows up in this town and then realizes that his life was made into a tv show (or something like that :p) I can&#039;t remember what it was called though.
+
+Maybe we are some test for some other race, like our lab mice?
+I don&#039;t know... Its a large thing to comprehend.
+
+[quote]Sheepking: If the simulation was voluntary then there would be no reason to stop people from knowing it was a simulation...[/quote]
+
+My idea on this is that it could be voluntary, but once put in the simulation, the person has no way to know that it is a simulation. A possibility is that we were put into this simulation in another life and went through birth and everything and that we  go through up until now, possibly after death we go back to the first life? (not to go against any religion or anything)
+
+I remember when I was really young having some dream of being put into some sort of futuristic virtual reality type thing, then after that I would always look for &quot;errors&quot; in the things around me :P like the sky suddenly brightening for a second somewhere where it shouldn&#039;t or something;). No simulation can be perfect.
+
+It has always been a thought of mine, and I think it is quite possible.
+
+--BD</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Anonymous Dark</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=354&amp;ref=1203377944" width="100" height="86" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_8770" style="width: 100%; overflow: auto; min-height: 125px;">Meh. Somehow the idea that there <em>is</em> some greater force in control of the universe, even if it&#039;s the guy who manages the servers at the company our &quot;universe simulation&quot; runs at, is somewhat comforting. As long as they aren&#039;t evil machines, I&#039;d be OK with living in a simulated reality.</div>
+		<textarea style="display: none;" id="desctxt_8770">Meh. Somehow the idea that there [i]is[/i] some greater force in control of the universe, even if it&#039;s the guy who manages the servers at the company our &quot;universe simulation&quot; runs at, is somewhat comforting. As long as they aren&#039;t evil machines, I&#039;d be OK with living in a simulated reality.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">joke-lain</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=517&amp;ref=1210639719" width="103" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_8771" style="width: 100%; overflow: auto; min-height: 125px;">Weird. If we are just in a simulation, then that could explain dreaming. The dreams could be things we experience in the real world.<br />
+<br />
+Kind of life the matrix</div>
+		<textarea style="display: none;" id="desctxt_8771">Weird. If we are just in a simulation, then that could explain dreaming. The dreams could be things we experience in the real world.
+
+Kind of life the matrix</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Anonymous Dark</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=354&amp;ref=1203377944" width="100" height="86" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_8811" style="width: 100%; overflow: auto; min-height: 125px;">We already have an explanation for why we dream, we don&#039;t need to be in a computer simulation for it to make sense.</div>
+		<textarea style="display: none;" id="desctxt_8811">We already have an explanation for why we dream, we don&#039;t need to be in a computer simulation for it to make sense.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Antisankari</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=224&amp;ref=1213032338" width="125" height="125" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_8814" style="width: 100%; overflow: auto; min-height: 125px;">Of course it is?<br />
+<br />
+You guys did not know this?!<br />
+<br />
+Speed of light is the fillrate of the universal GPU.<br />
+<br />
+In a complete void it approximates 300 000 meters / second.<br />
+So the G.O.D Graphics.Output.Device can fill in these very special kinds of Voxels (atoms) fast enough to keep our world from stuttering.<br />
+<br />
+Actually, the multiverse theory makes sense now. We are not a computer. We are not even a program! We are objects within objects internal array: Universe[] multiversum = new Universe[x];<br />
+<br />
+Every Big Bang is a cosmologic &quot;malloc&quot;, or Universe a = new Universe(param);<br />
+Black holes are the internal garbage collectors, that remove stuff. That is why even light cannot exit the event horizon. NullPointerException() waits you there =O<br />
+<br />
+Hierarchy might go something like: Multiverse &lt;- universe[n] &lt;-smallestPossibleUndividedParticle[x][y][z]</div>
+		<textarea style="display: none;" id="desctxt_8814">Of course it is?
+
+You guys did not know this?!
+
+Speed of light is the fillrate of the universal GPU.
+
+In a complete void it approximates 300 000 meters / second.
+So the G.O.D Graphics.Output.Device can fill in these very special kinds of Voxels (atoms) fast enough to keep our world from stuttering.
+
+Actually, the multiverse theory makes sense now. We are not a computer. We are not even a program! We are objects within objects internal array: Universe[] multiversum = new Universe[x];
+
+Every Big Bang is a cosmologic &quot;malloc&quot;, or Universe a = new Universe(param);
+Black holes are the internal garbage collectors, that remove stuff. That is why even light cannot exit the event horizon. NullPointerException() waits you there =O
+
+Hierarchy might go something like: Multiverse &lt;- universe[n] &lt;-smallestPossibleUndividedParticle[x][y][z]</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Antisankari, 4 years, 6 months ago<br />Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">redefine</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=428&amp;ref=1219933762" width="0" height="0" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_8822" style="width: 100%; overflow: auto; min-height: 125px;">@bd333: that movie would be the truman show. unless there was another one made.<br />
+</div>
+		<textarea style="display: none;" id="desctxt_8822">@bd333: that movie would be the truman show. unless there was another one made.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">kiepmad</span></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_8823" style="width: 100%; overflow: auto; min-height: 125px;">well, I tell you what: it does matter. :P<br />
+<br />
+Most probably we have entered this reality, voluntarily or not, and will leave when we die. If reality is a program, a simulation, a someone else&#039;s dream is does not matter, as long as we don&#039;t get paralyzed in our actions by thinking about it.  :P </div>
+		<textarea style="display: none;" id="desctxt_8823">well, I tell you what: it does matter. :P
+
+Most probably we have entered this reality, voluntarily or not, and will leave when we die. If reality is a program, a simulation, a someone else&#039;s dream is does not matter, as long as we don&#039;t get paralyzed in our actions by thinking about it.  :P</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">bd333</span></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_8843" style="width: 100%; overflow: auto; min-height: 125px;"><div style="border: 1px solid #555; margin: 10px 0 10px 15px; padding: 10px; font-size: 90%;">(redefine)@bd333: that movie would be the truman show...</div>Thats it! I couldn&#039;t remember at all... This discussion also reminds me of the Otherland books. Good series.</div>
+		<textarea style="display: none;" id="desctxt_8843">[quote](redefine)@bd333: that movie would be the truman show...[/quote] Thats it! I couldn&#039;t remember at all... This discussion also reminds me of the Otherland books. Good series.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by bd333, 4 years, 6 months ago<br />Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">Amaroq</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=606&amp;ref=1214436810" width="95" height="95" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9417" style="width: 100%; overflow: auto; min-height: 125px;">I think it could be possible. We&#039;re in a lab being tested and observed by some scientists. Life sure seems to throw a lot of tests at you, and karma sure seems to kick you in the ass later on if you fail. Maybe it&#039;s the scientists testing you and punishing you for failure until you learn to succeed.<br />
+<br />
+For all we know, the human race could be a bunch of childlike weaklings because they&#039;ve been at peace for so long. When we wake up, we&#039;re going to be their genetically engineered super soldiers. They&#039;ll send us against their enemies. We&#039;ll kick them in the shins and break their legs, rolling our eyes at how weak they are. Meanwhile they&#039;ll be cowering in fear at the onslaught of this superior super soldier with strength that they cannot comprehend.<br />
+<br />
+If you take a Matrix view on it... psionics just means our minds are more free than those who cannot or do not practice it. We&#039;re sorta like Neo.<br />
+<br />
+Will we still have abilities when we wake up?</div>
+		<textarea style="display: none;" id="desctxt_9417">I think it could be possible. We&#039;re in a lab being tested and observed by some scientists. Life sure seems to throw a lot of tests at you, and karma sure seems to kick you in the ass later on if you fail. Maybe it&#039;s the scientists testing you and punishing you for failure until you learn to succeed.
+
+For all we know, the human race could be a bunch of childlike weaklings because they&#039;ve been at peace for so long. When we wake up, we&#039;re going to be their genetically engineered super soldiers. They&#039;ll send us against their enemies. We&#039;ll kick them in the shins and break their legs, rolling our eyes at how weak they are. Meanwhile they&#039;ll be cowering in fear at the onslaught of this superior super soldier with strength that they cannot comprehend.
+
+If you take a Matrix view on it... psionics just means our minds are more free than those who cannot or do not practice it. We&#039;re sorta like Neo.
+
+Will we still have abilities when we wake up?</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by Amaroq, 4 years, 6 months ago<br />Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #e2e2ff; vertical-align: top;"><span style="font-size: 115%;">Akio</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=493&amp;ref=1274665864" width="125" height="111" alt="Avatar" border="0" /></td>
+	<td style="background-color: #e2e2ff; vertical-align: top;" width="90%">
+		<div id="post_9418" style="width: 100%; overflow: auto; min-height: 125px;">Possible, even probable... But then, wouldn&#039;t it be equally probable that the world outside ours is just a simulation of another, greater world? <br />
+<br />
+To infinity and beyond...</div>
+		<textarea style="display: none;" id="desctxt_9418">Possible, even probable... But then, wouldn&#039;t it be equally probable that the world outside ours is just a simulation of another, greater world? 
+
+To infinity and beyond...</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+<tr>
+	<td style="background-color: #eeeeff; vertical-align: top;"><span style="font-size: 115%;">ryan</span><br /><br /><img src="forums.php@cmd=showav&amp;aid=610&amp;ref=1214463002" width="125" height="94" alt="Avatar" border="0" /></td>
+	<td style="background-color: #eeeeff; vertical-align: top;" width="90%">
+		<div id="post_9446" style="width: 100%; overflow: auto; min-height: 125px;">Another attempt at people trying to explain the universe they live in.  Was it the mayans that believed that when we die, we actually just wake up? Perhaps the Aztecs?  It is very similar, except it applies the idea of modern (or futuristic) techology that the Aztecs/Mayans did not yet know about.  Or maybe they did? <br />
+<br />
+How about some more?:<br />
+<br />
+- Humans are just a culture growth on a distant planet set up by aliens (distant fromt he aliens).  They are observing us through lensed devices and recording observations. This would be very similar to the way that scientists study cells, viruses, fungi, bacteria, etc.<br />
+<br />
+- Humans are just spirits, entering and re-entering the world through our bodies (reincarnation).<br />
+<br />
+The one proposed at the beginning of the thread sounds very much like the Matrix.  Why not? If it&#039;s true, it must be one hell of a computer program.</div>
+		<textarea style="display: none;" id="desctxt_9446">Another attempt at people trying to explain the universe they live in.  Was it the mayans that believed that when we die, we actually just wake up? Perhaps the Aztecs?  It is very similar, except it applies the idea of modern (or futuristic) techology that the Aztecs/Mayans did not yet know about.  Or maybe they did? 
+
+How about some more?:
+
+- Humans are just a culture growth on a distant planet set up by aliens (distant fromt he aliens).  They are observing us through lensed devices and recording observations. This would be very similar to the way that scientists study cells, viruses, fungi, bacteria, etc.
+
+- Humans are just spirits, entering and re-entering the world through our bodies (reincarnation).
+
+The one proposed at the beginning of the thread sounds very much like the Matrix.  Why not? If it&#039;s true, it must be one hell of a computer program.</textarea><hr style="margin-top: 10px;" /><span style="float: left;"></span>
+		<p style="text-align: right; padding: 0; margin: 0; font-size: 88%; color: #444;">Last edited by ryan, 4 years, 6 months ago<br />Posted 4 years, 6 months ago</p>
+	</td>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+<form method="post" name="frm" action="http://alittleweird.com/forums.php?cmd=createpost&amp;tid=393" onsubmit="javascript: if (this.text.value.trim() == '') { alert('Please enter a message'); return false; } return true;">
+<div class="forumWindow" style="margin-top: 20px;">
+<span class="forumWindowHeading">Add Reply</span><br />
+<table cellspacing="2" class="forumWindowTable">
+<tr>
+	<th style="text-align: center; font-size: 150%; padding: 10px;">You are not allowed to post.  Please <a style="color: #fff; text-decoration: underline;" href="wp-login.php.html">login</a> (or <a style="color: #fff; text-decoration: underline;" href="wp-login.php@registration=disabled.html">join for free</a>).</th>
+</tr>
+</table>
+</div>
+<div class="forumWindowFooter">
+</div>
+</form>
+</div>
+</div> <!-- end sidebar or content -->
+<div style="clear: both;"></div>
+</div> <!-- end alwMain -->
+<div id="alwFooter">
+</div>
+</div> <!-- end globalWrapper -->
+<p id="copyright">All Content, Images, Video, Text, and Software is &copy; Copyright 2007-2009 Sean Connelly and their respective authors. All Rights Reserved.<br />
+Best viewed with <a href="http://getfirefox.com/">Firefox</a>, with minimum resolution of 1024 x 768.  Microsoft can suck my balls.<br />
+ A Little Weird is proudly powered by <a href="http://wordpress.org/">WordPress</a> - <a href="feed/index.html">Entries (RSS)</a> and <a href="comments/feed/index.html">Comments (RSS)</a>.
+<!-- 36 queries. 0.315 seconds. --></p>
+
+
+		
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-82554-5");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+</body>
+</html>
